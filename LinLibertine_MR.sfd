@@ -561,11 +561,11 @@ MATH:UnderbarRuleThickness: 40
 MATH:UnderbarExtraDescender: 40 
 MATH:RadicalVerticalGap: 90 
 MATH:RadicalDisplayStyleVerticalGap: 170 
-MATH:RadicalRuleThickness: 39 
+MATH:RadicalRuleThickness: 40 
 MATH:RadicalExtraAscender: 65 
 MATH:RadicalKernBeforeDegree: 65 
 MATH:RadicalKernAfterDegree: -320 
-MATH:RadicalDegreeBottomRaisePercent: 33
+MATH:RadicalDegreeBottomRaisePercent: 50
 MATH:MinConnectorOverlap: 100
 Encoding: UnicodeFull
 UnicodeInterp: none
@@ -59807,9 +59807,9 @@ StartChar: radical
 Encoding: 8730 8730 1359
 Width: 565
 VWidth: 487
-Flags: HW
+Flags: MW
 TeX: 56 0
-HStem: 733 39<488 566>
+HStem: 733 40<488 566>
 DStem2: 166 294 130 221 0.502309 -0.864688<45.0391 243.731> 288 83 308 0 0.238481 0.971147<0 678.942>
 LayerCount: 2
 Fore
@@ -59823,8 +59823,8 @@ SplineSet
  90 242 132 268 166 294 c 1
  288 83 l 1
  453 767 l 1
- 453 772 l 1
- 566 772 l 1
+ 453 773 l 1
+ 566 773 l 1
  566 733 l 1
  488 733 l 1
 EndSplineSet
@@ -71624,26 +71624,13 @@ StartChar: uni221B
 Encoding: 8731 8731 1606
 Width: 565
 VWidth: 406
-Flags: HW
-HStem: 358 30<95.5172 184.829> 524 27<113.689 136.673> 658 30<104.379 179.496> 733 39<488 566>
+Flags: MW
+HStem: 358 30<95.5172 184.829> 524 27<113.689 136.673> 658 30<104.379 179.496> 733 40<488 566>
 VStem: 46 50<605.453 651.037> 186 59<583.006 655.12> 212 62<408.072 512.655>
 DStem2: 166 294 130 221 0.502309 -0.864688<45.0391 243.731> 288 83 308 0 0.238481 0.971147<0 678.942>
 LayerCount: 2
 Fore
 SplineSet
-488 733 m 1
- 308 0 l 1
- 270 -20 l 1
- 130 221 l 1
- 66 195 l 1
- 53 223 l 1
- 90 242 132 268 166 294 c 1
- 288 83 l 1
- 453 767 l 1
- 453 772 l 1
- 566 772 l 1
- 566 733 l 1
- 488 733 l 1
 186 624 m 0
  186 650 164 658 148 658 c 0
  131 658 103 650 96 634 c 0
@@ -71664,6 +71651,7 @@ SplineSet
  111.6 530.5 112.3 541.9 115 551 c 1
  159 557 186 583 186 624 c 0
 EndSplineSet
+Refer: 1359 8730 N 1 0 0 1 0 0 2
 Colour: ff00ff
 EndChar
 
@@ -71671,26 +71659,13 @@ StartChar: uni221C
 Encoding: 8732 8732 1607
 Width: 565
 VWidth: 407
-Flags: HW
-HStem: 365 29<115.435 164.777 230.172 276.25> 464 34<73 171 223 273> 733 39<488 566>
+Flags: MW
+HStem: 365 29<115.435 164.777 230.172 276.25> 464 34<73 171 223 273> 733 40<488 566>
 VStem: 171 52<397.92 464 498 637.655>
 DStem2: 166 294 130 221 0.502309 -0.864688<45.0391 243.731> 288 83 308 0 0.238481 0.971147<0 678.942>
 LayerCount: 2
 Fore
 SplineSet
-488 733 m 1
- 308 0 l 1
- 270 -20 l 1
- 130 221 l 1
- 66 195 l 1
- 53 223 l 1
- 90 242 132 268 166 294 c 1
- 288 83 l 1
- 453 767 l 1
- 453 772 l 1
- 566 772 l 1
- 566 733 l 1
- 488 733 l 1
 171 637.7 m 1
  131.8 589.2 79.5 515.5 73 498 c 1
  171 498 l 1
@@ -71716,6 +71691,7 @@ SplineSet
  114 371 113 386 118 394 c 1
  158 396 171 399 171 440 c 2
 EndSplineSet
+Refer: 1359 8730 N 1 0 0 1 0 0 2
 Colour: ff00ff
 EndChar
 
