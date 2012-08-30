@@ -24,6 +24,6 @@ all: otf
 
 otf: $(OTF)
 
-%.otf: %.sfd Makefile
+%.otf: %.sfd Makefile it.sfd bf.sfd bi.sfd
 	@echo "Building $@"
 	@$(FF) -c $(SCRIPT) $< $@ 2>/dev/stdout 1>/dev/stderr | tail -n +4
