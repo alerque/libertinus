@@ -9,6 +9,9 @@ SCRIPT='Open($$1);\
        if ($$argc>3)\
          MergeFeature($$2);\
        endif;\
+       MergeFonts("it.sfd");\
+       MergeFonts("bf.sfd");\
+       MergeFonts("bi.sfd");\
        SetFontNames("","","","","","$(VERSION)");\
        Generate($$argv[$$argc-1], "", $(FFLAGES))'
 
