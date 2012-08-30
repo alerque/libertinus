@@ -12,6 +12,9 @@ SCRIPT='Open($$1);\
        MergeFonts("it.sfd");\
        MergeFonts("bf.sfd");\
        MergeFonts("bi.sfd");\
+       MergeFonts("sfup.sfd");\
+       MergeFonts("sfit.sfd");\
+       MergeFonts("sfbf.sfd");\
        SetFontNames("","","","","","$(VERSION)");\
        Generate($$argv[$$argc-1], "", $(FFLAGES))'
 
@@ -24,6 +27,6 @@ all: otf
 
 otf: $(OTF)
 
-%.otf: %.sfd Makefile it.sfd bf.sfd bi.sfd
+%.otf: %.sfd Makefile it.sfd bf.sfd bi.sfd sfup.sfd sfit.sfd sfbf.sfd
 	@echo "Building $@"
 	@$(FF) -c $(SCRIPT) $< $@ 2>/dev/stdout 1>/dev/stderr | tail -n +4
