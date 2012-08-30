@@ -20,7 +20,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1162161130
-ModificationTime: 1346317451
+ModificationTime: 1346320534
 PfmFamily: 17
 TTFWeight: 600
 TTFWidth: 5
@@ -55,7 +55,7 @@ OS2Vendor: 'PfEd'
 Lookup: 1 0 0 "'sinf' Wissenschaftliche Indices in Latin lookup 5"  {"'sinf' Wissenschaftliche Indices in Latin lookup 5" ("inferior" ) } ['sinf' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'sups' Superscript in Latin lookup 6"  {"'sups' Superscript in Latin lookup 6" ("superior" ) } ['sups' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1"  {"'kern' Horizontales Kerning in Latin lookup 1"  } ['kern' ('latn' <'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Top rechts"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Top Akzent"  "'mark' Unten Punkt"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "" "" "Semibold Italic" "" "" "" "" "" "Philipp H. Poll" "Philipp H. Poll" "" "http://www.linuxlibertine.org" "http://www.linuxlibertine.org" "GPL - General Public License AND OFL - Open Font License" "http://www.fsf.org/licenses/gpl.html AND http://scripts.sil.org/OFL" 
@@ -221,7 +221,7 @@ Grid
  -538 430 l 25
  766 430 l 25
 EndSplineSet
-AnchorClass2: "top_punkt2"  "'mark' Top Punkt2" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" "top_akzent"  "'mark' Top Akzent" "komb_OR"  "'mark' Komb OR" "top_rechts"  "'mark' Top rechts" 
+AnchorClass2: "unten_punkt"  "'mark' Unten Punkt" "top_akzent"  "'mark' Top Akzent" 
 BeginChars: 1114117 115
 
 StartChar: u1D468
@@ -232,8 +232,7 @@ Flags: W
 HStem: -2 34<15 39 212 225 450 469 692 710> 241 47<316 470> 638 20G<485.5 502.25>
 DStem2: 123.714 94.5 178 73 0.515426 0.856934<-11.1755 217.337 273.608 499.697> 525 627 429 494 0.197523 -0.980298<111.417 321.457 369.309 566.075>
 AnchorPoint: "unten_punkt" 308 -110 basechar 0
-AnchorPoint: "unten_anhang" 116 5 basechar 0
-AnchorPoint: "top_akzent" 354 850 basechar 0
+AnchorPoint: "top_akzent" 494 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -288,24 +287,21 @@ HStem: 0 40<225.893 369.155> 0 33<6.34499 85.4562> 334 42<278 412.422> 604 42<31
 VStem: 468 120.7<133.012 290.279> 476 114.8<443.918 580.464>
 DStem2: 90.7719 -2 209.503 -2 0.199368 0.979925<95.337 365.186 407.739 577.038>
 AnchorPoint: "unten_punkt" 268 -110 basechar 0
-AnchorPoint: "unten_anhang" 250 0 basechar 0
-AnchorPoint: "mittelpunkt" 146 185 basechar 0
-AnchorPoint: "top_akzent" 267 850 basechar 0
-AnchorPoint: "top_rechts" 509 732 basechar 0
+AnchorPoint: "top_akzent" 407 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-311 562 m 2
+311 562 m 2x32
  278 376 l 1
  332 376 l 2
  447.2 376 476 463.4 476 520.6 c 0
  476 590.8 424.7 604 385 604 c 0
- 323 604 316 591 311 562 c 2
+ 323 604 316 591 311 562 c 2x32
 271 334 m 1
  227 84 l 2
  225.8 78 224.9 72.6 224.9 67.8 c 0
  224.9 49.5 236.8 40 282 40 c 0
- 430.8 40 468 159.4 468 219.6 c 0
+ 430.8 40 468 159.4 468 219.6 c 0xa4
  468 288 425 334 339 334 c 2
  271 334 l 1
 269 645 m 0
@@ -314,7 +310,7 @@ SplineSet
  590.8 425.1 502.3 373.6 473 361 c 1
  473 359 l 1
  554.4 335.5 588.7 284.4 588.7 216.6 c 0
- 588.7 110.8 514 0 293 0 c 2
+ 588.7 110.8 514 0 293 0 c 2xb0
  156 0 l 1
  156 0 58 -1 9 -2 c 1
  4 4 3 27 10 33 c 1
@@ -322,7 +318,7 @@ SplineSet
  186 523 l 2
  189.3 541.1 191 555.5 191 567 c 0
  191 608 172.9 609.7 119 612 c 1
- 114 618 112 641 119 647 c 1
+ 114 618 112 641 119 647 c 1x68
  169 646 210 645 269 645 c 0
 EndSplineSet
 EndChar
@@ -335,10 +331,7 @@ Flags: W
 HStem: -10 44<287.965 465.041> 437 21G<620.5 665> 617 41<388.47 549.152>
 VStem: 82.1 126.5<138.31 373.747> 627 38<445 520.475>
 AnchorPoint: "unten_punkt" 363 -110 basechar 0
-AnchorPoint: "unten_anhang" 356 -7 basechar 0
-AnchorPoint: "mittelpunkt" 346 315 basechar 0
-AnchorPoint: "top_akzent" 340 850 basechar 0
-AnchorPoint: "top_rechts" 609 732 basechar 0
+AnchorPoint: "top_akzent" 480 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -368,10 +361,7 @@ HStem: 0 40<223.93 416.09> 0 33<23.6875 96.8379> 606 40<317.405 468.504> 613 33<
 VStem: 584.5 128.5<246.749 477.591>
 DStem2: 108 77 225 75 0.172766 0.984963<6.57876 512.888>
 AnchorPoint: "unten_punkt" 279 -110 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
-AnchorPoint: "mittelpunkt" 346 315 basechar 0
-AnchorPoint: "top_akzent" 306 850 basechar 0
-AnchorPoint: "top_rechts" 619 732 basechar 0
+AnchorPoint: "top_akzent" 446 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -414,9 +404,7 @@ HStem: 0 46<226.264 436.67> 0 33<25.6875 98.3457> 323 42<279 400.035> 427 20G<44
 VStem: 401 41<251 279.988> 434 41<384.319 447> 538 40<484 561.211>
 DStem2: 110 77 228 75 0.172766 0.984963<2.48257 270.289 312.867 511.882>
 AnchorPoint: "unten_punkt" 279 -110 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
-AnchorPoint: "top_akzent" 273 850 basechar 0
-AnchorPoint: "top_rechts" 519 732 basechar 0
+AnchorPoint: "top_akzent" 413 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -470,9 +458,7 @@ Width: 492
 GlyphClass: 2
 Flags: W
 AnchorPoint: "unten_punkt" 201 -110 basechar 0
-AnchorPoint: "unten_anhang" 145 -1 basechar 0
-AnchorPoint: "top_akzent" 276 850 basechar 0
-AnchorPoint: "top_rechts" 499 732 basechar 0
+AnchorPoint: "top_akzent" 416 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -528,10 +514,7 @@ Width: 696
 GlyphClass: 2
 Flags: W
 AnchorPoint: "unten_punkt" 367 -110 basechar 0
-AnchorPoint: "unten_anhang" 367 2 basechar 0
-AnchorPoint: "mittelpunkt" 308 335 basechar 0
-AnchorPoint: "top_akzent" 365 850 basechar 0
-AnchorPoint: "top_rechts" 631 732 basechar 0
+AnchorPoint: "top_akzent" 505 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -574,10 +557,7 @@ GlyphClass: 2
 Flags: W
 HStem: 1 32<54 117 457 520> 321 46<314 585> 613 32<371 435 773 838>
 AnchorPoint: "unten_punkt" 360 -110 basechar 0
-AnchorPoint: "unten_anhang" 150 0 basechar 0
-AnchorPoint: "mittelpunkt" 356 485 basechar 0
-AnchorPoint: "top_akzent" 361 850 basechar 0
-AnchorPoint: "top_rechts" 729 732 basechar 0
+AnchorPoint: "top_akzent" 501 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -653,9 +633,7 @@ Flags: W
 HStem: -2 35<38.345 118.872 271.405 341.655> 612 35<148.056 217.195 369.674 449.794>
 DStem2: 122.772 -2 245.772 -2 0.199368 0.979925<106.473 577.038>
 AnchorPoint: "unten_punkt" 147 -110 basechar 0
-AnchorPoint: "unten_anhang" 147 1 basechar 0
-AnchorPoint: "mittelpunkt" 148 325 basechar 0
-AnchorPoint: "top_akzent" 150 850 basechar 0
+AnchorPoint: "top_akzent" 290 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -725,9 +703,7 @@ Flags: W
 HStem: -2 34<55 79 312 328 659 678> 614 33<165 181 551 574 764 787.996>
 DStem2: 227 570 314 368 0.173785 0.984784<-509.175 -258.94 -183.807 32.0966> 348 385 422 378 0.772609 0.634883<17.4838 325.077>
 AnchorPoint: "unten_punkt" 342 -110 basechar 0
-AnchorPoint: "unten_anhang" 148 -1 basechar 0
-AnchorPoint: "top_akzent" 336 850 basechar 0
-AnchorPoint: "top_rechts" 649 732 basechar 0
+AnchorPoint: "top_akzent" 476 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -801,10 +777,7 @@ HStem: 0 46<273.41 456.949> 1 34<57 143.269> 613 32<174 233.544 372.253 446.312>
 VStem: 529 46<143.62 168.217>
 DStem2: 149 75 275 92 0.173444 0.984844<21.7835 514.393>
 AnchorPoint: "unten_punkt" 260 -110 basechar 0
-AnchorPoint: "unten_anhang" 260 1 basechar 0
-AnchorPoint: "mittelpunkt" 286 315 basechar 0
-AnchorPoint: "top_akzent" 149 850 basechar 0
-AnchorPoint: "top_rechts" 469 732 basechar 0
+AnchorPoint: "top_akzent" 289 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -850,9 +823,7 @@ HStem: -12 21G<383 395.5> -1 36<21 93.75 163.002 216 570 636.795 753.641 809> 61
 VStem: 643 110<35.016 164.727>
 DStem2: 106 89 168 88 0.242536 0.970142<-22.7217 373.747> 335 647 255 437 0.239195 -0.970971<184.768 493.32> 453 168 420 7 0.50331 0.864106<0 352.46>
 AnchorPoint: "unten_punkt" 393 -110 basechar 0
-AnchorPoint: "unten_anhang" 107 2 basechar 0
-AnchorPoint: "mittelpunkt" 426 445 basechar 0
-AnchorPoint: "top_akzent" 431 850 basechar 0
+AnchorPoint: "top_akzent" 571 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -922,9 +893,7 @@ Flags: W
 HStem: 83.5 21G<601.5 631.5> 60.5 34<55 79 261 277> -554.5 36<164 210.542 628 644>
 DStem2: 121.893 104.5 193.893 104.5 0.199368 -0.979925<75.9901 494.887> 317 -553.5 303 -350.5 0.533995 0.845488<141.809 561.798> 619.002 -78.5039 667 67.5 0.172029 -0.985092<0 436.773>
 AnchorPoint: "unten_punkt" 348 -110 basechar 0
-AnchorPoint: "unten_anhang" 125 -4 basechar 0
-AnchorPoint: "mittelpunkt" 356 320 basechar 0
-AnchorPoint: "top_akzent" 346 850 basechar 0
+AnchorPoint: "top_akzent" 486 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -981,10 +950,7 @@ Flags: W
 HStem: -12 41<322.971 474.511> 617 41<398.015 549.851>
 VStem: 97 135<138.519 366.411> 639 134<262.049 501.191>
 AnchorPoint: "unten_punkt" 350 -110 basechar 0
-AnchorPoint: "unten_anhang" 350 0 basechar 0
-AnchorPoint: "mittelpunkt" 346 322 basechar 0
-AnchorPoint: "top_akzent" 335 850 basechar 0
-AnchorPoint: "komb_OR" 620 606 basechar 0
+AnchorPoint: "top_akzent" 475 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1007,10 +973,7 @@ Width: 522
 GlyphClass: 2
 Flags: W
 AnchorPoint: "unten_punkt" 240 -110 basechar 0
-AnchorPoint: "unten_anhang" 150 -3 basechar 0
-AnchorPoint: "mittelpunkt" 286 464 basechar 0
-AnchorPoint: "top_akzent" 277 850 basechar 0
-AnchorPoint: "top_rechts" 509 732 basechar 0
+AnchorPoint: "top_akzent" 417 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1056,18 +1019,15 @@ GlyphClass: 2
 Flags: W
 HStem: -219 67<468.578 585.263> -124 54<221.5 304.477> -12 41<322.971 474.511> -2 30<380.91 418.933> 617 41<398.015 549.851>
 VStem: 97 135<138.519 366.411> 639 134<262.049 501.191>
-AnchorPoint: "mittelpunkt" 336 324 basechar 0
-AnchorPoint: "top_akzent" 348 850 basechar 0
-AnchorPoint: "komb_OR" 620 606 basechar 0
-AnchorPoint: "top_rechts" 619 732 basechar 0
+AnchorPoint: "top_akzent" 488 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-473 617 m 0
+473 617 m 0xee
  328 617 232 414 232 245 c 0
  232 107 303 29 402 29 c 0
  544 29 639 227 639 402 c 0
- 639 544 567 617 473 617 c 0
+ 639 544 567 617 473 617 c 0xee
 133.7 -130 m 0
  177.9 -86.4 242.9 -38.4 310.2 -6.4 c 1
  183 16.5 97 108.4 97 247 c 0
@@ -1097,10 +1057,7 @@ Flags: W
 HStem: -6 21G<484.5 520> -1 34<23.625 96.39 227.021 284> 5 35<539.641 594> 276 46<268 341.056> 602 40<136 195.273> 613 41<319.451 452.687>
 DStem2: 78.0494 -6 193.691 -6 0.199368 0.979925<126.827 315.18 359.285 617.367> 91.1135 -6 208.113 -6 0.199368 0.979925<73.2763 314.9 356.681 511.636> 453 294 346 247 0.310402 -0.950605<-3.08784 258.431>
 AnchorPoint: "unten_punkt" 258 -110 basechar 0
-AnchorPoint: "unten_anhang" 148 -1 basechar 0
-AnchorPoint: "mittelpunkt" 278 468 basechar 0
-AnchorPoint: "top_akzent" 269 850 basechar 0
-AnchorPoint: "top_rechts" 519 732 basechar 0
+AnchorPoint: "top_akzent" 409 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1153,10 +1110,7 @@ Flags: W
 HStem: -10 41<156.555 289.272> 0 21G<53.5 58.5> 619 39<265.892 383.993>
 VStem: 63 39<94.4261 175> 431 40<479 562.993>
 AnchorPoint: "unten_punkt" 234 -110 basechar 0
-AnchorPoint: "unten_anhang" 223.5 2 basechar 0
-AnchorPoint: "mittelpunkt" 236.1 345 basechar 0
-AnchorPoint: "top_akzent" 231.9 850 basechar 0
-AnchorPoint: "top_rechts" 480.8 732 basechar 0
+AnchorPoint: "top_akzent" 371.9 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1192,10 +1146,7 @@ HStem: -1 34<145.625 230.33 361.021 429> 599 47<181.203 327.915 449.609 606.731>
 VStem: 147 34<647.479 669> 618 40<519 587.821> 629 35<647.138 669>
 DStem2: 242 77 359 77 0.17332 0.984866<-14.9426 523.079>
 AnchorPoint: "unten_punkt" 300 -110 basechar 0
-AnchorPoint: "unten_anhang" 308 10 basechar 0
-AnchorPoint: "mittelpunkt" 307 285 basechar 0
-AnchorPoint: "top_akzent" 307 850 basechar 0
-AnchorPoint: "top_rechts" 619 732 basechar 0
+AnchorPoint: "top_akzent" 447 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1242,9 +1193,7 @@ HStem: -12 48<314.741 466.302> 613 33<140 199.75 336.84 411.719 577 636.75 729.4
 VStem: 137 123<91.1095 324.078>
 DStem2: 92.7473 -12 214.033 -12 0.199368 0.979925<214.143 603.872> 528.406 -12 605.947 -12 0.199368 0.979925<144.33 604.139>
 AnchorPoint: "unten_punkt" 328 -110 basechar 0
-AnchorPoint: "unten_anhang" 328 4 basechar 0
-AnchorPoint: "mittelpunkt" 336 321 basechar 0
-AnchorPoint: "top_akzent" 346 850 basechar 0
+AnchorPoint: "top_akzent" 486 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1295,10 +1244,7 @@ VWidth: 999
 GlyphClass: 2
 Flags: W
 AnchorPoint: "unten_punkt" 318 -110 basechar 0
-AnchorPoint: "unten_anhang" 318 3 basechar 0
-AnchorPoint: "mittelpunkt" 334 474 basechar 0
-AnchorPoint: "top_akzent" 336 850 basechar 0
-AnchorPoint: "top_rechts" 679 732 basechar 0
+AnchorPoint: "top_akzent" 476 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1344,9 +1290,7 @@ VWidth: 999
 GlyphClass: 2
 Flags: W
 AnchorPoint: "unten_punkt" 479 -110 basechar 0
-AnchorPoint: "unten_anhang" 295 0 basechar 0
-AnchorPoint: "top_akzent" 450 850 basechar 0
-AnchorPoint: "top_rechts" 979 732 basechar 0
+AnchorPoint: "top_akzent" 590 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1416,10 +1360,7 @@ VWidth: 999
 GlyphClass: 2
 Flags: W
 AnchorPoint: "unten_punkt" 307 -110 basechar 0
-AnchorPoint: "unten_anhang" 102 0 basechar 0
-AnchorPoint: "mittelpunkt" 326 325 basechar 0
-AnchorPoint: "top_akzent" 332 850 basechar 0
-AnchorPoint: "top_rechts" 689 732 basechar 0
+AnchorPoint: "top_akzent" 472 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1487,8 +1428,7 @@ VWidth: 999
 GlyphClass: 2
 Flags: W
 AnchorPoint: "unten_punkt" 295 -110 basechar 0
-AnchorPoint: "unten_anhang" 293 1 basechar 0
-AnchorPoint: "top_akzent" 295 850 basechar 0
+AnchorPoint: "top_akzent" 435 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1544,10 +1484,7 @@ VWidth: 999
 GlyphClass: 2
 Flags: W
 AnchorPoint: "unten_punkt" 287 -110 basechar 0
-AnchorPoint: "unten_anhang" 287 4 basechar 0
-AnchorPoint: "mittelpunkt" 305 321 basechar 0
-AnchorPoint: "top_akzent" 320 850 basechar 0
-AnchorPoint: "top_rechts" 619 732 basechar 0
+AnchorPoint: "top_akzent" 460 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1583,9 +1520,7 @@ Flags: W
 HStem: -10 50<163.172 283.77> 405 39<309.182 389.21>
 VStem: 78 122<53.0041 233.642>
 AnchorPoint: "unten_punkt" 196 -110 basechar 0
-AnchorPoint: "unten_anhang" 167 -3 basechar 0
-AnchorPoint: "ogonek" 410 16 basechar 0
-AnchorPoint: "top_akzent" 379 645 basechar 0
+AnchorPoint: "top_akzent" 519 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1626,8 +1561,6 @@ HStem: -17 21G<64 101> -10 35<201.73 303.017> 393 51<291.546 397.012> 637 35<151
 VStem: 420 122<200.908 370.439>
 DStem2: 85 74 196 50 0.227423 0.973796<-10.9398 340.05 378.587 545.59>
 AnchorPoint: "unten_punkt" 234 -110 basechar 0
-AnchorPoint: "mittelpunkt" 236 215 basechar 0
-AnchorPoint: "top_rechts" 420 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1668,10 +1601,7 @@ Flags: W
 HStem: -10 51<224.165 326.716> 405 39<288.139 367.057>
 VStem: 72 124<81.909 260.273> 367 116<300.612 397.112>
 AnchorPoint: "unten_punkt" 236 -110 basechar 0
-AnchorPoint: "unten_anhang" 242 -2 basechar 0
-AnchorPoint: "ogonek" 361 42 basechar 0
-AnchorPoint: "mittelpunkt" 236 215 basechar 0
-AnchorPoint: "top_akzent" 242 645 basechar 0
+AnchorPoint: "top_akzent" 382 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1700,11 +1630,7 @@ HStem: -10 49<144.878 280.772> 405 39<296.426 386.835> 637 35<408 440> 678 20G<5
 VStem: 70 123<54.5456 245.332>
 DStem2: 367 180 602 688 0.228268 0.973598<-72.1107 155.24 251.771 436.677>
 AnchorPoint: "unten_punkt" 221 -110 basechar 0
-AnchorPoint: "ogonek" 312 20 basechar 0
-AnchorPoint: "mittelpunkt" 236 215 basechar 0
-AnchorPoint: "top_akzent" 218 645 basechar 0
-AnchorPoint: "komb_OR" 500 466 basechar 0
-AnchorPoint: "top_rechts" 490 580 basechar 0
+AnchorPoint: "top_akzent" 358 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1748,11 +1674,7 @@ Flags: W
 HStem: -10 76<167 333.885> 400 44<278.742 408.047>
 VStem: 79 126<93.3365 187.832> 364 111<297.893 397.526>
 AnchorPoint: "unten_punkt" 234.2 -110 basechar 0
-AnchorPoint: "unten_anhang" 241 -3 basechar 0
-AnchorPoint: "ogonek" 384.3 41 basechar 0
-AnchorPoint: "mittelpunkt" 236 215 basechar 0
-AnchorPoint: "top_akzent" 242.6 645 basechar 0
-AnchorPoint: "komb_OR" 420 396 basechar 0
+AnchorPoint: "top_akzent" 382.6 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1778,13 +1700,11 @@ StartChar: u1D487
 Encoding: 119943 119943 31
 Width: 370
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 HStem: -238 47<-35.5 60.2596> 387 47<107.095 177 301 412.15> 662 36<372.502 418.87>
 VStem: 422 68<597.875 661.174>
 DStem2: 48.6117 -238 162.842 -238 0.199368 0.979925<392.789 638.049 708.828 831.665>
 AnchorPoint: "unten_punkt" 132 -110 basechar 0
-AnchorPoint: "mittelpunkt" 136 215 basechar 0
-AnchorPoint: "top_rechts" 398 750 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1827,9 +1747,7 @@ Flags: W
 HStem: -238 43<125.837 329.087> 132 40<230.945 294.211> 399 40<244.469 312.263 419.767 507.58>
 VStem: 7 87<-167.228 -83.5742> 104 114<188.112 354.302> 321 114<216.591 385.621> 352 95<-166.571 -81.1206>
 AnchorPoint: "unten_punkt" 199 -319 basechar 0
-AnchorPoint: "mittelpunkt" 267 284 basechar 0
-AnchorPoint: "top_akzent" 291 645 basechar 0
-AnchorPoint: "top_rechts" 552 580 basechar 0
+AnchorPoint: "top_akzent" 431 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1877,10 +1795,7 @@ HStem: -10 76<399 510.025> 374 65<399.804 534.501> 638 34<158.201 213.116> 678 2
 VStem: 371.1 123.6<22.6357 166.884>
 DStem2: 79.1442 -10 197.173 -10 0.199368 0.979925<27.9421 284.533> 91.2358 -10 203.954 -10 0.199368 0.979925<351.253 652.415> 355.534 -10 474.703 -10 0.199368 0.979925<119.273 385.654>
 AnchorPoint: "unten_punkt" 259 -110 basechar 0
-AnchorPoint: "ogonek" 423 10 basechar 0
-AnchorPoint: "mittelpunkt" 324 215 basechar 0
-AnchorPoint: "top_akzent" 469 645 basechar 0
-AnchorPoint: "top_rechts" 539 580 basechar 0
+AnchorPoint: "top_akzent" 609 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1922,10 +1837,7 @@ Flags: W
 HStem: 511 120<221.339 313.255>
 VStem: 208 119<524.745 617.255>
 AnchorPoint: "unten_punkt" 136 -110 basechar 0
-AnchorPoint: "unten_anhang" 137 12 basechar 0
-AnchorPoint: "ogonek" 209 10 basechar 0
-AnchorPoint: "mittelpunkt" 142 215 basechar 0
-AnchorPoint: "top_akzent" 137 795 basechar 0
+AnchorPoint: "top_akzent" 277 795 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1963,7 +1875,6 @@ HStem: -207 38<17.1499 66.2927> 390 33<132.357 175> 416 20<289 311.624> 511 120<
 VStem: 225 119<524.745 617.255>
 DStem2: 82.8027 -207 195.074 -207 0.199368 0.979925<192.958 584.024>
 AnchorPoint: "unten_punkt" 109 -319 basechar 0
-AnchorPoint: "mittelpunkt" 154 215 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1999,9 +1910,7 @@ Flags: W
 HStem: -10 72<408.5 499.945> 234 38<247 283.487> 364 75<459.063 553.525> 638 34<158.201 213.116> 678 20G<321.498 349.243>
 DStem2: 79.1442 -10 197.181 -10 0.199368 0.979925<27.9421 579.844> 306 302.664 340 270 0.748997 0.662574<3.82357 169.202>
 AnchorPoint: "unten_punkt" 290.1 -214.4 basechar 0
-AnchorPoint: "unten_anhang" 107.9 -57.3 basechar 0
-AnchorPoint: "top_akzent" 305.9 783.5 basechar 0
-AnchorPoint: "top_rechts" 535.6 696.4 basechar 0
+AnchorPoint: "top_akzent" 445.9 783.5 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2050,10 +1959,7 @@ HStem: -10 76<122.999 234.025> 638 34<158.201 211.064> 678 20G<324.913 349.243>
 VStem: 95.1 123.6<22.6357 164.058>
 DStem2: 79.5335 -10 198.702 -10 0.199368 0.979925<119.273 652.296>
 AnchorPoint: "unten_punkt" 135 -110 basechar 0
-AnchorPoint: "unten_anhang" 131 10 basechar 0
-AnchorPoint: "mittelpunkt" 136 215 basechar 0
-AnchorPoint: "top_akzent" 125 835 basechar 0
-AnchorPoint: "top_rechts" 249 732 basechar 0
+AnchorPoint: "top_akzent" 265 835 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2084,9 +1990,7 @@ HStem: -10 76<701.32 772.275> 374 65<396.893 493.911 663.893 760.731> 390 33<105
 VStem: 164 127.5<322.089 422.866> 634.1 123.6<22.6357 166.884>
 DStem2: 85.1389 -10 203.174 -10 0.199368 0.979925<27.9432 283.604 340.416 384.733> 618.534 -10 737.703 -10 0.199368 0.979925<119.273 385.654>
 AnchorPoint: "unten_punkt" 408 -110 basechar 0
-AnchorPoint: "unten_anhang" 137 9 basechar 0
-AnchorPoint: "mittelpunkt" 278 215 basechar 0
-AnchorPoint: "top_akzent" 392 645 basechar 0
+AnchorPoint: "top_akzent" 532 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2141,9 +2045,7 @@ HStem: -10 76<405 516.025> 374 65<405.282 503.731> 390 33<105.728 149>
 VStem: 164 127.5<322.089 422.866> 377.1 123.6<22.6357 166.884>
 DStem2: 85.1389 -10 203.174 -10 0.199368 0.979925<27.9432 283.604 340.416 384.733> 361.534 -10 480.703 -10 0.199368 0.979925<119.273 385.654>
 AnchorPoint: "unten_punkt" 265 -110 basechar 0
-AnchorPoint: "unten_anhang" 128 9 basechar 0
-AnchorPoint: "mittelpunkt" 264 215 basechar 0
-AnchorPoint: "top_akzent" 264 646 basechar 0
+AnchorPoint: "top_akzent" 404 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2187,11 +2089,7 @@ Flags: W
 HStem: -10 42<230.854 321.738> 402 42<268.521 366.128>
 VStem: 72 126<77.8273 270.273> 393 124<173.334 366.428>
 AnchorPoint: "unten_punkt" 243 -110 basechar 0
-AnchorPoint: "unten_anhang" 241 -3 basechar 0
-AnchorPoint: "ogonek" 372 44 basechar 0
-AnchorPoint: "mittelpunkt" 236 215 basechar 0
-AnchorPoint: "top_akzent" 238 645 basechar 0
-AnchorPoint: "komb_OR" 420 396 basechar 0
+AnchorPoint: "top_akzent" 378 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2219,8 +2117,7 @@ HStem: -234 33<-37.8125 29.7859 181.091 239.812> -10 42<232.329 334.595> 390 54<
 VStem: 430 124<197.3 371.539>
 DStem2: 62 -110 179.869 -106.668 0.22334 0.974741<-18.3495 139.911 193.324 390.583 440.478 535.457 573.138 573.244>
 AnchorPoint: "unten_punkt" 179 -319 basechar 0
-AnchorPoint: "top_akzent" 271 646 basechar 0
-AnchorPoint: "top_rechts" 429 580 basechar 0
+AnchorPoint: "top_akzent" 411 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2265,9 +2162,7 @@ HStem: -234 33<209.188 276.415 428.091 486.812> -10 49<211.661 293.119> 405 39<3
 VStem: 76 124<49.4554 234.624>
 DStem2: 345 41 426.869 -106.668 0.224548 0.974463<-173.43 0 68.6845 297.387>
 AnchorPoint: "unten_punkt" 348 -319 basechar 0
-AnchorPoint: "mittelpunkt" 236 215 basechar 0
-AnchorPoint: "top_akzent" 238 645 basechar 0
-AnchorPoint: "top_rechts" 469 732 basechar 0
+AnchorPoint: "top_akzent" 378 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2306,10 +2201,7 @@ Flags: W
 HStem: -10 21G<118 174> 369 67<374.253 440.861> 390 33<102.728 146>
 VStem: 164 127.5<277.711 420.971>
 AnchorPoint: "unten_punkt" 135 -110 basechar 0
-AnchorPoint: "unten_anhang" 134 7 basechar 0
-AnchorPoint: "mittelpunkt" 136 185 basechar 0
-AnchorPoint: "top_akzent" 191 646 basechar 0
-AnchorPoint: "top_rechts" 349 580 basechar 0
+AnchorPoint: "top_akzent" 331 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2342,14 +2234,11 @@ StartChar: u1D494
 Encoding: 119956 119956 44
 Width: 417
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 HStem: -12 37.6<179.584 279.473> 405.8 38.2<251.071 327.822>
 VStem: 45 119.1<40.5538 138.929> 126.3 109<283.325 383.982> 303.3 117<60.3785 152.976> 327.3 113<300.75 401.809>
 AnchorPoint: "unten_punkt" 196 -110 basechar 0
-AnchorPoint: "unten_anhang" 194 1 basechar 0
-AnchorPoint: "ogonek" 290 13 basechar 0
-AnchorPoint: "top_akzent" 326 645 basechar 0
-AnchorPoint: "top_rechts" 446 580 basechar 0
+AnchorPoint: "top_akzent" 466 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2383,8 +2272,6 @@ HStem: -10 76<146.055 241.76> 382 47<108.097 184 302 407.389>
 VStem: 113.3 112.1<22.0141 169.164>
 DStem2: 96.9581 -10 204.127 -10 0.199368 0.979925<118.524 401.484 471.066 578.094>
 AnchorPoint: "unten_punkt" 133 -107 basechar 0
-AnchorPoint: "unten_anhang" 170 -3 basechar 0
-AnchorPoint: "ogonek" 227 15 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2419,15 +2306,12 @@ StartChar: u1D496
 Encoding: 119958 119958 46
 Width: 561
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 HStem: -10 59<183.557 269.606> 367 77<160.657 265> 416 20G<437.5 563>
 VStem: 108 120<49.1731 183.188> 354 125<19.4844 125.867>
 DStem2: 119 141 238 153 0.247959 0.968771<-29.3913 215.427> 399 236 486 125 0.240332 0.970691<-121.826 207.996>
 AnchorPoint: "unten_punkt" 239 -110 basechar 0
-AnchorPoint: "unten_anhang" 213 0 basechar 0
-AnchorPoint: "ogonek" 293 7 basechar 0
-AnchorPoint: "mittelpunkt" 252 215 basechar 0
-AnchorPoint: "top_akzent" 255 645 basechar 0
+AnchorPoint: "top_akzent" 395 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2470,9 +2354,7 @@ HStem: -12 21G<252.5 274> 362 82<165.908 260.5>
 VStem: 440 89.5<310 414.88>
 DStem2: 320.329 129.991 304 12 0.560453 0.828186<0 221.404>
 AnchorPoint: "unten_punkt" 241 -110 basechar 0
-AnchorPoint: "mittelpunkt" 247 267 basechar 0
-AnchorPoint: "top_akzent" 256 646 basechar 0
-AnchorPoint: "top_rechts" 460 580 basechar 0
+AnchorPoint: "top_akzent" 396 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2507,8 +2389,7 @@ HStem: -12 21G<237 256.5 486.5 508> 221.7 159.8<399.66 464.75> 362 82<165.909 26
 VStem: 636 85<310.976 418.29>
 DStem2: 293 344 179 341 0.0797452 -0.996815<-27.743 179.387> 307 164 390 210 0.503317 0.864102<0 97.2747> 542 130 526 12 0.508479 0.861074<0 208.181>
 AnchorPoint: "unten_punkt" 352 -110 basechar 0
-AnchorPoint: "top_akzent" 345 646 basechar 0
-AnchorPoint: "top_rechts" 719 580 basechar 0
+AnchorPoint: "top_akzent" 485 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2599,7 +2480,7 @@ HStem: -232 79<52.1474 154.49> 362 82<163.908 256>
 VStem: 460 89.5<313.721 414.88>
 DStem2: 236 -68 299 -67 0.52424 0.85157<-102.465 72.4521 188.218 444.729>
 AnchorPoint: "unten_punkt" 242 -319 basechar 0
-AnchorPoint: "top_akzent" 262 645 basechar 0
+AnchorPoint: "top_akzent" 402 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2637,10 +2518,7 @@ Flags: W
 HStem: -15 21G<90.1352 111.5> -10 85<261.271 376.543> 352 63<296.852 408.5> 360 84<160.959 331.581>
 VStem: 94 32<316.594 327.336>
 AnchorPoint: "unten_punkt" 207 -110 basechar 0
-AnchorPoint: "unten_anhang" 208 4 basechar 0
-AnchorPoint: "mittelpunkt" 207 215 basechar 0
-AnchorPoint: "top_akzent" 220 646 basechar 0
-AnchorPoint: "top_rechts" 399 580 basechar 0
+AnchorPoint: "top_akzent" 360 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2770,7 +2648,6 @@ GlyphClass: 2
 Flags: W
 HStem: 1 32<4 78 218 304> 599 46<231 424> 611 34<14 155>
 VStem: 94 123<41 593> 449 52<476 514>
-AnchorPoint: "unten_anhang" 143 10 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4716,7 +4593,7 @@ GlyphClass: 2
 Flags: W
 HStem: -12 54<207 394> 386 59<99 161>
 VStem: 86 114<86 253> 418 80<115 356>
-AnchorPoint: "top_akzent" 259 645 basechar 0
+AnchorPoint: "top_akzent" 399 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
