@@ -74,6 +74,7 @@ Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0"  {"'nalt' Alternate A
 Lookup: 1 0 0 "Substitution dotless forms"  {"Substitution dotless forms 1"  } []
 Lookup: 1 0 0 "Substitution cap-Accents"  {"Substitution cap-Accents 1"  } []
 Lookup: 1 0 0 "Substitution f short"  {"Substitution f short 1"  } []
+Lookup: 3 0 0 "'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34"  {"'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34-1"  } ['ssty' ('DFLT' <'dflt' > 'math' <'dflt' > ) ]
 Lookup: 257 0 0 "'opbd' Optical Bounds lookup 6"  {"'opbd' Optical Bounds lookup 6-1"  } ['opbd' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > 'math' <'dflt' > ) ]
 Lookup: 257 0 0 "'cpsp' Versalabstaende"  {"'cpsp' Versalabstaende 1"  } ['cpsp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Top rechts"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
@@ -715,7 +716,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 0 262144 133120 88746 450560 -1048576 88746 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114114 2677
+BeginChars: 1114120 2685
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -56147,7 +56148,7 @@ StartChar: .notdef
 Encoding: 1114112 -1 1275
 Width: 500
 VWidth: 488
-Flags: HW
+Flags: W
 HStem: 0 50<80 420> 647 51<80 420>
 VStem: 0 50<95 603> 450 50<95 603>
 LayerCount: 2
@@ -60430,9 +60431,10 @@ StartChar: minute
 Encoding: 8242 8242 1372
 Width: 249
 VWidth: 487
-Flags: HW
+Flags: W
 TeX: 38 0
-HStem: 643 15
+HStem: 475 183
+VStem: 73 124
 LayerCount: 2
 Fore
 SplineSet
@@ -60446,6 +60448,7 @@ SplineSet
  127 641 l 2
  131 652 142 658 155 658 c 0
 EndSplineSet
+AlternateSubs2: "'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34-1" minute.ssty1
 Colour: ff00ff
 EndChar
 
@@ -60478,6 +60481,7 @@ SplineSet
  127 641 l 2
  131 652 142 658 155 658 c 0
 EndSplineSet
+AlternateSubs2: "'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34-1" second.ssty1
 Colour: ff00ff
 EndChar
 
@@ -71885,6 +71889,7 @@ SplineSet
  127 641 l 2
  131 652 142 658 155 658 c 0
 EndSplineSet
+AlternateSubs2: "'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34-1" primetriple.ssty1
 Colour: ff00ff
 EndChar
 
@@ -71911,6 +71916,7 @@ SplineSet
  57 610 55 614 55 619 c 0
  55 632 62 643 75 652 c 0
 EndSplineSet
+AlternateSubs2: "'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34-1" primereversed.ssty1
 Colour: ff00ff
 EndChar
 
@@ -71949,6 +71955,7 @@ SplineSet
  167 610 165 614 165 619 c 0
  165 632 172 643 185 652 c 0
 EndSplineSet
+AlternateSubs2: "'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34-1" uni2036.ssty1
 Colour: ff00ff
 EndChar
 
@@ -71999,6 +72006,7 @@ SplineSet
  57 610 55 614 55 619 c 0
  55 632 62 643 75 652 c 0
 EndSplineSet
+AlternateSubs2: "'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34-1" uni2037.ssty1
 Colour: ff00ff
 EndChar
 
@@ -119841,6 +119849,156 @@ SplineSet
  471 415 477 419 482 432 c 2
  537 577 l 2
 EndSplineSet
+EndChar
+
+StartChar: minute.ssty1
+Encoding: 1114113 -1 2677
+Width: 382
+VWidth: 487
+Flags: HW
+HStem: 32 389
+VStem: 65 264
+LayerCount: 2
+Back
+SplineSet
+234.25 420.5625 m 0
+ 276.75 420.5625 323.5 388.6875 323.5 346.1875 c 0
+ 323.5 335.5625 319.25 318.5625 310.75 307.9375 c 2
+ 115.25 48.6875 l 2
+ 108.875 40.1875 98.25 31.6875 89.75 31.6875 c 0
+ 72.75 31.6875 60 44.4375 60 59.3125 c 0
+ 60 65.6875 62.125 74.1875 64.25 80.5625 c 2
+ 174.75 384.4375 l 2
+ 183.25 407.8125 206.625 420.5625 234.25 420.5625 c 0
+EndSplineSet
+Fore
+SplineSet
+304 315 m 2
+ 120 49 l 2
+ 114 40 103 32 95 32 c 0
+ 78 32 65 44 65 59 c 0
+ 65 65 66 75 69 81 c 2
+ 192 375 l 2
+ 203 405 236 433 279 412 c 0
+ 324 390 325 348 304 315 c 2
+EndSplineSet
+EndChar
+
+StartChar: second.ssty1
+Encoding: 1114114 -1 2678
+Width: 662
+VWidth: 446
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2677 -1 N 1 0 0 1 0 0 2
+Refer: 2677 -1 N 1 0 0 1 280.5 0 2
+EndChar
+
+StartChar: primetriple.ssty1
+Encoding: 1114115 -1 2679
+Width: 942
+VWidth: 446
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2677 -1 N 1 0 0 1 560.5 0 2
+Refer: 2677 -1 N 1 0 0 1 0 0 2
+Refer: 2677 -1 N 1 0 0 1 280.5 0 2
+EndChar
+
+StartChar: primereversed.ssty1
+Encoding: 1114116 -1 2680
+Width: 382
+VWidth: 999
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2677 -1 N -1 0 0 1 382.46 0 2
+EndChar
+
+StartChar: uni2036.ssty1
+Encoding: 1114117 -1 2681
+Width: 662
+VWidth: 446
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2677 -1 N -1 0 0 1 662.46 0 2
+Refer: 2677 -1 N -1 0 0 1 382.46 0 2
+EndChar
+
+StartChar: uni2037.ssty1
+Encoding: 1114118 -1 2682
+Width: 942
+VWidth: 446
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2677 -1 N -1 0 0 1 942.46 0 2
+Refer: 2677 -1 N -1 0 0 1 662.46 0 2
+Refer: 2677 -1 N -1 0 0 1 382.46 0 2
+EndChar
+
+StartChar: uni2057
+Encoding: 8279 8279 2683
+Width: 639
+Flags: HW
+HStem: 643 15
+LayerCount: 2
+Fore
+SplineSet
+545 658 m 0
+ 565 658 587 643 587 623 c 0
+ 587 618 585 610 581 605 c 2
+ 489 483 l 2
+ 486 479 481 475 477 475 c 0
+ 469 475 463 481 463 488 c 0
+ 463 491 464 495 465 498 c 2
+ 517 641 l 2
+ 521 652 532 658 545 658 c 0
+415 658 m 0
+ 435 658 457 643 457 623 c 0
+ 457 618 455 610 451 605 c 2
+ 359 483 l 2
+ 356 479 351 475 347 475 c 0
+ 339 475 333 481 333 488 c 0
+ 333 491 334 495 335 498 c 2
+ 387 641 l 2
+ 391 652 402 658 415 658 c 0
+285 658 m 0
+ 305 658 327 643 327 623 c 0
+ 327 618 325 610 321 605 c 2
+ 229 483 l 2
+ 226 479 221 475 217 475 c 0
+ 209 475 203 481 203 488 c 0
+ 203 491 204 495 205 498 c 2
+ 257 641 l 2
+ 261 652 272 658 285 658 c 0
+155 658 m 0
+ 175 658 197 643 197 623 c 0
+ 197 618 195 610 191 605 c 2
+ 99 483 l 2
+ 96 479 91 475 87 475 c 0
+ 79 475 73 481 73 488 c 0
+ 73 491 74 495 75 498 c 2
+ 127 641 l 2
+ 131 652 142 658 155 658 c 0
+EndSplineSet
+AlternateSubs2: "'ssty' Script Style in Mathematical Alphanumeric Symbols lookup 34-1" uni2057.ssty1
+EndChar
+
+StartChar: uni2057.ssty1
+Encoding: 1114119 -1 2684
+Width: 1222
+VWidth: 446
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2677 -1 N 1 0 0 1 840.5 0 2
+Refer: 2677 -1 N 1 0 0 1 560.5 0 2
+Refer: 2677 -1 N 1 0 0 1 0 0 2
+Refer: 2677 -1 N 1 0 0 1 280.5 0 2
 EndChar
 EndChars
 EndSplineFont
