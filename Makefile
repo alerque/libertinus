@@ -3,20 +3,24 @@ VERSION=5.3.1
 
 DIST=$(NAME)-$(VERSION)
 
-FF=fontforge -lang=ff
-FFLAGES=-1
-SCRIPT='Open($$1);\
-       if ($$argc>3)\
-         MergeFeature($$2);\
-       endif;\
-       MergeFonts("it.sfd");\
-       MergeFonts("bf.sfd");\
-       MergeFonts("bi.sfd");\
-       MergeFonts("sfup.sfd");\
-       MergeFonts("sfit.sfd");\
-       MergeFonts("sfbf.sfd");\
-       SetFontNames("","","","","","$(VERSION)");\
-       Generate($$argv[$$argc-1], "", $(FFLAGES))'
+PY=python
+
+define $(NAME)SCRIPT
+import fontforge, sys
+f = fontforge.open(sys.argv[1])
+if len(sys.argv) > 3:
+  f.mergeFeature(sys.argv[3])
+f.mergeFonts("it.sfd")
+f.mergeFonts("bf.sfd")
+f.mergeFonts("bi.sfd")
+f.mergeFonts("sfup.sfd")
+f.mergeFonts("sfit.sfd")
+f.mergeFonts("sfbf.sfd")
+f.version = "$(VERSION)"
+f.generate(sys.argv[2], flags=("round", "opentype"))
+endef
+
+export $(NAME)SCRIPT
 
 FONTS=MR
 
@@ -29,4 +33,4 @@ otf: $(OTF)
 
 %.otf: %.sfd Makefile it.sfd bf.sfd bi.sfd sfup.sfd sfit.sfd sfbf.sfd
 	@echo "Building $@"
-	@$(FF) -c $(SCRIPT) $< $@ 2>/dev/stdout 1>/dev/stderr | tail -n +4
+	@$(PY) -c "$$$(NAME)SCRIPT" $< $@
