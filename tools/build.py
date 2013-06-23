@@ -14,4 +14,4 @@ font.mergeFonts("sources/sfit.sfd")
 font.mergeFonts("sources/sfbf.sfd")
 
 font.version = sys.argv[3]
-font.generate(sys.argv[2], flags=("round", "opentype"))
+font.generate(sys.argv[2], flags=("opentype"))
