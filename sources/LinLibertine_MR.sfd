@@ -707,7 +707,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 0 262144 133120 88746 450560 -1048576 88746 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114436 2593
+BeginChars: 1114444 2601
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -903,7 +903,9 @@ StartChar: parenleft
 Encoding: 40 40 5
 Width: 298
 VWidth: 999
-Flags: HW
+Flags: W
+GlyphVariantsVertical: parenleft parenleft.size1 parenleft.size2 parenleft.size3 parenleft.size4
+GlyphCompositionVertical: 3  uni239D%0,298,298,893 uni239C%1,298,298,893 uni239B%0,298,298,893
 VStem: 44 83<97.6984 405.148>
 LayerCount: 2
 Fore
@@ -917,16 +919,18 @@ SplineSet
  48 -24 44 207 44 252 c 0
 EndSplineSet
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" parenleft.sc
-Substitution2: "'sinf' Wissenschaftliche Indices 1" parenleft.inferior
-Substitution2: "'sups' Hochgestellte 1" parenleft.superior
 Substitution2: "'case' Versalformen 1" parenleft.sc
+Substitution2: "'sups' Hochgestellte 1" parenleft.superior
+Substitution2: "'sinf' Wissenschaftliche Indices 1" parenleft.inferior
 EndChar
 
 StartChar: parenright
 Encoding: 41 41 6
 Width: 298
 VWidth: 999
-Flags: HW
+Flags: W
+GlyphVariantsVertical: parenright parenright.size1 parenright.size2 parenright.size3 parenright.size4
+GlyphCompositionVertical: 3  uni23A0%0,298,298,893 uni239F%1,298,298,893 uni239E%0,298,298,893
 VStem: 171 83<98.8522 406.302>
 LayerCount: 2
 Fore
@@ -940,9 +944,9 @@ SplineSet
  250 528 254 297 254 252 c 0
 EndSplineSet
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" parenright.sc
-Substitution2: "'sinf' Wissenschaftliche Indices 1" parenright.inferior
-Substitution2: "'sups' Hochgestellte 1" parenright.superior
 Substitution2: "'case' Versalformen 1" parenright.sc
+Substitution2: "'sups' Hochgestellte 1" parenright.superior
+Substitution2: "'sinf' Wissenschaftliche Indices 1" parenright.inferior
 Colour: ff00ff
 EndChar
 
@@ -115444,6 +115448,118 @@ Refer: 2585 -1 N 1 0 0 1 840.5 0 2
 Refer: 2585 -1 N 1 0 0 1 560.5 0 2
 Refer: 2585 -1 N 1 0 0 1 0 0 2
 Refer: 2585 -1 N 1 0 0 1 280.5 0 2
+EndChar
+
+StartChar: parenleft.size1
+Encoding: 1114436 -1 2593
+Width: 468
+Flags: W
+VStem: 137 83<258.234 643.766>
+LayerCount: 2
+Fore
+SplineSet
+220 451 m 0
+ 220 714 268 899 400 1045 c 1
+ 397 1055 390 1062 379 1063 c 1
+ 200 901 137 637 137 451 c 0
+ 137 265 200 1 379 -161 c 1
+ 390 -160 397 -153 400 -143 c 1
+ 268 3 220 188 220 451 c 0
+EndSplineSet
+EndChar
+
+StartChar: parenright.size1
+Encoding: 1114437 -1 2594
+Width: 468
+Flags: W
+VStem: 248 83<258.234 643.766>
+LayerCount: 2
+Fore
+Refer: 2593 -1 N -1 0 0 1 468 0 3
+EndChar
+
+StartChar: parenleft.size2
+Encoding: 1114438 -1 2595
+Width: 608
+Flags: W
+VStem: 139 95<385.393 900.607>
+LayerCount: 2
+Fore
+SplineSet
+139 643 m 24
+ 139 1027 253 1353 496 1561 c 1
+ 507 1560 514 1553 517 1543 c 1
+ 278 1268 234 906 234 643 c 0
+ 234 380 278 18 517 -257 c 1
+ 514 -267 507 -274 496 -275 c 1
+ 253 -67 139 259 139 643 c 24
+EndSplineSet
+EndChar
+
+StartChar: parenright.size2
+Encoding: 1114439 -1 2596
+Width: 608
+Flags: W
+VStem: 374 95<385.393 900.607>
+LayerCount: 2
+Fore
+Refer: 2595 -1 N -1 0 0 1 608 0 3
+EndChar
+
+StartChar: parenleft.size3
+Encoding: 1114440 -1 2597
+Width: 750
+Flags: W
+VStem: 183 109<573.397 1098.6>
+LayerCount: 2
+Fore
+SplineSet
+292 836 m 24
+ 292 1330 373 1719 679 2041 c 1
+ 676 2051 669 2058 658 2059 c 1
+ 355 1802 183 1348 183 836 c 24
+ 183 324 355 -130 658 -387 c 1
+ 669 -386 676 -379 679 -369 c 1
+ 373 -47 292 342 292 836 c 24
+EndSplineSet
+EndChar
+
+StartChar: parenright.size3
+Encoding: 1114441 -1 2598
+Width: 750
+Flags: W
+VStem: 458 109<573.397 1098.6>
+LayerCount: 2
+Fore
+Refer: 2597 -1 N -1 0 0 1 750 0 3
+EndChar
+
+StartChar: parenleft.size4
+Encoding: 1114442 -1 2599
+Width: 808
+Flags: W
+VStem: 124 130<746.262 1311.74>
+LayerCount: 2
+Fore
+SplineSet
+124 1029 m 0
+ 124 1628 322 2219 723 2559 c 1
+ 734 2558 741 2551 744 2541 c 1
+ 438 2219 254 1649 254 1029 c 24
+ 254 409 438 -161 744 -483 c 1
+ 741 -493 734 -500 723 -501 c 1
+ 322 -161 124 430 124 1029 c 0
+EndSplineSet
+EndChar
+
+StartChar: parenright.size4
+Encoding: 1114443 -1 2600
+Width: 808
+Flags: W
+VStem: 554 130<746.262 1311.74>
+LayerCount: 2
+Fore
+Refer: 2599 -1 N -1 0 0 1 808 0 3
 EndChar
 EndChars
 EndSplineFont
