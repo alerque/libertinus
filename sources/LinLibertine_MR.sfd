@@ -41,7 +41,6 @@ HheadDOffset: 0
 OS2FamilyClass: 261
 OS2Vendor: 'PfEd'
 Lookup: 3 0 0 "'aalt' Alle Alternativen zeigen"  {"'aalt' Alle Alternativen zeigen 1"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'locl' Localized Forms Romaenisch"  {"'locl' Localized Forms Romaenisch 1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic"  {"'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
 Lookup: 1 0 0 "'fina' Wortendeformen"  {"'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
 Lookup: 6 0 0 "'frac' Contextual Chaining Substitution"  {"'frac' Contextual Chaining Substitution-1"  "'frac' Contextual Chaining Substitution-2"  } ['frac' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
@@ -21143,7 +21142,6 @@ SplineSet
  253 -110 243 -96 220 -96 c 0
 EndSplineSet
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Scommaaccent scedilla scommaaccent.sc
-Substitution2: "'locl' Localized Forms Romaenisch 1" Scommaaccent
 Colour: ff00ff
 EndChar
 
@@ -21191,7 +21189,6 @@ SplineSet
  75 3 65 2 55 0 c 1
  55 42 52 89 48 138 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent scommaaccent.sc
 Colour: ff00ff
 EndChar
@@ -21330,7 +21327,6 @@ SplineSet
  321 -171 342 -157 342 -131 c 0
  342 -110 332 -96 309 -96 c 0
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" Tcommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Tcommaaccent tcommaaccent.sc tcedilla.sc
 Colour: ff00ff
 EndChar
@@ -21384,7 +21380,6 @@ SplineSet
  180 -171 201 -157 201 -131 c 0
  201 -110 191 -96 168 -96 c 0
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" tcommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" tcedilla.sc tcommaaccent tcommaaccent.sc
 Colour: ff00ff
 EndChar
