@@ -1,17 +1,11 @@
 import fontforge
 import sys
 
-font = fontforge.open(sys.argv[1])
+font = fontforge.open(sys.argv[3])
 
 if len(sys.argv) > 4:
-  font.mergeFeature(sys.argv[4])
+  for filename in sys.argv[4:-1]:
+    font.mergeFonts(filename)
 
-font.mergeFonts("sources/it.sfd")
-font.mergeFonts("sources/bf.sfd")
-font.mergeFonts("sources/bi.sfd")
-font.mergeFonts("sources/sfup.sfd")
-font.mergeFonts("sources/sfit.sfd")
-font.mergeFonts("sources/sfbf.sfd")
-
-font.version = sys.argv[3]
-font.generate(sys.argv[2], flags=("opentype"))
+font.version = sys.argv[2]
+font.generate(sys.argv[1], flags=("opentype"))
