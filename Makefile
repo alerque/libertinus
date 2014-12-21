@@ -1,5 +1,5 @@
-NAME=LinLibertine
-VERSION=5.3.1
+NAME=libertine
+VERSION=5.3.0
 
 DIST=$(NAME)-$(VERSION)
 
@@ -9,15 +9,19 @@ TOOLS=tools
 PY=python
 BUILD=$(TOOLS)/build.py
 
-FONTS=MR
+FONTS=math-regular sans-regular sans-bold sans-italic serif-regular serif-semibold serif-bold serif-italic serif-semibolditalic serif-bolditalic
 
-SFD=$(FONTS:%=$(SRC)/$(NAME)_%.sfd)
-OTF=$(FONTS:%=$(NAME)_%.otf)
+SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
+OTF=$(FONTS:%=$(NAME)%.otf)
 
 all: otf
 
 otf: $(OTF)
 
-%.otf: $(SRC)/%.sfd Makefile $(BUILD) $(SRC)/it.sfd $(SRC)/bf.sfd $(SRC)/bi.sfd $(SRC)/sfup.sfd $(SRC)/sfit.sfd $(SRC)/sfbf.sfd
+libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/it.sfd $(SRC)/bf.sfd $(SRC)/bi.sfd $(SRC)/sfup.sfd $(SRC)/sfit.sfd $(SRC)/sfbf.sfd
 	@echo "Building $@"
-	@$(PY) $(BUILD) $< $@ $(VERSION)
+	@$(PY) $(BUILD) $@ $(VERSION) $^
+
+%.otf: $(SRC)/%.sfd
+	@echo "Building $@"
+	@$(PY) $(BUILD) $@ $(VERSION) $^
