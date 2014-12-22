@@ -1,12 +1,18 @@
-Libertine Math
-==============
+Libertine fonts
+===============
 
-Libertine Math is an OpenType math companion of the Libertine font family for
-use with OpenType math-capable applications like LuaTeX, XeTeX or MS Word
-2007+.
+Libertine fonts is a fork of the Linux Libertine and Linux Biolinum fonts that
+started as an OpenType math companion of the Libertine font family, but grown
+as a full forl to address some of the bugs in the fonts.
 
-Libertine Math is in its the early development stages, and there aren’t any
-releases yet.
+The family consists of:
 
-Libertine Math, like its parent, is available under the terms of Open Font
-License version 1.1.
+* Libertine Serif: formerly _Linux Libertine_.
+* Libertine Sans: formerlt _Linux Biolinum_.
+* Libertine Math: an OpenType math font for use in OpenType math-capable
+  applications like LuaTeX, XeTeX or MS Word 2007+.
+
+  Libertine Math is in its the early development stages, and there aren’t any
+  releases yet.
+
+Libertine fonts are available under the terms of Open Font License version 1.1.
