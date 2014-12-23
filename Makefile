@@ -17,6 +17,7 @@ FONTS=math-regular \
       serifdisplay-regular \
       serifinitials-regular \
       mono-regular \
+      keyboard-regular \
       $(NULL)
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
