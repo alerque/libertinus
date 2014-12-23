@@ -14,6 +14,7 @@ NULL=
 FONTS=math-regular \
       sans-regular sans-bold sans-italic serif-regular \
       serif-semibold serif-bold serif-italic serif-semibolditalic serif-bolditalic \
+      serifdisplay-regular \
       $(NULL)
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
