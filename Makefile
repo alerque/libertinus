@@ -9,7 +9,12 @@ TOOLS=tools
 PY=python
 BUILD=$(TOOLS)/build.py
 
-FONTS=math-regular sans-regular sans-bold sans-italic serif-regular serif-semibold serif-bold serif-italic serif-semibolditalic serif-bolditalic
+NULL=
+
+FONTS=math-regular \
+      sans-regular sans-bold sans-italic serif-regular \
+      serif-semibold serif-bold serif-italic serif-semibolditalic serif-bolditalic \
+      $(NULL)
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 OTF=$(FONTS:%=$(NAME)%.otf)
