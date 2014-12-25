@@ -41,7 +41,6 @@ HheadDOffset: 0
 OS2FamilyClass: 2050
 OS2Vendor: 'PfEd'
 Lookup: 3 0 0 "'aalt' Alle Alternativen zeigen"  {"'aalt' Alle Alternativen zeigen 1"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'locl' Localized Forms Romaenisch"  {"'locl' Localized Forms Romaenisch 1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc"  {"'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'DEU ' 'MOL ' 'ROM ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen"  {"'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  {"'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
@@ -20107,7 +20106,6 @@ SplineSet
  265 -102.4 212 -98 176 -96 c 1
 EndSplineSet
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Scommaaccent scedilla scommaaccent.sc
-Substitution2: "'locl' Localized Forms Romaenisch 1" Scommaaccent
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
@@ -20152,7 +20150,6 @@ SplineSet
  208.3 -175.5 225 -167 225 -140 c 0
  225 -102.4 172 -98 136 -96 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent scommaaccent.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
@@ -20287,7 +20284,6 @@ SplineSet
  314.3 -175.5 331 -167 331 -140 c 0
  331 -102.4 278 -98 242 -96 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" uni021A
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni021A uni021B.sc tcommaaccent.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" tcommaaccent.sc
@@ -20340,7 +20336,6 @@ SplineSet
  198.3 -185.5 215 -177 215 -150 c 0
  215 -112.4 162 -108 126 -106 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" uni021B
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" tcommaaccent.sc uni021B uni021B.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcommaaccent.sc
 Colour: ff00ff
@@ -87498,7 +87493,6 @@ SplineSet
  210.3 -175.5 227 -167 227 -140 c 0
  227 -102.4 174 -98 138 -96 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent.sc
 Colour: ff00ff
 EndChar
 
@@ -87583,7 +87577,6 @@ SplineSet
  259.3 -175.5 276 -167 276 -140 c 0
  276 -102.4 223 -98 187 -96 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" uni021B.sc
 Colour: ff00ff
 EndChar
 

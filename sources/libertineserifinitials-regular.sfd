@@ -41,7 +41,6 @@ HheadDOffset: 0
 OS2FamilyClass: 261
 OS2Vendor: 'PfEd'
 Lookup: 3 0 0 "'aalt' Alle Alternativen zeigen"  {"'aalt' Alle Alternativen zeigen 1"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'locl' Localized Forms Romaenisch"  {"'locl' Localized Forms Romaenisch 1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc"  {"'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'DEU ' 'MOL ' 'ROM ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen"  {"'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  {"'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
@@ -10524,7 +10523,6 @@ VWidth: 999
 Flags: H
 LayerCount: 2
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Scommaaccent scedilla scommaaccent.sc
-Substitution2: "'locl' Localized Forms Romaenisch 1" Scommaaccent
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
@@ -10536,7 +10534,6 @@ Width: 1000
 VWidth: 999
 Flags: H
 LayerCount: 2
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent scommaaccent.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
@@ -10570,7 +10567,6 @@ Width: 1000
 VWidth: 999
 Flags: H
 LayerCount: 2
-Substitution2: "'locl' Localized Forms Romaenisch 1" Tcommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Tcommaaccent tcommaaccent.sc tcedilla.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" tcedilla.sc
@@ -10583,7 +10579,6 @@ Width: 1000
 VWidth: 999
 Flags: H
 LayerCount: 2
-Substitution2: "'locl' Localized Forms Romaenisch 1" tcommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" tcedilla.sc tcommaaccent tcommaaccent.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcedilla.sc
 Colour: ff00ff
@@ -54222,7 +54217,6 @@ Width: 1000
 VWidth: 999
 Flags: H
 LayerCount: 2
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent.sc
 Colour: ff00ff
 EndChar
 
@@ -54241,7 +54235,6 @@ Width: 1000
 VWidth: 999
 Flags: H
 LayerCount: 2
-Substitution2: "'locl' Localized Forms Romaenisch 1" tcommaaccent.sc
 Colour: ff00ff
 EndChar
 

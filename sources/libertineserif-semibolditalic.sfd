@@ -64,7 +64,6 @@ Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen"  {"'smcp' Gemeine nach Kapitael
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  {"'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE"  {"'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'DEU ' 'MOL ' 'ROM ' 'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standardligaturen"  {"'liga' Standardligaturen 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'locl' Localized Forms Romaenisch"  {"'locl' Localized Forms Romaenisch 1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic"  {"'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Cyrillic lookup 0"  {"'kern' Horizontales Kerning in Cyrillic lookup 0"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1"  {"'kern' Horizontales Kerning in Latin lookup 1"  } ['kern' ('latn' <'dflt' > ) ]
@@ -12984,7 +12983,6 @@ SplineSet
  145 605 251 658 333 658 c 0
  423 658 425 639 476 631 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" Scommaaccent
 EndChar
 
 StartChar: scedilla
@@ -13030,7 +13028,6 @@ SplineSet
  216 -118 216 -117 216 -116 c 0
  216 -100 198 -89 188 -89 c 0
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 EndChar
 
@@ -13175,7 +13172,6 @@ SplineSet
  193 669 l 1
  192 663 189 646 209 646 c 2
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" Tcommaaccent
 EndChar
 
 StartChar: tcedilla
@@ -13228,7 +13224,6 @@ SplineSet
  118.1 11.7 113.3 27.5 113.3 47.1 c 0
  113.3 67.7 117.8 95.4 123 118 c 2
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" tcommaaccent
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcedilla.sc
 EndChar
 
@@ -107890,7 +107885,6 @@ SplineSet
  42.5 2.1 40.7 2 39 2 c 1
  50 53 55 100 60 155 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent.sc
 EndChar
 
 StartChar: scaron.sc
@@ -107984,7 +107978,6 @@ SplineSet
  564.2 330 549 327 533 329 c 1
  521 386 501 420 469 420 c 2
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" tcommaaccent
 EndChar
 
 StartChar: tbar.sc

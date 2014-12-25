@@ -43,7 +43,6 @@ OS2Vendor: 'PfEd'
 Lookup: 1 0 0 "Substitution f short"  {"Substitution f short 1"  } []
 Lookup: 1 0 0 "Substitution dotless forms"  {"Substitution dotless forms 1"  } []
 Lookup: 3 0 0 "'aalt' Alle Alternativen zeigen"  {"LinLibertine-'aalt' Alle Alternativen zeigen 1"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'locl' Localized Forms Romaenisch"  {"LinLibertine-'locl' Localized Forms Romaenisch 1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic"  {"'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  {"'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen"  {"'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
@@ -17384,7 +17383,6 @@ SplineSet
  307 -171 328 -157 328 -131 c 0
  328 -110 318 -96 295 -96 c 0
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" Scommaaccent
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scedilla.sc
 AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" Scommaaccent scedilla scommaaccent.sc
 EndChar
@@ -17433,7 +17431,6 @@ SplineSet
  307 -171 328 -157 328 -131 c 0
  328 -110 318 -96 295 -96 c 0
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" scommaaccent
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent scommaaccent.sc
 EndChar
@@ -17573,7 +17570,6 @@ SplineSet
  307 -171 328 -157 328 -131 c 0
  328 -110 318 -96 295 -96 c 0
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" uni021A
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" tcommaaccent.sc
 AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" uni021A uni021B.sc tcommaaccent.sc
 EndChar
@@ -17627,7 +17623,6 @@ SplineSet
  315.5 -171 336.5 -157 336.5 -131 c 0
  336.5 -110 326.5 -96 303.5 -96 c 0
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" uni021B
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcommaaccent.sc
 AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" tcommaaccent.sc uni021B uni021B.sc
 EndChar
