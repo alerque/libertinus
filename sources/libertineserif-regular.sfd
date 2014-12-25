@@ -41,7 +41,6 @@ HheadDOffset: 0
 OS2FamilyClass: 261
 OS2Vendor: 'PfEd'
 Lookup: 3 0 0 "'aalt' Alle Alternativen zeigen"  {"'aalt' Alle Alternativen zeigen 1"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'locl' Localized Forms Romaenisch"  {"'locl' Localized Forms Romaenisch 1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic"  {"'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc"  {"'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'DEU ' 'MOL ' 'ROM ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen"  {"'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
@@ -21105,7 +21104,6 @@ SplineSet
  253 -110 243 -96 220 -96 c 0
 EndSplineSet
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Scommaaccent scedilla scommaaccent.sc
-Substitution2: "'locl' Localized Forms Romaenisch 1" Scommaaccent
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
@@ -21155,7 +21153,6 @@ SplineSet
  75 3 65 2 55 0 c 1
  55 42 52 89 48 138 c 1
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent scommaaccent.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
@@ -21298,7 +21295,6 @@ SplineSet
  321 -171 342 -157 342 -131 c 0
  342 -110 332 -96 309 -96 c 0
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" Tcommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Tcommaaccent tcommaaccent.sc tcedilla.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" tcedilla.sc
@@ -21354,7 +21350,6 @@ SplineSet
  180 -171 201 -157 201 -131 c 0
  201 -110 191 -96 168 -96 c 0
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" tcommaaccent
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" tcedilla.sc tcommaaccent tcommaaccent.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcedilla.sc
 Colour: ff00ff
@@ -98414,7 +98409,6 @@ SplineSet
  209 -171 230 -157 230 -131 c 0
  230 -110 220 -96 197 -96 c 0
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" scommaaccent.sc
 Colour: ff00ff
 EndChar
 
@@ -98504,7 +98498,6 @@ SplineSet
  275 -171 296 -157 296 -131 c 0
  296 -110 286 -96 263 -96 c 0
 EndSplineSet
-Substitution2: "'locl' Localized Forms Romaenisch 1" tcommaaccent.sc
 Colour: ff00ff
 EndChar
 

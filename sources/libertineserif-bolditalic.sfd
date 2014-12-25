@@ -43,7 +43,6 @@ OS2Vendor: 'PfEd'
 Lookup: 1 0 0 "Substitution f short"  {"Substitution f short 1"  } []
 Lookup: 1 0 0 "Substitution dotless forms"  {"Substitution dotless forms 1"  } []
 Lookup: 3 0 0 "LinLibertine-'aalt' Alle Alternativen zeigen"  {"LinLibertine-'aalt' Alle Alternativen zeigen 1"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "LinLibertine-'locl' Localized Forms Romaenisch"  {"LinLibertine-'locl' Localized Forms Romaenisch 1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  {"'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen"  {"'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'DEU ' 'MOL ' 'ROM ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc"  {"'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'DEU ' 'MOL ' 'ROM ' 'dflt' > ) ]
@@ -17999,7 +17998,6 @@ SplineSet
  254.1 641.2 316 658 369 658 c 0
  458 658 475 639 526 631 c 1
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" Scommaaccent
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scedilla.sc
 AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" Scommaaccent scedilla scommaaccent.sc
@@ -18044,7 +18042,6 @@ SplineSet
  205.5 -196 227.4 -182 231.2 -155 c 0
  236.5 -117.4 184.1 -113 148.4 -111 c 1
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" scommaaccent
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent scommaaccent.sc
 EndChar
@@ -18180,7 +18177,6 @@ SplineSet
  515 605 499 567 487 503 c 2
  413 123 l 2
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" uni021A
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" tcommaaccent.sc
 AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" uni021A uni021B.sc tcommaaccent.sc
@@ -18231,7 +18227,6 @@ SplineSet
  122.8 -9.6 108.3 12.9 108.3 47.1 c 0
  108.3 67.7 112.8 95.4 118 118 c 2
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" uni021B
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcommaaccent.sc
 AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" tcommaaccent.sc uni021B uni021B.sc
 EndChar
@@ -63078,7 +63073,6 @@ SplineSet
  221 -166 251 -152 251 -125 c 0
  251 -104 233 -90 210 -90 c 0
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" scommaaccent.sc
 EndChar
 
 StartChar: scaron.sc
@@ -63166,7 +63160,6 @@ SplineSet
  433 420 426 409 409 325 c 2
  370 133 l 2
 EndSplineSet
-Substitution2: "LinLibertine-'locl' Localized Forms Romaenisch 1" uni021B.sc
 EndChar
 
 StartChar: tbar.sc
