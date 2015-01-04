@@ -27,10 +27,6 @@ all: otf
 
 otf: $(OTF)
 
-libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd
-	@echo "Building $@"
-	@$(PY) $(BUILD) $@ $(VERSION) $^
-
 %.otf: $(SRC)/%.sfd
 	@echo "Building $@"
 	@$(PY) $(BUILD) $@ $(VERSION) $^
