@@ -84,7 +84,7 @@ KernClass2: 13 8 "'kern' Small Caps"
  3 K X
  4 p.sc
  79 hyphen.sc guillemotleft.sc guillemotright.sc guilsinglleft.sc guilsinglright.sc
- 17 T Tcedilla Tcaron
+ 16 T uni0162 Tcaron
  49 b.sc d.sc f.sc h.sc i.sc k.sc l.sc n.sc p.sc r.sc
  92 a.sc agrave.sc aacute.sc acircumflex.sc atilde.sc adieresis.sc aring.sc abreve.sc aogonek.sc
  78 u.sc ugrave.sc uacute.sc ucircumflex.sc udieresis.sc uring.sc uhungarumlaut.sc
@@ -100,62 +100,62 @@ KernClass2: 9 10 "'kern' Greek Kerning"
  110 Omicrontonos Theta Omicron Phi uni03F4 uni1E0A uni1E0C uni1E0E uni1E10 uni1E12 uni1E4C uni1E4E uni1E50 uni1E52
  24 gamma kappa uni03DB zeta
  33 omicron rho phi omicrontonos phi1
- 151 Alphatonos Alpha Delta Lambda afii10017 uni04D2 uni1E00 uni1F0A uni1F0B uni1F0C uni1F0D uni1F0E uni1F0F uni1FB8 uni1FB9 uni1FBA uni1FBB uni1F08 uni1F09
+ 151 Alphatonos Alpha uni0394 Lambda uni0410 uni04D2 uni1E00 uni1F0A uni1F0B uni1F0C uni1F0D uni1F0E uni1F0F uni1FB8 uni1FB9 uni1FBA uni1FBB uni1F08 uni1F09
  3 Rho
  3 Tau
  23 Upsilon Upsilondieresis
  8 gamma nu
  3 chi
- 50 Alpha Delta Lambda uni04D2 uni1FB8 uni1FB9 uni1FBC
+ 52 Alpha uni0394 Lambda uni04D2 uni1FB8 uni1FB9 uni1FBC
  63 alpha omicron sigma phi uni03F2 uni03F5 omega sigma1 omegatonos
  64 alphatonos rho omicrontonos phi1 uni03F1 uni1F71 uni1F73 uni1F79
- 10 mu uni03F0
- 31 eta iota kappa dotlessj upsilon
+ 15 uni03BC uni03F0
+ 30 eta iota kappa uni0237 upsilon
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 30 {} -24 {} -23 {} -35 {} -40 {} -20 {} 0 {} -20 {} 0 {} 20 {} 0 {} -17 {} -16 {} -60 {} -50 {} -30 {} -20 {} -30 {} 0 {} 20 {} 20 {} -16 {} -14 {} 0 {} -51 {} -31 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} 0 {} 0 {} 0 {} -49 {} -40 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} -5 {} 0 {} -60 {} -60 {} -60 {} -40 {} 20 {} -27 {} -16 {} 0 {} -44 {} 0 {} 20 {} 0 {} 0 {} 0 {} -60 {} -30 {} -20 {} 0 {} 0 {}
 KernClass2: 9 7 "'kern' Cyrillic Kerning" 
- 63 afii10052 afii10020 afii10036 afii10050 uni0492 uni04AC uni04F6
- 61 afii10062 afii10037 uni04EE uni04F0 uni04F2 afii10148 uni0476
- 103 afii10061 afii10024 afii10028 afii10039 uni0496 uni049A uni049C uni049E uni04A0 uni04B2 uni04C1 uni04DC
- 29 afii10032 afii10048 afii10147
- 19 afii10085 afii10110
- 61 afii10072 afii10076 afii10109 uni049F uni04A1 uni04B3 uni04DD
- 55 afii10070 afii10080 afii10082 afii10071 uni04E7 uni04E9
- 19 afii10044 afii10046
- 35 afii10041 afii10148 uni0476 uni04B6
- 47 afii10072 afii10085 x afii10110 uni04B3 uni04DD
- 9 afii10017
- 57 afii10070 afii10080 afii10083 afii10101 afii10846 uni04E9
- 57 afii10065 afii10073 afii10086 afii10095 afii10097 uni04D5
- 139 afii10067 afii10068 afii10074 afii10076 afii10078 afii10079 afii10081 afii10082 afii10087 afii10088 afii10090 afii10091 afii10107 afii10193
+ 55 uni0403 uni0413 uni0422 uni0490 uni0492 uni04AC uni04F6
+ 57 uni040E uni0423 uni04EE uni04F0 uni04F2 afii10148 uni0476
+ 95 uni040C uni0416 uni041A uni0425 uni0496 uni049A uni049C uni049E uni04A0 uni04B2 uni04C1 uni04DC
+ 23 uni041E uni042E uni0472
+ 15 uni0443 uni045E
+ 55 uni0436 uni043A uni045C uni049F uni04A1 uni04B3 uni04DD
+ 47 uni0435 uni043E uni0440 uni0451 uni04E7 uni04E9
+ 15 uni042A uni042C
+ 33 uni0427 afii10148 uni0476 uni04B6
+ 41 uni0436 uni0443 x uni045E uni04B3 uni04DD
+ 7 uni0410
+ 47 uni0435 uni043E uni0441 uni0454 uni04D9 uni04E9
+ 47 uni0430 uni0437 uni0444 uni044D uni044F uni04D5
+ 111 uni0432 uni0433 uni0438 uni043A uni043C uni043D uni043F uni0440 uni0445 uni0446 uni0448 uni0449 uni045A uni045F
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} -50 {} -35 {} 0 {} 0 {} 0 {} 0 {} -50 {} -100 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -23 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 21 21 "'kern' Latin kerning" 
- 11 f longs f_f
- 30 T Tcedilla Tcaron Tcommaaccent
+ 15 f longs uniFB00
+ 24 T uni0162 Tcaron uni021A
  59 Y Yacute Ycircumflex Ydieresis Ygrave seven.fitted question
  47 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9
- 22 K X Kcommaaccent K.alt
+ 17 K X uni0136 K.alt
  211 at D O Q Ograve Oacute Ocircumflex Otilde Odieresis Oslash Dcaron Dcroat Omacron Obreve Ohungarumlaut uni0186 uni0189 uni018A uni018F uni01EA uni01EC uni020C uni020E uni022A uni022C uni022E uni0230 Odieresis.alt
- 105 r v w y Thorn yacute ydieresis racute rcommaaccent rcaron wcircumflex ycircumflex wgrave wacute wdieresis
- 89 g k x gcircumflex gbreve gdotaccent gcommaaccent kcommaaccent kgreenlandic gcaron f_k c_k
+ 100 r v w y Thorn yacute ydieresis racute uni0157 rcaron wcircumflex ycircumflex wgrave wacute wdieresis
+ 79 g k x gcircumflex gbreve gdotaccent uni0123 uni0137 kgreenlandic gcaron f_k c_k
  21 b agrave egrave thorn
  77 e o p eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis
- 21 L Lacute Lcommaaccent
+ 16 L Lacute uni013B
  114 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek Aringacute uni0200 uni0202 Adieresis.alt
- 164 comma period underscore enquad emquad enspace emspace threeperemspace fourperemspace sixperemspace figurespace punctuationspace quotesinglbase quotedblbase ellipsis
- 235 zero.inferior one.inferior two.inferior three.inferior four.inferior five.inferior six.inferior seven.inferior eight.inferior nine.inferior plus.inferior minus.inferior equal.inferior a.inferior e.inferior o.inferior x.inferior uni2094
- 149 hyphen asciitilde guillemotleft guillemotright hyphentwo hyphennobreak figuredash endash emdash horizontalbar guilsinglleft guilsinglright hyphen.cap
+ 132 comma period underscore uni2000 uni2001 uni2002 uni2003 uni2004 uni2005 uni2006 uni2007 uni2008 quotesinglbase quotedblbase ellipsis
+ 143 uni2080 uni2081 uni2082 uni2083 uni2084 uni2085 uni2086 uni2087 uni2088 uni2089 uni208A uni208B uni208C uni2090 uni2091 uni2092 uni2093 uni2094
+ 135 hyphen asciitilde guillemotleft guillemotright uni2010 uni2011 figuredash endash emdash uni2015 guilsinglleft guilsinglright hyphen.cap
  31 parenleft bracketleft braceleft
  87 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek
- 145 H I N Igrave Iacute Icircumflex Idieresis Ntilde Hcircumflex Hbar Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute Ncommaaccent Ncaron Eng
+ 140 H I N Igrave Iacute Icircumflex Idieresis Ntilde Hcircumflex Hbar Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute uni0145 Ncaron Eng
  11 F P uni01A4
- 103 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
- 30 T Tcedilla Tcaron Tcommaaccent
+ 99 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright uni201F
+ 24 T uni0162 Tcaron uni021A
  18 Y Yacute Ydieresis
  53 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9 V.alt
- 339 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Omacron Obreve Ohungarumlaut OE uni0187 uni0193 uni019F Ohorn Gcaron uni01EA uni01EC uni01F4 Oslashacute uni020C uni020E uni022A uni022C uni022E uni0230 zero.fitted zero.slashfitted six.fitted
+ 334 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE uni0187 uni0193 uni019F Ohorn Gcaron uni01EA uni01EC uni01F4 Oslashacute uni020C uni020E uni022A uni022C uni022E uni0230 zero.fitted zero.slashfitted six.fitted
  58 v w wcircumflex wgrave wacute wdieresis y yacute ydieresis
  1 x
- 103 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
+ 99 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright uni201F
  165 A Agrave Aacute Acircumflex Atilde Adieresis Aring AE Amacron Abreve Aogonek uni01CD uni01DE uni01E0 uni01E2 Aringacute AEacute uni0200 uni0202 uni0226 Adieresis.alt
  66 comma period quotesinglbase onedotenleader twodotenleader ellipsis
  67 e c o d q ccedilla eogonek oe uni0188 uni018D ohorn eturned c_k c_h
@@ -163,18 +163,18 @@ KernClass2: 21 21 "'kern' Latin kerning"
  18 m n p r z dotlessi
  34 parenright bracketright braceright
  27 J j Jcircumflex jcircumflex
- 192 plus hyphen less equal greater asciitilde guillemotleft uni00AD periodcentered guillemotright divide hyphentwo hyphennobreak figuredash endash emdash horizontalbar guilsinglleft guilsinglright
- 87 exclam question exclamdbl interrobang question_question question_exclam exclam_question
- 90 b h k l thorn hcircumflex hbar kcommaaccent lacute lcommaaccent lcaron ldot lslash uni0180
+ 178 plus hyphen less equal greater asciitilde guillemotleft uni00AD periodcentered guillemotright divide uni2010 uni2011 figuredash endash emdash uni2015 guilsinglleft guilsinglright
+ 57 exclam question exclamdbl uni203D uni2047 uni2048 uni2049
+ 80 b h k l thorn hcircumflex hbar uni0137 lacute uni013C lcaron ldot lslash uni0180
  143 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek uni01D3 uni01D5 uni01D7 uni01D9 uni01DB uni0214 uni0216
- 398 two.superior three.superior one.superior zero.superior i.superior four.superior five.superior six.superior seven.superior eight.superior nine.superior plus.superior minus.superior equal.superior parenleft.superior parenright.superior n.superior uni2098 uni2099 uniE0C0 uniE0C1 uniE0C2 uniE0C3 uniE0C4 uniE0C5 uniE0C6 uniE0CA uniE0CC uniE0CE uniE0CF q.superior uniE0D3 uniE0D4 uniE0D5 uniE0D9 degree
+ 289 uni00B2 uni00B3 uni00B9 uni2070 uni2071 uni2074 uni2075 uni2076 uni2077 uni2078 uni2079 uni207A uni207B uni207C uni207D uni207E uni207F uni2098 uni2099 uniE0C0 uniE0C1 uniE0C2 uniE0C3 uniE0C4 uniE0C5 uniE0C6 uniE0CA uniE0CC uniE0CE uniE0CF q.superior uniE0D3 uniE0D4 uniE0D5 uniE0D9 degree
  1 u
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 76 {} 80 {} 0 {} 80 {} 40 {} 0 {} 88 {} 0 {} 0 {} 55 {} 24 {} 24 {} -5 {} -49 {} -34 {} 0 {} -49 {} -63 {} -63 {} -49 {} -20 {} 0 {} 0 {} -59 {} 10 {} 0 {} 37 {} 0 {} -39 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} 0 {} -61 {} -44 {} -71 {} -60 {} -40 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 0 {} -39 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} 0 {} -112 {} -88 {} -80 {} -60 {} -40 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 0 {} -24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -5 {} -34 {} 37 {} 0 {} 10 {} 10 {} 0 {} -29 {} -29 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} 0 {} -49 {} -59 {} -8 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -24 {} -40 {} -10 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -65 {} 0 {} -73 {} 0 {} 0 {} -12 {} -12 {} 0 {} -12 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -34 {} 0 {} -61 {} -73 {} -73 {} -10 {} 0 {} 0 {} -122 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -308 {} 0 {} 0 {} -49 {} -49 {} -49 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -17 {} 0 {} 0 {} -24 {} 0 {} -17 {} -12 {} 0 {} 0 {} 73 {} -37 {} 0 {} 12 {} 12 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 24 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 12 {} 49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -49 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 LangName: 1033 "" "" "" "" "" "" "" "" "Philipp H. Poll" "Philipp H. Poll" "" "http://www.linuxlibertine.org" "http://www.linuxlibertine.org" "GPL- General Public License AND OFL-Open Font License" "http://www.fsf.org/licenses/gpl.html AND http://scripts.sil.org/OFL" 
 GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeBmp
 UnicodeInterp: none
-NameList: Adobe Glyph List
+NameList: AGL For New Fonts
 BeginPrivate: 7
 BlueValues 47 [-12 0 429 442 460 470 600 610 645 658 688 698]
 OtherBlues 11 [-238 -227]
@@ -519,8 +519,8 @@ SplineSet
 EndSplineSet
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" parenleft.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" parenleft.sc
-Substitution2: "'sinf' Wissenschaftliche Indices 1" parenleft.inferior
-Substitution2: "'sups' Hochgestellte 1" parenleft.superior
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208D
+Substitution2: "'sups' Hochgestellte 1" uni207D
 Substitution2: "'case' Versalformen 1" parenleft.sc
 EndChar
 
@@ -543,8 +543,8 @@ SplineSet
 EndSplineSet
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" parenright.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" parenright.sc
-Substitution2: "'sinf' Wissenschaftliche Indices 1" parenright.inferior
-Substitution2: "'sups' Hochgestellte 1" parenright.superior
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208E
+Substitution2: "'sups' Hochgestellte 1" uni207E
 Substitution2: "'case' Versalformen 1" parenright.sc
 Colour: ff00ff
 EndChar
@@ -604,9 +604,9 @@ SplineSet
  290 433 l 1
  290 262 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" plus.superior plus.inferior uni2098
-Substitution2: "'sinf' Wissenschaftliche Indices 1" plus.inferior
-Substitution2: "'sups' Hochgestellte 1" plus.superior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni207A uni208A uni2098
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208A
+Substitution2: "'sups' Hochgestellte 1" uni207A
 EndChar
 
 StartChar: slash
@@ -656,9 +656,9 @@ SplineSet
  376 591 367 550 367 442 c 2
  367 189 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" one.oldstyle one.superior one.fitted
-Substitution2: "'sups' Hochgestellte 1" one.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" one.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" one.oldstyle uni00B9 one.fitted
+Substitution2: "'sups' Hochgestellte 1" uni00B9
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2081
 Substitution2: "'pnum' Proportionalziffern 1" one.fitted
 Substitution2: "'onum' Minuskelziffern 1" one.taboldstyle
 EndChar
@@ -695,9 +695,9 @@ SplineSet
  299 338 302 390 302 454 c 0
  302 516 262 556 226 556 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" two.oldstyle two.superior two.fitted
-Substitution2: "'sups' Hochgestellte 1" two.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" two.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" two.oldstyle uni00B2 two.fitted
+Substitution2: "'sups' Hochgestellte 1" uni00B2
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2082
 Substitution2: "'pnum' Proportionalziffern 1" two.fitted
 Substitution2: "'onum' Minuskelziffern 1" two.taboldstyle
 EndChar
@@ -735,9 +735,9 @@ SplineSet
  102 130 l 1
  135 71 138 31 213 31 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" three.oldstyle three.superior three.fitted
-Substitution2: "'sups' Hochgestellte 1" three.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" three.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" three.oldstyle uni00B3 three.fitted
+Substitution2: "'sups' Hochgestellte 1" uni00B3
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2083
 Substitution2: "'pnum' Proportionalziffern 1" three.fitted
 Substitution2: "'onum' Minuskelziffern 1" three.taboldstyle
 EndChar
@@ -776,9 +776,9 @@ SplineSet
  251 0 l 1
  258 49 261 98 261 162 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" four.oldstyle four.superior four.fitted
-Substitution2: "'sups' Hochgestellte 1" four.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" four.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" four.oldstyle uni2074 four.fitted
+Substitution2: "'sups' Hochgestellte 1" uni2074
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2084
 Substitution2: "'pnum' Proportionalziffern 1" four.fitted
 Substitution2: "'onum' Minuskelziffern 1" four.taboldstyle
 EndChar
@@ -818,9 +818,9 @@ SplineSet
  439 308.5 466 258.9 466 206 c 0
  466 76 362 -10 242 -10 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" five.oldstyle five.superior five.fitted
-Substitution2: "'sups' Hochgestellte 1" five.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" five.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" five.oldstyle uni2075 five.fitted
+Substitution2: "'sups' Hochgestellte 1" uni2075
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2085
 Substitution2: "'pnum' Proportionalziffern 1" five.fitted
 Substitution2: "'onum' Minuskelziffern 1" five.taboldstyle
 EndChar
@@ -851,9 +851,9 @@ SplineSet
  228 578.5 303 605.5 444 610 c 1
  451.8 600.4 453.1 581.2 450 569 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" six.oldstyle six.superior six.fitted
-Substitution2: "'sups' Hochgestellte 1" six.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" six.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" six.oldstyle uni2076 six.fitted
+Substitution2: "'sups' Hochgestellte 1" uni2076
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2086
 Substitution2: "'pnum' Proportionalziffern 1" six.fitted
 Substitution2: "'onum' Minuskelziffern 1" six.taboldstyle
 EndChar
@@ -879,9 +879,9 @@ SplineSet
  130 -6 l 1
  194 139 300 310 375 496 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" seven.oldstyle seven.superior seven.fitted
-Substitution2: "'sups' Hochgestellte 1" seven.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" seven.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" seven.oldstyle uni2077 seven.fitted
+Substitution2: "'sups' Hochgestellte 1" uni2077
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2087
 Substitution2: "'pnum' Proportionalziffern 1" seven.fitted
 Substitution2: "'onum' Minuskelziffern 1" seven.taboldstyle
 EndChar
@@ -913,9 +913,9 @@ SplineSet
  294 21.5 219 -5.5 78 -10 c 1
  70.2 -0.4 68.9 18.8 72 31 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" nine.oldstyle nine.superior nine.fitted
-Substitution2: "'sups' Hochgestellte 1" nine.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" nine.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" nine.oldstyle uni2079 nine.fitted
+Substitution2: "'sups' Hochgestellte 1" uni2079
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2089
 Substitution2: "'pnum' Proportionalziffern 1" nine.fitted
 Substitution2: "'onum' Minuskelziffern 1" nine.taboldstyle
 Colour: ff00ff
@@ -992,9 +992,9 @@ SplineSet
  59 341 l 1
  493 341 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" equal.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" equal.inferior
-Substitution2: "'sups' Hochgestellte 1" equal.superior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni207C
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208C
+Substitution2: "'sups' Hochgestellte 1" uni207C
 EndChar
 
 StartChar: greater
@@ -2434,7 +2434,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: Gcommaaccent
+StartChar: uni0122
 Encoding: 290 290 54
 Width: 753
 VWidth: 999
@@ -2483,7 +2483,7 @@ Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Colour: ff00ff
 EndChar
 
-StartChar: gcommaaccent
+StartChar: uni0123
 Encoding: 291 291 55
 Width: 561
 VWidth: 999
@@ -3101,7 +3101,7 @@ Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10057
+StartChar: uni0408
 Encoding: 1032 1032 69
 Width: 443
 VWidth: 999
@@ -3134,7 +3134,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10061
+StartChar: uni040C
 Encoding: 1036 1036 70
 Width: 693
 VWidth: 999
@@ -3243,7 +3243,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10062
+StartChar: uni040E
 Encoding: 1038 1038 72
 Width: 620
 VWidth: 999
@@ -3286,7 +3286,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10020
+StartChar: uni0413
 Encoding: 1043 1043 73
 Width: 563
 VWidth: 999
@@ -3320,7 +3320,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10021
+StartChar: uni0414
 Encoding: 1044 1044 74
 Width: 740
 VWidth: 999
@@ -3371,7 +3371,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10024
+StartChar: uni0416
 Encoding: 1046 1046 75
 Width: 1013
 VWidth: 999
@@ -3428,7 +3428,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: afii10025
+StartChar: uni0417
 Encoding: 1047 1047 76
 Width: 551
 VWidth: 999
@@ -3463,7 +3463,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10026
+StartChar: uni0418
 Encoding: 1048 1048 77
 Width: 746
 VWidth: 999
@@ -3510,7 +3510,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10027
+StartChar: uni0419
 Encoding: 1049 1049 78
 Width: 746
 VWidth: 999
@@ -3570,7 +3570,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10033
+StartChar: uni041F
 Encoding: 1055 1055 79
 Width: 784
 VWidth: 999
@@ -3613,7 +3613,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10034
+StartChar: uni0420
 Encoding: 1056 1056 80
 Width: 598
 VWidth: 999
@@ -3650,7 +3650,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10035
+StartChar: uni0421
 Encoding: 1057 1057 81
 Width: 706
 VWidth: 999
@@ -3679,7 +3679,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10036
+StartChar: uni0422
 Encoding: 1058 1058 82
 Width: 602
 VWidth: 999
@@ -3715,7 +3715,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10037
+StartChar: uni0423
 Encoding: 1059 1059 83
 Width: 620
 VWidth: 999
@@ -3744,7 +3744,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10039
+StartChar: uni0425
 Encoding: 1061 1061 84
 Width: 672
 VWidth: 999
@@ -3776,7 +3776,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10040
+StartChar: uni0426
 Encoding: 1062 1062 85
 Width: 780
 VWidth: 999
@@ -3822,7 +3822,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10041
+StartChar: uni0427
 Encoding: 1063 1063 86
 Width: 694
 VWidth: 999
@@ -3863,7 +3863,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10042
+StartChar: uni0428
 Encoding: 1064 1064 87
 Width: 1018
 VWidth: 999
@@ -3918,7 +3918,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10043
+StartChar: uni0429
 Encoding: 1065 1065 88
 Width: 1049
 VWidth: 999
@@ -3977,7 +3977,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10044
+StartChar: uni042A
 Encoding: 1066 1066 89
 Width: 759
 VWidth: 999
@@ -4019,7 +4019,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10045
+StartChar: uni042B
 Encoding: 1067 1067 90
 Width: 902
 VWidth: 999
@@ -4071,7 +4071,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10046
+StartChar: uni042C
 Encoding: 1068 1068 91
 Width: 599
 VWidth: 999
@@ -4107,7 +4107,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10047
+StartChar: uni042D
 Encoding: 1069 1069 92
 Width: 674
 VWidth: 999
@@ -4144,7 +4144,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10048
+StartChar: uni042E
 Encoding: 1070 1070 93
 Width: 964
 VWidth: 999
@@ -4184,7 +4184,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10049
+StartChar: uni042F
 Encoding: 1071 1071 94
 Width: 667
 VWidth: 999
@@ -4226,7 +4226,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10089
+StartChar: uni0447
 Encoding: 1095 1095 95
 Width: 588
 VWidth: 999
@@ -4266,7 +4266,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10090
+StartChar: uni0448
 Encoding: 1096 1096 96
 Width: 941
 VWidth: 999
@@ -4322,7 +4322,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10091
+StartChar: uni0449
 Encoding: 1097 1097 97
 Width: 961
 VWidth: 999
@@ -4381,7 +4381,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10092
+StartChar: uni044A
 Encoding: 1098 1098 98
 Width: 666
 VWidth: 999
@@ -4420,7 +4420,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10093
+StartChar: uni044B
 Encoding: 1099 1099 99
 Width: 791
 VWidth: 999
@@ -4471,7 +4471,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10094
+StartChar: uni044C
 Encoding: 1100 1100 100
 Width: 531
 VWidth: 999
@@ -4506,7 +4506,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10095
+StartChar: uni044D
 Encoding: 1101 1101 101
 Width: 479
 VWidth: 999
@@ -4539,7 +4539,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10096
+StartChar: uni044E
 Encoding: 1102 1102 102
 Width: 775
 VWidth: 999
@@ -4579,7 +4579,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10097
+StartChar: uni044F
 Encoding: 1103 1103 103
 Width: 532
 VWidth: 999
@@ -5073,7 +5073,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10846
+StartChar: uni04D9
 Encoding: 1241 1241 115
 Width: 450
 VWidth: 999
@@ -11434,10 +11434,10 @@ SplineSet
  360.7 610 484 542.7 484 307 c 0
  484 69 354 -10 255 -10 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" zero.oldstyle zero.fitted zero.slash zero.slashfitted perthousandzero
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" zero.oldstyle zero.fitted zero.slash zero.slashfitted uniE01F
 Substitution2: "'zero' gestrichene Null 1" zero.slash
-Substitution2: "'sups' Hochgestellte 1" zero.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" zero.inferior
+Substitution2: "'sups' Hochgestellte 1" uni2070
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2080
 Substitution2: "'pnum' Proportionalziffern 1" zero.fitted
 Substitution2: "'onum' Minuskelziffern 1" zero.taboldstyle
 EndChar
@@ -12302,7 +12302,7 @@ SplineSet
 EndSplineSet
 Substitution2: "'sups' Hochgestellte 1" a.superior
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" a.sc
-Substitution2: "'sinf' Wissenschaftliche Indices 1" a.inferior
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2090
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" a.sc
 EndChar
 
@@ -12474,7 +12474,7 @@ SplineSet
 EndSplineSet
 Substitution2: "'sups' Hochgestellte 1" e.superior
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" e.sc
-Substitution2: "'sinf' Wissenschaftliche Indices 1" e.inferior
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2091
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" e.sc
 EndChar
 
@@ -12634,7 +12634,7 @@ EndSplineSet
 Substitution2: "'ss05' Elbischer Stilsatz-1" h.elb
 Substitution2: "'sinf' Wissenschaftliche Indices 1" h.inferior
 Substitution2: "'salt' Stilistische Alternativformen 1" h.alt
-Substitution2: "'sups' Hochgestellte 1" h.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B0
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" h.sc h.alt
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" h.sc
 EndChar
@@ -12677,7 +12677,7 @@ Substitution2: "'ss05' Elbischer Stilsatz-1" i.elb
 Substitution2: "'smcp' Gemeine nach Kapitaelchen i > i.sc 1" i.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc" idotaccent.sc
 Substitution2: "'sinf' Wissenschaftliche Indices 1" i.inferior
-Substitution2: "'sups' Hochgestellte 1" i.superior
+Substitution2: "'sups' Hochgestellte 1" uni2071
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" i.sc
 Colour: ff00ff
 EndChar
@@ -12717,7 +12717,7 @@ SplineSet
 EndSplineSet
 Substitution2: "'ss05' Elbischer Stilsatz-1" j.elb
 Substitution2: "'sinf' Wissenschaftliche Indices 1" j.inferior
-Substitution2: "'sups' Hochgestellte 1" j.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B2
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" j.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" j.sc idotaccent.sc
 Colour: ff00ff
@@ -12771,7 +12771,7 @@ Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" k.sc
 Colour: ff80cc
 EndChar
 
-StartChar: l.superior
+StartChar: uni02E1
 Encoding: 737 737 292
 Width: 261
 Flags: HW
@@ -12905,7 +12905,7 @@ EndSplineSet
 Substitution2: "'ss05' Elbischer Stilsatz-1" n.elb
 Substitution2: "'sinf' Wissenschaftliche Indices 1" n.inferior
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" n.sc
-Substitution2: "'sups' Hochgestellte 1" n.superior
+Substitution2: "'sups' Hochgestellte 1" uni207F
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" n.sc
 EndChar
 
@@ -12937,7 +12937,7 @@ SplineSet
 EndSplineSet
 Substitution2: "'sups' Hochgestellte 1" o.superior
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" o.sc
-Substitution2: "'sinf' Wissenschaftliche Indices 1" o.inferior
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2092
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" o.sc
 EndChar
 
@@ -13068,12 +13068,12 @@ SplineSet
 EndSplineSet
 Substitution2: "'ss05' Elbischer Stilsatz-1" r.elb
 Substitution2: "'sinf' Wissenschaftliche Indices 1" r.inferior
-Substitution2: "'sups' Hochgestellte 1" r.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B3
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" r.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" r.sc
 EndChar
 
-StartChar: s.superior
+StartChar: uni02E2
 Encoding: 738 738 299
 Width: 307
 Flags: HW
@@ -13271,12 +13271,12 @@ SplineSet
  245 -1 210 -1 201 -4 c 1
 EndSplineSet
 Substitution2: "'sinf' Wissenschaftliche Indices 1" w.inferior
-Substitution2: "'sups' Hochgestellte 1" w.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B7
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" w.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" w.sc
 EndChar
 
-StartChar: x.superior
+StartChar: uni02E3
 Encoding: 739 739 304
 Width: 307
 Flags: HW
@@ -13332,7 +13332,7 @@ SplineSet
  177.1 109.2 64.5 341.1 20 432 c 1
 EndSplineSet
 Substitution2: "'sinf' Wissenschaftliche Indices 1" y.inferior
-Substitution2: "'sups' Hochgestellte 1" y.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B8
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" y.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" y.sc
 EndChar
@@ -14077,7 +14077,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: two.superior
+StartChar: uni00B2
 Encoding: 178 178 329
 Width: 340
 VWidth: 487
@@ -14112,7 +14112,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: three.superior
+StartChar: uni00B3
 Encoding: 179 179 330
 Width: 340
 Flags: HW
@@ -14169,7 +14169,7 @@ Substitution2: "'case' Versalformen 1" acute.cap
 Colour: ff00ff
 EndChar
 
-StartChar: uni00B5
+StartChar: mu
 Encoding: 181 181 332
 Width: 598
 Flags: HW
@@ -14296,7 +14296,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: one.superior
+StartChar: uni00B9
 Encoding: 185 185 336
 Width: 340
 VWidth: 944
@@ -18245,7 +18245,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: Kcommaaccent
+StartChar: uni0136
 Encoding: 310 310 424
 Width: 712
 VWidth: 999
@@ -18299,7 +18299,7 @@ Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Colour: ff00ff
 EndChar
 
-StartChar: kcommaaccent
+StartChar: uni0137
 Encoding: 311 311 425
 Width: 582
 VWidth: 999
@@ -18477,7 +18477,7 @@ Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" lacute.sc
 Colour: ff00ff
 EndChar
 
-StartChar: Lcommaaccent
+StartChar: uni013B
 Encoding: 315 315 429
 Width: 588
 VWidth: 999
@@ -18523,7 +18523,7 @@ Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Colour: ff00ff
 EndChar
 
-StartChar: lcommaaccent
+StartChar: uni013C
 Encoding: 316 316 430
 Width: 304
 VWidth: 999
@@ -18917,7 +18917,7 @@ Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" nacute.sc
 Colour: ff00ff
 EndChar
 
-StartChar: Ncommaaccent
+StartChar: uni0145
 Encoding: 325 325 439
 Width: 748
 VWidth: 999
@@ -18971,7 +18971,7 @@ Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Colour: ff00ff
 EndChar
 
-StartChar: ncommaaccent
+StartChar: uni0146
 Encoding: 326 326 440
 Width: 600
 VWidth: 999
@@ -19696,7 +19696,7 @@ Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" racute.sc
 Colour: ff00ff
 EndChar
 
-StartChar: Rcommaaccent
+StartChar: uni0156
 Encoding: 342 342 456
 Width: 687
 VWidth: 999
@@ -19751,7 +19751,7 @@ Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Colour: ff00ff
 EndChar
 
-StartChar: rcommaaccent
+StartChar: uni0157
 Encoding: 343 343 457
 Width: 421
 VWidth: 999
@@ -20108,7 +20108,7 @@ SplineSet
  248.3 -175.5 265 -167 265 -140 c 0
  265 -102.4 212 -98 176 -96 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Scommaaccent scedilla scommaaccent.sc
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni0218 scedilla uni0219.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
@@ -20153,7 +20153,7 @@ SplineSet
  208.3 -175.5 225 -167 225 -140 c 0
  225 -102.4 172 -98 136 -96 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent scommaaccent.sc
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" scedilla.sc uni0219 uni0219.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
 EndChar
@@ -20244,7 +20244,7 @@ Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scaron.sc
 Colour: ff00ff
 EndChar
 
-StartChar: Tcedilla
+StartChar: uni0162
 Encoding: 354 354 468
 Width: 602
 VWidth: 999
@@ -20287,13 +20287,13 @@ SplineSet
  314.3 -175.5 331 -167 331 -140 c 0
  331 -102.4 278 -98 242 -96 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni021A uni021B.sc tcommaaccent.sc
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni021A uni021B.sc uni021B.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
-Substitution2: "'c2sc' Versale nach Kapitaelchen 1" tcommaaccent.sc
+Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uni021B.sc
 Colour: ff00ff
 EndChar
 
-StartChar: tcedilla
+StartChar: uni0163
 Encoding: 355 355 469
 Width: 354
 VWidth: 999
@@ -20339,8 +20339,8 @@ SplineSet
  198.3 -185.5 215 -177 215 -150 c 0
  215 -112.4 162 -108 126 -106 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" tcommaaccent.sc uni021B uni021B.sc
-Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcommaaccent.sc
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni021B.sc uni021B uni021B.sc
+Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni021B.sc
 Colour: ff00ff
 EndChar
 
@@ -26469,7 +26469,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: Scommaaccent
+StartChar: uni0218
 Encoding: 536 536 600
 Width: 542
 VWidth: 999
@@ -26511,12 +26511,12 @@ SplineSet
  271 -172 258.9 -158.6 243 -157 c 0
  203 -153 186 -138 184 -110 c 1
 EndSplineSet
-Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scommaaccent.sc
+Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uni0219.sc
 LCarets2: 1 0 
 Colour: ff00ff
 EndChar
 
-StartChar: scommaaccent
+StartChar: uni0219
 Encoding: 537 537 601
 Width: 419
 VWidth: 999
@@ -26556,12 +26556,12 @@ SplineSet
  158 -10 92 -3 38 17 c 1
  54 113 l 1
 EndSplineSet
-Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scommaaccent.sc
+Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni0219.sc
 LCarets2: 1 0 
 Colour: ff00ff
 EndChar
 
-StartChar: Tcommaaccent
+StartChar: uni021A
 Encoding: 538 538 602
 Width: 602
 VWidth: 999
@@ -26610,7 +26610,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: tcommaaccent
+StartChar: uni021B
 Encoding: 539 539 603
 Width: 354
 VWidth: 999
@@ -28005,7 +28005,7 @@ EndSplineSet
 Colour: ff0000
 EndChar
 
-StartChar: rturned
+StartChar: uni0279
 Encoding: 633 633 635
 Width: 421
 Flags: HW
@@ -28038,7 +28038,7 @@ SplineSet
  200.7 12.7 200 37 200 79 c 1
  196 82 l 1
 EndSplineSet
-Substitution2: "'sups' Hochgestellte 1" rturned.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B4
 Colour: ff00ff
 EndChar
 
@@ -28442,7 +28442,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57929
+StartChar: uni02BC
 Encoding: 700 700 648
 Width: 175
 VWidth: 999
@@ -28793,7 +28793,7 @@ EndSplineSet
 Substitution2: "'case' Versalformen 1" acute.cap
 EndChar
 
-StartChar: circumflexcomb
+StartChar: uni0302
 Encoding: 770 770 664
 Width: 0
 VWidth: 999
@@ -28910,7 +28910,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: caroncomb
+StartChar: uni030C
 Encoding: 780 780 669
 Width: 0
 VWidth: 999
@@ -29393,7 +29393,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Delta
+StartChar: uni0394
 Encoding: 916 916 684
 Width: 696
 VWidth: 487
@@ -30140,7 +30140,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Omega
+StartChar: uni03A9
 Encoding: 937 937 704
 Width: 766
 VWidth: 487
@@ -30871,7 +30871,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: mu
+StartChar: uni03BC
 Encoding: 956 956 723
 Width: 598
 Flags: HW
@@ -31767,7 +31767,7 @@ LayerCount: 2
 Colour: ff80cc
 EndChar
 
-StartChar: afii10054
+StartChar: uni0405
 Encoding: 1029 1029 749
 Width: 542
 VWidth: 999
@@ -31801,7 +31801,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10055
+StartChar: uni0406
 Encoding: 1030 1030 750
 Width: 330
 VWidth: 999
@@ -31830,7 +31830,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10056
+StartChar: uni0407
 Encoding: 1031 1031 751
 Width: 330
 VWidth: 999
@@ -31870,7 +31870,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10017
+StartChar: uni0410
 Encoding: 1040 1040 752
 Width: 701
 VWidth: 999
@@ -31902,7 +31902,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10018
+StartChar: uni0411
 Encoding: 1041 1041 753
 Width: 675
 VWidth: 999
@@ -31941,7 +31941,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10019
+StartChar: uni0412
 Encoding: 1042 1042 754
 Width: 675
 VWidth: 999
@@ -31981,7 +31981,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10022
+StartChar: uni0415
 Encoding: 1045 1045 755
 Width: 594
 VWidth: 999
@@ -32027,7 +32027,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10028
+StartChar: uni041A
 Encoding: 1050 1050 756
 Width: 693
 VWidth: 999
@@ -32070,7 +32070,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: afii10029
+StartChar: uni041B
 Encoding: 1051 1051 757
 Width: 688
 Flags: HW
@@ -32107,7 +32107,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10030
+StartChar: uni041C
 Encoding: 1052 1052 758
 Width: 921
 VWidth: 999
@@ -32139,7 +32139,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10031
+StartChar: uni041D
 Encoding: 1053 1053 759
 Width: 764
 VWidth: 999
@@ -32186,7 +32186,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10032
+StartChar: uni041E
 Encoding: 1054 1054 760
 Width: 799
 VWidth: 999
@@ -32210,7 +32210,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10038
+StartChar: uni0424
 Encoding: 1060 1060 761
 Width: 808
 VWidth: 999
@@ -32255,7 +32255,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10065
+StartChar: uni0430
 Encoding: 1072 1072 762
 Width: 516
 VWidth: 999
@@ -32297,7 +32297,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10066
+StartChar: uni0431
 Encoding: 1073 1073 763
 Width: 537
 VWidth: 999
@@ -32327,7 +32327,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10067
+StartChar: uni0432
 Encoding: 1074 1074 764
 Width: 585
 VWidth: 999
@@ -32367,7 +32367,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10068
+StartChar: uni0433
 Encoding: 1075 1075 765
 Width: 436
 VWidth: 999
@@ -32402,7 +32402,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10069
+StartChar: uni0434
 Encoding: 1076 1076 766
 Width: 550
 VWidth: 999
@@ -32446,7 +32446,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10070
+StartChar: uni0435
 Encoding: 1077 1077 767
 Width: 508
 VWidth: 999
@@ -32479,7 +32479,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10072
+StartChar: uni0436
 Encoding: 1078 1078 768
 Width: 787
 VWidth: 999
@@ -32535,7 +32535,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10073
+StartChar: uni0437
 Encoding: 1079 1079 769
 Width: 434
 VWidth: 999
@@ -32571,7 +32571,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10074
+StartChar: uni0438
 Encoding: 1080 1080 770
 Width: 614
 VWidth: 999
@@ -32616,7 +32616,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10075
+StartChar: uni0439
 Encoding: 1081 1081 771
 Width: 614
 VWidth: 999
@@ -32676,7 +32676,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10076
+StartChar: uni043A
 Encoding: 1082 1082 772
 Width: 545
 VWidth: 999
@@ -32719,7 +32719,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10077
+StartChar: uni043B
 Encoding: 1083 1083 773
 Width: 533
 VWidth: 999
@@ -32758,7 +32758,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10078
+StartChar: uni043C
 Encoding: 1084 1084 774
 Width: 738
 VWidth: 999
@@ -32806,7 +32806,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10079
+StartChar: uni043D
 Encoding: 1085 1085 775
 Width: 640
 VWidth: 999
@@ -32852,7 +32852,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10080
+StartChar: uni043E
 Encoding: 1086 1086 776
 Width: 566
 VWidth: 999
@@ -32876,7 +32876,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10081
+StartChar: uni043F
 Encoding: 1087 1087 777
 Width: 640
 VWidth: 999
@@ -32918,7 +32918,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10082
+StartChar: uni0440
 Encoding: 1088 1088 778
 Width: 585
 VWidth: 999
@@ -32957,7 +32957,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10083
+StartChar: uni0441
 Encoding: 1089 1089 779
 Width: 472
 VWidth: 999
@@ -32988,7 +32988,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10084
+StartChar: uni0442
 Encoding: 1090 1090 780
 Width: 498
 VWidth: 999
@@ -33021,7 +33021,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10085
+StartChar: uni0443
 Encoding: 1091 1091 781
 Width: 539
 VWidth: 999
@@ -33048,7 +33048,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10086
+StartChar: uni0444
 Encoding: 1092 1092 782
 Width: 843
 VWidth: 999
@@ -33097,7 +33097,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10088
+StartChar: uni0446
 Encoding: 1094 1094 783
 Width: 647
 VWidth: 999
@@ -33186,7 +33186,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10071
+StartChar: uni0451
 Encoding: 1105 1105 785
 Width: 508
 VWidth: 999
@@ -33230,7 +33230,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10100
+StartChar: uni0453
 Encoding: 1107 1107 786
 Width: 436
 VWidth: 999
@@ -33272,7 +33272,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10102
+StartChar: uni0455
 Encoding: 1109 1109 787
 Width: 419
 VWidth: 999
@@ -33304,7 +33304,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10103
+StartChar: uni0456
 Encoding: 1110 1110 788
 Width: 312
 VWidth: 999
@@ -33338,7 +33338,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: afii10104
+StartChar: uni0457
 Encoding: 1111 1111 789
 Width: 343
 VWidth: 999
@@ -33378,7 +33378,7 @@ LCarets2: 1 0
 Colour: ff80cc
 EndChar
 
-StartChar: afii10105
+StartChar: uni0458
 Encoding: 1112 1112 790
 Width: 350
 VWidth: 999
@@ -33413,7 +33413,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10109
+StartChar: uni045C
 Encoding: 1116 1116 791
 Width: 545
 VWidth: 999
@@ -33522,7 +33522,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: afii10110
+StartChar: uni045E
 Encoding: 1118 1118 793
 Width: 539
 VWidth: 999
@@ -44063,7 +44063,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: enquad
+StartChar: uni2000
 Encoding: 8192 8192 1019
 Width: 499
 VWidth: 999
@@ -44072,7 +44072,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: emquad
+StartChar: uni2001
 Encoding: 8193 8193 1020
 Width: 999
 VWidth: 999
@@ -44081,7 +44081,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: enspace
+StartChar: uni2002
 Encoding: 8194 8194 1021
 Width: 518
 VWidth: 999
@@ -44090,7 +44090,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: emspace
+StartChar: uni2003
 Encoding: 8195 8195 1022
 Width: 756
 VWidth: 999
@@ -44099,7 +44099,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: threeperemspace
+StartChar: uni2004
 Encoding: 8196 8196 1023
 Width: 332
 VWidth: 999
@@ -44108,7 +44108,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: fourperemspace
+StartChar: uni2005
 Encoding: 8197 8197 1024
 Width: 249
 VWidth: 999
@@ -44117,7 +44117,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: sixperemspace
+StartChar: uni2006
 Encoding: 8198 8198 1025
 Width: 166
 VWidth: 999
@@ -44126,7 +44126,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: figurespace
+StartChar: uni2007
 Encoding: 8199 8199 1026
 Width: 438
 VWidth: 999
@@ -44135,7 +44135,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: punctuationspace
+StartChar: uni2008
 Encoding: 8200 8200 1027
 Width: 219
 VWidth: 999
@@ -44144,7 +44144,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: thinspace
+StartChar: uni2009
 Encoding: 8201 8201 1028
 Width: 125
 VWidth: 999
@@ -44153,7 +44153,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: hairspace
+StartChar: uni200A
 Encoding: 8202 8202 1029
 Width: 26
 VWidth: 999
@@ -44162,7 +44162,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: zerowidthspace
+StartChar: uni200B
 Encoding: 8203 8203 1030
 Width: 0
 VWidth: 999
@@ -44207,7 +44207,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: horizontalbar
+StartChar: uni2015
 Encoding: 8213 8213 1033
 Width: 922
 VWidth: 487
@@ -44421,7 +44421,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: quotedblrev
+StartChar: uni201F
 Encoding: 8223 8223 1041
 Width: 373
 VWidth: 999
@@ -44751,7 +44751,7 @@ LCarets2: 1 206
 Colour: ff00ff
 EndChar
 
-StartChar: question_question
+StartChar: uni2047
 Encoding: 8263 8263 1050
 Width: 781
 VWidth: 487
@@ -44819,7 +44819,7 @@ LCarets2: 1 386
 Colour: ff00ff
 EndChar
 
-StartChar: question_exclam
+StartChar: uni2048
 Encoding: 8264 8264 1051
 Width: 594
 VWidth: 487
@@ -44879,7 +44879,7 @@ LCarets2: 1 392
 Colour: ff00ff
 EndChar
 
-StartChar: exclam_question
+StartChar: uni2049
 Encoding: 8265 8265 1052
 Width: 587
 VWidth: 487
@@ -45014,7 +45014,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: zero.superior
+StartChar: uni2070
 Encoding: 8304 8304 1055
 Width: 340
 VWidth: 407
@@ -45042,7 +45042,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: i.superior
+StartChar: uni2071
 Encoding: 8305 8305 1056
 Width: 271
 Flags: HW
@@ -45074,7 +45074,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: four.superior
+StartChar: uni2074
 Encoding: 8308 8308 1057
 Width: 340
 VWidth: 407
@@ -45111,7 +45111,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: five.superior
+StartChar: uni2075
 Encoding: 8309 8309 1058
 Width: 340
 VWidth: 404
@@ -45143,7 +45143,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: six.superior
+StartChar: uni2076
 Encoding: 8310 8310 1059
 Width: 340
 VWidth: 407
@@ -45173,7 +45173,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: seven.superior
+StartChar: uni2077
 Encoding: 8311 8311 1060
 Width: 340
 VWidth: 407
@@ -45200,7 +45200,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: eight.superior
+StartChar: uni2078
 Encoding: 8312 8312 1061
 Width: 340
 VWidth: 407
@@ -45238,7 +45238,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: nine.superior
+StartChar: uni2079
 Encoding: 8313 8313 1062
 Width: 340
 VWidth: 407
@@ -45267,7 +45267,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: plus.superior
+StartChar: uni207A
 Encoding: 8314 8314 1063
 Width: 340
 Flags: HW
@@ -45292,7 +45292,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: minus.superior
+StartChar: uni207B
 Encoding: 8315 8315 1064
 Width: 340
 VWidth: 423
@@ -45310,7 +45310,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: equal.superior
+StartChar: uni207C
 Encoding: 8316 8316 1065
 Width: 340
 Flags: HW
@@ -45332,7 +45332,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenleft.superior
+StartChar: uni207D
 Encoding: 8317 8317 1066
 Width: 224
 VWidth: 373
@@ -45352,7 +45352,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: parenright.superior
+StartChar: uni207E
 Encoding: 8318 8318 1067
 Width: 217
 VWidth: 373
@@ -45372,7 +45372,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: n.superior
+StartChar: uni207F
 Encoding: 8319 8319 1068
 Width: 452
 Flags: HW
@@ -45411,7 +45411,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: zero.inferior
+StartChar: uni2080
 Encoding: 8320 8320 1069
 Width: 340
 VWidth: 407
@@ -45438,7 +45438,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: one.inferior
+StartChar: uni2081
 Encoding: 8321 8321 1070
 Width: 340
 VWidth: 944
@@ -45467,7 +45467,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: two.inferior
+StartChar: uni2082
 Encoding: 8322 8322 1071
 Width: 340
 VWidth: 487
@@ -45502,7 +45502,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: three.inferior
+StartChar: uni2083
 Encoding: 8323 8323 1072
 Width: 340
 Flags: HW
@@ -45537,7 +45537,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: four.inferior
+StartChar: uni2084
 Encoding: 8324 8324 1073
 Width: 340
 VWidth: 407
@@ -45573,7 +45573,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: five.inferior
+StartChar: uni2085
 Encoding: 8325 8325 1074
 Width: 340
 VWidth: 404
@@ -45604,7 +45604,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: six.inferior
+StartChar: uni2086
 Encoding: 8326 8326 1075
 Width: 340
 Flags: HW
@@ -45632,7 +45632,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: seven.inferior
+StartChar: uni2087
 Encoding: 8327 8327 1076
 Width: 340
 Flags: HW
@@ -45657,7 +45657,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: eight.inferior
+StartChar: uni2088
 Encoding: 8328 8328 1077
 Width: 340
 Flags: HW
@@ -45693,7 +45693,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: nine.inferior
+StartChar: uni2089
 Encoding: 8329 8329 1078
 Width: 340
 Flags: HW
@@ -45720,7 +45720,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: plus.inferior
+StartChar: uni208A
 Encoding: 8330 8330 1079
 Width: 340
 Flags: HW
@@ -45745,7 +45745,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: minus.inferior
+StartChar: uni208B
 Encoding: 8331 8331 1080
 Width: 340
 Flags: HW
@@ -45762,7 +45762,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: equal.inferior
+StartChar: uni208C
 Encoding: 8332 8332 1081
 Width: 340
 Flags: HW
@@ -45784,7 +45784,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenleft.inferior
+StartChar: uni208D
 Encoding: 8333 8333 1082
 Width: 224
 Flags: HW
@@ -45802,7 +45802,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: parenright.inferior
+StartChar: uni208E
 Encoding: 8334 8334 1083
 Width: 217
 Flags: HW
@@ -46144,7 +46144,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: centigrade
+StartChar: uni2103
 Encoding: 8451 8451 1090
 Width: 794
 VWidth: 999
@@ -46183,7 +46183,7 @@ Ligature2: "'liga' Standardligaturen 1" degree C
 Colour: ff80cc
 EndChar
 
-StartChar: afii61248
+StartChar: uni2105
 Encoding: 8453 8453 1091
 Width: 755
 VWidth: 999
@@ -46285,7 +46285,7 @@ EndSplineSet
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: fahrenheit
+StartChar: uni2109
 Encoding: 8457 8457 1093
 Width: 772
 VWidth: 999
@@ -46508,7 +46508,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: afii61289
+StartChar: uni2113
 Encoding: 8467 8467 1097
 Width: 321
 VWidth: 999
@@ -46606,7 +46606,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii61352
+StartChar: uni2116
 Encoding: 8470 8470 1099
 Width: 925
 VWidth: 999
@@ -46991,7 +46991,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2126
+StartChar: Omega
 Encoding: 8486 8486 1105
 Width: 666
 VWidth: 487
@@ -47240,7 +47240,7 @@ LCarets2: 2 0 0
 Colour: ff80cc
 EndChar
 
-StartChar: onefifth
+StartChar: uni2155
 Encoding: 8533 8533 1110
 Width: 660
 VWidth: 999
@@ -47295,7 +47295,7 @@ LCarets2: 2 0 0
 Colour: ff80cc
 EndChar
 
-StartChar: twofifths
+StartChar: uni2156
 Encoding: 8534 8534 1111
 Width: 660
 VWidth: 999
@@ -47356,7 +47356,7 @@ LCarets2: 2 0 0
 Colour: ff80cc
 EndChar
 
-StartChar: threefifths
+StartChar: uni2157
 Encoding: 8535 8535 1112
 Width: 660
 VWidth: 999
@@ -47418,7 +47418,7 @@ LCarets2: 2 0 0
 Colour: ff80cc
 EndChar
 
-StartChar: fourfifths
+StartChar: uni2158
 Encoding: 8536 8536 1113
 Width: 660
 VWidth: 999
@@ -47731,7 +47731,7 @@ LCarets2: 2 0 0
 Colour: ff80cc
 EndChar
 
-StartChar: onenumerator
+StartChar: uni215F
 Encoding: 8543 8543 1118
 Width: 352
 VWidth: 999
@@ -47769,7 +47769,7 @@ LCarets2: 1 0
 Colour: ff80cc
 EndChar
 
-StartChar: Oneroman
+StartChar: uni2160
 Encoding: 8544 8544 1119
 Width: 279
 VWidth: 999
@@ -47809,7 +47809,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Tworoman
+StartChar: uni2161
 Encoding: 8545 8545 1120
 Width: 489
 VWidth: 999
@@ -47861,7 +47861,7 @@ EndSplineSet
 LCarets2: 1 244 
 EndChar
 
-StartChar: Threeroman
+StartChar: uni2162
 Encoding: 8546 8546 1121
 Width: 708
 VWidth: 999
@@ -47924,7 +47924,7 @@ EndSplineSet
 LCarets2: 2 247 461 
 EndChar
 
-StartChar: Fourroman
+StartChar: uni2163
 Encoding: 8547 8547 1122
 Width: 789
 VWidth: 999
@@ -47989,7 +47989,7 @@ EndSplineSet
 LCarets2: 1 256 
 EndChar
 
-StartChar: Fiveroman
+StartChar: uni2164
 Encoding: 8548 8548 1123
 Width: 571
 VWidth: 999
@@ -48034,7 +48034,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Sixroman
+StartChar: uni2165
 Encoding: 8549 8549 1124
 Width: 801
 VWidth: 999
@@ -48099,7 +48099,7 @@ EndSplineSet
 LCarets2: 1 539 
 EndChar
 
-StartChar: Sevenroman
+StartChar: uni2166
 Encoding: 8550 8550 1125
 Width: 1012
 VWidth: 999
@@ -48177,7 +48177,7 @@ EndSplineSet
 LCarets2: 2 549 770 
 EndChar
 
-StartChar: Eightroman
+StartChar: uni2167
 Encoding: 8551 8551 1126
 Width: 1229
 VWidth: 999
@@ -48268,7 +48268,7 @@ EndSplineSet
 LCarets2: 3 542 776 976 
 EndChar
 
-StartChar: Nineroman
+StartChar: uni2168
 Encoding: 8552 8552 1127
 Width: 819
 VWidth: 999
@@ -48350,7 +48350,7 @@ EndSplineSet
 LCarets2: 1 242 
 EndChar
 
-StartChar: Tenroman
+StartChar: uni2169
 Encoding: 8553 8553 1128
 Width: 621
 VWidth: 999
@@ -48419,7 +48419,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Elevenroman
+StartChar: uni216A
 Encoding: 8554 8554 1129
 Width: 814
 VWidth: 999
@@ -48504,7 +48504,7 @@ EndSplineSet
 LCarets2: 1 564 
 EndChar
 
-StartChar: Twelveroman
+StartChar: uni216B
 Encoding: 8555 8555 1130
 Width: 1028
 VWidth: 999
@@ -48757,7 +48757,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: oneroman
+StartChar: uni2170
 Encoding: 8560 8560 1135
 Width: 312
 VWidth: 999
@@ -48791,7 +48791,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: tworoman
+StartChar: uni2171
 Encoding: 8561 8561 1136
 Width: 559
 VWidth: 999
@@ -48846,7 +48846,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: threeroman
+StartChar: uni2172
 Encoding: 8562 8562 1137
 Width: 788
 VWidth: 999
@@ -48921,7 +48921,7 @@ LCarets2: 2 0 0
 Colour: ff00ff
 EndChar
 
-StartChar: fourroman
+StartChar: uni2173
 Encoding: 8563 8563 1138
 Width: 786
 VWidth: 999
@@ -48968,7 +48968,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: fiveroman
+StartChar: uni2174
 Encoding: 8564 8564 1139
 Width: 550
 VWidth: 999
@@ -48993,7 +48993,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: sixroman
+StartChar: uni2175
 Encoding: 8565 8565 1140
 Width: 781
 VWidth: 999
@@ -49040,7 +49040,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: sevenroman
+StartChar: uni2176
 Encoding: 8566 8566 1141
 Width: 1029
 VWidth: 999
@@ -49107,7 +49107,7 @@ LCarets2: 2 0 0
 Colour: ff00ff
 EndChar
 
-StartChar: eightroman
+StartChar: uni2177
 Encoding: 8567 8567 1142
 Width: 1263
 VWidth: 999
@@ -49194,7 +49194,7 @@ LCarets2: 3 0 0 0
 Colour: ff00ff
 EndChar
 
-StartChar: nineroman
+StartChar: uni2178
 Encoding: 8568 8568 1143
 Width: 860
 VWidth: 999
@@ -49249,7 +49249,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: tenroman
+StartChar: uni2179
 Encoding: 8569 8569 1144
 Width: 534
 VWidth: 999
@@ -49282,7 +49282,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: elevenroman
+StartChar: uni217A
 Encoding: 8570 8570 1145
 Width: 782
 VWidth: 999
@@ -49337,7 +49337,7 @@ LCarets2: 1 0
 Colour: ff00ff
 EndChar
 
-StartChar: twelveroman
+StartChar: uni217B
 Encoding: 8571 8571 1146
 Width: 1029
 VWidth: 999
@@ -50408,7 +50408,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Nwarrow
+StartChar: uni21D6
 Encoding: 8662 8662 1179
 Width: 862
 VWidth: 999
@@ -50436,7 +50436,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: Nearrow
+StartChar: uni21D7
 Encoding: 8663 8663 1180
 Width: 866
 VWidth: 999
@@ -50464,7 +50464,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: Searrow
+StartChar: uni21D8
 Encoding: 8664 8664 1181
 Width: 862
 VWidth: 999
@@ -50492,7 +50492,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: Swarrow
+StartChar: uni21D9
 Encoding: 8665 8665 1182
 Width: 866
 VWidth: 999
@@ -50557,7 +50557,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2206
+StartChar: Delta
 Encoding: 8710 8710 1184
 Width: 584
 VWidth: 431
@@ -50761,9 +50761,9 @@ SplineSet
  77 268 l 1
  477 268 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" minus.superior minus.inferior uni2099
-Substitution2: "'sinf' Wissenschaftliche Indices 1" minus.inferior
-Substitution2: "'sups' Hochgestellte 1" minus.superior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni207B uni208B uni2099
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208B
+Substitution2: "'sups' Hochgestellte 1" uni207B
 EndChar
 
 StartChar: uni2213
@@ -52329,7 +52329,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: f_f
+StartChar: uniFB00
 Encoding: 64256 64256 1252
 Width: 687
 VWidth: 999
@@ -52399,7 +52399,7 @@ Ligature2: "'liga' Standardligaturen 1" f f
 LCarets2: 1 322 
 EndChar
 
-StartChar: f_i
+StartChar: uniFB01
 Encoding: 64257 64257 1253
 Width: 662
 VWidth: 999
@@ -52464,7 +52464,7 @@ EndSplineSet
 LCarets2: 1 338 
 EndChar
 
-StartChar: f_l
+StartChar: uniFB02
 Encoding: 64258 64258 1254
 Width: 624
 VWidth: 999
@@ -52522,7 +52522,7 @@ EndSplineSet
 LCarets2: 1 333 
 EndChar
 
-StartChar: f_f_i
+StartChar: uniFB03
 Encoding: 64259 64259 1255
 Width: 975
 VWidth: 999
@@ -52611,7 +52611,7 @@ EndSplineSet
 LCarets2: 2 327 675 
 EndChar
 
-StartChar: f_f_l
+StartChar: uniFB04
 Encoding: 64260 64260 1256
 Width: 992
 VWidth: 999
@@ -52694,7 +52694,7 @@ EndSplineSet
 LCarets2: 2 326 675 
 EndChar
 
-StartChar: longs_t
+StartChar: uniFB05
 Encoding: 64261 64261 1257
 Width: 630
 VWidth: 999
@@ -53302,7 +53302,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10023
+StartChar: uni0401
 Encoding: 1025 1025 1278
 Width: 594
 VWidth: 999
@@ -53359,7 +53359,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10052
+StartChar: uni0403
 Encoding: 1027 1027 1279
 Width: 563
 VWidth: 999
@@ -53402,7 +53402,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10058
+StartChar: uni0409
 Encoding: 1033 1033 1280
 Width: 999
 Flags: HW
@@ -53449,7 +53449,7 @@ EndSplineSet
 Comment: "In Times anders" 
 EndChar
 
-StartChar: afii10059
+StartChar: uni040A
 Encoding: 1034 1034 1281
 Width: 1023
 VWidth: 999
@@ -53508,7 +53508,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10060
+StartChar: uni040B
 Encoding: 1035 1035 1282
 Width: 791
 VWidth: 999
@@ -53562,7 +53562,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10145
+StartChar: uni040F
 Encoding: 1039 1039 1283
 Width: 784
 VWidth: 999
@@ -54873,7 +54873,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: hyphentwo
+StartChar: uni2010
 Encoding: 8208 8208 1311
 Width: 344
 VWidth: 999
@@ -54895,7 +54895,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: hyphennobreak
+StartChar: uni2011
 Encoding: 8209 8209 1312
 Width: 344
 VWidth: 999
@@ -55166,7 +55166,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: perthousandzero
+StartChar: uniE01F
 Encoding: 57375 57375 1319
 Width: 291
 VWidth: 999
@@ -56187,7 +56187,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: s_t
+StartChar: uniFB06
 Encoding: 64262 64262 1335
 Width: 680
 VWidth: 999
@@ -56251,7 +56251,7 @@ LCarets2: 1 357
 Colour: ff80cc
 EndChar
 
-StartChar: h.superior
+StartChar: uni02B0
 Encoding: 688 688 1336
 Width: 460
 Flags: HMW
@@ -56295,7 +56295,7 @@ Comment: "Anfang{Spacing modifying letters}"
 Colour: ff00ff
 EndChar
 
-StartChar: j.superior
+StartChar: uni02B2
 Encoding: 690 690 1337
 Width: 256
 Flags: HMW
@@ -56336,7 +56336,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: r.superior
+StartChar: uni02B3
 Encoding: 691 691 1338
 Width: 316
 Flags: HW
@@ -56373,7 +56373,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: rturned.superior
+StartChar: uni02B4
 Encoding: 692 692 1339
 Width: 316
 Flags: HW
@@ -56410,7 +56410,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: w.superior
+StartChar: uni02B7
 Encoding: 695 695 1340
 Width: 524
 Flags: HMW
@@ -56443,7 +56443,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: y.superior
+StartChar: uni02B8
 Encoding: 696 696 1341
 Width: 371
 Flags: HMW
@@ -56526,7 +56526,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii64937
+StartChar: uni02BD
 Encoding: 701 701 1344
 Width: 168
 VWidth: 999
@@ -56812,7 +56812,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: gammalatin.superior
+StartChar: uni02E0
 Encoding: 736 736 1355
 Width: 387
 Flags: HW
@@ -56860,7 +56860,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: glottalstopreversed.superior
+StartChar: uni02E4
 Encoding: 740 740 1356
 Width: 329
 Flags: HW
@@ -57083,7 +57083,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: brevecomb
+StartChar: uni0306
 Encoding: 774 774 1364
 Width: 0
 VWidth: 487
@@ -57177,7 +57177,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: breveinvertedcmb
+StartChar: uni0311
 Encoding: 785 785 1368
 Width: 0
 VWidth: 999
@@ -57197,7 +57197,7 @@ SplineSet
  -151 660 -86.5 611.5 -81 506 c 1
  -114 506 l 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" breveinvertedcmb.cap
+Substitution2: "'case' Versalformen 1" uni0311.cap
 Colour: ff00ff
 EndChar
 
@@ -57274,7 +57274,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: commaturnedabovecmb
+StartChar: uni0312
 Encoding: 786 786 1372
 Width: 0
 VWidth: 999
@@ -57664,7 +57664,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: ogonekcmb
+StartChar: uni0328
 Encoding: 808 808 1387
 Width: 0
 VWidth: 999
@@ -57811,7 +57811,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10101
+StartChar: uni0454
 Encoding: 1108 1108 1393
 Width: 479
 VWidth: 999
@@ -57845,7 +57845,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10193
+StartChar: uni045F
 Encoding: 1119 1119 1394
 Width: 612
 VWidth: 999
@@ -57896,7 +57896,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10099
+StartChar: uni0452
 Encoding: 1106 1106 1395
 Width: 602
 VWidth: 999
@@ -57940,7 +57940,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10106
+StartChar: uni0459
 Encoding: 1113 1113 1396
 Width: 791
 VWidth: 999
@@ -57987,7 +57987,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10107
+StartChar: uni045A
 Encoding: 1114 1114 1397
 Width: 853
 VWidth: 999
@@ -58042,7 +58042,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10108
+StartChar: uni045B
 Encoding: 1115 1115 1398
 Width: 606
 VWidth: 999
@@ -58093,7 +58093,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10051
+StartChar: uni0402
 Encoding: 1026 1026 1399
 Width: 830
 VWidth: 999
@@ -58145,7 +58145,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10053
+StartChar: uni0404
 Encoding: 1028 1028 1400
 Width: 674
 VWidth: 999
@@ -66055,7 +66055,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: onesixth
+StartChar: uni2159
 Encoding: 8537 8537 1548
 Width: 660
 VWidth: 999
@@ -66109,7 +66109,7 @@ LCarets2: 2 0 0
 Colour: ff80cc
 EndChar
 
-StartChar: fivesixths
+StartChar: uni215A
 Encoding: 8538 8538 1549
 Width: 660
 VWidth: 999
@@ -66265,7 +66265,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: primetriple
+StartChar: uni2034
 Encoding: 8244 8244 1552
 Width: 509
 Flags: HW
@@ -66305,7 +66305,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: primereversed
+StartChar: uni2035
 Encoding: 8245 8245 1553
 Width: 244
 VWidth: 999
@@ -66419,7 +66419,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: trianglebullet
+StartChar: uni2023
 Encoding: 8227 8227 1556
 Width: 375
 VWidth: 976
@@ -66513,7 +66513,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: hyphendot
+StartChar: uni2027
 Encoding: 8231 8231 1560
 Width: 246
 VWidth: 999
@@ -67001,7 +67001,7 @@ EndSplineSet
 Colour: ff0000
 EndChar
 
-StartChar: glottalstopreversed
+StartChar: uni0295
 Encoding: 661 661 1571
 Width: 464
 Flags: HMW
@@ -67035,7 +67035,7 @@ SplineSet
  294 200 l 2
  294 158 294.7 122 296 92 c 0
 EndSplineSet
-Substitution2: "'sups' Hochgestellte 1" glottalstopreversed.superior
+Substitution2: "'sups' Hochgestellte 1" uni02E4
 Colour: ff0000
 EndChar
 
@@ -67149,7 +67149,7 @@ EndSplineSet
 Colour: ff0000
 EndChar
 
-StartChar: Rsmallcap
+StartChar: uni0280
 Encoding: 640 640 1575
 Width: 552
 Flags: HW
@@ -67193,7 +67193,7 @@ EndSplineSet
 Colour: ff0000
 EndChar
 
-StartChar: Rsmallinverted
+StartChar: uni0281
 Encoding: 641 641 1576
 Width: 552
 Flags: HW
@@ -67234,11 +67234,11 @@ SplineSet
  254 220 238.3 217.3 223 212 c 1
  223 41 l 1
 EndSplineSet
-Substitution2: "'sups' Hochgestellte 1" Rsmallinverted.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B6
 Colour: ff0000
 EndChar
 
-StartChar: gammalatin
+StartChar: uni0263
 Encoding: 611 611 1577
 Width: 579
 Flags: HW
@@ -67283,7 +67283,7 @@ SplineSet
  230 -67.7 214 -99.3 210 -132 c 1
  211.3 -166 227 -183 257 -183 c 0
 EndSplineSet
-Substitution2: "'sups' Hochgestellte 1" gammalatin.superior
+Substitution2: "'sups' Hochgestellte 1" uni02E0
 Colour: ff0000
 EndChar
 
@@ -67665,7 +67665,7 @@ EndSplineSet
 Colour: ff0000
 EndChar
 
-StartChar: rhookturned
+StartChar: uni027B
 Encoding: 635 635 1587
 Width: 448
 Flags: HW
@@ -67703,7 +67703,7 @@ SplineSet
  335.3 386.3 332 326.3 332 251 c 1
  329 116 l 1
 EndSplineSet
-Substitution2: "'sups' Hochgestellte 1" rhookturned.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B5
 Colour: ff0000
 EndChar
 
@@ -67863,7 +67863,7 @@ EndSplineSet
 Colour: ff0000
 EndChar
 
-StartChar: hhook
+StartChar: uni0266
 Encoding: 614 614 1592
 Width: 606
 Flags: HW
@@ -67906,11 +67906,11 @@ SplineSet
  237 609.3 218.7 579 218 519 c 2
  218 384 l 1
 EndSplineSet
-Substitution2: "'sups' Hochgestellte 1" hhook.superior
+Substitution2: "'sups' Hochgestellte 1" uni02B1
 Colour: ff0000
 EndChar
 
-StartChar: hhook.superior
+StartChar: uni02B1
 Encoding: 689 689 1593
 Width: 460
 Flags: HW
@@ -70380,7 +70380,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: dotlessj
+StartChar: uni0237
 Encoding: 567 567 1654
 Width: 350
 VWidth: 999
@@ -70500,7 +70500,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: a.inferior
+StartChar: uni2090
 Encoding: 8336 8336 1662
 Width: 372
 Flags: HW
@@ -70542,7 +70542,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: e.inferior
+StartChar: uni2091
 Encoding: 8337 8337 1663
 Width: 377
 Flags: HW
@@ -70575,7 +70575,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: o.inferior
+StartChar: uni2092
 Encoding: 8338 8338 1664
 Width: 417
 Flags: HW
@@ -70603,7 +70603,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: x.inferior
+StartChar: uni2093
 Encoding: 8339 8339 1665
 Width: 367
 Flags: HW
@@ -80864,7 +80864,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: interrobang
+StartChar: uni203D
 Encoding: 8253 8253 1896
 Width: 439
 VWidth: 487
@@ -81412,7 +81412,7 @@ LayerCount: 2
 Colour: ffff
 EndChar
 
-StartChar: afii10147
+StartChar: uni0472
 Encoding: 1138 1138 1913
 Width: 1000
 VWidth: 999
@@ -81421,7 +81421,7 @@ LayerCount: 2
 Colour: ff80cc
 EndChar
 
-StartChar: afii10050
+StartChar: uni0490
 Encoding: 1168 1168 1914
 Width: 564
 VWidth: 999
@@ -81455,7 +81455,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii10098
+StartChar: uni0491
 Encoding: 1169 1169 1915
 Width: 451
 VWidth: 487
@@ -82622,7 +82622,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni263C
+StartChar: sun
 Encoding: 9788 9788 1940
 Width: 693
 VWidth: 830
@@ -82847,7 +82847,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: rhookturned.superior
+StartChar: uni02B5
 Encoding: 693 693 1952
 Width: 302
 Flags: HW
@@ -82888,7 +82888,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: Rsmallinverted.superior
+StartChar: uni02B6
 Encoding: 694 694 1953
 Width: 407
 Flags: HW
@@ -82960,7 +82960,7 @@ SplineSet
 EndSplineSet
 Substitution2: "'ss05' Elbischer Stilsatz-1" l.elb
 Substitution2: "'sinf' Wissenschaftliche Indices 1" l.inferior
-Substitution2: "'sups' Hochgestellte 1" l.superior
+Substitution2: "'sups' Hochgestellte 1" uni02E1
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" l.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" l.sc
 EndChar
@@ -83000,7 +83000,7 @@ SplineSet
  54 113 l 1
 EndSplineSet
 Substitution2: "'sinf' Wissenschaftliche Indices 1" s.inferior
-Substitution2: "'sups' Hochgestellte 1" s.superior
+Substitution2: "'sups' Hochgestellte 1" uni02E2
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" s.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" s.sc
 EndChar
@@ -83038,9 +83038,9 @@ SplineSet
  187.4 203 l 1
  190.5 206.8 l 1
 EndSplineSet
-Substitution2: "'sups' Hochgestellte 1" x.superior
+Substitution2: "'sups' Hochgestellte 1" uni02E3
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" x.sc
-Substitution2: "'sinf' Wissenschaftliche Indices 1" x.inferior
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2093
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" x.sc
 EndChar
 
@@ -83185,7 +83185,7 @@ LayerCount: 2
 Colour: ff80cc
 EndChar
 
-StartChar: afii57799
+StartChar: uni05B0
 Encoding: 1456 1456 1968
 Width: 0
 Flags: HW
@@ -83209,7 +83209,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57801
+StartChar: uni05B1
 Encoding: 1457 1457 1969
 Width: 0
 Flags: HW
@@ -83248,7 +83248,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57800
+StartChar: uni05B2
 Encoding: 1458 1458 1970
 Width: 0
 Flags: HW
@@ -83277,7 +83277,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: afii57802
+StartChar: uni05B3
 Encoding: 1459 1459 1971
 Width: 0
 Flags: HW
@@ -83313,7 +83313,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57793
+StartChar: uni05B4
 Encoding: 1460 1460 1972
 Width: 0
 Flags: HW
@@ -83331,7 +83331,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57794
+StartChar: uni05B5
 Encoding: 1461 1461 1973
 Width: 0
 Flags: HW
@@ -83355,7 +83355,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57795
+StartChar: uni05B6
 Encoding: 1462 1462 1974
 Width: 0
 Flags: HW
@@ -83384,7 +83384,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57798
+StartChar: uni05B7
 Encoding: 1463 1463 1975
 Width: 0
 Flags: HW
@@ -83402,7 +83402,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57797
+StartChar: uni05B8
 Encoding: 1464 1464 1976
 Width: 0
 Flags: HW
@@ -83428,7 +83428,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: afii57806
+StartChar: uni05B9
 Encoding: 1465 1465 1977
 Width: 0
 Flags: HW
@@ -83447,7 +83447,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57796
+StartChar: uni05BB
 Encoding: 1467 1467 1978
 Width: 0
 Flags: HW
@@ -83477,7 +83477,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57807
+StartChar: uni05BC
 Encoding: 1468 1468 1979
 Width: 0
 Flags: HW
@@ -83496,7 +83496,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57839
+StartChar: uni05BD
 Encoding: 1469 1469 1980
 Width: 0
 Flags: HW
@@ -83514,7 +83514,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57645
+StartChar: uni05BE
 Encoding: 1470 1470 1981
 Width: 375
 Flags: HW
@@ -83531,7 +83531,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57841
+StartChar: uni05BF
 Encoding: 1471 1471 1982
 Width: 0
 Flags: HW
@@ -83549,7 +83549,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57842
+StartChar: uni05C0
 Encoding: 1472 1472 1983
 Width: 291
 Flags: HW
@@ -83566,7 +83566,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57804
+StartChar: uni05C1
 Encoding: 1473 1473 1984
 Width: 0
 Flags: HW
@@ -83585,7 +83585,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57803
+StartChar: uni05C2
 Encoding: 1474 1474 1985
 Width: 0
 Flags: HW
@@ -83604,7 +83604,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57658
+StartChar: uni05C3
 Encoding: 1475 1475 1986
 Width: 352
 Flags: HW
@@ -83626,7 +83626,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57664
+StartChar: uni05D0
 Encoding: 1488 1488 1987
 Width: 481
 Flags: HW
@@ -83672,7 +83672,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57665
+StartChar: uni05D1
 Encoding: 1489 1489 1988
 Width: 468
 Flags: HW
@@ -83702,7 +83702,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57666
+StartChar: uni05D2
 Encoding: 1490 1490 1989
 Width: 335
 Flags: HW
@@ -83735,7 +83735,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57667
+StartChar: uni05D3
 Encoding: 1491 1491 1990
 Width: 438
 Flags: HW
@@ -83764,7 +83764,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57668
+StartChar: uni05D4
 Encoding: 1492 1492 1991
 Width: 478
 Flags: HW
@@ -83804,7 +83804,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57669
+StartChar: uni05D5
 Encoding: 1493 1493 1992
 Width: 285
 Flags: HW
@@ -83827,7 +83827,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57670
+StartChar: uni05D6
 Encoding: 1494 1494 1993
 Width: 289
 Flags: HMW
@@ -83854,7 +83854,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57671
+StartChar: uni05D7
 Encoding: 1495 1495 1994
 Width: 479
 Flags: HW
@@ -83888,7 +83888,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57672
+StartChar: uni05D8
 Encoding: 1496 1496 1995
 Width: 486
 Flags: HW
@@ -83925,7 +83925,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57673
+StartChar: uni05D9
 Encoding: 1497 1497 1996
 Width: 270
 Flags: HW
@@ -83947,7 +83947,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57674
+StartChar: uni05DA
 Encoding: 1498 1498 1997
 Width: 475
 Flags: HW
@@ -83974,7 +83974,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57675
+StartChar: uni05DB
 Encoding: 1499 1499 1998
 Width: 463
 Flags: HW
@@ -84002,7 +84002,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57676
+StartChar: uni05DC
 Encoding: 1500 1500 1999
 Width: 476
 Flags: HW
@@ -84040,7 +84040,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57677
+StartChar: uni05DD
 Encoding: 1501 1501 2000
 Width: 527
 Flags: HMW
@@ -84073,7 +84073,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57678
+StartChar: uni05DE
 Encoding: 1502 1502 2001
 Width: 520
 Flags: HW
@@ -84110,7 +84110,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57679
+StartChar: uni05DF
 Encoding: 1503 1503 2002
 Width: 282
 Flags: HW
@@ -84136,7 +84136,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57680
+StartChar: uni05E0
 Encoding: 1504 1504 2003
 Width: 317
 Flags: HW
@@ -84165,7 +84165,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57681
+StartChar: uni05E1
 Encoding: 1505 1505 2004
 Width: 510
 Flags: HW
@@ -84195,7 +84195,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57682
+StartChar: uni05E2
 Encoding: 1506 1506 2005
 Width: 499
 Flags: HW
@@ -84237,7 +84237,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57683
+StartChar: uni05E3
 Encoding: 1507 1507 2006
 Width: 476
 Flags: HMW
@@ -84273,7 +84273,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57684
+StartChar: uni05E4
 Encoding: 1508 1508 2007
 Width: 474
 Flags: HMW
@@ -84312,7 +84312,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: afii57685
+StartChar: uni05E5
 Encoding: 1509 1509 2008
 Width: 482
 Flags: HW
@@ -84348,7 +84348,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57686
+StartChar: uni05E6
 Encoding: 1510 1510 2009
 Width: 480
 Flags: HW
@@ -84391,7 +84391,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57687
+StartChar: uni05E7
 Encoding: 1511 1511 2010
 Width: 497
 Flags: HW
@@ -84428,7 +84428,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57688
+StartChar: uni05E8
 Encoding: 1512 1512 2011
 Width: 489
 Flags: HW
@@ -84454,7 +84454,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57689
+StartChar: uni05E9
 Encoding: 1513 1513 2012
 Width: 612
 Flags: HW
@@ -84499,7 +84499,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: afii57690
+StartChar: uni05EA
 Encoding: 1514 1514 2013
 Width: 515
 Flags: HW
@@ -84535,7 +84535,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: afii57716
+StartChar: uni05F0
 Encoding: 1520 1520 2014
 Width: 557
 Flags: HW
@@ -84568,7 +84568,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57717
+StartChar: uni05F1
 Encoding: 1521 1521 2015
 Width: 545
 Flags: HW
@@ -84601,7 +84601,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii57718
+StartChar: uni05F2
 Encoding: 1522 1522 2016
 Width: 533
 Flags: HW
@@ -85098,7 +85098,7 @@ EndSplineSet
 Colour: ff80cc
 EndChar
 
-StartChar: uni221F
+StartChar: orthogonal
 Encoding: 8735 8735 2045
 Width: 541
 Flags: HW
@@ -85458,7 +85458,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2302
+StartChar: house
 Encoding: 8962 8962 2058
 Width: 865
 VWidth: 999
@@ -85484,7 +85484,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2310
+StartChar: revlogicalnot
 Encoding: 8976 8976 2059
 Width: 560
 VWidth: 487
@@ -85504,7 +85504,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2320
+StartChar: integraltp
 Encoding: 8992 8992 2060
 Width: 379
 VWidth: 488
@@ -85526,7 +85526,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2321
+StartChar: integralbt
 Encoding: 8993 8993 2061
 Width: 379
 VWidth: 488
@@ -85548,7 +85548,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2329
+StartChar: angleleft
 Encoding: 9001 9001 2062
 Width: 371
 VWidth: 999
@@ -85570,7 +85570,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni232A
+StartChar: angleright
 Encoding: 9002 9002 2063
 Width: 371
 VWidth: 999
@@ -85762,7 +85762,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni263A
+StartChar: smileface
 Encoding: 9786 9786 2066
 Width: 564
 VWidth: 999
@@ -85822,7 +85822,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni263B
+StartChar: invsmileface
 Encoding: 9787 9787 2067
 Width: 564
 VWidth: 999
@@ -85876,7 +85876,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2663
+StartChar: club
 Encoding: 9827 9827 2068
 Width: 777
 VWidth: 1099
@@ -85909,7 +85909,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2666
+StartChar: diamond
 Encoding: 9830 9830 2069
 Width: 645
 VWidth: 1099
@@ -85925,7 +85925,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2665
+StartChar: heart
 Encoding: 9829 9829 2070
 Width: 725
 VWidth: 1099
@@ -85945,7 +85945,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni2660
+StartChar: spade
 Encoding: 9824 9824 2071
 Width: 722
 VWidth: 1099
@@ -86513,7 +86513,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: afii10087
+StartChar: uni0445
 Encoding: 1093 1093 2082
 Width: 534
 VWidth: 999
@@ -87539,7 +87539,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: tcedilla.sc
+StartChar: uni0163.sc
 Encoding: 65653 -1 2106
 Width: 508
 VWidth: 999
@@ -88018,9 +88018,9 @@ SplineSet
  172 247 166 194 166 146 c 0
  166 73 212 30 254 30 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" eight.oldstyle eight.superior eight.fitted
-Substitution2: "'sups' Hochgestellte 1" eight.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" eight.inferior
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" eight.oldstyle uni2078 eight.fitted
+Substitution2: "'sups' Hochgestellte 1" uni2078
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2088
 Substitution2: "'pnum' Proportionalziffern 1" eight.fitted
 Substitution2: "'onum' Minuskelziffern 1" eight.taboldstyle
 EndChar
@@ -88087,7 +88087,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Germandbls
+StartChar: uni1E9E
 Encoding: 7838 7838 2119
 Width: 739
 VWidth: 488
@@ -88127,8 +88127,8 @@ SplineSet
  352 99 l 1
  376 62 412.5 39 468 39 c 0
 EndSplineSet
-Substitution2: "'ss03' Stilgruppe 3 1" Germandbls.alt
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" Germandbls.alt
+Substitution2: "'ss03' Stilgruppe 3 1" uni1E9E.alt
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni1E9E.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" germandbls.sc
 EndChar
 
@@ -89379,8 +89379,8 @@ SplineSet
  436 626 l 1
  401.7 555 l 1
 EndSplineSet
-Substitution2: "'sups' Hochgestellte 1" zero.superior
-Substitution2: "'sinf' Wissenschaftliche Indices 1" zero.inferior
+Substitution2: "'sups' Hochgestellte 1" uni2070
+Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2080
 Substitution2: "'pnum' Proportionalziffern 1" zero.slashfitted
 EndChar
 
@@ -89542,7 +89542,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: kreis
+StartChar: uniE100
 Encoding: 57600 57600 2156
 Width: 633
 VWidth: 999
@@ -89737,7 +89737,7 @@ SplineSet
  166 73 212 30 254 30 c 0
 EndSplineSet
 Substitution2: "'tnum' Tabellenziffern 1" eight.taboldstyle
-Substitution2: "'sups' Hochgestellte 1" eight.superior
+Substitution2: "'sups' Hochgestellte 1" uni2078
 Substitution2: "'pnum' Proportionalziffern 1" eight.fitted
 EndChar
 
@@ -89773,7 +89773,7 @@ Substitution2: "'tnum' Tabellenziffern 1" nine.taboldstyle
 Colour: ff00ff
 EndChar
 
-StartChar: Tux
+StartChar: uniE000
 Encoding: 57344 57344 2163
 Width: 760
 VWidth: 999
@@ -91248,7 +91248,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Germandbls.alt
+StartChar: uni1E9E.alt
 Encoding: 65699 -1 2186
 Width: 947
 VWidth: 999
@@ -92739,7 +92739,7 @@ LayerCount: 2
 Colour: ff00ff
 EndChar
 
-StartChar: longs_i
+StartChar: uniE03E
 Encoding: 57406 57406 2236
 Width: 1000
 VWidth: 0
@@ -92749,7 +92749,7 @@ LCarets2: 1 279
 Colour: ff80cc
 EndChar
 
-StartChar: longs_longs_i
+StartChar: uniE044
 Encoding: 57412 57412 2237
 Width: 1000
 VWidth: 0
@@ -93366,7 +93366,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: tcommaaccent.sc
+StartChar: uni021B.sc
 Encoding: 65723 -1 2255
 Width: 508
 VWidth: 714
@@ -93411,7 +93411,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: scommaaccent.sc
+StartChar: uni0219.sc
 Encoding: 65724 -1 2256
 Width: 442
 VWidth: 999
@@ -94021,7 +94021,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: breveinvertedcmb.cap
+StartChar: uni0311.cap
 Encoding: 65734 -1 2277
 Width: 0
 VWidth: 487
