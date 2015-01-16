@@ -133,7 +133,7 @@ KernClass2: 9 7 "LinLibertineO-'kern' Cyrillic Kerning"
  139 afii10067 afii10068 afii10074 afii10076 afii10078 afii10079 afii10081 afii10082 afii10087 afii10088 afii10090 afii10091 afii10107 afii10193
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} -50 {} -35 {} 0 {} 0 {} 0 {} 0 {} -50 {} -100 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -23 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 21 21 "LinLibertineO-'kern' Latin kerning" 
- 15 f longs uniFB00
+ 11 f longs f_f
  25 T Tcedilla Tcaron uni0162
  59 Y Yacute Ycircumflex Ydieresis Ygrave seven.fitted question
  47 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9
@@ -177,11 +177,11 @@ KernClass2: 21 21 "LinLibertineO-'kern' Latin kerning"
 ChainSub2: class "'ccmp' Contextual Chaining Substitution 1"  5 1 5 2
   Class: 3 i j
   Class: 333 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 grave.cap uni0359 uni035A uni035B breve.cap uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363 dotaccent.cap
-  Class: 9 f uniFB00
+  Class: 5 f f_f
   Class: 376 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
   FClass: 3 i j
   FClass: 333 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 grave.cap uni0359 uni035A uni035B breve.cap uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363 dotaccent.cap
-  FClass: 9 f uniFB00
+  FClass: 5 f f_f
   FClass: 376 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
  1 0 1
   ClsList: 1
@@ -40439,8 +40439,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB00
-Encoding: 64256 64256 935
+StartChar: f_f
+Encoding: 64256 -1 935
 Width: 716
 VWidth: 999
 Flags: HW
@@ -40516,8 +40516,8 @@ Substitution2: "Substitution f short 1" f_f.short
 LCarets2: 1 257 
 EndChar
 
-StartChar: uniFB01
-Encoding: 64257 64257 936
+StartChar: f_i
+Encoding: 64257 -1 936
 Width: 694
 VWidth: 999
 Flags: HW

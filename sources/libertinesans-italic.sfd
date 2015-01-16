@@ -128,7 +128,7 @@ KernClass2: 9 7 "'kern' Cyrillic Kerning"
  111 uni0432 uni0433 uni0438 uni043A uni043C uni043D uni043F uni0440 uni0445 uni0446 uni0448 uni0449 uni045A uni045F
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} -50 {} -35 {} 0 {} 0 {} 0 {} 0 {} -50 {} -100 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -23 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 21 21 "'kern' Latin kerning" 
- 15 f longs uniFB00
+ 11 f longs f_f
  24 T uni0162 Tcaron uni021A
  59 Y Yacute Ycircumflex Ydieresis Ygrave seven.fitted question
  39 V W Wcircumflex Wgrave Wacute Wdieresis
@@ -52424,8 +52424,8 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: uniFB00
-Encoding: 64256 64256 1268
+StartChar: f_f
+Encoding: 64256 -1 1268
 Width: 583
 VWidth: 999
 Flags: HW
@@ -52500,8 +52500,8 @@ Ligature2: "'liga' Standardligaturen 1" f f
 LCarets2: 1 284 
 EndChar
 
-StartChar: uniFB01
-Encoding: 64257 64257 1269
+StartChar: f_i
+Encoding: 64257 -1 1269
 Width: 576
 VWidth: 999
 Flags: HW
@@ -52568,8 +52568,8 @@ EndSplineSet
 LCarets2: 1 277 
 EndChar
 
-StartChar: uniFB02
-Encoding: 64258 64258 1270
+StartChar: f_l
+Encoding: 64258 -1 1270
 Width: 568
 VWidth: 999
 Flags: HW
@@ -52626,8 +52626,8 @@ EndSplineSet
 LCarets2: 1 288 
 EndChar
 
-StartChar: uniFB03
-Encoding: 64259 64259 1271
+StartChar: f_f_i
+Encoding: 64259 -1 1271
 Width: 844
 VWidth: 999
 Flags: HMW
@@ -52714,8 +52714,8 @@ EndSplineSet
 LCarets2: 2 266 550 
 EndChar
 
-StartChar: uniFB04
-Encoding: 64260 64260 1272
+StartChar: f_f_l
+Encoding: 64260 -1 1272
 Width: 876
 VWidth: 999
 Flags: HW
@@ -52797,8 +52797,8 @@ EndSplineSet
 LCarets2: 2 268 539 
 EndChar
 
-StartChar: uniFB05
-Encoding: 64261 64261 1273
+StartChar: longs_t
+Encoding: 64261 -1 1273
 Width: 592
 VWidth: 999
 Flags: HMW
@@ -58105,8 +58105,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB06
-Encoding: 64262 64262 1388
+StartChar: s_t
+Encoding: 64262 -1 1388
 Width: 680
 VWidth: 999
 Flags: HMW

@@ -134,7 +134,7 @@ KernClass2: 9 7 "LinLibertineO-'kern' Cyrillic Kerning"
  111 uni0432 uni0433 uni0438 uni043A uni043C uni043D uni043F uni0440 uni0445 uni0446 uni0448 uni0449 uni045A uni045F
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} -50 {} -35 {} 0 {} 0 {} 0 {} 0 {} -50 {} -100 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -23 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 21 21 "LinLibertineO-'kern' Latin kerning" 
- 15 f longs uniFB00
+ 11 f longs f_f
  24 T uni0162 Tcaron uni021A
  54 Y Yacute Ycircumflex Ydieresis Ygrave uniE017 question
  47 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9
@@ -178,11 +178,11 @@ KernClass2: 21 21 "LinLibertineO-'kern' Latin kerning"
 ChainSub2: class "'ccmp' Contextual Chaining Substitution 1"  5 1 5 2
   Class: 3 i j
   Class: 329 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 uniE358 uni0359 uni035A uni035B uniE35C uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363 dotaccent.cap
-  Class: 9 f uniFB00
+  Class: 5 f f_f
   Class: 376 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
   FClass: 3 i j
   FClass: 329 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 uniE358 uni0359 uni035A uni035B uniE35C uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363 dotaccent.cap
-  FClass: 9 f uniFB00
+  FClass: 5 f f_f
   FClass: 376 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
  1 0 1
   ClsList: 1
@@ -59936,8 +59936,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB00
-Encoding: 64256 64256 1269
+StartChar: f_f
+Encoding: 64256 -1 1269
 Width: 568
 VWidth: 999
 Flags: HW
@@ -60008,8 +60008,8 @@ Ligature2: "'liga' Standardligaturen 1" f f
 LCarets2: 1 257 
 EndChar
 
-StartChar: uniFB01
-Encoding: 64257 64257 1270
+StartChar: f_i
+Encoding: 64257 -1 1270
 Width: 564
 VWidth: 999
 Flags: HW
@@ -60067,8 +60067,8 @@ Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f i
 LCarets2: 1 280 
 EndChar
 
-StartChar: uniFB02
-Encoding: 64258 64258 1271
+StartChar: f_l
+Encoding: 64258 -1 1271
 Width: 570
 VWidth: 999
 Flags: HW
@@ -60125,8 +60125,8 @@ Ligature2: "'liga' Standardligaturen 1" f l
 LCarets2: 1 314 
 EndChar
 
-StartChar: uniFB03
-Encoding: 64259 64259 1272
+StartChar: f_f_i
+Encoding: 64259 -1 1272
 Width: 819
 VWidth: 999
 Flags: HW
@@ -60209,8 +60209,8 @@ Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f f i
 LCarets2: 2 280 538 
 EndChar
 
-StartChar: uniFB04
-Encoding: 64260 64260 1273
+StartChar: f_f_l
+Encoding: 64260 -1 1273
 Width: 830
 VWidth: 999
 Flags: HW
@@ -60283,12 +60283,12 @@ SplineSet
  718.9 652.4 699 676 666 676 c 0
 EndSplineSet
 Ligature2: "'liga' Standardligaturen 1" f f l
-Ligature2: "'liga' Standardligaturen 1" uniFB00 l
+Ligature2: "'liga' Standardligaturen 1" f_f l
 LCarets2: 2 283 557 
 EndChar
 
-StartChar: uniFB05
-Encoding: 64261 64261 1274
+StartChar: longs_t
+Encoding: 64261 -1 1274
 Width: 606
 VWidth: 999
 Flags: HMW
@@ -67992,8 +67992,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB06
-Encoding: 64262 64262 1449
+StartChar: s_t
+Encoding: 64262 -1 1449
 Width: 648
 VWidth: 999
 Flags: HW
@@ -109099,7 +109099,7 @@ SplineSet
  465.3 485 480.9 536.1 503.2 578.5 c 1
 EndSplineSet
 Ligature2: "'liga' Standardligaturen 1" f f j
-Ligature2: "'liga' Standardligaturen 1" uniFB00 j
+Ligature2: "'liga' Standardligaturen 1" f_f j
 EndChar
 
 StartChar: uni27E8
