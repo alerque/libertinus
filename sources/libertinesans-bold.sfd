@@ -129,7 +129,7 @@ KernClass2: 9 7 "'kern' Cyrillic Kerning"
  111 uni0432 uni0433 uni0438 uni043A uni043C uni043D uni043F uni0440 uni0445 uni0446 uni0448 uni0449 uni045A uni045F
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} -50 {} -35 {} 0 {} 0 {} 0 {} 0 {} -50 {} -100 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -23 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 21 21 "'kern' Latin kerning" 
- 15 f longs uniFB00
+ 11 f longs f_f
  24 T uni0162 Tcaron uni021A
  59 Y Yacute Ycircumflex Ydieresis Ygrave seven.fitted question
  47 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9
@@ -52329,8 +52329,8 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: uniFB00
-Encoding: 64256 64256 1252
+StartChar: f_f
+Encoding: 64256 -1 1252
 Width: 687
 VWidth: 999
 Flags: HW
@@ -52399,8 +52399,8 @@ Ligature2: "'liga' Standardligaturen 1" f f
 LCarets2: 1 322 
 EndChar
 
-StartChar: uniFB01
-Encoding: 64257 64257 1253
+StartChar: f_i
+Encoding: 64257 -1 1253
 Width: 662
 VWidth: 999
 Flags: HW
@@ -52464,8 +52464,8 @@ EndSplineSet
 LCarets2: 1 338 
 EndChar
 
-StartChar: uniFB02
-Encoding: 64258 64258 1254
+StartChar: f_l
+Encoding: 64258 -1 1254
 Width: 624
 VWidth: 999
 Flags: HW
@@ -52522,8 +52522,8 @@ EndSplineSet
 LCarets2: 1 333 
 EndChar
 
-StartChar: uniFB03
-Encoding: 64259 64259 1255
+StartChar: f_f_i
+Encoding: 64259 -1 1255
 Width: 975
 VWidth: 999
 Flags: HMW
@@ -52611,8 +52611,8 @@ EndSplineSet
 LCarets2: 2 327 675 
 EndChar
 
-StartChar: uniFB04
-Encoding: 64260 64260 1256
+StartChar: f_f_l
+Encoding: 64260 -1 1256
 Width: 992
 VWidth: 999
 Flags: HW
@@ -52694,8 +52694,8 @@ EndSplineSet
 LCarets2: 2 326 675 
 EndChar
 
-StartChar: uniFB05
-Encoding: 64261 64261 1257
+StartChar: longs_t
+Encoding: 64261 -1 1257
 Width: 630
 VWidth: 999
 Flags: HW
@@ -56187,8 +56187,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB06
-Encoding: 64262 64262 1335
+StartChar: s_t
+Encoding: 64262 -1 1335
 Width: 680
 VWidth: 999
 Flags: HW

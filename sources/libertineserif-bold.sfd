@@ -127,7 +127,7 @@ KernClass2: 9 7 "LinLibertineO-'kern' Cyrillic Kerning"
  111 uni0432 uni0433 uni0438 uni043A uni043C uni043D uni043F uni0440 uni0445 uni0446 uni0448 uni0449 uni045A uni045F
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} -50 {} -35 {} 0 {} 0 {} 0 {} 0 {} -50 {} -100 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -23 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 21 21 "LinLibertineO-'kern' Latin kerning" 
- 15 f longs uniFB00
+ 11 f longs f_f
  24 T uni0162 Tcaron uni021A
  59 Y Yacute Ycircumflex Ydieresis Ygrave seven.fitted question
  47 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9
@@ -54139,8 +54139,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB00
-Encoding: 64256 64256 1268
+StartChar: f_f
+Encoding: 64256 -1 1268
 Width: 716
 VWidth: 999
 Flags: HW
@@ -54205,8 +54205,8 @@ Ligature2: "LinLibertine-'liga' Standardligaturen 1" f f
 LCarets2: 1 329 
 EndChar
 
-StartChar: uniFB01
-Encoding: 64257 64257 1269
+StartChar: f_i
+Encoding: 64257 -1 1269
 Width: 641
 Flags: HMW
 HStem: -2 34<24.77 88.2627 249.98 305.23 355.77 409.599 563.175 626.23> 384 50<22.2398 105 235 413.377> 656 42<281.521 370.382>
@@ -54257,8 +54257,8 @@ Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f i
 LCarets2: 1 327 
 EndChar
 
-StartChar: uniFB02
-Encoding: 64258 64258 1270
+StartChar: f_l
+Encoding: 64258 -1 1270
 Width: 680
 VWidth: 999
 Flags: HW
@@ -54311,8 +54311,8 @@ Ligature2: "LinLibertine-'liga' Standardligaturen 1" f l
 LCarets2: 1 349 
 EndChar
 
-StartChar: uniFB03
-Encoding: 64259 64259 1271
+StartChar: f_f_i
+Encoding: 64259 -1 1271
 Width: 947
 Flags: HW
 HStem: -2 34<24.77 88.2627 252.463 305.23 344.77 399.634 559.98 615.23 661.77 715.599 869.175 932.23> 384 50<22.3036 105 235 434 545 814> 424 20G<823.75 845> 646 42<282.272 360.324> 656 42<592.254 666.916>
@@ -54384,8 +54384,8 @@ Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f f i
 LCarets2: 2 282 566 
 EndChar
 
-StartChar: uniFB04
-Encoding: 64260 64260 1272
+StartChar: f_f_l
+Encoding: 64260 -1 1272
 Width: 990
 VWidth: 999
 Flags: HW
@@ -54459,8 +54459,8 @@ EndSplineSet
 LCarets2: 2 326 651 
 EndChar
 
-StartChar: uniFB05
-Encoding: 64261 64261 1273
+StartChar: longs_t
+Encoding: 64261 -1 1273
 Width: 661
 VWidth: 999
 Flags: HW
@@ -59909,8 +59909,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB06
-Encoding: 64262 64262 1388
+StartChar: s_t
+Encoding: 64262 -1 1388
 Width: 756
 VWidth: 999
 Flags: HW

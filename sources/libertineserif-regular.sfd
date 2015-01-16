@@ -144,7 +144,7 @@ KernClass2: 9 7 "'kern' Cyrillic Kerning"
  111 uni0432 uni0433 uni0438 uni043A uni043C uni043D uni043F uni0440 uni0445 uni0446 uni0448 uni0449 uni045A uni045F
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} -50 {} -35 {} 0 {} 0 {} 0 {} 0 {} -50 {} -100 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -23 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 21 21 "'kern' Latin kerning" 
- 15 f longs uniFB00
+ 11 f longs f_f
  24 T uni0162 Tcaron uni021A
  59 Y Yacute Ycircumflex Ydieresis Ygrave seven.fitted question
  47 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9
@@ -202,17 +202,17 @@ EndFPST
 ChainSub2: class "'ccmp' Contextual Chaining Substitution 1"  6 6 6 3
   Class: 11 i j uni0268
   Class: 398 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 grave.cap acute.cap circumflex.cap caron.cap breve.cap hungarumlaut.cap space_uni030F.cap breveinvertedcmb.cap breve.cyrcap breve.cyr dieresis.cap hookabovecomb.cap dotaccent.cap
-  Class: 9 f uniFB00
+  Class: 5 f f_f
   Class: 374 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraphnuni00B9aYacutegagravetatildedadieresisgegravededieresisgigravedidieresisgogravetotildedodieresisgugravedudieresisdydieresismamacronbabrevememacronbebrevececarontitildemimacronbibrevemomacronmumacronbubreveuoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
   Class: 536 A B C D E F G H I J K L M N O P Q R S U X Z Acircumflex AE Ccedilla Ocircumflex Thorn Alpha Beta Gamma uni0394 Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho NameMe.930 Sigma Tau Upsilon Phi Chi Psi uni03A9 uni0404 uni0405 uni0406 uni0408 uni0409 uni040A uni040B uni040F uni0410 uni0411 uni0412 uni0413 uni0414 uni0415 uni0416 uni0417 uni0418 uni041A uni041B uni041C uni041D uni041E uni041F uni0420 uni0421 uni0422 uni0423 uni0424 uni0425 uni0426 uni0427 uni0428 uni0429 uni042A uni042B uni042C uni042D uni042E uni042F
   BClass: 11 i j uni0268
   BClass: 398 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 grave.cap acute.cap circumflex.cap caron.cap breve.cap hungarumlaut.cap space_uni030F.cap breveinvertedcmb.cap breve.cyrcap breve.cyr dieresis.cap hookabovecomb.cap dotaccent.cap
-  BClass: 9 f uniFB00
+  BClass: 5 f f_f
   BClass: 374 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraphnuni00B9aYacutegagravetatildedadieresisgegravededieresisgigravedidieresisgogravetotildedodieresisgugravedudieresisdydieresismamacronbabrevememacronbebrevececarontitildemimacronbibrevemomacronmumacronbubreveuoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
   BClass: 536 A B C D E F G H I J K L M N O P Q R S U X Z Acircumflex AE Ccedilla Ocircumflex Thorn Alpha Beta Gamma uni0394 Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho NameMe.930 Sigma Tau Upsilon Phi Chi Psi uni03A9 uni0404 uni0405 uni0406 uni0408 uni0409 uni040A uni040B uni040F uni0410 uni0411 uni0412 uni0413 uni0414 uni0415 uni0416 uni0417 uni0418 uni041A uni041B uni041C uni041D uni041E uni041F uni0420 uni0421 uni0422 uni0423 uni0424 uni0425 uni0426 uni0427 uni0428 uni0429 uni042A uni042B uni042C uni042D uni042E uni042F
   FClass: 11 i j uni0268
   FClass: 398 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 grave.cap acute.cap circumflex.cap caron.cap breve.cap hungarumlaut.cap space_uni030F.cap breveinvertedcmb.cap breve.cyrcap breve.cyr dieresis.cap hookabovecomb.cap dotaccent.cap
-  FClass: 9 f uniFB00
+  FClass: 5 f f_f
   FClass: 374 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraphnuni00B9aYacutegagravetatildedadieresisgegravededieresisgigravedidieresisgogravetotildedodieresisgugravedudieresisdydieresismamacronbabrevememacronbebrevececarontitildemimacronbibrevemomacronmumacronbubreveuoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
   FClass: 536 A B C D E F G H I J K L M N O P Q R S U X Z Acircumflex AE Ccedilla Ocircumflex Thorn Alpha Beta Gamma uni0394 Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho NameMe.930 Sigma Tau Upsilon Phi Chi Psi uni03A9 uni0404 uni0405 uni0406 uni0408 uni0409 uni040A uni040B uni040F uni0410 uni0411 uni0412 uni0413 uni0414 uni0415 uni0416 uni0417 uni0418 uni041A uni041B uni041C uni041D uni041E uni041F uni0420 uni0421 uni0422 uni0423 uni0424 uni0425 uni0426 uni0427 uni0428 uni0429 uni042A uni042B uni042C uni042D uni042E uni042F
  1 0 1
@@ -55347,8 +55347,8 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: uniFB00
-Encoding: 64256 64256 1268
+StartChar: f_f
+Encoding: 64256 -1 1268
 Width: 582
 VWidth: 999
 Flags: HW
@@ -55412,8 +55412,8 @@ Ligature2: "'liga' Standardligaturen 1" f f
 LCarets2: 1 266 
 EndChar
 
-StartChar: uniFB01
-Encoding: 64257 64257 1269
+StartChar: f_i
+Encoding: 64257 -1 1269
 Width: 560
 VWidth: 999
 Flags: HW
@@ -55464,8 +55464,8 @@ Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f i
 LCarets2: 1 277 
 EndChar
 
-StartChar: uniFB02
-Encoding: 64258 64258 1270
+StartChar: f_l
+Encoding: 64258 -1 1270
 Width: 540
 VWidth: 999
 Flags: HW
@@ -55517,8 +55517,8 @@ Ligature2: "'liga' Standardligaturen 1" f l
 LCarets2: 1 288 
 EndChar
 
-StartChar: uniFB03
-Encoding: 64259 64259 1271
+StartChar: f_f_i
+Encoding: 64259 -1 1271
 Width: 829
 VWidth: 999
 Flags: HW
@@ -55590,8 +55590,8 @@ Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f f i
 LCarets2: 2 266 550 
 EndChar
 
-StartChar: uniFB04
-Encoding: 64260 64260 1272
+StartChar: f_f_l
+Encoding: 64260 -1 1272
 Width: 815
 VWidth: 999
 Flags: HW
@@ -55662,13 +55662,13 @@ SplineSet
  728 688 727 648 727 583 c 2
  727 122 l 2
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" uniFB00 l
+Ligature2: "'liga' Standardligaturen 1" f_f l
 Ligature2: "'liga' Standardligaturen 1" f f l
 LCarets2: 2 268 539 
 EndChar
 
-StartChar: uniFB05
-Encoding: 64261 64261 1273
+StartChar: longs_t
+Encoding: 64261 -1 1273
 Width: 561
 VWidth: 999
 Flags: HW
@@ -61076,8 +61076,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB06
-Encoding: 64262 64262 1389
+StartChar: s_t
+Encoding: 64262 -1 1389
 Width: 680
 VWidth: 999
 Flags: HW
@@ -81939,7 +81939,7 @@ SplineSet
  428 679 489 703 525 703 c 0
  593.6 703 620 678.5 626.2 671.7 c 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" uniFB00 h
+Ligature2: "'liga' Standardligaturen 1" f_f h
 Ligature2: "'liga' Standardligaturen 1" f f h
 LCarets2: 2 260 553 
 EndChar
@@ -82025,7 +82025,7 @@ SplineSet
  718 442 l 1
  718 109 l 2
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" uniFB00 j
+Ligature2: "'liga' Standardligaturen 1" f_f j
 Ligature2: "'liga' Standardligaturen 1" f f j
 LCarets2: 2 266 548 
 EndChar
@@ -82150,7 +82150,7 @@ SplineSet
  742 195 730 212 707 212 c 0
  703.8 212 700.5 211.6 697 210.9 c 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" uniFB00 k
+Ligature2: "'liga' Standardligaturen 1" f_f k
 Ligature2: "'liga' Standardligaturen 1" f f k
 LCarets2: 2 264 553 
 EndChar
@@ -82231,7 +82231,7 @@ SplineSet
  19 4 19 25 25 31 c 1
  79 35 90 39 90 122 c 2
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" uniFB00 t
+Ligature2: "'liga' Standardligaturen 1" f_f t
 Ligature2: "'liga' Standardligaturen 1" f f t
 LCarets2: 2 258 548 
 EndChar

@@ -69,7 +69,7 @@ Lookup: 258 0 0 "'kern' Kerning"  {"'kern' Kerning 1"  } ['kern' ('DFLT' <'dflt'
 MarkAttachClasses: 1
 DEI: 91125
 KernClass2: 22 20 "'kern' Kerning 1" 
- 23 f longs uni1E1F uniFB00
+ 19 f longs uni1E1F f_f
  130 T uni0162 Tcaron uni01AC uni021A Gamma Tau uni0403 uni0413 uni0422 uni0490 uni0492 uni04AC uni04F6 uni1E6A uni1E6C uni1E6E uni1E70
  235 Y Yacute Ycircumflex Ydieresis Upsilontonos Upsilon Upsilondieresis Upsilon1 uni03D3 uni03D4 uni040E uni0423 uni04EE uni04F0 uni04F2 uni1E8E Ygrave uni1EF4 uni1EF6 uni1EF8 uni1F59 uni1F5B uni1F5D uni1F5F uni1FE8 uni1FE9 uni1FEA uni1FEB
  99 V W Wcircumflex uni0474 uni0476 uni1E7C uni1E7E Wgrave Wacute Wdieresis uni1E86 uni1E88 W.alt V.alt
@@ -59018,8 +59018,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB00
-Encoding: 64256 64256 1268
+StartChar: f_f
+Encoding: 64256 -1 1268
 Width: 597
 VWidth: 999
 Flags: HW
@@ -59088,8 +59088,8 @@ Ligature2: "LinLibertine-'liga' Standardligaturen 1" f f
 LCarets2: 1 266 
 EndChar
 
-StartChar: uniFB01
-Encoding: 64257 64257 1269
+StartChar: f_i
+Encoding: 64257 -1 1269
 Width: 580
 VWidth: 999
 Flags: HW
@@ -59149,8 +59149,8 @@ Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f i
 LCarets2: 1 297 
 EndChar
 
-StartChar: uniFB02
-Encoding: 64258 64258 1270
+StartChar: f_l
+Encoding: 64258 -1 1270
 Width: 586
 VWidth: 999
 Flags: HW
@@ -59213,8 +59213,8 @@ Ligature2: "LinLibertine-'liga' Standardligaturen 1" f l
 LCarets2: 1 306 
 EndChar
 
-StartChar: uniFB03
-Encoding: 64259 64259 1271
+StartChar: f_f_i
+Encoding: 64259 -1 1271
 Width: 844
 VWidth: 999
 Flags: HW
@@ -59296,8 +59296,8 @@ Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f f i
 LCarets2: 2 282 566 
 EndChar
 
-StartChar: uniFB04
-Encoding: 64260 64260 1272
+StartChar: f_f_l
+Encoding: 64260 -1 1272
 Width: 847
 VWidth: 999
 Flags: HW
@@ -59379,12 +59379,12 @@ SplineSet
  355 490.9 363.4 531.6 377.6 565.9 c 1
 EndSplineSet
 Ligature2: "LinLibertine-'liga' Standardligaturen 1" f f l
-Ligature2: "LinLibertine-'liga' Standardligaturen 1" uniFB00 l
+Ligature2: "LinLibertine-'liga' Standardligaturen 1" f_f l
 LCarets2: 2 268 539 
 EndChar
 
-StartChar: uniFB05
-Encoding: 64261 64261 1273
+StartChar: longs_t
+Encoding: 64261 -1 1273
 Width: 580
 VWidth: 999
 Flags: HW
@@ -65189,8 +65189,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniFB06
-Encoding: 64262 64262 1388
+StartChar: s_t
+Encoding: 64262 -1 1388
 Width: 708
 VWidth: 999
 Flags: HMW
