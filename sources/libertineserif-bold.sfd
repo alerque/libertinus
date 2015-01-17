@@ -11585,10 +11585,6 @@ SplineSet
  383 580 358.3 616 324 616 c 0
  282.5 616 258 581.8 258 536 c 0
 EndSplineSet
-Substitution2: "LinLibertine-'salt' Stilistische Alternativformen 1" ampersand.alt
-Substitution2: "LinLibertine-'c2sc' Versale nach Kapitaelchen 1" ampersand.alt
-Substitution2: "LinLibertine-'smcp' Gemeine nach Kapitaelchen 1" ampersand.alt
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" ampersand.alt
 EndChar
 
 StartChar: quotesingle
@@ -12954,11 +12950,10 @@ SplineSet
  481 444 528 394 528 284 c 2
  528 128 l 2
 EndSplineSet
-Substitution2: "LinLibertine-'salt' Stilistische Alternativformen 1" h.alt
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" h.sc
 Substitution2: "LinLibertine-'sinf' Wissenschaftliche Indices 1" h.inferior
 Substitution2: "LinLibertine-'sups' Hochgestellte 1" uni02B0
 Substitution2: "LinLibertine-'smcp' Gemeine nach Kapitaelchen 1" h.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" h.sc h.alt
 EndChar
 
 StartChar: i
@@ -16493,9 +16488,9 @@ SplineSet
  17 4 17 26 23 32 c 1
  84 35 100 44 100 126 c 2
 EndSplineSet
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" germandbls.sc germandbls.scalt germandbls.ss03
 Substitution2: "LinLibertine-'ss03' Stilgruppe 3 1" germandbls.ss03
 Substitution2: "LinLibertine-'smcp' Gemeine nach Kapitaelchen 1" germandbls.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" germandbls.sc germandbls.alt germandbls.scalt germandbls.ss03
 EndChar
 
 StartChar: agrave
@@ -78691,8 +78686,7 @@ SplineSet
  273 442 355 468 366 474 c 1
  505 86 l 2
 EndSplineSet
-Substitution2: "LinLibertine-'salt' Stilistische Alternativformen 1" a.scalt
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" a.scalt A a
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" A a
 EndChar
 
 StartChar: b.sc
