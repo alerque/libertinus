@@ -11509,7 +11509,6 @@ SplineSet
  142 45.8 140 114 140 155 c 2
 EndSplineSet
 Substitution2: "'ss05' Elbischer Stilsatz-1" J.elb
-Substitution2: "'ss02' Stilgruppe 2 1" J.alt
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" j.sc
 EndChar
@@ -11557,10 +11556,9 @@ SplineSet
  89 54 93 125 93 200 c 2
  93 445 l 2
 EndSplineSet
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" k.sc
 Substitution2: "'ss05' Elbischer Stilsatz-1" K.elb
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" K.alt k.sc
-Substitution2: "'ss02' Stilgruppe 2 1" K.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" k.sc
 Colour: ff80cc
 EndChar
@@ -11842,10 +11840,9 @@ SplineSet
  356.7 214.8 330.1 262.1 301.6 296.8 c 1
  281.9 296.1 262.8 296 245 296 c 1
 EndSplineSet
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" r.sc
 Substitution2: "'ss05' Elbischer Stilsatz-1" R.elb
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" R.alt r.sc
-Substitution2: "'ss02' Stilgruppe 2 1" R.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" r.sc
 EndChar
 
@@ -11998,7 +11995,6 @@ EndSplineSet
 Substitution2: "'ss05' Elbischer Stilsatz-1" V.elb
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" v.sc
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" V.alt
 EndChar
 
 StartChar: W
@@ -12035,7 +12031,6 @@ EndSplineSet
 Substitution2: "'ss05' Elbischer Stilsatz-1" W.elb
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" w.sc
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" W.alt
 EndChar
 
 StartChar: X
@@ -12631,11 +12626,10 @@ SplineSet
  82.5 53.5 86 105 86 180 c 2
  86 474 l 2
 EndSplineSet
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" h.sc
 Substitution2: "'ss05' Elbischer Stilsatz-1" h.elb
 Substitution2: "'sinf' Wissenschaftliche Indices 1" h.inferior
-Substitution2: "'salt' Stilistische Alternativformen 1" h.alt
 Substitution2: "'sups' Hochgestellte 1" uni02B0
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" h.sc h.alt
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" h.sc
 EndChar
 
@@ -16027,9 +16021,8 @@ SplineSet
  597 115.4 579.2 59.9 542 27 c 0
  511.4 -0.1 465.5 -10 424 -10 c 0
 EndSplineSet
-Substitution2: "'ss03' Stilgruppe 3 1" germandbls.ss03
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" germandbls.sc germandbls.scalt
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" germandbls.sc
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" germandbls.sc germandbls.alt germandbls.scalt germandbls.ss03
 EndChar
 
 StartChar: agrave
@@ -16398,8 +16391,8 @@ SplineSet
  159.6 236 227.5 249.6 311 255 c 1
  310 349 299 394 219 394 c 0
 EndSplineSet
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" ae.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ae.sc
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" ae.sc ae.alt
 EndChar
 
 StartChar: ccedilla
@@ -30835,8 +30828,6 @@ SplineSet
  338.4 253.1 337.3 253.2 337.3 248.2 c 0
  337.3 243.2 340.3 246 346 238 c 0
 EndSplineSet
-Substitution2: "'salt' Stilistische Alternativformen 1" uni03F0
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni03F0
 Comment: "Ist das so richtig? In Times anders" 
 EndChar
 
@@ -31071,7 +31062,6 @@ SplineSet
  185 -16.8 186 -47.7 186 -77 c 0
  186 -124 184 -167 177 -194 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni03F1
 EndChar
 
 StartChar: sigma1
@@ -31103,7 +31093,6 @@ SplineSet
  22 103 57 32 174 0 c 0
  277.4 -28.3 340 -38 340 -98 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uni03F2
 EndChar
 
 StartChar: sigma
@@ -31231,8 +31220,6 @@ SplineSet
  381 -213 l 1
  302 -237 l 1
 EndSplineSet
-Substitution2: "'salt' Stilistische Alternativformen 1" phi1
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" phi1
 EndChar
 
 StartChar: chi
@@ -76181,8 +76168,7 @@ SplineSet
  189.4 187 203.4 187 226 187 c 0
  249.6 187 263.4 188.9 287.6 188.9 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" uniE0BE A a
-Substitution2: "'salt' Stilistische Alternativformen 1" uniE0BE
+AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" A a
 EndChar
 
 StartChar: b.sc
@@ -78564,7 +78550,6 @@ SplineSet
  110 214 113 175 131 139 c 1
  256 359 l 1
 EndSplineSet
-Substitution2: "'ss04' Stilgruppe 4 1" ampersand.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" ampersand
 EndChar
 

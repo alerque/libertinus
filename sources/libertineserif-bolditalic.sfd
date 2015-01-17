@@ -9075,10 +9075,6 @@ SplineSet
  300 31 338.9 51.6 389.3 104.9 c 1
  358.4 167.3 312.2 276.4 296.1 317 c 1
 EndSplineSet
-Substitution2: "'salt' Stilistische Alternativformen 1" ampersand.alt
-Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ampersand.alt
-Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ampersand.alt
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" ampersand.alt
 EndChar
 
 StartChar: quotesingle
@@ -10453,11 +10449,10 @@ SplineSet
  372.6 369 322.6 311.8 260.9 231.8 c 1
  225.9 72 l 2
 EndSplineSet
-Substitution2: "'salt' Stilistische Alternativformen 1" h.alt
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" h.sc
 Substitution2: "'sinf' Wissenschaftliche Indices 1" h.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02B0
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" h.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" h.sc h.alt
 EndChar
 
 StartChar: i
@@ -13966,9 +13961,8 @@ SplineSet
  469 340 464 282 464 208 c 0
  464 127 439 32 406.1 32 c 0
 EndSplineSet
-Substitution2: "'ss03' Stilgruppe 3 1" germandbls.ss03
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" germandbls.sc germandbls.scalt
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" germandbls.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" germandbls.sc germandbls.alt germandbls.scalt germandbls.ss03
 EndChar
 
 StartChar: agrave
@@ -14334,8 +14328,8 @@ SplineSet
  363 295 367 318 367 339 c 0
  367 372.6 353.5 397 319 397 c 0
 EndSplineSet
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" ae.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ae.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" ae.sc ae.alt
 EndChar
 
 StartChar: ccedilla
@@ -18001,9 +17995,9 @@ SplineSet
  254.1 641.2 316 658 369 658 c 0
  458 658 475 639 526 631 c 1
 EndSplineSet
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" scedilla scommaaccent.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scedilla.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" Scommaaccent scedilla scommaaccent.sc
 EndChar
 
 StartChar: scedilla
@@ -18045,8 +18039,8 @@ SplineSet
  205.5 -196 227.4 -182 231.2 -155 c 0
  236.5 -117.4 184.1 -113 148.4 -111 c 1
 EndSplineSet
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" scedilla.sc scommaaccent scommaaccent.sc
 EndChar
 
 StartChar: Scaron
@@ -18180,9 +18174,9 @@ SplineSet
  515 605 499 567 487 503 c 2
  413 123 l 2
 EndSplineSet
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" uni021B.sc uni0163.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uni0163.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" uni021A uni021B.sc uni0163.sc
 EndChar
 
 StartChar: uni0163
@@ -18230,8 +18224,8 @@ SplineSet
  122.8 -9.6 108.3 12.9 108.3 47.1 c 0
  108.3 67.7 112.8 95.4 118 118 c 2
 EndSplineSet
+AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" uni0163.sc uni021B.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni0163.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" uni0163.sc uni021B uni021B.sc
 EndChar
 
 StartChar: Tcaron
@@ -20471,8 +20465,6 @@ SplineSet
  39 -233 l 1
  27 -199 l 1
 EndSplineSet
-Substitution2: "'salt' Stilistische Alternativformen 1" uni03D0
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" uni03D0
 EndChar
 
 StartChar: eta
@@ -65964,9 +65956,7 @@ SplineSet
  6 4 10 26 21 32 c 1
  74 35 101 39 119 123 c 2
 EndSplineSet
-Substitution2: "'ss03' Stilgruppe 3 1" uni1E9C.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" germandbls.sc
-AlternateSubs2: "LinLibertine-'aalt' Alle Alternativen zeigen 1" uni1E9C.alt
 EndChar
 
 StartChar: uniE00B
