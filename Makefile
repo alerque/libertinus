@@ -27,6 +27,10 @@ all: otf
 
 otf: $(OTF)
 
+libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/features/ssty.fea
+	@echo "Building $@"
+	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(SRC)/features/ssty.fea
+
 %.otf: $(SRC)/%.sfd
 	@echo "Building $@"
-	@$(PY) $(BUILD) $@ $(VERSION) $^
+	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $^
