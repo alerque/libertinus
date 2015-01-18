@@ -582,7 +582,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 0 262144 133120 88746 450560 -1048576 88746 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114450 3263
+BeginChars: 1114460 3264
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -53344,6 +53344,7 @@ Encoding: 8721 8721 1204
 Width: 847
 VWidth: 487
 Flags: HW
+GlyphVariantsVertical: summation summation.size1
 HStem: -233 87<182 662.471> -233 33<24 66.761> 671 63<231 632.928> 700 34<26 73.6039>
 VStem: 712 34<524.971 562.126> 754 34<-14.6667 29.6176>
 LayerCount: 2
@@ -126026,7 +126027,7 @@ StartChar: u1D6E9
 Encoding: 120553 120553 2838
 Width: 668
 VWidth: 487
-Flags: WO
+Flags: W
 ItalicCorrection: 58
 TopAccentHorizontal: 455
 HStem: -10 34<284.927 428.867> 297 56<277.709 518.856> 624 34<367.544 514.012>
@@ -141779,6 +141780,59 @@ SplineSet
  584.693861256 359.900390625 l 1
  575.17174759 531.698371679 513.13958124 603 384 603 c 0
  293.205013933 603 221.194567731 543.962874711 213.652823053 359.900390625 c 1
+EndSplineSet
+EndChar
+
+StartChar: summation.size1
+Encoding: 1114450 -1 3263
+Width: 1243
+VWidth: 487
+Flags: W
+HStem: -426 98<261 965.474> 851 76<330 942.62>
+VStem: 1066 43<646.86 694.34> 1110 43<-123.695 -82.186>
+DStem2: 330 851 121 927 0.553879 -0.832597<0 664.107>
+LayerCount: 2
+Back
+SplineSet
+1048 927 m 5x5c
+ 1079 636 l 5
+ 1031 629 l 5
+ 1020 668 957 839 837 839 c 6
+ 358 839 l 5
+ 719 268 l 5
+ 718 267 l 5
+ 289 -305 l 5
+ 877 -305 l 6xac
+ 1024 -305 1087 -66 1090 -55 c 5
+ 1138 -60 l 5
+ 1079 -426 l 5
+ 68 -426 l 5
+ 68 -380 l 5
+ 93 -380 115 -377 144 -341 c 6
+ 568 225 l 5
+ 214 783 l 5
+ 158 859 102 880 71 880 c 5
+ 71 927 l 5
+ 1048 927 l 5x5c
+EndSplineSet
+Fore
+SplineSet
+588 225 m 1
+ 121 927 l 1
+ 1078 927 l 1
+ 1109 648 l 1
+ 1066 641 l 1
+ 1055 680 992 851 872 851 c 2
+ 330 851 l 1
+ 719 268 l 1
+ 718 267 l 1
+ 261 -328 l 1
+ 897 -328 l 2
+ 1044 -328 1107 -89 1110 -78 c 1
+ 1153 -83 l 1
+ 1094 -426 l 1
+ 90 -426 l 1
+ 588 225 l 1
 EndSplineSet
 EndChar
 EndChars
