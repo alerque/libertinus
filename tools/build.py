@@ -1,5 +1,6 @@
 import fontforge
 import argparse
+from datetime import date
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", required=True)
@@ -18,7 +19,7 @@ if args.feature_file:
 copyright = args.copyright_file.read()
 
 font.version = args.version
-font.copyright = copyright.rstrip() % font.fullname
+font.copyright = copyright.rstrip() % date.today().year
 font.selection.all()
 font.autoHint()
 font.generate(args.output, flags=("opentype"))
