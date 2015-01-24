@@ -4,10 +4,13 @@ VERSION=5.3.0
 DIST=$(NAME)-$(VERSION)
 
 SRC=sources
+WEB=webfonts
 TOOLS=tools
 
 PY=python
 BUILD=$(TOOLS)/build.py
+SFNTTOOL=sfnttool
+WOFF2_COMPRESS=woff2_compress
 
 NULL=
 
@@ -22,10 +25,13 @@ FONTS=math-regular \
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 OTF=$(FONTS:%=$(NAME)%.otf)
+WOFF=$(FONTS:%=$(WEB)/$(NAME)%.woff)
+WOF2=$(FONTS:%=$(WEB)/$(NAME)%.woff2)
 
-all: otf
+all: otf web
 
 otf: $(OTF)
+web: $(WOFF) $(WOF2)
 
 libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/features/ssty.fea
 	@echo "Building $@"
@@ -34,3 +40,14 @@ libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/features/ssty
 %.otf: $(SRC)/%.sfd
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $^
+
+$(WEB)/%.woff: %.otf
+	@echo "   FF	$@"
+	@mkdir -p $(WEB)
+	@$(SFNTTOOL) -w $< $@
+
+$(WEB)/%.woff2: %.otf
+	@echo "   FF	$@"
+	@mkdir -p $(WEB)
+	@$(WOFF2_COMPRESS) $< 1>/dev/null
+	@mv $(@F) $(WEB)
