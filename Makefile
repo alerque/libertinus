@@ -33,13 +33,13 @@ all: otf web
 otf: $(OTF)
 web: $(WOFF) $(WOF2)
 
-libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/features/ssty.fea
+libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/copyright.txt $(SRC)/features/ssty.fea
 	@echo "Building $@"
-	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(SRC)/features/ssty.fea
+	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt -f $(SRC)/features/ssty.fea
 
-%.otf: $(SRC)/%.sfd
+%.otf: $(SRC)/%.sfd $(SRC)/copyright.txt
 	@echo "Building $@"
-	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $^
+	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt
 
 $(WEB)/%.woff: %.otf
 	@echo "   FF	$@"
