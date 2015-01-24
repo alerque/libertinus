@@ -42,12 +42,12 @@ libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/copyright.txt
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt
 
 $(WEB)/%.woff: %.otf
-	@echo " Building $@"
+	@echo "Building $@"
 	@mkdir -p $(WEB)
 	@$(SFNTTOOL) -w $< $@
 
 $(WEB)/%.woff2: %.otf
-	@echo " Building $@"
+	@echo "Building $@"
 	@mkdir -p $(WEB)
 	@$(WOFF2_COMPRESS) $< 1>/dev/null
 	@mv $(@F) $(WEB)
