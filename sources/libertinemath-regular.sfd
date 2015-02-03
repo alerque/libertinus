@@ -450,6 +450,13 @@ StemSnapH 4 [36]
 StemSnapV 7 [79 86]
 EndPrivate
 Grid
+-1000 -172 m 0
+ 2000 -172 l 0
+  Named: "Bottom Accent" 
+2000 614 m 4
+ -1000 614 l 4
+ 2000 614 l 4
+  Named: "Top Accent" 
 271 223 m 2
  55 223 l 2
  46 223 40 232 40 242 c 3
@@ -466,8 +473,6 @@ Grid
  377 -297 l 2
  386 -297 390 -304 390 -311 c 0
  390 -323 380 -341 367 -341 c 2
--1000 614 m 0
- 2000 614 l 0
 367 -131 m 2
  122 -131 l 2
  114 -131 110 -123 110 -116 c 0
@@ -581,7 +586,7 @@ Grid
  -113 550 l 1
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114485 3303
+BeginChars: 1114501 3321
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -142627,6 +142632,280 @@ VStem: 189 67<-443.875 -359>
 LayerCount: 2
 Fore
 Refer: 3301 -1 N -1 0 0 1 456 0 3
+EndChar
+
+StartChar: uni23DE
+Encoding: 9182 9182 3303
+Width: 620
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 310
+GlyphVariantsHorizontal: uni23DE uni23DE.size1 uni23DE.size2 uni23DE.size3 uni23DE.size4
+GlyphCompositionHorizontal: 5  uni23DE.lt%0,144,144,431 uni23DE.ex%1,144,144,432 uni23DE.md%0,298,298,893 uni23DE.ex%1,144,144,432 uni23DE.rt%0,144,144,431
+HStem: 699 72<45.9841 180.5 427.5 577.252>
+VStem: 0 24<615.243 662.987> 298 24<806.876 868.111> 596 24<615.243 665.679>
+CounterMasks: 1 70
+LayerCount: 2
+Fore
+SplineSet
+494 699 m 2
+ 418 691 l 2
+ 329 682 331 728 312 795 c 1
+ 308 795 l 1
+ 280 727 270 680 188 691 c 2
+ 128 699 l 2
+ 44 703 24 663 24 619 c 1
+ 18 613 6 613 0 619 c 1
+ 0 720 4 776 134 771 c 2
+ 214 765 l 2
+ 275 760 289 789 298 863 c 1
+ 306 871 313 872 322 863 c 1
+ 329 789 352 762 402 765 c 2
+ 496 771 l 2
+ 609 775 620 709 620 619 c 1
+ 614 613 602 613 596 619 c 1
+ 585 657 597 704 494 699 c 2
+EndSplineSet
+EndChar
+
+StartChar: uni23DF
+Encoding: 9183 9183 3304
+Width: 620
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 310
+GlyphVariantsHorizontal: uni23DF uni23DF.size1 uni23DF.size2 uni23DF.size3 uni23DF.size4
+GlyphCompositionHorizontal: 5  uni23DF.lt%0,144,144,431 uni23DF.ex%1,143,143,430 uni23DF.md%0,298,298,893 uni23DF.ex%1,143,143,430 uni23DF.rt%0,144,144,431
+HStem: -329 72<45.9841 180.5 427.5 577.252>
+VStem: 0 24<-220.987 -173.243> 298 24<-426.111 -364.876> 596 24<-223.679 -173.243>
+CounterMasks: 1 70
+LayerCount: 2
+Fore
+Refer: 3303 9182 N 1 0 0 -1 0 442 3
+EndChar
+
+StartChar: uni23DE.size1
+Encoding: 1114485 -1 3305
+Width: 1226
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3275 -1 N 0 -1 1 0 162 992 2
+EndChar
+
+StartChar: uni23DE.size2
+Encoding: 1114487 -1 3306
+Width: 1832
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3277 -1 N 0 -1 1 0 273 1015 2
+EndChar
+
+StartChar: uni23DE.size3
+Encoding: 1114489 -1 3307
+Width: 2448
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3279 -1 N 0 -1 1 0 388 1038.5 2
+EndChar
+
+StartChar: uni23DE.size4
+Encoding: 1114491 -1 3308
+Width: 3066
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3281 -1 S 0 -1 1 0 504 1056 2
+EndChar
+
+StartChar: uni23DF.size1
+Encoding: 1114486 -1 3309
+Width: 1226
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3305 -1 N 1 0 0 -1 0 542 3
+EndChar
+
+StartChar: uni23DF.size2
+Encoding: 1114488 -1 3310
+Width: 1832
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3306 -1 N 1 0 0 -1 0 543 3
+EndChar
+
+StartChar: uni23DF.size3
+Encoding: 1114490 -1 3311
+Width: 2448
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3307 -1 N 1 0 0 -1 0 545 3
+EndChar
+
+StartChar: uni23DF.size4
+Encoding: 1114492 -1 3312
+Width: 3066
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3308 -1 N 1 0 0 -1 0 542 3
+EndChar
+
+StartChar: uni23DF.lt
+Encoding: 1114493 -1 3313
+Width: 431
+VWidth: 999
+Flags: W
+HStem: -451 80<176.893 431>
+VStem: 0 24<-204.668 -168.243>
+LayerCount: 2
+Fore
+SplineSet
+431 -451 m 1
+ 293 -451 l 2
+ 108 -451 7 -357 0 -172 c 1
+ 6 -166 18 -166 24 -172 c 1
+ 44 -256 129 -371 285 -371 c 2
+ 431 -371 l 1
+ 431 -451 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni23DF.md
+Encoding: 1114494 -1 3314
+Width: 893
+VWidth: 999
+Flags: W
+HStem: -451 80<0 391.359 513.656 893>
+VStem: 434 24<-551.111 -504.711>
+LayerCount: 2
+Fore
+SplineSet
+0 -371 m 25
+ 307 -371 l 2
+ 396 -371 425 -412 444 -479 c 1
+ 448 -479 l 1
+ 476 -411 516 -371 598 -371 c 2
+ 893 -371 l 17
+ 893 -451 l 9
+ 572 -451 l 2
+ 511 -451 467 -472 458 -546 c 1
+ 450 -554 443 -555 434 -546 c 1
+ 427 -472 373 -451 323 -451 c 2
+ 0 -451 l 25
+ 0 -371 l 25
+EndSplineSet
+EndChar
+
+StartChar: uni23DF.rt
+Encoding: 1114495 -1 3315
+Width: 431
+VWidth: 999
+Flags: W
+HStem: -451 80<0 254.107>
+VStem: 407 24<-204.668 -168.243>
+LayerCount: 2
+Fore
+SplineSet
+0 -451 m 1
+ 0 -371 l 1
+ 146 -371 l 2
+ 302 -371 387 -256 407 -172 c 1
+ 413 -166 425 -166 431 -172 c 1
+ 424 -357 323 -451 138 -451 c 2
+ 0 -451 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni23DF.ex
+Encoding: 1114496 -1 3316
+Width: 430
+VWidth: 999
+Flags: W
+HStem: -451 80<0 430>
+LayerCount: 2
+Fore
+SplineSet
+0 -451 m 1
+ 0 -371 l 1
+ 430 -371 l 1
+ 430 -451 l 1
+ 0 -451 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni23DE.lt
+Encoding: 1114497 -1 3317
+Width: 431
+VWidth: 999
+Flags: W
+HStem: 817 80<176.893 431>
+VStem: 0 24<614.243 650.668>
+LayerCount: 2
+Fore
+SplineSet
+431 897 m 1
+ 431 817 l 1
+ 285 817 l 2
+ 129 817 44 702 24 618 c 1
+ 18 612 6 612 0 618 c 1
+ 7 803 108 897 293 897 c 2
+ 431 897 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni23DE.md
+Encoding: 1114498 -1 3318
+Width: 893
+VWidth: 999
+Flags: W
+HStem: 816.619 80<0 391.359 513.656 893>
+VStem: 434 24<950.33 996.731>
+LayerCount: 2
+Fore
+Refer: 3314 -1 S 1 0 0 -1 0 445.619 2
+EndChar
+
+StartChar: uni23DE.rt
+Encoding: 1114499 -1 3319
+Width: 431
+VWidth: 999
+Flags: W
+HStem: 817 80<0 254.107>
+VStem: 407 24<614.243 650.668>
+LayerCount: 2
+Fore
+SplineSet
+0 897 m 1
+ 138 897 l 2
+ 323 897 424 803 431 618 c 1
+ 425 612 413 612 407 618 c 1
+ 387 702 302 817 146 817 c 2
+ 0 817 l 1
+ 0 897 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni23DE.ex
+Encoding: 1114500 -1 3320
+Width: 432
+VWidth: 999
+Flags: W
+HStem: 817 80<0 432>
+LayerCount: 2
+Fore
+SplineSet
+0 817 m 1
+ 0 897 l 1
+ 432 897 l 1
+ 432 817 l 1
+ 0 817 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
