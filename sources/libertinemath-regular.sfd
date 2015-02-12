@@ -14028,7 +14028,7 @@ StartChar: bar
 Encoding: 124 124 308
 Width: 205
 VWidth: 999
-Flags: HW
+Flags: W
 GlyphVariantsVertical: bar
 GlyphCompositionVertical: 2  bar%1,310,310,930 bar%0,310,310,930
 HStem: -232 21G<81 125> 678 20G<81 125>
@@ -70441,27 +70441,17 @@ EndChar
 
 StartChar: uni2016
 Encoding: 8214 8214 1593
-Width: 278
+Width: 309
 VWidth: 999
-Flags: HW
+Flags: W
 GlyphVariantsVertical: uni2016
 GlyphCompositionVertical: 2  uni2016%1,354,354,1062 uni2016%0,354,354,1062
-HStem: -204 31.5<60 99 162 201> 828 30<60 99 162 201>
-VStem: 60 39<-204 858> 162 39<-204 858>
+HStem: -232 21<80 124 185 229> 678 20<80 124 185 229>
+VStem: 80 44<-232 698> 185 44<-232 698>
 LayerCount: 2
 Fore
-SplineSet
-201 -204 m 1
- 162 -204 l 1
- 162 858 l 1
- 201 858 l 1
- 201 -204 l 1
-99 -204 m 1
- 60 -204 l 1
- 60 858 l 1
- 99 858 l 1
- 99 -204 l 1
-EndSplineSet
+Refer: 308 124 N 1 0 0 1 104 0 2
+Refer: 308 124 N 1 0 0 1 -1 0 2
 Colour: ff00ff
 EndChar
 
