@@ -458,7 +458,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114535 3359
+BeginChars: 1114536 3365
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -143206,6 +143206,174 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 3357 -1 N 1 0 0 -1 0 442 3
+EndChar
+
+StartChar: uni20D6
+Encoding: 8406 8406 3359
+Width: 420
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 210
+GlyphVariantsHorizontal: uni20D6
+GlyphCompositionHorizontal: 2  uni20D6%0,140,140,420 uni20D6.ex%1,112,112,335
+HStem: 614 220
+LayerCount: 2
+Back
+SplineSet
+159 848 m 1
+ 190 848 l 1
+ 170 809 126 771 107 758 c 1
+ 629 758 l 1
+ 629 718 l 1
+ 107 718 l 1
+ 127 702 168 678 191 628 c 5
+ 159 628 l 5
+ 159 629 87 706 22 732 c 1
+ 22 746 l 1
+ 51 756 107 790 159 848 c 1
+22 732 m 1
+ 22 746 l 1
+ 51 756 107 790 159 848 c 1
+ 190 848 l 1
+ 170 809 126 771 107 758 c 1
+ 629 758 l 1
+ 629 718 l 1
+ 107 718 l 1
+151 848 m 1
+ 174 848 l 1
+ 156 805 126 773 107 754 c 1
+ 629 754 l 1
+ 629 722 l 1
+ 107 722 l 1
+ 127 706 152 678 175 628 c 1
+ 151 628 l 1
+ 151 629 87 706 22 732 c 1
+ 22 746 l 1
+ 51 756 99 790 151 848 c 1
+275 448 m 1
+ 313 448 l 1
+ 283 376 234 322 202 291 c 1
+ 1072 291 l 1
+ 1072 239 l 1
+ 202 239 l 1
+ 235 212 276 166 315 82 c 1
+ 275 82 l 1
+ 275 83 167 211 59 255 c 1
+ 59 278 l 1
+ 108 295 189 351 275 448 c 1
+EndSplineSet
+Fore
+SplineSet
+0 708 m 1
+ 29 698 85 672 137 614 c 1
+ 168 614 l 1
+ 148 653 104 691 85 704 c 1
+ 420 704 l 1
+ 420 744 l 1
+ 85 744 l 1
+ 104 757 148 795 168 834 c 1
+ 137 834 l 1
+ 85 776 29 750 0 740 c 1
+ 0 708 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni20D7
+Encoding: 8407 8407 3360
+Width: 420
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 210
+GlyphVariantsHorizontal: uni20D7
+GlyphCompositionHorizontal: 2  uni20D6.ex%1,112,112,335 uni20D7%0,140,140,420
+HStem: 614 220
+LayerCount: 2
+Fore
+Refer: 3359 8406 N -1 0 0 1 420 0 3
+EndChar
+
+StartChar: uni20D6.ex
+Encoding: 1114535 -1 3361
+Width: 335
+VWidth: 999
+Flags: W
+HStem: 704 40
+LayerCount: 2
+Fore
+SplineSet
+0 704 m 1
+ 335 704 l 1
+ 335 744 l 1
+ 0 744 l 1
+ 0 704 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni20E1
+Encoding: 8417 8417 3362
+Width: 640
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 320
+GlyphVariantsHorizontal: uni20E1
+GlyphCompositionHorizontal: 3  uni20D6%0,140,140,420 uni20D6.ex%1,112,112,335 uni20D7%0,140,140,420
+HStem: 704 40<85 555>
+LayerCount: 2
+Fore
+SplineSet
+555 744 m 1
+ 536 757 492 795 472 834 c 1
+ 503 834 l 1
+ 555 776 611 750 640 740 c 1
+ 640 708 l 1
+ 611 698 555 672 503 614 c 1
+ 472 614 l 1
+ 492 653 536 691 555 704 c 1
+ 85 704 l 1
+ 104 691 148 653 168 614 c 1
+ 137 614 l 1
+ 85 672 29 698 0 708 c 1
+ 0 740 l 1
+ 29 750 85 776 137 834 c 1
+ 168 834 l 1
+ 148 795 104 757 85 744 c 1
+ 555 744 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni20D0
+Encoding: 8400 8400 3363
+Width: 420
+VWidth: 999
+Flags: W
+GlyphVariantsHorizontal: uni20D0
+GlyphCompositionHorizontal: 2  uni20D0%0,140,140,420 uni20D6.ex%1,112,112,335
+HStem: 704 40<0 50.9705>
+LayerCount: 2
+Fore
+SplineSet
+0 704 m 1
+ 420 704 l 1
+ 420 744 l 1
+ 85 744 l 1
+ 104 757 148 795 168 834 c 1
+ 137 834 l 1
+ 85 776 29 750 0 740 c 1
+ 0 704 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni20D1
+Encoding: 8401 8401 3364
+Width: 420
+VWidth: 999
+Flags: W
+GlyphVariantsHorizontal: uni20D1
+GlyphCompositionHorizontal: 2  uni20D6.ex%1,112,112,335 uni20D1%0,140,140,420
+HStem: 704 40<369.03 420>
+LayerCount: 2
+Fore
+Refer: 3363 8400 N -1 0 0 1 420 0 2
 EndChar
 EndChars
 EndSplineFont
