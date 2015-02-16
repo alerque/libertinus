@@ -458,7 +458,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114546 3379
+BeginChars: 1114550 3383
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -61140,6 +61140,8 @@ VWidth: 999
 Flags: HW
 TeX: 57 0
 TopAccentHorizontal: -205
+GlyphVariantsHorizontal: uni0305 uni0305.size1 uni0305.size2
+GlyphCompositionHorizontal: 2  uni0305.size1%0,500,500,545 uni0305.size1%1,500,500,545
 HStem: 601 44<-390.912 -17.3623>
 AnchorPoint: "top_akzent" -205 645 mark 0
 LayerCount: 2
@@ -100746,6 +100748,8 @@ Width: 0
 VWidth: 999
 Flags: HW
 TopAccentHorizontal: -244
+GlyphVariantsHorizontal: uni0332 uni0332.size1 uni0332.size2
+GlyphCompositionHorizontal: 2  uni0332.size1%0,500,500,545 uni0332.size1%1,500,500,545
 HStem: -131 44<-428.942 -51.3623>
 AnchorPoint: "unten_punkt" -244 -110 mark 0
 LayerCount: 2
@@ -143617,6 +143621,66 @@ HStem: 686 27<0.863216 135.185 3086.79 3220.24>
 LayerCount: 2
 Fore
 Refer: 3373 -1 N 1 0 0 -1 0 1257 3
+EndChar
+
+StartChar: uni0305.size1
+Encoding: 1114546 -1 3379
+Width: 545
+VWidth: 999
+Flags: W
+HStem: 601 44<1.08765 543.638>
+LayerCount: 2
+Fore
+SplineSet
+522 601 m 2
+ 13 601 l 2
+ 4 601 0 609 0 616 c 0
+ 0 628 11 645 22 645 c 2
+ 532 645 l 2
+ 541 645 545 637 545 631 c 0
+ 545 619 535 601 522 601 c 2
+EndSplineSet
+EndChar
+
+StartChar: uni0305.size2
+Encoding: 1114547 -1 3380
+Width: 790
+VWidth: 999
+Flags: W
+HStem: 601 44<1.08765 788.638>
+LayerCount: 2
+Fore
+SplineSet
+767 601 m 2
+ 13 601 l 2
+ 4 601 0 609 0 616 c 0
+ 0 628 11 645 22 645 c 2
+ 777 645 l 2
+ 786 645 790 637 790 631 c 0
+ 790 619 780 601 767 601 c 2
+EndSplineSet
+EndChar
+
+StartChar: uni0332.size1
+Encoding: 1114548 -1 3381
+Width: 545
+VWidth: 999
+Flags: W
+HStem: -131 44<1.08765 543.638>
+LayerCount: 2
+Fore
+Refer: 3379 -1 N 1 0 0 1 0 -732 2
+EndChar
+
+StartChar: uni0332.size2
+Encoding: 1114549 -1 3382
+Width: 790
+VWidth: 999
+Flags: W
+HStem: -131 44<1.08765 788.638>
+LayerCount: 2
+Fore
+Refer: 3380 -1 N 1 0 0 1 0 -732 2
 EndChar
 EndChars
 EndSplineFont
