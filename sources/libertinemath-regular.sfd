@@ -458,7 +458,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114536 3369
+BeginChars: 1114546 3379
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -30052,6 +30052,7 @@ Width: 0
 VWidth: 999
 Flags: HW
 TopAccentHorizontal: -138
+GlyphVariantsHorizontal: uni0302 uni0302.size1 uni0302.size2 uni0302.size3 uni0302.size4 uni0302.size5
 HStem: 554 157
 VStem: -266 252
 AnchorPoint: "SekAccPos" -138 914 basemark 0
@@ -30179,6 +30180,7 @@ Width: 0
 VWidth: 999
 Flags: HMW
 TopAccentHorizontal: -205
+GlyphVariantsHorizontal: uni030C uni030C.size1 uni030C.size2 uni030C.size3 uni030C.size4 uni030C.size5
 AnchorPoint: "top_akzent" -205 676 mark 0
 LayerCount: 2
 Fore
@@ -143450,6 +143452,171 @@ VStem: 109 75<14.8637 489.136>
 LayerCount: 2
 Fore
 Refer: 3367 10222 N -1 0 0 1 228 0 3
+EndChar
+
+StartChar: uni0302.size1
+Encoding: 1114536 -1 3369
+Width: 366
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 183
+HStem: 554 157
+LayerCount: 2
+Fore
+SplineSet
+205 711 m 1
+ 247 665 314 611 366 571 c 1
+ 364 568 355 555 344 554 c 1
+ 287 576 229 605 183 637 c 1
+ 136 605 79 576 22 554 c 1
+ 11 555 2 568 0 571 c 1
+ 52 611 119 665 161 711 c 1
+ 177 713 189 714 205 711 c 1
+EndSplineSet
+EndChar
+
+StartChar: uni0302.size2
+Encoding: 1114537 -1 3370
+Width: 530
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 265
+HStem: 547 24<6.98947 21.857 508.143 523.011>
+LayerCount: 2
+Fore
+SplineSet
+297 711 m 1
+ 358 665 454 611 530 571 c 1
+ 529 567 527 555 516 547 c 1
+ 427 564 335 604 265 637 c 1
+ 195 604 103 564 14 547 c 1
+ 3 555 1 567 0 571 c 1
+ 76 611 172 665 233 711 c 1
+ 255 713 275 714 297 711 c 1
+EndSplineSet
+EndChar
+
+StartChar: uni0302.size3
+Encoding: 1114538 -1 3371
+Width: 848
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 424
+HStem: 545 26<4.39124 34.828 815.929 842.882>
+LayerCount: 2
+Fore
+SplineSet
+475 711 m 1
+ 572 665 727 611 848 571 c 1
+ 847 559 844 551 837 545 c 1
+ 687 563 540 602 424 637 c 1
+ 308 602 160 563 10 545 c 1
+ 3 551 1 559 0 571 c 1
+ 121 611 275 665 373 711 c 1
+ 409 713 439 714 475 711 c 1
+EndSplineSet
+EndChar
+
+StartChar: uni0302.size4
+Encoding: 1114539 -1 3372
+Width: 1610
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 805
+HStem: 544 27<2.76367 67.2212 1542.78 1607.24>
+LayerCount: 2
+Fore
+SplineSet
+861 711 m 1
+ 1046 665 1380 611 1610 571 c 1
+ 1611 556 1607 549 1603 544 c 1
+ 1457 549 1017 604 805 637 c 1
+ 593 604 153 549 7 544 c 1
+ 3 549 -1 556 0 571 c 1
+ 230 611 564 665 749 711 c 1
+ 777 713 833 713 861 711 c 1
+EndSplineSet
+EndChar
+
+StartChar: uni0302.size5
+Encoding: 1114540 -1 3373
+Width: 3222
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 1611
+HStem: 544 27<0.863216 135.185 3086.79 3220.24>
+LayerCount: 2
+Fore
+SplineSet
+1693 711 m 1
+ 2063 665 2762 611 3222 571 c 1
+ 3222 567 3224 555 3217 544 c 1
+ 2718 566 2020 605 1611 637 c 1
+ 1202 605 503 566 4 544 c 1
+ -3 555 0 567 0 571 c 1
+ 460 611 1158 665 1529 711 c 1
+ 1556 713 1666 714 1693 711 c 1
+EndSplineSet
+EndChar
+
+StartChar: uni030C.size1
+Encoding: 1114541 -1 3374
+Width: 366
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 183
+HStem: 556 157
+LayerCount: 2
+Fore
+Refer: 3369 -1 N 1 0 0 -1 0 1267 3
+EndChar
+
+StartChar: uni030C.size2
+Encoding: 1114542 -1 3375
+Width: 530
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 265
+HStem: 689 24<6.98947 21.857 508.143 523.011>
+LayerCount: 2
+Fore
+Refer: 3370 -1 N 1 0 0 -1 0 1260 3
+EndChar
+
+StartChar: uni030C.size3
+Encoding: 1114543 -1 3376
+Width: 848
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 424
+HStem: 687 26<4.39124 34.828 815.929 842.882>
+LayerCount: 2
+Fore
+Refer: 3371 -1 N 1 0 0 -1 0 1258 3
+EndChar
+
+StartChar: uni030C.size4
+Encoding: 1114544 -1 3377
+Width: 1610
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 805
+HStem: 685 27<2.76367 67.2212 1542.78 1607.24>
+LayerCount: 2
+Fore
+Refer: 3372 -1 N 1 0 0 -1 0 1256 3
+EndChar
+
+StartChar: uni030C.size5
+Encoding: 1114545 -1 3378
+Width: 3222
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 1611
+HStem: 686 27<0.863216 135.185 3086.79 3220.24>
+LayerCount: 2
+Fore
+Refer: 3373 -1 N 1 0 0 -1 0 1257 3
 EndChar
 EndChars
 EndSplineFont
