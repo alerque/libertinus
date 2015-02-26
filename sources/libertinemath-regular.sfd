@@ -458,7 +458,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114552 3388
+BeginChars: 1114552 3390
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -143735,6 +143735,74 @@ LayerCount: 2
 Fore
 Refer: 3256 -1 N 1 0 0 1 680 0 2
 Refer: 3256 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni20DB
+Encoding: 8411 8411 3388
+Width: 0
+VWidth: 999
+Flags: W
+TopAccentHorizontal: -294
+HStem: 526 95<-501.984 -424.016 -332.984 -255.016 -163.984 -86.0156>
+VStem: -510 94<533.394 613.312> -341 94<533.394 613.312> -172 94<533.394 613.312>
+CounterMasks: 1 70
+AnchorPoint: "SekAccPos" -294 824 basemark 0
+AnchorPoint: "top_akzent" -294 645 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-510 573 m 0
+ -510 599 -489 621 -463 621 c 0
+ -437 621 -416 599 -416 573 c 0
+ -416 547 -437 526 -463 526 c 0
+ -489 526 -510 547 -510 573 c 0
+-341 573 m 0
+ -341 599 -320 621 -294 621 c 0
+ -268 621 -247 599 -247 573 c 0
+ -247 547 -268 526 -294 526 c 0
+ -320 526 -341 547 -341 573 c 0
+-172 573 m 0
+ -172 599 -151 621 -125 621 c 0
+ -99 621 -78 599 -78 573 c 0
+ -78 547 -99 526 -125 526 c 0
+ -151 526 -172 547 -172 573 c 0
+EndSplineSet
+EndChar
+
+StartChar: uni20DC
+Encoding: 8412 8412 3389
+Width: 0
+VWidth: 999
+Flags: W
+TopAccentHorizontal: -378
+HStem: 526 95<-670.984 -593.016 -501.984 -424.016 -332.984 -255.016 -163.984 -86.0156>
+VStem: -679 94<533.394 613.312> -510 94<533.394 613.312> -341 94<533.394 613.312> -172 94<533.394 613.312>
+AnchorPoint: "top_akzent" -378 645 mark 0
+AnchorPoint: "SekAccPos" -378 824 basemark 0
+LayerCount: 2
+Fore
+SplineSet
+-679 573 m 0
+ -679 599 -658 621 -632 621 c 0
+ -606 621 -585 599 -585 573 c 0
+ -585 547 -606 526 -632 526 c 0
+ -658 526 -679 547 -679 573 c 0
+-510 573 m 0
+ -510 599 -489 621 -463 621 c 0
+ -437 621 -416 599 -416 573 c 0
+ -416 547 -437 526 -463 526 c 0
+ -489 526 -510 547 -510 573 c 0
+-341 573 m 0
+ -341 599 -320 621 -294 621 c 0
+ -268 621 -247 599 -247 573 c 0
+ -247 547 -268 526 -294 526 c 0
+ -320 526 -341 547 -341 573 c 0
+-172 573 m 0
+ -172 599 -151 621 -125 621 c 0
+ -99 621 -78 599 -78 573 c 0
+ -78 547 -99 526 -125 526 c 0
+ -151 526 -172 547 -172 573 c 0
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
