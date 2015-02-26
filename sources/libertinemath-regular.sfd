@@ -458,7 +458,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114551 3386
+BeginChars: 1114552 3388
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -143704,6 +143704,37 @@ HStem: -302 40
 LayerCount: 2
 Fore
 Refer: 3361 -1 N 1 0 0 1 0 -946 2
+EndChar
+
+StartChar: uni2A0C
+Encoding: 10764 10764 3386
+Width: 1215
+VWidth: 488
+Flags: W
+ItalicCorrection: 150
+GlyphVariantsVertical: uni2A0C uni2A0C.size1
+HStem: -299 49<98 174.82 338 414.82 578 654.82 818 894.82> 751 49<291.228 376.5 531.228 616.5 771.228 856.5 1011.23 1096.5>
+VStem: 198 78<-146.521 649.079> 438 78<-146.521 649.079> 678 78<-146.521 649.079> 918 78<-146.521 649.079>
+LayerCount: 2
+Fore
+Refer: 1896 8747 N 1 0 0 1 720 0 2
+Refer: 1896 8747 N 1 0 0 1 480 0 2
+Refer: 1896 8747 N 1 0 0 1 0 0 2
+Refer: 1896 8747 N 1 0 0 1 240 0 2
+EndChar
+
+StartChar: uni2A0C.size1
+Encoding: 1114551 -1 3387
+Width: 1714
+VWidth: 488
+Flags: W
+ItalicCorrection: 180
+HStem: -530 69<101.5 228.019 441.5 568.019 781.5 908.019 1121.5 1248.02> 1585 69<421.981 548.5 761.981 888.5 1101.98 1228.5 1441.98 1568.5>
+VStem: 266 96<-341.071 72.6815> 288 96<1051.32 1465.07> 606 96<-341.071 72.6815> 628 96<1051.32 1465.07> 946 96<-341.071 72.6815> 968 96<1051.32 1465.07> 1286 96<-341.071 72.6815> 1308 96<1051.32 1465.07>
+LayerCount: 2
+Fore
+Refer: 3256 -1 N 1 0 0 1 680 0 2
+Refer: 3256 -1 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont
