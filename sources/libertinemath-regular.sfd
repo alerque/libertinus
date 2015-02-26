@@ -458,7 +458,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114550 3383
+BeginChars: 1114551 3386
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -101409,6 +101409,8 @@ Encoding: 845 845 2307
 Width: 0
 Flags: HW
 TopAccentHorizontal: -222
+GlyphVariantsHorizontal: uni034D
+GlyphCompositionHorizontal: 3  uni20EE%0,140,140,420 uni20EE.ex%1,112,112,335 uni20EF%0,140,140,420
 HStem: -149 30<-329 -128>
 AnchorPoint: "unten_punkt" -222 -110 mark 0
 LayerCount: 2
@@ -143681,6 +143683,45 @@ HStem: -131 44<1.08765 788.638>
 LayerCount: 2
 Fore
 Refer: 3380 -1 N 1 0 0 1 0 -732 2
+EndChar
+
+StartChar: uni20EE
+Encoding: 8430 8430 3383
+Width: 420
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 210
+GlyphVariantsHorizontal: uni20EE
+GlyphCompositionHorizontal: 2  uni20EE%0,140,140,420 uni20EE.ex%1,112,112,335
+HStem: -392 220
+LayerCount: 2
+Fore
+Refer: 3359 8406 N 1 0 0 1 0 -946 2
+EndChar
+
+StartChar: uni20EF
+Encoding: 8431 8431 3384
+Width: 420
+VWidth: 999
+Flags: W
+TopAccentHorizontal: 210
+GlyphVariantsHorizontal: uni20EF
+GlyphCompositionHorizontal: 2  uni20EE.ex%1,112,112,335 uni20EF%0,140,140,420
+HStem: -392 220
+LayerCount: 2
+Fore
+Refer: 3383 8430 N -1 0 0 1 420 0 2
+EndChar
+
+StartChar: uni20EE.ex
+Encoding: 1114550 -1 3385
+Width: 335
+VWidth: 999
+Flags: W
+HStem: -302 40
+LayerCount: 2
+Fore
+Refer: 3361 -1 N 1 0 0 1 0 -946 2
 EndChar
 EndChars
 EndSplineFont
