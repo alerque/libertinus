@@ -461,7 +461,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114572 3580
+BeginChars: 1114572 3583
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -147219,6 +147219,80 @@ SplineSet
  600 -2 544 -1 521 -1 c 2
  146 -1 l 2x78
 EndSplineSet
+EndChar
+
+StartChar: uni22C8
+Encoding: 8904 8904 3580
+Width: 658
+VWidth: 999
+Flags: W
+HStem: 84 310
+VStem: 65 55<148 329> 538 55<148 329>
+DStem2: 119 394 120 329 0.862357 -0.5063<33.7719 213.004 306.139 485.878> 120 148 119 84 0.862357 0.5063<0 179.739 272.873 452.106>
+LayerCount: 2
+Fore
+SplineSet
+120 329 m 1
+ 120 148 l 1
+ 275 239 l 1
+ 120 329 l 1
+538 148 m 1
+ 538 329 l 1
+ 383 239 l 1
+ 538 148 l 1
+329 270 m 1
+ 539 394 l 1
+ 558 397 579 394 593 363 c 1
+ 593 114 l 1
+ 579 83 558 81 539 84 c 1
+ 329 207 l 1
+ 119 84 l 1
+ 100 81 79 83 65 114 c 1
+ 65 363 l 1
+ 79 394 100 397 119 394 c 1
+ 329 270 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni22C9
+Encoding: 8905 8905 3581
+Width: 660
+VWidth: 999
+Flags: W
+VStem: 65 55<148 329>
+DStem2: 119 394 120 329 0.861934 -0.50702<33.8182 213.05 306.139 551.942> 120 148 119 84 0.863516 0.504322<0 179.738 272.998 518.095>
+LayerCount: 2
+Fore
+SplineSet
+120 329 m 1
+ 120 148 l 1
+ 275 239 l 1
+ 120 329 l 1
+383 239 m 1
+ 595 114 l 1
+ 567 67 l 1
+ 329 207 l 1
+ 119 84 l 1
+ 100 81 79 83 65 114 c 1
+ 65 363 l 1
+ 79 394 100 397 119 394 c 1
+ 329 270 l 1
+ 567 410 l 1
+ 595 362 l 1
+ 383 239 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni22CA
+Encoding: 8906 8906 3582
+Width: 660
+VWidth: 999
+Flags: W
+VStem: 540 55<148 329>
+DStem2: 540 329 541 393 0.863516 0.504322<-518.095 -272.998 -179.738 0> 541 83 540 148 0.861934 -0.50702<-551.942 -306.139 -213.05 -33.8182>
+LayerCount: 2
+Fore
+Refer: 3581 8905 N -1 0 0 -1 660 477 3
 EndChar
 EndChars
 EndSplineFont
