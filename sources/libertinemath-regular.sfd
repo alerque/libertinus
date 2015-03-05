@@ -461,7 +461,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114572 3577
+BeginChars: 1114572 3579
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -147161,6 +147161,24 @@ SplineSet
  157 325 l 1
  157 202 l 1
 EndSplineSet
+EndChar
+
+StartChar: uni2322
+Encoding: 8994 8994 3577
+Width: 991
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3357 -1 N 1 0 0 1 40 -394 2
+EndChar
+
+StartChar: uni2323
+Encoding: 8995 8995 3578
+Width: 991
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3358 -1 N 1 0 0 1 40 565 2
 EndChar
 EndChars
 EndSplineFont
