@@ -3,7 +3,7 @@ Libertine fonts
 
 Libertine fonts is a fork of the Linux Libertine and Linux Biolinum fonts that
 started as an OpenType math companion of the Libertine font family, but grown
-as a full forl to address some of the bugs in the fonts.
+as a full fork to address some of the bugs in the fonts.
 
 The family consists of:
 
