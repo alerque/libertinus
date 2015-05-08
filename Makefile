@@ -7,7 +7,7 @@ SRC=sources
 WEB=webfonts
 TOOLS=tools
 
-PY=python
+PY=python2.7
 BUILD=$(TOOLS)/build.py
 SFNTTOOL=sfnttool
 WOFF2_COMPRESS=woff2_compress
