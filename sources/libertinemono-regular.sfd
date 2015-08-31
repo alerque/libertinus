@@ -19,7 +19,6 @@ FSType: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1155510122
-ModificationTime: 1440982611
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -102,10 +101,6 @@ LangName: 1033 "" "" "Mono" "" "" "" "" "" "Philipp H. Poll" "Philipp H. Poll" "
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -96
-AntiAlias: 1
-FitToEm: 0
-WinInfo: 7813 13 5
 BeginPrivate: 10
 BlueValues 31 [-12 0 480 490 613 626 688 698]
 OtherBlues 11 [-238 -227]
@@ -11850,7 +11845,7 @@ EndSplineSet
 EndChar
 
 StartChar: Adieresis
-Encoding: 196 196 289
+Encoding: 65536 -1 289
 Width: 640
 VWidth: 999
 Flags: HW
@@ -11898,7 +11893,6 @@ SplineSet
  201 229 195 227 190 213 c 2
  145 79 l 2
 EndSplineSet
-Substitution2: "'ss01' Stilgruppe 1 1" Adieresis.alt
 EndChar
 
 StartChar: Aring
@@ -12665,7 +12659,7 @@ EndSplineSet
 EndChar
 
 StartChar: Odieresis
-Encoding: 214 214 307
+Encoding: 65537 -1 307
 Width: 640
 VWidth: 999
 Flags: HW
@@ -12698,7 +12692,6 @@ SplineSet
  149 585 228 625 318 625 c 0
  481 625 606 507 606 313 c 0
 EndSplineSet
-Substitution2: "'ss01' Stilgruppe 1 1" Odieresis.alt
 EndChar
 
 StartChar: multiply
@@ -12899,7 +12892,7 @@ EndSplineSet
 EndChar
 
 StartChar: Udieresis
-Encoding: 220 220 313
+Encoding: 65538 -1 313
 Width: 640
 VWidth: 999
 Flags: HW
@@ -12942,7 +12935,6 @@ SplineSet
  470 681 449 660 423 660 c 0
  397 660 376 681 376 707 c 0
 EndSplineSet
-Substitution2: "'ss01' Stilgruppe 1 1" Udieresis.alt
 EndChar
 
 StartChar: Yacute
@@ -28550,7 +28542,7 @@ EndSplineSet
 EndChar
 
 StartChar: dotlessj
-Encoding: 65536 -1 706
+Encoding: 65539 -1 706
 Width: 640
 VWidth: 999
 Flags: HW
@@ -30607,7 +30599,7 @@ Ligature2: "'frac' Brueche 1" Untitled1.sfd
 EndChar
 
 StartChar: perthousandzero
-Encoding: 65537 -1 769
+Encoding: 65540 -1 769
 Width: 280
 VWidth: 999
 Flags: HW
@@ -30817,7 +30809,7 @@ EndSplineSet
 EndChar
 
 StartChar: Adieresis.alt
-Encoding: 65538 -1 776
+Encoding: 196 196 776
 Width: 640
 VWidth: 999
 Flags: HW
@@ -30864,12 +30856,13 @@ SplineSet
  201 229 195 227 190 213 c 2
  145 79 l 2
 EndSplineSet
+Substitution2: "'ss01' Stilgruppe 1 1" Adieresis
 Comment: "Dies sind alternative Umlaute, die im Deutschen vorzuziehen sind." 
 Colour: ffffff
 EndChar
 
 StartChar: Odieresis.alt
-Encoding: 65539 -1 777
+Encoding: 214 214 777
 Width: 640
 VWidth: 999
 Flags: HW
@@ -30901,12 +30894,13 @@ SplineSet
  149 585 228 625 318 625 c 0
  481 625 606 507 606 313 c 0
 EndSplineSet
+Substitution2: "'ss01' Stilgruppe 1 1" Odieresis
 Comment: "Dies sind alternative Umlaute, die im Deutschen vorzuziehen sind." 
 Colour: ffffff
 EndChar
 
 StartChar: Udieresis.alt
-Encoding: 65540 -1 778
+Encoding: 220 220 778
 Width: 640
 VWidth: 999
 Flags: HW
@@ -30948,6 +30942,7 @@ SplineSet
  259 609 259 586 253 580 c 1
  179 577 173 572 173 493 c 2
 EndSplineSet
+Substitution2: "'ss01' Stilgruppe 1 1" Udieresis
 Comment: "Dies sind alternative Umlaute, die im Deutschen vorzuziehen sind." 
 Colour: ffffff
 EndChar

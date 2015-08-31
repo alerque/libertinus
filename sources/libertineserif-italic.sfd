@@ -17058,7 +17058,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" atilde.sc
 EndChar
 
 StartChar: Adieresis
-Encoding: 196 196 349
+Encoding: 65536 -1 349
 Width: 667
 VWidth: 999
 Flags: HW
@@ -17121,7 +17121,6 @@ SplineSet
  161 79 l 2
 EndSplineSet
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
-Substitution2: "'ss01' Stilgruppe 1 1" Adieresis.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" adieresis.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" adieresis.sc
 EndChar
@@ -18077,7 +18076,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" otilde.sc
 EndChar
 
 StartChar: Odieresis
-Encoding: 214 214 367
+Encoding: 65537 -1 367
 Width: 668
 VWidth: 999
 Flags: HW
@@ -18112,7 +18111,6 @@ SplineSet
  706.3 379.5 704 354.8 699 329 c 0
 EndSplineSet
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
-Substitution2: "'ss01' Stilgruppe 1 1" Odieresis.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" odieresis.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" odieresis.sc
 EndChar
@@ -18375,7 +18373,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" ucircumflex.sc
 EndChar
 
 StartChar: Udieresis
-Encoding: 220 220 373
+Encoding: 65538 -1 373
 Width: 634
 VWidth: 999
 Flags: HW
@@ -18425,7 +18423,6 @@ SplineSet
  511 660 490 681 490 707 c 0
 EndSplineSet
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
-Substitution2: "'ss01' Stilgruppe 1 1" Udieresis.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" udieresis.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" udieresis.sc
 EndChar
@@ -59618,7 +59615,7 @@ EndSplineSet
 EndChar
 
 StartChar: parenleft.sc
-Encoding: 65536 -1 1257
+Encoding: 65539 -1 1257
 Width: 295
 VWidth: 999
 Flags: HW
@@ -59636,7 +59633,7 @@ EndSplineSet
 EndChar
 
 StartChar: parenright.sc
-Encoding: 65537 -1 1258
+Encoding: 65540 -1 1258
 Width: 295
 VWidth: 967
 Flags: HW
@@ -59654,7 +59651,7 @@ EndSplineSet
 EndChar
 
 StartChar: bracketleft.sc
-Encoding: 65538 -1 1259
+Encoding: 65541 -1 1259
 Width: 302
 VWidth: 966
 Flags: HW
@@ -59676,7 +59673,7 @@ EndSplineSet
 EndChar
 
 StartChar: bracketright.sc
-Encoding: 65539 -1 1260
+Encoding: 65542 -1 1260
 Width: 302
 VWidth: 966
 Flags: HW
@@ -59698,7 +59695,7 @@ EndSplineSet
 EndChar
 
 StartChar: braceleft.sc
-Encoding: 65540 -1 1261
+Encoding: 65543 -1 1261
 Width: 273
 VWidth: 967
 Flags: HW
@@ -59732,7 +59729,7 @@ EndSplineSet
 EndChar
 
 StartChar: braceright.sc
-Encoding: 65541 -1 1262
+Encoding: 65544 -1 1262
 Width: 273
 VWidth: 967
 Flags: HW
@@ -59766,7 +59763,7 @@ EndSplineSet
 EndChar
 
 StartChar: exclamdown.sc
-Encoding: 65542 -1 1263
+Encoding: 65545 -1 1263
 Width: 227
 VWidth: 999
 Flags: HW
@@ -59793,7 +59790,7 @@ EndSplineSet
 EndChar
 
 StartChar: questiondown.sc
-Encoding: 65543 -1 1264
+Encoding: 65546 -1 1264
 Width: 405
 VWidth: 999
 Flags: HW
@@ -59831,7 +59828,7 @@ EndSplineSet
 EndChar
 
 StartChar: guillemotleft.sc
-Encoding: 65544 -1 1265
+Encoding: 65547 -1 1265
 Width: 536
 VWidth: 974
 Flags: HW
@@ -59858,7 +59855,7 @@ EndSplineSet
 EndChar
 
 StartChar: guillemotright.sc
-Encoding: 65545 -1 1266
+Encoding: 65548 -1 1266
 Width: 536
 VWidth: 1072
 Flags: HW
@@ -59885,7 +59882,7 @@ EndSplineSet
 EndChar
 
 StartChar: guilsinglleft.sc
-Encoding: 65546 -1 1267
+Encoding: 65549 -1 1267
 Width: 355
 VWidth: 560
 Flags: HW
@@ -59905,7 +59902,7 @@ EndSplineSet
 EndChar
 
 StartChar: guilsinglright.sc
-Encoding: 65547 -1 1268
+Encoding: 65550 -1 1268
 Width: 355
 VWidth: 560
 Flags: HW
@@ -59925,7 +59922,7 @@ EndSplineSet
 EndChar
 
 StartChar: f_f
-Encoding: 65548 -1 1269
+Encoding: 65551 -1 1269
 Width: 568
 VWidth: 999
 Flags: HW
@@ -59997,7 +59994,7 @@ LCarets2: 1 257
 EndChar
 
 StartChar: f_i
-Encoding: 65549 -1 1270
+Encoding: 65552 -1 1270
 Width: 564
 VWidth: 999
 Flags: HW
@@ -60056,7 +60053,7 @@ LCarets2: 1 280
 EndChar
 
 StartChar: f_l
-Encoding: 65550 -1 1271
+Encoding: 65553 -1 1271
 Width: 570
 VWidth: 999
 Flags: HW
@@ -60114,7 +60111,7 @@ LCarets2: 1 314
 EndChar
 
 StartChar: f_f_i
-Encoding: 65551 -1 1272
+Encoding: 65554 -1 1272
 Width: 819
 VWidth: 999
 Flags: HW
@@ -60198,7 +60195,7 @@ LCarets2: 2 280 538
 EndChar
 
 StartChar: f_f_l
-Encoding: 65552 -1 1273
+Encoding: 65555 -1 1273
 Width: 830
 VWidth: 999
 Flags: HW
@@ -60276,7 +60273,7 @@ LCarets2: 2 283 557
 EndChar
 
 StartChar: longs_t
-Encoding: 65553 -1 1274
+Encoding: 65556 -1 1274
 Width: 606
 VWidth: 999
 Flags: HMW
@@ -65048,7 +65045,7 @@ EndSplineSet
 EndChar
 
 StartChar: zero.oldstyle
-Encoding: 65554 -1 1369
+Encoding: 65557 -1 1369
 Width: 516
 Flags: HW
 TeX: 38 0
@@ -65073,7 +65070,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" zero zero.fitted
 EndChar
 
 StartChar: one.oldstyle
-Encoding: 65555 -1 1370
+Encoding: 65558 -1 1370
 Width: 323
 Flags: HW
 TeX: 38 0
@@ -65104,7 +65101,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" one one.fitted
 EndChar
 
 StartChar: three.oldstyle
-Encoding: 65556 -1 1371
+Encoding: 65559 -1 1371
 Width: 428
 VWidth: 488
 Flags: HW
@@ -65229,7 +65226,7 @@ EndSplineSet
 EndChar
 
 StartChar: four.oldstyle
-Encoding: 65557 -1 1374
+Encoding: 65560 -1 1374
 Width: 460
 VWidth: 487
 Flags: HW
@@ -65302,7 +65299,7 @@ EndSplineSet
 EndChar
 
 StartChar: five.oldstyle
-Encoding: 65558 -1 1376
+Encoding: 65561 -1 1376
 Width: 406
 VWidth: 488
 Flags: HW
@@ -65337,7 +65334,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" five five.fitted
 EndChar
 
 StartChar: six.oldstyle
-Encoding: 65559 -1 1377
+Encoding: 65562 -1 1377
 Width: 452
 VWidth: 487
 Flags: HW
@@ -65367,7 +65364,7 @@ Substitution2: "'tnum' Tabellenziffern 1" six.taboldstyle
 EndChar
 
 StartChar: seven.oldstyle
-Encoding: 65560 -1 1378
+Encoding: 65563 -1 1378
 Width: 419
 VWidth: 488
 Flags: HW
@@ -67981,7 +67978,7 @@ EndSplineSet
 EndChar
 
 StartChar: s_t
-Encoding: 65561 -1 1449
+Encoding: 65564 -1 1449
 Width: 648
 VWidth: 999
 Flags: HW
@@ -77039,7 +77036,7 @@ Ligature2: "'frac' Brueche 1" five slash six
 EndChar
 
 StartChar: zero.fitted
-Encoding: 65562 -1 1609
+Encoding: 65565 -1 1609
 Width: 465
 VWidth: 487
 Flags: HW
@@ -77068,7 +77065,7 @@ Substitution2: "'tnum' Tabellenziffern 1" zero
 EndChar
 
 StartChar: one.fitted
-Encoding: 65563 -1 1610
+Encoding: 65566 -1 1610
 Width: 363
 VWidth: 999
 Flags: HW
@@ -77099,7 +77096,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" one one.oldstyle
 EndChar
 
 StartChar: two.fitted
-Encoding: 65564 -1 1611
+Encoding: 65567 -1 1611
 Width: 428
 VWidth: 487
 Flags: HW
@@ -77136,7 +77133,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" two two.oldstyle
 EndChar
 
 StartChar: three.fitted
-Encoding: 65565 -1 1612
+Encoding: 65568 -1 1612
 Width: 434
 VWidth: 487
 Flags: HW
@@ -77173,7 +77170,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" three three.oldstyle
 EndChar
 
 StartChar: four.fitted
-Encoding: 65566 -1 1613
+Encoding: 65569 -1 1613
 Width: 450
 VWidth: 487
 Flags: HW
@@ -77213,7 +77210,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" four four.oldstyle
 EndChar
 
 StartChar: five.fitted
-Encoding: 65567 -1 1614
+Encoding: 65570 -1 1614
 Width: 422
 VWidth: 487
 Flags: HW
@@ -77246,7 +77243,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" five five.oldstyle
 EndChar
 
 StartChar: six.fitted
-Encoding: 65568 -1 1615
+Encoding: 65571 -1 1615
 Width: 447
 VWidth: 487
 Flags: HW
@@ -77276,7 +77273,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" six six.oldstyle
 EndChar
 
 StartChar: seven.fitted
-Encoding: 65569 -1 1616
+Encoding: 65572 -1 1616
 Width: 396
 VWidth: 487
 Flags: HW
@@ -77303,7 +77300,7 @@ Substitution2: "'tnum' Tabellenziffern 1" seven
 EndChar
 
 StartChar: eight.fitted
-Encoding: 65570 -1 1617
+Encoding: 65573 -1 1617
 Width: 444
 VWidth: 487
 Flags: HW
@@ -77342,7 +77339,7 @@ AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" eight eight.oldstyle
 EndChar
 
 StartChar: nine.fitted
-Encoding: 65571 -1 1618
+Encoding: 65574 -1 1618
 Width: 438
 VWidth: 487
 Flags: HW
@@ -77371,7 +77368,7 @@ Substitution2: "'tnum' Tabellenziffern 1" nine
 EndChar
 
 StartChar: Euro.fitted
-Encoding: 65572 -1 1619
+Encoding: 65575 -1 1619
 Width: 615
 VWidth: 999
 Flags: HW
@@ -77415,7 +77412,7 @@ Substitution2: "'tnum' Tabellenziffern 1" Euro
 EndChar
 
 StartChar: Yen.fitted
-Encoding: 65573 -1 1620
+Encoding: 65576 -1 1620
 Width: 514
 VWidth: 999
 Flags: HW
@@ -77489,7 +77486,7 @@ Substitution2: "'tnum' Tabellenziffern 1" yen
 EndChar
 
 StartChar: perthousandzero
-Encoding: 65574 -1 1621
+Encoding: 65577 -1 1621
 Width: 280
 VWidth: 999
 Flags: HW
@@ -77512,7 +77509,7 @@ EndSplineSet
 EndChar
 
 StartChar: eight.oldstyle
-Encoding: 65575 -1 1622
+Encoding: 65578 -1 1622
 Width: 448
 VWidth: 487
 Flags: HW
@@ -77552,7 +77549,7 @@ Substitution2: "'sups' Hochgestellte 1" uni2078
 EndChar
 
 StartChar: nine.oldstyle
-Encoding: 65576 -1 1623
+Encoding: 65579 -1 1623
 Width: 448
 VWidth: 487
 Flags: HW
@@ -81058,7 +81055,7 @@ EndSplineSet
 EndChar
 
 StartChar: Adieresis.alt
-Encoding: 65577 -1 1696
+Encoding: 196 196 1696
 Width: 667
 VWidth: 999
 Flags: HW
@@ -81123,6 +81120,7 @@ SplineSet
  259 241 252 237 245 224 c 2
  161 79 l 2
 EndSplineSet
+Substitution2: "'ss01' Stilgruppe 1 1" Adieresis
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" adieresis.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" adieresis.sc
@@ -81131,7 +81129,7 @@ Colour: ffffff
 EndChar
 
 StartChar: Odieresis.alt
-Encoding: 65578 -1 1697
+Encoding: 214 214 1697
 Width: 668
 VWidth: 999
 Flags: HW
@@ -81169,6 +81167,7 @@ SplineSet
  601.1 658 706.3 558.9 706.3 402.9 c 0
  706.3 379.5 704 354.8 699 329 c 0
 EndSplineSet
+Substitution2: "'ss01' Stilgruppe 1 1" Odieresis
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" odieresis.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" odieresis.sc
@@ -81177,7 +81176,7 @@ Colour: ffffff
 EndChar
 
 StartChar: Udieresis.alt
-Encoding: 65579 -1 1698
+Encoding: 220 220 1698
 Width: 634
 VWidth: 999
 Flags: HW
@@ -81240,6 +81239,7 @@ SplineSet
  606 295 l 2
  572 117 503 -10 306 -10 c 0
 EndSplineSet
+Substitution2: "'ss01' Stilgruppe 1 1" Udieresis
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" udieresis.sc
 AlternateSubs2: "'aalt' Alle Alternativen zeigen 1" udieresis.sc
