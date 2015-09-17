@@ -10,6 +10,7 @@ TOOLS=tools
 
 PY=python2.7
 BUILD=$(TOOLS)/build.py
+FINDMISSING=$(TOOLS)/find-missing-glyphs.py
 SFNTTOOL=sfnttool
 WOFF2_COMPRESS=woff2_compress
 SAMPLE=fntsample
@@ -63,3 +64,9 @@ $(DOC)/%-table.pdf: %.otf
 	@$(SAMPLE) --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@$(OUTLINE) $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
+
+check: $(SFD)
+	@$(foreach sfd, $(SFD), \
+	     echo "   CHK	"`basename $(sfd)`; \
+	     $(PY) $(FINDMISSING) $(sfd); \
+	  )
