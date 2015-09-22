@@ -39,7 +39,6 @@ HheadDescent: -246
 HheadDOffset: 0
 OS2FamilyClass: 261
 OS2Vendor: 'PfEd'
-Lookup: 1 0 0 "Substitution f short"  {"Substitution f short 1"  } []
 Lookup: 1 0 0 "Substitution dotless forms"  {"Substitution dotless forms 1"  } []
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic"  {"'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  {"'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
@@ -61,8 +60,6 @@ Lookup: 1 0 0 "'ss02' Stilgruppe 2"  {"'ss02' Stilgruppe 2 1"  } ['ss02' ('DFLT'
 Lookup: 1 0 0 "'ss03' Stilgruppe 3"  {"'ss03' Stilgruppe 3 1"  } ['ss03' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'fina' Wortendeformen"  {"'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution"  {"'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "LinLibertineO-Substitution dotless forms"  {"LinLibertineO-Substitution dotless forms 1"  } []
-Lookup: 1 0 0 "LinLibertineO-Substitution f short"  {"LinLibertineO-Substitution f short 1"  } []
 Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0"  {"'nalt' Alternate Annotation Forms 1"  } ['nalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 3 0 0 "'aalt' Access All Alternates lookup 25"  {"'aalt' Access All Alternates lookup 25 subtable"  } ['aalt' ('grek' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'DFLT' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Komb OR"  "'mark' Top rechts"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -87,11 +84,6 @@ ChainSub2: class "'ccmp' Contextual Chaining Substitution 1"  5 1 5 2
   ClsList: 3
   BClsList:
   FClsList: 4
- 1
-  SeqLookup: 0 "Substitution f short" 
-  ClassNames: "0"  "1"  "2"  "3"  "4"  
-  BClassNames: "0"  
-  FClassNames: "0"  "1"  "2"  "3"  "4"  
 EndFPST
 ShortTable: cvt  2
   68
@@ -9708,7 +9700,6 @@ SplineSet
  380 134 l 2
 EndSplineSet
 AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" dotlessi uni2071 uniE150
-Substitution2: "LinLibertineO-Substitution dotless forms 1" dotlessi
 Substitution2: "Substitution dotless forms 1" dotlessi
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE150
 Substitution2: "'sups' Hochgestellte 1" uni2071
@@ -9747,7 +9738,6 @@ SplineSet
  359 590 332 620 332 650 c 0
 EndSplineSet
 AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE151 uniF6BE
-Substitution2: "LinLibertineO-Substitution dotless forms 1" uniF6BE
 Substitution2: "Substitution dotless forms 1" uniF6BE
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE151
 EndChar
