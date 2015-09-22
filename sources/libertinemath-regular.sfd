@@ -55,6 +55,7 @@ Lookup: 1 0 0 "Substitution dotless forms"  {"Substitution dotless forms 1"  } [
 Lookup: 1 0 0 "Substitution cap-Accents"  {"Substitution cap-Accents 1"  } []
 Lookup: 1 0 0 "Substitution f short"  {"Substitution f short 1"  } []
 Lookup: 3 0 0 "'aalt' Access All Alternates lookup 15"  {"'aalt' Access All Alternates lookup 15 subtable"  } ['aalt' ('grek' <'dflt' > 'cyrl' <'dflt' 'SRB ' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > 'DFLT' <'dflt' > 'hebr' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' Contextual Alternates lookup 16"  {"'calt' Contextual Alternates lookup 16 subtable"  } ['calt' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > 'DFLT' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Cyrillic kerning"  {"'kern' Cyrillic Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Greek kerning"  {"'kern' Greek Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Top rechts"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -337,6 +338,13 @@ KernClass2: 16 15 "LinBiolinumOB-'kern' Latin kerning"
  6 u1D5E8
  6 u1D602
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 80 {} 40 {} 0 {} 0 {} 0 {} 55 {} 24 {} 24 {} -5 {} -49 {} -34 {} -49 {} -63 {} -49 {} -20 {} 0 {} 0 {} 37 {} -39 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} -61 {} -71 {} -60 {} -40 {} 0 {} 0 {} 24 {} -39 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} -112 {} -80 {} -60 {} -40 {} 0 {} 0 {} 24 {} -24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} -5 {} -34 {} 37 {} 0 {} 10 {} 10 {} -29 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} -49 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} 0 {} 0 {} -20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -40 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -65 {} 0 {} 0 {} -12 {} -12 {} 0 {} 0 {} 0 {} 0 {} -34 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} 12 {} 49 {} 0 {}
+ChainSub2: coverage "'calt' Contextual Alternates lookup 16 subtable"  0 0 0 1
+ 1 0 1
+  Coverage: 5 f f_f
+  FCoverage: 15 f i l b h j k t
+ 1
+  SeqLookup: 0 "Substitution f short" 
+EndFPST
 ChainSub2: class "'ccmp' Contextual Chaining Substitution 1"  6 6 6 3
   Class: 11 i j uni0268
   Class: 398 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 grave.cap acute.cap circumflex.cap caron.cap breve.cap hungarumlaut.cap space_uni030F.cap breveinvertedcmb.cap breve.cyrcap breve.cyr dieresis.cap hookabovecomb.cap dotaccent.cap
