@@ -65,8 +65,6 @@ Lookup: 1 0 0 "'ss02' Stilgruppe 2"  {"'ss02' Stilgruppe 2 1"  } ['ss02' ('DFLT'
 Lookup: 1 0 0 "'ss03' Stilgruppe 3"  {"'ss03' Stilgruppe 3 1"  } ['ss03' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'fina' Wortendeformen"  {"'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution"  {"'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "LinLibertineO-Substitution dotless forms"  {"LinLibertineO-Substitution dotless forms 1"  } []
-Lookup: 1 0 0 "LinLibertineO-Substitution f short"  {"LinLibertineO-Substitution f short 1"  } []
 Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0"  {"'nalt' Alternate Annotation Forms 1"  } ['nalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 3 0 0 "'aalt' Access All Alternates lookup 29"  {"'aalt' Access All Alternates lookup 29 subtable"  } ['aalt' ('grek' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'DFLT' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 258 0 0 "'kern' Smallcap kerning"  {"LinLibertineO-'kern' Small Caps" [150,15,4] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -14571,7 +14569,6 @@ SplineSet
  157 216 168 276 188 390 c 1
 EndSplineSet
 AlternateSubs2: "'aalt' Access All Alternates lookup 29 subtable" f.inferior f.sc f.short f.superior
-Substitution2: "LinLibertineO-Substitution f short 1" f.short
 Substitution2: "Substitution f short 1" f.short
 Substitution2: "'sinf' Wissenschaftliche Indices 1" f.inferior
 Substitution2: "'sups' Hochgestellte 1" f.superior
@@ -14719,7 +14716,6 @@ SplineSet
  265.5 397.8 254.3 359.3 245.3 320.2 c 2
 EndSplineSet
 AlternateSubs2: "'aalt' Access All Alternates lookup 29 subtable" dotlessi i.inferior i.sc idotaccent.sc uni2071
-Substitution2: "LinLibertineO-Substitution dotless forms 1" dotlessi
 Substitution2: "Substitution dotless forms 1" dotlessi
 Substitution2: "'sinf' Wissenschaftliche Indices 1" i.inferior
 Substitution2: "'sups' Hochgestellte 1" uni2071
@@ -14761,7 +14757,6 @@ SplineSet
  228 522 206 544 206 570 c 0
 EndSplineSet
 AlternateSubs2: "'aalt' Access All Alternates lookup 29 subtable" j.inferior j.sc uni0237 uni02B2
-Substitution2: "LinLibertineO-Substitution dotless forms 1" uni0237
 Substitution2: "Substitution dotless forms 1" uni0237
 Substitution2: "'sinf' Wissenschaftliche Indices 1" j.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02B2
@@ -60051,7 +60046,6 @@ SplineSet
  638 394 623 390 613 390 c 2
  520 390 l 1
 EndSplineSet
-Substitution2: "LinLibertineO-Substitution f short 1" f_f.short
 Substitution2: "Substitution f short 1" f_f.short
 Ligature2: "'liga' Standardligaturen 1" f f
 LCarets2: 1 257 
