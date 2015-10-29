@@ -13482,10 +13482,10 @@ AnchorPoint: "top_punkt" 296 719 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-87 645 m 2
+87 645 m 2xd8
  510 645 l 2
  531 645 532 663 532 669 c 1
- 568 673 l 1
+ 568 673 l 1xdc
  572 624 579 572 590 519 c 1
  550 514 l 1
  530 594 517 599 462 599 c 2
@@ -13508,10 +13508,10 @@ SplineSet
  238 590 226 599 189 599 c 2
  136 599 l 2
  81 599 67 594 47 514 c 1
- 8 519 l 1
+ 8 519 l 1xea
  19 572 26 624 30 673 c 1
  66 669 l 1
- 66 663 66 645 87 645 c 2
+ 66 663 66 645 87 645 c 2xd8
 EndSplineSet
 AlternateSubs2: "'aalt' Access All Alternates lookup 22 subtable" t.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" t.sc
@@ -32310,25 +32310,25 @@ EndChar
 
 StartChar: uni0308
 Encoding: 776 776 674
-Width: 330
+Width: 0
 VWidth: 999
-Flags: HW
-HStem: 520 107<10.9699 97.324 191.676 278.03>
-VStem: 0 108<531.388 615.537> 181 108<531.388 615.537>
-AnchorPoint: "top_punkt" 132 557 mark 0
+Flags: W
+HStem: 520 107<-319.03 -232.676 -138.324 -51.9699>
+VStem: -330 108<531.388 615.537> -149 108<531.388 615.537>
+AnchorPoint: "top_punkt" -198 557 mark 0
 LayerCount: 2
 Fore
 SplineSet
-181 573 m 0
- 181 603 205 627 235 627 c 0
- 264 627 289 603 289 573 c 0
- 289 544 264 520 235 520 c 0
- 205 520 181 544 181 573 c 0
-0 573 m 0
- 0 603 25 627 54 627 c 0
- 84 627 108 603 108 573 c 0
- 108 544 84 520 54 520 c 0
- 25 520 0 544 0 573 c 0
+-149 573 m 0
+ -149 603 -125 627 -95 627 c 0
+ -66 627 -41 603 -41 573 c 0
+ -41 544 -66 520 -95 520 c 0
+ -125 520 -149 544 -149 573 c 0
+-330 573 m 0
+ -330 603 -305 627 -276 627 c 0
+ -246 627 -222 603 -222 573 c 0
+ -222 544 -246 520 -276 520 c 0
+ -305 520 -330 544 -330 573 c 0
 EndSplineSet
 AlternateSubs2: "'aalt' Access All Alternates lookup 22 subtable" uni0362
 Substitution2: "'case' Versalformen 1" uni0362
