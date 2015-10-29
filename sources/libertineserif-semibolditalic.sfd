@@ -2320,10 +2320,10 @@ AnchorPoint: "top_rechts" 619 732 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-197 646 m 2
+197 646 m 2xf0
  603 646 l 2
  624 646 627 663 629 669 c 1
- 664 673 l 1
+ 664 673 l 1xe8
  659 624 657 572 658 519 c 1
  618 514 l 1
  613 594 602 599 549 599 c 2
@@ -2349,7 +2349,7 @@ SplineSet
  99 519 l 1
  119 572 135 624 147 673 c 1
  181 669 l 1
- 180 663 177 646 197 646 c 2
+ 180 663 177 646 197 646 c 2xf0
 EndSplineSet
 Kerns2: 187 -44 "'kern' Horizontales Kerning in Latin lookup 1"  181 -44 "'kern' Horizontales Kerning in Latin lookup 1"  163 -36 "'kern' Horizontales Kerning in Latin lookup 1"  116 -69 "'kern' Horizontales Kerning in Latin lookup 1"  90 -53 "'kern' Horizontales Kerning in Latin lookup 1"  89 -56 "'kern' Horizontales Kerning in Latin lookup 1"  87 -56 "'kern' Horizontales Kerning in Latin lookup 1"  86 -56 "'kern' Horizontales Kerning in Latin lookup 1"  85 -44 "'kern' Horizontales Kerning in Latin lookup 1"  83 -56 "'kern' Horizontales Kerning in Latin lookup 1"  82 -56 "'kern' Horizontales Kerning in Latin lookup 1"  79 -56 "'kern' Horizontales Kerning in Latin lookup 1"  78 -66 "'kern' Horizontales Kerning in Latin lookup 1"  77 -66 "'kern' Horizontales Kerning in Latin lookup 1"  69 -56 "'kern' Horizontales Kerning in Latin lookup 1"  67 -66 "'kern' Horizontales Kerning in Latin lookup 1"  65 -56 "'kern' Horizontales Kerning in Latin lookup 1"  57 44 "'kern' Horizontales Kerning in Latin lookup 1"  56 44 "'kern' Horizontales Kerning in Latin lookup 1"  54 44 "'kern' Horizontales Kerning in Latin lookup 1"  52 18 "'kern' Horizontales Kerning in Latin lookup 1"  33 -44 "'kern' Horizontales Kerning in Latin lookup 1"  14 -44 "'kern' Horizontales Kerning in Latin lookup 1"  13 -44 "'kern' Horizontales Kerning in Latin lookup 1"  0 -33 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
@@ -30969,17 +30969,17 @@ AnchorPoint: "top_akzent" -139 697 mark 0
 LayerCount: 2
 Fore
 SplineSet
-55 622 m 0
- 76 622 90 630 113 672 c 1
+55 622 m 0xa0
+ 76 622 90 630 113 672 c 1x60
  137 664 l 1
- 113 604 77 570 31 570 c 0
+ 113 604 77 570 31 570 c 0xa0
  9 570 -9 583 -27 596 c 0
  -43 607 -60 618 -77 618 c 0
  -103 618 -117 605 -134 572 c 1
  -158 579 l 1
- -132 638 -103 672 -60 672 c 0
+ -132 638 -103 672 -60 672 c 0x60
  -29 672 -10 658 7 644 c 0
- 21 632 36 622 55 622 c 0
+ 21 632 36 622 55 622 c 0xa0
 EndSplineSet
 EndChar
 
@@ -31071,7 +31071,7 @@ EndChar
 
 StartChar: uni0308
 Encoding: 776 776 665
-Width: 330
+Width: -156
 VWidth: 999
 Flags: HW
 HStem: 524 98<23 93 197 266>
@@ -31080,16 +31080,16 @@ AnchorPoint: "top_akzent" -210 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
-232 574 m 0
- 232 604 256 628 286 628 c 0
- 316 628 340 604 340 574 c 0
- 340 544 316 520 286 520 c 0
- 256 520 232 544 232 574 c 0
-412 574 m 0
- 412 604 436 628 466 628 c 0
- 496 628 520 604 520 574 c 0
- 520 544 496 520 466 520 c 0
- 436 520 412 544 412 574 c 0
+-256 577.799804688 m 0
+ -256 607.799804688 -232 631.799804688 -202 631.799804688 c 0
+ -172 631.799804688 -148 607.799804688 -148 577.799804688 c 0
+ -148 547.799804688 -172 523.799804688 -202 523.799804688 c 0
+ -232 523.799804688 -256 547.799804688 -256 577.799804688 c 0
+-76 577.799804688 m 0
+ -76 607.799804688 -52 631.799804688 -22 631.799804688 c 0
+ 8 631.799804688 32 607.799804688 32 577.799804688 c 0
+ 32 547.799804688 8 523.799804688 -22 523.799804688 c 0
+ -52 523.799804688 -76 547.799804688 -76 577.799804688 c 0
 EndSplineSet
 EndChar
 
@@ -32136,17 +32136,17 @@ AnchorPoint: "top_akzent" -229 617 mark 0
 LayerCount: 2
 Fore
 SplineSet
--45 552 m 0
+-45 552 m 0xa0
  -23 552 -9 561 13 603 c 1
  38 594 l 1
- 13 534 -22 500 -69 500 c 0
+ 13 534 -22 500 -69 500 c 0xa0
  -91 500 -109 513 -127 526 c 0
  -143 538 -160 548 -177 548 c 0
  -203 548 -217 536 -233 502 c 1
  -257 509 l 1
- -231 568 -202 602 -159 602 c 0
+ -231 568 -202 602 -159 602 c 0x60
  -128 602 -109 588 -93 574 c 0
- -79 562 -64 552 -45 552 c 0
+ -79 562 -64 552 -45 552 c 0xa0
 EndSplineSet
 EndChar
 
