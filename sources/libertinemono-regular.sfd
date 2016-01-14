@@ -61,7 +61,6 @@ Lookup: 1 0 0 "'ss03' Stilgruppe 3"  {"'ss03' Stilgruppe 3 1"  } ['ss03' ('DFLT'
 Lookup: 1 0 0 "'fina' Wortendeformen"  {"'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution"  {"'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0"  {"'nalt' Alternate Annotation Forms 1"  } ['nalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 3 0 0 "'aalt' Access All Alternates lookup 25"  {"'aalt' Access All Alternates lookup 25 subtable"  } ['aalt' ('grek' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'DFLT' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Komb OR"  "'mark' Top rechts"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -84,6 +83,10 @@ ChainSub2: class "'ccmp' Contextual Chaining Substitution 1"  5 1 5 2
   ClsList: 3
   BClsList:
   FClsList: 4
+ 0
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  
 EndFPST
 ShortTable: cvt  2
   68
@@ -443,7 +446,6 @@ SplineSet
  510 -195 498 -202 484 -204 c 1
  208 -37.1 197 207 197 252 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni207D uni208D
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208D
 Substitution2: "'sups' Hochgestellte 1" uni207D
 EndChar
@@ -465,7 +467,6 @@ SplineSet
  130 699 142 706 156 708 c 1
  432 541.1 443 297 443 252 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni207E uni208E
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208E
 Substitution2: "'sups' Hochgestellte 1" uni207E
 EndChar
@@ -528,7 +529,6 @@ SplineSet
  288 281 l 1
  288 472 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni207A uni208A
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208A
 Substitution2: "'sups' Hochgestellte 1" uni207A
 EndChar
@@ -578,7 +578,6 @@ SplineSet
  386 637 385 572 385 507 c 2
  385 134 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni00B9 uni2081
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2081
 Substitution2: "'sups' Hochgestellte 1" uni00B9
 EndChar
@@ -617,7 +616,6 @@ SplineSet
  204 483 184 463 164 463 c 0
  140 463 123 482 123 505 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni00B2 uni2082
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2082
 Substitution2: "'sups' Hochgestellte 1" uni00B2
 EndChar
@@ -654,7 +652,6 @@ SplineSet
  344 388 403 471 403 525 c 0
  403 594 356 620 296 620 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni00B3 uni2083
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2083
 Substitution2: "'sups' Hochgestellte 1" uni00B3
 EndChar
@@ -695,7 +692,6 @@ SplineSet
  438 237 l 1
  552 237 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2074 uni2084
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2084
 Substitution2: "'sups' Hochgestellte 1" uni2074
 EndChar
@@ -731,7 +727,6 @@ SplineSet
  232 53 232 25 285 25 c 0
  368 25 436 101 436 204 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2075 uni2085
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2085
 Substitution2: "'sups' Hochgestellte 1" uni2075
 EndChar
@@ -761,7 +756,6 @@ SplineSet
  478 655 480 643 480 630 c 1
  267 582.8 219 463.8 191 370 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2076 uni2086
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2086
 Substitution2: "'sups' Hochgestellte 1" uni2076
 EndChar
@@ -791,7 +785,6 @@ SplineSet
  264 158 352 361 452 572 c 1
  222 572 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2077 uni2087
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2087
 Substitution2: "'sups' Hochgestellte 1" uni2077
 EndChar
@@ -821,7 +814,6 @@ SplineSet
  162 -9 160 3 160 16 c 1
  373 63.2 421 182.2 449 276 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2079 uni2089
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2089
 Substitution2: "'sups' Hochgestellte 1" uni2079
 EndChar
@@ -919,7 +911,6 @@ SplineSet
  546 193 550 184 550 176 c 0
  550 166 536 143 523 143 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni207C uni208C
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208C
 Substitution2: "'sups' Hochgestellte 1" uni207C
 EndChar
@@ -1332,7 +1323,6 @@ SplineSet
  179.4 670 195.8 689 271 689 c 0
  280.6 689 293.4 688 299.8 686 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni0358
 Substitution2: "'case' Versalformen 1" uni0358
 EndChar
 
@@ -8375,7 +8365,6 @@ SplineSet
  521 527 550 435 550 328 c 0
  550 74 409 -10 317 -10 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2070 uni2080 uniF638
 Substitution2: "'zero' gestrichene Null 1" uniF638
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2080
 Substitution2: "'sups' Hochgestellte 1" uni2070
@@ -9333,7 +9322,6 @@ SplineSet
  611 33.6 569 -10 493 -10 c 0
  424 -10 412 21 407 55 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2090 uniE0C0
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2090
 Substitution2: "'sups' Hochgestellte 1" uniE0C0
 EndChar
@@ -9376,7 +9364,6 @@ SplineSet
  190 456 l 2
  190 436 198.7 434.4 206 440 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0C1 uniE149
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE149
 Substitution2: "'sups' Hochgestellte 1" uniE0C1
 EndChar
@@ -9410,7 +9397,6 @@ SplineSet
  410 44 487 68 550 133 c 1
  561 132 575 118 579 108 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0C2 uniE14A
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE14A
 Substitution2: "'sups' Hochgestellte 1" uniE0C2
 EndChar
@@ -9461,7 +9447,6 @@ SplineSet
  454 -10 443 28 443 55 c 0
  443 63 435 60 430 56 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0C3 uniE14B
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE14B
 Substitution2: "'sups' Hochgestellte 1" uniE0C3
 EndChar
@@ -9500,7 +9485,6 @@ SplineSet
  252 62 312.8 40 377 40 c 0
  452 40 504 66 551 109 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2091 uniE0C4
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2091
 Substitution2: "'sups' Hochgestellte 1" uniE0C4
 EndChar
@@ -9549,7 +9533,6 @@ SplineSet
  290 396 l 1
  290 126 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0C5 uniE14D
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE14D
 Substitution2: "'sups' Hochgestellte 1" uniE0C5
 EndChar
@@ -9606,7 +9589,6 @@ SplineSet
  561 516 582 498 582 475 c 0
  582 453 562 433 541 433 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0C6 uniE14E
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE14E
 Substitution2: "'sups' Hochgestellte 1" uniE0C6
 EndChar
@@ -9658,7 +9640,6 @@ SplineSet
  320 434 256 396.3 218 359 c 0
  210 350.3 201 338 201 316.9 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE14F
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE14F
 EndChar
 
@@ -9699,7 +9680,6 @@ SplineSet
  394 456.5 380 439.8 380 372 c 2
  380 134 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" dotlessi uni2071 uniE150
 Substitution2: "Substitution dotless forms 1" dotlessi
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE150
 Substitution2: "'sups' Hochgestellte 1" uni2071
@@ -9737,7 +9717,6 @@ SplineSet
  444 621 417 590 386 590 c 0
  359 590 332 620 332 650 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE151 uniF6BE
 Substitution2: "Substitution dotless forms 1" uniF6BE
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE151
 EndChar
@@ -9794,7 +9773,6 @@ SplineSet
  48 4 48 29 54 35 c 1
  110 39 121 49 121 132 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0CA uniE152
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE152
 Substitution2: "'sups' Hochgestellte 1" uniE0CA
 EndChar
@@ -9831,7 +9809,6 @@ SplineSet
  116.7 36.3 258 44 269 52 c 0
  283 63 286.5 81.7 286.5 129 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE153
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE153
 EndChar
 
@@ -9887,7 +9864,6 @@ SplineSet
  160.6 379 150 358 150 337 c 2
  150 132 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0CC uniE154
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE154
 Substitution2: "'sups' Hochgestellte 1" uniE0CC
 EndChar
@@ -9937,7 +9913,6 @@ SplineSet
  199.7 474.7 203 450.1 203 389 c 0
  203 375 209 385 212 389 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni207F uniE155
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE155
 Substitution2: "'sups' Hochgestellte 1" uni207F
 EndChar
@@ -9971,7 +9946,6 @@ SplineSet
  400 31 484 60 484 203 c 0
  484 367 415 449 301 449 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2092 uniE0CE
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2092
 Substitution2: "'sups' Hochgestellte 1" uniE0CE
 EndChar
@@ -10018,7 +9992,6 @@ SplineSet
  185 494 187 490 189 485 c 0
  194 473 195 434 195 401 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0CF uniE157
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE157
 Substitution2: "'sups' Hochgestellte 1" uniE0CF
 EndChar
@@ -10063,7 +10036,6 @@ SplineSet
  347 -228 347 -203 353 -197 c 1
  435 -195 445 -190 445 -107 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0D0 uniE158
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE158
 Substitution2: "'sups' Hochgestellte 1" uniE0D0
 EndChar
@@ -10109,7 +10081,6 @@ SplineSet
  289 493 291 490 293 485 c 0
  298 475 301 460.5 301 406 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE159
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE159
 EndChar
 
@@ -10151,7 +10122,6 @@ SplineSet
  151 5 135 3 123 1 c 1
  105 42 92 89 88 144 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE15A
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE15A
 EndChar
 
@@ -10195,7 +10165,6 @@ SplineSet
  71 420 l 2
  71 428 75 440 89 440 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0D3 uniE15B
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE15B
 Substitution2: "'sups' Hochgestellte 1" uniE0D3
 EndChar
@@ -10246,7 +10215,6 @@ SplineSet
  439.5 66 432.6 63.9 427.5 60 c 0
  360 9.1 285.5 -10 246.5 -10 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0D4 uniE15C
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE15C
 Substitution2: "'sups' Hochgestellte 1" uniE0D4
 EndChar
@@ -10286,7 +10254,6 @@ SplineSet
  478 382 l 2
  501 433 483 441 424 445 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0D5 uniE15D
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE15D
 Substitution2: "'sups' Hochgestellte 1" uniE0D5
 EndChar
@@ -10334,7 +10301,6 @@ SplineSet
  308 349 l 1
  358.5 357 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE15E
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE15E
 EndChar
 
@@ -10391,7 +10357,6 @@ SplineSet
  273 476 273 451 267 445 c 1
  220 439 206 434 225 409 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2093
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2093
 EndChar
 
@@ -10434,7 +10399,6 @@ SplineSet
  475 273 404 119 318 -74 c 0
  305 -104 291 -132 274 -160 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE160
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE160
 EndChar
 
@@ -10476,7 +10440,6 @@ SplineSet
  92 408.5 100 436 115 484 c 0
  115 486.4 118.6 490 121 490 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE0D9 uniE161
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uniE161
 Substitution2: "'sups' Hochgestellte 1" uniE0D9
 EndChar
@@ -11246,7 +11209,6 @@ SplineSet
  406.6 670 390.2 689 315 689 c 0
  305.4 689 292.6 688 286.2 686 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni0359
 Substitution2: "'case' Versalformen 1" uni0359
 EndChar
 
@@ -11913,7 +11875,6 @@ SplineSet
  201 229 195 227 190 213 c 2
  145 79 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE02C
 Substitution2: "'ss01' Stilgruppe 1 1" uniE02C
 EndChar
 
@@ -12714,7 +12675,6 @@ SplineSet
  149 585 228 625 318 625 c 0
  481 625 606 507 606 313 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE02D
 Substitution2: "'ss01' Stilgruppe 1 1" uniE02D
 EndChar
 
@@ -12959,7 +12919,6 @@ SplineSet
  470 681 449 660 423 660 c 0
  397 660 376 681 376 707 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniE02E
 Substitution2: "'ss01' Stilgruppe 1 1" uniE02E
 EndChar
 
@@ -18624,7 +18583,6 @@ SplineSet
  -409 714 -386 731 -352 731 c 0
  -347 731 -341 730 -337 729 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni0358
 Substitution2: "'case' Versalformen 1" uni0358
 EndChar
 
@@ -18647,7 +18605,6 @@ SplineSet
  -379 593.2 -375.7 597.2 -367.6 610 c 2
  -292 729 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni0359
 Substitution2: "'case' Versalformen 1" uni0359
 EndChar
 
@@ -18671,7 +18628,6 @@ SplineSet
  -410 622 -364 676 -335 722 c 1
  -324.3 724.3 -313.7 725 -303 722 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni035A
 Substitution2: "'case' Versalformen 1" uni035A
 EndChar
 
@@ -18741,7 +18697,6 @@ SplineSet
  -173 618 -194 597 -220 597 c 0
  -246 597 -267 618 -267 644 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni0362
 Substitution2: "'case' Versalformen 1" uni0362
 EndChar
 
@@ -18791,7 +18746,6 @@ SplineSet
  -228 675 -266 630 -295 584 c 1
  -345 584 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni035B
 Substitution2: "'case' Versalformen 1" uni035B
 EndChar
 
@@ -28273,7 +28227,6 @@ SplineSet
  50 258 67 281 83 281 c 2
  571 281 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni207B uni208B
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208B
 Substitution2: "'sups' Hochgestellte 1" uni207B
 EndChar
@@ -29118,7 +29071,6 @@ SplineSet
  -390 580 -441 630 -455 715 c 1
  -428 727 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni035C
 Substitution2: "'case' Versalformen 1" uni035C
 EndChar
 
@@ -29176,7 +29128,6 @@ SplineSet
  -229 783 -213 784 -209 784 c 0
  -188.1 784 -171 768.5 -171 748 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni035D
 Substitution2: "'case' Versalformen 1" uni035D
 EndChar
 
@@ -29276,7 +29227,6 @@ SplineSet
  21 594 72 544 86 459 c 1
  59 447 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni035F
 Substitution2: "'case' Versalformen 1" uni035F
 EndChar
 
@@ -31527,7 +31477,6 @@ SplineSet
  452 181 455 250 455 349 c 0
  455 404.3 450.9 450.3 443.5 487.6 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uniF638
 Substitution2: "'tnum' Tabellenziffern 1" uniF638
 EndChar
 
@@ -32532,7 +32481,6 @@ SplineSet
  547 625 l 1
  499.2 544.8 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2070 uni2080 uniE00F
 Substitution2: "'pnum' Proportionalziffern 1" uniE00F
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2080
 Substitution2: "'sups' Hochgestellte 1" uni2070
@@ -32573,7 +32521,6 @@ SplineSet
  196 271.2 162 190 162 158 c 0
  162 61 251 29 311 29 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 25 subtable" uni2078 uni2088
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2088
 Substitution2: "'sups' Hochgestellte 1" uni2078
 EndChar
