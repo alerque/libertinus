@@ -64,7 +64,6 @@ Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  {"'smcp' Gem
 Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE"  {"'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standardligaturen"  {"'liga' Standardligaturen 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic"  {"'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
-Lookup: 3 0 0 "'aalt' Access All Alternates lookup 14"  {"'aalt' Access All Alternates lookup 14 subtable"  } ['aalt' ('grek' <'dflt' > 'cyrl' <'dflt' 'SRB ' > 'DFLT' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Cyrillic lookup 0"  {"'kern' Horizontales Kerning in Cyrillic lookup 0"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1"  {"'kern' Horizontales Kerning in Latin lookup 1"  } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 257 0 0 "'lfbd' Left Bounds in Latin lookup 2"  {"'lfbd' Left Bounds in Latin lookup 2"  } ['lfbd' ('latn' <'dflt' > ) ]
@@ -499,7 +498,6 @@ SplineSet
  669 23 617 -12 572 -12 c 0
  532 -12 479 -2 447 72 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ampersand.alt
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ampersand.alt
 EndChar
 
@@ -678,7 +676,6 @@ SplineSet
  403 260 373 233 350 233 c 2
 EndSplineSet
 Kerns2: 89 -11 "'kern' Horizontales Kerning in Latin lookup 1"  86 -11 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" hyphen.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" hyphen.sc
 EndChar
 
@@ -747,7 +744,6 @@ SplineSet
  444 69 311 -10 231 -10 c 0
 EndSplineSet
 Kerns2: 12 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" uni2070 uni2080 zero.fitted zero.oldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2070
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2080
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" zero.fitted
@@ -789,7 +785,6 @@ SplineSet
  149 35 204 35 213 81 c 2
 EndSplineSet
 Kerns2: 25 -44 "'kern' Horizontales Kerning in Latin lookup 1"  24 -44 "'kern' Horizontales Kerning in Latin lookup 1"  23 -44 "'kern' Horizontales Kerning in Latin lookup 1"  22 -44 "'kern' Horizontales Kerning in Latin lookup 1"  21 -44 "'kern' Horizontales Kerning in Latin lookup 1"  20 -44 "'kern' Horizontales Kerning in Latin lookup 1"  19 -44 "'kern' Horizontales Kerning in Latin lookup 1"  18 -44 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" one.fitted one.oldstyle uni00B9 uni2081
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B9
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2081
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" one.fitted
@@ -831,7 +826,6 @@ SplineSet
  153.9 422 137.2 437 137.2 457.1 c 0
  137.2 459.7 137.4 462.3 138 465 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" two.fitted two.oldstyle uni00B2 uni2082
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B2
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2082
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" two.fitted
@@ -876,7 +870,6 @@ SplineSet
  378.8 493.4 379.7 502.1 379.7 510 c 0
  379.7 549.8 358.4 570 335 570 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" three.fitted three.oldstyle uni00B3 uni2083
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B3
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2083
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" three.fitted
@@ -925,7 +918,6 @@ SplineSet
  401 219 l 1
  490 219 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" four.fitted four.oldstyle uni2074 uni2084
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2074
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2084
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" four.fitted
@@ -967,7 +959,6 @@ SplineSet
  165 45 189 31 204 31 c 0
  254 31 320 89 339 186 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" five.fitted five.oldstyle uni2075 uni2085
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2075
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2085
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" five.fitted
@@ -1007,7 +998,6 @@ SplineSet
  315 577 397 605 517 612 c 1
  514 579 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" six.fitted uni2076 uni2086 zero.oldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2076
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2086
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" six.fitted
@@ -1040,7 +1030,6 @@ SplineSet
  208 594 230 594 237 594 c 2
 EndSplineSet
 Kerns2: 20 -56 "'kern' Horizontales Kerning in Latin lookup 1"  16 -31 "'kern' Horizontales Kerning in Latin lookup 1"  14 -44 "'kern' Horizontales Kerning in Latin lookup 1"  12 -44 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" one.oldstyle seven.fitted uni2077 uni2087
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2077
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2087
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" seven.fitted
@@ -1093,7 +1082,6 @@ SplineSet
  167.2 131.8 166 119 166 107.7 c 0
  166 49 199.8 28 235 28 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" eight.fitted two.oldstyle uni2078 uni2088
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2078
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2088
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" eight.fitted
@@ -1133,7 +1121,6 @@ SplineSet
  271 23 189 -5 69 -12 c 1
  72 21 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" nine.fitted three.oldstyle uni2079 uni2089
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2079
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2089
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" nine.fitted
@@ -2864,7 +2851,6 @@ SplineSet
  351 -10 340 21 340 39 c 0
 EndSplineSet
 Kerns2: 116 -13 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" a.sc uni2090
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" a.sc
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2090
 EndChar
@@ -2910,7 +2896,6 @@ SplineSet
  345 688 335.2 647.5 320 583 c 2
 EndSplineSet
 Kerns2: 116 -11 "'kern' Horizontales Kerning in Latin lookup 1"  79 11 "'kern' Horizontales Kerning in Latin lookup 1"  69 11 "'kern' Horizontales Kerning in Latin lookup 1"  67 11 "'kern' Horizontales Kerning in Latin lookup 1"  14 -22 "'kern' Horizontales Kerning in Latin lookup 1"  12 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" b.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" b.sc
 EndChar
 
@@ -2943,7 +2928,6 @@ SplineSet
  432 82 l 1
  384 33 330 -10 238 -10 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" c.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" c.sc
 EndChar
 
@@ -2994,7 +2978,6 @@ SplineSet
  599 698 602 695 602 688 c 1
  602 688 592.1 647.6 577 583 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" d.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" d.sc
 EndChar
 
@@ -3029,7 +3012,6 @@ SplineSet
  454 444 475 405 475 369 c 0
 EndSplineSet
 Kerns2: 88 -12 "'kern' Horizontales Kerning in Latin lookup 1"  87 -9 "'kern' Horizontales Kerning in Latin lookup 1"  86 -9 "'kern' Horizontales Kerning in Latin lookup 1"  84 -9 "'kern' Horizontales Kerning in Latin lookup 1"  81 12 "'kern' Horizontales Kerning in Latin lookup 1"  68 12 "'kern' Horizontales Kerning in Latin lookup 1"  67 12 "'kern' Horizontales Kerning in Latin lookup 1"  52 -68 "'kern' Horizontales Kerning in Latin lookup 1"  14 -4 "'kern' Horizontales Kerning in Latin lookup 1"  12 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" e.sc uni2091
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" e.sc
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2091
 EndChar
@@ -3076,7 +3058,6 @@ SplineSet
  177 387 l 1
 EndSplineSet
 Kerns2: 79 -11 "'kern' Horizontales Kerning in Latin lookup 1"  76 11 "'kern' Horizontales Kerning in Latin lookup 1"  72 11 "'kern' Horizontales Kerning in Latin lookup 1"  70 -36 "'kern' Horizontales Kerning in Latin lookup 1"  69 -9 "'kern' Horizontales Kerning in Latin lookup 1"  68 -11 "'kern' Horizontales Kerning in Latin lookup 1"  66 36 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" f.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" f.sc
 EndChar
 
@@ -3128,7 +3109,6 @@ SplineSet
  296.2 172 321 229 321 291 c 0
 EndSplineSet
 Kerns2: 79 -18 "'kern' Horizontales Kerning in Latin lookup 1"  69 -11 "'kern' Horizontales Kerning in Latin lookup 1"  65 -9 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" g.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" g.sc
 EndChar
 
@@ -3176,7 +3156,6 @@ SplineSet
  83.1 27 91.2 51.9 95.8 72 c 2
 EndSplineSet
 Kerns2: 89 -11 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" h.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" h.sc
 EndChar
 
@@ -3218,7 +3197,6 @@ SplineSet
  301.2 436 308.5 428.6 308.5 414.9 c 0
  308.5 397.8 297.8 359.2 288.3 320.2 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" i.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen i > i.sc 1" i.sc
 EndChar
 
@@ -3257,7 +3235,6 @@ SplineSet
  344 538 317 511 284 511 c 0
  251 511 225 538 225 571 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" j.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" j.sc
 EndChar
 
@@ -3308,7 +3285,6 @@ SplineSet
  83.1 27 91.2 51.9 95.8 72 c 2
 EndSplineSet
 Kerns2: 79 -37 "'kern' Horizontales Kerning in Latin lookup 1"  69 -13 "'kern' Horizontales Kerning in Latin lookup 1"  65 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" k.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" k.sc
 EndChar
 
@@ -3345,7 +3321,6 @@ SplineSet
  95.1 69.3 100.6 97 107 125 c 2
  207.8 563 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" l.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" l.sc
 EndChar
 
@@ -3404,7 +3379,6 @@ SplineSet
  425.1 321.4 425.2 321.8 425.3 322.1 c 0
 EndSplineSet
 Kerns2: 116 -9 "'kern' Horizontales Kerning in Latin lookup 1"  84 -13 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" m.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" m.sc
 EndChar
 
@@ -3453,7 +3427,6 @@ SplineSet
  377.1 69.3 382.5 97.1 389 125 c 2
 EndSplineSet
 Kerns2: 116 -9 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" n.sc uni207F
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" n.sc
 Substitution2: "'sups' Superscript in Latin lookup 6" uni207F
 EndChar
@@ -3486,7 +3459,6 @@ SplineSet
  103 -10 72 111 72 165 c 0
 EndSplineSet
 Kerns2: 89 -9 "'kern' Horizontales Kerning in Latin lookup 1"  88 -11 "'kern' Horizontales Kerning in Latin lookup 1"  87 -9 "'kern' Horizontales Kerning in Latin lookup 1"  86 -9 "'kern' Horizontales Kerning in Latin lookup 1"  84 -9 "'kern' Horizontales Kerning in Latin lookup 1"  81 11 "'kern' Horizontales Kerning in Latin lookup 1"  68 11 "'kern' Horizontales Kerning in Latin lookup 1"  67 11 "'kern' Horizontales Kerning in Latin lookup 1"  52 -62 "'kern' Horizontales Kerning in Latin lookup 1"  14 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" o.sc uni2092
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" o.sc
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2092
 EndChar
@@ -3535,7 +3507,6 @@ SplineSet
  26.7 -198 43.4 -192.3 62 -110 c 2
 EndSplineSet
 Kerns2: 181 11 "'kern' Horizontales Kerning in Latin lookup 1"  79 11 "'kern' Horizontales Kerning in Latin lookup 1"  69 11 "'kern' Horizontales Kerning in Latin lookup 1"  14 -4 "'kern' Horizontales Kerning in Latin lookup 1"  12 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" p.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" p.sc
 EndChar
 
@@ -3578,7 +3549,6 @@ SplineSet
  207 -228 206 -207 213 -201 c 1
  273.7 -198 289.4 -192 309 -110 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" q.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" q.sc
 EndChar
 
@@ -3621,7 +3591,6 @@ SplineSet
  266 285 l 1
 EndSplineSet
 Kerns2: 181 -7 "'kern' Horizontales Kerning in Latin lookup 1"  79 -2 "'kern' Horizontales Kerning in Latin lookup 1"  71 -11 "'kern' Horizontales Kerning in Latin lookup 1"  68 -4 "'kern' Horizontales Kerning in Latin lookup 1"  14 -27 "'kern' Horizontales Kerning in Latin lookup 1"  12 -27 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" r.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" r.sc
 EndChar
 
@@ -3658,7 +3627,6 @@ SplineSet
  130.5 419.6 210.3 444 307 444 c 0
  369.5 444 421 408 426.3 359 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" s.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" s.sc
 EndChar
 
@@ -3702,7 +3670,6 @@ SplineSet
  113.3 67.7 117.8 95.4 123 118 c 2
 EndSplineSet
 Kerns2: 181 -9 "'kern' Horizontales Kerning in Latin lookup 1"  163 -4 "'kern' Horizontales Kerning in Latin lookup 1"  84 -7 "'kern' Horizontales Kerning in Latin lookup 1"  79 -11 "'kern' Horizontales Kerning in Latin lookup 1"  16 -11 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" t.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" t.sc
 EndChar
 
@@ -3750,7 +3717,6 @@ SplineSet
  291 444 294 413 294 395 c 0
  294 378 287.9 345 280 315 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" u.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" u.sc
 EndChar
 
@@ -3789,7 +3755,6 @@ SplineSet
  318.3 131 l 1
 EndSplineSet
 Kerns2: 181 -9 "'kern' Horizontales Kerning in Latin lookup 1"  163 -4 "'kern' Horizontales Kerning in Latin lookup 1"  69 -9 "'kern' Horizontales Kerning in Latin lookup 1"  67 -9 "'kern' Horizontales Kerning in Latin lookup 1"  65 -4 "'kern' Horizontales Kerning in Latin lookup 1"  14 -40 "'kern' Horizontales Kerning in Latin lookup 1"  13 -11 "'kern' Horizontales Kerning in Latin lookup 1"  12 -40 "'kern' Horizontales Kerning in Latin lookup 1"  0 -9 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" v.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" v.sc
 EndChar
 
@@ -3838,7 +3803,6 @@ SplineSet
  112.7 328.7 106.7 336.3 102 350 c 1
 EndSplineSet
 Kerns2: 181 -9 "'kern' Horizontales Kerning in Latin lookup 1"  163 -4 "'kern' Horizontales Kerning in Latin lookup 1"  79 -7 "'kern' Horizontales Kerning in Latin lookup 1"  69 -7 "'kern' Horizontales Kerning in Latin lookup 1"  65 -7 "'kern' Horizontales Kerning in Latin lookup 1"  14 -40 "'kern' Horizontales Kerning in Latin lookup 1"  13 -11 "'kern' Horizontales Kerning in Latin lookup 1"  12 -40 "'kern' Horizontales Kerning in Latin lookup 1"  0 -9 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" w.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" w.sc
 EndChar
 
@@ -3884,7 +3848,6 @@ SplineSet
  240.7 255.3 201.7 340 201.7 340 c 2
 EndSplineSet
 Kerns2: 79 -11 "'kern' Horizontales Kerning in Latin lookup 1"  69 -11 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" uni2093 x.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" x.sc
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2093
 EndChar
@@ -3926,7 +3889,6 @@ SplineSet
  278 444 285.8 398.4 295 344 c 2
 EndSplineSet
 Kerns2: 181 -9 "'kern' Horizontales Kerning in Latin lookup 1"  163 -4 "'kern' Horizontales Kerning in Latin lookup 1"  79 -9 "'kern' Horizontales Kerning in Latin lookup 1"  69 -9 "'kern' Horizontales Kerning in Latin lookup 1"  67 -9 "'kern' Horizontales Kerning in Latin lookup 1"  65 -4 "'kern' Horizontales Kerning in Latin lookup 1"  14 -40 "'kern' Horizontales Kerning in Latin lookup 1"  13 -11 "'kern' Horizontales Kerning in Latin lookup 1"  12 -40 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" y.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" y.sc
 EndChar
 
@@ -3968,7 +3930,6 @@ SplineSet
  381 417 390 415 395 415 c 0
  401 415 411 423 441 457 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" z.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" z.sc
 EndChar
 
@@ -6950,7 +6911,6 @@ SplineSet
  292 -10 265 23 265 58 c 0
  265 108 300 130 318 130 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" germandbls.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" germandbls.sc
 EndChar
 
@@ -7001,7 +6961,6 @@ SplineSet
  297 655 327 672 361 672 c 0
  366 672 377 671 380 670 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" agrave.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" agrave.sc
 EndChar
 
@@ -7051,7 +7010,6 @@ SplineSet
  303 516 305 526 314 537 c 2
  419 663 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" aacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" aacute.sc
 EndChar
 
@@ -7100,7 +7058,6 @@ SplineSet
  273 557 320 600 358 646 c 1
  408 646 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" acircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" acircumflex.sc
 EndChar
 
@@ -7152,7 +7109,6 @@ SplineSet
  346 630 365 614 382 599 c 0
  396 586 411 575 430 575 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" atilde.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" atilde.sc
 EndChar
 
@@ -7204,7 +7160,6 @@ SplineSet
  423 518 399 542 399 572 c 0
 EndSplineSet
 Kerns2: 89 -2 "'kern' Horizontales Kerning in Latin lookup 1"  87 -2 "'kern' Horizontales Kerning in Latin lookup 1"  86 -2 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" adieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" adieresis.sc
 EndChar
 
@@ -7258,7 +7213,6 @@ SplineSet
  311 484 282 513 282 551 c 0
  282 557 282 562 283 567 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" aring.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" aring.sc
 EndChar
 
@@ -7313,7 +7267,6 @@ SplineSet
  363 295 367 324 367 345 c 0
  367 363 364 375 357 383 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ae.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ae.sc
 EndChar
 
@@ -7357,7 +7310,6 @@ SplineSet
  247 -114 247 -113 247 -111 c 0
  247 -95 229 -82 219 -82 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ccedilla.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ccedilla.sc
 EndChar
 
@@ -7397,7 +7349,6 @@ SplineSet
  291 655 321 672 355 672 c 0
  360 672 371 671 374 670 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" egrave.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" egrave.sc
 EndChar
 
@@ -7436,7 +7387,6 @@ SplineSet
  310 518 312 528 321 539 c 2
  426 665 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" eacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eacute.sc
 EndChar
 
@@ -7474,7 +7424,6 @@ SplineSet
  270 557 317 600 355 646 c 1
  405 646 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ecircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ecircumflex.sc
 EndChar
 
@@ -7514,7 +7463,6 @@ SplineSet
  515 542 491 518 461 518 c 0
  431 518 407 542 407 572 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" edieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" edieresis.sc
 EndChar
 
@@ -7558,7 +7506,6 @@ SplineSet
  194 655 224 672 258 672 c 0
  263 672 274 671 277 670 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" igrave.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" igrave.sc
 EndChar
 
@@ -7601,7 +7548,6 @@ SplineSet
  217 518 219 528 228 539 c 2
  333 665 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" iacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" iacute.sc
 EndChar
 
@@ -7643,7 +7589,6 @@ SplineSet
  177 557 224 600 262 646 c 1
  312 646 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" icircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" icircumflex.sc
 EndChar
 
@@ -7687,7 +7632,6 @@ SplineSet
  430 542 406 518 376 518 c 0
  346 518 322 542 322 572 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" idieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" idieresis.sc
 EndChar
 
@@ -7731,7 +7675,6 @@ SplineSet
  126 -12 76 68 76 155 c 0
  76 173 78 191 83 209 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" eth.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eth.sc
 EndChar
 
@@ -7787,7 +7730,6 @@ SplineSet
  407 630 426 614 443 599 c 0
  457 586 472 575 491 575 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ntilde.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ntilde.sc
 EndChar
 
@@ -7825,7 +7767,6 @@ SplineSet
  289 655 319 672 353 672 c 0
  358 672 369 671 372 670 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ograve.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ograve.sc
 EndChar
 
@@ -7862,7 +7803,6 @@ SplineSet
  252 518 254 528 263 539 c 2
  368 665 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" oacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" oacute.sc
 EndChar
 
@@ -7898,7 +7838,6 @@ SplineSet
  267 556 314 599 352 645 c 1
  402 645 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ocircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ocircumflex.sc
 EndChar
 
@@ -7937,7 +7876,6 @@ SplineSet
  328 630 347 614 364 599 c 0
  378 586 393 575 412 575 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" otilde.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" otilde.sc
 EndChar
 
@@ -7974,7 +7912,6 @@ SplineSet
  407 518 383 542 383 572 c 0
 EndSplineSet
 Kerns2: 89 -9 "'kern' Horizontales Kerning in Latin lookup 1"  87 -9 "'kern' Horizontales Kerning in Latin lookup 1"  86 -9 "'kern' Horizontales Kerning in Latin lookup 1"  68 11 "'kern' Horizontales Kerning in Latin lookup 1"  67 11 "'kern' Horizontales Kerning in Latin lookup 1"  65 -9 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" odieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" odieresis.sc
 EndChar
 
@@ -8041,7 +7978,6 @@ SplineSet
  224.9 41 254.7 32 271 32 c 0
  364.7 32 391.2 196.3 392.9 265.1 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" oslash.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" oslash.sc
 EndChar
 
@@ -8095,7 +8031,6 @@ SplineSet
  319 656 349 673 383 673 c 0
  388 673 399 672 402 671 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ugrave.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ugrave.sc
 EndChar
 
@@ -8148,7 +8083,6 @@ SplineSet
  323 515 325 525 334 536 c 2
  439 662 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" uacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uacute.sc
 EndChar
 
@@ -8201,7 +8135,6 @@ SplineSet
  303 557 350 600 388 646 c 1
  438 646 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ucircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ucircumflex.sc
 EndChar
 
@@ -8255,7 +8188,6 @@ SplineSet
  541 542 517 518 487 518 c 0
  457 518 433 542 433 572 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" udieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" udieresis.sc
 EndChar
 
@@ -8304,7 +8236,6 @@ SplineSet
  298 517 300 527 309 538 c 2
  414 664 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" yacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" yacute.sc
 EndChar
 
@@ -8360,7 +8291,6 @@ SplineSet
  66 249 l 1
  90 282 126 314 165 344 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" thorn.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" thorn.sc
 EndChar
 
@@ -8409,7 +8339,6 @@ SplineSet
  513 542 489 518 459 518 c 0
  429 518 405 542 405 572 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ydieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ydieresis.sc
 EndChar
 
@@ -8628,7 +8557,6 @@ SplineSet
  229 621 230 628 231 635 c 1
  265 649 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" abreve.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" abreve.sc
 EndChar
 
@@ -8741,7 +8669,6 @@ SplineSet
  200 97 206 40 250 40 c 0
  278 40 340 112 373 195 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" aogonek.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" aogonek.sc
 EndChar
 
@@ -8815,7 +8742,6 @@ SplineSet
  287 518 289 528 298 539 c 2
  403 665 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" cacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" cacute.sc
 EndChar
 
@@ -9035,7 +8961,6 @@ SplineSet
  491 627 l 1
  447 587 402 545 363 498 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ccaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ccaron.sc
 EndChar
 
@@ -9138,7 +9063,6 @@ SplineSet
  629 667 630 672 631 675 c 0
  634 691 648 709 684 709 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" dcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" dcaron.sc
 EndChar
 
@@ -9244,7 +9168,6 @@ SplineSet
  313 548.9 326.1 574 341 574 c 2
  457.4 574 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" dcroat.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" dcroat.sc
 EndChar
 
@@ -9651,7 +9574,6 @@ SplineSet
  286 400 245 364 210 224 c 1
  284 236 364 268 364 365 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" eogonek.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eogonek.sc
 EndChar
 
@@ -9749,7 +9671,6 @@ SplineSet
  511 626 l 1
  467 586 422 544 383 497 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ecaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ecaron.sc
 EndChar
 
@@ -9959,7 +9880,6 @@ SplineSet
  244 618 245 625 246 632 c 1
  280 646 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" gbreve.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" gbreve.sc
 EndChar
 
@@ -10826,7 +10746,6 @@ SplineSet
  303.2 436 310.5 428.6 310.5 414.9 c 0
  310.5 397.8 299.8 359.2 290.3 320.2 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" i.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" i.sc
 EndChar
 
@@ -10953,7 +10872,6 @@ SplineSet
  605 538 578 511 545 511 c 0
  512 511 486 538 486 571 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ij.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ij.sc
 EndChar
 
@@ -11224,7 +11142,6 @@ SplineSet
  366 -12 342 21 334 39 c 0
  331 45 327 55 324 65 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" k.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" k.sc
 EndChar
 
@@ -11314,7 +11231,6 @@ SplineSet
  95.1 69.3 100.6 97 107 125 c 2
  207.8 563 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" lacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" lacute.sc
 EndChar
 
@@ -11506,7 +11422,6 @@ SplineSet
  95.1 69.3 100.6 97 107 125 c 2
  207.8 563 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" lcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" lcaron.sc
 EndChar
 
@@ -11681,7 +11596,6 @@ SplineSet
  309.5 411.8 l 1
  360 438 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" lslash.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" lslash.sc
 EndChar
 
@@ -11798,7 +11712,6 @@ SplineSet
  367 518 369 528 378 539 c 2
  483 665 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" nacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" nacute.sc
 EndChar
 
@@ -12032,7 +11945,6 @@ SplineSet
  572 628 l 1
  528 588 483 546 444 499 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ncaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ncaron.sc
 EndChar
 
@@ -12211,7 +12123,6 @@ SplineSet
  354 -176 396 -77 427 58 c 2
  478 277 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" eng.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eng.sc
 EndChar
 
@@ -12439,7 +12350,6 @@ SplineSet
  343 653 363 653 368 653 c 0
  376 653 382 651 388 647 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" ohungarumlaut.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ohungarumlaut.sc
 EndChar
 
@@ -12554,7 +12464,6 @@ SplineSet
  76 171 78 189 82 208 c 0
  118 365 244 445 365 445 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" oe.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" oe.sc
 EndChar
 
@@ -12658,7 +12567,6 @@ SplineSet
  325 516 327 526 336 537 c 2
  441 663 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" racute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" racute.sc
 EndChar
 
@@ -12866,7 +12774,6 @@ SplineSet
  472 628 l 1
  428 588 383 546 344 499 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" rcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" rcaron.sc
 EndChar
 
@@ -12948,7 +12855,6 @@ SplineSet
  130.5 419.6 210.3 444 307 444 c 0
  369.5 444 421 408 426.3 359 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" sacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" sacute.sc
 EndChar
 
@@ -13120,7 +13026,6 @@ SplineSet
  216 -118 216 -117 216 -116 c 0
  216 -100 198 -89 188 -89 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" scedilla.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 EndChar
 
@@ -13204,7 +13109,6 @@ SplineSet
  130.5 419.6 210.3 444 307 444 c 0
  369.5 444 421 408 426.3 359 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" scaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scaron.sc
 EndChar
 
@@ -13318,7 +13222,6 @@ SplineSet
  118.1 11.7 113.3 27.5 113.3 47.1 c 0
  113.3 67.7 117.8 95.4 123 118 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" uni0163.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni0163.sc
 EndChar
 
@@ -13419,7 +13322,6 @@ SplineSet
  377 664 378 667 378 670 c 0
  381 686 402 711 438 711 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" tcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcaron.sc
 EndChar
 
@@ -13518,7 +13420,6 @@ SplineSet
  268.9 284 l 1
  324 284 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" tbar.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tbar.sc
 EndChar
 
@@ -13973,7 +13874,6 @@ SplineSet
  330 485 300 513 300 552 c 0
  300 557 301 563 302 568 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" uring.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uring.sc
 EndChar
 
@@ -14114,7 +14014,6 @@ SplineSet
  421 653 441 653 446 653 c 0
  454 653 460 651 466 647 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" uhungarumlaut.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uhungarumlaut.sc
 EndChar
 
@@ -14614,7 +14513,6 @@ SplineSet
  268 517 270 527 279 538 c 2
  384 664 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" zacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" zacute.sc
 EndChar
 
@@ -14698,7 +14596,6 @@ SplineSet
  394 542 363 512 328 512 c 0
  296 512 274 536 274 564 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" zdotaccent.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" zdotaccent.sc
 EndChar
 
@@ -14785,7 +14682,6 @@ SplineSet
  466 626 l 1
  422 586 377 544 338 497 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" zcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" zcaron.sc
 EndChar
 
@@ -14823,7 +14719,6 @@ SplineSet
  -88 -170 -59 -154 -33 -154 c 0
 EndSplineSet
 Kerns2: 116 -33 "'kern' Horizontales Kerning in Latin lookup 1"  90 -44 "'kern' Horizontales Kerning in Latin lookup 1"  89 -44 "'kern' Horizontales Kerning in Latin lookup 1"  79 -44 "'kern' Horizontales Kerning in Latin lookup 1"  67 -44 "'kern' Horizontales Kerning in Latin lookup 1"  65 -44 "'kern' Horizontales Kerning in Latin lookup 1" 
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" s.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" s.sc
 EndChar
 
@@ -22713,7 +22608,6 @@ SplineSet
  149 -92 149 -90 150 -88 c 0
  155 -60 182 -37 214 -37 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" uni0219.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni0219.sc
 EndChar
 
@@ -22818,7 +22712,6 @@ SplineSet
  141 -108 141 -106 142 -104 c 0
  147 -76 174 -53 206 -53 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 14 subtable" uni0163.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni0163.sc
 EndChar
 

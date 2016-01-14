@@ -67,7 +67,6 @@ Lookup: 1 0 0 "'ss03' Stilgruppe 3"  {"'ss03' Stilgruppe 3 1"  } ['ss03' ('DFLT'
 Lookup: 1 0 0 "'ss04' Stilgruppe 4"  {"'ss04' Stilgruppe 4 1"  } ['ss04' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'case' Versalformen"  {"'case' Versalformen 1"  } ['case' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0"  {"'nalt' Alternate Annotation Forms 1"  } ['nalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 3 0 0 "'aalt' Access All Alternates lookup 33"  {"'aalt' Access All Alternates lookup 33 subtable"  } ['aalt' ('grek' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > 'DFLT' <'dflt' > 'hebr' <'dflt' > ) ]
 Lookup: 6 8 0 "'calt' Contextual Alternates lookup 34"  {"'calt' Contextual Alternates lookup 34 subtable"  } ['calt' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > 'DFLT' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Smallcap kerning"  {"'kern' Small Caps" [150,15,4] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Cyrillic kerning"  {"'kern' Cyrillic Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > ) ]
@@ -568,7 +567,6 @@ SplineSet
  256 -204 l 1
  48 -24 44 207 44 252 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" parenleft.sc uni207D uni208D
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" parenleft.sc
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208D
 Substitution2: "'sups' Hochgestellte 1" uni207D
@@ -592,7 +590,6 @@ SplineSet
  44 708 l 1
  252 528 256 297 256 252 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" parenright.sc uni207E uni208E
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" parenright.sc
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208E
 Substitution2: "'sups' Hochgestellte 1" uni207E
@@ -654,7 +651,6 @@ SplineSet
  289 431 l 1
  289 257 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni207A uni208A
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208A
 Substitution2: "'sups' Hochgestellte 1" uni207A
 EndChar
@@ -676,7 +672,6 @@ SplineSet
  252 646 l 1
  293 646 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" fraction
 Ligature2: "'frac' Brueche 1" uni2215
 EndChar
 
@@ -706,7 +701,6 @@ SplineSet
  292 591 286 551 286 443 c 2
  286 189 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" one.fitted one.taboldstyle uni00B9 uni2081
 Substitution2: "'sups' Hochgestellte 1" uni00B9
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2081
 Substitution2: "'pnum' Proportionalziffern 1" one.fitted
@@ -746,7 +740,6 @@ SplineSet
  315.8 340 327.8 393.2 327.8 434.9 c 0
  327.8 505 274.4 553 222 553 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" two.fitted two.taboldstyle uni00B2 uni2082
 Substitution2: "'sups' Hochgestellte 1" uni00B2
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2082
 Substitution2: "'pnum' Proportionalziffern 1" two.fitted
@@ -789,7 +782,6 @@ SplineSet
  92 117 l 1
  119 59 130 29 209 29 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" three.fitted three.taboldstyle uni00B3 uni2083
 Substitution2: "'sups' Hochgestellte 1" uni00B3
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2083
 Substitution2: "'pnum' Proportionalziffern 1" three.fitted
@@ -833,7 +825,6 @@ SplineSet
  286 198 l 1
  286 512 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" four.fitted four.taboldstyle uni2074 uni2084
 Substitution2: "'sups' Hochgestellte 1" uni2074
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2084
 Substitution2: "'pnum' Proportionalziffern 1" four.fitted
@@ -873,7 +864,6 @@ SplineSet
  341 380 406 293 406 196 c 0
  406 78 321 -10 202 -10 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" five.fitted five.taboldstyle uni2075 uni2085
 Substitution2: "'sups' Hochgestellte 1" uni2075
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2085
 Substitution2: "'pnum' Proportionalziffern 1" five.fitted
@@ -907,7 +897,6 @@ SplineSet
  221 577 294 605 397 611 c 1
  400 583 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" six.fitted six.taboldstyle uni2076 uni2086
 Substitution2: "'sups' Hochgestellte 1" uni2076
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2086
 Substitution2: "'pnum' Proportionalziffern 1" six.fitted
@@ -935,7 +924,6 @@ SplineSet
  124 -7 l 1
  191 143 267 332 345 525 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" seven.fitted seven.taboldstyle uni2077 uni2087
 Substitution2: "'sups' Hochgestellte 1" uni2077
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2087
 Substitution2: "'pnum' Proportionalziffern 1" seven.fitted
@@ -969,7 +957,6 @@ SplineSet
  239 23 166 -5 63 -11 c 1
  60 17 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" nine.fitted nine.taboldstyle uni2079 uni2089
 Substitution2: "'sups' Hochgestellte 1" uni2079
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2089
 Substitution2: "'pnum' Proportionalziffern 1" nine.fitted
@@ -1032,7 +1019,6 @@ SplineSet
  66 193 l 1
  461 193 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni207C uni208C
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208C
 Substitution2: "'sups' Hochgestellte 1" uni207C
 EndChar
@@ -1168,7 +1154,6 @@ SplineSet
  401 230 346 231 308 231 c 0
  273.5 231 204 230 179 228.3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" a.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" a.sc
 EndChar
@@ -1214,7 +1199,6 @@ SplineSet
  96 648 l 1
  96 648 113 645 147 645 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" b.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" b.sc
 EndChar
@@ -1248,7 +1232,6 @@ SplineSet
  151 -10 52 142 52 315 c 0
  52 512 211 658 380 658 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" c.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" c.sc
 EndChar
@@ -1286,7 +1269,6 @@ SplineSet
  96 648 l 1
  96 648 113 645 147 645 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" d.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" d.sc
 EndChar
@@ -1338,7 +1320,6 @@ SplineSet
  344 314 238 317 190 317 c 1
  190 200 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" e.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" e.sc
 EndChar
@@ -1385,7 +1366,6 @@ SplineSet
  96 648 113 645 147 645 c 2
  407 645 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" f.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" f.sc
 EndChar
@@ -1427,7 +1407,6 @@ SplineSet
  453 34 512 40 546 72 c 1
  546 117 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" g.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" g.sc
 EndChar
@@ -1450,7 +1429,6 @@ SplineSet
  106 684 129 701 163 701 c 0
  168 701 174 700 178 699 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" grave.cap
 Substitution2: "'case' Versalformen 1" grave.cap
 Colour: ff00ff
 EndChar
@@ -1485,7 +1463,6 @@ SplineSet
  326 30 374 100.9 374 196 c 0
  374 317 353 399 247 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ograve.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ograve.sc
 Colour: ff00ff
 EndChar
@@ -1520,7 +1497,6 @@ SplineSet
  326 30 374 100.9 374 196 c 0
  374 317 353 399 247 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" oacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" oacute.sc
 Colour: ff00ff
 EndChar
@@ -1554,7 +1530,6 @@ SplineSet
  326 30 374 100.9 374 196 c 0
  374 317 353 399 247 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ocircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ocircumflex.sc
 Colour: ff00ff
 EndChar
@@ -1591,7 +1566,6 @@ SplineSet
  326 30 374 100.9 374 196 c 0
  374 317 353 399 247 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" otilde.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" otilde.sc
 Colour: ff00ff
 EndChar
@@ -1627,7 +1601,6 @@ SplineSet
  326 30 374 100.9 374 196 c 0
  374 317 353 399 247 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" odieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" odieresis.sc
 Colour: ff00ff
 EndChar
@@ -1717,7 +1690,6 @@ SplineSet
  369 89 l 1
  365 92 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ugrave.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ugrave.sc
 Colour: ff00ff
 EndChar
@@ -1770,7 +1742,6 @@ SplineSet
  369 89 l 1
  365 92 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uacute.sc
 Colour: ff00ff
 EndChar
@@ -1822,7 +1793,6 @@ SplineSet
  369 89 l 1
  365 92 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ucircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ucircumflex.sc
 Colour: ff00ff
 EndChar
@@ -2003,7 +1973,6 @@ SplineSet
  454 -157 l 1
  430 -204 380 -224 344 -224 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eogonek.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" eogonek.sc
 Colour: ff80cc
@@ -2047,7 +2016,6 @@ SplineSet
  173.5 62 220.8 49 255 49 c 0
  310 49 357 66 392 104 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eogonek.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eogonek.sc
 Colour: ff00ff
 EndChar
@@ -2103,7 +2071,6 @@ SplineSet
  344 314 238 317 190 317 c 1
  190 200 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ecaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ecaron.sc
 Colour: ff00ff
@@ -2145,7 +2112,6 @@ SplineSet
  173.5 62 220.8 49 255 49 c 0
  310 49 357 66 392 104 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ecaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ecaron.sc
 Colour: ff00ff
 EndChar
@@ -2294,7 +2260,6 @@ SplineSet
  453 34 512 40 546 72 c 1
  546 117 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" gbreve.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" gbreve.sc
 Colour: ff00ff
@@ -2355,7 +2320,6 @@ SplineSet
  133 223 155 176 227 176 c 0
  287 176 312 223.3 312 284 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" gbreve.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" gbreve.sc
 Colour: ff00ff
 EndChar
@@ -3109,7 +3073,6 @@ SplineSet
  102 54 104 125 104 200 c 2
  104 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" idotaccent.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" idotaccent.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Colour: ff00ff
@@ -11421,7 +11384,6 @@ SplineSet
  319 363 l 1
  337 332 391 254 437 192 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ampersand.alt
 Substitution2: "'salt' Stilistische Alternativformen 1" ampersand.alt
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ampersand.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ampersand.alt
@@ -11485,7 +11447,6 @@ SplineSet
  297 290 301 281 301 272 c 0
  301 261 287 236 274 236 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" hyphen.cap hyphen.sc uni207B uni208B
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" hyphen.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" hyphen.sc
 Substitution2: "'case' Versalformen 1" hyphen.cap
@@ -11533,7 +11494,6 @@ SplineSet
  364 542 421 465 421 309 c 0
  421 75 305 -10 228 -10 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2070 uni2080 zero.fitted zero.slash zero.taboldstyle
 Substitution2: "'zero' gestrichene Null 1" zero.slash
 Substitution2: "'sups' Hochgestellte 1" uni2070
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2080
@@ -11571,7 +11531,6 @@ SplineSet
  102 54 104 125 104 200 c 2
  104 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" i.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" i.sc
 EndChar
@@ -11606,7 +11565,6 @@ SplineSet
  9 -97 27 -112 56 -112 c 0
  135 -112 140 7 140 95 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" J.alt j.sc
 Substitution2: "'ss02' Stilgruppe 2 1" J.alt
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" j.sc
@@ -11655,7 +11613,6 @@ SplineSet
  102 54 104 125 104 200 c 2
  104 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" K.alt k.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'ss02' Stilgruppe 2 1" K.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" k.sc
@@ -11697,7 +11654,6 @@ SplineSet
  201 645 l 1
  193 592 191 520 191 445 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" l.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" l.sc
 EndChar
@@ -11735,7 +11691,6 @@ SplineSet
  85 0 75 0 64 -3 c 1
  103 184 158 460 193 662 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" m.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" m.sc
 EndChar
@@ -11780,7 +11735,6 @@ SplineSet
  98 0 l 1
  114 159 117 455 108 645 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" n.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" n.sc
 EndChar
@@ -11810,7 +11764,6 @@ SplineSet
  52 506 189 658 368 658 c 0
  548 658 689 527 689 329 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" o.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" o.sc
 EndChar
@@ -11852,7 +11805,6 @@ SplineSet
  102 54 104 125 104 200 c 2
  104 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" p.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" p.sc
 EndChar
@@ -11885,7 +11837,6 @@ SplineSet
  548 658 689 527 689 329 c 0
  689 207.3 641.2 108.1 560.7 49.2 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" q.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" q.sc
 Colour: ff80cc
@@ -11936,7 +11887,6 @@ SplineSet
  345 326 426 356 426 478 c 0
  426 586 344 609 283 609 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" R.alt r.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'ss02' Stilgruppe 2 1" R.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" r.sc
@@ -11978,7 +11928,6 @@ SplineSet
  83 142 l 1
  114 83 186 34 242 34 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" s.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" s.sc
 EndChar
@@ -12020,7 +11969,6 @@ SplineSet
  225 54 227 125 227 200 c 2
  227 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" t.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" t.sc
 EndChar
@@ -12061,7 +12009,6 @@ SplineSet
  527 46 544 165 544 277 c 2
  544 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" u.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" u.sc
 EndChar
@@ -12090,7 +12037,6 @@ SplineSet
  140.9 613.4 190.8 436.1 322 132.3 c 1
  324 132.3 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" v.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" v.sc
 EndChar
@@ -12128,7 +12074,6 @@ SplineSet
  495 585 539 435 642 132 c 1
  644 132 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" w.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" w.sc
 EndChar
@@ -12163,7 +12108,6 @@ SplineSet
  504.8 587.2 422.9 479.6 331.5 345.4 c 1
  418.3 211.9 483 111.4 564 -3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" x.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" x.sc
 EndChar
@@ -12195,7 +12139,6 @@ SplineSet
  534 645 551 646 564 648 c 1
  443 463 374 365 333 285 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" y.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" y.sc
 EndChar
@@ -12240,7 +12183,6 @@ SplineSet
  192 72 l 2
  187.3 65.1 187 59 187 54 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" z.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" z.sc
 EndChar
@@ -12265,7 +12207,6 @@ SplineSet
  325 -192 l 1
  110 -192 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" bracketleft.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" bracketleft.sc
 Substitution2: "'case' Versalformen 1" bracketleft.sc
 EndChar
@@ -12308,7 +12249,6 @@ SplineSet
  36 703 l 1
  251 703 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" bracketright.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" bracketright.sc
 Substitution2: "'case' Versalformen 1" bracketright.sc
 Colour: ff00ff
@@ -12396,7 +12336,6 @@ SplineSet
  444 -4 413.2 -10 388 -10 c 0
  351.4 -10 321.5 8.9 310.1 48 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" a.sc a.superior uni2090
 Substitution2: "'sups' Hochgestellte 1" a.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2090
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" a.sc
@@ -12436,7 +12375,6 @@ SplineSet
  165.3 698 168 695 168 688 c 0
  163.3 626.7 162 574 162 500 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" b.inferior b.sc b.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" b.inferior
 Substitution2: "'sups' Hochgestellte 1" b.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" b.sc
@@ -12472,7 +12410,6 @@ SplineSet
  350 325 l 1
  323.5 370.5 288.5 399 250 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" c.inferior c.sc c.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" c.inferior
 Substitution2: "'sups' Hochgestellte 1" c.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" c.sc
@@ -12518,7 +12455,6 @@ SplineSet
  363 58 l 1
  361 58 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" d.inferior d.sc d.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" d.inferior
 Substitution2: "'sups' Hochgestellte 1" d.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" d.sc
@@ -12556,7 +12492,6 @@ SplineSet
  173.5 62 220.8 49 255 49 c 0
  310 49 357 66 392 104 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" e.sc e.superior uni2091
 Substitution2: "'sups' Hochgestellte 1" e.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2091
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" e.sc
@@ -12606,7 +12541,6 @@ SplineSet
  28.7 405 34.3 414.7 41 431 c 1
  54.2 429.2 77.3 429 99 429 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" f.inferior f.sc f.short f.superior
 Substitution2: "Substitution f short 1" f.short
 Substitution2: "'sinf' Wissenschaftliche Indices 1" f.inferior
 Substitution2: "'sups' Hochgestellte 1" f.superior
@@ -12664,7 +12598,6 @@ SplineSet
  133 223 155 176 227 176 c 0
  287 176 312 223.3 312 284 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" g.inferior g.sc g.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" g.inferior
 Substitution2: "'sups' Hochgestellte 1" g.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" g.sc
@@ -12713,7 +12646,6 @@ SplineSet
  174.2 626.5 170 575 170 501 c 2
  170 352 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" h.alt h.inferior h.sc uni02B0
 Substitution2: "'sinf' Wissenschaftliche Indices 1" h.inferior
 Substitution2: "'salt' Stilistische Alternativformen 1" h.alt
 Substitution2: "'sups' Hochgestellte 1" uni02B0
@@ -12754,7 +12686,6 @@ SplineSet
  88.2 54 90 105 90 180 c 2
  90 235 l 2xe8
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" dotlessi i.inferior i.sc idotaccent.sc uni2071
 Substitution2: "Substitution dotless forms 1" dotlessi
 Substitution2: "'smcp' Gemeine nach Kapitaelchen i > i.sc 1" i.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc" idotaccent.sc
@@ -12795,7 +12726,6 @@ SplineSet
  189.8 433 191 432 191 423 c 0
  184.5 362 182 326 182 251 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" j.inferior j.sc uni0237 uni02B2
 Substitution2: "Substitution dotless forms 1" uni0237
 Substitution2: "'sinf' Wissenschaftliche Indices 1" j.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02B2
@@ -12844,7 +12774,6 @@ SplineSet
  81 0 l 1
  88.5 53.5 90 125.5 90 200 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" k.inferior k.sc k.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" k.inferior
 Substitution2: "'sups' Hochgestellte 1" k.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" k.sc
@@ -12933,7 +12862,6 @@ SplineSet
  160.7 435 162 432.7 162 425 c 2
  162 352 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" m.inferior m.sc m.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" m.inferior
 Substitution2: "'sups' Hochgestellte 1" m.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" m.sc
@@ -12982,7 +12910,6 @@ SplineSet
  428 439 462 385 462 281 c 0
  462 249 460 212 460 180 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" n.inferior n.sc uni207F
 Substitution2: "'sinf' Wissenschaftliche Indices 1" n.inferior
 Substitution2: "'sups' Hochgestellte 1" uni207F
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" n.sc
@@ -13016,7 +12943,6 @@ SplineSet
  326 30 374 100.9 374 196 c 0
  374 317 353 399 247 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" o.sc o.superior uni2092
 Substitution2: "'sups' Hochgestellte 1" o.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2092
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" o.sc
@@ -13060,7 +12986,6 @@ SplineSet
  160.7 435 162 432.7 162 425 c 2
  162 352 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" p.inferior p.sc p.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" p.inferior
 Substitution2: "'sups' Hochgestellte 1" p.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" p.sc
@@ -13102,7 +13027,6 @@ SplineSet
  49 348 141 439 257 439 c 0
  291 439 347.9 435 366 432 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" q.inferior q.sc q.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" q.inferior
 Substitution2: "'sups' Hochgestellte 1" q.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" q.sc
@@ -13146,7 +13070,6 @@ SplineSet
  165.7 435 167 432.7 167 425 c 2
  167 334 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" r.inferior r.sc uni02B3
 Substitution2: "'sinf' Wissenschaftliche Indices 1" r.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02B3
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" r.sc
@@ -13224,7 +13147,6 @@ SplineSet
  28.7 405 34.3 414.7 41 431 c 1
  53.4 429.4 74.5 429.1 95 429 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" t.inferior t.sc t.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" t.inferior
 Substitution2: "'sups' Hochgestellte 1" t.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" t.sc
@@ -13274,7 +13196,6 @@ SplineSet
  369 89 l 1
  365 92 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" u.inferior u.sc u.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" u.inferior
 Substitution2: "'sups' Hochgestellte 1" u.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" u.sc
@@ -13304,7 +13225,6 @@ SplineSet
  254 0 243 0 233 0 c 0
  223 0 212 0 202 -3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" v.inferior v.sc v.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" v.inferior
 Substitution2: "'sups' Hochgestellte 1" v.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" v.sc
@@ -13344,7 +13264,6 @@ SplineSet
  265 -1 248 -1 238 -1 c 0
  228 -1 215 -1 205 -4 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02B7 w.inferior w.sc
 Substitution2: "'sinf' Wissenschaftliche Indices 1" w.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02B7
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" w.sc
@@ -13406,7 +13325,6 @@ SplineSet
  149.2 -161.7 190 -84.7 222 -10 c 1
  186.6 85.1 67.8 343.2 28 432 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02B8 y.inferior y.sc
 Substitution2: "'sinf' Wissenschaftliche Indices 1" y.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02B8
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" y.sc
@@ -13450,7 +13368,6 @@ SplineSet
  389 422 382 412.4 365 387 c 2
  135.9 45 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" z.inferior z.sc z.superior
 Substitution2: "'sinf' Wissenschaftliche Indices 1" z.inferior
 Substitution2: "'sups' Hochgestellte 1" z.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" z.sc
@@ -13484,7 +13401,6 @@ SplineSet
  264 701 264 689 258 683 c 1
  220 672 173 654.9 178 552 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" braceleft.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" braceleft.sc
 Substitution2: "'case' Versalformen 1" braceleft.sc
 EndChar
@@ -13535,7 +13451,6 @@ SplineSet
  9 -207 9 -195 15 -189 c 1
  53 -178 100 -160.9 95 -58 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" braceright.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" braceright.sc
 Substitution2: "'case' Versalformen 1" braceright.sc
 Colour: ff00ff
@@ -13584,7 +13499,6 @@ VStem: 58.75 112.5<339.502 427.998> 59 110<-214.211 3.39278>
 LayerCount: 2
 Fore
 Refer: 0 33 N -1 0 0 -1 228 429.25 2
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" exclamdown.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" exclamdown.sc
 Substitution2: "'case' Versalformen 1" exclamdown.sc
 Colour: ff00ff
@@ -13760,7 +13674,6 @@ SplineSet
  201.9 212.7 202 236.9 202.1 260 c 1
  53.4 260 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" Yen.fitted
 Substitution2: "'pnum' Proportionalziffern 1" Yen.fitted
 EndChar
 
@@ -13954,7 +13867,6 @@ SplineSet
  449.5 402.8 460.5 395 463 385 c 1
  411 306 373.5 257.5 336 215 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" guillemotleft.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" guillemotleft.sc
 Substitution2: "'case' Versalformen 1" guillemotleft.sc
 EndChar
@@ -14230,7 +14142,6 @@ SplineSet
  88 567.2 91.3 571.2 99.4 584 c 2
  175 703 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" acute.cap
 Substitution2: "'case' Versalformen 1" acute.cap
 Colour: ff00ff
 EndChar
@@ -14425,7 +14336,6 @@ SplineSet
  93.5 27.2 82.5 35 80 45 c 1
  132 124 169.5 172.5 207 215 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" guillemotright.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" guillemotright.sc
 Substitution2: "'case' Versalformen 1" guillemotright.sc
 Colour: ff00ff
@@ -14641,7 +14551,6 @@ VStem: 37 75<-148.024 -5.30231> 169.75 112.5<339.502 427.998> 205 42<127.322 255
 LayerCount: 2
 Fore
 Refer: 22 63 N -1 0 0 -1 406 429.25 2
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" questiondown.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" questiondown.sc
 Substitution2: "'case' Versalformen 1" questiondown.sc
 Colour: ff00ff
@@ -14684,7 +14593,6 @@ SplineSet
  401 230 346 231 308 231 c 0
  273.5 231 204 230 179 228.3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" agrave.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" agrave.sc
 Colour: ff00ff
@@ -14727,7 +14635,6 @@ SplineSet
  401 230 346 231 308 231 c 0
  273.5 231 204 230 179 228.3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" aacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" aacute.sc
 Colour: ff00ff
@@ -14771,7 +14678,6 @@ SplineSet
  401 230 346 231 308 231 c 0
  273.5 231 204 230 179 228.3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" acircumflex.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" acircumflex.sc
 Colour: ff00ff
@@ -14817,7 +14723,6 @@ SplineSet
  401 230 346 231 308 231 c 0
  273.5 231 204 230 179 228.3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" atilde.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" atilde.sc
 Colour: ff00ff
@@ -14905,7 +14810,6 @@ SplineSet
  220.6 274.7 274.1 273 303 273 c 0
  332.7 273 374.3 274 407.3 275.5 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" aring.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" aring.sc
 EndChar
@@ -14966,7 +14870,6 @@ SplineSet
  274.6 325.1 310.2 324 335 324 c 0
  352.9 324 375.1 324.3 397.2 324.7 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ae.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ae.sc
 EndChar
@@ -15009,7 +14912,6 @@ SplineSet
  379 -175 400 -161 400 -135 c 0
  400 -114 390 -100 367 -100 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ccedilla.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ccedilla.sc
 Colour: ff00ff
@@ -15067,7 +14969,6 @@ SplineSet
  169 772 l 1
  187.3 789.7 210.8 805.4 245 817 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" egrave.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" egrave.sc
 Colour: ff00ff
@@ -15125,7 +15026,6 @@ SplineSet
  211 720 213 725 226 734 c 2
  350 820 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" eacute.sc
 Colour: ff00ff
@@ -15182,7 +15082,6 @@ SplineSet
  344 314 238 317 190 317 c 1
  190 200 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ecircumflex.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ecircumflex.sc
 Colour: ff00ff
@@ -15241,7 +15140,6 @@ SplineSet
  344 314 238 317 190 317 c 1
  190 200 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" edieresis.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" edieresis.sc
 Colour: ff00ff
@@ -15280,7 +15178,6 @@ SplineSet
  23 772 l 1
  41.3 789.7 64.8 805.4 99 817 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" igrave.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" igrave.sc
 Colour: ff00ff
@@ -15319,7 +15216,6 @@ SplineSet
  71 719 73 724 86 733 c 2
  210 819 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" iacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" iacute.sc
 Colour: ff00ff
@@ -15359,7 +15255,6 @@ SplineSet
  102 54 104 125 104 200 c 2
  104 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" icircumflex.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" icircumflex.sc
 Colour: ff00ff
@@ -15401,7 +15296,6 @@ SplineSet
  102 54 104 125 104 200 c 2
  104 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" idieresis.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" idieresis.sc
 Colour: ff00ff
@@ -15444,7 +15338,6 @@ SplineSet
  96 648 l 1
  96 648 113 645 147 645 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eth.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" eth.sc
 Colour: ff80cc
@@ -15497,7 +15390,6 @@ SplineSet
  98 0 l 1
  114 159 117 455 108 645 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ntilde.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ntilde.sc
 Colour: ff00ff
@@ -15531,7 +15423,6 @@ SplineSet
  228 774 l 1
  246.3 791.7 269.8 807.4 304 819 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ograve.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ograve.sc
 Colour: ff00ff
@@ -15565,7 +15456,6 @@ SplineSet
  248 720 250 725 263 734 c 2
  387 820 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" oacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" oacute.sc
 Colour: ff00ff
@@ -15600,7 +15490,6 @@ SplineSet
  52 506 189 658 368 658 c 0
  548 658 689 527 689 329 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ocircumflex.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ocircumflex.sc
 Colour: ff00ff
@@ -15638,7 +15527,6 @@ SplineSet
  52 506 189 658 368 658 c 0
  548 658 689 527 689 329 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" otilde.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" otilde.sc
 Colour: ff00ff
@@ -15740,7 +15628,6 @@ SplineSet
  503 34 586 131 586 310 c 0
  586 400.2 569.1 469.2 538.5 518.6 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" oslash.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" oslash.sc
 Colour: ff80cc
@@ -15785,7 +15672,6 @@ SplineSet
  260 773 l 1
  278.3 790.7 301.8 806.4 336 818 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ugrave.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ugrave.sc
 Colour: ff00ff
@@ -15830,7 +15716,6 @@ SplineSet
  286 719 288 724 301 733 c 2
  425 819 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uacute.sc
 Colour: ff00ff
@@ -15876,7 +15761,6 @@ SplineSet
  295 739 326 771 357 805 c 1
  400 805 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ucircumflex.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ucircumflex.sc
 Colour: ff00ff
@@ -15960,7 +15844,6 @@ SplineSet
  221 720 223 725 236 734 c 2
  360 820 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" yacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" yacute.sc
 Colour: ff00ff
@@ -16003,7 +15886,6 @@ SplineSet
  190 200 l 2
  190 197.5 190 194.9 190 192.4 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" thorn.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" thorn.sc
 EndChar
@@ -16052,7 +15934,6 @@ SplineSet
  499 111.6 487.6 70.5 465.7 42 c 0
  438.6 6.7 395.9 -10 345 -10 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" germandbls.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" germandbls.sc
 EndChar
 
@@ -16105,7 +15986,6 @@ SplineSet
  444 -4 413.2 -10 388 -10 c 0
  351.4 -10 321.5 8.9 310.1 48 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" agrave.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" agrave.sc
 Colour: ff00ff
 EndChar
@@ -16159,7 +16039,6 @@ SplineSet
  444 -4 413.2 -10 388 -10 c 0
  351.4 -10 321.5 8.9 310.1 48 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" aacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" aacute.sc
 Colour: ff00ff
 EndChar
@@ -16212,7 +16091,6 @@ SplineSet
  444 -4 413.2 -10 388 -10 c 0
  351.4 -10 321.5 8.9 310.1 48 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" acircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" acircumflex.sc
 Colour: ff00ff
 EndChar
@@ -16268,7 +16146,6 @@ SplineSet
  444 -4 413.2 -10 388 -10 c 0
  351.4 -10 321.5 8.9 310.1 48 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" atilde.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" atilde.sc
 Colour: ff00ff
 EndChar
@@ -16323,7 +16200,6 @@ SplineSet
  444 -4 413.2 -10 388 -10 c 0
  351.4 -10 321.5 8.9 310.1 48 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" adieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" adieresis.sc
 Colour: ff00ff
 EndChar
@@ -16378,7 +16254,6 @@ SplineSet
  444 -4 413.2 -10 388 -10 c 0
  351.4 -10 321.5 8.9 310.1 48 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" aring.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" aring.sc
 Colour: ff00ff
 EndChar
@@ -16428,7 +16303,6 @@ SplineSet
  39 184 126 243 296 255 c 1
  294.8 348.6 274.8 394 202 394 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ae.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ae.sc
 EndChar
 
@@ -16470,7 +16344,6 @@ SplineSet
  245 -169 266 -155 266 -129 c 0
  266 -108 256 -94 233 -94 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ccedilla.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ccedilla.sc
 Colour: ff00ff
 EndChar
@@ -16512,7 +16385,6 @@ SplineSet
  173.5 62 220.8 49 255 49 c 0
  310 49 357 66 392 104 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" egrave.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" egrave.sc
 Colour: ff00ff
 EndChar
@@ -16554,7 +16426,6 @@ SplineSet
  173.5 62 220.8 49 255 49 c 0
  310 49 357 66 392 104 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eacute.sc
 Colour: ff00ff
 EndChar
@@ -16595,7 +16466,6 @@ SplineSet
  173.5 62 220.8 49 255 49 c 0
  310 49 357 66 392 104 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ecircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ecircumflex.sc
 Colour: ff00ff
 EndChar
@@ -16638,7 +16508,6 @@ SplineSet
  173.5 62 220.8 49 255 49 c 0
  310 49 357 66 392 104 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" edieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" edieresis.sc
 Colour: ff00ff
 EndChar
@@ -16677,7 +16546,6 @@ SplineSet
  88.2 54 90 105 90 180 c 2
  90 235 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" igrave.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" igrave.sc
 Colour: ff00ff
 EndChar
@@ -16716,7 +16584,6 @@ SplineSet
  88.2 54 90 105 90 180 c 2
  90 235 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" iacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" iacute.sc
 Colour: ff00ff
 EndChar
@@ -16754,7 +16621,6 @@ SplineSet
  88.2 54 90 105 90 180 c 2
  90 235 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" icircumflex.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" icircumflex.sc
 Colour: ff00ff
 EndChar
@@ -16794,7 +16660,6 @@ SplineSet
  88.2 54 90 105 90 180 c 2
  90 235 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" idieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" idieresis.sc
 Colour: ff00ff
 EndChar
@@ -16835,7 +16700,6 @@ SplineSet
  456 68 347 -10 235 -10 c 0
  111 -10 34 104 34 208 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eth.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eth.sc
 EndChar
 
@@ -16888,7 +16752,6 @@ SplineSet
  428 439 462 385 462 281 c 0
  462 249 460 212 460 180 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ntilde.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ntilde.sc
 Colour: ff00ff
 EndChar
@@ -16928,7 +16791,6 @@ SplineSet
  326 30 374 100.9 374 196 c 0
  374 242.8 370.9 283.8 360.9 316.4 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" oslash.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" oslash.sc
 Colour: ff80cc
 EndChar
@@ -16982,7 +16844,6 @@ SplineSet
  369 89 l 1
  365 92 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" udieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" udieresis.sc
 LCarets2: 1 0 
 Colour: ff00ff
@@ -17020,7 +16881,6 @@ SplineSet
  149.2 -161.7 190 -84.7 222 -10 c 1
  186.6 85.1 67.8 343.2 28 432 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" yacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" yacute.sc
 Colour: ff00ff
 EndChar
@@ -17064,7 +16924,6 @@ SplineSet
  217 -10 189 -2 163 12 c 1
  163 -32 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" thorn.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" thorn.sc
 EndChar
 
@@ -17102,7 +16961,6 @@ SplineSet
  149.2 -161.7 190 -84.7 222 -10 c 1
  186.6 85.1 67.8 343.2 28 432 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ydieresis.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ydieresis.sc
 Colour: ff00ff
 EndChar
@@ -17235,7 +17093,6 @@ SplineSet
  401 230 346 231 308 231 c 0
  273.5 231 204 230 179 228.3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" abreve.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" abreve.sc
 Colour: ff00ff
@@ -17288,7 +17145,6 @@ SplineSet
  444 -4 413.2 -10 388 -10 c 0
  351.4 -10 321.5 8.9 310.1 48 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" abreve.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" abreve.sc
 Colour: ff00ff
 EndChar
@@ -17331,7 +17187,6 @@ SplineSet
  220.6 274.7 274.1 273 303 273 c 0
  332.7 273 374.3 274 407.3 275.5 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" aogonek.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" aogonek.sc
 Colour: ff80cc
@@ -17385,7 +17240,6 @@ SplineSet
  300 86 306 93 306 106 c 2
  310 225 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" aogonek.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" aogonek.sc
 Colour: ff80cc
 EndChar
@@ -17422,7 +17276,6 @@ SplineSet
  151 -10 52 142 52 315 c 0
  52 512 211 658 380 658 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" cacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" cacute.sc
 Colour: ff00ff
@@ -17462,7 +17315,6 @@ SplineSet
  350 325 l 1
  323.5 370.5 288.5 399 250 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" cacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" cacute.sc
 Colour: ff00ff
 EndChar
@@ -17640,7 +17492,6 @@ SplineSet
  151 -10 52 142 52 315 c 0
  52 512 211 658 380 658 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ccaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ccaron.sc
 Colour: ff00ff
@@ -17679,7 +17530,6 @@ SplineSet
  350 325 l 1
  323.5 370.5 288.5 399 250 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ccaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ccaron.sc
 Colour: ff00ff
 EndChar
@@ -17721,7 +17571,6 @@ SplineSet
  96 648 l 1
  96 648 113 645 147 645 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" dcaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" dcaron.sc
 Colour: ff00ff
@@ -17771,7 +17620,6 @@ SplineSet
  363 58 l 1
  361 58 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" dcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" dcaron.sc
 Colour: ff00ff
 EndChar
@@ -17813,7 +17661,6 @@ SplineSet
  96 648 l 1
  96 648 113 645 147 645 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" dcroat.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" dcroat.sc
 Colour: ff80cc
@@ -17863,7 +17710,6 @@ SplineSet
  138 96 184 42 238 42 c 0
  278.5 42 324.5 66.5 361 113 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" dcroat.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" dcroat.sc
 Colour: ff80cc
 EndChar
@@ -18044,7 +17890,6 @@ SplineSet
  88.2 54 90 105 90 180 c 2
  90 235 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" i.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" i.sc
 EndChar
 
@@ -18091,7 +17936,6 @@ SplineSet
  102 54 104 125 104 200 c 2
  104 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ij.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ij.sc
 Colour: ff00ff
@@ -18148,7 +17992,6 @@ SplineSet
  88.2 54 90 105 90 180 c 2
  90 235 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ij.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ij.sc
 Colour: ff00ff
 EndChar
@@ -18372,7 +18215,6 @@ SplineSet
  80.2 54 82 105 82 180 c 2
  82 235 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" k.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" k.sc
 Comment: "Ist das so richtig?" 
 EndChar
@@ -18415,7 +18257,6 @@ SplineSet
  53 719 55 724 68 733 c 2
  192 819 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" lacute.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" lacute.sc
 Colour: ff00ff
 EndChar
@@ -18452,7 +18293,6 @@ SplineSet
  81 0 l 1
  88.5 53.5 90 125.5 90 200 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" lacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" lacute.sc
 Colour: ff00ff
 EndChar
@@ -18575,7 +18415,6 @@ SplineSet
  201 645 l 1
  193 592 191 520 191 445 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" lcaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" lcaron.sc
 Colour: ff00ff
@@ -18614,7 +18453,6 @@ SplineSet
  81 0 l 1
  88.5 53.5 90 125.5 90 200 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" lcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" lcaron.sc
 Colour: ff00ff
 EndChar
@@ -18736,7 +18574,6 @@ SplineSet
  191 381.1 l 1
  310 449 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" lslash.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" lslash.sc
 Colour: ff80cc
@@ -18776,7 +18613,6 @@ SplineSet
  170 395.2 l 1
  243 438 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" lslash.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" lslash.sc
 Colour: ff80cc
 EndChar
@@ -18824,7 +18660,6 @@ SplineSet
  98 0 l 1
  114 159 117 455 108 645 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" nacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" nacute.sc
 Colour: ff00ff
@@ -18877,7 +18712,6 @@ SplineSet
  428 439 462 385 462 281 c 0
  462 249 460 212 460 180 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" nacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" nacute.sc
 Colour: ff00ff
 EndChar
@@ -19023,7 +18857,6 @@ SplineSet
  98 0 l 1
  114 159 117 455 108 645 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ncaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ncaron.sc
 Colour: ff00ff
@@ -19075,7 +18908,6 @@ SplineSet
  428 439 462 385 462 281 c 0
  462 249 460 212 460 180 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ncaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ncaron.sc
 Colour: ff00ff
 EndChar
@@ -19178,7 +19010,6 @@ SplineSet
  99 53 101 125 101 200 c 2
  101 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eng.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" eng.sc
 Comment: "Sieht in Times anders aus" 
@@ -19228,7 +19059,6 @@ SplineSet
  270 379 214 358 163 298 c 1
  163 180 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eng.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eng.sc
 EndChar
 
@@ -19397,7 +19227,6 @@ SplineSet
  52 506 189 658 368 658 c 0
  548 658 689 527 689 329 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ohungarumlaut.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ohungarumlaut.sc
 Colour: ff00ff
@@ -19442,7 +19271,6 @@ SplineSet
  326 30 374 100.9 374 196 c 0
  374 317 353 399 247 399 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ohungarumlaut.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" ohungarumlaut.sc
 Colour: ff00ff
 EndChar
@@ -19538,7 +19366,6 @@ SplineSet
  367 353 291 400 247 400 c 0
  162 400 124 306 124 237 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" oe.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" oe.sc
 EndChar
 
@@ -19590,7 +19417,6 @@ SplineSet
  345 326 426 356 426 478 c 0
  426 586 344 609 283 609 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" racute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" racute.sc
 Colour: ff00ff
@@ -19639,7 +19465,6 @@ SplineSet
  165.7 435 167 432.7 167 425 c 2
  167 334 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" racute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" racute.sc
 Colour: ff00ff
 EndChar
@@ -19791,7 +19616,6 @@ SplineSet
  345 326 426 356 426 478 c 0
  426 586 344 609 283 609 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" rcaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" rcaron.sc
 Colour: ff00ff
@@ -19839,7 +19663,6 @@ SplineSet
  165.7 435 167 432.7 167 425 c 2
  167 334 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" rcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" rcaron.sc
 Colour: ff00ff
 EndChar
@@ -19883,7 +19706,6 @@ SplineSet
  143 720 145 725 158 734 c 2
  282 820 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" sacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" sacute.sc
 Colour: ff00ff
@@ -19927,7 +19749,6 @@ SplineSet
  140 535.2 143.3 539.2 151.4 552 c 2
  227 671 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" sacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" sacute.sc
 Colour: ff00ff
 EndChar
@@ -20063,7 +19884,6 @@ SplineSet
  83 142 l 1
  114 83 186 34 242 34 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" scedilla.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
@@ -20113,7 +19933,6 @@ SplineSet
  146 -10 90 -3 33 17 c 1
  50 101 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" scedilla.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scedilla.sc
 Colour: ff00ff
 EndChar
@@ -20158,7 +19977,6 @@ SplineSet
  83 142 l 1
  114 83 186 34 242 34 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" scaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" scaron.sc
 Colour: ff00ff
@@ -20201,7 +20019,6 @@ SplineSet
  286 593 248 548 219 502 c 1
  169 502 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" scaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" scaron.sc
 Colour: ff00ff
 EndChar
@@ -20252,7 +20069,6 @@ SplineSet
  280 -167 301 -153 301 -127 c 0
  301 -106 291 -92 268 -92 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni021B.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uni021B.sc
 Colour: ff00ff
@@ -20309,7 +20125,6 @@ SplineSet
  180 -181 201 -167 201 -141 c 0
  201 -120 191 -106 168 -106 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni0163.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni0163.sc
 Colour: ff00ff
 EndChar
@@ -20355,7 +20170,6 @@ SplineSet
  225 54 227 125 227 200 c 2
  227 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" tcaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" tcaron.sc
 Colour: ff00ff
@@ -20405,7 +20219,6 @@ SplineSet
  28.7 405 34.3 414.7 41 431 c 1
  53.4 429.4 74.5 429.1 95 429 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" tcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tcaron.sc
 Colour: ff00ff
 EndChar
@@ -20451,7 +20264,6 @@ SplineSet
  227 329 l 1
  101 329 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" tbar.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" tbar.sc
 Colour: ff80cc
@@ -20499,7 +20311,6 @@ SplineSet
  175 284 l 1
  273 284 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" tbar.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" tbar.sc
 Colour: ff80cc
 EndChar
@@ -20830,7 +20641,6 @@ SplineSet
  527 46 544 165 544 277 c 2
  544 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uring.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uring.sc
 Colour: ff00ff
@@ -20885,7 +20695,6 @@ SplineSet
  369 89 l 1
  365 92 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uring.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uring.sc
 Colour: ff00ff
 EndChar
@@ -20940,7 +20749,6 @@ SplineSet
  527 46 544 165 544 277 c 2
  544 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uhungarumlaut.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uhungarumlaut.sc
 Colour: ff00ff
@@ -21003,7 +20811,6 @@ SplineSet
  369 89 l 1
  365 92 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uhungarumlaut.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uhungarumlaut.sc
 Colour: ff00ff
 EndChar
@@ -21294,7 +21101,6 @@ SplineSet
  534 645 551 646 564 648 c 1
  443 463 374 365 333 285 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" ydieresis.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ydieresis.sc
 Colour: ff00ff
@@ -21344,7 +21150,6 @@ SplineSet
  192 72 l 2
  187.3 65.1 187 59 187 54 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" zacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" zacute.sc
 Colour: ff00ff
@@ -21393,7 +21198,6 @@ SplineSet
  389 422 382 412.4 365 387 c 2
  135.9 45 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" zacute.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" zacute.sc
 Colour: ff00ff
 EndChar
@@ -21440,7 +21244,6 @@ SplineSet
  192 72 l 2
  187.3 65.1 187 59 187 54 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" zdotaccent.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" zdotaccent.sc
 Colour: ff00ff
 EndChar
@@ -21485,7 +21288,6 @@ SplineSet
  389 422 382 412.4 365 387 c 2
  135.9 45 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" zdotaccent.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" zdotaccent.sc
 Colour: ff00ff
 EndChar
@@ -21535,7 +21337,6 @@ SplineSet
  192 72 l 2
  187.3 65.1 187 59 187 54 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" zcaron.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" zcaron.sc
 Colour: ff00ff
@@ -21583,7 +21384,6 @@ SplineSet
  389 422 382 412.4 365 387 c 2
  135.9 45 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" zcaron.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" zcaron.sc
 Colour: ff00ff
 EndChar
@@ -21624,7 +21424,6 @@ SplineSet
  170.7 638 165 590.2 165 535 c 0
  165 517 170 464.5 170 439 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" s.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" s.sc
 EndChar
 
@@ -26759,7 +26558,6 @@ SplineSet
  218 -133 193 -124 193 -97 c 0
  193 -73 214 -54 243 -54 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni0219.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uni0219.sc
 LCarets2: 1 0 
 Colour: ff00ff
@@ -26802,7 +26600,6 @@ SplineSet
  146 -10 90 -3 33 17 c 1
  50 101 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni0219.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni0219.sc
 LCarets2: 1 0 
 Colour: ff00ff
@@ -26849,7 +26646,6 @@ SplineSet
  225 54 227 125 227 200 c 2
  227 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni021B.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uni021B.sc
 LCarets2: 1 0 
 Colour: ff00ff
@@ -26899,7 +26695,6 @@ SplineSet
  28.7 405 34.3 414.7 41 431 c 1
  53.4 429.4 74.5 429.1 95 429 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni021B.sc
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni021B.sc
 LCarets2: 1 0 
 Colour: ff00ff
@@ -28341,7 +28136,6 @@ SplineSet
  191.3 -5 190 -2.7 190 5 c 2
  190 96 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02B4
 Substitution2: "'sups' Hochgestellte 1" uni02B4
 Colour: ff00ff
 EndChar
@@ -29092,7 +28886,6 @@ SplineSet
  -228 693 -205 710 -171 710 c 0
  -166 710 -160 709 -156 708 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" grave.cap
 Substitution2: "Substitution cap-Accents 1" grave.cap
 Substitution2: "'case' Versalformen 1" grave.cap
 EndChar
@@ -29116,7 +28909,6 @@ SplineSet
  -239 572.2 -235.7 576.2 -227.6 589 c 2
  -152 708 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" acute.cap
 Substitution2: "Substitution cap-Accents 1" acute.cap
 Substitution2: "'case' Versalformen 1" acute.cap
 EndChar
@@ -29140,7 +28932,6 @@ SplineSet
  -231 608 -193 651 -164 697 c 1
  -114 697 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" circumflex.cap
 Substitution2: "Substitution cap-Accents 1" circumflex.cap
 Substitution2: "'case' Versalformen 1" circumflex.cap
 EndChar
@@ -29209,7 +29000,6 @@ SplineSet
  -78 548 -99 527 -125 527 c 0
  -151 527 -172 548 -172 574 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" dieresis.cap
 Substitution2: "'case' Versalformen 1" dieresis.cap
 Colour: ff00ff
 EndChar
@@ -29260,7 +29050,6 @@ SplineSet
  -112 624 -150 579 -179 533 c 1
  -229 533 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" caron.cap
 Substitution2: "'case' Versalformen 1" caron.cap
 EndChar
 
@@ -30896,7 +30685,6 @@ SplineSet
  471 91 391 -10 277 -10 c 0
  222.1 -10 182.5 -1.4 153 21.3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni03D0
 Substitution2: "'salt' Stilistische Alternativformen 1" uni03D0
 EndChar
 
@@ -31112,7 +30900,6 @@ SplineSet
  453 70 323 -10 243 -10 c 0
  157 -10 39 72 39 344 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" theta1
 Substitution2: "'salt' Stilistische Alternativformen 1" theta1
 EndChar
 
@@ -31187,7 +30974,6 @@ SplineSet
  81.2 54 83 105 83 180 c 2
  83 235 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni03F0
 Substitution2: "'salt' Stilistische Alternativformen 1" uni03F0
 Comment: "Ist das so richtig? In Times anders" 
 EndChar
@@ -31498,7 +31284,6 @@ SplineSet
  159 361 120 283 120 188 c 0
  120 120 158.3 29 257 29 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" sigma1
 Substitution2: "'fina' Wortendeformen 1" sigma1
 EndChar
 
@@ -31596,7 +31381,6 @@ SplineSet
  499 439 551 339 551 237 c 0
  551 42 389 -2 323 -8 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" phi1
 Substitution2: "'salt' Stilistische Alternativformen 1" phi1
 EndChar
 
@@ -45225,7 +45009,6 @@ SplineSet
  269.5 402.8 280.5 395 283 385 c 1
  231 306 193.5 257.5 156 215 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" guilsinglleft.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" guilsinglleft.sc
 Substitution2: "'case' Versalformen 1" guilsinglleft.sc
 EndChar
@@ -45247,7 +45030,6 @@ SplineSet
  93.5 27.2 82.5 35 80 45 c 1
  132 124 169.5 172.5 207 215 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" guilsinglright.sc
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" guilsinglright.sc
 Substitution2: "'case' Versalformen 1" guilsinglright.sc
 Colour: ff00ff
@@ -46412,7 +46194,6 @@ SplineSet
  56 305.9 56.4 317.6 57.1 329 c 1
  15 329 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" Euro.fitted
 Substitution2: "'pnum' Proportionalziffern 1" Euro.fitted
 EndChar
 
@@ -50891,7 +50672,6 @@ SplineSet
  66 257 l 1
  461 257 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni207B uni208B
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208B
 Substitution2: "'sups' Hochgestellte 1" uni207B
 EndChar
@@ -58982,7 +58762,6 @@ SplineSet
  -229 732 -213 733 -209 733 c 0
  -188.1 733 -171 717.5 -171 697 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" hungarumlaut.cap
 Substitution2: "'case' Versalformen 1" hungarumlaut.cap
 EndChar
 
@@ -59055,7 +58834,6 @@ SplineSet
  -231 529 -282 579 -296 664 c 1
  -269 676 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" breve.cap
 Substitution2: "Substitution cap-Accents 1" breve.cap
 Substitution2: "'case' Versalformen 1" breve.cap
 EndChar
@@ -59151,7 +58929,6 @@ SplineSet
  -138 645 -87 595 -73 510 c 1
  -100 498 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" breveinvertedcmb.cap
 Substitution2: "'case' Versalformen 1" breveinvertedcmb.cap
 Colour: ff00ff
 EndChar
@@ -68729,7 +68506,6 @@ SplineSet
  401 230 346 231 308 231 c 0
  273.5 231 204 230 179 228.3 c 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" Adieresis adieresis.sc
 Substitution2: "'ss01' Stilgruppe 1 1" Adieresis
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" adieresis.sc
@@ -68768,7 +68544,6 @@ SplineSet
  52 506 189 658 368 658 c 0
  548 658 689 527 689 329 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" Odieresis odieresis.sc
 Substitution2: "'ss01' Stilgruppe 1 1" Odieresis
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" odieresis.sc
@@ -68818,7 +68593,6 @@ SplineSet
  527 46 544 165 544 277 c 2
  544 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" Udieresis udieresis.sc
 Substitution2: "'ss01' Stilgruppe 1 1" Udieresis
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" udieresis.sc
@@ -69107,7 +68881,6 @@ SplineSet
  216 23.7 217.3 48.3 218 77 c 0
  218.7 99 219 128.3 219 165 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02E4
 Substitution2: "'sups' Hochgestellte 1" uni02E4
 Colour: ff0000
 EndChar
@@ -69315,7 +69088,6 @@ SplineSet
  150 429 165 430 165 432 c 1
  167 429 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02B6
 Substitution2: "'sups' Hochgestellte 1" uni02B6
 Colour: ff0000
 EndChar
@@ -69366,7 +69138,6 @@ SplineSet
  248 -120.7 241.3 -79.7 228 -29 c 1
  213.3 -71.7 206 -104.7 206 -128 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02E0
 Substitution2: "'sups' Hochgestellte 1" uni02E0
 Colour: ff0000
 EndChar
@@ -69779,7 +69550,6 @@ SplineSet
  210.7 -106.7 197 -59.3 197 -2 c 1
  194 96 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02B5
 Substitution2: "'sups' Hochgestellte 1" uni02B5
 Colour: ff0000
 EndChar
@@ -70010,7 +69780,6 @@ SplineSet
  170 458 l 1
  170 347 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02B1
 Substitution2: "'sups' Hochgestellte 1" uni02B1
 Colour: ff0000
 EndChar
@@ -78474,7 +78243,6 @@ SplineSet
  -368 516 l 1
  -274 638 -136 698 0 698 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" breve.cyrcap
 Substitution2: "'case' Versalformen 1" breve.cyrcap
 Comment: "Alternative Akzente fuer Grossbuchstaben" 
 Colour: ffffff
@@ -81802,7 +81570,6 @@ SplineSet
  613.7 618.6 l 1
  772.8 480.9 775.8 304.2 775.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2460
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2460
 Colour: ff00ff
 EndChar
@@ -81852,7 +81619,6 @@ SplineSet
  609.7 618.6 l 1
  768.8 480.9 771.8 304.2 771.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2461
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2461
 Colour: ff00ff
 EndChar
@@ -81905,7 +81671,6 @@ SplineSet
  616.7 618.6 l 1
  775.8 480.9 778.8 304.2 778.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2462
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2462
 Colour: ff00ff
 EndChar
@@ -81958,7 +81723,6 @@ SplineSet
  626.7 618.6 l 1
  785.8 480.9 788.8 304.2 788.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2463
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2463
 Colour: ff00ff
 EndChar
@@ -82007,7 +81771,6 @@ SplineSet
  624.7 618.6 l 1
  783.8 480.9 786.8 304.2 786.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2464
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2464
 Colour: ff00ff
 EndChar
@@ -82051,7 +81814,6 @@ SplineSet
  616.7 618.6 l 1
  775.8 480.9 778.8 304.2 778.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2465
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2465
 Colour: ff00ff
 EndChar
@@ -82090,7 +81852,6 @@ SplineSet
  643.7 618.6 l 1
  802.8 480.9 805.8 304.2 805.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2466
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2466
 Colour: ff00ff
 EndChar
@@ -82145,7 +81906,6 @@ SplineSet
  624.7 618.6 l 1
  783.8 480.9 786.8 304.2 786.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2467
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2467
 Colour: ff80cc
 EndChar
@@ -82189,7 +81949,6 @@ SplineSet
  626.7 618.6 l 1
  785.8 480.9 788.8 304.2 788.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2468
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2468
 Colour: ff00ff
 EndChar
@@ -82245,7 +82004,6 @@ SplineSet
  1003.7 618.6 l 1
  1162.8 480.9 1165.8 304.2 1165.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2469
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2469
 Colour: ff00ff
 EndChar
@@ -82303,7 +82061,6 @@ SplineSet
  1005.7 618.6 l 1
  1164.8 480.9 1167.8 304.2 1167.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni246A
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni246A
 Colour: ff00ff
 EndChar
@@ -82368,7 +82125,6 @@ SplineSet
  1005.7 618.6 l 1
  1164.8 480.9 1167.8 304.2 1167.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni246B
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni246B
 Colour: ff00ff
 EndChar
@@ -82436,7 +82192,6 @@ SplineSet
  1005.7 618.6 l 1
  1164.8 480.9 1167.8 304.2 1167.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni246C
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni246C
 Colour: ff00ff
 EndChar
@@ -82504,7 +82259,6 @@ SplineSet
  1005.7 618.6 l 1
  1164.8 480.9 1167.8 304.2 1167.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni246D
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni246D
 Colour: ff00ff
 EndChar
@@ -82568,7 +82322,6 @@ SplineSet
  1005.7 618.6 l 1
  1164.8 480.9 1167.8 304.2 1167.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni246E
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni246E
 Colour: ff00ff
 EndChar
@@ -82627,7 +82380,6 @@ SplineSet
  1005.7 618.6 l 1
  1164.8 480.9 1167.8 304.2 1167.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni246F
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni246F
 Colour: ff00ff
 EndChar
@@ -82681,7 +82433,6 @@ SplineSet
  995.7 618.6 l 1
  1154.8 480.9 1157.8 304.2 1157.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2470
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2470
 Colour: ff00ff
 EndChar
@@ -82748,7 +82499,6 @@ SplineSet
  975.7 618.6 l 1
  1134.8 480.9 1137.8 304.2 1137.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2471
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2471
 Colour: ff80cc
 EndChar
@@ -82807,7 +82557,6 @@ SplineSet
  1000.7 618.6 l 1
  1159.8 480.9 1162.8 304.2 1162.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2472
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2472
 Colour: ff00ff
 EndChar
@@ -82870,7 +82619,6 @@ SplineSet
  1003.7 618.6 l 1
  1162.8 480.9 1165.8 304.2 1165.8 269.8 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni2473
 Substitution2: "'nalt' Alternate Annotation Forms 1" uni2473
 Colour: ff00ff
 EndChar
@@ -86125,7 +85873,6 @@ SplineSet
  81 0 l 1
  88.5 53.5 90 125.5 90 200 c 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" l.inferior l.sc uni02E1
 Substitution2: "'sinf' Wissenschaftliche Indices 1" l.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02E1
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" l.sc
@@ -86165,7 +85912,6 @@ SplineSet
  146 -10 90 -3 33 17 c 1
  50 101 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" s.inferior s.sc uni02E2
 Substitution2: "'sinf' Wissenschaftliche Indices 1" s.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02E2
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" s.sc
@@ -86202,7 +85948,6 @@ SplineSet
  54 0 37.8 -1.2 28 -3 c 1
  184.5 206.8 l 1
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" uni02E3 uni2093 x.sc
 Substitution2: "'sups' Hochgestellte 1" uni02E3
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2093
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" x.sc
@@ -91256,7 +91001,6 @@ SplineSet
  125 243 117 176 117 146 c 0
  117 56 182 24 228 24 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" eight.fitted eight.taboldstyle uni2078 uni2088
 Substitution2: "'sups' Hochgestellte 1" uni2078
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2088
 Substitution2: "'pnum' Proportionalziffern 1" eight.fitted
@@ -91365,7 +91109,6 @@ SplineSet
  316 94 l 1
  342 49 382.5 33 438 33 c 0
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" germandbls.sc uni1E9E.alt
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'ss03' Stilgruppe 3 1" uni1E9E.alt
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" germandbls.sc
@@ -92291,7 +92034,6 @@ SplineSet
  536 365 l 1
  536 445 l 2
 EndSplineSet
-AlternateSubs2: "'aalt' Access All Alternates lookup 33 subtable" h.sc
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" h.sc
 Colour: ff80cc
