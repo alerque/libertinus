@@ -7,9 +7,9 @@ as a full fork to address some of the bugs in the fonts.
 
 The family consists of:
 
-* Libertine Serif: formerly _Linux Libertine_.
-* Libertine Sans: formerly _Linux Biolinum_.
-* Libertine Mono: formerly _Linux Libertine Mono_.
+* Libertine Serif: forked from *Linux Libertine*.
+* Libertine Sans: forked from *Linux Biolinum*.
+* Libertine Mono: forked from *Linux Libertine Mono*.
 * Libertine Math: an OpenType math font for use in OpenType math-capable
   applications like LuaTeX, XeTeX or MS Word 2007+.
 
