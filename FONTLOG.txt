@@ -1,0 +1,95 @@
+FONTLOG for Libertine
+---------------------
+
+This file provides detailed information on the Libertine font software. This
+information should be distributed along with the Libertine fonts and any
+derivative works.
+
+
+Basic Font Information
+----------------------
+
+Libertine fonts is a fork of the Linux Libertine and Linux Biolinum fonts that
+started as an OpenType math companion of the Libertine font family, but grown
+as a full fork to address some of the bugs in the fonts.
+
+The family consists of:
+
+* Libertine Serif: forked from *Linux Libertine*.
+* Libertine Sans: forked from *Linux Biolinum*.
+* Libertine Mono: forked from *Linux Libertine Mono*.
+* Libertine Math: an OpenType math font for use in OpenType math-capable
+  applications like LuaTeX, XeTeX or MS Word 2007+.
+
+Libertine development is currently hosted on:
+http://github.com/khaledhosny/libertine
+
+Feature requests, bug reports and patches should be directed to our issue
+tracker.
+
+
+
+Information for Contributors
+----------------------------
+
+Libertine is released under the OFL 1.1 - http://scripts.sil.org/OFL For
+information on what you're allowed to change or modify, consult the OFL-1.1.txt
+and OFL-FAQ.txt files. The OFL-FAQ also gives a very general rationale and
+various recommendations regarding why you would want to contribute to the
+project or make your own version of the font.
+
+See the project website for the current master and the various branches:
+http://github.com/khaledhosny/libertine
+
+
+ChangeLog
+---------
+
+18 Jan 2016 (Khaled Hosny) <Libertine> Version 6.0.0
+First release of the forked Libertine fonts, changes since the fork include:
+- New Libertine Math font.
+- Dropped the use of Unicode PUA for alternate glyphs in favour of making them
+  encoded. 
+- Dropped the TrueType versions of the fonts.
+- Dropped the Romanian-specific cedilla/comma substitution, it is no longer
+  recommended to do this at font feature level.
+- Fixed upstream font kerning regression.
+- Renamed the glyphs to follow the recommended Adobe Glyph Names for New Fonts.
+- Fixed lots of inconsistencies in the font files.
+- Fixed the encoding of Indian Rubee symbol.
+- Made the sans question mark a bit more sans-like.
+- Fixed sans interrobang to not use the serif glyphs.
+- Removed some bogus ligatures like “!!”, “??”, “...”, etc.
+- Fixed the “short f” feature.
+- Made the “bunny ears” glyphs with dieresis the alternate form, and made the
+  more conventional form the default.
+- Dropped the “aalt” feature, since it is of limited use and hard to keep up to
+  date.
+- Fixed diaeresis positioning in bold serif.
+- Fixed the following upstream bugs:
+  http://sourceforge.net/p/linuxlibertine/bugs/315/
+  http://sourceforge.net/p/linuxlibertine/bugs/311/
+  http://sourceforge.net/p/linuxlibertine/bugs/303/
+  http://sourceforge.net/p/linuxlibertine/bugs/254/
+  http://sourceforge.net/p/linuxlibertine/bugs/293/
+  http://sourceforge.net/p/linuxlibertine/bugs/291/
+  http://sourceforge.net/p/linuxlibertine/bugs/275/
+  http://sourceforge.net/p/linuxlibertine/bugs/235/
+
+
+Acknowledgements
+-------------------------
+If you make modifications be sure to add your name (N), email (E), web-address
+(W) and description (D). This list is sorted by last name in alphabetical
+order.)
+
+N: Khaled Hosny
+E: khaledhosny@eglug.org
+W: http://www.khaledhosny.org
+D: Libertine fork author
+
+N: Philipp Poll
+E: gillian@linuxlibertine.org
+W: http://www.linuxlibertine.org
+D: Original authors
+
