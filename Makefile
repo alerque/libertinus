@@ -70,3 +70,16 @@ check: $(SFD)
 	     echo "   CHK	"`basename $(sfd)`; \
 	     $(PY) $(FINDMISSING) $(sfd); \
 	  )
+
+dist: check $(OTF) $(PDF)
+	@echo "Making dist tarball"
+	@mkdir -p $(DIST)/$(DOC)
+	@cp $(OTF) $(DIST)
+	@cp $(PDF) $(DIST)/$(DOC)
+	@cp $(DOC)/libertine-testmath.pdf $(DIST)/$(DOC)
+	@cp OFL.txt FONTLOG.txt $(DIST)
+	@cp README.md $(DIST)/README.txt
+	@zip -r $(DIST).zip $(DIST)
+
+clean:
+	@rm -rf $(DIST) $(DIST).zip
