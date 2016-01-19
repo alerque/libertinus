@@ -4,7 +4,6 @@ VERSION=6.0.0
 DIST=$(NAME)-$(VERSION)
 
 SRC=sources
-WEB=webfonts
 DOC=documentation
 TOOLS=tools
 
@@ -12,7 +11,6 @@ PY=python2.7
 BUILD=$(TOOLS)/build.py
 FINDMISSING=$(TOOLS)/find-missing-glyphs.py
 SFNTTOOL=sfnttool
-WOFF2_COMPRESS=woff2_compress
 SAMPLE=fntsample
 OUTLINE=pdfoutline
 
@@ -29,14 +27,11 @@ FONTS=math-regular \
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 OTF=$(FONTS:%=$(NAME)%.otf)
-WOFF=$(FONTS:%=$(WEB)/$(NAME)%.woff)
-WOF2=$(FONTS:%=$(WEB)/$(NAME)%.woff2)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-table.pdf)
 
-all: otf web
+all: otf
 
 otf: $(OTF)
-web: $(WOFF) $(WOF2)
 doc: $(PDF)
 
 libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/copyright.txt $(SRC)/features/ssty.fea
@@ -46,17 +41,6 @@ libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/copyright.txt
 %.otf: $(SRC)/%.sfd $(SRC)/copyright.txt
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt
-
-$(WEB)/%.woff: %.otf
-	@echo "Building $@"
-	@mkdir -p $(WEB)
-	@$(SFNTTOOL) -w $< $@
-
-$(WEB)/%.woff2: %.otf
-	@echo "Building $@"
-	@mkdir -p $(WEB)
-	@$(WOFF2_COMPRESS) $< 1>/dev/null
-	@mv $(@F) $(WEB)
 
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"
