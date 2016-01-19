@@ -17,8 +17,15 @@ OUTLINE=pdfoutline
 NULL=
 
 FONTS=math-regular \
-      sans-regular sans-bold sans-italic serif-regular \
-      serif-semibold serif-bold serif-italic serif-semibolditalic serif-bolditalic \
+      sans-regular \
+      sans-bold \
+      sans-italic \
+      serif-regular \
+      serif-semibold \
+      serif-bold \
+      serif-italic \
+      serif-semibolditalic \
+      serif-bolditalic \
       serifdisplay-regular \
       serifinitials-regular \
       mono-regular \
