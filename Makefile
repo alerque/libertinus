@@ -1,4 +1,4 @@
-NAME=libertine
+NAME=libertinus
 VERSION=6.0
 
 DIST=$(NAME)-$(VERSION)
