@@ -60,12 +60,12 @@ Lookup: 258 0 0 "'kern' Greek kerning"  {"'kern' Greek Kerning" [150,0,6] } ['ke
 Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Top rechts"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark"  {"'mkmk' Mark to Mark-1"  } ['mkmk' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Kerning"  {"'kern' Latin kerning" [150,0,4] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  {"LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" [150,15,0] } ['kern' ('latn' <'dflt' > ) ]
-Lookup: 258 0 0 "LinLibertineOZ-'kern' Kerning"  {"LinLibertineOZ-'kern' Kerning 1" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "LinLibertineOI-'kern' Kerning"  {"LinLibertineOI-'kern' Latin kerning" [150,0,0] "LinLibertineOI-'kern' Greek Kerning" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "LinBiolinumO-'kern' Kerning"  {"LinBiolinumO-'kern' Latin kerning" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "LinBiolinumOI-'kern' Kerning"  {"LinBiolinumOI-'kern' Latin kerning" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "LinBiolinumOB-'kern' Kerning"  {"LinBiolinumOB-'kern' Latin kerning" [150,0,0] "LinBiolinumOB-'kern' Greek Kerning" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1"  {"'kern' Horizontales Kerning in Latin lookup 1" [150,15,0] } ['kern' ('latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Bold Kerning"  {"'kern' Bold Kerning 1" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Italic Kerning"  {"'kern' Italic Latin kerning" [150,0,0] "'kern' Italic Greek Kerning" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Sans Kerning"  {"'kern' Sans Latin kerning" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Sans Italic Kerning"  {"'kern' Sans Italic Latin kerning" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Sans Bold Kerning"  {"'kern' Sans Bold Latin kerning" [150,0,0] "'kern' Sans Bold Greek Kerning" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 2
 "dotted" 3 i j
 DEI: 91125
@@ -146,7 +146,7 @@ KernClass2: 21 21 "'kern' Latin kerning"
  193 uni00B2 uni00B3 uni00B9 uni2070 uni2071 uni2074 uni2075 uni2076 uni2077 uni2078 uni2079 uni207A uni207B uni207C uni207D uni207E uni207F uni2098 uni2099 uniE0C0 uniE0C4 uniE0CE q.superior degree
  1 u
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 76 {} 80 {} 0 {} 80 {} 40 {} 0 {} 88 {} 0 {} 0 {} 55 {} 24 {} 24 {} -5 {} -49 {} -34 {} 0 {} -49 {} -63 {} -63 {} -49 {} -20 {} 0 {} 0 {} -59 {} 10 {} 0 {} 37 {} 0 {} -39 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} 0 {} -61 {} -44 {} -71 {} -60 {} -40 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 0 {} -39 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} 0 {} -112 {} -88 {} -80 {} -60 {} -40 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 0 {} -24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -5 {} -34 {} 37 {} 0 {} 10 {} 10 {} 0 {} -29 {} -29 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} 0 {} -49 {} -59 {} -8 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -24 {} -40 {} -10 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -65 {} 0 {} -73 {} 0 {} 0 {} -12 {} -12 {} 0 {} -12 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -34 {} 0 {} -61 {} -73 {} -73 {} -10 {} 0 {} 0 {} -122 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -308 {} 0 {} 0 {} -49 {} -49 {} -49 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -17 {} 0 {} 0 {} -24 {} 0 {} -17 {} -12 {} 0 {} 0 {} 73 {} -37 {} 0 {} 12 {} 12 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 24 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 12 {} 49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -49 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
-KernClass2: 15 15 "LinLibertineOZ-'kern' Kerning 1" 
+KernClass2: 15 15 "'kern' Bold Kerning 1" 
  6 u1D41F
  20 u1D413 u1D6AA u1D6BB
  13 u1D418 u1D6BC
@@ -176,7 +176,7 @@ KernClass2: 15 15 "LinLibertineOZ-'kern' Kerning 1"
  6 u1D414
  139 u1D401 u1D403 u1D404 u1D405 u1D407 u1D408 u1D40A u1D40B u1D40D u1D40F u1D411 u1D6A9 u1D6AA u1D6AC u1D6AE u1D6B0 u1D6B1 u1D6B4 u1D6B7 u1D6B8
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 37 {} 73 {} 0 {} 0 {} 0 {} 24 {} 24 {} 24 {} -5 {} -49 {} -34 {} -49 {} -63 {} -49 {} -49 {} 0 {} 0 {} 37 {} 24 {} 0 {} 24 {} 24 {} 24 {} -37 {} -66 {} -24 {} -61 {} -71 {} -49 {} -49 {} 0 {} 0 {} 24 {} 24 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} -112 {} -49 {} -44 {} -39 {} 0 {} 0 {} 24 {} 24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} 24 {} 37 {} 0 {} -5 {} -34 {} -24 {} 5 {} 10 {} 10 {} -29 {} 5 {} 5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 10 {} 10 {} -49 {} -5 {} 0 {} 2 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} -7 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} -5 {} -5 {} -20 {} 5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -10 {} 7 {} 5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -34 {} 0 {} 0 {} -12 {} -12 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 37 {} 0 {} 24 {} 0 {} 0 {} 0 {} -59 {} -37 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} 24 {} 49 {} 29 {}
-KernClass2: 9 10 "LinLibertineOI-'kern' Greek Kerning" 
+KernClass2: 9 10 "'kern' Italic Greek Kerning" 
  13 u1D6E4 u1D6F5
  6 u1D6F6
  13 u1D6EB u1D6F8
@@ -195,7 +195,7 @@ KernClass2: 9 10 "LinLibertineOI-'kern' Greek Kerning"
  13 u1D707 u1D718
  27 u1D702 u1D704 u1D705 u1D710
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 30 {} -24 {} -23 {} -35 {} -40 {} -20 {} 0 {} -20 {} 0 {} 20 {} 0 {} -17 {} -16 {} -60 {} -50 {} -30 {} -20 {} -30 {} 0 {} 20 {} 20 {} -16 {} -14 {} 0 {} -51 {} -31 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} 0 {} 0 {} 0 {} -49 {} -40 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} -5 {} 0 {} -60 {} -60 {} -60 {} -40 {} 20 {} -27 {} -16 {} 0 {} -44 {} 0 {} 20 {} 0 {} 0 {} 0 {} -60 {} -30 {} -20 {} 0 {} 0 {}
-KernClass2: 16 14 "LinLibertineOI-'kern' Latin kerning" 
+KernClass2: 16 14 "'kern' Italic Latin kerning" 
  6 u1D453
  6 u1D447
  6 u1D44C
@@ -225,7 +225,7 @@ KernClass2: 16 14 "LinLibertineOI-'kern' Latin kerning"
  6 u1D448
  6 u1D462
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 40 {} 0 {} 0 {} 0 {} 55 {} 24 {} 24 {} -5 {} -49 {} -34 {} -49 {} -63 {} -49 {} -20 {} 0 {} 37 {} -39 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} -61 {} -71 {} -60 {} -40 {} 0 {} 24 {} -39 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} -112 {} -70 {} -60 {} -40 {} 0 {} 24 {} -24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 24 {} 0 {} 0 {} -5 {} -34 {} 37 {} 0 {} 10 {} 10 {} -29 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} -49 {} -8 {} 0 {} 0 {} -59 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} 0 {} 0 {} -20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -40 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -100 {} 0 {} 0 {} -12 {} -12 {} -50 {} 0 {} 0 {} -34 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 12 {} 49 {} 0 {}
-KernClass2: 16 15 "LinBiolinumO-'kern' Latin kerning" 
+KernClass2: 16 15 "'kern' Sans Latin kerning" 
  6 u1D5BF
  6 u1D5B3
  6 u1D5B8
@@ -256,7 +256,7 @@ KernClass2: 16 15 "LinBiolinumO-'kern' Latin kerning"
  6 u1D5B4
  6 u1D5CE
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 80 {} 40 {} 0 {} 0 {} 0 {} 55 {} 24 {} 24 {} -5 {} -49 {} -34 {} -49 {} -63 {} -49 {} -20 {} 0 {} 0 {} 37 {} -39 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} -61 {} -71 {} -60 {} -40 {} 0 {} 0 {} 24 {} -39 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} -112 {} -80 {} -60 {} -40 {} 0 {} 0 {} 24 {} -24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} -5 {} -34 {} 37 {} 0 {} 10 {} 10 {} -29 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} -49 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -40 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -65 {} 0 {} 0 {} -12 {} -12 {} 0 {} 0 {} 0 {} 0 {} -34 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} 12 {} 49 {} 0 {}
-KernClass2: 16 15 "LinBiolinumOI-'kern' Latin kerning" 
+KernClass2: 16 15 "'kern' Sans Italic Latin kerning" 
  6 u1D627
  6 u1D61B
  6 u1D620
@@ -287,7 +287,7 @@ KernClass2: 16 15 "LinBiolinumOI-'kern' Latin kerning"
  6 u1D61C
  6 u1D636
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 80 {} 40 {} 0 {} 0 {} 0 {} 55 {} 24 {} 24 {} -5 {} -49 {} -34 {} -49 {} -63 {} -49 {} -20 {} 0 {} 0 {} 37 {} -39 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} -61 {} -71 {} -60 {} -40 {} 0 {} 0 {} 24 {} -39 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} -112 {} -70 {} -60 {} -40 {} 0 {} 0 {} 24 {} -24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} -5 {} -34 {} 37 {} 0 {} 10 {} 10 {} -29 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} -49 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} 0 {} 0 {} -20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -40 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -100 {} 0 {} 0 {} -12 {} -12 {} -50 {} 0 {} 0 {} 0 {} -34 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} 12 {} 49 {} 0 {}
-KernClass2: 9 10 "LinBiolinumOB-'kern' Greek Kerning" 
+KernClass2: 9 10 "'kern' Sans Bold Greek Kerning" 
  13 u1D758 u1D769
  6 u1D76A
  13 u1D75F u1D76C
@@ -306,7 +306,7 @@ KernClass2: 9 10 "LinBiolinumOB-'kern' Greek Kerning"
  6 u1D77B
  27 u1D776 u1D778 u1D779 u1D784
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 30 {} -24 {} -23 {} -35 {} -40 {} -20 {} 0 {} -20 {} 0 {} 20 {} 0 {} -17 {} -16 {} -60 {} -50 {} -30 {} -20 {} -30 {} 0 {} 20 {} 20 {} -16 {} -14 {} 0 {} -51 {} -31 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} 0 {} 0 {} 0 {} -49 {} -40 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} -5 {} 0 {} -60 {} -60 {} -60 {} -40 {} 20 {} -27 {} -16 {} 0 {} -44 {} 0 {} 20 {} 0 {} 0 {} 0 {} -60 {} -30 {} -20 {} 0 {} 0 {}
-KernClass2: 16 15 "LinBiolinumOB-'kern' Latin kerning" 
+KernClass2: 16 15 "'kern' Sans Bold Latin kerning" 
  6 u1D5F3
  6 u1D5E7
  6 u1D5EC
@@ -111591,7 +111591,7 @@ SplineSet
  513.5 658 520.8 648 525 627 c 2
  633 91 l 2
 EndSplineSet
-Kerns2: 2562 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2560 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2559 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2557 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2541 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2540 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2536 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2534 -76 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2533 -89 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2532 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2531 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2528 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2526 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2518 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2514 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2562 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2560 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2559 -33 "'kern' Horizontales Kerning in Latin lookup 1"  2557 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2541 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2540 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2536 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2534 -76 "'kern' Horizontales Kerning in Latin lookup 1"  2533 -89 "'kern' Horizontales Kerning in Latin lookup 1"  2532 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2531 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2528 -33 "'kern' Horizontales Kerning in Latin lookup 1"  2526 -33 "'kern' Horizontales Kerning in Latin lookup 1"  2518 -33 "'kern' Horizontales Kerning in Latin lookup 1"  2514 -33 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D469
@@ -111707,7 +111707,7 @@ SplineSet
  664 63 467 0 324 0 c 2
  23 0 l 1
 EndSplineSet
-Kerns2: 2535 -13 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2535 -13 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D46C
@@ -111820,7 +111820,7 @@ SplineSet
  271 323 l 1
  227 77 l 2
 EndSplineSet
-Kerns2: 2555 -18 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -31 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -31 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -31 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2555 -18 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -31 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -31 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -31 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D46E
@@ -112081,7 +112081,7 @@ SplineSet
  322 368 331 371 348 385 c 2
  578 574 l 2
 EndSplineSet
-Kerns2: 2562 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2559 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2526 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2562 -33 "'kern' Horizontales Kerning in Latin lookup 1"  2559 -33 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2526 -33 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D473
@@ -112324,7 +112324,7 @@ SplineSet
  48 33 l 2
  86 33 103 45 108 77 c 2
 EndSplineSet
-Kerns2: 2552 -18 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -18 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -18 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -18 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -18 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -18 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D478
@@ -112415,7 +112415,7 @@ SplineSet
  157 647 288 654 400 654 c 0
  515 654 617 604 595 482 c 0
 EndSplineSet
-Kerns2: 2552 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -11 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D47A
@@ -112450,7 +112450,7 @@ SplineSet
  146 605 252 658 334 658 c 0
  424 658 426 639 477 631 c 1
 EndSplineSet
-Kerns2: 2557 -13 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2557 -13 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D47B
@@ -112498,7 +112498,7 @@ SplineSet
  181 669 l 1
  180 663 177 646 197 646 c 2
 EndSplineSet
-Kerns2: 2563 -53 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2562 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2560 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2559 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2558 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2556 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2555 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2551 -66 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2550 -66 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2540 -66 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -56 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2536 44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2535 44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2533 44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2531 18 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2512 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2563 -53 "'kern' Horizontales Kerning in Latin lookup 1"  2562 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2560 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2559 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2558 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2556 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2555 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2551 -66 "'kern' Horizontales Kerning in Latin lookup 1"  2550 -66 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2540 -66 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -56 "'kern' Horizontales Kerning in Latin lookup 1"  2536 44 "'kern' Horizontales Kerning in Latin lookup 1"  2535 44 "'kern' Horizontales Kerning in Latin lookup 1"  2533 44 "'kern' Horizontales Kerning in Latin lookup 1"  2531 18 "'kern' Horizontales Kerning in Latin lookup 1"  2512 -44 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D47C
@@ -112597,7 +112597,7 @@ SplineSet
  570.9 576.4 575.3 586.9 575.3 594.5 c 0
  575.3 609.1 558.8 613 518 613 c 0
 EndSplineSet
-Kerns2: 2552 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2546 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -58 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2512 -89 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2546 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -58 "'kern' Horizontales Kerning in Latin lookup 1"  2512 -89 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D47E
@@ -112667,7 +112667,7 @@ SplineSet
  359 33 l 2
  345 4 321 -12 297 -12 c 0
 EndSplineSet
-Kerns2: 2562 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2555 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -36 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2546 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -36 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2512 -76 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2562 -33 "'kern' Horizontales Kerning in Latin lookup 1"  2555 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -36 "'kern' Horizontales Kerning in Latin lookup 1"  2546 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -36 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2512 -76 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D47F
@@ -112735,7 +112735,7 @@ SplineSet
  193 605 158 613 142 613 c 0
  135 613 131 615 132 620 c 2
 EndSplineSet
-Kerns2: 2562 -33 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -18 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2562 -33 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -18 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D480
@@ -112791,7 +112791,7 @@ SplineSet
  198 33 l 2
  237 33 252 44 257 72 c 2
 EndSplineSet
-Kerns2: 2556 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2555 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2554 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2553 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2551 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2550 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2547 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2546 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2544 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2541 -22 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2540 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -44 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2556 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2555 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2554 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2553 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2551 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2550 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2547 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2546 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2544 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2541 -22 "'kern' Horizontales Kerning in Latin lookup 1"  2540 -44 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -44 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D481
@@ -112907,7 +112907,7 @@ SplineSet
  342 698 345 695 345 688 c 1
  345 688 335.2 647.5 320 583 c 2
 EndSplineSet
-Kerns2: 2540 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2540 11 "'kern' Horizontales Kerning in Latin lookup 1"  2542 11 "'kern' Horizontales Kerning in Latin lookup 1"  2552 11 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D484
@@ -113009,7 +113009,7 @@ SplineSet
  79 278 175 444 358 444 c 0
  454 444 475 405 475 369 c 0
 EndSplineSet
-Kerns2: 2561 -12 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2560 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2559 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2557 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2554 12 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2541 12 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2540 12 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2531 -68 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2561 -12 "'kern' Horizontales Kerning in Latin lookup 1"  2560 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2559 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2557 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2554 12 "'kern' Horizontales Kerning in Latin lookup 1"  2541 12 "'kern' Horizontales Kerning in Latin lookup 1"  2540 12 "'kern' Horizontales Kerning in Latin lookup 1"  2531 -68 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D487
@@ -113052,7 +113052,7 @@ SplineSet
  130 149 147.9 251.8 154 280 c 2
  177 387 l 1
 EndSplineSet
-Kerns2: 2539 36 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2541 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2543 -36 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2545 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2549 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2539 36 "'kern' Horizontales Kerning in Latin lookup 1"  2541 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2543 -36 "'kern' Horizontales Kerning in Latin lookup 1"  2545 11 "'kern' Horizontales Kerning in Latin lookup 1"  2549 11 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -11 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D488
@@ -113100,7 +113100,7 @@ SplineSet
  218 234 217 172 264 172 c 0
  296.2 172 321 229 321 291 c 0
 EndSplineSet
-Kerns2: 2552 -18 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -18 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -9 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D489
@@ -113142,7 +113142,7 @@ SplineSet
  88 -10 83.1 0.5 83.1 17.2 c 0
  83.1 27 91.2 51.9 95.8 72 c 2
 EndSplineSet
-Kerns2: 2562 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2562 -11 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D48A
@@ -113262,7 +113262,7 @@ SplineSet
  88 -10 83.1 0.5 83.1 17.2 c 0
  83.1 27 91.2 51.9 95.8 72 c 2
 EndSplineSet
-Kerns2: 2552 -37 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -13 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -4 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -37 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -13 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D48D
@@ -113349,7 +113349,7 @@ SplineSet
  425 321 l 2
  425.1 321.4 425.2 321.8 425.3 322.1 c 0
 EndSplineSet
-Kerns2: 2557 -13 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2557 -13 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D48F
@@ -113418,7 +113418,7 @@ SplineSet
  517 121 383 -10 246 -10 c 0
  103 -10 72 111 72 165 c 0
 EndSplineSet
-Kerns2: 2562 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2561 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2560 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2559 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2557 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2554 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2541 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2540 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2531 -62 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2562 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2561 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2560 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2559 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2557 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2554 11 "'kern' Horizontales Kerning in Latin lookup 1"  2541 11 "'kern' Horizontales Kerning in Latin lookup 1"  2540 11 "'kern' Horizontales Kerning in Latin lookup 1"  2531 -62 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D491
@@ -113463,7 +113463,7 @@ SplineSet
  -40 -228 -41 -207 -34 -201 c 1
  26.7 -198 43.4 -192.3 62 -110 c 2
 EndSplineSet
-Kerns2: 2552 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 11 "'kern' Horizontales Kerning in Latin lookup 1"  2542 11 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D492
@@ -113539,7 +113539,7 @@ SplineSet
  291.5 393.8 283 359 274.3 320.2 c 2
  266 285 l 1
 EndSplineSet
-Kerns2: 2552 -2 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2544 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2541 -4 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -2 "'kern' Horizontales Kerning in Latin lookup 1"  2544 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2541 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D494
@@ -113612,7 +113612,7 @@ SplineSet
  128.1 -10 113.3 12.7 113.3 47.1 c 0
  113.3 67.7 117.8 95.4 123 118 c 2
 EndSplineSet
-Kerns2: 2552 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2557 -7 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2557 -7 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D496
@@ -113690,7 +113690,7 @@ SplineSet
  285 444 291.5 399.2 297 344 c 2
  318.3 131 l 1
 EndSplineSet
-Kerns2: 2542 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2540 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -4 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2542 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2540 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D498
@@ -113736,7 +113736,7 @@ SplineSet
  164 362 140 339 127 319.5 c 1
  112.7 328.7 106.7 336.3 102 350 c 1
 EndSplineSet
-Kerns2: 2552 -7 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -7 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -7 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -7 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -7 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -7 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D499
@@ -113782,7 +113782,7 @@ SplineSet
  206.8 123.6 239.2 167.5 258.7 202.5 c 1
  240.7 255.3 201.7 340 201.7 340 c 2
 EndSplineSet
-Kerns2: 2542 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2552 -11 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2542 -11 "'kern' Horizontales Kerning in Latin lookup 1"  2552 -11 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D49A
@@ -113821,7 +113821,7 @@ SplineSet
  140 410 173 444 234 444 c 0
  278 444 285.8 398.4 295 344 c 2
 EndSplineSet
-Kerns2: 2552 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2542 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2540 -9 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1"  2538 -4 "LinLibertineOZI-'kern' Horizontales Kerning in Latin lookup 1" 
+Kerns2: 2552 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2542 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2540 -9 "'kern' Horizontales Kerning in Latin lookup 1"  2538 -4 "'kern' Horizontales Kerning in Latin lookup 1" 
 EndChar
 
 StartChar: u1D49B
