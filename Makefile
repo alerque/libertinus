@@ -41,11 +41,11 @@ all: otf
 otf: $(OTF)
 doc: $(PDF)
 
-$(NAME)math-regular.otf: $(SRC)/$(NAME)math-regular.sfd $(SRC)/copyright.txt $(SRC)/features/ssty.fea
+$(NAME)math-regular.otf: $(SRC)/$(NAME)math-regular.sfd $(SRC)/copyright.txt $(SRC)/features/ssty.fea Makefile $(BUILD)
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt -f $(SRC)/features/ssty.fea
 
-%.otf: $(SRC)/%.sfd $(SRC)/copyright.txt
+%.otf: $(SRC)/%.sfd $(SRC)/copyright.txt Makefile $(BUILD)
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt
 
