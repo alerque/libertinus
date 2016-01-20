@@ -22,7 +22,7 @@ font.version = args.version
 font.copyright = "Copyright 2003-2012 by Philipp H. Poll, copyright 2012-%s Khaled Hosny." % date.today().year
 
 font.appendSFNTName("English (US)", "Manufacturer", "Khaled Hosny")
-font.appendSFNTName("English (US)", "Vendor URL", "https://github.com/khaledhosny/libertine")
+font.appendSFNTName("English (US)", "Vendor URL", "https://github.com/khaledhosny/libertinus")
 font.appendSFNTName("English (US)", "License URL", "http://scripts.sil.org/OFL")
 font.appendSFNTName("English (US)", "License", '\
 This Font Software is licensed under the SIL Open Font License, Version 1.1. \
