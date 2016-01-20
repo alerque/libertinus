@@ -34,4 +34,4 @@ font.os2_vendor = "BLQ "
 
 font.selection.all()
 font.autoHint()
-font.generate(args.output, flags=("opentype"))
+font.generate(args.output, flags=("opentype", "no-mac-names"))
