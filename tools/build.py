@@ -19,7 +19,7 @@ if args.feature_file:
 copyright = args.copyright_file.read()
 
 font.version = args.version
-font.copyright = "Copyright 2003-2012 by Philipp H. Poll, copyright 2012-%s Khaled Hosny." % date.today().year
+font.copyright = "Copyright 2003-2012 by Philipp H. Poll. Copyright 2012-%s Khaled Hosny." % date.today().year
 
 font.appendSFNTName("English (US)", "Manufacturer", "Khaled Hosny")
 font.appendSFNTName("English (US)", "Vendor URL", "https://github.com/khaledhosny/libertinus")
