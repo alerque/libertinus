@@ -41,7 +41,7 @@ all: otf
 otf: $(OTF)
 doc: $(PDF)
 
-libertinemath-regular.otf: $(SRC)/libertinemath-regular.sfd $(SRC)/copyright.txt $(SRC)/features/ssty.fea
+$(NAME)math-regular.otf: $(SRC)/$(NAME)math-regular.sfd $(SRC)/copyright.txt $(SRC)/features/ssty.fea
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt -f $(SRC)/features/ssty.fea
 
@@ -67,7 +67,7 @@ dist: check $(OTF) $(PDF)
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
 	@cp $(PDF) $(DIST)/$(DOC)
-	@cp $(DOC)/libertine-testmath.pdf $(DIST)/$(DOC)
+	@cp $(DOC)/$(NAME)-testmath.pdf $(DIST)/$(DOC)
 	@cp OFL.txt FONTLOG.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
 	@zip -r $(DIST).zip $(DIST)
