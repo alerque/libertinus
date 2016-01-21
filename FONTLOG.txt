@@ -45,9 +45,15 @@ http://github.com/khaledhosny/libertinus
 ChangeLog
 ---------
 
-18 Jan 2016 (Khaled Hosny) <Libertinus> Version 6.0.0
-First release of the forked Libertinus fonts, changes since the fork include:
-- New Libertinus Math font.
+22 Jan 2016 (Khaled Hosny) <Libertinus> Version 6.1
+- Renamed the fonts from Libertine to Libertinus to be complaint with the
+  Reserved Font Name clause of Linux Libertine license. Thanks to Frédéric Wang
+  for the new name.
+- Dropped legacy Mac platform font names.
+
+18 Jan 2016 (Khaled Hosny) <Libertine> Version 6.0
+First release of the forked Libertine fonts, changes since the fork include:
+- New Libertine Math font.
 - Dropped the use of Unicode PUA for alternate glyphs in favour of making them
   encoded. 
 - Dropped the TrueType versions of the fonts.
