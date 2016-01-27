@@ -62,7 +62,6 @@ Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc"  {"'smcp' Gemeine nach
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen"  {"'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  {"'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE"  {"'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standardligaturen"  {"'liga' Standardligaturen 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic"  {"'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Cyrillic lookup 0"  {"'kern' Horizontales Kerning in Cyrillic lookup 0"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1"  {"'kern' Horizontales Kerning in Latin lookup 1"  } ['kern' ('latn' <'dflt' > ) ]
@@ -74667,7 +74666,7 @@ SplineSet
  345.1 512.3 293.6 459 235 459 c 0
  186.9 459 151.9 495.3 151.9 543.2 c 0
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" degree C
+Ligature2: "'liga' Standard Ligatures in Latin lookup 0" degree C
 EndChar
 
 StartChar: uni2105
@@ -74832,7 +74831,7 @@ SplineSet
  344.1 512.3 292.6 459 234 459 c 0
  185.9 459 150.9 495.3 150.9 543.2 c 0
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" degree F
+Ligature2: "'liga' Standard Ligatures in Latin lookup 0" degree F
 EndChar
 
 StartChar: uni210D
@@ -85452,7 +85451,6 @@ SplineSet
  518 290 l 1
  558 320 598 349 637 378 c 0
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" f k
 Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f k
 LCarets2: 1 291 
 EndChar
@@ -85519,7 +85517,6 @@ SplineSet
  455 57 454 57 454 57 c 1
  454 57 456 57 457 58 c 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" f t
 Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f t
 LCarets2: 1 274 
 EndChar
@@ -85819,7 +85816,7 @@ SplineSet
  59 36 l 2
  84 36 95 50 100 76 c 2
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" longs longs
+Ligature2: "'liga' Standard Ligatures in Latin lookup 0" longs longs
 EndChar
 
 StartChar: Euro.fitted
@@ -86141,7 +86138,7 @@ SplineSet
  509 80 479 60 442 45 c 0
  407 30 369 23 329 23 c 0
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" longs l
+Ligature2: "'liga' Standard Ligatures in Latin lookup 0" longs l
 EndChar
 
 StartChar: uniE044
@@ -86402,7 +86399,6 @@ SplineSet
  886 685 878.1 647.5 863 583 c 2
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "'liga' Standardligaturen 1" T h
 Ligature2: "'liga' Standard Ligatures in Latin lookup 0" T h
 EndChar
 
@@ -89238,7 +89234,7 @@ SplineSet
  362.5 -12 350.4 -11.4 338.5 -10.3 c 1
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "'liga' Standardligaturen 1" Q u.sc
+Ligature2: "'liga' Standard Ligatures in Latin lookup 0" Q u.sc
 EndChar
 
 StartChar: J.alt
@@ -89303,7 +89299,7 @@ SplineSet
  182 -38.2 209.3 -19.8 234.1 -6.8 c 1
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "'liga' Standardligaturen 1" q.sc u.sc
+Ligature2: "'liga' Standard Ligatures in Latin lookup 0" q.sc u.sc
 EndChar
 
 StartChar: parenleft.sc
@@ -89726,7 +89722,6 @@ SplineSet
  388 434 l 1
 EndSplineSet
 Kerns2: 69 -9 "'kern' Horizontales Kerning in Latin lookup 1" 
-Ligature2: "'liga' Standardligaturen 1" f f
 Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f f
 LCarets2: 1 269 
 EndChar
@@ -89835,7 +89830,6 @@ SplineSet
  130 149 147.9 251.8 154 280 c 2
  177 387 l 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" f l
 Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f l
 LCarets2: 1 290 
 EndChar
@@ -89987,8 +89981,6 @@ SplineSet
  375 434 l 1
  388 434 l 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" f f l
-Ligature2: "'liga' Standardligaturen 1" f_f l
 Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f_f l
 Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f f l
 LCarets2: 2 275 559 
@@ -90046,7 +90038,6 @@ SplineSet
  616 391 589 386 571 386 c 2
  498 386 l 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" longs t
 Ligature2: "'liga' Standard Ligatures in Latin lookup 0" longs t
 LCarets2: 1 251 
 EndChar
