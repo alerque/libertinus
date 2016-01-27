@@ -4,6 +4,7 @@ VERSION=6.2
 DIST=$(NAME)-$(VERSION)
 
 SRC=sources
+FEA=$(SRC)/features
 DOC=documentation
 TOOLS=tools
 
@@ -45,9 +46,9 @@ $(NAME)math-regular.otf: $(SRC)/$(NAME)math-regular.sfd $(SRC)/copyright.txt $(S
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt -f $(SRC)/features/ssty.fea
 
-%.otf: $(SRC)/%.sfd $(SRC)/copyright.txt Makefile $(BUILD)
+%.otf: $(SRC)/%.sfd $(FEA)/%.fea $(SRC)/copyright.txt Makefile $(BUILD)
 	@echo "Building $@"
-	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt
+	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt -f $(FEA)/$(@:%.otf=%.fea)
 
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"
