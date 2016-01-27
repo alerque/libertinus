@@ -42,9 +42,9 @@ all: otf
 otf: $(OTF)
 doc: $(PDF)
 
-%.otf: $(SRC)/%.sfd $(FEA)/%.fea $(SRC)/copyright.txt Makefile $(BUILD)
+%.otf: $(SRC)/%.sfd $(FEA)/%.fea Makefile $(BUILD)
 	@echo "Building $@"
-	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -c $(SRC)/copyright.txt -f $(FEA)/$(@:%.otf=%.fea)
+	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
 
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"
