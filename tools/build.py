@@ -1,6 +1,7 @@
 import fontforge
 import argparse
 from datetime import date
+from os import path
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", required=True)
@@ -13,7 +14,7 @@ args = parser.parse_args()
 
 font = fontforge.open(args.input)
 
-if args.feature_file:
+if args.feature_file and path.isfile(args.feature_file):
     font.mergeFeature(args.feature_file)
 
 copyright = args.copyright_file.read()
