@@ -56,7 +56,7 @@ $(DOC)/%-table.pdf: %.otf
 check: $(SFD)
 	@$(foreach sfd, $(SFD), \
 	     echo "   CHK	"`basename $(sfd)`; \
-	     $(PY) $(FINDMISSING) $(sfd); \
+	     $(PY) $(FINDMISSING) $(sfd) || exit; \
 	  )
 
 dist: check $(OTF) $(PDF)
