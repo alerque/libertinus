@@ -79,7 +79,7 @@ KernClass2: 12 8 "'kern' Small Caps"
  83 u.sc ugrave.sc uacute.sc ucircumflex.sc udieresis.sc uring.sc uhungarumlaut.sc f.sc
  9 k.sc x.sc
  42 v.sc w.sc y.sc yacute.sc ydieresis.sc t.sc
- 82 d.sc o.sc q.sc ograve.sc oacute.sc ocircumflex.sc otilde.sc odieresis.sc oslash.sc
+ 89 d.sc o.sc q.sc q.sc.u ograve.sc oacute.sc ocircumflex.sc otilde.sc odieresis.sc oslash.sc
  4 l.sc
  57 A Agrave Aacute Acircumflex Atilde Adieresis Aring Abreve
  15 V W Y Ydieresis
@@ -91,7 +91,7 @@ KernClass2: 12 8 "'kern' Small Caps"
  78 u.sc ugrave.sc uacute.sc ucircumflex.sc udieresis.sc uring.sc uhungarumlaut.sc
  42 t.sc v.sc w.sc y.sc yacute.sc ydieresis.sc
  4 x.sc
- 31 c.sc g.sc o.sc q.sc ccedilla.sc
+ 38 c.sc g.sc o.sc q.sc q.sc.u ccedilla.sc
  79 hyphen.sc guillemotleft.sc guillemotright.sc guilsinglleft.sc guilsinglright.sc
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} -15 {} -20 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} -25 {} -25 {} 0 {} 0 {} -10 {} 0 {} -10 {} -25 {} 0 {} 20 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} -60 {} 0 {} -22 {} 0 {} 0 {} -20 {} -120 {} -20 {} 0 {} 0 {} -60 {} -50 {} 0 {} 0 {} 0 {} -25 {} -20 {} 0 {} -40 {} -40 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 20 {} 0 {} 0 {} -20 {} 0 {} -20 {} -40 {} 20 {} 0 {}
 KernClass2: 9 10 "'kern' Greek Kerning" 
@@ -135,7 +135,7 @@ KernClass2: 21 21 "'kern' Latin kerning"
  59 Y Yacute Ycircumflex Ydieresis Ygrave seven.fitted question
  47 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9
  17 K X uni0136 K.alt
- 211 at D O Q Ograve Oacute Ocircumflex Otilde Odieresis Oslash Dcaron Dcroat Omacron Obreve Ohungarumlaut uni0186 uni0189 uni018A uni018F uni01EA uni01EC uni020C uni020E uni022A uni022C uni022E uni0230 Odieresis.alt
+ 215 at D O Q Q.u Ograve Oacute Ocircumflex Otilde Odieresis Oslash Dcaron Dcroat Omacron Obreve Ohungarumlaut uni0186 uni0189 uni018A uni018F uni01EA uni01EC uni020C uni020E uni022A uni022C uni022E uni0230 Odieresis.alt
  100 r v w y Thorn yacute ydieresis racute uni0157 rcaron wcircumflex ycircumflex wgrave wacute wdieresis
  79 g k x gcircumflex gbreve gdotaccent uni0123 uni0137 kgreenlandic gcaron f_k c_k
  21 b agrave egrave thorn
@@ -153,7 +153,7 @@ KernClass2: 21 21 "'kern' Latin kerning"
  25 T Tcedilla Tcaron uni0162
  18 Y Yacute Ydieresis
  53 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9 V.alt
- 334 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE uni0187 uni0193 uni019F Ohorn Gcaron uni01EA uni01EC uni01F4 Oslashacute uni020C uni020E uni022A uni022C uni022E uni0230 zero.fitted zero.slashfitted six.fitted
+ 338 C G O Q Q.u Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE uni0187 uni0193 uni019F Ohorn Gcaron uni01EA uni01EC uni01F4 Oslashacute uni020C uni020E uni022A uni022C uni022E uni0230 zero.fitted zero.slashfitted six.fitted
  58 v w wcircumflex wgrave wacute wdieresis y yacute ydieresis
  1 x
  99 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright uni201F
