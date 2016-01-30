@@ -11,6 +11,7 @@ TOOLS=tools
 PY=python2.7
 BUILD=$(TOOLS)/build.py
 FINDMISSING=$(TOOLS)/find-missing-glyphs.py
+FINDDUPS=$(TOOLS)/find-duplicate-glyphs.py
 SFNTTOOL=sfnttool
 SAMPLE=fntsample
 OUTLINE=pdfoutline
@@ -56,11 +57,19 @@ $(DOC)/%-table.pdf: %.otf
 	@$(OUTLINE) $@.tmp $@.txt $@
 	@rm -f $@.tmp $@.txt
 
-check: $(SFD)
+check-missing: $(SFD)
 	@$(foreach sfd, $(SFD), \
-	     echo "   CHK	"`basename $(sfd)`; \
+	     echo "   MIS	"`basename $(sfd)`; \
 	     $(PY) $(FINDMISSING) $(sfd) || exit; \
 	  )
+
+check-duplicates: $(SFD)
+	@$(foreach sfd, $(SFD), \
+	     echo "   DUP	"`basename $(sfd)`; \
+	     $(PY) $(FINDDUPS) $(sfd) || exit; \
+	  )
+
+check: check-missing check-duplicates
 
 dist: check $(OTF) $(PDF)
 	@echo "Making dist tarball"
