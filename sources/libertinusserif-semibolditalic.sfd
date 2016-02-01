@@ -65,8 +65,6 @@ Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE"  {"'liga' Standardliga
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic"  {"'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Cyrillic lookup 0"  {"'kern' Horizontales Kerning in Cyrillic lookup 0"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1"  {"'kern' Horizontales Kerning in Latin lookup 1"  } ['kern' ('latn' <'dflt' > ) ]
-Lookup: 257 0 0 "'lfbd' Left Bounds in Latin lookup 2"  {"'lfbd' Left Bounds in Latin lookup 2"  } ['lfbd' ('latn' <'dflt' > ) ]
-Lookup: 257 0 0 "'rtbd' Rechte R+AOQA-nder in Latin lookup 3"  {"'rtbd' Rechte R+AOQA-nder in Latin lookup 3"  } ['rtbd' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Top rechts"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -747,8 +745,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni2070
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2080
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" zero.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" zero.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=25 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-98 dy=0 dh=-98 dv=0
 EndChar
 
 StartChar: one
@@ -788,8 +784,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni00B9
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2081
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" one.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" one.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=-63 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-88 dy=0 dh=-88 dv=0
 EndChar
 
 StartChar: two
@@ -829,8 +823,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni00B2
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2082
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" two.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" two.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=30 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-59 dy=0 dh=-59 dv=0
 EndChar
 
 StartChar: three
@@ -873,8 +865,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni00B3
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2083
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" three.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" three.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=12 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-62 dy=0 dh=-62 dv=0
 EndChar
 
 StartChar: four
@@ -921,8 +911,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni2074
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2084
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" four.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" four.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=-11 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-77 dy=0 dh=-77 dv=0
 EndChar
 
 StartChar: five
@@ -962,8 +950,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni2075
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2085
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" five.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" five.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=42 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-79 dy=0 dh=-79 dv=0
 EndChar
 
 StartChar: six
@@ -1001,8 +987,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni2076
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2086
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" six.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" zero.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=47 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-87 dy=0 dh=-87 dv=0
 EndChar
 
 StartChar: seven
@@ -1033,8 +1017,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni2077
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2087
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" seven.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" one.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=58 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-125 dy=0 dh=-125 dv=0
 EndChar
 
 StartChar: eight
@@ -1085,8 +1067,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni2078
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2088
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" eight.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" two.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=30 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-80 dy=0 dh=-80 dv=0
 EndChar
 
 StartChar: nine
@@ -1124,8 +1104,6 @@ Substitution2: "'sups' Superscript in Latin lookup 6" uni2079
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2089
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" nine.fitted
 Substitution2: "'onum' Minuskelziffern in Latin lookup 3" three.oldstyle
-Position2: "'rtbd' Rechte R+AOQA-nder in Latin lookup 3" dx=0 dy=0 dh=32 dv=0
-Position2: "'lfbd' Left Bounds in Latin lookup 2" dx=-72 dy=0 dh=-72 dv=0
 EndChar
 
 StartChar: colon

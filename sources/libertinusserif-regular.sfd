@@ -75,13 +75,10 @@ Lookup: 6 8 0 "'calt' Contextual Alternates lookup 33"  {"'calt' Contextual Alte
 Lookup: 258 0 0 "'kern' Smallcap kerning"  {"'kern' Small Caps" [150,15,4] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Cyrillic kerning"  {"'kern' Cyrillic Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Greek kerning"  {"'kern' Greek Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > ) ]
-Lookup: 257 0 0 "'opbd' Optical Bounds lookup 6"  {"'opbd' Optical Bounds lookup 6-1"  } ['opbd' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > 'math' <'dflt' > ) ]
 Lookup: 257 0 0 "'cpsp' Versalabstaende"  {"'cpsp' Versalabstaende 1"  } ['cpsp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung"  {"'mark' Top rechts"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark"  {"'mkmk' Mark to Mark-1"  } ['mkmk' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Kerning"  {"'kern' Latin kerning" [150,0,4] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 257 0 0 "'rtbd' Rechte R+AOQA-nder lookup 4"  {"'rtbd' Rechte R+AOQA-nder lookup 4-1"  } ['rtbd' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > 'math' <'dflt' > ) ]
-Lookup: 257 0 0 "'lfbd' Left Bounds lookup 5"  {"'lfbd' Left Bounds lookup 5-1"  } ['lfbd' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > 'math' <'dflt' > ) ]
 MarkAttachClasses: 2
 "dotted" 3 i j
 DEI: 91125
@@ -11939,8 +11936,6 @@ SplineSet
  294 283 298 273 298 263 c 0
  298 251 284 223 271 223 c 2
 EndSplineSet
-Position2: "'lfbd' Left Bounds lookup 5-1" dx=-43 dy=0 dh=-43 dv=0
-Position2: "'rtbd' Rechte R+AOQA-nder lookup 4-1" dx=0 dy=0 dh=0 dv=0
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni208B
 Substitution2: "'sups' Hochgestellte 1" uni207B
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" hyphen.sc
@@ -12592,8 +12587,6 @@ SplineSet
  501 528 l 2
  522.4 582.4 522 609 448 614 c 1
 EndSplineSet
-Position2: "'lfbd' Left Bounds lookup 5-1" dx=-27 dy=0 dh=-27 dv=0
-Position2: "'rtbd' Rechte R+AOQA-nder lookup 4-1" dx=0 dy=0 dh=-31 dv=0
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" v.sc
 EndChar
@@ -12651,7 +12644,6 @@ SplineSet
  653.7 130.7 l 1
  810 565 l 2
 EndSplineSet
-Position2: "'lfbd' Left Bounds lookup 5-1" dx=-29 dy=0 dh=-29 dv=0
 Substitution2: "'ss05' Stilgruppe 5" W.alt
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" w.sc
@@ -13904,7 +13896,6 @@ SplineSet
  363.7 331 l 2
  384.6 381.8 379 394 325 398 c 1
 EndSplineSet
-Position2: "'rtbd' Rechte R+AOQA-nder lookup 4-1" dx=0 dy=0 dh=-28 dv=0
 Substitution2: "'sinf' Wissenschaftliche Indices 1" v.inferior
 Substitution2: "'sups' Hochgestellte 1" uni1D5B
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" v.sc
