@@ -169,6 +169,7 @@ KernClass2: 21 21 "'kern' Latin kerning"
 LangName: 1033 "" "" "" "" "" "" "" "" "Philipp H. Poll" "Philipp H. Poll" "" "http://www.linuxlibertine.org" "http://www.linuxlibertine.org" "GPL- General Public License AND OFL-Open Font License" "http://www.fsf.org/licenses/gpl.html AND http://scripts.sil.org/OFL" 
 GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeBmp
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 BeginPrivate: 6
@@ -1413,6 +1414,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912>
 VStem: 37 140<113.657 317.24> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 AnchorPoint: "top_akzent" 255 834 basechar 0
 AnchorPoint: "komb_OR" 420 396 basechar 0
 LayerCount: 2
@@ -1450,6 +1454,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912>
 VStem: 37 140<113.657 317.24> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 AnchorPoint: "top_akzent" 255 834 basechar 0
 AnchorPoint: "komb_OR" 420 396 basechar 0
 LayerCount: 2
@@ -1487,6 +1494,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912>
 VStem: 37 140<113.657 317.24> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 AnchorPoint: "top_akzent" 255 833 basechar 0
 AnchorPoint: "komb_OR" 420 396 basechar 0
 LayerCount: 2
@@ -1523,6 +1533,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 519 70<259.399 360.905> 557 71<152.858 252.467>
 VStem: 37 140<113.657 317.24> 113 26<521.865 543.979> 374 28<609.298 625.118> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 AnchorPoint: "top_akzent" 255 834 basechar 0
 AnchorPoint: "komb_OR" 420 396 basechar 0
 LayerCount: 2
@@ -1562,6 +1575,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 519 109<135.037 223.257 320.743 408.963>
 VStem: 37 140<113.657 317.24> 124 110<530.463 616.462> 310 110<530.463 616.462> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 AnchorPoint: "top_akzent" 255 834 basechar 0
 LayerCount: 2
 Fore
@@ -15813,6 +15829,8 @@ Width: 730
 Flags: HW
 HStem: -10 42<307.921 450.939> 571 120 616 42<281.337 423.901>
 VStem: 37 151<190.183 438.821> 247 212 543 151<199.76 448.97>
+AnchorPoint: "unten_anhang" 350 0 basechar 0
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
 AnchorPoint: "top_akzent" 344 894 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 LayerCount: 2
@@ -15849,6 +15867,8 @@ Width: 730
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 701 132
 VStem: 37 151<190.183 438.821> 266 202 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 AnchorPoint: "top_akzent" 344 894 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 LayerCount: 2
@@ -15886,6 +15906,8 @@ Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 698 136
 VStem: 37 151<190.183 438.821> 227 277 543 151<199.76 448.97>
 CounterMasks: 1 1c
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 AnchorPoint: "top_akzent" 344 894 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 LayerCount: 2
@@ -15923,6 +15945,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 692 70<359.399 460.905> 730 71<252.858 352.467>
 VStem: 37 151<190.183 438.821> 213 26<694.865 716.979> 474 28<782.298 798.118> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 AnchorPoint: "top_akzent" 344 894 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 LayerCount: 2
@@ -16029,6 +16053,8 @@ Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901>
 VStem: 37 151<190.183 438.821> 543 151<199.76 448.97>
 DStem2: 52 -14 88 -45 0.630337 0.776322<0 881.471>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 AnchorPoint: "top_akzent" 351 850 basechar 0
 LayerCount: 2
 Fore
@@ -17207,6 +17233,9 @@ Flags: HW
 HStem: -10 42<243.337 342.017> 402 42<218.65 316.912> 455 20G<433.564 475.517>
 VStem: 42 140<113.657 317.24> 379 140<112.239 317.204>
 DStem2: 58 -2 94 -34 0.633501 0.773742<0 617.407>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19573,6 +19602,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 755 50<208.182 518.647>
 VStem: 37 151<190.183 438.821> 206 315<755.682 804.598> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 LayerCount: 2
 Fore
@@ -19607,6 +19638,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 543 50<120.182 430.647>
 VStem: 37 140<113.657 317.24> 118 315<543.682 592.598> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 AnchorPoint: "komb_OR" 420 396 basechar 0
 LayerCount: 2
 Fore
@@ -19640,6 +19674,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 705 74<284.883 429.873>
 VStem: 37 151<190.183 438.821> 223 28<808.109 830.75> 467 27<810.51 830.778> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19673,6 +19709,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 514 74<198.021 341.577>
 VStem: 37 140<113.657 317.24> 131 33<621.43 659.121> 374 140<112.239 317.204> 379 32<624.913 659.188>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19705,6 +19744,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 686 147
 VStem: 37 151<190.183 438.821> 249 254 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19753,6 +19794,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912>
 VStem: 37 140<113.657 317.24> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -22205,6 +22249,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 309 44<100 646> 616 42<281.337 423.901>
 VStem: 37 151<190.183 438.821> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -22234,6 +22280,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 567 33<536.322 634.397> 616 42<281.337 423.901> 668 86<583.788 641.903>
 VStem: 37 151<190.183 438.821> 543 151<199.76 448.97> 644 57<607.016 667.692>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -22269,6 +22317,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 369 33<395.056 476.704> 402 42<213.65 311.912> 470 86<423.788 481.903>
 VStem: 37 140<113.657 317.24> 374 140<112.239 317.204> 484 57<405.394 469.692>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -23513,6 +23564,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 698 136
 VStem: 37 151<190.183 438.821> 222 277 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -25854,6 +25907,8 @@ Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 701 132
 VStem: 37 151<190.183 438.821> 255 202 543 151<199.76 448.97>
 DStem2: 52 -14 88 -45 0.630337 0.776322<0 881.471>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -25902,6 +25957,9 @@ Flags: HW
 HStem: -10 42<243.337 342.017> 402 42<218.65 316.912> 455 20<433.564 475.517>
 VStem: 42 140<113.657 317.24> 379 140<112.239 317.204>
 DStem2: 58 -2 94 -34 0.633501 0.773742<0 617.407>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -26539,6 +26597,8 @@ Width: 730
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 684 149
 VStem: 37 151<190.183 438.821> 191 253 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -26586,6 +26646,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912>
 VStem: 37 140<113.657 317.24> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -26629,6 +26692,8 @@ Width: 730
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 759 74<287.127 432.117>
 VStem: 37 151<190.183 438.821> 223 27<707.222 727.49> 466 28<707.25 729.891> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -26662,6 +26727,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 586 74<208.423 351.979>
 VStem: 37 140<113.657 317.24> 139 32<514.812 549.087> 374 140<112.239 317.204> 386 33<514.879 552.57>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27659,6 +27727,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 661 113<91.6131 180.387 550.997 639.771> 770 50<228.004 491.9>
 VStem: 37 151<190.183 438.821> 80 112<672.613 762.003> 226.2 267.8<770.682 819.598> 539 112<672.613 762.003> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27702,6 +27772,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 519 109<135.037 223.257 320.743 408.963> 690 50<101.182 411.647>
 VStem: 37 140<113.657 317.24> 99 315<690.682 739.598> 124 110<530.463 616.462> 310 110<530.463 616.462> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27745,6 +27818,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 692.9 77<357.639 443.919> 732 44<112.171 186 516 588.821> 734.7 78.1<267.08 351.747>
 VStem: 37 151<190.183 438.821> 233.2 22.1<696.052 720.377> 455 23.8<792.228 809.63> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27794,6 +27869,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 519 70<259.399 360.905> 557 71<152.858 252.467> 690 50<94.1816 404.647>
 VStem: 37 140<113.657 317.24> 92 315<690.682 739.598> 113 26<521.865 543.979> 374 28<609.298 625.118> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27838,6 +27916,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 705 128<304.302 404.126 304.302 404.126>
 VStem: 37 151<190.183 438.821> 288 135<723.993 815.845 723.993 815.845> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27869,6 +27949,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 530 128<217.302 317.126 217.302 317.126>
 VStem: 37 140<113.657 317.24> 201 135<548.993 640.845 548.993 640.845> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27900,6 +27983,8 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 705 128<304.302 404.126 304.302 404.126> 728 43<144.352 240 436 529.991>
 VStem: 37 151<190.183 438.821> 288 135<723.993 815.845 723.993 815.845> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27943,6 +28028,9 @@ VWidth: 999
 Flags: HW
 HStem: -10 42<238.337 337.017> 402 42<213.65 311.912> 530 128<217.302 317.126 217.302 317.126> 744 50<111.182 421.647>
 VStem: 37 140<113.657 317.24> 109 315<744.682 793.598> 201 135<548.993 640.845 548.993 640.845> 374 140<112.239 317.204>
+AnchorPoint: "ogonek" 372 44 basechar 0
+AnchorPoint: "unten_anhang" 241 -3 basechar 0
+AnchorPoint: "unten_punkt" 243 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -70193,6 +70281,8 @@ Width: 730
 Flags: HW
 HStem: -10 42<307.921 450.939> 616 42<281.337 423.901> 711 113<218.613 307.387 405.997 494.771>
 VStem: 37 151<190.183 438.821> 207 112<722.613 812.003> 394 112<722.613 812.003> 543 151<199.76 448.97>
+AnchorPoint: "unten_punkt" 350 -110 basechar 0
+AnchorPoint: "unten_anhang" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
