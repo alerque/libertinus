@@ -1,4 +1,9 @@
-import fontforge
+import sys
+try:
+    from sortsmill import ffcompat as fontforge
+except ImportError:
+    print >> sys.stderr, "Failed to import sortsmill, failing back to fontforge"
+    import fontforge
 import argparse
 from datetime import date
 from os import path
