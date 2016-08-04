@@ -1,3 +1,12 @@
+lookup ssty_prime {
+  sub minute by minute.ssty1;
+  sub second by second.ssty1;
+  sub uni2034 by uni2034.ssty1;
+  sub uni2035 by uni2035.ssty1;
+  sub uni2036 by uni2036.ssty1;
+  sub uni2037 by uni2037.ssty1;
+} ssty_prime;
+
 lookup ssty_up {
   sub parenleft by parenleft.ssty;
   sub parenright by parenright.ssty;
@@ -36,12 +45,6 @@ lookup ssty_up {
   sub y by y.ssty;
   sub z by z.ssty;
   sub minus by minus.ssty;
-  sub minute by minute.ssty1;
-  sub second by second.ssty1;
-  sub uni2034 by uni2034.ssty1;
-  sub uni2035 by uni2035.ssty1;
-  sub uni2036 by uni2036.ssty1;
-  sub uni2037 by uni2037.ssty1;
   sub l by l.ssty;
   sub s by s.ssty;
   sub x by x.ssty;
@@ -194,9 +197,10 @@ lookup ssty_sfbf {
 } ssty_sfbf;
 
 feature ssty {
-   lookup ssty_up;
-   lookup ssty_bf;
+   lookup ssty_prime;
+#  lookup ssty_up;
+#  lookup ssty_bf;
 #  lookup ssty_it;
-   lookup ssty_sfup;
-   lookup ssty_sfbf;
+#  lookup ssty_sfup;
+#  lookup ssty_sfbf;
 } ssty;
