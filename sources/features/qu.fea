@@ -1,4 +1,4 @@
 feature calt {
-  sub Q' [u u.sc] by Q.u;
-  sub q.sc' [u.sc] by q.sc.u;
+  sub Q' [u u.sc v v.sc] by Q.u;
+  sub q.sc' [u.sc v.sc] by q.sc.u;
 } calt;
