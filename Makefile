@@ -77,7 +77,7 @@ dist: check $(OTF) $(PDF)
 	@cp $(OTF) $(DIST)
 	@cp $(PDF) $(DIST)/$(DOC)
 	@cp $(DOC)/$(NAME)-testmath.pdf $(DIST)/$(DOC)
-	@cp OFL.txt FONTLOG.txt $(DIST)
+	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
 	@zip -r $(DIST).zip $(DIST)
 
