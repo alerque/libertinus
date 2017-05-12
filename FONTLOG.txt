@@ -45,6 +45,31 @@ http://github.com/khaledhosny/libertinus
 ChangeLog
 ---------
 
+12 May 2017 (Khaled Hosny) <Libertinus> Version 6.3
+- Add U+231C-231Fi and U+2A7D-2A7E to the math font.
+- Add script math alphabet based on that of XITS Math font.
+- Add monospaced math alphabet based on that of cmtt10 font with modified
+  METAFONT parameters to better fit with Libertinus glyphs.
+- Improve math top accent positions.
+- Fix spacing of math italic i and j.
+- Increase the gap between \sum and its limits.
+- Improved math braces and brackets based on STIX Two Math font.
+- Disable optical variants of math alphanumerics that were based on the text
+  sup/superscript glyphs as they don’t look good besides being incomplete and
+  inconsistent.
+- Remove duplicate glyphs that caused broken GPOS generation.
+- Drop optical bounds (‘opbd’, ‘rtbd’ and ‘lfbd’) features as they were
+  incomplete and virtually unsupported.
+- Fix text mark placement below O and o.
+- Fix oldstyle numbers feature in Libertinus Serif Semibold that had wrong
+  glyph mapping for 6, 7, 8 and 9.
+- Use swash Q when followed by v.
+- Various consistency fixes to font names and vertical metrics.
+- Fix placement of the half ring in U+1E9A.
+- Fix several Libertinus Serif Bold italic alternate glyphs that were not bold.
+- Fix Libertinus Serif Italic U+2098-2099 (subscript m and n) that looked like
+  superscript circled + and -.
+
 30 Jan 2016 (Khaled Hosny) <Libertinus> Version 6.2
 - Fixed missing big variant rule for U+27EF.
 - Fixed swapped \phi and \varphi symbols.
