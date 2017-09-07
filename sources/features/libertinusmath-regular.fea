@@ -1,3 +1,7 @@
 languagesystem math dflt;
 
 include(ssty.fea)
+
+feature zero {
+  sub zero by zero.slash;
+} zero;
