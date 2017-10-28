@@ -45,7 +45,7 @@ doc: $(PDF)
 %.fea:
 	@if test ! -f $@; then touch $@; fi
 
-%.otf: $(SRC)/%.sfd $(FEA)/%.fea Makefile $(BUILD)
+%.otf: $(SRC)/%.sfd $(FEA)/%.fea $(BUILD)
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
 
