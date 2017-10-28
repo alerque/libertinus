@@ -14,7 +14,6 @@ FINDMISSING=$(TOOLS)/find-missing-glyphs.py
 FINDDUPS=$(TOOLS)/find-duplicate-glyphs.py
 SFNTTOOL=sfnttool
 SAMPLE=fntsample
-OUTLINE=pdfoutline
 
 NULL=
 
@@ -53,9 +52,7 @@ doc: $(PDF)
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"
 	@mkdir -p $(DOC)
-	@$(SAMPLE) --font-file $< --output-file $@.tmp --print-outline > $@.txt
-	@$(OUTLINE) $@.tmp $@.txt $@
-	@rm -f $@.tmp $@.txt
+	@$(SAMPLE) --font-file $< --output-file $@ --write-outline --use-pango
 
 check-missing: $(SFD)
 	@$(foreach sfd, $(SFD), \
