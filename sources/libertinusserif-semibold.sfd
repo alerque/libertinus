@@ -4143,7 +4143,7 @@ EndChar
 StartChar: uni1E2D
 Encoding: 7725 7725 174
 Width: 286
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 289 105 N 1 0 0 1 0 0 2
@@ -6550,17 +6550,19 @@ StartChar: i
 Encoding: 105 105 289
 Width: 286
 Flags: HMW
+AnchorPoint: "mittelpunkt" 142 215 basechar 0
+AnchorPoint: "top_akzent" 137 795 basechar 0
 AnchorPoint: "unten_anhang" 137 12 basechar 0
 AnchorPoint: "ogonek" 209 10 basechar 0
 AnchorPoint: "unten_punkt" 136 -107 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-95 571 m 0
- 95 604 122 631 155 631 c 0
- 188 631 215 604 215 571 c 0
- 215 538 188 511 155 511 c 0
- 122 511 95 538 95 571 c 0
+95 590 m 0
+ 95 623 122 650 155 650 c 0
+ 188 650 215 623 215 590 c 0
+ 215 557 188 530 155 530 c 0
+ 122 530 95 557 95 590 c 0
 EndSplineSet
 Refer: 419 305 N 1 0 0 1 0 0 2
 Substitution2: "'sinf' Wissenschaftliche Indices 1" i.inferior
@@ -6575,8 +6577,14 @@ Width: 289
 Flags: HMW
 LayerCount: 2
 Fore
+SplineSet
+88 590 m 0
+ 88 623 115 650 148 650 c 0
+ 181 650 208 623 208 590 c 0
+ 208 557 181 530 148 530 c 0
+ 115 530 88 557 88 590 c 0
+EndSplineSet
 Refer: 1718 567 N 1 0 0 1 0 0 2
-Refer: 673 775 N 1 0 0 1 316 -34 2
 Substitution2: "'sinf' Wissenschaftliche Indices 1" j.inferior
 Substitution2: "'sups' Hochgestellte 1" uni02B2
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" j.sc
@@ -18895,7 +18903,7 @@ EndChar
 StartChar: uni1ECB
 Encoding: 7883 7883 886
 Width: 286
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 289 105 N 1 0 0 1 0 0 2
@@ -30310,7 +30318,7 @@ EndChar
 StartChar: uni03F3
 Encoding: 1011 1011 1330
 Width: 259
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 290 106 N 1 0 0 1 0 0 2
