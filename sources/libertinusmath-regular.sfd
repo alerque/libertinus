@@ -467,7 +467,7 @@ Grid
   Named: "Top Accent" 
 EndSplineSet
 AnchorClass2: "SekAccPos"  "'mkmk' Mark to Mark-1" "top_rechts"  "'mark' Top rechts" "komb_OR"  "'mark' Komb OR" "top_punkt2"  "'mark' Top Punkt2" "top_akzent"  "'mark' Top Akzent" "unten_punkt"  "'mark' Unten Punkt" "unten_anhang"  "'mark' Unten Anhang" "ogonek"  "'mark' Ogonek" "mittelpunkt"  "'mark' Mittelpunkt" 
-BeginChars: 1114670 3943
+BeginChars: 1114690 3951
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -741,6 +741,7 @@ StartChar: slash
 Encoding: 47 47 9
 Width: 323
 Flags: MW
+GlyphVariantsVertical: slash.size1 slash.size2 slash.size3 slash.size4
 LayerCount: 2
 Fore
 SplineSet
@@ -11922,6 +11923,7 @@ StartChar: backslash
 Encoding: 92 92 277
 Width: 287
 Flags: MW
+GlyphVariantsVertical: backslash.size1 backslash.size2 backslash.size3 backslash.size4
 LayerCount: 2
 Fore
 SplineSet
@@ -151075,6 +151077,126 @@ SplineSet
  201 568 l 1
  201 -20 l 1
  271 50 l 1
+EndSplineSet
+EndChar
+
+StartChar: slash.size1
+Encoding: 1114670 -1 3943
+Width: 593
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+565 1091 m 1
+ 100 -168 l 1
+ 25 -168 l 1
+ 490 1091 l 1
+ 565 1091 l 1
+EndSplineSet
+EndChar
+
+StartChar: slash.size2
+Encoding: 1114671 -1 3944
+Width: 825
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+799 1603 m 1
+ 107 -286 l 1
+ 25 -286 l 1
+ 718 1603 l 1
+ 799 1603 l 1
+EndSplineSet
+EndChar
+
+StartChar: slash.size3
+Encoding: 1114672 -1 3945
+Width: 1127
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+1096 2115 m 1
+ 136 -404 l 1
+ 30 -404 l 1
+ 991 2115 l 1
+ 1096 2115 l 1
+EndSplineSet
+EndChar
+
+StartChar: slash.size4
+Encoding: 1114673 -1 3946
+Width: 1340
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+1324 2627 m 1
+ 123 -521 l 1
+ 16 -521 l 1
+ 1217 2627 l 1
+ 1324 2627 l 1
+EndSplineSet
+EndChar
+
+StartChar: backslash.size1
+Encoding: 1114674 -1 3947
+Width: 593
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+565 -168 m 1
+ 490 -168 l 1
+ 27 1091 l 1
+ 102 1091 l 1
+ 565 -168 l 1
+EndSplineSet
+EndChar
+
+StartChar: backslash.size2
+Encoding: 1114675 -1 3948
+Width: 825
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+799 -286 m 1
+ 718 -286 l 1
+ 25 1603 l 1
+ 107 1603 l 1
+ 799 -286 l 1
+EndSplineSet
+EndChar
+
+StartChar: backslash.size3
+Encoding: 1114676 -1 3949
+Width: 1127
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+1096 -404 m 1
+ 992 -404 l 1
+ 30 2115 l 1
+ 136 2115 l 1
+ 1096 -404 l 1
+EndSplineSet
+EndChar
+
+StartChar: backslash.size4
+Encoding: 1114677 -1 3950
+Width: 1340
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+1324 -521 m 1
+ 1217 -521 l 1
+ 16 2627 l 1
+ 123 2627 l 1
+ 1324 -521 l 1
 EndSplineSet
 EndChar
 EndChars
