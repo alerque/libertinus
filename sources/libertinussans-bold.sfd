@@ -8008,7 +8008,6 @@ StartChar: cedilla
 Encoding: 184 184 335
 Width: 541
 Flags: HMW
-AnchorPoint: "unten_anhang" 297 7 mark 0
 LayerCount: 2
 Fore
 Refer: 674 807 N 1 0 0 1 488 0 2
@@ -28522,8 +28521,7 @@ EndChar
 StartChar: uni02B9
 Encoding: 697 697 1342
 Width: 190
-Flags: MW
-AnchorPoint: "top_akzent" 40 724 mark 0
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -53319,6 +53317,7 @@ EndChar
 StartChar: grave.cap
 Encoding: 65734 -1 2270
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -175 821 mark 0
 LayerCount: 2
@@ -53338,6 +53337,7 @@ EndChar
 StartChar: acute.cap
 Encoding: 65735 -1 2271
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -210 829 mark 0
 LayerCount: 2
@@ -53357,6 +53357,7 @@ EndChar
 StartChar: circumflex.cap
 Encoding: 65736 -1 2272
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -133 811 mark 0
 LayerCount: 2
@@ -53376,6 +53377,7 @@ EndChar
 StartChar: caron.cap
 Encoding: 65737 -1 2273
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -193 833 mark 0
 LayerCount: 2
@@ -53395,6 +53397,7 @@ EndChar
 StartChar: breve.cap
 Encoding: 65738 -1 2274
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -161 823 mark 0
 LayerCount: 2
@@ -53413,6 +53416,7 @@ EndChar
 StartChar: hungarumlaut.cap
 Encoding: 65739 -1 2275
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -226 852 mark 0
 LayerCount: 2
@@ -53441,6 +53445,7 @@ EndChar
 StartChar: space_uni030F.cap
 Encoding: 65740 -1 2276
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -220 745 mark 0
 LayerCount: 2
@@ -53492,6 +53497,7 @@ EndChar
 StartChar: breve.cyrcap
 Encoding: 65742 -1 2278
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -191 832 mark 0
 LayerCount: 2
@@ -53514,6 +53520,7 @@ EndChar
 StartChar: breve.cyr
 Encoding: 65743 -1 2279
 Width: 0
+GlyphClass: 4
 Flags: MW
 LayerCount: 2
 Fore
@@ -53537,6 +53544,7 @@ EndChar
 StartChar: dieresis.cap
 Encoding: 65744 -1 2280
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_akzent" -237 823 mark 0
 LayerCount: 2
@@ -53627,6 +53635,7 @@ EndChar
 StartChar: uniE351
 Encoding: 58193 58193 2283
 Width: 243
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "top_punkt" 100 547 mark 0
 LayerCount: 2
@@ -54780,7 +54789,8 @@ EndChar
 StartChar: dotaccent.cap
 Encoding: 65747 -1 2329
 Width: 0
-Flags: HMW
+GlyphClass: 4
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 666 775 N 1 0 0 1 -24 199 2
