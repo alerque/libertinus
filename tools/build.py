@@ -18,11 +18,18 @@ args = parser.parse_args()
 
 font = fontforge.open(args.input)
 
+sources = [args.input]
 if args.feature_file and os.path.isfile(args.feature_file):
     font.mergeFeature(args.feature_file)
+    sources.append(args.feature_file)
+
+os.environ["SOURCE_DATE_EPOCH"] = "%d" % max(os.stat(s).st_mtime for s in sources)
 
 font.version = args.version
 font.copyright = u"Copyright © 2012-%s The Libertinus Project Authors." % datetime.date.today().year
+
+# Override the default which includes the build date
+font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" % (args.version, font.os2_vendor, font.fontname))
 
 font.selection.all()
 font.autoHint()
@@ -32,5 +39,9 @@ ttfont = TTFont(args.output)
 
 # Filter-out useless Macintosh names
 ttfont["name"].names = [n for n in ttfont["name"].names if n.platformID != 1]
+
+# Drop useless table with timestamp
+if "FFTM" in ttfont:
+    del ttfont["FFTM"]
 
 ttfont.save(args.output)
