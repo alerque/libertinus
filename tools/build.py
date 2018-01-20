@@ -29,7 +29,7 @@ font.appendSFNTName("English (US)", "Manufacturer", "Khaled Hosny")
 font.appendSFNTName("English (US)", "Vendor URL", "https://github.com/khaledhosny/libertinus")
 font.appendSFNTName("English (US)", "License URL", "http://scripts.sil.org/OFL")
 font.appendSFNTName("English (US)", "License", 'This Font Software is licensed under the SIL Open Font License, Version 1.1.')
-font.os2_vendor = "BLQ "
+font.os2_vendor = "ALIF"
 
 font.selection.all()
 font.autoHint()
