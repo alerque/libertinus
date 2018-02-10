@@ -13,7 +13,6 @@ BUILD=$(TOOLS)/build.py
 FINDMISSING=$(TOOLS)/find-missing-glyphs.py
 FINDDUPS=$(TOOLS)/find-duplicate-glyphs.py
 SFNTTOOL=sfnttool
-SAMPLE=fntsample
 
 NULL=
 
@@ -52,7 +51,14 @@ doc: $(PDF)
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"
 	@mkdir -p $(DOC)
-	@$(SAMPLE) --font-file $< --output-file $@ --write-outline --use-pango
+	@fntsample --font-file $< --output-file $@.tmp                         \
+		   --write-outline --use-pango                                 \
+		   --style="header-font: Noto Sans Bold 12"                    \
+		   --style="font-name-font: Noto Serif Bold 12"                \
+		   --style="table-numbers-font: Noto Sans 10"                  \
+		   --style="cell-numbers-font:Noto Sans Mono 8"
+	@mutool clean -d -i -f -a $@.tmp $@
+	@rm -f $@.tmp
 
 check-missing: $(SFD)
 	@$(foreach sfd, $(SFD), \
