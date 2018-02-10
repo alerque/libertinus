@@ -18,12 +18,11 @@ args = parser.parse_args()
 
 font = fontforge.open(args.input)
 
-sources = [args.input]
 if args.feature_file and os.path.isfile(args.feature_file):
     font.mergeFeature(args.feature_file)
-    sources.append(args.feature_file)
 
-os.environ["SOURCE_DATE_EPOCH"] = "%d" % max(os.stat(s).st_mtime for s in sources)
+if os.environ.get("SOURCE_DATE_EPOCH") is None:
+    os.environ["SOURCE_DATE_EPOCH"] = "0"
 
 font.version = args.version
 font.copyright = u"Copyright © 2012-%s The Libertinus Project Authors." % datetime.date.today().year
