@@ -8,7 +8,7 @@ FEA=$(SRC)/features
 DOC=documentation
 TOOLS=tools
 
-PY=python2.7
+PY=python
 BUILD=$(TOOLS)/build.py
 FINDMISSING=$(TOOLS)/find-missing-glyphs.py
 FINDDUPS=$(TOOLS)/find-duplicate-glyphs.py
