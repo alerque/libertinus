@@ -42,6 +42,9 @@ all: otf
 otf: $(OTF)
 doc: $(PDF)
 
+%.fea:
+	@if test ! -f $@; then touch $@; fi
+
 %.otf: $(SRC)/%.sfd $(FEA)/%.fea $(BUILD)
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
