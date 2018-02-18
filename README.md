@@ -43,7 +43,7 @@ commit --ammend` the changes).
 
 Generating the fonts for each commit is preferred, but not absolutely required.
 
-1. https://fontforge.github.io
-2. https://github.com/fonttools/fonttools
-3. https://github.com/eugmes/fntsample
-4. https://mupdf.com/
+[1]: https://fontforge.github.io
+[2]: https://github.com/fonttools/fonttools
+[3]: https://github.com/eugmes/fntsample
+[4]: https://mupdf.com/
