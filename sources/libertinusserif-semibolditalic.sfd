@@ -222,7 +222,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR" "top_rechts" "'mark' Top rechts"
-BeginChars: 1114276 2258
+BeginChars: 1114276 2259
 
 StartChar: space
 Encoding: 32 32 0
@@ -58991,7 +58991,7 @@ EndChar
 StartChar: lira
 Encoding: 8356 8356 1996
 Width: 438
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -69844,6 +69844,76 @@ SplineSet
 EndSplineSet
 LCarets2: 1 291
 Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f j
+EndChar
+
+StartChar: uni20BF
+Encoding: 8383 8383 2258
+Width: 515
+UnlinkRmOvrlpSave: 1
+Flags: HMW
+LayerCount: 2
+Back
+SplineSet
+-58 627 m 1
+ -8 627 l 1
+ -132 -81 l 1
+ -182 -81 l 1
+ -58 627 l 1
+EndSplineSet
+Fore
+SplineSet
+257.11328125 542 m 0
+ 206.938476562 541 l 0
+ 224 637 l 0
+ 274 637 l 0
+ 257.11328125 542 l 0
+116.915039062 27 m 0
+ 166.915039062 27 l 0
+ 148 -81 l 0
+ 98 -81 l 0
+ 116.915039062 27 l 0
+387.11328125 542 m 0
+ 336.9375 541 l 0
+ 354 637 l 0
+ 404 637 l 0
+ 387.11328125 542 l 0
+246.915039062 27 m 0
+ 296.915039062 27 l 0
+ 278 -81 l 0
+ 228 -81 l 0
+ 246.915039062 27 l 0
+231 555 m 0
+ 271 555 297 556 332 556 c 0
+ 475 556 508 501 508 448 c 0
+ 508 365 432 322 407 311 c 0
+ 407 309 l 0
+ 477 289 506 244 506 186 c 0
+ 506 95 442 0 252 0 c 0
+ 134 0 l 0
+ 134 0 50 -1 8 -2 c 0
+ 6 0.5 4.75 6.75 4.75 13 c 0
+ 4.75 19.25 6 25.5 9 28 c 0
+ 70 31 87 34 100 105 c 0
+ 160 450 l 0
+ 163 466 164 478 164 488 c 0
+ 164 523 148 524 102 526 c 0
+ 99.8056640625 528.742919922 98.213218689 536.300964355 98.213218689 543.391113281 c 0
+ 98.213218689 549.225402832 99.2915039062 554.742919922 102 557 c 0
+ 145 556 180 555 231 555 c 0
+233 287 m 0
+ 195 72 l 0
+ 194 67 193 62 193 58 c 0
+ 193 42 204 34 243 34 c 0
+ 371 34 403 137 403 189 c 0
+ 403 248 366 287 292 287 c 0
+ 233 287 l 0
+268 483 m 0
+ 239 323 l 0
+ 286 323 l 0
+ 385 323 409 399 409 448 c 0
+ 409 508 365 520 331 520 c 0
+ 278 520 272 508 268 483 c 0
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
