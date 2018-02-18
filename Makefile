@@ -12,7 +12,6 @@ PY=python
 BUILD=$(TOOLS)/build.py
 FINDMISSING=$(TOOLS)/find-missing-glyphs.py
 FINDDUPS=$(TOOLS)/find-duplicate-glyphs.py
-SFNTTOOL=sfnttool
 
 NULL=
 
