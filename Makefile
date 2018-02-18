@@ -56,7 +56,11 @@ $(DOC)/%-table.pdf: %.otf
 		   --style="font-name-font: Noto Serif Bold 12"                \
 		   --style="table-numbers-font: Noto Sans 10"                  \
 		   --style="cell-numbers-font:Noto Sans Mono 8"
-	@mutool clean -d -i -f -a $@.tmp $@
+	@if mutool info $@.tmp &> /dev/null; then                              \
+	   mutool clean -d -i -f -a $@.tmp $@;                                 \
+	 else                                                                  \
+	   cp $@.tmp $@;                                                       \
+	 fi
 	@rm -f $@.tmp
 
 check-missing: $(SFD)
