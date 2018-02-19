@@ -39,6 +39,12 @@ ttfont = TTFont(args.output)
 # Filter-out useless Macintosh names
 ttfont["name"].names = [n for n in ttfont["name"].names if n.platformID != 1]
 
+# https://github.com/fontforge/fontforge/pull/3235
+# fontDirectionHint is deprecated and must be set to 2
+ttfont["head"].fontDirectionHint = 2
+# unset bits 6..10
+ttfont["head"].flags &= ~0x7e0
+
 # Drop useless table with timestamp
 if "FFTM" in ttfont:
     del ttfont["FFTM"]
