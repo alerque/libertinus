@@ -22,6 +22,8 @@
 
 from __future__ import print_function
 
+from collections import OrderedDict
+
 import sys, os, re
 
 # The following class is used to emulate variable assignment in
@@ -76,8 +78,8 @@ def process_sfd_file(sfdname):
     in_chars = False
     in_bdf = False
     bmp_header = ()
-    bdf = {}
-    glyphs = {}
+    bdf = OrderedDict()
+    glyphs = OrderedDict()
 
     fl = fp.readline()
     while fl:
