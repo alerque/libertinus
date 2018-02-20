@@ -14,4 +14,4 @@ install:
 
 script:
   - make -B otf
-  - make -B check
+  - make -B -j check
