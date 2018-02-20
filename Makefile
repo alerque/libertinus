@@ -34,6 +34,7 @@ FONTS=math-regular \
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
+CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-table.pdf)
 
@@ -58,6 +59,14 @@ normalize: $(NRM)
 	   cp $@ $<;                                                           \
 	 fi
 
+%.chk: %.sfd
+	@echo "   CHK	$(<F)"
+	@$(PY) $(NORMALIZE) $< $@
+	@if [ `md5sum $<|awk '{print $$1}'` != `md5sum $@|awk '{print $$1}'` ];\
+	 then                                                                  \
+	   diff -u $< $@;                                                      \
+	 fi
+	@rm -rf $@
 
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"
@@ -87,7 +96,7 @@ check-duplicates: $(SFD)
 	     $(PY) $(FINDDUPS) $(sfd) || exit; \
 	  )
 
-check: check-missing check-duplicates
+check: check-missing check-duplicates $(CHK)
 
 dist: check $(OTF) $(PDF)
 	@echo "Making dist tarball"
