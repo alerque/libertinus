@@ -54,18 +54,12 @@ normalize: $(NRM)
 %.nrm: %.sfd
 	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
-	@if [ `md5sum $<|awk '{print $$1}'` != `md5sum $@|awk '{print $$1}'` ];\
-	 then                                                                  \
-	   cp $@ $<;                                                           \
-	 fi
+	@if [ "`diff -u $< $@`" ]; then cp $@ $<; fi
 
 %.chk: %.sfd
 	@echo "   CHK	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
-	@if [ `md5sum $<|awk '{print $$1}'` != `md5sum $@|awk '{print $$1}'` ];\
-	 then                                                                  \
-	   diff -u $< $@;                                                      \
-	 fi
+	@diff -u $< $@
 	@rm -rf $@
 
 $(DOC)/%-table.pdf: %.otf
