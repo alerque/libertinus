@@ -1,0 +1,16 @@
+sudo: false
+dist: trusty
+language: python
+virtualenv:
+  system_site_packages: true
+
+addons:
+  apt:
+    packages:
+    - python-fontforge
+
+install:
+  - pip install fonttools
+
+script:
+  - make otf
