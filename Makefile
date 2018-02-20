@@ -35,6 +35,8 @@ FONTS=math-regular \
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
 CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
+MIS=$(FONTS:%=$(SRC)/$(NAME)%.mis)
+DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-table.pdf)
 
@@ -43,6 +45,8 @@ all: otf
 otf: $(OTF)
 doc: $(PDF)
 normalize: $(NRM)
+check: $(CHK) $(MIS) $(DUP)
+
 
 %.fea:
 	@if test ! -f $@; then touch $@; fi
@@ -62,6 +66,14 @@ normalize: $(NRM)
 	@diff -u $< $@
 	@rm -rf $@
 
+%.mis: %.sfd
+	@echo "   MIS	$(<F)"
+	@$(PY) $(FINDMISSING) $<
+
+%.dup: %.sfd
+	@echo "   DUP	$(<F)"
+	@$(PY) $(FINDDUPS) $<
+
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"
 	@mkdir -p $(DOC)
@@ -77,20 +89,6 @@ $(DOC)/%-table.pdf: %.otf
 	   cp $@.tmp $@;                                                       \
 	 fi
 	@rm -f $@.tmp
-
-check-missing: $(SFD)
-	@$(foreach sfd, $(SFD), \
-	     echo "   MIS	"`basename $(sfd)`; \
-	     $(PY) $(FINDMISSING) $(sfd) || exit; \
-	  )
-
-check-duplicates: $(SFD)
-	@$(foreach sfd, $(SFD), \
-	     echo "   DUP	"`basename $(sfd)`; \
-	     $(PY) $(FINDDUPS) $(sfd) || exit; \
-	  )
-
-check: check-missing check-duplicates $(CHK)
 
 dist: check $(OTF) $(PDF)
 	@echo "Making dist tarball"
