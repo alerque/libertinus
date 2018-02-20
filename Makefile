@@ -10,6 +10,7 @@ TOOLS=tools
 
 PY=python
 BUILD=$(TOOLS)/build.py
+NORMALIZE=$(TOOLS)/sfdnormalize.py
 FINDMISSING=$(TOOLS)/find-missing-glyphs.py
 FINDDUPS=$(TOOLS)/find-duplicate-glyphs.py
 
@@ -32,6 +33,7 @@ FONTS=math-regular \
       $(NULL)
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
+NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-table.pdf)
 
@@ -39,6 +41,7 @@ all: otf
 
 otf: $(OTF)
 doc: $(PDF)
+normalize: $(NRM)
 
 %.fea:
 	@if test ! -f $@; then touch $@; fi
@@ -46,6 +49,15 @@ doc: $(PDF)
 %.otf: $(SRC)/%.sfd $(FEA)/%.fea $(BUILD)
 	@echo "Building $@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
+
+%.nrm: %.sfd
+	@echo "Normalizing $(<F)"
+	@$(PY) $(NORMALIZE) $< $@
+	@if [ `md5sum $<|awk '{print $$1}'` != `md5sum $@|awk '{print $$1}'` ];\
+	 then                                                                  \
+	   cp $@ $<;                                                           \
+	 fi
+
 
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"

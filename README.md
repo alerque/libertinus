@@ -36,10 +36,13 @@ To build the PDF samples:
 Contributing
 ------------
 The fonts should be edited with FontForge, and the SFD files should be
-normalized with `tools/sfdnormalize.py` (make sure to save a copy of the SFD
-files before running this tool, the simplest way is to commit the SFD files,
-run `tools/sfdnormalize.py` check the diffs and verify they are OK, then `git
-commit --ammend` the changes).
+normalized with:
+
+    make normalize
+
+(Make sure to save a copy of the SFD files before running this tool, the
+simplest way is to commit the SFD files, normalize, check the diffs and verify
+they are OK, then `git commit --ammend` the changes).
 
 Generating the fonts for each commit is preferred, but not absolutely required.
 

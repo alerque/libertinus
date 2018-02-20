@@ -49,7 +49,7 @@ def clear_selected(m):
     pt = int(m.group(2)) & ~4;
     return m.group(1) + str(pt) + m.group(3)
 
-def process_sfd_file(sfdname):
+def process_sfd_file(sfdname, outname):
     if not os.access(sfdname, os.R_OK):
         print("Cannot open %s", sfdname)
         return
@@ -192,14 +192,13 @@ def process_sfd_file(sfdname):
 
     fp.close()
 
-    with open(sfdname, 'wt') as fp:
+    with open(outname, 'wt') as fp:
         fp.writelines(out)
 
 # Program entry point
 argc = len(sys.argv)
-if argc > 1:
-    for sfdname in sys.argv[1:]:
-        process_sfd_file(sfdname)
+if argc > 2:
+    process_sfd_file(sys.argv[1], sys.argv[2])
 else:
-    print("Usage: sfdnormalize.py input_file.sfd")
+    print("Usage: sfdnormalize.py input_file.sfd output_file.sfd")
 
