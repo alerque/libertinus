@@ -13,7 +13,7 @@ install:
   - pip install fonttools
 
 script:
-  - make normalize
+  - make -B normalize
   # Check no files were changed after normalization
   - git diff-index --quiet HEAD || (git diff && false)
-  - make otf
+  - make -B otf
