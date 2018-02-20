@@ -48,11 +48,11 @@ normalize: $(NRM)
 	@if test ! -f $@; then touch $@; fi
 
 %.otf: $(SRC)/%.sfd $(FEA)/%.fea $(BUILD)
-	@echo "Building $@"
+	@echo "   OTF	$@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
 
 %.nrm: %.sfd
-	@echo "Normalizing $(<F)"
+	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@if [ `md5sum $<|awk '{print $$1}'` != `md5sum $@|awk '{print $$1}'` ];\
 	 then                                                                  \
