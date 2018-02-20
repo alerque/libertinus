@@ -22,8 +22,7 @@
 
 from __future__ import print_function
 
-import sys, os, re, string
-import fontforge
+import sys, os, re
 
 # The following class is used to emulate variable assignment in
 # conditions: while testing if a pattern corresponds to a specific
