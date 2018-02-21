@@ -11,6 +11,9 @@
 # changes done:
 #   WinInfo - discarded
 #   DisplaySize - discarded
+#   AntiAlias - discarded
+#   FitToEm - discarded
+#   Compacted - discarded
 #   GenTags - discarded
 #   Flags   - discarded O (open), H (changed since last hinting - often irrelevant)
 #   Refer   - changed S (selected) to N (not selected)
@@ -83,12 +86,9 @@ def process_sfd_file(sfdname, outname):
 
     fl = fp.readline()
     while fl:
-        if proc.test(r"^(WinInfo|DisplaySize|GenTags|ModificationTime|DupEnc)", fl):
+        if proc.test(r"^(WinInfo|DisplaySize|AntiAlias|FitToEm|Compacted|GenTags|ModificationTime|DupEnc)", fl):
             fl = fp.readline()
             continue
-
-        if not in_chars and not in_bdf:
-            fl = re.sub(r"^Compacted:.*", r"Compacted: 0", fl)
 
         elif in_chars:
             # Cleanup glyph flags
