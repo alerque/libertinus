@@ -302,7 +302,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "acute" "'mark' Mark Positioning lookup 5" "top_akzent" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "unten_punkt" "'mark' Mark Positioning lookup 3" "unten_anhang" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "mittelpunkt" "'mark' Mark Positioning in Hebrew lookup 0"
-BeginChars: 65786 2615
+BeginChars: 65786 2616
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -64004,6 +64004,63 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 2063 9002 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni20BF
+Encoding: 8383 8383 2615
+Width: 600
+UnlinkRmOvrlpSave: 1
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+305 22 m 1
+ 385 22 l 1
+ 385 -90 l 1
+ 305 -90 l 1
+ 305 22 l 1
+135 22 m 1
+ 215 22 l 1
+ 215 -90 l 1
+ 135 -90 l 1
+ 135 22 l 1
+300 680 m 1
+ 380 680 l 1
+ 380 548 l 1
+ 300 548 l 1
+ 300 680 l 1
+135 680 m 1
+ 215 680 l 1
+ 215 548 l 1
+ 135 548 l 1
+ 135 680 l 1
+217 488 m 2
+ 217 333 l 1
+ 286 333 l 2
+ 360 333 378 362 378 427 c 3
+ 378 504 348 528 298 528 c 3
+ 226 528 217 517 217 488 c 2
+217 286 m 1
+ 217 86 l 2
+ 217 57 232 44 294 44 c 3
+ 413 44 419 85 419 146 c 3
+ 419 209 404 286 300 286 c 2
+ 217 286 l 1
+157 572 m 3
+ 213 572 270 575 301 575 c 3
+ 466 575 510 496 510 437 c 3
+ 510 388 464 341 419 319 c 1
+ 496 297 562 248 562 163 c 3
+ 562 87 496 -3 320 -3 c 3
+ 241 -3 221 0 157 0 c 3
+ 126 0 82 -3 82 -3 c 1
+ 81 0 l 1
+ 88 48 91 110 91 177 c 2
+ 91 395 l 2
+ 91 462 88 521 81 572 c 1
+ 82 575 l 1
+ 82 575 127 572 157 572 c 3
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
