@@ -55,7 +55,6 @@ Lookup: 1 0 0 "'sinf' Tiefgestellte" { "'sinf' Wissenschaftliche Indices 1" ("in
 Lookup: 1 0 0 "'c2sc' Versale nach Kapitaelchen" { "'c2sc' Versale nach Kapitaelchen 1" ("sc") } ['c2sc' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE" { "'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standardligaturen" { "'liga' Standardligaturen 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 4 0 0 "'dlig' optionale Ligaturen" { "'dlig' optionale Ligaturen 1"  } ['dlig' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historische Ligaturen" { "'hlig' Historische Ligaturen 1"  } ['hlig' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'lnum' Versalziffern" { "'lnum' Versalziffern 1"  } ['lnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'tnum' Tabellenziffern" { "'tnum' Tabellenziffern 1"  } ['tnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -362,7 +361,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "top_rechts" "'mark' Top rechts" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR"
-BeginChars: 1114335 1710
+BeginChars: 1114336 1711
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -49916,6 +49915,66 @@ SplineSet
  461 551 423 563 388 563 c 0
  330 563 323 550 317 523 c 0
 EndSplineSet
+EndChar
+
+StartChar: s_t
+Encoding: 1114335 -1 1710
+Width: 779
+UnlinkRmOvrlpSave: 1
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+255 432 m 1
+ 239 455 233 483 233 508 c 3
+ 233 629 382 698 498 698 c 3
+ 627 698 754 651 754 564 c 3
+ 754 538 748 522 744 504 c 2
+ 724 429 l 1
+ 823 429 l 1
+ 826 427 828 422 828 416 c 0
+ 828 403 820 385 812 382 c 1
+ 714 382 l 1
+ 654 127 l 2
+ 651 113 647 96 647 84 c 3
+ 647 73 650 66 658 66 c 3
+ 668 66 702 83 728 113 c 1
+ 742 113 754 94 757 85 c 1
+ 707 30 641 -10 571 -10 c 3
+ 535 -10 520 13 520 47 c 3
+ 520 68 525 95 530 118 c 2
+ 591 382 l 1
+ 521 382 l 2
+ 518 382 515 382 515 384 c 0
+ 515 386 519 406 520 409 c 0
+ 522 417 529 425 548 426 c 2
+ 601 429 l 1
+ 622 504 l 2
+ 626 519 630 533 630 562 c 3
+ 630 649 581 670 482 670 c 3
+ 429 670 268 637 268 522 c 3
+ 268 484 284 461 329 434 c 1
+ 255 432 l 1
+426 349 m 3
+ 426 317 397 298 375 298 c 3
+ 358 298 342 306 336 322 c 0
+ 323 356 313 397 270 397 c 3
+ 242 397 216 377 216 353 c 3
+ 216 302 266 276 292 262 c 0
+ 366 223 405 177 405 130 c 3
+ 405 67 353 -10 227 -10 c 3
+ 147 -10 65 19 65 87 c 3
+ 65 119 92 138 108 138 c 3
+ 138 138 157 115 172 80 c 0
+ 187 46 217 32 248 32 c 3
+ 272 32 300 54 300 81 c 3
+ 300 128 278 157 236 181 c 0
+ 170 219 122 268 122 311 c 3
+ 122 417 228 439 297 439 c 3
+ 360 439 426 402 426 349 c 3
+EndSplineSet
+LCarets2: 1 0
+Ligature2: "'hlig' Historische Ligaturen 1" s t
 EndChar
 EndChars
 EndSplineFont

@@ -53,7 +53,7 @@ Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc" { "'smcp' Gemeine nach
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen" { "'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc" { "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 0" { "'liga' Standard Ligatures in Latin lookup 0"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 4 0 0 "'dlig' optionale Ligaturen in Latin lookup 1" { "'dlig' optionale Ligaturen in Latin lookup 1"  } ['dlig' ('latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin lookup 13" { "'hlig' Historic Ligatures in Latin lookup 13-1"  } ['hlig' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE" { "'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic" { "'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Cyrillic lookup 0" { "'kern' Horizontales Kerning in Cyrillic lookup 0"  } ['kern' ('cyrl' <'dflt' > ) ]
@@ -49181,7 +49181,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 0" c h
 LCarets2: 1 419
 EndChar
 
-StartChar: V.alt
+StartChar: c_t
 Encoding: 1114139 -1 1755
 Width: 604
 GlyphClass: 2
@@ -49230,6 +49230,7 @@ SplineSet
  517 434 l 1
  577.8 434 597.4 439.6 610 479 c 0
 EndSplineSet
+Ligature2: "'hlig' Historic Ligatures in Latin lookup 13-1" c t
 EndChar
 
 StartChar: K.alt
@@ -52488,7 +52489,7 @@ SplineSet
  367.2 438.1 367.5 438.1 367.8 438 c 0
  367.9 438 368 437.9 368.1 437.9 c 1
 EndSplineSet
-Ligature2: "'dlig' optionale Ligaturen in Latin lookup 1" s t
+Ligature2: "'hlig' Historic Ligatures in Latin lookup 13-1" s t
 LCarets2: 1 365
 EndChar
 
