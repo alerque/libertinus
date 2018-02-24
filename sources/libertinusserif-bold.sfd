@@ -321,7 +321,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR" "top_rechts" "'mark' Top rechts"
-BeginChars: 65735 2378
+BeginChars: 65737 2380
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -8224,7 +8224,7 @@ Width: 956
 Flags: MW
 AnchorPoint: "unten_punkt" 549 -107 basechar 0
 AnchorPoint: "unten_anhang" 549 4 basechar 0
-AnchorPoint: "top_akzent" 553 805 basechar 0
+AnchorPoint: "top_akzent" 553 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10238,7 +10238,7 @@ StartChar: OE
 Encoding: 338 338 452
 Width: 925
 Flags: MW
-AnchorPoint: "top_akzent" 546 698 basechar 0
+AnchorPoint: "top_akzent" 490 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10287,6 +10287,7 @@ StartChar: oe
 Encoding: 339 339 453
 Width: 828
 Flags: MW
+AnchorPoint: "top_akzent" 454 645 basechar 0
 AnchorPoint: "ogonek" 361 41 basechar 0
 LayerCount: 2
 Fore
@@ -12270,6 +12271,7 @@ LayerCount: 2
 Fore
 Refer: 110 1236 N 1 0 0 1 0 0 2
 Refer: 1418 772 N 1 0 0 1 770 227 2
+Substitution2: "'c2sc' Versale nach Kapitaelchen 1" uni01E3.sc
 LCarets2: 1 0
 EndChar
 
@@ -12281,6 +12283,7 @@ LayerCount: 2
 Fore
 Refer: 381 230 N 1 0 0 1 0 0 2
 Refer: 1418 772 N 1 0 0 1 561 32 2
+Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" uni01E3.sc
 LCarets2: 1 0
 EndChar
 
@@ -12808,6 +12811,7 @@ LayerCount: 2
 Fore
 Refer: 2236 -1 N 1 0 0 1 775 0 2
 Refer: 110 1236 N 1 0 0 1 0 0 2
+Substitution2: "'c2sc' Versale nach Kapitaelchen 1" aeacute.sc
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 LCarets2: 1 0
 EndChar
@@ -12820,6 +12824,7 @@ LayerCount: 2
 Fore
 Refer: 381 230 N 1 0 0 1 0 0 2
 Refer: 670 769 N 1 0 0 1 559 0 2
+Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" aeacute.sc
 LCarets2: 1 0
 EndChar
 
@@ -43493,6 +43498,7 @@ StartChar: ae.sc
 Encoding: 65611 -1 1842
 Width: 827
 Flags: MW
+AnchorPoint: "top_akzent" 452 660 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -43762,6 +43768,7 @@ StartChar: oe.sc
 Encoding: 65628 -1 1859
 Width: 856
 Flags: MW
+AnchorPoint: "top_akzent" 444 660 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59741,6 +59748,26 @@ SplineSet
  385 546 333 563 290 563 c 0
  230 563 225 550 225 523 c 0
 EndSplineSet
+EndChar
+
+StartChar: aeacute.sc
+Encoding: 65735 -1 2378
+Width: 827
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 1706 714 N 1 0 0 1 332 19 2
+Refer: 1842 -1 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uni01E3.sc
+Encoding: 65736 -1 2379
+Width: 827
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 659 713 N 1 0 0 1 283.5 -19 2
+Refer: 1842 -1 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont
