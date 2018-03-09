@@ -74,7 +74,7 @@ check: $(CHK) $(MIS) $(DUP)
 	@$(PY) $(FINDDUPS) $< $@
 
 $(DOC)/%-table.pdf: %.otf
-	@echo "Generating $@"
+	@echo "   PDF	$@"
 	@mkdir -p $(DOC)
 	@fntsample --font-file $< --output-file $@.tmp                         \
 		   --write-outline --use-pango                                 \
@@ -90,7 +90,8 @@ $(DOC)/%-table.pdf: %.otf
 	@rm -f $@.tmp
 
 dist: check $(OTF) $(PDF)
-	@echo "Making dist tarball"
+	@echo "   DST	$(DIST).zip"
+	@rm -rf $(DIST) $(DIST).zip
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
 	@cp $(PDF) $(DIST)/$(DOC)
@@ -98,7 +99,7 @@ dist: check $(OTF) $(PDF)
 	@cp $(DOC)/$(NAME)-sample.pdf $(DIST)/$(DOC)
 	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
-	@zip -r $(DIST).zip $(DIST)
+	@zip -rq $(DIST).zip $(DIST)
 
 clean:
 	@rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(DUP) $(NRM) $(OTF) $(PDF)
