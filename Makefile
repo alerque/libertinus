@@ -64,15 +64,14 @@ check: $(CHK) $(MIS) $(DUP)
 	@echo "   CHK	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@
-	@rm -rf $@
 
 %.mis: %.sfd
 	@echo "   MIS	$(<F)"
-	@$(PY) $(FINDMISSING) $<
+	@$(PY) $(FINDMISSING) $< $@
 
 %.dup: %.sfd
 	@echo "   DUP	$(<F)"
-	@$(PY) $(FINDDUPS) $<
+	@$(PY) $(FINDDUPS) $< $@
 
 $(DOC)/%-table.pdf: %.otf
 	@echo "Generating $@"
