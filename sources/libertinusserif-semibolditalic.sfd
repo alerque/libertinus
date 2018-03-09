@@ -43,6 +43,7 @@ OS2CapHeight: 645
 OS2XHeight: 445
 OS2FamilyClass: 261
 OS2Vendor: 'ALIF'
+Lookup: 1 0 0 "'salt' Stylistic alternates" { "'salt' Stylistic alternates 1" ("alt") } ['salt' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions in Latin lookup 2" { "'frac' Diagonal Fractions in Latin lookup 2"  } ['frac' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'lnum' Versalziffern" { "'lnum' Versalziffern 1"  } ['lnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'onum' Minuskelziffern in Latin lookup 3" { "'onum' Minuskelziffern in Latin lookup 3" ("oldstyle") } ['onum' ('latn' <'dflt' > ) ]
@@ -222,7 +223,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR" "top_rechts" "'mark' Top rechts"
-BeginChars: 1114278 2261
+BeginChars: 1114279 2262
 
 StartChar: space
 Encoding: 32 32 0
@@ -1647,7 +1648,7 @@ Width: 452
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "mittelpunkt" 186 315 basechar 0
-AnchorPoint: "top_akzent" 182 850 basechar 0
+AnchorPoint: "top_akzent" 432 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1679,6 +1680,7 @@ SplineSet
  506 679 530 668 530 644 c 0
  530 624 502 600 473 580 c 1
 EndSplineSet
+Substitution2: "'salt' Stylistic alternates 1" J.alt
 EndChar
 
 StartChar: K
@@ -69940,6 +69942,38 @@ LayerCount: 2
 Fore
 Refer: 632 713 N 1 0 0 1 283.802 20 2
 Refer: 1799 -1 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: J.alt
+Encoding: 1114278 -1 2261
+Width: 371
+Flags: W
+HStem: -183 55<-27.5 82.8732> 614 33<177.69 253.112 410.75 482.118>
+AnchorPoint: "top_akzent" 367 850 basechar 0
+AnchorPoint: "mittelpunkt" 277 315 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+379 522 m 2
+ 289 103 l 2
+ 258 -41 189 -92 138 -129 c 0
+ 90 -164 40 -183 -15 -183 c 3
+ -40 -183 -93 -164 -93 -126 c 3
+ -93 -92 -47 -65 -28 -65 c 3
+ 9 -65 12 -90 20 -106 c 0
+ 27 -118 40 -128 57 -128 c 3
+ 97 -128 120 -99 159 81 c 2
+ 254 522 l 2
+ 258 542 261 558 261 570 c 0
+ 261 608 238 612 179 614 c 1
+ 178 616 177 619 177 623 c 0
+ 177 632 180 643 185 647 c 1
+ 234 646 280 645 341 645 c 0
+ 395 645 433 646 481 647 c 1
+ 482 645 483 642 483 638 c 0
+ 483 629 479 618 474 614 c 1
+ 414 611 397 605 379 522 c 2
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

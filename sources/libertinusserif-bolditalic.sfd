@@ -4495,31 +4495,39 @@ EndChar
 
 StartChar: J
 Encoding: 74 74 201
-Width: 359
+Width: 494
+UnlinkRmOvrlpSave: 1
 Flags: MW
-AnchorPoint: "top_akzent" 237 850 basechar 0
+AnchorPoint: "top_akzent" 457 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-373 522 m 2
- 291 103 l 2
- 263 -40 197 -92 148 -129 c 0
- 102 -164 49 -187 -8 -187 c 0
- -36 -187 -97 -163 -88 -116 c 0
- -82 -87 -39 -60 -22 -60 c 0
- 16 -60 16 -88 25 -105 c 0
- 32 -118 48 -128 65 -128 c 0
- 106 -128 118 -99 153 81 c 2
- 238 522 l 2
- 254 605 239 610 163 613 c 1
- 158 619 162 641 169 647 c 1
- 217 646 266 645 328 645 c 0
- 384 645 424 646 471 647 c 1
- 476 641 471 619 464 613 c 1
- 406 610 389 605 373 522 c 2
+200 334 m 25
+ 456 344 l 25
+ 535 335 l 25
+ 528 296 l 25
+ 417 286 l 25
+ 200 299 l 25
+ 200 334 l 25
+122 538 m 3
+ 122 623 211 663 292 663 c 3
+ 377 663 444 608 529 606 c 1
+ 455 375 507 -200 146 -200 c 3
+ 105 -200 31 -180 31 -121 c 3
+ 31 -93 51 -61 91 -61 c 3
+ 136 -61 161 -96 169 -125 c 1
+ 378 -73 324 678 522 678 c 3
+ 550 678 576 653 576 630 c 3
+ 576 579 496 541 428 541 c 3
+ 356 541 291 592 240 592 c 3
+ 226 592 212 587 205 577 c 1
+ 225 568 244 547 244 521 c 3
+ 244 490 211 474 180 474 c 3
+ 144 474 122 502 122 538 c 3
 EndSplineSet
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" j.sc
+Substitution2: "'salt' Stilistische Alternativformen 1" J.alt
 EndChar
 
 StartChar: K
@@ -9034,11 +9042,11 @@ EndChar
 
 StartChar: Jcircumflex
 Encoding: 308 308 364
-Width: 359
+Width: 494
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 1532 -1 N 1 0 0 1 474 0 2
+Refer: 1532 -1 N 1 0 0 1 560 0 2
 Refer: 201 74 N 1 0 0 1 0 0 2
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 EndChar
@@ -44729,6 +44737,7 @@ StartChar: J.alt
 Encoding: 1114283 -1 1495
 Width: 373
 Flags: MW
+AnchorPoint: "mittelpunkt" 287.2 315 basechar 0
 AnchorPoint: "top_akzent" 425.4 850 basechar 0
 LayerCount: 2
 Fore
