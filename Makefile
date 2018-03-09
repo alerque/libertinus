@@ -55,21 +55,21 @@ check: $(CHK) $(MIS) $(DUP)
 	@echo "   OTF	$@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
 
-%.nrm: %.sfd
+%.nrm: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; fi
 
-%.chk: %.sfd
+%.chk: %.sfd $(NORMALIZE)
 	@echo "   CHK	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@
 
-%.mis: %.sfd
+%.mis: %.sfd $(FINDMISSING)
 	@echo "   MIS	$(<F)"
 	@$(PY) $(FINDMISSING) $< $@
 
-%.dup: %.sfd
+%.dup: %.sfd $(FINDDUPS)
 	@echo "   DUP	$(<F)"
 	@$(PY) $(FINDDUPS) $< $@
 
