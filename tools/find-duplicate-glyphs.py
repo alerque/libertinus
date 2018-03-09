@@ -4,15 +4,8 @@ import fontforge
 import sys
 
 font = fontforge.open(sys.argv[1])
-glyphs = {}
-
-for glyph in font.glyphs():
-    name = glyph.glyphname
-    if name not in glyphs:
-        glyphs[name] = 0
-    glyphs[name] += 1
-
-duplicates = [g for g in glyphs if glyphs[g] > 1]
+names = [g.glyphname for g in font.glyphs()]
+duplicates = set(n for n in names if names.count(n) > 1)
 
 with open(sys.argv[2], "w") as logfile:
     msg = "PASS"
