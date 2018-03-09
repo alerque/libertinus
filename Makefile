@@ -101,4 +101,4 @@ dist: check $(OTF) $(PDF)
 	@zip -r $(DIST).zip $(DIST)
 
 clean:
-	@rm -rf $(DIST) $(DIST).zip
+	@rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(DUP) $(NRM) $(OTF) $(PDF)
