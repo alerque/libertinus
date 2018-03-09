@@ -13,5 +13,5 @@ install:
   - pip install fonttools
 
 script:
-  - make -B otf
-  - make -B -j check
+  - make otf
+  - make check
