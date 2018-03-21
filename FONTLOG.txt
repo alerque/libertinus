@@ -45,6 +45,42 @@ http://github.com/khaledhosny/libertinus
 ChangeLog
 ---------
 
+21 March 2018 (Khaled Hosny) <Libertinus> Version 6.5
+- Fix regressions in handling of extensible combining marks with LuaTeX.
+- Add Latin bold italic sans-serif alphabet.
+- Add mathematical double-struck digits.
+- Enable slashed zero feature in math font.
+- Add big sizes for more brackets; \lBrack, \rBrack, \langle, \rangle, \lAngle
+  and \rAngle.
+- Add big sizes of slash and backslash.
+- Add \widetilde, \wideutilde and \widebreve.
+- Fix side bearings of math blackboard capitals.
+- Fix math glyphs with negative left side bearing that can clash with
+  preceding glyphs.
+- Make \vert and \Vert expansion consistent in size with the brackets.
+- Remove tone bar glyphs; the support was not adequate for proper use.
+- Remove math alphabet glyphs from text fonts.
+- Fix glyphs incorrectly categorized as mark glyphs.
+- Add Bitcoin currency symbol.
+- Fix stacking of a-ring and macron.
+- Fix “ct” and “st” historic ligatures and make them consistent across fonts.
+- Fix mark positioning over AE and OE glyphs.
+- Fix style of U+2100 (a/c), U+2101 (a/s), U+2015 (c/o) and U+2106 (c/u).
+- Fix mark positioning over G and g glyphs.
+- Make default and alternate J glyphs consistent across upright and italic
+  fonts.
+- Make U+00BA MASCULINE ORDINAL INDICATOR and U+00AA FEMININE ORDINAL INDICATOR
+  have the same baseline in serif fonts.
+- Position semibold serif i/j dot similar to other styles.
+- Remove rudimentary MATH table from regular serif font.
+- Fix alignment of U+2192, U+2198, U+2199 in the monospace font.
+- Make more arrows fixed width in the monospace font.
+- Make capital roman numbers in sans-serif and sans-serif italic fonts actually
+  sans-serif.
+- Make \product in sans-serif fonts actually sans-serif.
+- The fonts can now be built with upstream FontForge, no patches needed, as
+  well as Python 3.
+
 17 May 2017 (Khaled Hosny) <Libertinus> Version 6.4
 - Fix broken extensibles of the left square bracket in the math font.
 
