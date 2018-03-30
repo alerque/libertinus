@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/khaledhosny/libertinus.svg?branch=master)](https://travis-ci.org/khaledhosny/libertinus)
+
 Libertinus fonts
 ================
 
