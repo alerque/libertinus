@@ -125,9 +125,9 @@ def process_sfd_file(sfdname, outname):
                 out.append("Encoding: %s %s %s\n" % (glyph["dec_enc"], glyph['unicode'], glyph["gid"]))
 
                 for gl in glyph['lines']:
-                    if proc.test(r"^(Refer:\s*)(\d+)(.*)$", gl):
+                    if proc.test(r"^(Refer:\s*)(-?\d+)(.*)$", gl):
                         # deselect selected references
-                        gl = re.sub(r"(\d+\s+)S(\s+\d+)", r"\1N\2", gl)
+                        gl = re.sub(r"(-?\d+\s+)S(\s+-?\d+)", r"\1N\2", gl)
                     out.append(gl)
                 out.append("EndChar\n")
 
