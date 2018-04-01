@@ -11,8 +11,7 @@ TOOLS=tools
 PY=python
 BUILD=$(TOOLS)/build.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
-FINDMISSING=$(TOOLS)/find-missing-glyphs.py
-FINDDUPS=$(TOOLS)/find-duplicate-glyphs.py
+CHECKERRS=$(TOOLS)/check-errors.py
 
 NULL=
 
@@ -35,7 +34,6 @@ FONTS=math-regular \
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
 CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
-MIS=$(FONTS:%=$(SRC)/$(NAME)%.mis)
 DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-table.pdf)
@@ -45,7 +43,7 @@ all: otf
 otf: $(OTF)
 doc: $(PDF)
 normalize: $(NRM)
-check: $(CHK) $(MIS) $(DUP)
+check: $(CHK) $(DUP)
 
 
 %.fea:
@@ -61,17 +59,13 @@ check: $(CHK) $(MIS) $(DUP)
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; fi
 
 %.chk: %.sfd $(NORMALIZE)
-	@echo "   CHK	$(<F)"
+	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@
 
-%.mis: %.sfd $(FINDMISSING)
-	@echo "   MIS	$(<F)"
-	@$(PY) $(FINDMISSING) $< $@
-
 %.dup: %.sfd $(FINDDUPS)
-	@echo "   DUP	$(<F)"
-	@$(PY) $(FINDDUPS) $< $@
+	@echo "   CHK	$(<F)"
+	@$(PY) $(CHECKERRS) $< $@
 
 $(DOC)/%-table.pdf: %.otf
 	@echo "   PDF	$@"
