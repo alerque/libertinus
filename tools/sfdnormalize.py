@@ -27,22 +27,26 @@ from __future__ import print_function
 
 from collections import OrderedDict
 
-import sys, os, re
+import sys, re
+
+FONT_RE = re.compile(r"^SplineFontDB:\s(\d+\.?\d*)")
+DROP_RE = re.compile(r"^(WinInfo|DisplaySize|AntiAlias|FitToEm|Compacted|GenTags|ModificationTime|DupEnc)")
+SPLINESET_RE = re.compile(r"^(Fore|Back|SplineSet|Grid)\s*$")
+STARTCHAR_RE = re.compile(r"^StartChar:\s*(\S+)\s*$")
+ENCODING_RE = re.compile(r"^Encoding:\s*(\d+)\s+(\-?\d+)\s*(\d*)\s*$")
+BITMAPFONT_RE = re.compile(r"^(BitmapFont:\s+\d+\s+)(\d+)(\s+\d+\s+\d+\s+\d+)")
+BDFCHAR_RE = re.compile(r"^BDFChar:\s*(\d+)(\s+.*)$")
+EMPTY_FLAGS_RE = re.compile(r"^Flags:\s*$")
+DROP_FLAGS_RE = re.compile(r"^(Flags:.*?)[HO](.*)$")
+SELECTED_POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)$")
+SELECTED_REF_RE = re.compile(r"(-?\d+\s+)S(\s+-?\d+)")
 
 # The following class is used to emulate variable assignment in
 # conditions: while testing if a pattern corresponds to a specific
 # regular expression we also preserve the 'match' object for future use.
 class RegexpProcessor:
-    def __init__(self, m=None):
-        self.m = m
-
-    def test(self, pattern, string):
-        self.m = re.search(pattern, string)
-        return not(self.m is None)
-
-    def test_special(self, pattern, string, startpos=0):
-        cp = re.compile(pattern)
-        self.m = cp.search(string, startpos)
+    def test(self, cp, string):
+        self.m = cp.search(string)
         return not(self.m is None)
 
     def match(self):
@@ -53,24 +57,16 @@ def clear_selected(m):
     return m.group(1) + str(pt) + m.group(3)
 
 def process_sfd_file(sfdname, outname):
-    if not os.access(sfdname, os.R_OK):
-        print("Cannot open %s", sfdname)
-        return
-
-    if not os.access(sfdname, os.W_OK) and not os.access(os.getcwd(), os.W_OK):
-        print("Cannot write to %s", sfdname)
-        return
-
     fp = open(sfdname, 'rt')
-    out = []
+    out = open(outname, 'wt')
     fl = fp.readline()
     proc = RegexpProcessor()
 
-    if proc.test(r"^SplineFontDB:\s(\d+\.?\d*)", fl) == False:
+    if proc.test(FONT_RE, fl) == False:
         print("%s is not a valid spline font database", sfdname)
         return
 
-    out.append(fl)
+    out.write(fl)
 
     curglyph = ''
     cur_gid = 0
@@ -86,54 +82,54 @@ def process_sfd_file(sfdname, outname):
 
     fl = fp.readline()
     while fl:
-        if proc.test(r"^(WinInfo|DisplaySize|AntiAlias|FitToEm|Compacted|GenTags|ModificationTime|DupEnc)", fl):
+        if proc.test(DROP_RE, fl):
             fl = fp.readline()
             continue
 
         elif in_chars:
             # Cleanup glyph flags
-            fl = re.sub(r"^(Flags:.*?)O(.*)$", r"\1\2", fl)
-            fl = re.sub(r"^(Flags:.*?)H(.*)$", r"\1\2", fl)
+            fl = DROP_FLAGS_RE.sub(r"\1\2", fl)
+            fl = DROP_FLAGS_RE.sub(r"\1\2", fl)
 
             # If we have removed all previously specified glyph flags,
             # then don't output the "Flags" line for this glyph
-            if proc.test(r"^Flags:\s*$", fl):
+            if proc.test(EMPTY_FLAGS_RE, fl):
                 fl = fp.readline()
                 continue
 
-        if proc.test(r"^(Fore|Back|SplineSet|Grid)\s*$", fl):
+        if proc.test(SPLINESET_RE, fl):
             in_spline_set = True;
 
-        elif proc.test(r"^EndSplineSet\s*$", fl):
+        elif fl.startswith("EndSplineSet"):
             in_spline_set = False;
 
         elif (in_spline_set):
             # Deselect selected points
-            fl = re.sub(r"(\s+[mcl]+?\s)(\d+)(\s*)$", clear_selected, fl)
+            fl = SELECTED_POINT_RE.sub(clear_selected, fl)
 
-        if proc.test(r"^BeginChars:", fl):
+        if fl.startswith("BeginChars:"):
             in_chars = True;
 
-        elif proc.test(r"^EndChars\s*$", fl):
+        elif fl.startswith("EndChars"):
             in_chars = False;
 
-            out.append("BeginChars: %s %s\n" % (max_dec_enc + 1, len(glyphs)))
+            out.write("BeginChars: %s %s\n" % (max_dec_enc + 1, len(glyphs)))
 
             for glyph in glyphs.values():
-                out.append("\n")
-                out.append("StartChar: %s\n" % glyph['name'])
-                out.append("Encoding: %s %s %s\n" % (glyph["dec_enc"], glyph['unicode'], glyph["gid"]))
+                out.write("\n")
+                out.write("StartChar: %s\n" % glyph['name'])
+                out.write("Encoding: %s %s %s\n" % (glyph["dec_enc"], glyph['unicode'], glyph["gid"]))
 
                 for gl in glyph['lines']:
-                    if proc.test(r"^(Refer:\s*)(-?\d+)(.*)$", gl):
+                    if gl.startswith("Refer: "):
                         # deselect selected references
-                        gl = re.sub(r"(-?\d+\s+)S(\s+-?\d+)", r"\1N\2", gl)
-                    out.append(gl)
-                out.append("EndChar\n")
+                        gl = SELECTED_REF_RE.sub(r"\1N\2", gl)
+                    out.write(gl)
+                out.write("EndChar\n")
 
-            out.append("EndChars\n")
+            out.write("EndChars\n")
 
-        elif proc.test(r"^StartChar:\s*(\S+)\s*$", fl):
+        elif proc.test(STARTCHAR_RE, fl):
             curglyph = proc.match().group(1)
             glyph = { 'name' : curglyph, 'lines' : [] }
 
@@ -142,7 +138,7 @@ def process_sfd_file(sfdname, outname):
 
             glyphs[curglyph] = glyph
 
-        elif proc.test(r"^Encoding:\s*(\d+)\s+(\-?\d+)\s*(\d*)\s*$", fl):
+        elif proc.test(ENCODING_RE, fl):
             dec_enc = int(proc.match().group(1))
             unicode_enc = int(proc.match().group(2))
             gid = int(proc.match().group(3))
@@ -154,27 +150,27 @@ def process_sfd_file(sfdname, outname):
             glyphs[curglyph]['unicode'] = unicode_enc;
             glyphs[curglyph]['gid'] = gid;
 
-        elif proc.test(r"^EndChar\s*$", fl):
+        elif fl.startswith("EndChar"):
             curglyph = '';
 
-        elif proc.test(r"^(BitmapFont:\s+\d+\s+)(\d+)(\s+\d+\s+\d+\s+\d+)", fl):
+        elif proc.test(BITMAPFONT_RE, fl):
             in_bdf = True;
             bdf_header = (proc.match().group(1), str(len(glyphs)), proc.match().group(3))
 
-        elif proc.test(r"^EndBitmapFont\s*$", fl):
-            out.append(''.join(bdf_header) + "\n")
+        elif fl.startswith("EndBitmapFont"):
+            out.write(''.join(bdf_header) + "\n")
             max_bdf = int(bdf_header[1])
             for gid in range(0, max_bdf):
                 if gid in bdf:
                     for bdfl in bdf[gid]['lines']:
-                        out.append(bdfl)
+                        out.write(bdfl)
 
-            out.append("EndBitmapFont\n")
+            out.write("EndBitmapFont\n")
             in_bdf = False;
             bdf = {}
             bdf_header = ()
 
-        elif proc.test(r"^BDFChar:\s*(\d+)(\s+.*)$", fl):
+        elif proc.test(BDFCHAR_RE, fl):
             cur_gid = int(proc.match().group(1))
             bdf_char = { 'gid' : cur_gid, 'lines' : [] }
             bdf_char['lines'].append("BDFChar: " + str(cur_gid) +  proc.match().group(2) + "\n")
@@ -182,7 +178,7 @@ def process_sfd_file(sfdname, outname):
 
         else:
             if not in_chars and not in_bdf:
-                out.append(fl);
+                out.write(fl);
             elif in_chars and curglyph != '':
                 glyphs[curglyph]['lines'].append(fl)
             elif in_bdf:
@@ -191,9 +187,7 @@ def process_sfd_file(sfdname, outname):
         fl = fp.readline()
 
     fp.close()
-
-    with open(outname, 'wt') as fp:
-        fp.writelines(out)
+    out.close()
 
 # Program entry point
 argc = len(sys.argv)
