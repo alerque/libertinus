@@ -43,16 +43,17 @@ OS2CapHeight: 613
 OS2XHeight: 495
 OS2FamilyClass: 261
 OS2Vendor: 'ALIF'
-Lookup: 1 0 0 "Substitution dotless forms" { "Substitution dotless forms 1"  } []
+Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution" { "'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms Cyrillic" { "'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
+Lookup: 1 0 0 "'locl' Localised Forms for Sami" { "'locl' Localised Forms for Sami-1"  } ['locl' ('latn' <'FIN ' 'ISM ' 'LSM ' 'NOR ' 'NSM ' 'SKS ' 'SSM ' 'SVE ' > ) ]
+Lookup: 1 0 0 "Substitution dotless forms" { "Substitution dotless forms 1"  } []
+Lookup: 1 0 0 "'fina' Wortendeformen" { "'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc" { "'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'c2sc' Versale nach Kapitaelchen" { "'c2sc' Versale nach Kapitaelchen 1" ("sc") } ['c2sc' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc" { "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen" { "'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc" { "'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Brueche" { "'frac' Brueche 1"  } ['frac' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'case' Versalformen" { "'case' Versalformen 1"  } ['case' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'sups' Hochgestellte" { "'sups' Hochgestellte 1" ("superior") } ['sups' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'sinf' Tiefgestellte" { "'sinf' Wissenschaftliche Indices 1" ("inferior") } ['sinf' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'c2sc' Versale nach Kapitaelchen" { "'c2sc' Versale nach Kapitaelchen 1" ("sc") } ['c2sc' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'lnum' Versalziffern" { "'lnum' Versalziffern 1"  } ['lnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'tnum' Tabellenziffern" { "'tnum' Tabellenziffern 1"  } ['tnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'pnum' Proportionalziffern" { "'pnum' Proportionalziffern 1"  } ['pnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -62,8 +63,9 @@ Lookup: 1 0 0 "'salt' Stilistische Alternativformen" { "'salt' Stilistische Alte
 Lookup: 1 0 0 "'ss01' Stilgruppe 1" { "'ss01' Stilgruppe 1 1"  } ['ss01' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss02' Stilgruppe 2" { "'ss02' Stilgruppe 2 1"  } ['ss02' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss03' Stilgruppe 3" { "'ss03' Stilgruppe 3 1"  } ['ss03' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'fina' Wortendeformen" { "'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution" { "'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ss07' Swap Eng styles" { "'ss07' Swap Eng styles-1"  } ['ss07' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'sups' Hochgestellte" { "'sups' Hochgestellte 1" ("superior") } ['sups' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'sinf' Tiefgestellte" { "'sinf' Wissenschaftliche Indices 1" ("inferior") } ['sinf' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0" { "'nalt' Alternate Annotation Forms 1"  } ['nalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Komb OR"  "'mark' Top rechts"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
@@ -97,6 +99,10 @@ ShortTable: cvt  2
   1297
 EndShort
 LangName: 1033 "" "" "" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/khaledhosny/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
+OtfFeatName: 'ss01' 1033 "Low diaeresis 'A', 'E', 'O'"
+OtfFeatName: 'ss02' 1033 "Swashy 'J', 'K', 'R'"
+OtfFeatName: 'ss03' 1033 "'double s' to two 's'"
+OtfFeatName: 'ss07' 1033 "Swap 'Eng' forms"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
@@ -243,7 +249,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "top_rechts" "'mark' Top rechts" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR"
-BeginChars: 65537 1018
+BeginChars: 65538 1019
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -14835,6 +14841,8 @@ SplineSet
  69 614 98 613 148 613 c 0
  161 613 173 614 182 615 c 0
 EndSplineSet
+Substitution2: "'ss07' Swap Eng styles-1" Eng.UCStyle
+Substitution2: "'locl' Localised Forms for Sami-1" Eng.UCStyle
 EndChar
 
 StartChar: eng
@@ -35642,6 +35650,56 @@ SplineSet
  600 733 l 1
  600 -267 l 1
 EndSplineSet
+EndChar
+
+StartChar: Eng.UCStyle
+Encoding: 65537 -1 1018
+Width: 640
+VWidth: 0
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+505 481 m 2
+ 505 567 485 571 422 578 c 1
+ 420 581 418 588 418 596 c 3
+ 418 604 420 612 422 615 c 1
+ 462 614 508 613 530 613 c 3
+ 551 613 587 614 623 615 c 1
+ 625 612 627 604 627 596 c 3
+ 627 588 625 581 623 578 c 1
+ 560 571 554 566 554 481 c 2
+ 554 110 l 2
+ 554 23 544 -80 490 -121 c 0
+ 431 -166 377 -180 311 -180 c 3
+ 267 -180 200 -160 200 -117 c 3
+ 200 -95 223 -73 247 -73 c 3
+ 275 -73 294 -85 301 -100 c 0
+ 307 -112 344 -137 380 -137 c 3
+ 421 -137 454 -84 460 46 c 1
+ 179 432 l 2
+ 162 455 153 464 148 464 c 0
+ 141 464 141 449 141 417 c 2
+ 141 132 l 2
+ 141 46 156 42 219 35 c 1
+ 221 32 223 24 223 16 c 3
+ 223 8 221 1 219 -2 c 1
+ 183 -1 139 0 119 0 c 3
+ 94 0 53 -1 19 -2 c 1
+ 17 1 15 8 15 16 c 3
+ 15 24 17 32 19 35 c 1
+ 82 42 92 47 92 132 c 2
+ 92 517 l 1
+ 87 542 65 575 26 578 c 1
+ 24 581 22 588 22 596 c 3
+ 22 604 24 612 26 615 c 1
+ 157 613 l 1
+ 451 202 l 2
+ 476 166 491 150 494 150 c 3
+ 500 150 505 161 505 179 c 2
+ 505 481 l 2
+EndSplineSet
+Substitution2: "'ss07' Swap Eng styles-1" Eng
 EndChar
 EndChars
 EndSplineFont

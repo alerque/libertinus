@@ -43,21 +43,22 @@ OS2CapHeight: 645
 OS2XHeight: 429
 OS2FamilyClass: 261
 OS2Vendor: 'ALIF'
+Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution" { "'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms Cyrillic" { "'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms for Sami" { "'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'FIN ' 'ISM ' 'LSM ' 'NOR ' 'NSM ' 'SKS ' 'SSM ' 'SVE ' > ) ]
 Lookup: 1 0 0 "Substitution f short" { "Substitution f short 1"  } []
 Lookup: 1 0 0 "Substitution dotless forms" { "Substitution dotless forms 1"  } []
-Lookup: 1 0 0 "'locl' Localized Forms Cyrillic" { "'locl' Localized Forms Cyrillic-1"  } ['locl' ('cyrl' <'SRB ' > ) ]
+Lookup: 1 0 0 "'fina' Wortendeformen" { "'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc" { "'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'c2sc' Versale nach Kapitaelchen" { "'c2sc' Versale nach Kapitaelchen 1" ("sc") } ['c2sc' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc" { "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen" { "'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc" { "'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 4 0 0 "'frac' Brueche" { "'frac' Brueche 1"  } ['frac' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'case' Versalformen" { "'case' Versalformen 1"  } ['case' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'sups' Hochgestellte" { "'sups' Hochgestellte 1" ("superior") } ['sups' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'sinf' Tiefgestellte" { "'sinf' Wissenschaftliche Indices 1" ("inferior") } ['sinf' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'c2sc' Versale nach Kapitaelchen" { "'c2sc' Versale nach Kapitaelchen 1" ("sc") } ['c2sc' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE" { "'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 6 8 0 "'calt' Contextual Alternates lookup 30" { "'calt' Contextual Alternates lookup 30 subtable"  } ['calt' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standardligaturen" { "'liga' Standardligaturen 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 4 0 0 "'dlig' optionale Ligaturen" { "'dlig' optionale Ligaturen 1"  } ['dlig' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE" { "'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historische Ligaturen" { "'hlig' Historische Ligaturen 1"  } ['hlig' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 4 0 0 "'dlig' optionale Ligaturen" { "'dlig' optionale Ligaturen 1"  } ['dlig' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 4 0 0 "'frac' Brueche" { "'frac' Brueche 1"  } ['frac' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'lnum' Versalziffern" { "'lnum' Versalziffern 1"  } ['lnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'tnum' Tabellenziffern" { "'tnum' Tabellenziffern 1"  } ['tnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'pnum' Proportionalziffern" { "'pnum' Proportionalziffern 1"  } ['pnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -67,10 +68,11 @@ Lookup: 1 0 0 "'salt' Stilistische Alternativformen" { "'salt' Stilistische Alte
 Lookup: 1 0 0 "'ss01' Stilgruppe 1" { "'ss01' Stilgruppe 1 1"  } ['ss01' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss02' Stilgruppe 2" { "'ss02' Stilgruppe 2 1"  } ['ss02' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss03' Stilgruppe 3" { "'ss03' Stilgruppe 3 1"  } ['ss03' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'fina' Wortendeformen" { "'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution" { "'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ss07' Swap 'Eng' forms" { "'ss07' Swap 'Eng' forms-1"  } ['ss07' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'sinf' Tiefgestellte" { "'sinf' Wissenschaftliche Indices 1" ("inferior") } ['sinf' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'case' Versalformen" { "'case' Versalformen 1"  } ['case' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0" { "'nalt' Alternate Annotation Forms 1"  } ['nalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 6 8 0 "'calt' Contextual Alternates lookup 30" { "'calt' Contextual Alternates lookup 30 subtable"  } ['calt' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'sups' Hochgestellte" { "'sups' Hochgestellte 1" ("superior") } ['sups' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Smallcap kerning" { "'kern' Small Caps" [150,15,4] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Cyrillic kerning" { "'kern' Cyrillic Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Greek kerning" { "'kern' Greek Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > ) ]
@@ -209,6 +211,10 @@ ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 5 1 5 2
   FClassNames: "0" "1" "2" "3" "4"
 EndFPST
 LangName: 1033 "" "" "" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/khaledhosny/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
+OtfFeatName: 'ss01' 1033 "Low diaeresis on 'A', 'E', 'O'"
+OtfFeatName: 'ss02' 1033 "Swashy 'K', 'R'"
+OtfFeatName: 'ss03' 1033 "'double s' to two 's'"
+OtfFeatName: 'ss07' 1033 "Swap 'Eng' forms"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
@@ -365,7 +371,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "top_rechts" "'mark' Top rechts" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR"
-BeginChars: 65777 2331
+BeginChars: 65779 2333
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -10709,7 +10715,8 @@ EndChar
 
 StartChar: Eng
 Encoding: 330 330 446
-Width: 666
+Width: 628
+UnlinkRmOvrlpSave: 1
 Flags: MW
 AnchorPoint: "unten_punkt" 364 -109 basechar 0
 AnchorPoint: "unten_anhang" 124 -3 basechar 0
@@ -10717,61 +10724,53 @@ AnchorPoint: "top_akzent" 346 804 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-598 97 m 1
- 572 -31 531 -93 466 -139 c 1
- 416 -177 373 -178 349 -178 c 0
- 328 -178 291 -160 298 -124 c 0
- 303 -102 328 -88 342 -88 c 0
- 371 -88 380 -102 386 -115 c 0
- 391 -125 396 -133 410 -133 c 0
- 439 -133 473 -109 508 40 c 1
- 274 455 l 2
- 261 477 253 488 247 488 c 0
- 240 488 235 473 228 439 c 2
- 160 88 l 2
- 154 58 164 32 201 29 c 2
- 226 27 l 2
- 230 27 233 24 232 19 c 2
- 228 0 l 1
- 226 -2 l 1
- 226 -2 158 0 120 0 c 0
- 86 0 12 -2 12 -2 c 1
- 10 0 l 1
- 14 18 l 2
- 15 23 18 26 28 27 c 2
- 53 29 l 2
- 93 32 111 61 117 88 c 2
- 207 550 l 1
- 206 576 185 615 154 618 c 0
- 147 619 139 621 140 626 c 2
- 143 644 l 1
- 146 646 l 1
- 277 646 l 1
- 520 203 l 2
- 541 166 551 148 558 148 c 0
- 564 148 566 159 570 178 c 2
- 644 557 l 2
- 649 584 643 613 603 616 c 2
- 579 618 l 2
- 574 618 566 621 567 626 c 2
- 571 645 l 1
- 575 646 l 1
- 575 646 646 645 681 645 c 0
- 718 645 788 646 788 646 c 1
- 789 645 l 1
- 786 626 l 2
- 785 621 780 618 777 618 c 2
- 750 616 l 2
- 712 613 693 587 687 557 c 2
- 598 97 l 1
+608 128 m 2
+ 563 -110 477 -200 367 -200 c 3
+ 321 -200 271 -177 271 -141 c 3
+ 271 -126 282 -101 309 -101 c 3
+ 331 -101 344 -107 356 -124 c 0
+ 369 -143 365 -165 381 -165 c 3
+ 446 -165 490 -67 524 106 c 2
+ 577 376 l 2
+ 584 411 589 449 589 484 c 3
+ 589 560 554 584 498 584 c 3
+ 410 584 353 525 218 328 c 1
+ 186 350 l 1
+ 328 579 430 655 536 655 c 3
+ 609 655 668 637 668 499 c 3
+ 668 472 667 442 661 409 c 2
+ 608 128 l 2
+213 569 m 2
+ 214 574 214 578 214 582 c 3
+ 214 602 201 612 169 615 c 2
+ 135 618 l 1
+ 134 619 134 622 134 625 c 3
+ 134 633 136 644 138 647 c 1
+ 182 646 227 645 265 645 c 3
+ 278 645 291 646 306 647 c 1
+ 193 76 l 2
+ 192 71 191 66 191 62 c 3
+ 191 42 205 33 237 30 c 2
+ 271 27 l 1
+ 272 26 272 23 272 20 c 3
+ 272 12 270 1 268 -2 c 1
+ 224 -1 179 0 141 0 c 3
+ 102 0 66 -1 21 -2 c 1
+ 19 1 19 6 19 10 c 3
+ 19 17 21 25 23 27 c 1
+ 54 30 l 2
+ 95 34 110 48 116 76 c 2
+ 213 569 l 2
 EndSplineSet
+Substitution2: "'ss07' Swap 'Eng' forms-1" Eng.UCStyle
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" eng.sc
+Substitution2: "'locl' Localized Forms for Sami-1" Eng.UCStyle
 EndChar
 
 StartChar: eng
 Encoding: 331 331 447
-Width: 518
+Width: 489
 Flags: MW
 AnchorPoint: "unten_punkt" 265 -111 basechar 0
 AnchorPoint: "unten_anhang" 128 9 basechar 0
@@ -10779,35 +10778,36 @@ AnchorPoint: "top_akzent" 264 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-304.6 -170 m 0
- 322.7 -141.6 353.3 -62.3 375.8 26 c 0
- 398.9 116.7 414.6 220.5 414.6 287.4 c 0
- 414.6 357.8 394.3 380 370 380 c 0
+305 -170 m 0
+ 323 -142 354 -62 376 26 c 0
+ 399 117 415 220 415 287 c 3
+ 415 357 394 380 370 380 c 3
  334 380 279 320 216 238 c 1
- 177.9 72 l 2
- 169 34 170 -10 132 -10 c 0
- 100.2 -10 89.1 0.5 89.1 17.2 c 0
- 89.1 27 97 52 101.8 72 c 2
+ 178 72 l 2
+ 169 34 170 -10 132 -10 c 3
+ 100 -10 89 0 89 17 c 3
+ 89 27 97 52 102 72 c 2
  158 321 l 2
- 164 349 167 362.9 167 372 c 0
+ 164 349 167 363 167 372 c 3
  167 382 161 391 149 392 c 2
  109 395 l 1
- 103 404 101.3 415 108 423 c 1
- 155 429 202 436 234 436 c 0
- 247.2 436 254.5 428.6 254.5 414.9 c 0
- 254.5 397.8 242 359 232.3 320.2 c 2
+ 106 400 104 406 104 411 c 3
+ 104 415 105 419 108 423 c 1
+ 155 429 202 436 234 436 c 3
+ 247 436 254 429 254 415 c 3
+ 254 398 242 359 232 320 c 2
  230 311 l 1
  231 310 l 1
- 323 418 366 439 418 439 c 0
- 461.9 439 493.5 397.3 493.5 303.7 c 0
- 493.5 248.6 480.5 134.3 448.5 28 c 0
- 422.9 -56.9 388.6 -124.9 356 -170 c 0
- 331.8 -203.5 281 -233 240 -233 c 0
- 172 -233 147.6 -209.3 147.6 -187 c 0
- 147.6 -170 157.1 -151 184.7 -151 c 0
- 203.8 -151 222.9 -166.8 231.4 -178.5 c 0
- 238.8 -190.2 243 -200 259 -200 c 0
- 274 -200 293.5 -187.4 304.6 -170 c 0
+ 323 418 366 439 418 439 c 3
+ 462 439 494 398 494 304 c 3
+ 494 249 480 134 448 28 c 0
+ 422 -57 389 -125 356 -170 c 0
+ 332 -204 281 -233 240 -233 c 3
+ 172 -233 148 -209 148 -187 c 3
+ 148 -170 157 -151 185 -151 c 3
+ 204 -151 223 -166 231 -178 c 0
+ 238 -190 243 -200 259 -200 c 3
+ 274 -200 294 -187 305 -170 c 0
 EndSplineSet
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" eng.sc
 EndChar
@@ -63391,62 +63391,58 @@ EndChar
 
 StartChar: eng.sc
 Encoding: 65668 -1 2082
-Width: 613
+Width: 537
+UnlinkRmOvrlpSave: 1
 Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-446 27 m 1
- 252 325 l 1
- 243 341 236 349 231 349 c 0
- 225 349 221 338 216 314 c 2
- 164 70 l 2
- 159 48 167 27 197 27 c 2
- 218 27 l 2
- 221 27 224 25 223 21 c 2
- 219 0 l 1
- 217 -1 l 1
- 217 -1 149 0 119 0 c 0
- 91 0 35 -1 35 -1 c 1
- 29 0 l 1
- 34 21 l 2
- 35 25 42 27 45 27 c 2
- 66 27 l 2
- 98 27 113 51 118 70 c 2
- 186 394 l 1
- 185 412 168 441 143 441 c 2
- 139 441 l 2
- 135 441 130 444 131 448 c 2
- 133 459 l 1
- 136 462 l 1
- 261 462 l 1
- 261 462 392 272 467 146 c 0
- 482 120 479 100 485 100 c 0
- 488 100 490 103 492 111 c 2
- 495 127 l 1
- 551 391 l 2
- 556 411 550 435 518 435 c 2
- 498 435 l 2
- 494 435 488 437 489 440 c 2
- 493 461 l 1
- 499 462 l 1
- 499 462 566 460 594 460 c 0
- 624 460 681 462 681 462 c 1
- 682 461 l 1
- 678 440 l 2
- 677 437 673 435 670 435 c 2
- 649 435 l 2
- 619 435 603 413 598 391 c 2
- 528 62 l 1
- 527 61 l 1
- 510 -22 482 -89 430 -132 c 1
- 405 -150 372 -162 349 -162 c 0
- 322 -162 262 -153 271 -115 c 1
- 274 -97 288 -93 300 -93 c 0
- 322 -93 324 -113 324 -122 c 0
- 324 -130 325 -140 347 -140 c 0
- 383 -140 413 -118 446 27 c 1
+562 296 m 2
+ 505 29 l 2
+ 484 -69 450 -130 407 -165 c 0
+ 381 -186 349 -200 322 -200 c 3
+ 279 -200 242 -188 242 -159 c 3
+ 242 -132 262 -114 280 -114 c 3
+ 305 -114 309 -136 309 -155 c 3
+ 309 -166 310 -173 330 -173 c 3
+ 361 -173 395 -137 427 14 c 2
+ 483 275 l 2
+ 489 304 493 335 493 363 c 3
+ 493 398 469 424 431 424 c 3
+ 369 424 305 365 215 254 c 1
+ 173 254 l 1
+ 294 421 348 473 454 473 c 3
+ 499 473 567 453 567 364 c 3
+ 567 344 566 322 562 296 c 2
+188 65 m 2
+ 187 62 187 58 187 55 c 0
+ 187 39 197 28 223 28 c 2
+ 243 28 l 2
+ 246 28 248 27 248 24 c 3
+ 248 23 248 23 248 22 c 2
+ 244 1 l 1
+ 242 -1 l 1
+ 242 -1 175 1 144 1 c 3
+ 116 1 32 -1 32 -1 c 1
+ 30 1 l 1
+ 35 22 l 2
+ 36 26 39 28 42 28 c 2
+ 63 28 l 2
+ 95 28 109 46 113 65 c 2
+ 185 402 l 2
+ 186 406 186 409 186 412 c 3
+ 186 427 175 434 149 434 c 2
+ 129 434 l 2
+ 126 434 123 435 123 437 c 3
+ 123 438 l 2
+ 127 460 l 1
+ 129 462 l 1
+ 129 462 208 460 239 460 c 3
+ 249 460 274 462 274 462 c 1
+ 188 65 l 2
 EndSplineSet
+Substitution2: "'ss07' Swap 'Eng' forms-1" Eng.UCStyle.sc
+Substitution2: "'locl' Localized Forms for Sami-1" Eng.UCStyle.sc
 EndChar
 
 StartChar: ohungarumlaut.sc
@@ -70324,6 +70320,128 @@ LayerCount: 2
 Fore
 Refer: 661 713 N 1 0 0 1 192.199 -16 2
 Refer: 1802 -1 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Eng.UCStyle
+Encoding: 65777 -1 2331
+Width: 666
+Flags: W
+AnchorPoint: "unten_punkt" 364 -109 basechar 0
+AnchorPoint: "unten_anhang" 124 -3 basechar 0
+AnchorPoint: "top_akzent" 346 804 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+598 97 m 1
+ 572 -31 531 -93 466 -139 c 1
+ 416 -177 373 -178 349 -178 c 0
+ 328 -178 291 -160 298 -124 c 0
+ 303 -102 328 -88 342 -88 c 0
+ 371 -88 380 -102 386 -115 c 0
+ 391 -125 396 -133 410 -133 c 0
+ 439 -133 473 -109 508 40 c 1
+ 274 455 l 2
+ 261 477 253 488 247 488 c 0
+ 240 488 235 473 228 439 c 2
+ 160 88 l 2
+ 154 58 164 32 201 29 c 2
+ 226 27 l 2
+ 230 27 233 24 232 19 c 2
+ 228 0 l 1
+ 226 -2 l 1
+ 226 -2 158 0 120 0 c 0
+ 86 0 12 -2 12 -2 c 1
+ 10 0 l 1
+ 14 18 l 2
+ 15 23 18 26 28 27 c 2
+ 53 29 l 2
+ 93 32 111 61 117 88 c 2
+ 207 550 l 1
+ 206 576 185 615 154 618 c 0
+ 147 619 139 621 140 626 c 2
+ 143 644 l 1
+ 146 646 l 1
+ 277 646 l 1
+ 520 203 l 2
+ 541 166 551 148 558 148 c 0
+ 564 148 566 159 570 178 c 2
+ 644 557 l 2
+ 649 584 643 613 603 616 c 2
+ 579 618 l 2
+ 574 618 566 621 567 626 c 2
+ 571 645 l 1
+ 575 646 l 1
+ 575 646 646 645 681 645 c 0
+ 718 645 788 646 788 646 c 1
+ 789 645 l 1
+ 786 626 l 2
+ 785 621 780 618 777 618 c 2
+ 750 616 l 2
+ 712 613 693 587 687 557 c 2
+ 598 97 l 1
+EndSplineSet
+Substitution2: "'ss07' Swap 'Eng' forms-1" Eng
+EndChar
+
+StartChar: Eng.UCStyle.sc
+Encoding: 65778 -1 2332
+Width: 613
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+446 27 m 1
+ 252 325 l 1
+ 243 341 236 349 231 349 c 0
+ 225 349 221 338 216 314 c 2
+ 164 70 l 2
+ 159 48 167 27 197 27 c 2
+ 218 27 l 2
+ 221 27 224 25 223 21 c 2
+ 219 0 l 1
+ 217 -1 l 1
+ 217 -1 149 0 119 0 c 0
+ 91 0 35 -1 35 -1 c 1
+ 29 0 l 1
+ 34 21 l 2
+ 35 25 42 27 45 27 c 2
+ 66 27 l 2
+ 98 27 113 51 118 70 c 2
+ 186 394 l 1
+ 185 412 168 441 143 441 c 2
+ 139 441 l 2
+ 135 441 130 444 131 448 c 2
+ 133 459 l 1
+ 136 462 l 1
+ 261 462 l 1
+ 261 462 392 272 467 146 c 0
+ 482 120 479 100 485 100 c 0
+ 488 100 490 103 492 111 c 2
+ 495 127 l 1
+ 551 391 l 2
+ 556 411 550 435 518 435 c 2
+ 498 435 l 2
+ 494 435 488 437 489 440 c 2
+ 493 461 l 1
+ 499 462 l 1
+ 499 462 566 460 594 460 c 0
+ 624 460 681 462 681 462 c 1
+ 682 461 l 1
+ 678 440 l 2
+ 677 437 673 435 670 435 c 2
+ 649 435 l 2
+ 619 435 603 413 598 391 c 2
+ 528 62 l 1
+ 527 61 l 1
+ 510 -22 482 -89 430 -132 c 1
+ 405 -150 372 -162 349 -162 c 0
+ 322 -162 262 -153 271 -115 c 1
+ 274 -97 288 -93 300 -93 c 0
+ 322 -93 324 -113 324 -122 c 0
+ 324 -130 325 -140 347 -140 c 0
+ 383 -140 413 -118 446 27 c 1
+EndSplineSet
+Substitution2: "'ss07' Swap 'Eng' forms-1" eng.sc
 EndChar
 EndChars
 EndSplineFont
