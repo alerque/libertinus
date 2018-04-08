@@ -43,6 +43,7 @@ OS2CapHeight: 658
 OS2XHeight: 460
 OS2FamilyClass: 2050
 OS2Vendor: 'ALIF'
+Lookup: 1 0 0 "'locl' Localised Forms for Sami" { "'locl' Localised Forms for Sami-1"  } ['locl' ('latn' <'FIN ' 'ISM ' 'LSM ' 'NOR ' 'NSM ' 'SKS ' 'SSM ' 'SVE ' > ) ]
 Lookup: 1 0 0 "Substitution cap-Accents" { "Substitution cap-Accents 1"  } []
 Lookup: 1 0 0 "Substitution f short" { "Substitution f short 1"  } []
 Lookup: 1 0 0 "Substitution dotless forms" { "Substitution dotless forms 1"  } []
@@ -69,6 +70,7 @@ Lookup: 1 0 0 "'ss01' Stilgruppe 1" { "'ss01' Stilgruppe 1 1"  } ['ss01' ('DFLT'
 Lookup: 1 0 0 "'ss02' Stilgruppe 2" { "'ss02' Stilgruppe 2 1"  } ['ss02' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss03' Stilgruppe 3" { "'ss03' Stilgruppe 3 1"  } ['ss03' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss04' Stilgruppe 4" { "'ss04' Stilgruppe 4 1"  } ['ss04' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'ss07' Swap 'Eng' forms" { "'ss07' Swap 'Eng' forms-1"  } ['ss07' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'case' Versalformen" { "'case' Versalformen 1"  } ['case' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0" { "'nalt' Alternate Annotation Forms 1"  } ['nalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 6 8 0 "'calt' Contextual Alternates lookup 34" { "'calt' Contextual Alternates lookup 34 subtable"  } ['calt' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > 'DFLT' <'dflt' > ) ]
@@ -241,6 +243,11 @@ ChainSub2: coverage "'frac' Contextual Chaining Substitution-1" 0 0 0 1
 EndFPST
 LangName: 1033 "" "" "" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/khaledhosny/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
 GaspTable: 3 8 2 17 1 65535 3 0
+OtfFeatName: 'ss01' 1033 "Low diaeresis on 'A', 'E', 'O'"
+OtfFeatName: 'ss02' 1033 "Swash 'K', 'R'"
+OtfFeatName: 'ss03' 1033 "Upper case 'double s' to two 'S'"
+OtfFeatName: 'ss04' 1033 "Ampersand"
+OtfFeatName: 'ss07' 1033 "Swap 'Eng' forms"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
@@ -367,7 +374,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "komb_OR" "'mark' komb OR" "top_akzent" "'mark' Top Akzent" "top_punkt" "'mark' Top Akzent" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt"
-BeginChars: 65761 2454
+BeginChars: 65763 2456
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -9612,40 +9619,38 @@ AnchorPoint: "unten_anhang" 124 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-101 445 m 2
- 101 520 99 588 91 645 c 1
- 93 648 l 1
- 93 648 110 645 144 645 c 0
- 148.5 645 158 647 158 647 c 1
- 501 203 l 2
- 544.3 146.9 553 123.6 553 178 c 2
- 553 445 l 2
- 553 520 551 588 543 645 c 1
- 545 648 l 1
- 545 648 555.7 645 580 645 c 0
- 602.3 645 615 648 615 648 c 1
- 616 645 l 1
- 608 592 606 520 606 445 c 2
- 606 117 l 2
- 606 2.5 595.7 -27.8 543 -97 c 0
- 501.6 -151.4 448 -173 385 -173 c 0
- 366 -173 348 -169 340 -164 c 1
- 339 -161 l 1
- 350 -142 360 -106 367 -79 c 1
- 378 -78 l 1
- 389 -98 407 -113 436 -113 c 0
- 497.3 -113 520.1 -40.8 527.2 32.7 c 1
- 193 455 l 2
- 155.9 503 154 500 154 439 c 2
- 154 200 l 2
- 154 125 156 57 164 0 c 1
- 162 -3 l 1
- 162 -3 151.3 0 127 0 c 0
- 104.7 0 92 -3 92 -3 c 1
- 91 0 l 1
- 99 53 101 125 101 200 c 2
- 101 445 l 2
+104 445 m 2
+ 104 520 102 588 94 645 c 1
+ 96 648 l 1
+ 108 646 135 645 147 645 c 3
+ 159 645 186 646 198 648 c 1
+ 200 645 l 1
+ 194 607 192 558 191 506 c 1
+ 258 594 337 655 441 655 c 3
+ 508 655 614 620 614 449 c 2
+ 614 117 l 2
+ 614 3 604 -27 551 -96 c 0
+ 509 -150 456 -172 393 -172 c 3
+ 374 -172 356 -168 348 -163 c 1
+ 347 -160 l 1
+ 358 -141 368 -105 375 -78 c 1
+ 386 -77 l 1
+ 397 -97 415 -112 444 -112 c 3
+ 523 -112 528 7 528 95 c 2
+ 528 416 l 2
+ 528 458 528 589 420 589 c 3
+ 315 589 255 532 190 441 c 1
+ 190 200 l 2
+ 190 125 192 57 200 0 c 1
+ 198 -3 l 1
+ 186 -1 159 0 147 0 c 3
+ 135 0 108 -1 96 -3 c 1
+ 94 0 l 1
+ 102 54 104 125 104 200 c 2
+ 104 445 l 2
 EndSplineSet
+Substitution2: "'ss07' Swap 'Eng' forms-1" Eng.UCStyle
+Substitution2: "'locl' Localised Forms for Sami-1" Eng.UCStyle
 Position2: "'cpsp' Versalabstaende 1" dx=5 dy=0 dh=10 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" eng.sc
 Comment: "Sieht in Times anders aus"
@@ -50724,45 +50729,44 @@ EndChar
 
 StartChar: eng.sc
 Encoding: 65652 -1 2168
-Width: 546
+Width: 529
 Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-82 317 m 2
- 82 371 81 419 75 460 c 1
- 76 462 l 1
- 76 462 89 460 114 460 c 0
- 129 460 149 462 149 462 c 1
- 393 145 l 2
- 402 134 414 118 414 147 c 2
- 414 317 l 2
- 414 371 413 419 407 460 c 1
- 409 462 l 1
- 409 462 417 460 435 460 c 0
- 451 460 471 462 471 462 c 1
- 471 460 l 1
- 466 422 464 371 464 317 c 2
- 464 117 l 2
- 464 2.5 463 -27 413 -97 c 0
- 373 -152 318 -173 255 -173 c 0
- 236 -173 218 -169 210 -164 c 1
- 209 -161 l 1
- 220 -142 230 -106 237 -79 c 1
- 248 -78 l 1
- 259 -98 277 -113 306 -113 c 0
- 365.3 -113 384 -45.3 389.7 25.6 c 1
- 153 325 l 2
- 138.4 343.5 132 340 132 313 c 2
- 132 143 l 2
- 132 89 133 41 139 0 c 1
- 138 -3 l 1
- 138 -3 126 0 109 0 c 0
- 93 0 76 -3 76 -3 c 1
+85 281 m 2
+ 85 353 84 406 75 460 c 1
+ 76 463 l 1
+ 76 463 90 460 125 460 c 3
+ 159 460 173 463 173 463 c 1
+ 175 460 l 1
+ 170 424 167 395 166 361 c 1
+ 219 430 274 470 346 470 c 3
+ 407 470 479 452 479 349 c 2
+ 479 117 l 2
+ 479 3 472 -28 420 -97 c 0
+ 379 -152 325 -173 262 -173 c 3
+ 243 -173 225 -169 217 -164 c 1
+ 216 -161 l 1
+ 227 -142 237 -106 244 -79 c 1
+ 255 -78 l 1
+ 266 -98 284 -113 313 -113 c 3
+ 392 -113 399 7 399 95 c 2
+ 399 308 l 2
+ 399 368 389 418 332 418 c 3
+ 274 418 213 367 165 292 c 0
+ 165 288 165 285 165 281 c 2
+ 165 179 l 2
+ 165 103 166 57 175 0 c 1
+ 173 -3 l 1
+ 173 -3 159 0 125 0 c 3
+ 90 0 76 -3 76 -3 c 1
  75 0 l 1
- 81 38 82 89 82 143 c 2
- 82 317 l 2
+ 84 54 85 105 85 179 c 2
+ 85 281 l 2
 EndSplineSet
+Substitution2: "'ss07' Swap 'Eng' forms-1" Eng.UCStyle.sc
+Substitution2: "'locl' Localised Forms for Sami-1" Eng.UCStyle.sc
 EndChar
 
 StartChar: ohungarumlaut.sc
@@ -58446,6 +58450,102 @@ LayerCount: 2
 Fore
 Refer: 659 713 N 1 0 0 1 252.5 17 2
 Refer: 1885 -1 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Eng.UCStyle
+Encoding: 65761 -1 2454
+Width: 695
+Flags: W
+HStem: -173 60<367.894 479.28> -3 21G<91 92 162 164> 628 20G<91 93 158 173.45 543 545 615 616>
+VStem: 101 53<2.67992 476.575> 553 53<162.883 642.32>
+AnchorPoint: "top_punkt" 345 721 basechar 0
+AnchorPoint: "top_akzent" 346 804 basechar 0
+AnchorPoint: "unten_punkt" 364 -109 basechar 0
+AnchorPoint: "unten_anhang" 124 -3 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+101 445 m 2
+ 101 520 99 588 91 645 c 1
+ 93 648 l 1
+ 93 648 110 645 144 645 c 0
+ 148.5 645 158 647 158 647 c 1
+ 501 203 l 2
+ 544.3 146.9 553 123.6 553 178 c 2
+ 553 445 l 2
+ 553 520 551 588 543 645 c 1
+ 545 648 l 1
+ 545 648 555.7 645 580 645 c 0
+ 602.3 645 615 648 615 648 c 1
+ 616 645 l 1
+ 608 592 606 520 606 445 c 2
+ 606 117 l 2
+ 606 2.5 595.7 -27.8 543 -97 c 0
+ 501.6 -151.4 448 -173 385 -173 c 0
+ 366 -173 348 -169 340 -164 c 1
+ 339 -161 l 1
+ 350 -142 360 -106 367 -79 c 1
+ 378 -78 l 1
+ 389 -98 407 -113 436 -113 c 0
+ 497.3 -113 520.1 -40.8 527.2 32.7 c 1
+ 193 455 l 2
+ 155.9 503 154 500 154 439 c 2
+ 154 200 l 2
+ 154 125 156 57 164 0 c 1
+ 162 -3 l 1
+ 162 -3 151.3 0 127 0 c 0
+ 104.7 0 92 -3 92 -3 c 1
+ 91 0 l 1
+ 99 53 101 125 101 200 c 2
+ 101 445 l 2
+EndSplineSet
+Substitution2: "'ss07' Swap 'Eng' forms-1" Eng
+EndChar
+
+StartChar: Eng.UCStyle.sc
+Encoding: 65762 -1 2455
+Width: 546
+Flags: W
+HStem: -173 60<237.894 350.289> -3 21G<75 76 138 139> 442 20G<75 76 149 164.394 407 409 471 471>
+VStem: 82 50<1.927 325.006> 414 50<144.997 458.073>
+LayerCount: 2
+Fore
+SplineSet
+82 317 m 2
+ 82 371 81 419 75 460 c 1
+ 76 462 l 1
+ 76 462 89 460 114 460 c 0
+ 129 460 149 462 149 462 c 1
+ 393 145 l 2
+ 402 134 414 118 414 147 c 2
+ 414 317 l 2
+ 414 371 413 419 407 460 c 1
+ 409 462 l 1
+ 409 462 417 460 435 460 c 0
+ 451 460 471 462 471 462 c 1
+ 471 460 l 1
+ 466 422 464 371 464 317 c 2
+ 464 117 l 2
+ 464 2.5 463 -27 413 -97 c 0
+ 373 -152 318 -173 255 -173 c 0
+ 236 -173 218 -169 210 -164 c 1
+ 209 -161 l 1
+ 220 -142 230 -106 237 -79 c 1
+ 248 -78 l 1
+ 259 -98 277 -113 306 -113 c 0
+ 365.3 -113 384 -45.3 389.7 25.6 c 1
+ 153 325 l 2
+ 138.4 343.5 132 340 132 313 c 2
+ 132 143 l 2
+ 132 89 133 41 139 0 c 1
+ 138 -3 l 1
+ 138 -3 126 0 109 0 c 0
+ 93 0 76 -3 76 -3 c 1
+ 75 0 l 1
+ 81 38 82 89 82 143 c 2
+ 82 317 l 2
+EndSplineSet
+Substitution2: "'ss07' Swap 'Eng' forms-1" eng.sc
 EndChar
 EndChars
 EndSplineFont
