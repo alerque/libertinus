@@ -56,7 +56,7 @@ check: $(CHK) $(DUP)
 %.nrm: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
-	@if [ "`diff -u $< $@`" ]; then cp $@ $<; fi
+	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
 %.chk: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
