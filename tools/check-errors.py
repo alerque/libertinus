@@ -8,6 +8,7 @@ names = [g.glyphname for g in font.glyphs()]
 duplicates = set(n for n in names if names.count(n) > 1)
 
 missing = set()
+empty_subtables = set()
 
 def isMissing(font, name):
     if name not in font:
@@ -25,8 +26,10 @@ for lookup in font.gsub_lookups + font.gpos_lookups:
             for glyph in font.glyphs():
                 for sub in glyph.getPosSub(subtable):
                     missing.update([n for n in sub[2:] if isMissing(font, n)])
+            if not any(g.getPosSub(subtable) for g in font.glyphs()):
+                empty_subtables.add(subtable)
 
-failed = len(missing) + len(duplicates)
+failed = len(missing) + len(duplicates) + len(empty_subtables)
 with open(sys.argv[2], "w") as logfile:
     if failed == 0:
         print("PASS", file=logfile)
@@ -36,7 +39,11 @@ with open(sys.argv[2], "w") as logfile:
         print(msg)
         print(msg, file=logfile)
     if missing:
-        msg = "Font is missing: %s" % " ".join([n for n in missing])
+        msg = "FAIL: Font is missing: %s" % " ".join(missing)
+        print(msg)
+        print(msg, file=logfile)
+    if empty_subtables:
+        msg = "FAIL: Font contains empty lookups:\n%s" % "\n".join(sorted(empty_subtables))
         print(msg)
         print(msg, file=logfile)
 

@@ -67,9 +67,7 @@ Lookup: 1 0 0 "'ss01' Stilgruppe 1" { "'ss01' Stilgruppe 1 1"  } ['ss01' ('DFLT'
 Lookup: 1 0 0 "'ss02' Stilgruppe 2" { "'ss02' Stilgruppe 2 1"  } ['ss02' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss03' Stilgruppe 3" { "'ss03' Stilgruppe 3 1"  } ['ss03' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss07' Swap 'Eng' forms" { "'ss07' Swap 'Eng' forms-1"  } ['ss07' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 1 0 0 "'fina' Wortendeformen" { "'fina' Wortendeformen 1"  } ['fina' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution" { "'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'nalt' Alternate Annotation Forms lookup 0" { "'nalt' Alternate Annotation Forms 1"  } ['nalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 6 8 0 "'calt' Contextual Alternates lookup 29" { "'calt' Contextual Alternates lookup 29 subtable"  } ['calt' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' 'AZE ' 'CRT ' 'TRK ' > 'DFLT' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Smallcap kerning" { "'kern' Small Caps" [150,15,4] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Cyrillic kerning" { "'kern' Cyrillic Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > ) ]
@@ -46428,7 +46426,7 @@ EndSplineSet
 EndChar
 
 StartChar: u1F12F
-Encoding: 57356 127279 1614
+Encoding: 127279 127279 1614
 Width: 633
 Flags: MW
 LayerCount: 2
