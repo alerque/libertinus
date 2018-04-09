@@ -8,6 +8,13 @@ names = [g.glyphname for g in font.glyphs()]
 duplicates = set(n for n in names if names.count(n) > 1)
 
 missing = set()
+
+def isMissing(font, name):
+    if name not in font:
+        return True
+
+    return not font[name].isWorthOutputting()
+
 for lookup in font.gsub_lookups + font.gpos_lookups:
     kind = font.getLookupInfo(lookup)[0]
     for subtable in font.getLookupSubtables(lookup):
@@ -16,8 +23,8 @@ for lookup in font.gsub_lookups + font.gpos_lookups:
             pass
         elif "gsub" in kind:
             for glyph in font.glyphs():
-                for possub in glyph.getPosSub(subtable):
-                    missing.update([n for n in possub[2:] if n not in font])
+                for sub in glyph.getPosSub(subtable):
+                    missing.update([n for n in sub[2:] if isMissing(font, n)])
 
 failed = len(missing) + len(duplicates)
 with open(sys.argv[2], "w") as logfile:
