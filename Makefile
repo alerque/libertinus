@@ -61,11 +61,11 @@ check: $(CHK) $(DUP)
 %.chk: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
-	@diff -u $< $@
+	@diff -u $< $@ || (rm -rf $@ && false)
 
 %.dup: %.sfd $(FINDDUPS)
 	@echo "   CHK	$(<F)"
-	@$(PY) $(CHECKERRS) $< $@
+	@$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
 
 $(DOC)/%-table.pdf: %.otf
 	@echo "   PDF	$@"
