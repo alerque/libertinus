@@ -187,13 +187,13 @@ ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 6 6 6 3
 EndFPST
 LangName: 1033 "" "" "" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/khaledhosny/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
 GaspTable: 3 8 2 17 1 65535 3 0
-OtfFeatName: 'ss01' 1033 "Low diaeresis for 'A', 'E', 'O'"
-OtfFeatName: 'ss02' 1033 "Swashy 'J', 'K', 'R'"
-OtfFeatName: 'ss03' 1033 "'double s' to two 's'"
-OtfFeatName: 'ss04' 1033 "Upper case 'double s' to two 'S'"
-OtfFeatName: 'ss05' 1033 "Crossed 'W'"
-OtfFeatName: 'ss06' 1033 "Swash '&'"
 OtfFeatName: 'ss07' 1033 "Swap 'Eng' forms"
+OtfFeatName: 'ss06' 1033 "Swash '&'"
+OtfFeatName: 'ss05' 1033 "Crossed 'W'"
+OtfFeatName: 'ss04' 1033 "Upper case 'double s' to two 'S'"
+OtfFeatName: 'ss03' 1033 "'double s' to two 's'"
+OtfFeatName: 'ss02' 1033 "Swashy 'J', 'K', 'R'"
+OtfFeatName: 'ss01' 1033 "Low diaeresis for 'A', 'E', 'O'"
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL For New Fonts
@@ -343,7 +343,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "SekAccPos" "'mkmk' Mark to Mark-1" "top_rechts" "'mark' Top rechts" "komb_OR" "'mark' Komb OR" "top_punkt2" "'mark' Top Punkt2" "top_akzent" "'mark' Top Akzent" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt"
-BeginChars: 1114224 2414
+BeginChars: 1114225 2415
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -31140,43 +31140,45 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-211 30 m 0
+211 30 m 3
  237 30 259 44 277 74 c 1
  277 362 l 1
- 256 389 237 399 216 399 c 0
- 134 399 117 309 117 222 c 0
- 117 138 133 30 211 30 c 0
-417 399 m 0
+ 256 389 237 399 216 399 c 3
+ 134 399 117 309 117 222 c 3
+ 117 138 133 30 211 30 c 3
+417 399 m 3
  396 399 373 389 352 357 c 1
  352 68 l 1
- 373 36 393 30 413 30 c 0
- 495 30 511 121 511 208 c 0
- 511 292 496 399 417 399 c 0
-352 -63 m 2
- 352 -115 370 -175 438 -218 c 1
- 423 -238 l 1
- 350 -200 327 -160 314 -132 c 1
- 304 -159 280 -204 206 -238 c 1
- 190 -218 l 1
- 260 -174 277 -115 277 -63 c 2
+ 373 36 393 30 413 30 c 3
+ 495 30 511 121 511 208 c 3
+ 511 292 496 399 417 399 c 3
+352 -110 m 2
+ 352 -193 363 -198 424 -201 c 1
+ 427 -204 428 -211 428 -218 c 3
+ 428 -225 427 -231 424 -234 c 1
+ 392 -233 354 -232 315 -232 c 3
+ 276 -232 239 -233 205 -234 c 1
+ 202 -231 200 -225 200 -218 c 3
+ 200 -211 202 -204 205 -201 c 1
+ 266 -198 277 -193 277 -110 c 2
  277 30 l 1
- 252 2 223 -10 185 -10 c 0
- 90 -10 39 85 39 193 c 0
- 39 353 120 439 206 439 c 0
+ 252 2 223 -10 185 -10 c 3
+ 90 -10 39 85 39 193 c 3
+ 39 353 120 439 206 439 c 3
  235 439 259 426 277 405 c 1
- 277 504 l 2
- 277 556 260 616 190 659 c 1
- 206 680 l 1
- 280 646 304 601 314 573 c 1
- 327 601 350 642 423 680 c 1
- 438 659 l 1
- 370 616 352 556 352 504 c 2
+ 277 559 l 2
+ 277 634 271 637 213 641 c 1
+ 209 645 206 656 206 664 c 3
+ 206 667 207 669 207 671 c 1
+ 246 674 319 688 343 698 c 1
+ 352 698 356 695 356 688 c 2
+ 356 688 352 648 352 583 c 2
  352 394 l 1
- 373 421 399 439 444 439 c 0
- 539 439 589 345 589 234 c 0
- 589 99 522 -10 423 -10 c 0
+ 373 421 399 439 444 439 c 3
+ 539 439 589 345 589 234 c 3
+ 589 99 522 -10 423 -10 c 3
  394 -10 373 -3 352 19 c 1
- 352 -63 l 2
+ 352 -110 l 2
 EndSplineSet
 EndChar
 
@@ -90767,6 +90769,54 @@ SplineSet
  530 29 l 1
 EndSplineSet
 Substitution2: "'ss07' Swap 'Eng' forms-1" Eng
+EndChar
+
+StartChar: uni0444.alt
+Encoding: 1114224 -1 2414
+Width: 628
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+211 30 m 3
+ 237 30 259 44 277 74 c 1
+ 277 362 l 1
+ 256 389 237 399 216 399 c 3
+ 134 399 117 309 117 222 c 3
+ 117 138 133 30 211 30 c 3
+417 399 m 3
+ 396 399 373 389 352 357 c 1
+ 352 68 l 1
+ 373 36 393 30 413 30 c 3
+ 495 30 511 121 511 208 c 3
+ 511 292 496 399 417 399 c 3
+352 -63 m 2
+ 352 -115 370 -175 438 -218 c 1
+ 423 -238 l 1
+ 350 -200 327 -160 314 -132 c 1
+ 304 -159 280 -204 206 -238 c 1
+ 190 -218 l 1
+ 260 -174 277 -115 277 -63 c 2
+ 277 30 l 1
+ 252 2 223 -10 185 -10 c 3
+ 90 -10 39 85 39 193 c 3
+ 39 353 120 439 206 439 c 3
+ 235 439 259 426 277 405 c 1
+ 277 504 l 2
+ 277 556 260 616 190 659 c 1
+ 206 680 l 1
+ 280 646 304 601 314 573 c 1
+ 327 601 350 642 423 680 c 1
+ 438 659 l 1
+ 370 616 352 556 352 504 c 2
+ 352 394 l 1
+ 373 421 399 439 444 439 c 3
+ 539 439 589 345 589 234 c 3
+ 589 99 522 -10 423 -10 c 3
+ 394 -10 373 -3 352 19 c 1
+ 352 -63 l 2
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
