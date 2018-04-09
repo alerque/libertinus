@@ -40,6 +40,7 @@ EMPTY_FLAGS_RE = re.compile(r"^Flags:\s*$")
 DROP_FLAGS_RE = re.compile(r"^(Flags:.*?)[HO](.*)$")
 SELECTED_POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)$")
 SELECTED_REF_RE = re.compile(r"(-?\d+\s+)S(\s+-?\d+)")
+OTFFEATNAME_RE = re.compile(r"OtfFeatName:\s*'(....)'\s*(\d+)\s*(.*)$")
 
 # The following class is used to emulate variable assignment in
 # conditions: while testing if a pattern corresponds to a specific
@@ -79,6 +80,7 @@ def process_sfd_file(sfdname, outname):
     bmp_header = ()
     bdf = OrderedDict()
     glyphs = OrderedDict()
+    feat_names = {}
 
     fl = fp.readline()
     while fl:
@@ -175,6 +177,15 @@ def process_sfd_file(sfdname, outname):
             bdf_char = { 'gid' : cur_gid, 'lines' : [] }
             bdf_char['lines'].append("BDFChar: " + str(cur_gid) +  proc.match().group(2) + "\n")
             bdf[cur_gid] = bdf_char
+
+        elif proc.test(OTFFEATNAME_RE, fl):
+            while proc.test(OTFFEATNAME_RE, fl):
+                tag, lang, name = proc.match().groups()
+                feat_names[(tag, lang)] = name
+                fl = fp.readline()
+            for feat in sorted(feat_names):
+                out.write("OtfFeatName: '%s' %s %s\n" % (feat[0], feat[1], feat_names[feat]))
+            continue
 
         else:
             if not in_chars and not in_bdf:
