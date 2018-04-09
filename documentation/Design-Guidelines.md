@@ -188,6 +188,7 @@ In the glyph view you will find amongst others a little tool-box called “layer
 
 ### Drawing splines and contours
 ![The 4 point types and drawing contours](figures/r-Point-types.png)
+
 Vector based fonts such as TTF and OTF use [Bézier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve). You will know them from vector graphics editors such as Inkscape or Illustrator. FontForge knows four different point types:
 
 1. the curve point (left and right handle stick together)
