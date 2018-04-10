@@ -45,60 +45,44 @@ OS2Vendor: 'ALIF'
 Lookup: 257 0 0 "'cpsp' Versalabstaende" { "'cpsp' Versalabstaende 1"  } ['cpsp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Top rechts"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark" { "'mkmk' Mark to Mark-1"  } ['mkmk' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Kerning" { "'kern' Kerning 1"  } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Kerning" { "'kern' Kerning 1" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 2
 "dotted" 3 i j
 DEI: 91125
-KernClass2: 25 25 "'kern' Kerning 1"
- 19 f longs uni1E1F f_f
- 17 f.short f_f.short
- 144 T Tcedilla Tcaron uni01AC Tcommaaccent Gamma Tau afii10052 afii10020 afii10036 afii10050 uni0492 uni04AC uni04F6 uni1E6A uni1E6C uni1E6E uni1E70
- 252 Y Yacute Ycircumflex Ydieresis Upsilontonos Upsilon Upsilondieresis Upsilon1 uni03D3 uni03D4 afii10062 afii10037 uni04EE uni04F0 uni04F2 uni1E8E Ygrave uni1EF4 uni1EF6 uni1EF8 uni1F59 uni1F5B uni1F5D uni1F5F uni1FE8 uni1FE9 uni1FEA uni1FEB seven.fitted
- 109 V W Wcircumflex afii10148 uni0476 uni1E7C uni1E7E Wgrave Wacute Wdieresis uni1E86 uni1E88 uniE0E9 V.alt W.alt
- 184 K X Kcommaaccent Kappa Chi afii10061 afii10024 afii10028 afii10039 uni0496 uni049A uni049C uni049E uni04A0 uni04B2 uni04C1 uni04DC uni1E30 uni1E32 uni1E34 uni1E8A uni1E8C uni2C69 K.alt
- 457 at D O Q Ograve Oacute Ocircumflex Otilde Odieresis Oslash Dcaron Dcroat Omacron Obreve Ohungarumlaut uni0186 uni0189 uni018A uni018F uni01EA uni01EC uni020C uni020E uni022A uni022C uni022E uni0230 Omicrontonos Theta Omicron Phi uni03D8 uni03F4 uni03FD uni03FF afii10032 afii10048 afii10147 uni04DA uni04E6 uni04E8 uni04EA uni04EC uni1E0A uni1E0C uni1E0E uni1E10 uni1E12 uni1E4C uni1E4E uni1E50 uni1E52 Odieresis.alt nine.fitted zero.fitted zero.slashfitted
- 238 r v w y Thorn yacute ydieresis racute rcommaaccent rcaron wcircumflex ycircumflex afii10085 afii10110 uni04EF uni04F1 uni1E7D uni1E7F wgrave wacute wdieresis uni1E87 uni1E89 uni1E8F uni1E98 v.sc w.sc y.sc yacute.sc ydieresis.sc t.sc gamma
- 218 g k x gcircumflex gbreve gdotaccent gcommaaccent kcommaaccent kgreenlandic gcaron uni01E9 kappa uni03DB afii10072 afii10076 afii10109 uni049F uni04A1 uni04B3 uni04DD uni1E31 uni1E33 uni1E35 f_f_k f_k c_k k.sc x.sc zeta
- 51 b agrave egrave thorn afii10086 uni0450 f_b uniE031
- 251 e o p eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis omicron rho phi omicrontonos phi1 afii10070 afii10080 afii10082  afii10071 uni04E7 uni04E9 d.sc o.sc q.sc ograve.sc oacute.sc ocircumflex.sc otilde.sc odieresis.sc oslash.sc
- 90 L Lacute Lcommaaccent Ldot Lslash afii10044 afii10046 uni1E36 uni1E38 uni1E3A uni1E3C l.sc
- 92 a.sc agrave.sc aacute.sc acircumflex.sc atilde.sc adieresis.sc aring.sc abreve.sc aogonek.sc
- 394 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek uni01CD uni01DE uni01E0 Aringacute uni0200 uni0202 uni0226 Alphatonos Alpha Delta Lambda afii10017 uni04D2 uni1E00 uni1EA0 uni1EA2 uni1EA4 uni1EA6 uni1EA8 uni1EAA uni1EAC uni1EAE uni1EB0 uni1EB2 uni1EB4 uni1EB6 uni1F08 uni1F09 uni1F0A uni1F0B uni1F0C uni1F0D uni1F0E uni1F0F uni1FB8 uni1FB9 uni1FBA uni1FBB Adieresis.alt
- 216 comma period underscore enquad emquad enspace emspace threeperemspace fourperemspace sixperemspace figurespace punctuationspace underscoredbl quotesinglbase quotedblbase onedotenleader twodotenleader ellipsis uni202F
- 235 zero.inferior one.inferior two.inferior three.inferior four.inferior five.inferior six.inferior seven.inferior eight.inferior nine.inferior plus.inferior minus.inferior equal.inferior a.inferior e.inferior o.inferior x.inferior uni2094
- 283 plus hyphen less equal greater asciitilde guillemotleft uni00AD periodcentered guillemotright divide hyphentwo hyphennobreak figuredash endash emdash horizontalbar guilsinglleft guilsinglright hyphen.sc guillemotleft.sc guillemotright.sc guilsinglleft.sc guilsinglright.sc hyphen.cap
- 72 parenleft bracketleft braceleft parenleft.sc bracketleft.sc braceleft.sc
- 239 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek uni01D3 uni01D5 uni01D7 uni01D9 uni01DB uni0214 uni0216 uni1E72 uni1E74 uni1E76 uni1E78 uni1E7A uni1EE4 uni1EE6 uni1EE8 uni1EEA uni1EEC uni1EEE uni1EF0
- 646 H I N Igrave Iacute Icircumflex Idieresis Ntilde Hcircumflex Hbar Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute Ncommaaccent Ncaron Eng uni018E uni021E Eta Iota Nu Pi afii10055 afii10056 afii10057 uni040D afii10145 afii10021 afii10026 afii10027 afii10029 afii10031 afii10033 afii10040 afii10042 afii10043 afii10045 afii10049 uni04A2 uni04E2 uni04E4 uni04F8 uni1E22 uni1E24 uni1E26 uni1E28 uni1E2A uni1E2C uni1E2E uni1E44 uni1E46 uni1E48 uni1E4A uni1EC8 uni1ECA uni1F28 uni1F29 uni1F2A uni1F2B uni1F2C uni1F2D uni1F2E uni1F2F uni1F38 uni1F39 uni1F3A uni1F3B uni1F3C uni1F3D uni1F3E uni1F3F uni1FCA uni1FCB uni1FD8 uni1FD9 uni1FDA uni1FDB
- 49 F P uni01A4 Rho afii10034 uni1E1E uni1E54 uni1E56
- 103 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
- 83 u.sc ugrave.sc uacute.sc ucircumflex.sc udieresis.sc uring.sc uhungarumlaut.sc f.sc
+KernClass2: 18 16 "'kern' Kerning 1"
+ 31 T Gamma Tau afii10020 afii10036
+ 51 Y Upsilon Upsilon1 afii10062 afii10037 seven.fitted
+ 9 V W W.alt
+ 53 K X Kappa Chi afii10061 afii10024 afii10028 afii10039
+ 98 D O Q Odieresis Oslash Ohungarumlaut Theta Omicron Phi afii10032 afii10048 zero.fitted nine.fitted
+ 25 Thorn t.sc v.sc w.sc y.sc
+ 9 k.sc x.sc
+ 27 d.sc o.sc q.sc odieresis.sc
+ 26 L afii10044 afii10046 l.sc
+ 17 a.sc adieresis.sc
+ 46 A Adieresis Aring Alpha Delta Lambda afii10017
+ 9 hyphen.sc
+ 25 U Udieresis Uhungarumlaut
+ 185 H I N IJ Eng Eta Iota Nu Pi afii10055 afii10056 afii10057 uni040D afii10145 afii10021 afii10026 afii10027 afii10029 afii10031 afii10033 afii10040 afii10042 afii10043 afii10045 afii10049
+ 17 F P Rho afii10034
+ 26 f.sc u.sc uhungarumlaut.sc
  4 p.sc
- 114 T Tcedilla Tcaron Tcommaaccent Tau afii10051 afii10060 afii10036 afii10044 uni04AC uni1E6A uni1E6C uni1E6E uni1E70
- 42 Y Yacute Ydieresis Upsilon Upsilondieresis
- 121 V W Wcircumflex afii10041 afii10148 uni0476 uni04B6 uni1E7C uni1E7E Wgrave Wacute Wdieresis uni1E86 uni1E88 uniE0E9 V.alt
- 623 C G O Q Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Omacron Obreve Ohungarumlaut OE uni0187 uni0193 uni019F Ohorn Gcaron uni01EA uni01EC uni01F4 Oslashacute uni020C uni020E uni022A uni022C uni022E uni0230 uni0298 Theta Omicron Phi uni03D8 uni03F4 uni03F9 afii10053 afii10032 afii10035 afii10038 afii10147 uni04A8 uni04AA uni04E6 uni04E8 uni04EA uni1E08 uni1E20 uni1E4C uni1E4E uni1E50 uni1E52 uni1ECC uni1ECE uni1ED0 uni1ED2 uni1ED4 uni1ED6 uni1ED8 uni1EDA uni1EDC uni1EDE uni1EE0 uni1EE2 zero.fitted zero.slashfitted six.fitted
- 136 v w wcircumflex nu uni1E7D uni1E7F wgrave wacute wdieresis uni1E87 uni1E89 uni1E98 t.sc v.sc w.sc y.sc yacute.sc ydieresis.sc t.sc gamma
- 77 x y yacute ydieresis afii10072 afii10085 x afii10110 uni04B3 uni04DD x.sc chi
- 103 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
- 330 A Agrave Aacute Acircumflex Atilde Adieresis Aring AE Amacron Abreve Aogonek uni01CD uni01DE uni01E0 uni01E2 Aringacute AEacute uni0200 uni0202 uni0226 Alpha Delta Lambda afii10017 uni04D2 uni1E00 uni1EA0 uni1EA2 uni1EA4 uni1EA6 uni1EA8 uni1EAA uni1EAC uni1EAE uni1EB0 uni1EB2 uni1EB4 uni1EB6 uni1FB8 uni1FB9 uni1FBC Adieresis.alt
- 66 comma period quotesinglbase onedotenleader twodotenleader ellipsis
- 256 c e o q ccedilla eogonek oe uni0188 uni018D ohorn eturned alpha omicron sigma phi uni03F2 uni03F5 afii10070 afii10080 afii10083 afii10101 afii10846 uni04E9 uni1E19 uni1E1B uni1EB9 uni1ECD c_k c_h c.sc g.sc o.sc q.sc ccedilla.sc omega sigma1 omegatonos phi 
- 215 a d aacute ae eacute oacute oslash aogonek cacute edotaccent omacron uni022F alphatonos rho omicrontonos phi1 uni03F1 afii10065 afii10073 afii10086 afii10095 afii10097 uni04D5 uni1E0F uni1EA1 uni1F71 uni1F73 uni1F79
- 179 g m n p r s z mu uni03F0 afii10067 afii10068 afii10074 afii10076 afii10078 afii10079 afii10081 afii10082 afii10087 afii10088 afii10090 afii10091 afii10107 afii10193 germandbls.alt
- 78 parenright bracketright braceright parenright.sc bracketright.sc braceright.sc
- 43 J j Jcircumflex jcircumflex afii10105 j.sc 
- 283 plus hyphen less equal greater asciitilde guillemotleft uni00AD periodcentered guillemotright divide hyphentwo hyphennobreak figuredash endash emdash horizontalbar guilsinglleft guilsinglright hyphen.sc guillemotleft.sc guillemotright.sc guilsinglleft.sc guilsinglright.sc hyphen.cap
- 101 exclam question exclamdbl interrobang question_question question_exclam exclam_question exclamdown.sc
- 211 b h k l thorn hcircumflex hbar kcommaaccent lacute lcommaaccent lcaron ldot lslash uni0180 uni1E03 uni1E05 uni1E07 uni1E23 uni1E25 uni1E27 uni1E29 uni1E2B uni1E31 uni1E33 uni1E35 uni1E37 uni1E39 uni1E3B uni1E3D 
- 239 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek uni01D3 uni01D5 uni01D7 uni01D9 uni01DB uni0214 uni0216 uni1E72 uni1E74 uni1E76 uni1E78 uni1E7A uni1EE4 uni1EE6 uni1EE8 uni1EEA uni1EEC uni1EEE uni1EF0
- 1201 B D E F H I K L N P R Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Dcaron Dcroat Emacron Ebreve Edotaccent Eogonek Ecaron Hcircumflex Hbar Itilde Imacron Ibreve Iogonek Idotaccent IJ Kcommaaccent Lacute Lcommaaccent Lcaron Ldot Lslash Nacute Ncommaaccent Ncaron Eng Racute Rcommaaccent Rcaron uni0182 uni0189 uni01C4 uni01C5 uni01CA uni01CB uni01E8 uni01F6 uni0204 uni0206 uni020A uni0210 uni0212 uni021E Beta Gamma Epsilon Eta Iota Kappa Nu Pi Rho Iotadieresis uni0400 afii10023 afii10052 afii10055 afii10056 afii10059 afii10061 uni040D afii10145 afii10018 afii10019 afii10020 afii10022 afii10026 afii10027 afii10028 afii10031 afii10033 afii10034 afii10040 afii10042 afii10043 afii10045 afii10046 afii10048 uni0494 uni049A uni04A2 uni04A4 uni04A6 uni04E2 uni04E4 uni04F6 uni04F8 uni1E02 uni1E04 uni1E06 uni1E0A uni1E0C uni1E0E uni1E10 uni1E12 uni1E14 uni1E16 uni1E18 uni1E1A uni1E1C uni1E1E uni1E22 uni1E24 uni1E26 uni1E28 uni1E2A uni1E2C uni1E2E uni1E30 uni1E32 uni1E34 uni1E36 uni1E38 uni1E3A uni1E3C uni1E44 uni1E46 uni1E48 uni1E4A uni1E54 uni1E56 uni1E58 uni1E5A uni1E5C uni1E5E uni1EB8 uni1EBA uni1EBC uni1EBE uni1EC0 uni1EC2 uni1EC4 uni1EC6 uni1EC8 uni1ECA
- 92 a.sc agrave.sc aacute.sc acircumflex.sc atilde.sc adieresis.sc aring.sc abreve.sc aogonek.sc
- 398 two.superior three.superior one.superior zero.superior i.superior four.superior five.superior six.superior seven.superior eight.superior nine.superior plus.superior minus.superior equal.superior parenleft.superior parenright.superior n.superior uni2098 uni2099 uniE0C0 uniE0C1 uniE0C2 uniE0C3 uniE0C4 uniE0C5 uniE0C6 uniE0CA uniE0CC uniE0CE uniE0CF q.superior uniE0D3 uniE0D4 uniE0D5 uniE0D9 degree
- 78 u.sc ugrave.sc uacute.sc ucircumflex.sc udieresis.sc uring.sc uhungarumlaut.sc
- 41 u eta iota kappa dotlessj uni1EE5 upsilon
- 49 b.sc d.sc f.sc h.sc i.sc k.sc l.sc n.sc p.sc r.sc
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 61 {} 37 {} 0 {} 80 {} 40 {} 0 {} 0 {} 0 {} 88 {} 0 {} 0 {} 0 {} 0 {} 55 {} 65 {} 65 {} 0 {} 0 {} 0 {} 30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 50 {} 50 {} 0 {} 50 {} 50 {} 0 {} 0 {} 0 {} 35 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 24 {} -5 {} -49 {} -34 {} 0 {} -49 {} -63 {} -63 {} -49 {} -49 {} 0 {} 0 {} -59 {} 10 {} 0 {} 37 {} 24 {} -49 {} 0 {} 0 {} -39 {} 0 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} 0 {} -61 {} -44 {} -61 {} -49 {} -49 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 24 {} -68 {} 0 {} 0 {} -39 {} 0 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} 0 {} -112 {} -88 {} -49 {} -44 {} -39 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 24 {} -112 {} 0 {} 0 {} -24 {} -50 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} 24 {} 37 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} -5 {} -34 {} -24 {} 5 {} 10 {} 10 {} 0 {} -29 {} -29 {} 5 {} 5 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} 0 {} -49 {} -59 {} -8 {} 0 {} 2 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 2 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} -15 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} -5 {} -5 {} -20 {} -20 {} -20 {} 5 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -24 {} -40 {} -10 {} 7 {} 5 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} -12 {} 0 {} 0 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} -24 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -34 {} 0 {} -73 {} 0 {} 0 {} -12 {} -12 {} 0 {} -12 {} 0 {} -37 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 0 {} -34 {} 0 {} 0 {} -61 {} -73 {} -73 {} -10 {} 0 {} 0 {} -122 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -308 {} 0 {} 0 {} 0 {} 0 {} -49 {} -49 {} -49 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -17 {} 0 {} 0 {} -24 {} 0 {} -17 {} -12 {} 0 {} 0 {} 73 {} -37 {} 0 {} 12 {} 12 {} 12 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 24 {} -59 {} -24 {} 0 {} 0 {} 0 {} 5 {} 0 {} 0 {} 10 {} 12 {} 49 {} 29 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -49 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {}
+ 45 T Tau afii10051 afii10060 afii10036 afii10044
+ 9 Y Upsilon
+ 13 V W afii10041
+ 131 C G O Q Ccedilla Odieresis Oslash Ohungarumlaut OE Theta Omicron Phi afii10053 afii10032 afii10035 afii10038 six.fitted zero.fitted
+ 19 t.sc v.sc w.sc y.sc
+ 4 x.sc
+ 49 A Adieresis Aring AE Alpha Delta Lambda afii10017
+ 19 c.sc g.sc o.sc q.sc
+ 6 J j.sc
+ 9 hyphen.sc
+ 25 U Udieresis Uhungarumlaut
+ 303 B D E F H I K L N P R IJ Eng Beta Gamma Epsilon Eta Iota Kappa Nu Pi Rho Iotadieresis afii10055 afii10056 afii10059 afii10061 uni040D afii10145 afii10018 afii10019 afii10020 afii10022 afii10026 afii10027 afii10028 afii10031 afii10033 afii10034 afii10040 afii10042 afii10043 afii10045 afii10046 afii10048
+ 17 a.sc adieresis.sc
+ 21 u.sc uhungarumlaut.sc
+ 49 k.sc b.sc d.sc f.sc h.sc i.sc l.sc n.sc p.sc r.sc
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 24 {} -5 {} -49 {} -34 {} -49 {} -63 {} 0 {} -59 {} 37 {} 24 {} -49 {} 0 {} 0 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} -61 {} -61 {} 0 {} -49 {} 24 {} 24 {} -68 {} 0 {} 0 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} -112 {} -49 {} 0 {} -49 {} 24 {} 24 {} -112 {} 0 {} -50 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} -20 {} 0 {} -24 {} 24 {} 37 {} 0 {} -15 {} 0 {} 0 {} -5 {} -34 {} -24 {} 5 {} 10 {} 10 {} -29 {} 5 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} -49 {} -8 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -40 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} -12 {} 0 {} 0 {} 0 {} 0 {} 10 {} -24 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -34 {} 0 {} 0 {} -12 {} 0 {} -37 {} -59 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -49 {} -49 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 24 {} 24 {} -12 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 49 {} 29 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {}
 LangName: 1033 "" "" "" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/khaledhosny/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
 GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeFull
