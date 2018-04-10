@@ -28,6 +28,19 @@ for lookup in font.gsub_lookups + font.gpos_lookups:
                     missing.update([n for n in sub[2:] if isMissing(font, n)])
             if not any(g.getPosSub(subtable) for g in font.glyphs()):
                 empty_subtables.add(subtable)
+        elif "pair" in kind:
+            if font.isKerningClass(subtable):
+                first, second, _ = font.getKerningClass(subtable)
+                for names in first + second:
+                    if names:
+                        missing.update([n for n in names if isMissing(font, n)])
+            else:
+                for glyph in font.glyphs():
+                    for pos in glyph.getPosSub(subtable):
+                        if isMissing(font, pos[2]):
+                            missing.add(pos[2])
+                if not any(g.getPosSub(subtable) for g in font.glyphs()):
+                    empty_subtables.add(subtable)
 
 failed = len(missing) + len(duplicates) + len(empty_subtables)
 with open(sys.argv[2], "w") as logfile:
