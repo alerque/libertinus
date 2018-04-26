@@ -45,6 +45,18 @@ http://github.com/khaledhosny/libertinus
 ChangeLog
 ---------
 
+26 April 2018 (Khaled Hosny) <Libertinus> Version 6.6
+- Align MATH AxisHeight with minus and similar operators.
+- Align single and double arrows to minus and equal signs.
+- Fix Celsius, Fahrenheit and Ohm signs to take the style of their fonts.
+- Fix Ohm sign side bearings.
+- Fix Service Mark and Trade Mark in sans fonts to take their style.
+- Unify the default for of Eng glyph across fonts, and add and alternate shape
+  for Sami language.
+- Fix Cyrillic small letter ef in display font to match the regular serif font.
+- Dropped some more unused PUA slots.
+- The copyleft symbol now used the proposed Unicode 11 code point.
+
 21 March 2018 (Khaled Hosny) <Libertinus> Version 6.5
 - Fix regressions in handling of extensible combining marks with LuaTeX.
 - Add Latin bold italic sans-serif alphabet.
