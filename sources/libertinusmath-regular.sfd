@@ -471,7 +471,7 @@ Grid
   Named: "Top Accent"
 EndSplineSet
 AnchorClass2: "SekAccPos" "'mkmk' Mark to Mark-1" "top_rechts" "'mark' Top rechts" "komb_OR" "'mark' Komb OR" "top_punkt2" "'mark' Top Punkt2" "top_akzent" "'mark' Top Akzent" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt"
-BeginChars: 1114693 3962
+BeginChars: 1114693 3964
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -150003,6 +150003,47 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 3958 8606 N 0 1 -1 0 482 -288 2
+EndChar
+
+StartChar: uni21A2
+Encoding: 8610 8610 3962
+Width: 1130
+UnlinkRmOvrlpSave: 1
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+275 433 m 1
+ 313 433 l 1
+ 283 361 234 307 202 276 c 1
+ 948 276 l 1
+ 948 224 l 1
+ 202 224 l 1
+ 235 197 276 151 315 67 c 1
+ 275 67 l 1
+ 275 68 167 196 59 240 c 1
+ 59 263 l 1
+ 108 280 189 336 275 433 c 1
+959 224 m 1
+ 992 197 1033 151 1072 67 c 1
+ 1032 67 l 1
+ 1032 68 924 196 816 240 c 1
+ 816 263 l 1
+ 865 280 946 336 1032 433 c 1
+ 1070 433 l 1
+ 1040 361 991 307 959 276 c 1
+ 930 248 l 1
+ 959 224 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni21A3
+Encoding: 8611 8611 3963
+Width: 1130
+Flags: W
+LayerCount: 2
+Fore
+Refer: 3962 8610 N -1 0 0 1 1130 0 2
 EndChar
 EndChars
 EndSplineFont
