@@ -44,7 +44,6 @@ OS2XHeight: 429
 OS2FamilyClass: 261
 OS2Vendor: 'ALIF'
 Lookup: 1 0 0 "'locl' Localised Forms for Sami" { "'locl' Localised Forms for Sami-1"  } ['locl' ('latn' <'FIN ' 'ISM ' 'LSM ' 'NOR ' 'NSM ' 'SKS ' 'SSM ' 'SVE ' > ) ]
-Lookup: 1 0 0 "Substitution f short" { "Substitution f short 1"  } []
 Lookup: 1 0 0 "Substitution dotless forms" { "Substitution dotless forms 1"  } []
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc" { "'smcp' Gemeine nach Kapitaelchen i > idotaccent.sc"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'TRK ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen" { "'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -54,8 +53,6 @@ Lookup: 1 0 0 "'case' Versalformen" { "'case' Versalformen 1"  } ['case' ('DFLT'
 Lookup: 1 0 0 "'sups' Hochgestellte" { "'sups' Hochgestellte 1" ("superior") } ['sups' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'sinf' Tiefgestellte" { "'sinf' Wissenschaftliche Indices 1" ("inferior") } ['sinf' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'c2sc' Versale nach Kapitaelchen" { "'c2sc' Versale nach Kapitaelchen 1" ("sc") } ['c2sc' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE" { "'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standardligaturen" { "'liga' Standardligaturen 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historische Ligaturen" { "'hlig' Historische Ligaturen 1"  } ['hlig' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'lnum' Versalziffern" { "'lnum' Versalziffern 1"  } ['lnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'tnum' Tabellenziffern" { "'tnum' Tabellenziffern 1"  } ['tnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -157,37 +154,20 @@ KernClass2: 21 21 "'kern' Latin kerning"
  169 degree uni00B2 uni00B3 uni00B9 uni2070 uni2071 uni2074 uni2075 uni2076 uni2077 uni2078 uni2079 uni207A uni207B uni207C uni207D uni207E uni207F uni2098 uni2099 q.superior
  1 u
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 76 {} 80 {} 0 {} 80 {} 40 {} 0 {} 88 {} 0 {} 0 {} 55 {} 24 {} 24 {} -5 {} -49 {} -34 {} 0 {} -49 {} -63 {} -63 {} -49 {} -20 {} 0 {} 0 {} -59 {} 10 {} 0 {} 37 {} 0 {} -39 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} 0 {} -61 {} -44 {} -71 {} -60 {} -40 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 0 {} -39 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} 0 {} -112 {} -88 {} -70 {} -60 {} -40 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 0 {} -24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -5 {} -34 {} 37 {} 0 {} 10 {} 10 {} 0 {} -29 {} -29 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} 0 {} -49 {} -59 {} -8 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -24 {} -40 {} -10 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -100 {} 0 {} -73 {} 0 {} 0 {} -12 {} -12 {} -50 {} -12 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -34 {} 0 {} -61 {} -73 {} -73 {} -10 {} 0 {} 0 {} -122 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -308 {} 0 {} 0 {} -49 {} -49 {} -49 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -17 {} 0 {} 0 {} -24 {} 0 {} -17 {} -12 {} 0 {} 0 {} 73 {} -37 {} 0 {} 12 {} 12 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 24 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 12 {} 49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -49 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
-ChainSub2: coverage "'calt' Contextual Alternates lookup 29 subtable" 0 0 0 1
- 1 0 1
-  Coverage: 5 f f_f
-  FCoverage: 285 b h i j k l igrave iacute icircumflex idieresis thorn hcircumflex hbar itilde imacron ibreve iogonek ij jcircumflex uni0137 lacute uni013C lcaron ldot lslash uni1E23 uni1E25 uni1E27 uni1E29 uni1E2B uni1E2D uni1E2F uni1E31 uni1E33 uni1E35 uni1E37 uni1E39 uni1E3B uni1E3D uni1EC9 uni1ECB
- 1
-  SeqLookup: 0 "Substitution f short"
-EndFPST
-ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 5 1 5 2
+ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 3 1 3 2
   Class: 3 i j
   Class: 333 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 grave.cap uni0359 uni035A uni035B breve.cap uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363 dotaccent.cap
-  Class: 5 f f_f
-  Class: 376 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
   FClass: 3 i j
   FClass: 333 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 grave.cap uni0359 uni035A uni035B breve.cap uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363 dotaccent.cap
-  FClass: 5 f f_f
-  FClass: 376 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
  1 0 1
   ClsList: 1
   BClsList:
   FClsList: 2
  1
   SeqLookup: 0 "Substitution dotless forms"
- 1 0 1
-  ClsList: 3
-  BClsList:
-  FClsList: 4
- 1
-  SeqLookup: 0 "Substitution f short"
-  ClassNames: "0" "1" "2" "3" "4"
+  ClassNames: "0" "1" "2"
   BClassNames: "0"
-  FClassNames: "0" "1" "2" "3" "4"
+  FClassNames: "0" "1" "2"
 EndFPST
 LangName: 1033 "" "" "Bold Italic" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/khaledhosny/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
 OtfFeatName: 'ss01' 1033 "Low diaeresis on 'A', 'E', 'O'"
@@ -5372,7 +5352,6 @@ SplineSet
  133.3 -78.7 137 43.4 150 141 c 0
  160 216 169 268.5 191 382 c 1
 EndSplineSet
-Substitution2: "Substitution f short 1" f.short
 Substitution2: "'sinf' Wissenschaftliche Indices 1" f.inferior
 Substitution2: "'sups' Hochgestellte 1" f.superior
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" f.sc
@@ -19860,7 +19839,6 @@ LayerCount: 2
 Fore
 Refer: 269 176 N 1 0 0 1 5 0 2
 Refer: 27 67 N 0.89 0 0 0.89 212 0 2
-Ligature2: "'liga' Standardligaturen 1" degree C
 EndChar
 
 StartChar: uni2105
@@ -19907,7 +19885,6 @@ LayerCount: 2
 Fore
 Refer: 269 176 N 1 0 0 1 6 0 2
 Refer: 30 70 N 0.89 0 0 0.89 313 0 2
-Ligature2: "'liga' Standardligaturen 1" degree F
 EndChar
 
 StartChar: uni210D
@@ -25985,8 +25962,6 @@ SplineSet
  133.3 -83.7 137 43.4 150 141 c 0
  160 216 171 268 191 382 c 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" f f
-Substitution2: "Substitution f short 1" f_f.short
 LCarets2: 1 257
 EndChar
 
@@ -26039,7 +26014,6 @@ SplineSet
  658.2 436 665.5 428.6 665.5 414.9 c 0
  665.5 397.8 653.8 359.5 645.3 320.2 c 2
 EndSplineSet
-Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f i
 LCarets2: 1 348
 EndChar
 
@@ -35666,7 +35640,6 @@ SplineSet
  473.1 -10 458.3 12.7 458.3 47.1 c 0
  458.3 67.7 462.8 95.4 468 118 c 2
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" f t
 LCarets2: 1 321
 EndChar
 
@@ -35742,7 +35715,6 @@ SplineSet
  123 -10 108 13 108 47 c 0
  108 68 113 95 118 118 c 2
 EndSplineSet
-Ligature2: "'liga' Standardligaturen 1" t t
 EndChar
 
 StartChar: c_t
@@ -46933,7 +46905,6 @@ SplineSet
  715.9 663.2 698 639.5 684 595 c 0
 EndSplineSet
 LCarets2: 1 404
-Ligature2: "'liga' Standardligaturen 1" f f.short
 EndChar
 
 StartChar: uniE02F
@@ -48404,7 +48375,6 @@ SplineSet
  160 216 169 268 191 382 c 1
 EndSplineSet
 LCarets2: 1 381
-Ligature2: "'liga' Standardligaturen 1" f k
 EndChar
 
 StartChar: f_l
@@ -48458,7 +48428,6 @@ SplineSet
  160 216 169 268 191 382 c 1
 EndSplineSet
 LCarets2: 1 362
-Ligature2: "'liga' Standardligaturen 1" f l
 EndChar
 
 StartChar: f_f_i
@@ -48536,9 +48505,6 @@ SplineSet
  595 614 598 605 599 594 c 1
 EndSplineSet
 LCarets2: 2 717 368
-Ligature2: "'liga' Standardligaturen 1" f f i
-Ligature2: "'liga' Standardligaturen 1" f_f i
-Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f f i
 EndChar
 
 StartChar: f_f_l
@@ -48616,8 +48582,6 @@ SplineSet
  530 473 540 509 552 540 c 1
 EndSplineSet
 LCarets2: 2 686 366
-Ligature2: "'liga' Standardligaturen 1" f_f l
-Ligature2: "'liga' Standardligaturen 1" f f l
 EndChar
 
 StartChar: longs_t
@@ -48671,7 +48635,6 @@ SplineSet
  112 -79 131 91 148 188 c 2
 EndSplineSet
 LCarets2: 1 286
-Ligature2: "'liga' Standardligaturen 1" longs t
 EndChar
 
 StartChar: f_j
@@ -48724,7 +48687,6 @@ SplineSet
  529 349 529 353 529 362 c 0
 EndSplineSet
 LCarets2: 1 370
-Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f j
 EndChar
 
 StartChar: q.sc.u

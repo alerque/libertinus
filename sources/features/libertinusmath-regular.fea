@@ -1,6 +1,7 @@
 include(langsys.fea)
 languagesystem math dflt;
 
+include(common.fea)
 
 lookup ssty_prime {
   sub minute by minute.ssty1;

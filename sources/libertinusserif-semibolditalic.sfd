@@ -46,8 +46,6 @@ OS2Vendor: 'ALIF'
 Lookup: 1 0 0 "'locl' Localised Forms for Sami" { "'locl' Localised Forms for Sami-1"  } ['locl' ('latn' <'FIN ' 'ISM ' 'LSM ' 'NOR ' 'NSM ' 'SKS ' 'SSM ' 'SVE ' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen" { "'smcp' Gemeine nach Kapitaelchen 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' Gemeine nach Kapitaelchen i > i.sc" { "'smcp' Gemeine nach Kapitaelchen i > i.sc 1"  } ['smcp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standardligaturen ohne TRK CRT AZE" { "'liga' Standardligaturen ohne TRK CRT AZE 1"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 0" { "'liga' Standard Ligatures in Latin lookup 0"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin lookup 13" { "'hlig' Historic Ligatures in Latin lookup 13-1"  } ['hlig' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions in Latin lookup 2" { "'frac' Diagonal Fractions in Latin lookup 2"  } ['frac' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'salt' Stylistic alternates" { "'salt' Stylistic alternates 1" ("alt") } ['salt' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -224,7 +222,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR" "top_rechts" "'mark' Top rechts"
-BeginChars: 1114281 2260
+BeginChars: 1114283 2262
 
 StartChar: space
 Encoding: 32 32 0
@@ -39063,7 +39061,6 @@ LayerCount: 2
 Fore
 Refer: 111 176 N 1 0 0 1 17 33 2
 Refer: 35 67 N 0.89 0 0 0.89 206 0 2
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" degree C
 EndChar
 
 StartChar: uni2105
@@ -39169,7 +39166,6 @@ LayerCount: 2
 Fore
 Refer: 111 176 N 1 0 0 1 16 33 2
 Refer: 38 70 N 0.89 0 0 0.89 286 0 2
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" degree F
 EndChar
 
 StartChar: uni210D
@@ -48576,7 +48572,6 @@ SplineSet
  518 290 l 1
  558 320 598 349 637 378 c 0
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f k
 LCarets2: 1 291
 EndChar
 
@@ -48640,7 +48635,6 @@ SplineSet
  455 57 454 57 454 57 c 1
  454 57 456 57 457 58 c 1
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f t
 LCarets2: 1 274
 EndChar
 
@@ -48698,7 +48692,6 @@ SplineSet
  605 290 l 1
  646 320 686 350 726 379 c 0
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" c k
 LCarets2: 1 418
 EndChar
 
@@ -48757,7 +48750,6 @@ SplineSet
  448 -20 l 1
  438 4 l 1
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" c h
 LCarets2: 1 419
 EndChar
 
@@ -48874,7 +48866,6 @@ SplineSet
  628 -43 l 1
  489 -39 438 6 357 150 c 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" longs i
 EndChar
 
 StartChar: R.alt
@@ -48931,7 +48922,6 @@ SplineSet
  59 36 l 2
  84 36 95 50 100 76 c 2
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" longs longs
 EndChar
 
 StartChar: Euro.fitted
@@ -49251,7 +49241,6 @@ SplineSet
  509 80 479 60 442 45 c 0
  407 30 369 23 329 23 c 0
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" longs l
 EndChar
 
 StartChar: ae.alt
@@ -49443,7 +49432,6 @@ SplineSet
  882 698 888.1 694.3 886 685 c 2
  886 685 878.1 647.5 863 583 c 2
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" T h
 EndChar
 
 StartChar: ampersand.alt
@@ -51632,7 +51620,6 @@ SplineSet
  388 434 l 1
 EndSplineSet
 Kerns2: 69 -9 "'kern' Horizontales Kerning in Latin lookup 1"
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f f
 LCarets2: 1 269
 EndChar
 
@@ -51683,8 +51670,6 @@ SplineSet
  476 619 476 632 462 650 c 0
  453 662 435.5 662.5 428.5 662.5 c 0
 EndSplineSet
-Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f i
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f i
 LCarets2: 1 292
 EndChar
 
@@ -51736,7 +51721,6 @@ SplineSet
  130 149 147.9 251.8 154 280 c 2
  177 387 l 1
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f l
 LCarets2: 1 290
 EndChar
 
@@ -51809,9 +51793,6 @@ SplineSet
  446 434 l 1
  456.6 481.6 470.3 520.7 485.9 552.7 c 1
 EndSplineSet
-Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f f i
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f_f i
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f f i
 LCarets2: 2 275 546
 EndChar
 
@@ -51884,8 +51865,6 @@ SplineSet
  375 434 l 1
  388 434 l 1
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f_f l
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" f f l
 LCarets2: 2 275 559
 EndChar
 
@@ -51939,7 +51918,6 @@ SplineSet
  616 391 589 386 571 386 c 2
  498 386 l 1
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 0" longs t
 LCarets2: 1 251
 EndChar
 
@@ -69170,7 +69148,6 @@ SplineSet
  465 320 l 2
 EndSplineSet
 LCarets2: 1 291
-Ligature2: "'liga' Standardligaturen ohne TRK CRT AZE 1" f j
 EndChar
 
 StartChar: uni20BF
@@ -69416,6 +69393,103 @@ SplineSet
  375 -134 403 -118 433 27 c 1
 EndSplineSet
 Substitution2: "'ss07' Swap 'Eng' forms-1" eng.sc
+EndChar
+
+StartChar: f.short
+Encoding: 1114281 -1 2260
+Width: 370
+Flags: W
+AnchorPoint: "top_rechts" 390 750 basechar 0
+AnchorPoint: "mittelpunkt" 136 215 basechar 0
+AnchorPoint: "unten_punkt" 132 -110 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+177 387 m 1
+ 129 387 l 2
+ 111 387 103 389 103 394 c 1
+ 103 394 106 407 107 412 c 0
+ 109 420 122 434 155 434 c 2
+ 186 434 l 1
+ 241 682 346 698 393 698 c 0
+ 479 698 501 667 501 622 c 0
+ 501 597 486 582 454 582 c 0
+ 426 582 394 607 392 634 c 0
+ 391 651 386 662 375 662 c 0
+ 340 662 341.700195312 609.299804688 314 490 c 2
+ 314 490 306 455 301 434 c 1
+ 388 434 l 2
+ 407 434 416 431 416 425 c 1
+ 411 403 l 2
+ 408 392 381 387 363 387 c 2
+ 290 387 l 1
+ 272.900390625 318.400390625 217.299804688 -27.5 119 -171 c 0
+ 91 -211 49 -238 0 -238 c 0
+ -71 -238 -93 -202 -93 -185 c 0
+ -93 -170 -82 -149 -49 -149 c 0
+ 12 -149 12 -191 26 -191 c 0
+ 79 -191 104 -66 121 78 c 0
+ 130 149 147.900390625 251.799804688 154 280 c 2
+ 177 387 l 1
+EndSplineSet
+EndChar
+
+StartChar: f_f.short
+Encoding: 1114282 -1 2261
+Width: 630
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+177 387 m 1
+ 129 387 l 2
+ 111 387 103 389 103 394 c 1
+ 103 394 106 407 107 412 c 0
+ 109 420 122 434 155 434 c 2
+ 186 434 l 1
+ 239 655 376 668 423 668 c 0
+ 482.799804688 668 516.5 653 531.5 628.700195312 c 1
+ 585.200195312 691.900390625 624 698 653 698 c 0
+ 739 698 761 667 761 622 c 0
+ 761 597 746 582 714 582 c 0
+ 686 582 654 607 652 634 c 0
+ 651 651 646 662 635 662 c 0
+ 600 662 601.700195312 609.299804688 574 490 c 2
+ 574 490 566 455 561 434 c 1
+ 648 434 l 2
+ 667 434 676 431 676 425 c 1
+ 671 403 l 2
+ 668 392 641 387 623 387 c 2
+ 550 387 l 1
+ 532.900390625 318.400390625 477.299804688 2.5 379 -141 c 0
+ 351 -181 309 -208 260 -208 c 0
+ 189 -208 167 -172 167 -155 c 0
+ 167 -140 178 -119 211 -119 c 0
+ 272 -119 272 -161 286 -161 c 0
+ 339 -161 364 -56 381 88 c 0
+ 390 159 407.900390625 251.799804688 414 280 c 2
+ 437 387 l 1
+ 363 387 l 1
+ 349 387 l 1
+ 290 387 l 1
+ 272.900390625 318.400390625 217.299804688 -27.5 119 -171 c 0
+ 91 -211 49 -238 0 -238 c 0
+ -71 -238 -93 -202 -93 -185 c 0
+ -93 -170 -82 -149 -49 -149 c 0
+ 12 -149 12 -191 26 -191 c 0
+ 79 -191 104 -66 121 78 c 0
+ 130 149 147.900390625 251.799804688 154 280 c 2
+ 177 387 l 1
+388 434 m 1
+ 446 434 l 1
+ 456.599609375 481.700195312 469.799804688 520.799804688 484.5 552.900390625 c 1
+ 459.200195312 557.599609375 433.799804688 580 432 604 c 0
+ 431 621 426 632 415 632 c 0
+ 380 632 338.5 595.299804688 314 490 c 2
+ 314 490 306 455 301 434 c 1
+ 375 434 l 1
+ 388 434 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
