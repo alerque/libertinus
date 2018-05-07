@@ -4,11 +4,14 @@ feature liga {
   sub f f j by f_f_j;
  #sub f f k by f_f_k;
   sub f f l by f_f_l;
- #sub longs longs i by longs_longs_i;
- #sub longs longs by longs_longs;
+  sub longs longs i by longs_longs_i;
+  sub longs longs j by longs_longs_j;
+  sub longs longs l by longs_longs_l;
+  sub longs longs by longs_longs;
  #sub longs h by longs_h;
- #sub longs i by longs_i;
- #sub longs l by longs_l;
+  sub longs i by longs_i;
+  sub longs j by longs_j;
+  sub longs l by longs_l;
  #sub longs s by longs_s;
   sub longs t by longs_t;
  #sub t t by t_t;
@@ -28,8 +31,8 @@ feature liga {
 lookup undo_f_fi {
   sub f_i by f i;
   sub f_f_i by f_f i;
- #sub longs_i by longs i;
- #sub longs_longs_i by longs_longs i;
+  sub longs_i by longs i;
+  sub longs_longs_i by longs_longs i;
 } undo_f_fi;
 
 feature locl {
