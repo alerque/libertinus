@@ -20,6 +20,7 @@
 #   Fore, Back, SplineSet, Grid
 #           - all points have 4 masked out from flags (selected)
 #   ModificationTime - discarded
+#   Empty glyph positions dropped
 
 # !!! Always review changes done by this utility !!!
 
@@ -126,6 +127,8 @@ def process_sfd_file(sfdname, outname):
                     if gl.startswith("Refer: "):
                         # deselect selected references
                         gl = SELECTED_REF_RE.sub(r"\1N\2", gl)
+                    elif gl.endswith(" [ddx={} ddy={} ddh={} ddv={}]\n"):
+                        gl = gl.replace(" [ddx={} ddy={} ddh={} ddv={}]", "")
                     out.write(gl)
                 out.write("EndChar\n")
 
