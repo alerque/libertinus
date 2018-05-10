@@ -92,7 +92,7 @@ KernClass2: 14 8 "'kern' Small Caps"
  42 v.sc w.sc y.sc yacute.sc ydieresis.sc t.sc
  89 d.sc o.sc q.sc q.sc.u ograve.sc oacute.sc ocircumflex.sc otilde.sc odieresis.sc oslash.sc
  4 l.sc
- 57 A Agrave Aacute Acircumflex Atilde Adieresis Aring Abreve
+ 61 A Agrave Aacute Acircumflex Atilde Adieresis.alt Aring Abreve
  15 V W Y Ydieresis
  1 P
  3 K X
@@ -148,29 +148,29 @@ KernClass2: 21 21 "'kern' Latin kerning"
  59 Y Yacute Ycircumflex Ydieresis Ygrave seven.fitted question
  47 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9
  17 K X uni0136 K.alt
- 215 at D O Q Q.u Ograve Oacute Ocircumflex Otilde Odieresis Oslash Dcaron Dcroat Omacron Obreve Ohungarumlaut uni0186 uni0189 uni018A uni018F uni01EA uni01EC uni020C uni020E uni022A uni022C uni022E uni0230 Odieresis.alt
+ 215 at D O Q Q.u Ograve Oacute Ocircumflex Otilde Odieresis.alt Oslash Dcaron Dcroat Omacron Obreve Ohungarumlaut uni0186 uni0189 uni018A uni018F uni01EA uni01EC uni020C uni020E uni022A uni022C uni022E uni0230 Odieresis
  100 r v w y Thorn yacute ydieresis racute uni0157 rcaron wcircumflex ycircumflex wgrave wacute wdieresis
  79 g k x gcircumflex gbreve gdotaccent uni0123 uni0137 kgreenlandic gcaron f_k c_k
  21 b agrave egrave thorn
  77 e o p eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis
  16 L Lacute uni013B
- 114 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek Aringacute uni0200 uni0202 Adieresis.alt
+ 114 A Agrave Aacute Acircumflex Atilde Adieresis.alt Aring Amacron Abreve Aogonek Aringacute uni0200 uni0202 Adieresis
  132 comma period underscore uni2000 uni2001 uni2002 uni2003 uni2004 uni2005 uni2006 uni2007 uni2008 quotesinglbase quotedblbase ellipsis
  143 uni2080 uni2081 uni2082 uni2083 uni2084 uni2085 uni2086 uni2087 uni2088 uni2089 uni208A uni208B uni208C uni2090 uni2091 uni2092 uni2093 uni2094
  135 hyphen asciitilde guillemotleft guillemotright uni2010 uni2011 figuredash endash emdash uni2015 guilsinglleft guilsinglright hyphen.cap
  31 parenleft bracketleft braceleft
- 87 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek
+ 91 U Ugrave Uacute Ucircumflex Udieresis.alt Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek
  140 H I N Igrave Iacute Icircumflex Idieresis Ntilde Hcircumflex Hbar Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute uni0145 Ncaron Eng
  11 F P uni01A4
  99 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright uni201F
  24 T uni0162 Tcaron uni021A
  18 Y Yacute Ydieresis
  55 V W Wcircumflex Wgrave Wacute Wdieresis uniE0E9 uniE0EA
- 338 C G O Q Q.u Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE uni0187 uni0193 uni019F Ohorn Gcaron uni01EA uni01EC uni01F4 Oslashacute uni020C uni020E uni022A uni022C uni022E uni0230 zero.fitted zero.slashfitted six.fitted
+ 342 C G O Q Q.u Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis.alt Oslash Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent uni0122 Omacron Obreve Ohungarumlaut OE uni0187 uni0193 uni019F Ohorn Gcaron uni01EA uni01EC uni01F4 Oslashacute uni020C uni020E uni022A uni022C uni022E uni0230 zero.fitted zero.slashfitted six.fitted
  58 v w wcircumflex wgrave wacute wdieresis y yacute ydieresis
  1 x
  99 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright uni201F
- 165 A Agrave Aacute Acircumflex Atilde Adieresis Aring AE Amacron Abreve Aogonek uni01CD uni01DE uni01E0 uni01E2 Aringacute AEacute uni0200 uni0202 uni0226 Adieresis.alt
+ 165 A Agrave Aacute Acircumflex Atilde Adieresis.alt Aring AE Amacron Abreve Aogonek uni01CD uni01DE uni01E0 uni01E2 Aringacute AEacute uni0200 uni0202 uni0226 Adieresis
  66 comma period quotesinglbase onedotenleader twodotenleader ellipsis
  67 e c o d q ccedilla eogonek oe uni0188 uni018D ohorn uni01DD c_k c_h
  70 a g s aacute ae eacute oacute oslash aogonek cacute edotaccent uni022F
@@ -180,7 +180,7 @@ KernClass2: 21 21 "'kern' Latin kerning"
  178 plus hyphen less equal greater asciitilde guillemotleft uni00AD periodcentered guillemotright divide uni2010 uni2011 figuredash endash emdash uni2015 guilsinglleft guilsinglright
  57 exclam question exclamdbl uni203D uni2047 uni2048 uni2049
  80 b h k l thorn hcircumflex hbar uni0137 lacute uni013C lcaron ldot lslash uni0180
- 143 U Ugrave Uacute Ucircumflex Udieresis Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek uni01D3 uni01D5 uni01D7 uni01D9 uni01DB uni0214 uni0216
+ 147 U Ugrave Uacute Ucircumflex Udieresis.alt Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek uni01D3 uni01D5 uni01D7 uni01D9 uni01DB uni0214 uni0216
  169 degree uni00B2 uni00B3 uni00B9 uni2070 uni2071 uni2074 uni2075 uni2076 uni2077 uni2078 uni2079 uni207A uni207B uni207C uni207D uni207E uni207F uni2098 uni2099 q.superior
  1 u
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 98 {} 98 {} 98 {} 24 {} 0 {} 0 {} 73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 76 {} 80 {} 0 {} 80 {} 40 {} 0 {} 88 {} 0 {} 0 {} 55 {} 24 {} 24 {} -5 {} -49 {} -34 {} 0 {} -49 {} -63 {} -63 {} -49 {} -20 {} 0 {} 0 {} -59 {} 10 {} 0 {} 37 {} 0 {} -39 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} 0 {} -61 {} -44 {} -71 {} -60 {} -40 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 0 {} -39 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} 0 {} -112 {} -88 {} -80 {} -60 {} -40 {} 0 {} 0 {} -49 {} 0 {} 0 {} 24 {} 0 {} -24 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -5 {} -34 {} 37 {} 0 {} 10 {} 10 {} 0 {} -29 {} -29 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} 0 {} -49 {} -59 {} -8 {} 0 {} 0 {} -17 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -29 {} -37 {} -44 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -24 {} -40 {} -10 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -65 {} 0 {} -73 {} 0 {} 0 {} -12 {} -12 {} 0 {} -12 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -34 {} 0 {} -61 {} -73 {} -73 {} -10 {} 0 {} 0 {} -122 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -73 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -308 {} 0 {} 0 {} -49 {} -49 {} -49 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -17 {} 0 {} 0 {} -24 {} 0 {} -17 {} -12 {} 0 {} 0 {} 73 {} -37 {} 0 {} 12 {} 12 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} 24 {} -59 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 12 {} 49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -49 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
@@ -8126,7 +8126,7 @@ Substitution2: "'c2sc' Versale nach Kapitaelchen 1" atilde.sc
 Colour: ff00ff
 EndChar
 
-StartChar: Adieresis
+StartChar: Adieresis.alt
 Encoding: 1114112 -1 347
 Width: 695
 Flags: MW
@@ -8541,7 +8541,7 @@ Substitution2: "'c2sc' Versale nach Kapitaelchen 1" otilde.sc
 Colour: ff00ff
 EndChar
 
-StartChar: Odieresis
+StartChar: Odieresis.alt
 Encoding: 1114113 -1 365
 Width: 702
 Flags: MW
@@ -8671,7 +8671,7 @@ Substitution2: "'c2sc' Versale nach Kapitaelchen 1" ucircumflex.sc
 Colour: ff00ff
 EndChar
 
-StartChar: Udieresis
+StartChar: Udieresis.alt
 Encoding: 1114114 -1 371
 Width: 667
 Flags: MW
@@ -35022,7 +35022,7 @@ EndSplineSet
 Colour: ff00ff
 EndChar
 
-StartChar: Adieresis.alt
+StartChar: Adieresis
 Encoding: 196 196 1616
 Width: 695
 Flags: MW
@@ -35030,14 +35030,14 @@ LayerCount: 2
 Fore
 Refer: 2414 -1 N 1 0 0 1 594 0 2
 Refer: 24 65 N 1 0 0 1 0 0 2
-Substitution2: "'ss01' Stilgruppe 1 1" Adieresis
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" adieresis.sc
+Substitution2: "'ss01' Stilgruppe 1 1" Adieresis.alt
 Comment: "Dies sind alternative Umlaute, die im Deutschen vorzuziehen sind."
 Colour: ff00ff
 EndChar
 
-StartChar: Odieresis.alt
+StartChar: Odieresis
 Encoding: 214 214 1617
 Width: 702
 Flags: MW
@@ -35047,14 +35047,14 @@ LayerCount: 2
 Fore
 Refer: 2414 -1 N 1 0 0 1 585 1 2
 Refer: 264 79 N 1 0 0 1 0 0 2
-Substitution2: "'ss01' Stilgruppe 1 1" Odieresis
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" odieresis.sc
+Substitution2: "'ss01' Stilgruppe 1 1" Odieresis.alt
 Comment: "Dies sind alternative Umlaute, die im Deutschen vorzuziehen sind."
 Colour: ff00ff
 EndChar
 
-StartChar: Udieresis.alt
+StartChar: Udieresis
 Encoding: 220 220 1618
 Width: 661
 Flags: MW
@@ -35062,9 +35062,9 @@ LayerCount: 2
 Fore
 Refer: 2414 -1 N 1 0 0 1 584 1 2
 Refer: 270 85 N 1 0 0 1 0 0 2
-Substitution2: "'ss01' Stilgruppe 1 1" Udieresis
 Position2: "'cpsp' Versalabstaende 1" dx=2 dy=0 dh=5 dv=0
 Substitution2: "'c2sc' Versale nach Kapitaelchen 1" udieresis.sc
+Substitution2: "'ss01' Stilgruppe 1 1" Udieresis.alt
 Comment: "Dies sind alternative Umlaute, die im Deutschen vorzuziehen sind."
 Colour: ff00ff
 EndChar
