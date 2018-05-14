@@ -25,6 +25,9 @@ feature liga {
  #sub f k by f_k;
   sub f l by f_l;
   sub f t by f_t;
+
+  # This is a dlig below, but we alternatively enable it when ZWJ is used.
+  sub T uni200D h by T_h;
 } liga;
 
 lookup undo_f_fi {
