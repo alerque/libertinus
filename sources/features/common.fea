@@ -14,9 +14,6 @@ feature liga {
   sub longs l by longs_l;
  #sub longs s by longs_s;
   sub longs t by longs_t;
- #sub t t by t_t;
- #sub c h by c_h;
- #sub c k by c_k;
   sub f f by f_f;
   sub f f.short by f_f.short;
  #sub f h by f_h;
@@ -26,8 +23,11 @@ feature liga {
   sub f l by f_l;
   sub f t by f_t;
 
-  # This is a dlig below, but we alternatively enable it when ZWJ is used.
+  # These are in dlig below, but we alternatively enable when when ZWJ is used.
   sub T uni200D h by T_h;
+ #sub t uni200D t by t_t;
+ #sub c uni200D h by c_h;
+ #sub c uni200D k by c_k;
 } liga;
 
 lookup undo_f_fi {
@@ -66,4 +66,7 @@ feature ccmp {
 
 feature dlig {
   sub T h by T_h;
+ #sub t t by t_t;
+ #sub c h by c_h;
+ #sub c k by c_k;
 } dlig;
