@@ -38,7 +38,7 @@ CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
 DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-table.pdf)
-OPDF=libertinus-opentype-features.pdf
+OPDF=$(NAME)-opentype-features.pdf $(NAME)-sample.pdf
 
 all: otf
 
