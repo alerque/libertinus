@@ -8,10 +8,11 @@ FEA=$(SRC)/features
 DOC=documentation
 TOOLS=tools
 
-PY=python
+PY?=python
 BUILD=$(TOOLS)/build.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
 CHECKERRS=$(TOOLS)/check-errors.py
+LO?=lowriter
 
 NULL=
 
@@ -37,11 +38,12 @@ CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
 DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-table.pdf)
+OPDF=libertinus-opentype-features.pdf
 
 all: otf
 
 otf: $(OTF)
-doc: $(PDF)
+doc: $(PDF) $(OPDF)
 normalize: $(NRM)
 check: $(CHK) $(DUP)
 
@@ -83,12 +85,18 @@ $(DOC)/%-table.pdf: %.otf
 	 fi
 	@rm -f $@.tmp
 
-dist: check $(OTF) $(PDF)
+$(DOC)/%.pdf: $(DOC)/%.fodt
+	@echo "   PDF	$@"
+	@mkdir -p $(DOC)
+	@VCL_DEBUG_DISABLE_PDFCOMPRESSION=1 LC_ALL=en_US.utf-8 \
+	 $(LO) --convert-to pdf --outdir $(DOC) $< 1> /dev/null
+
+dist: check $(OTF) $(PDF) $(OPDF)
 	@echo "   DST	$(DIST).zip"
 	@rm -rf $(DIST) $(DIST).zip
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
-	@cp $(PDF) $(DIST)/$(DOC)
+	@cp $(PDF) $(OPDF) $(DIST)/$(DOC)
 	@cp $(DOC)/$(NAME)-testmath.pdf $(DIST)/$(DOC)
 	@cp $(DOC)/$(NAME)-sample.pdf $(DIST)/$(DOC)
 	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
