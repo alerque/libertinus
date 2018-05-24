@@ -1,4 +1,4 @@
-NAME=libertinus
+NAME=Libertinus
 VERSION=6.7
 
 DIST=$(NAME)-$(VERSION)
@@ -16,20 +16,20 @@ LO?=lowriter
 
 NULL=
 
-FONTS=math-regular \
-      sans-regular \
-      sans-bold \
-      sans-italic \
-      serif-regular \
-      serif-semibold \
-      serif-bold \
-      serif-italic \
-      serif-semibolditalic \
-      serif-bolditalic \
-      serifdisplay-regular \
-      serifinitials-regular \
-      mono-regular \
-      keyboard-regular \
+FONTS=Math-Regular \
+      Sans-Regular \
+      Sans-Bold \
+      Sans-Italic \
+      Serif-Regular \
+      Serif-Semibold \
+      Serif-Bold \
+      Serif-Italic \
+      Serif-SemiboldItalic \
+      Serif-BoldItalic \
+      SerifDisplay-Regular \
+      SerifInitials-Regular \
+      Mono-Regular \
+      Keyboard-Regular \
       $(NULL)
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
@@ -37,8 +37,8 @@ NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
 CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
 DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
 OTF=$(FONTS:%=$(NAME)%.otf)
-PDF=$(FONTS:%=$(DOC)/$(NAME)%-table.pdf)
-OPDF=$(DOC)/$(NAME)-opentype-features.pdf $(DOC)/$(NAME)-sample.pdf
+PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
+OPDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
 
 all: otf
 
@@ -69,7 +69,7 @@ check: $(CHK) $(DUP)
 	@echo "   CHK	$(<F)"
 	@$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
 
-$(DOC)/%-table.pdf: %.otf
+$(DOC)/%-Table.pdf: %.otf
 	@echo "   PDF	$@"
 	@mkdir -p $(DOC)
 	@fntsample --font-file $< --output-file $@.tmp                         \
@@ -97,8 +97,7 @@ dist: check $(OTF) $(PDF) $(OPDF)
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
 	@cp $(PDF) $(OPDF) $(DIST)/$(DOC)
-	@cp $(DOC)/$(NAME)-testmath.pdf $(DIST)/$(DOC)
-	@cp $(DOC)/$(NAME)-sample.pdf $(DIST)/$(DOC)
+	@cp $(DOC)/Math-Sample.pdf $(DIST)/$(DOC)
 	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
 	@zip -rq $(DIST).zip $(DIST)
