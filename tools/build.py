@@ -21,9 +21,6 @@ font = fontforge.open(args.input)
 if args.feature_file and os.path.isfile(args.feature_file):
     font.mergeFeature(args.feature_file)
 
-if os.environ.get("SOURCE_DATE_EPOCH") is None:
-    os.environ["SOURCE_DATE_EPOCH"] = "0"
-
 font.version = args.version
 font.copyright = u"Copyright © 2012-%s The Libertinus Project Authors." % datetime.date.today().year
 

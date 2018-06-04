@@ -40,6 +40,8 @@ OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
 OPDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
 
+export SOURCE_DATE_EPOCH ?= 0
+
 all: otf
 
 otf: $(OTF)
