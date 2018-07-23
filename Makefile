@@ -74,18 +74,12 @@ check: $(CHK) $(DUP)
 $(DOC)/%-Table.pdf: %.otf
 	@echo "   PDF	$@"
 	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@.tmp                         \
+	@fntsample --font-file $< --output-file $@                             \
 		   --write-outline --use-pango                                 \
 		   --style="header-font: Noto Sans Bold 12"                    \
 		   --style="font-name-font: Noto Serif Bold 12"                \
 		   --style="table-numbers-font: Noto Sans 10"                  \
 		   --style="cell-numbers-font:Noto Sans Mono 8"
-	@if mutool info $@.tmp &> /dev/null; then                              \
-	   mutool clean -d -i -f -a $@.tmp $@;                                 \
-	 else                                                                  \
-	   cp $@.tmp $@;                                                       \
-	 fi
-	@rm -f $@.tmp
 
 $(DOC)/%.pdf: $(DOC)/%.fodt
 	@echo "   PDF	$@"
