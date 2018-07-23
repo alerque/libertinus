@@ -21,6 +21,7 @@
 #           - all points have 4 masked out from flags (selected)
 #   ModificationTime - discarded
 #   Empty glyph positions dropped
+#   Hinting dropped
 
 # !!! Always review changes done by this utility !!!
 
@@ -42,6 +43,7 @@ DROP_FLAGS_RE = re.compile(r"^(Flags:.*?)[HO](.*)$")
 SELECTED_POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)$")
 SELECTED_REF_RE = re.compile(r"(-?\d+\s+)S(\s+-?\d+)")
 OTFFEATNAME_RE = re.compile(r"OtfFeatName:\s*'(....)'\s*(\d+)\s*(.*)$")
+HINTS_RE =  re.compile(r"^[HVD]Stem2?: ")
 
 # The following class is used to emulate variable assignment in
 # conditions: while testing if a pattern corresponds to a specific
@@ -129,6 +131,8 @@ def process_sfd_file(sfdname, outname):
                         gl = SELECTED_REF_RE.sub(r"\1N\2", gl)
                     elif gl.endswith(" [ddx={} ddy={} ddh={} ddv={}]\n"):
                         gl = gl.replace(" [ddx={} ddy={} ddh={} ddv={}]", "")
+                    elif proc.test(HINTS_RE, gl):
+                        continue
                     out.write(gl)
                 out.write("EndChar\n")
 
