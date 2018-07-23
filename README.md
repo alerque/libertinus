@@ -16,7 +16,7 @@ The family consists of:
 * Libertinus Sans: forked from *Linux Biolinum*.
 * Libertinus Mono: forked from *Linux Libertine Mono*.
 * Libertinus Math: an OpenType math font for use in OpenType math-capable
-  applications like LuaTeX, XeTeX or MS Word 2007+.
+  applications (like LuaTeX, XeTeX or MS Word 2007+).
 
 Libertinus fonts are available under the terms of Open Font License version
 1.1.
