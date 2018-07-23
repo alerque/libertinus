@@ -38,14 +38,20 @@ To build the PDF samples:
 
 Contributing
 ------------
-The fonts should be edited with FontForge, and the SFD files should be
-normalized with:
+The source files are under `sources` subdirectory. The `.sfd` files are
+FontForge source font format, and should be edited with FontForge. The `.fea`
+files are Adobe feature files and should be edited by a plain text editor.
+
+After modifying the SFD files, they should be normalized with:
 
     make normalize
 
 (Make sure to save a copy of the SFD files before running this tool, the
 simplest way is to commit the SFD files, normalize, check the diffs and verify
 they are OK, then `git commit --ammend` the changes).
+
+We keep the generated fonts under version control, so the last step is to run
+`make` and commit the modified sources and the generated fonts.
 
 Generating the fonts for each commit is preferred, but not absolutely required.
 
