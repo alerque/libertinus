@@ -65,7 +65,7 @@ def process_sfd_file(sfdname, outname):
     proc = RegexpProcessor()
 
     if proc.test(FONT_RE, fl) == False:
-        print("%s is not a valid spline font database", sfdname)
+        print("%s is not a valid spline font database" % sfdname)
         return
 
     out.write(fl)
