@@ -36,6 +36,7 @@ SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
 CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
 DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
+LNT=$(FONTS:%=$(NAME)%.lnt)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
 OPDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
@@ -47,7 +48,7 @@ all: otf
 otf: $(OTF)
 doc: $(PDF) $(OPDF)
 normalize: $(NRM)
-check: $(CHK) $(DUP)
+check: $(LNT) $(CHK) $(DUP)
 
 
 %.fea:
@@ -70,6 +71,25 @@ check: $(CHK) $(DUP)
 %.dup: %.sfd $(FINDDUPS)
 	@echo "   CHK	$(<F)"
 	@$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
+
+# Currently ignored errors:
+#  2: Self-intersecting glyph
+#  3: Wrong direction
+#  5: Missing points at extrema
+#  7: More points in a glyph than PostScript allows
+# 23: Overlapping hints in a glyph
+# 34: Bad 'CFF ' table
+# 65: Disordered elements in either the BlueValues or OtherBlues
+#     entries in the PostScript Private dictionary
+# 67: Elements too close in either the BlueValues or OtherBlues
+#     entries in the PostScript Private dictionary
+# 69: Alignment zone height in either the BlueValues or OtherBlues is
+#     too big for the BlueScale in the PostScript Private dictionary
+# 98: Self-intersecting glyph (issue #2) when FontForge is able to
+#     correct this
+%.lnt: %.otf
+	@echo "   LNT	$(<F)"
+	@fontlint -i2,3,5,7,23,34,65,67,69,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOC)/%-Table.pdf: %.otf
 	@echo "   PDF	$@"
