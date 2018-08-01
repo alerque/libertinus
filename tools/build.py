@@ -27,8 +27,12 @@ font.copyright = u"Copyright © 2012-%s The Libertinus Project Authors." % datet
 # Override the default which includes the build date
 font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" % (args.version, font.os2_vendor, font.fontname))
 
-font.selection.all()
-font.autoHint()
+for glyph in font.glyphs():
+    glyph.unlinkRef()
+    if glyph.unlinkRmOvrlpSave:
+        glyph.removeOverlap()
+    glyph.autoHint()
+
 font.generate(args.output, flags=("opentype"))
 
 ttfont = TTFont(args.output)
