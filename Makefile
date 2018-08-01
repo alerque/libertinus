@@ -85,15 +85,9 @@ LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
 # Currently ignored errors:
 #  5: Missing points at extrema
 # 34: Bad 'CFF ' table
-# 65: Disordered elements in either the BlueValues or OtherBlues
-#     entries in the PostScript Private dictionary
-# 67: Elements too close in either the BlueValues or OtherBlues
-#     entries in the PostScript Private dictionary
-# 69: Alignment zone height in either the BlueValues or OtherBlues is
-#     too big for the BlueScale in the PostScript Private dictionary
 %.lnt: %.otf
 	@echo "   LNT	$(<F)"
-	@fontlint -i5,34,65,67,69 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
+	@fontlint -i5,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOC)/%-Table.pdf: %.otf
 	@echo "   PDF	$@"
