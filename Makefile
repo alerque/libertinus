@@ -84,8 +84,6 @@ LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
 
 # Currently ignored errors:
 #  5: Missing points at extrema
-#  7: More points in a glyph than PostScript allows
-# 23: Overlapping hints in a glyph
 # 34: Bad 'CFF ' table
 # 65: Disordered elements in either the BlueValues or OtherBlues
 #     entries in the PostScript Private dictionary
@@ -97,7 +95,7 @@ LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
 #     correct this
 %.lnt: %.otf
 	@echo "   LNT	$(<F)"
-	@fontlint -i5,7,23,34,65,67,69,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
+	@fontlint -i5,34,65,67,69,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOC)/%-Table.pdf: %.otf
 	@echo "   PDF	$@"
