@@ -72,8 +72,17 @@ check: $(LNT) $(CHK) $(DUP)
 	@echo "   CHK	$(<F)"
 	@$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
 
+
+# Don’t lint these two for now, they need quite some work
+LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
+	@echo "   LNTI  $(<F)"
+	@touch $@
+
+LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
+	@echo "   LNTI  $(<F)"
+	@touch $@
+
 # Currently ignored errors:
-#  2: Self-intersecting glyph
 #  3: Wrong direction
 #  5: Missing points at extrema
 #  7: More points in a glyph than PostScript allows
@@ -89,7 +98,7 @@ check: $(LNT) $(CHK) $(DUP)
 #     correct this
 %.lnt: %.otf
 	@echo "   LNT	$(<F)"
-	@fontlint -i2,3,5,7,23,34,65,67,69,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
+	@fontlint -i3,5,7,23,34,65,67,69,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOC)/%-Table.pdf: %.otf
 	@echo "   PDF	$@"
