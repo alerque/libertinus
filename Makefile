@@ -73,14 +73,18 @@ check: $(LNT) $(CHK) $(DUP)
 	@$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
 
 
-# Don’t lint these two for now, they need quite some work
+# Currently ignored errors:
+#  2: Self-intersecting glyph
+#  7: More points in a glyph than PostScript allows
+#  5: Missing points at extrema
+# 23: Overlapping hints in a glyph
 LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
-	@echo "   LNTI  $(<F)"
-	@touch $@
+	@echo "   LNT  $(<F)"
+	@fontlint -i2,5,7,23 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
-	@echo "   LNTI  $(<F)"
-	@touch $@
+	@echo "   LNT  $(<F)"
+	@fontlint -i2,5,7,23 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 # Currently ignored errors:
 #  5: Missing points at extrema
