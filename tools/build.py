@@ -6,6 +6,7 @@ import sys
 
 import fontforge
 
+from fontTools import subset
 from fontTools.ttLib import TTFont
 
 parser = argparse.ArgumentParser()
@@ -38,17 +39,20 @@ font.generate(args.output, flags=("opentype"))
 
 ttfont = TTFont(args.output)
 
-# Filter-out useless Macintosh names
-ttfont["name"].names = [n for n in ttfont["name"].names if n.platformID != 1]
-
 # https://github.com/fontforge/fontforge/pull/3235
 # fontDirectionHint is deprecated and must be set to 2
 ttfont["head"].fontDirectionHint = 2
 # unset bits 6..10
 ttfont["head"].flags &= ~0x7e0
 
-# Drop useless table with timestamp
-if "FFTM" in ttfont:
-    del ttfont["FFTM"]
+options = subset.Options()
+options.set(layout_features='*', name_IDs='*', notdef_outline=True,
+            glyph_names=True, recalc_average_width=True, drop_tables=["FFTM"])
+
+unicodes = ttfont["cmap"].getBestCmap().keys()
+
+subsetter = subset.Subsetter(options=options)
+subsetter.populate(unicodes=unicodes)
+subsetter.subset(ttfont)
 
 ttfont.save(args.output)
