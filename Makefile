@@ -83,7 +83,6 @@ LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
 	@touch $@
 
 # Currently ignored errors:
-#  3: Wrong direction
 #  5: Missing points at extrema
 #  7: More points in a glyph than PostScript allows
 # 23: Overlapping hints in a glyph
@@ -98,7 +97,7 @@ LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
 #     correct this
 %.lnt: %.otf
 	@echo "   LNT	$(<F)"
-	@fontlint -i3,5,7,23,34,65,67,69,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
+	@fontlint -i5,7,23,34,65,67,69,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOC)/%-Table.pdf: %.otf
 	@echo "   PDF	$@"

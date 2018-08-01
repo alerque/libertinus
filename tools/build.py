@@ -31,6 +31,7 @@ for glyph in font.glyphs():
     glyph.unlinkRef()
     if glyph.unlinkRmOvrlpSave:
         glyph.removeOverlap()
+    glyph.correctDirection()
     glyph.autoHint()
 
 font.generate(args.output, flags=("opentype"))
