@@ -6,8 +6,11 @@ virtualenv:
 
 addons:
   apt:
+    sources:
+      - sourceline: 'ppa:fontforge/fontforge'
     packages:
-    - python-fontforge
+      - fontforge
+      - python-fontforge
 
 install:
   - pip install fonttools
