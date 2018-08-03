@@ -20,6 +20,7 @@
 #   Fore, Back, SplineSet, Grid
 #           - all points have 4 masked out from flags (selected)
 #   ModificationTime - discarded
+#   Validated - discarded
 #   Empty glyph positions dropped
 #   Hinting dropped
 
@@ -132,6 +133,8 @@ def process_sfd_file(sfdname, outname):
                     elif gl.endswith(" [ddx={} ddy={} ddh={} ddv={}]\n"):
                         gl = gl.replace(" [ddx={} ddy={} ddh={} ddv={}]", "")
                     elif proc.test(HINTS_RE, gl):
+                        continue
+                    elif gl.startswith("Validated:"):
                         continue
                     out.write(gl)
                 out.write("EndChar\n")
