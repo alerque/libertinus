@@ -4,11 +4,11 @@ Libertinus fonts
 ================
 
 Libertinus fonts is a fork of the Linux Libertine and Linux Biolinum fonts that
-started as an OpenType math companion of the Libertine font family, but grown
-as a full fork to address some of the bugs in the fonts. Thanks to Frédéric
+started as an OpenType math companion of the Libertine font family. It has grown
+to a full fork to address some of the bugs in the fonts. Thanks to Frédéric
 Wang for coming up with the name Libertinus.
 
-Libertinus is forked from 5.3.0 (2012-07-02) release of Linux Libertine fonts.
+Libertinus was forked from the 5.3.0 (2012-07-02) release of Linux Libertine fonts.
 
 The family consists of:
 
@@ -18,13 +18,13 @@ The family consists of:
 * Libertinus Math: an OpenType math font for use in OpenType math-capable
   applications (like LuaTeX, XeTeX or MS Word 2007+).
 
-Libertinus fonts are available under the terms of Open Font License version
+Libertinus fonts are available under the terms of the Open Font License version
 1.1.
 
 Building
 --------
-To build the fonts you need GNU Make, [FontForge][1] with Python support, and
-[FontTools][2], latest versions of both are preferred.
+To build the fonts, you need GNU Make, [FontForge][1] with Python support, and
+[FontTools][2]. The latest versions of FontForge and FontTools are preferred.
 
 To build the fonts:
 
@@ -36,15 +36,15 @@ To build the PDF samples you need [fntsample][3], and then:
 
 Contributing
 ------------
-The source files are under `sources` subdirectory. The `.sfd` files are
-FontForge source font format, and should be edited with FontForge. The `.fea`
+The source files are under the `sources` subdirectory. The `.sfd` files are
+FontForge source font format and should be edited with FontForge. The `.fea`
 files are Adobe feature files and should be edited by a plain text editor.
 
 After modifying the SFD files, they should be normalized with:
 
     make normalize
 
-(Make sure to save a copy of the SFD files before running this tool, the
+(Make sure to save a copy of the SFD files before running this tool. The
 simplest way is to commit the SFD files, normalize, check the diffs and verify
 they are OK, then `git commit --ammend` the changes).
 
