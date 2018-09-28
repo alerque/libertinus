@@ -21,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
+ModificationTime: 1538110368
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -241,14 +242,18 @@ ChainSub2: coverage "'frac' Contextual Chaining Substitution-1" 0 0 0 1
 EndFPST
 LangName: 1033 "" "" "" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/khaledhosny/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
 GaspTable: 3 8 2 17 1 65535 3 0
-OtfFeatName: 'ss01' 1033 "Low diaeresis on 'A', 'E', 'O'"
-OtfFeatName: 'ss02' 1033 "Swash 'K', 'R'"
-OtfFeatName: 'ss03' 1033 "Upper case 'double s' to two 'S'"
-OtfFeatName: 'ss04' 1033 "Ampersand"
 OtfFeatName: 'ss07' 1033 "Swap 'Eng' forms"
+OtfFeatName: 'ss04' 1033 "Ampersand"
+OtfFeatName: 'ss03' 1033 "Upper case 'double s' to two 'S'"
+OtfFeatName: 'ss02' 1033 "Swash 'K', 'R'"
+OtfFeatName: 'ss01' 1033 "Low diaeresis on 'A', 'E', 'O'"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
+DisplaySize: -48
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 1120 16 9
 BeginPrivate: 9
 BlueValues 47 [-12 0 429 442 460 474 600 610 645 658 688 698]
 OtherBlues 11 [-238 -227]
@@ -372,7 +377,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "komb_OR" "'mark' komb OR" "top_akzent" "'mark' Top Akzent" "top_punkt" "'mark' Top Akzent" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt"
-BeginChars: 65798 2444
+BeginChars: 65798 2445
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -3056,8 +3061,27 @@ EndChar
 
 StartChar: uni04AE
 Encoding: 1198 1198 104
-Width: 1000
+Width: 582
+Flags: W
+HStem: -3 21G 628 20G
+VStem: 247 86
 LayerCount: 2
+Fore
+SplineSet
+333 285 m 1
+ 334 186 336 45 340 -3 c 1
+ 328 -1 302 0 290 0 c 0
+ 278 0 252 -1 240 -3 c 1
+ 245 52 247 177 247 275 c 1
+ 209 340 56 588 16 648 c 1
+ 33 646 56 645 73 645 c 0
+ 90 645 113 646 130 648 c 1
+ 184 543 242 449 305 340 c 1
+ 363 431 430 543 480 648 c 1
+ 492 646 509 645 522 645 c 0
+ 534 645 551 646 564 648 c 1
+ 443 463 374 365 333 285 c 1
+EndSplineSet
 Colour: ff00ff
 EndChar
 
@@ -57253,6 +57277,35 @@ SplineSet
  82 317 l 2
 EndSplineSet
 Substitution2: "'ss07' Swap 'Eng' forms-1" eng.sc
+EndChar
+
+StartChar: uni04AF
+Encoding: 1199 1199 2444
+Width: 462
+Flags: W
+HStem: -249 20G<183 183 211 255 255 255 283 283> 429.001 21G<70 85>
+VStem: 20 108<432 432> 190 84
+LayerCount: 2
+Fore
+SplineSet
+190 24 m 1
+ 190 -146 188.299804688 -189 183 -229 c 1
+ 184 -232 l 1
+ 211 -229 l 1
+ 255 -229 l 1
+ 281 -232 l 1
+ 283 -229 l 1
+ 277.563476562 -190.622070312 275.012695312 -125.587890625 274 30 c 1
+ 326 176 377 285 442 432 c 1
+ 433 429 414 429 404 429 c 0
+ 394 429 379 429 370 432 c 1
+ 329.5 318.900390625 294.700195312 188.100585938 248.799804688 90.1005859375 c 1
+ 246.799804688 90.1005859375 l 1
+ 196.700195312 204.600585938 164.299804688 317.30078125 128 432.000976562 c 1
+ 115 429.000976562 92 429.000976562 78 429.000976562 c 0
+ 62 429.000976562 36 429.000976562 20 432.000976562 c 1
+ 87 285.000976562 136 167 190 24 c 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
