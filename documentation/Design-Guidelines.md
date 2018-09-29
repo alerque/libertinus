@@ -42,7 +42,7 @@
 # Libertinus design guidelines
 
 These are short guidelines for all volunteers who love libre fonts in general, the Libertinus font family especially, and who think about contributing to the latter.
-Fonts contain dozens of glyphs. Libertinus for example has around 2000, and they all fit together while being different. The glyphs have to fit together - in the aspect of design, their optical weight, and their spacing. Some technical issues have to be met to achive that.
+Fonts contain dozens of glyphs. Libertinus for example has several thousands of glyphs, and they all fit together while being different. The glyphs have to fit together - in the aspect of design, their optical weight, and their spacing. Some technical issues have to be met to achive that.
 Sounds complicated? Nevermind, we will get you into it. This is what these guidelines are for.
 
 ## Design principles
@@ -162,7 +162,7 @@ By definition, the height of the EM square is divided into 1000 units we call "E
 
 ### Spacing and tracking
 ![Spacing of letters has to base on optical assessment and has to correspond with the counter space](figures/spacing.png)
-Well, you have drawn a wonderful glyph and now you think that the work is done? Wrong! The spacing and finding the right tracking of a glyph is one of the major tasks. You have to check dozens of constellations of glyph pairs and have to make lots of compromises. The figure shows the counter space in blue and the inter-glyph spacing in red. The counters play an important role in tracking. For spacing and counters should be equally balanced.
+Well, you have drawn a wonderful glyph and now you think that the work is done? Wrong! The spacing and finding the right tracking of a glyph is one of the major tasks. You have to check dozens of constellations of glyph pairs and have to make lots of compromises. The figure shows the counter space in blue and the inter-glyph spacing in red. The counters play an important role in tracking. The spacing and counters should be equally balanced.
 Remember the figure indicating the bold `o`? Thinner counters lead to thinner letter spacing, and thus to an increased density of the face and higher weight.
 Libertinus' glyphs are already fairly well-spaced. If you want to set the spacing of a new glyph or improve the existing one, chose one of the reference characters that resembles yours and make a decision based on that.
 
@@ -174,10 +174,6 @@ Libertinus' glyphs are already fairly well-spaced. If you want to set the spacin
 
 Libertinus is being developed with the font editor FontForge. Binary packages are available for many Linux distributions (Ubuntu, Fedora, OpenSUSE ...), macOS, and Windows. See [FontForge's project page](http://fontforge.github.io) for more information.
 There is also a fairly good manual: [Design fonts with FontForge](http://designwithfontforge.com/en-US/index.html).
-
-### How the sources are organized
-Libertinus sources are saved in the SFD directory format (SFDir). This format allows easy collaborative development, in that each glyph is described in a separate `*.glyph` file. Meta-description such as font name, vertical metrics, kern tables, etc. are saved in the `font.props` file.
-So, if you added or improved a glyph, you will only need to supply the changed `*.glyph` file. Conflicts with other contributors working on other glyphs at the same time are being reduced that way. A little disadvantage of the SFDir format is the long time FontForge needs to open and save a font.
 
 ### The layers
 In the glyph view you will find a little tool-box called "layers" amongst others. The contours of Libertinus are stored in the "glyph layer". You can use the "background layer" to store contours from another glyph for comparing certain characteristics like form, height, counter width, and such. Finally, the "guide layer" contains metrical lines such as x-height, caps-height, etc. and it is actually unique for all glyphs. So, please leave that one untouched.
