@@ -372,7 +372,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "komb_OR" "'mark' komb OR" "top_akzent" "'mark' Top Akzent" "top_punkt" "'mark' Top Akzent" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt"
-BeginChars: 65798 2444
+BeginChars: 65798 2445
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -3056,8 +3056,25 @@ EndChar
 
 StartChar: uni04AE
 Encoding: 1198 1198 104
-Width: 1000
+Width: 582
+Flags: W
 LayerCount: 2
+Fore
+SplineSet
+333 285 m 1
+ 334 186 336 45 340 -3 c 1
+ 328 -1 302 0 290 0 c 0
+ 278 0 252 -1 240 -3 c 1
+ 245 52 247 177 247 275 c 1
+ 209 340 56 588 16 648 c 1
+ 33 646 56 645 73 645 c 0
+ 90 645 113 646 130 648 c 1
+ 184 543 242 449 305 340 c 1
+ 363 431 430 543 480 648 c 1
+ 492 646 509 645 522 645 c 0
+ 534 645 551 646 564 648 c 1
+ 443 463 374 365 333 285 c 1
+EndSplineSet
 Colour: ff00ff
 EndChar
 
@@ -57253,6 +57270,33 @@ SplineSet
  82 317 l 2
 EndSplineSet
 Substitution2: "'ss07' Swap 'Eng' forms-1" eng.sc
+EndChar
+
+StartChar: uni04AF
+Encoding: 1199 1199 2444
+Width: 462
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 24 m 1
+ 190 -146 188.299804688 -189 183 -229 c 1
+ 184 -232 l 1
+ 211 -229 l 1
+ 255 -229 l 1
+ 281 -232 l 1
+ 283 -229 l 1
+ 277.563476562 -190.622070312 275.012695312 -125.587890625 274 30 c 1
+ 326 176 377 285 442 432 c 1
+ 433 429 414 429 404 429 c 0
+ 394 429 379 429 370 432 c 1
+ 329.5 318.900390625 294.700195312 188.100585938 248.799804688 90.1005859375 c 1
+ 246.799804688 90.1005859375 l 1
+ 196.700195312 204.600585938 164.299804688 317.30078125 128 432.000976562 c 1
+ 115 429.000976562 92 429.000976562 78 429.000976562 c 0
+ 62 429.000976562 36 429.000976562 20 432.000976562 c 1
+ 87 285.000976562 136 167 190 24 c 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
