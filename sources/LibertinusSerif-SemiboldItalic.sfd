@@ -56,7 +56,7 @@ Lookup: 1 0 0 "'pnum' Proportionalziffern in Latin lookup 4" { "'pnum' Proportio
 Lookup: 1 0 0 "'sinf' Wissenschaftliche Indices in Latin lookup 5" { "'sinf' Wissenschaftliche Indices in Latin lookup 5" ("inferior") } ['sinf' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'sups' Superscript in Latin lookup 6" { "'sups' Superscript in Latin lookup 6" ("superior") } ['sups' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Cyrillic lookup 0" { "'kern' Horizontales Kerning in Cyrillic lookup 0"  } ['kern' ('cyrl' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1" { "'kern' Horizontales Kerning in Latin lookup 1"  } ['kern' ('latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1" { "'kern' Horizontales Kerning in Latin lookup 1" [150,15,0] } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Top rechts"  "'mark' Top Punkt"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -230,7 +230,7 @@ Width: 250
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
-Kerns2: 89 -7 "'kern' Horizontales Kerning in Latin lookup 1" 87 -7 "'kern' Horizontales Kerning in Latin lookup 1" 86 -7 "'kern' Horizontales Kerning in Latin lookup 1" 66 11 "'kern' Horizontales Kerning in Latin lookup 1" 57 -36 "'kern' Horizontales Kerning in Latin lookup 1" 56 -9 "'kern' Horizontales Kerning in Latin lookup 1" 55 -62 "'kern' Horizontales Kerning in Latin lookup 1" 54 -62 "'kern' Horizontales Kerning in Latin lookup 1" 52 -66 "'kern' Horizontales Kerning in Latin lookup 1" 42 -44 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 42 -44 "'kern' Horizontales Kerning in Latin lookup 1" 52 -66 "'kern' Horizontales Kerning in Latin lookup 1" 54 -62 "'kern' Horizontales Kerning in Latin lookup 1" 55 -62 "'kern' Horizontales Kerning in Latin lookup 1" 56 -9 "'kern' Horizontales Kerning in Latin lookup 1" 57 -36 "'kern' Horizontales Kerning in Latin lookup 1" 66 11 "'kern' Horizontales Kerning in Latin lookup 1" 86 -7 "'kern' Horizontales Kerning in Latin lookup 1" 87 -7 "'kern' Horizontales Kerning in Latin lookup 1" 89 -7 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: exclam
@@ -623,7 +623,7 @@ SplineSet
  406 276 406 275 406 273 c 0
  403 260 373 233 350 233 c 2
 EndSplineSet
-Kerns2: 89 -11 "'kern' Horizontales Kerning in Latin lookup 1" 86 -11 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 86 -11 "'kern' Horizontales Kerning in Latin lookup 1" 89 -11 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" hyphen.sc
 EndChar
 
@@ -668,23 +668,21 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-346 566 m 0
- 313 566 253 525 206 284 c 0
- 198.9 246.9 191.9 193.5 191.9 145.6 c 0
- 191.9 85 203.2 33 240 33 c 0
- 252 33 288 44 321 122 c 1
- 343 171 364 231 382 323 c 0
- 391.8 373.7 395.8 415.3 395.8 448.8 c 0
- 395.8 503.8 385.1 536.7 372 551 c 0
- 364 560 354 566 346 566 c 0
-231 -10 m 0
- 137.6 -10 85.7 81.3 85.7 202 c 0
- 85.7 231.2 88.8 262.2 95 294 c 0
- 133 491 252 610 355 610 c 0
- 404 610 450 577 473 539 c 1
- 491.5 501.5 500.4 456.7 500.4 406 c 0
- 500.4 374.3 496.9 340.2 490 304 c 0
- 444 69 311 -10 231 -10 c 0
+223 -10 m 0
+ 121 -10 79 84 79 194 c 0
+ 79 356 155 498 230 558 c 0
+ 268 592 312 610 354 610 c 0
+ 443 610 500 539 500 416 c 0
+ 500 286 445 154 396 91 c 0
+ 340 18 272 -10 223 -10 c 0
+346 572 m 0
+ 326 572 301 562 274 518 c 0
+ 239 464 173 272 173 130 c 0
+ 173 73 187 28 232 28 c 0
+ 253 28 295 43 330 126 c 0
+ 357 188 402 361 402 463 c 0
+ 402 512 393 542 379 557 c 0
+ 370 567 359 572 346 572 c 0
 EndSplineSet
 Kerns2: 12 -4 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2070
@@ -695,35 +693,30 @@ EndChar
 
 StartChar: one
 Encoding: 49 49 17
-Width: 470
+Width: 471
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-213 81 m 2
- 281 430 l 2
- 284.8 448.8 286.4 460.9 286.4 468.8 c 0
- 286.4 481.8 281.9 483 275 483 c 0
- 263 483 211 467 163 444 c 1
- 152 477 l 1
- 229 512 314 565 368 593 c 0
- 388 604 404 610 412 610 c 0
- 417.6 610 421.9 607.4 421.9 599.8 c 0
- 421.9 597.9 421.6 595.6 421 593 c 2
- 421 593 406 530 396 477 c 2
- 319 81 l 2
- 317.9 75.4 317.4 70.4 317.4 66.1 c 0
- 317.4 34.3 345.5 35.5 386 32 c 1
- 387.4 30.3 388 27.3 388 23.8 c 0
- 388 14.8 384 2.3 379 -2 c 1
- 348 -1 289 0 251 0 c 0
- 207 0 131 -1 100 -2 c 1
- 98.6 -0.3 98 2.7 98 6.2 c 0
- 98 15.2 102 27.7 107 32 c 1
- 149 35 204 35 213 81 c 2
+311 122 m 2
+ 294 39 326 34 386 32 c 1
+ 392 26 388 4 379 -2 c 1
+ 324 -1 282 0 240 0 c 0
+ 194 0 115 -2 90 -2 c 1
+ 84 4 88 26 97 32 c 1
+ 159 34 197 39 214 122 c 2
+ 278 442 l 0
+ 281 458 283 467 283 476 c 0
+ 283 490 278 496 270 496 c 0
+ 254 496 215 492 172 475 c 1
+ 164 484 161 497 162 511 c 1
+ 249 542 313 568 365 594 c 0
+ 382 602 394 606 403 609 c 0
+ 409 610 414 607 413 599 c 0
+ 413 599 393 518 387 492 c 2
+ 311 122 l 2
 EndSplineSet
-Kerns2: 25 -44 "'kern' Horizontales Kerning in Latin lookup 1" 24 -44 "'kern' Horizontales Kerning in Latin lookup 1" 23 -44 "'kern' Horizontales Kerning in Latin lookup 1" 22 -44 "'kern' Horizontales Kerning in Latin lookup 1" 21 -44 "'kern' Horizontales Kerning in Latin lookup 1" 20 -44 "'kern' Horizontales Kerning in Latin lookup 1" 19 -44 "'kern' Horizontales Kerning in Latin lookup 1" 18 -44 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B9
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2081
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" one.fitted
@@ -738,28 +731,30 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-138 465 m 0
- 150 526 229 610 343 610 c 0
- 418.6 610 498.9 584.7 498.9 492.6 c 0
- 498.9 481.1 497.7 468.6 495 455 c 0
- 480 380 408 316 310 233 c 0
- 267 196 172 128 162 79 c 1
- 318 79 l 2
- 354 79 371 96 401 164 c 1
- 441 155 l 1
- 419 102 402 42 390 0 c 1
- 47 0 l 1
- 58 59 86 104 202 210 c 2
- 286 286 l 2
- 346 341 367 385 380 451 c 0
- 383 466.2 384.3 479.6 384.3 491.4 c 0
- 384.3 551.2 350.7 570 329 570 c 0
- 278 570 238 534 234 511 c 0
- 232 500 230 492 232 485 c 1
- 233 477 232 469 231 464 c 0
- 225 433 197 422 177 422 c 0
- 153.9 422 137.2 437 137.2 457.1 c 0
- 137.2 459.7 137.4 462.3 138 465 c 0
+230 585 m 0
+ 262 600 294 610 337 610 c 0
+ 409 610 488 571 488 487 c 0
+ 488 396 419 334 326 251 c 1
+ 242 178 l 2
+ 221 159 173 115 158 79 c 1
+ 312 79 l 2
+ 351 79 366 92 396 156 c 1
+ 412 156 420 153 429 148 c 1
+ 420 119 395 44 374 -1 c 1
+ 374 -1 322 0 308 0 c 2
+ 107 0 l 2
+ 92 0 39 -1 39 -1 c 1
+ 39 11 42 28 48 41 c 1
+ 72 75 115 121 200 203 c 2
+ 283 282 l 2
+ 342 339 384 397 384 475 c 0
+ 384 534 342 564 306 564 c 0
+ 247 564 222 537 216 514 c 0
+ 215 508 216 500 216 494 c 0
+ 216 482 220 470 216 458 c 0
+ 210 435 186 422 164 422 c 0
+ 140 422 124 444 124 463 c 0
+ 126 509 171 556 230 585 c 0
 EndSplineSet
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B2
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2082
@@ -775,31 +770,30 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-335 570 m 0
- 306 570 246 556 234 495 c 0
- 230 475 217 440 178 440 c 0
- 147.8 440 143.3 459.3 143.3 470.1 c 0
- 143.3 473.6 143.8 476.3 144 477 c 0
- 151 511 209 610 361 610 c 0
- 455.2 610 480.8 560 480.8 518.6 c 0
- 480.8 512.1 480.1 505.8 479 500 c 0
- 474 476 441 402 348 364 c 1
- 400.7 357.9 456.4 315.5 456.4 238.3 c 0
- 456.4 227.5 455.3 216.1 453 204 c 0
- 426 64 307 -11 186 -11 c 0
- 126 -11 51.4 13.5 51.4 52.1 c 0
- 51.4 54 51.6 56 52 58 c 0
- 55 75 80 95 109 95 c 0
- 139 95 146 84 152 69 c 0
- 158 52 175 30 207 30 c 0
- 233 30 313 61 338 190 c 0
- 341.1 206.3 342.6 220.5 342.6 232.9 c 0
- 342.6 303.4 296.6 315 260 315 c 0
- 253 315 235 311 208 305 c 1
- 210 345 l 1
- 328 372 368 437 377 484 c 0
- 378.8 493.4 379.7 502.1 379.7 510 c 0
- 379.7 549.8 358.4 570 335 570 c 0
+318 564 m 0
+ 289 564 237 552 227 502 c 0
+ 222 476 206 442 174 442 c 0
+ 155 442 141 454 141 474 c 0
+ 141 496 159 523 189 548 c 0
+ 224 577 278 610 351 610 c 0
+ 438 610 480 549 480 506 c 0
+ 480 446 449 402 363 352 c 1
+ 424 334 463 297 463 222 c 0
+ 463 157 434 105 391 62 c 0
+ 339 10 266 -10 195 -10 c 0
+ 153 -10 98 3 70 21 c 0
+ 57 29 49 39 49 52 c 0
+ 49 74 71 98 96 98 c 0
+ 126 98 137 76 149 59 c 0
+ 159 44 181 26 214 26 c 0
+ 242 26 284 40 316 76 c 0
+ 343 107 363 141 363 198 c 0
+ 363 275 306 303 261 303 c 0
+ 247 303 233 302 215 300 c 1
+ 212 305 215 330 218 335 c 1
+ 248 339 279 349 308 366 c 0
+ 363 397 391 438 391 493 c 0
+ 391 536 357 564 318 564 c 0
 EndSplineSet
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B3
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2083
@@ -815,35 +809,31 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-355 493 m 1
- 270 399 193 301 128 219 c 1
- 302 219 l 1
- 355 493 l 1
-490 219 m 2
- 498.9 219 502.6 215 502.6 208.2 c 0
- 502.6 206.6 502.4 204.9 502 203 c 0
- 500 191 480 169 467 169 c 2
- 391 169 l 1
- 374 81 l 2
- 372.6 73.9 372 67.9 372 62.8 c 0
- 372 34.5 393 35.4 432 32 c 1
- 433.4 30.3 434 27.3 434 23.8 c 0
- 434 14.8 430 2.3 425 -2 c 1
- 394 -1 333 0 295 0 c 0
- 251 0 212 -1 181 -2 c 1
- 179.6 -0.3 179 2.7 179 6.2 c 0
- 179 15.2 183 27.7 188 32 c 1
- 230 35 266 35 275 81 c 2
- 292 169 l 1
- 97 169 l 2
- 68 169 68 199 68 214 c 1
- 184 357 327 521 403 599 c 0
- 407 604 413 610 420 610 c 2
- 477 610 l 1
- 479 608 l 1
- 476 600 468 561 458 511 c 2
- 401 219 l 1
- 490 219 l 2
+353 502 m 1
+ 310 442 151 256 105 211 c 1
+ 293 211 l 1
+ 353 502 l 1
+470 211 m 2
+ 479 211 483 206 482 198 c 0
+ 480 185 461 166 448 166 c 2
+ 376 166 l 1
+ 362 100 l 2
+ 349 34 377 33 425 30 c 1
+ 431 24 427 4 418 -2 c 1
+ 365 -1 333 0 296 0 c 0
+ 256 0 183 -2 168 -2 c 1
+ 162 4 166 24 174 30 c 1
+ 221 32 258 34 271 100 c 2
+ 284 166 l 1
+ 97 166 l 0
+ 80 166 75 169 71 174 c 0
+ 64 182 55 201 57 210 c 1
+ 117 268 333 514 393 602 c 1
+ 395 604 418 610 423 610 c 2
+ 467 610 l 1
+ 465.093918519 602.375674075 449.761609925 531.808049624 444 503 c 2
+ 385 211 l 1
+ 470 211 l 2
 EndSplineSet
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2074
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2084
@@ -859,28 +849,29 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-339 186 m 0
- 342.7 205.1 344.4 222.7 344.4 238.7 c 0
- 344.4 305.6 314.7 344 276 344 c 0
- 236 344 203 336 139 310 c 1
- 230 607 l 1
- 275 603 314 601 348 601 c 0
- 396 601 440 604 500 611 c 1
- 516 601 l 1
- 488 532 l 1
- 438 528 410 526 381 526 c 0
- 346 526 281 528 256 531 c 1
- 241 480 230 445 214 393 c 1
- 233 397 286 401 311 401 c 0
- 409.9 401 457.2 332.6 457.2 251.1 c 0
- 457.2 237 455.8 222.6 453 208 c 0
- 430 90 322 -13 199 -13 c 0
- 138.7 -13 55.5 19 55.5 59.5 c 0
- 55.5 61.3 55.7 63.2 56 65 c 0
- 60 87 81 107 110 107 c 0
- 140 107 151 89 157 69 c 0
- 165 45 189 31 204 31 c 0
- 254 31 320 89 339 186 c 0
+343 205 m 0
+ 343 268 312 312 266 319 c 0
+ 233 324 177 326 132 318 c 1
+ 128 323 l 1
+ 221 607 l 1
+ 264 604 294 600 331 600 c 0
+ 384 600 432 604 495 612 c 1
+ 506 604 l 1
+ 475 529 l 1
+ 426 524 401 522 370 522 c 0
+ 332 522 278 525 245 529 c 1
+ 238 513 207 417 198 391 c 1
+ 222 393 267 390 302 386 c 0
+ 399 374 444 298 444 224 c 0
+ 444 147 413 97 362 50 c 0
+ 318 10 254 -10 192 -10 c 0
+ 149 -10 100 -1 71 19 c 0
+ 56 29 47 43 47 57 c 0
+ 47 80 66 103 94 103 c 0
+ 122 103 138 85 149 66 c 0
+ 160 46 179 28 205 28 c 0
+ 234 28 263 38 288 64 c 0
+ 320 96 343 142 343 205 c 0
 EndSplineSet
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2075
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2085
@@ -896,26 +887,24 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-201 280 m 1
- 198 269 195 251 193 240 c 0
- 185.6 201.3 182.4 169.3 182.4 142.9 c 0
- 182.4 52 220 28 251 28 c 0
- 286 28 329 67 350 174 c 0
- 352.4 186.7 354.4 203.2 354.4 220.5 c 0
- 354.4 266.9 340.4 319 285 319 c 0
- 271 319 243 317 201 280 c 1
-514 579 m 1
- 467 576 408 572 328 502 c 0
- 287 466 249 410 222 340 c 1
- 251 353 284 361 311 361 c 0
- 438.8 361 463.9 280.1 463.9 221.9 c 0
- 463.9 206.3 462.1 192.3 460 182 c 0
- 446 109 385 -10 235 -10 c 0
- 166.1 -10 76.1 20.4 76.1 159.5 c 0
- 76.1 183.9 78.9 211.6 85 243 c 0
- 103 338 153 431 238 508 c 0
- 315 577 397 605 517 612 c 1
- 514 579 l 1
+502 592 m 1
+ 435 576 371 547 310 495 c 0
+ 261 454 218 392 195 322 c 1
+ 231 346 280 364 310 365 c 0
+ 436 364 463 286 463 227 c 0
+ 463 169 437 102 388 54 c 0
+ 349 17 292 -10 226 -10 c 0
+ 150 -10 68 38 68 174 c 0
+ 68 254 108 394 223 498 c 0
+ 303 567 393 609 497 624 c 1
+ 502 615 503 604 502 592 c 1
+185 286 m 1
+ 174 254 165 197 165 148 c 0
+ 165 56 214 26 245 26 c 0
+ 271 26 302 43 323 76 c 0
+ 345 109 362 166 362 214 c 0
+ 362 264 339 322 276 322 c 0
+ 255 322 230 316 185 286 c 1
 EndSplineSet
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2076
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2086
@@ -931,21 +920,22 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-237 594 m 2
- 534 594 l 1
- 536 586 l 1
- 381 317 292 167 206 -2 c 1
- 113 -13 l 1
- 111 0 l 1
- 206 151 360 385 437 517 c 1
- 252 517 l 2
- 221 517 204 513 175 444 c 1
- 140 452 l 1
- 169 521 182 555 193 600 c 1
- 201 600 l 1
- 208 594 230 594 237 594 c 2
+253 521 m 2
+ 212 521 195 507 166 442 c 1
+ 156 441 146 441 137 445 c 1
+ 151 499 166 562 177 609 c 1
+ 177 612 185 612 188 610 c 0
+ 197 606 198 600 228 600 c 2
+ 463 600 l 2
+ 481 600 529 604 538 606 c 1
+ 546 596 l 1
+ 377 323 293 164 202 -6 c 1
+ 118 -12 l 1
+ 113 -3 l 1
+ 213 146 347 354 448 521 c 1
+ 253 521 l 2
 EndSplineSet
-Kerns2: 20 -56 "'kern' Horizontales Kerning in Latin lookup 1" 16 -31 "'kern' Horizontales Kerning in Latin lookup 1" 14 -44 "'kern' Horizontales Kerning in Latin lookup 1" 12 -44 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 12 -44 "'kern' Horizontales Kerning in Latin lookup 1" 14 -44 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2077
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2087
 Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" seven.fitted
@@ -960,37 +950,35 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-348 575 m 0
- 297 575 272 537 263 491 c 0
- 261.9 485.4 261.3 479.6 261.3 473.6 c 0
- 261.3 446.1 273.1 415.2 301 393 c 2
- 325 374 l 1
- 355 394 387 426 397 480 c 0
- 399.4 492.3 401 504.9 401 516.7 c 0
- 401 548.8 389 575 348 575 c 0
-496 489 m 0
- 484 425 402 380 355 350 c 1
- 404 310 l 2
- 438.1 281.7 459.8 237.5 459.8 190.1 c 0
- 459.8 180.5 458.9 170.8 457 161 c 0
- 442 85 350 -11 225 -11 c 0
- 134.6 -11 68.6 32.1 68.6 112.9 c 0
- 68.6 123.3 69.7 134.4 72 146 c 0
- 87 222 152 258 235 316 c 1
- 220 326 l 1
- 178.7 358 154.4 400.1 154.4 446 c 0
- 154.4 454.6 155.3 463.2 157 472 c 0
- 172 549 242 610 360 610 c 0
- 452.6 610 498.5 571.9 498.5 513.6 c 0
- 498.5 505.8 497.7 497.5 496 489 c 0
-235 28 m 0
- 277 28 333 46 351 141 c 0
- 353 151.3 354.1 161.2 354.1 170.7 c 0
- 354.1 204.6 340 234.3 301 264 c 2
- 263 292 l 1
- 190 242 176 176 170 146 c 0
- 167.2 131.8 166 119 166 107.7 c 0
- 166 49 199.8 28 235 28 c 0
+232 25 m 0
+ 263 25 294 34 319 61 c 0
+ 342 85 361 127 361 175 c 0
+ 361 209 343 238 301 268 c 2
+ 263 296 l 1
+ 185 246 145 187 145 117 c 0
+ 145 56 192 25 232 25 c 0
+441 397 m 0
+ 418 376 389 359 357 343 c 1
+ 400 313 l 2
+ 439 286 455 245 455 202 c 0
+ 455 135 427 83 377 42 c 0
+ 338 10 285 -10 222 -10 c 0
+ 132 -10 57 31 57 116 c 0
+ 57 168 84 210 119 242 c 0
+ 150 272 187 295 232 318 c 1
+ 213 332 l 2
+ 167 366 145 398 145 437 c 0
+ 145 487 171 531 212 564 c 0
+ 246 592 292 610 350 610 c 0
+ 441 610 493 556 493 498 c 0
+ 493 453 474 426 441 397 c 0
+338 574 m 0
+ 311 574 291 567 276 554 c 0
+ 252 533 239 499 239 469 c 0
+ 239 442 247 414 292 386 c 2
+ 324 366 l 1
+ 390 414 410 455 410 496 c 0
+ 410 535 382 574 338 574 c 0
 EndSplineSet
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2078
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2088
@@ -1006,26 +994,24 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-385 320 m 1
- 388 331 391 349 393 360 c 0
- 400.4 398.7 403.6 430.7 403.6 457.1 c 0
- 403.6 548 366 572 335 572 c 0
- 300 572 257 533 236 426 c 0
- 233.6 413.3 231.6 396.8 231.6 379.5 c 0
- 231.6 333.1 245.6 281 301 281 c 0
- 315 281 343 283 385 320 c 1
-72 21 m 1
- 119 24 178 28 258 98 c 0
- 299 134 337 190 364 260 c 1
- 335 247 302 239 275 239 c 0
- 147.2 239 122.1 319.9 122.1 378.1 c 0
- 122.1 393.7 123.9 407.7 126 418 c 0
- 140 491 201 610 351 610 c 0
- 419.9 610 509.9 579.6 509.9 440.5 c 0
- 509.9 416.1 507.1 388.4 501 357 c 0
- 483 262 433 169 348 92 c 0
- 271 23 189 -5 69 -12 c 1
- 72 21 l 1
+65 7 m 1
+ 132 23 196 52 257 104 c 0
+ 306 146 349 208 372 277 c 1
+ 336 254 287 236 257 234 c 0
+ 131 236 104 314 104 373 c 0
+ 104 430 130 497 179 545 c 0
+ 218 583 275 610 341 610 c 0
+ 418 610 499 562 499 426 c 0
+ 499 346 459 205 344 102 c 0
+ 264 32 174 -10 70 -24 c 1
+ 65 -16 64 -5 65 7 c 1
+382 313 m 1
+ 393 346 402 403 402 452 c 0
+ 402 543 353 574 322 574 c 0
+ 296 574 265 556 244 524 c 0
+ 222 491 206 433 206 385 c 0
+ 206 335 228 278 291 278 c 0
+ 312 278 337 283 382 313 c 1
 EndSplineSet
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2079
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2089
@@ -1241,7 +1227,7 @@ SplineSet
  513.5 658 520.8 648 525 627 c 2
  633 91 l 2
 EndSplineSet
-Kerns2: 1825 -33 "'kern' Horizontales Kerning in Latin lookup 1" 89 -22 "'kern' Horizontales Kerning in Latin lookup 1" 57 -44 "'kern' Horizontales Kerning in Latin lookup 1" 87 -22 "'kern' Horizontales Kerning in Latin lookup 1" 55 -76 "'kern' Horizontales Kerning in Latin lookup 1" 86 -33 "'kern' Horizontales Kerning in Latin lookup 1" 54 -89 "'kern' Horizontales Kerning in Latin lookup 1" 53 -22 "'kern' Horizontales Kerning in Latin lookup 1" 84 -11 "'kern' Horizontales Kerning in Latin lookup 1" 52 -56 "'kern' Horizontales Kerning in Latin lookup 1" 49 -33 "'kern' Horizontales Kerning in Latin lookup 1" 79 -11 "'kern' Horizontales Kerning in Latin lookup 1" 47 -33 "'kern' Horizontales Kerning in Latin lookup 1" 39 -33 "'kern' Horizontales Kerning in Latin lookup 1" 69 -11 "'kern' Horizontales Kerning in Latin lookup 1" 68 -11 "'kern' Horizontales Kerning in Latin lookup 1" 67 -11 "'kern' Horizontales Kerning in Latin lookup 1" 35 -33 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 35 -33 "'kern' Horizontales Kerning in Latin lookup 1" 39 -33 "'kern' Horizontales Kerning in Latin lookup 1" 47 -33 "'kern' Horizontales Kerning in Latin lookup 1" 49 -33 "'kern' Horizontales Kerning in Latin lookup 1" 52 -56 "'kern' Horizontales Kerning in Latin lookup 1" 53 -22 "'kern' Horizontales Kerning in Latin lookup 1" 54 -89 "'kern' Horizontales Kerning in Latin lookup 1" 55 -76 "'kern' Horizontales Kerning in Latin lookup 1" 57 -44 "'kern' Horizontales Kerning in Latin lookup 1" 67 -11 "'kern' Horizontales Kerning in Latin lookup 1" 68 -11 "'kern' Horizontales Kerning in Latin lookup 1" 69 -11 "'kern' Horizontales Kerning in Latin lookup 1" 79 -11 "'kern' Horizontales Kerning in Latin lookup 1" 84 -11 "'kern' Horizontales Kerning in Latin lookup 1" 86 -33 "'kern' Horizontales Kerning in Latin lookup 1" 87 -22 "'kern' Horizontales Kerning in Latin lookup 1" 89 -22 "'kern' Horizontales Kerning in Latin lookup 1" 1825 -33 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: B
@@ -1360,7 +1346,7 @@ SplineSet
  664 63 467 0 324 0 c 2
  23 0 l 1
 EndSplineSet
-Kerns2: 56 -13 "'kern' Horizontales Kerning in Latin lookup 1" 14 -22 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 14 -22 "'kern' Horizontales Kerning in Latin lookup 1" 56 -13 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: E
@@ -1474,7 +1460,7 @@ SplineSet
  271 323 l 1
  227 77 l 2
 EndSplineSet
-Kerns2: 116 -31 "'kern' Horizontales Kerning in Latin lookup 1" 82 -18 "'kern' Horizontales Kerning in Latin lookup 1" 79 -31 "'kern' Horizontales Kerning in Latin lookup 1" 69 -31 "'kern' Horizontales Kerning in Latin lookup 1" 65 -31 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 65 -31 "'kern' Horizontales Kerning in Latin lookup 1" 69 -31 "'kern' Horizontales Kerning in Latin lookup 1" 79 -31 "'kern' Horizontales Kerning in Latin lookup 1" 82 -18 "'kern' Horizontales Kerning in Latin lookup 1" 116 -31 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: G
@@ -1743,7 +1729,7 @@ SplineSet
  322 368 331 371 348 385 c 2
  578 574 l 2
 EndSplineSet
-Kerns2: 187 -11 "'kern' Horizontales Kerning in Latin lookup 1" 181 -22 "'kern' Horizontales Kerning in Latin lookup 1" 163 -16 "'kern' Horizontales Kerning in Latin lookup 1" 89 -33 "'kern' Horizontales Kerning in Latin lookup 1" 86 -33 "'kern' Horizontales Kerning in Latin lookup 1" 79 -22 "'kern' Horizontales Kerning in Latin lookup 1" 69 -22 "'kern' Horizontales Kerning in Latin lookup 1" 65 -11 "'kern' Horizontales Kerning in Latin lookup 1" 47 -33 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 47 -33 "'kern' Horizontales Kerning in Latin lookup 1" 65 -11 "'kern' Horizontales Kerning in Latin lookup 1" 69 -22 "'kern' Horizontales Kerning in Latin lookup 1" 79 -22 "'kern' Horizontales Kerning in Latin lookup 1" 86 -33 "'kern' Horizontales Kerning in Latin lookup 1" 89 -33 "'kern' Horizontales Kerning in Latin lookup 1" 163 -16 "'kern' Horizontales Kerning in Latin lookup 1" 181 -22 "'kern' Horizontales Kerning in Latin lookup 1" 187 -11 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: L
@@ -1990,7 +1976,7 @@ SplineSet
  48 33 l 2
  86 33 103 45 108 77 c 2
 EndSplineSet
-Kerns2: 181 -11 "'kern' Horizontales Kerning in Latin lookup 1" 79 -18 "'kern' Horizontales Kerning in Latin lookup 1" 69 -18 "'kern' Horizontales Kerning in Latin lookup 1" 65 -18 "'kern' Horizontales Kerning in Latin lookup 1" 14 -44 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 14 -44 "'kern' Horizontales Kerning in Latin lookup 1" 65 -18 "'kern' Horizontales Kerning in Latin lookup 1" 69 -18 "'kern' Horizontales Kerning in Latin lookup 1" 79 -18 "'kern' Horizontales Kerning in Latin lookup 1" 181 -11 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: Q
@@ -2163,7 +2149,7 @@ SplineSet
  181 669 l 1
  180 663 177 646 197 646 c 2
 EndSplineSet
-Kerns2: 187 -44 "'kern' Horizontales Kerning in Latin lookup 1" 181 -44 "'kern' Horizontales Kerning in Latin lookup 1" 163 -36 "'kern' Horizontales Kerning in Latin lookup 1" 116 -69 "'kern' Horizontales Kerning in Latin lookup 1" 90 -53 "'kern' Horizontales Kerning in Latin lookup 1" 89 -56 "'kern' Horizontales Kerning in Latin lookup 1" 87 -56 "'kern' Horizontales Kerning in Latin lookup 1" 86 -56 "'kern' Horizontales Kerning in Latin lookup 1" 85 -44 "'kern' Horizontales Kerning in Latin lookup 1" 83 -56 "'kern' Horizontales Kerning in Latin lookup 1" 82 -56 "'kern' Horizontales Kerning in Latin lookup 1" 79 -56 "'kern' Horizontales Kerning in Latin lookup 1" 78 -66 "'kern' Horizontales Kerning in Latin lookup 1" 77 -66 "'kern' Horizontales Kerning in Latin lookup 1" 69 -56 "'kern' Horizontales Kerning in Latin lookup 1" 67 -66 "'kern' Horizontales Kerning in Latin lookup 1" 65 -56 "'kern' Horizontales Kerning in Latin lookup 1" 57 44 "'kern' Horizontales Kerning in Latin lookup 1" 56 44 "'kern' Horizontales Kerning in Latin lookup 1" 54 44 "'kern' Horizontales Kerning in Latin lookup 1" 52 18 "'kern' Horizontales Kerning in Latin lookup 1" 33 -44 "'kern' Horizontales Kerning in Latin lookup 1" 14 -44 "'kern' Horizontales Kerning in Latin lookup 1" 13 -44 "'kern' Horizontales Kerning in Latin lookup 1" 0 -33 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 0 -33 "'kern' Horizontales Kerning in Latin lookup 1" 13 -44 "'kern' Horizontales Kerning in Latin lookup 1" 14 -44 "'kern' Horizontales Kerning in Latin lookup 1" 33 -44 "'kern' Horizontales Kerning in Latin lookup 1" 52 18 "'kern' Horizontales Kerning in Latin lookup 1" 54 44 "'kern' Horizontales Kerning in Latin lookup 1" 56 44 "'kern' Horizontales Kerning in Latin lookup 1" 57 44 "'kern' Horizontales Kerning in Latin lookup 1" 65 -56 "'kern' Horizontales Kerning in Latin lookup 1" 67 -66 "'kern' Horizontales Kerning in Latin lookup 1" 69 -56 "'kern' Horizontales Kerning in Latin lookup 1" 77 -66 "'kern' Horizontales Kerning in Latin lookup 1" 78 -66 "'kern' Horizontales Kerning in Latin lookup 1" 79 -56 "'kern' Horizontales Kerning in Latin lookup 1" 82 -56 "'kern' Horizontales Kerning in Latin lookup 1" 83 -56 "'kern' Horizontales Kerning in Latin lookup 1" 85 -44 "'kern' Horizontales Kerning in Latin lookup 1" 86 -56 "'kern' Horizontales Kerning in Latin lookup 1" 87 -56 "'kern' Horizontales Kerning in Latin lookup 1" 89 -56 "'kern' Horizontales Kerning in Latin lookup 1" 90 -53 "'kern' Horizontales Kerning in Latin lookup 1" 116 -69 "'kern' Horizontales Kerning in Latin lookup 1" 163 -36 "'kern' Horizontales Kerning in Latin lookup 1" 181 -44 "'kern' Horizontales Kerning in Latin lookup 1" 187 -44 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: U
@@ -2264,7 +2250,7 @@ SplineSet
  570.9 576.4 575.3 586.9 575.3 594.5 c 0
  575.3 609.1 558.8 613 518 613 c 0
 EndSplineSet
-Kerns2: 187 -33 "'kern' Horizontales Kerning in Latin lookup 1" 181 -33 "'kern' Horizontales Kerning in Latin lookup 1" 163 -33 "'kern' Horizontales Kerning in Latin lookup 1" 116 -33 "'kern' Horizontales Kerning in Latin lookup 1" 79 -44 "'kern' Horizontales Kerning in Latin lookup 1" 73 -22 "'kern' Horizontales Kerning in Latin lookup 1" 69 -44 "'kern' Horizontales Kerning in Latin lookup 1" 65 -58 "'kern' Horizontales Kerning in Latin lookup 1" 33 -89 "'kern' Horizontales Kerning in Latin lookup 1" 14 -66 "'kern' Horizontales Kerning in Latin lookup 1" 13 -56 "'kern' Horizontales Kerning in Latin lookup 1" 0 -36 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 0 -36 "'kern' Horizontales Kerning in Latin lookup 1" 13 -56 "'kern' Horizontales Kerning in Latin lookup 1" 14 -66 "'kern' Horizontales Kerning in Latin lookup 1" 33 -89 "'kern' Horizontales Kerning in Latin lookup 1" 65 -58 "'kern' Horizontales Kerning in Latin lookup 1" 69 -44 "'kern' Horizontales Kerning in Latin lookup 1" 73 -22 "'kern' Horizontales Kerning in Latin lookup 1" 79 -44 "'kern' Horizontales Kerning in Latin lookup 1" 116 -33 "'kern' Horizontales Kerning in Latin lookup 1" 163 -33 "'kern' Horizontales Kerning in Latin lookup 1" 181 -33 "'kern' Horizontales Kerning in Latin lookup 1" 187 -33 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: W
@@ -2335,7 +2321,7 @@ SplineSet
  359 33 l 2
  345 4 321 -12 297 -12 c 0
 EndSplineSet
-Kerns2: 187 -44 "'kern' Horizontales Kerning in Latin lookup 1" 181 -44 "'kern' Horizontales Kerning in Latin lookup 1" 163 -44 "'kern' Horizontales Kerning in Latin lookup 1" 116 -44 "'kern' Horizontales Kerning in Latin lookup 1" 89 -33 "'kern' Horizontales Kerning in Latin lookup 1" 82 -44 "'kern' Horizontales Kerning in Latin lookup 1" 79 -36 "'kern' Horizontales Kerning in Latin lookup 1" 73 -22 "'kern' Horizontales Kerning in Latin lookup 1" 69 -36 "'kern' Horizontales Kerning in Latin lookup 1" 65 -44 "'kern' Horizontales Kerning in Latin lookup 1" 33 -76 "'kern' Horizontales Kerning in Latin lookup 1" 14 -66 "'kern' Horizontales Kerning in Latin lookup 1" 13 -44 "'kern' Horizontales Kerning in Latin lookup 1" 0 -36 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 0 -36 "'kern' Horizontales Kerning in Latin lookup 1" 13 -44 "'kern' Horizontales Kerning in Latin lookup 1" 14 -66 "'kern' Horizontales Kerning in Latin lookup 1" 33 -76 "'kern' Horizontales Kerning in Latin lookup 1" 65 -44 "'kern' Horizontales Kerning in Latin lookup 1" 69 -36 "'kern' Horizontales Kerning in Latin lookup 1" 73 -22 "'kern' Horizontales Kerning in Latin lookup 1" 79 -36 "'kern' Horizontales Kerning in Latin lookup 1" 82 -44 "'kern' Horizontales Kerning in Latin lookup 1" 89 -33 "'kern' Horizontales Kerning in Latin lookup 1" 116 -44 "'kern' Horizontales Kerning in Latin lookup 1" 163 -44 "'kern' Horizontales Kerning in Latin lookup 1" 181 -44 "'kern' Horizontales Kerning in Latin lookup 1" 187 -44 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: X
@@ -2405,7 +2391,7 @@ SplineSet
  193 605 158 613 142 613 c 0
  135 613 131 615 132 620 c 2
 EndSplineSet
-Kerns2: 116 -4 "'kern' Horizontales Kerning in Latin lookup 1" 89 -33 "'kern' Horizontales Kerning in Latin lookup 1" 79 -9 "'kern' Horizontales Kerning in Latin lookup 1" 69 -18 "'kern' Horizontales Kerning in Latin lookup 1" 13 -44 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 13 -44 "'kern' Horizontales Kerning in Latin lookup 1" 69 -18 "'kern' Horizontales Kerning in Latin lookup 1" 79 -9 "'kern' Horizontales Kerning in Latin lookup 1" 89 -33 "'kern' Horizontales Kerning in Latin lookup 1" 116 -4 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: Y
@@ -2461,7 +2447,7 @@ SplineSet
  198 33 l 2
  237 33 252 44 257 72 c 2
 EndSplineSet
-Kerns2: 116 -44 "'kern' Horizontales Kerning in Latin lookup 1" 83 -22 "'kern' Horizontales Kerning in Latin lookup 1" 82 -44 "'kern' Horizontales Kerning in Latin lookup 1" 81 -22 "'kern' Horizontales Kerning in Latin lookup 1" 80 -22 "'kern' Horizontales Kerning in Latin lookup 1" 79 -44 "'kern' Horizontales Kerning in Latin lookup 1" 78 -44 "'kern' Horizontales Kerning in Latin lookup 1" 77 -44 "'kern' Horizontales Kerning in Latin lookup 1" 74 -22 "'kern' Horizontales Kerning in Latin lookup 1" 73 -22 "'kern' Horizontales Kerning in Latin lookup 1" 71 -22 "'kern' Horizontales Kerning in Latin lookup 1" 69 -44 "'kern' Horizontales Kerning in Latin lookup 1" 68 -22 "'kern' Horizontales Kerning in Latin lookup 1" 67 -44 "'kern' Horizontales Kerning in Latin lookup 1" 65 -44 "'kern' Horizontales Kerning in Latin lookup 1" 14 -44 "'kern' Horizontales Kerning in Latin lookup 1" 13 -44 "'kern' Horizontales Kerning in Latin lookup 1" 0 -27 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 0 -27 "'kern' Horizontales Kerning in Latin lookup 1" 13 -44 "'kern' Horizontales Kerning in Latin lookup 1" 14 -44 "'kern' Horizontales Kerning in Latin lookup 1" 65 -44 "'kern' Horizontales Kerning in Latin lookup 1" 67 -44 "'kern' Horizontales Kerning in Latin lookup 1" 68 -22 "'kern' Horizontales Kerning in Latin lookup 1" 69 -44 "'kern' Horizontales Kerning in Latin lookup 1" 71 -22 "'kern' Horizontales Kerning in Latin lookup 1" 73 -22 "'kern' Horizontales Kerning in Latin lookup 1" 74 -22 "'kern' Horizontales Kerning in Latin lookup 1" 77 -44 "'kern' Horizontales Kerning in Latin lookup 1" 78 -44 "'kern' Horizontales Kerning in Latin lookup 1" 79 -44 "'kern' Horizontales Kerning in Latin lookup 1" 80 -22 "'kern' Horizontales Kerning in Latin lookup 1" 81 -22 "'kern' Horizontales Kerning in Latin lookup 1" 82 -44 "'kern' Horizontales Kerning in Latin lookup 1" 83 -22 "'kern' Horizontales Kerning in Latin lookup 1" 116 -44 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: Z
@@ -2694,7 +2680,7 @@ SplineSet
  342 698 345 695 345 688 c 1
  345 688 335.2 647.5 320 583 c 2
 EndSplineSet
-Kerns2: 116 -11 "'kern' Horizontales Kerning in Latin lookup 1" 79 11 "'kern' Horizontales Kerning in Latin lookup 1" 69 11 "'kern' Horizontales Kerning in Latin lookup 1" 67 11 "'kern' Horizontales Kerning in Latin lookup 1" 14 -22 "'kern' Horizontales Kerning in Latin lookup 1" 12 -4 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 12 -4 "'kern' Horizontales Kerning in Latin lookup 1" 14 -22 "'kern' Horizontales Kerning in Latin lookup 1" 67 11 "'kern' Horizontales Kerning in Latin lookup 1" 69 11 "'kern' Horizontales Kerning in Latin lookup 1" 79 11 "'kern' Horizontales Kerning in Latin lookup 1" 116 -11 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" b.sc
 EndChar
 
@@ -2803,7 +2789,7 @@ SplineSet
  79 278 175 444 358 444 c 0
  454 444 475 405 475 369 c 0
 EndSplineSet
-Kerns2: 88 -12 "'kern' Horizontales Kerning in Latin lookup 1" 87 -9 "'kern' Horizontales Kerning in Latin lookup 1" 86 -9 "'kern' Horizontales Kerning in Latin lookup 1" 84 -9 "'kern' Horizontales Kerning in Latin lookup 1" 81 12 "'kern' Horizontales Kerning in Latin lookup 1" 68 12 "'kern' Horizontales Kerning in Latin lookup 1" 67 12 "'kern' Horizontales Kerning in Latin lookup 1" 52 -68 "'kern' Horizontales Kerning in Latin lookup 1" 14 -4 "'kern' Horizontales Kerning in Latin lookup 1" 12 -4 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 12 -4 "'kern' Horizontales Kerning in Latin lookup 1" 14 -4 "'kern' Horizontales Kerning in Latin lookup 1" 52 -68 "'kern' Horizontales Kerning in Latin lookup 1" 67 12 "'kern' Horizontales Kerning in Latin lookup 1" 68 12 "'kern' Horizontales Kerning in Latin lookup 1" 81 12 "'kern' Horizontales Kerning in Latin lookup 1" 84 -9 "'kern' Horizontales Kerning in Latin lookup 1" 86 -9 "'kern' Horizontales Kerning in Latin lookup 1" 87 -9 "'kern' Horizontales Kerning in Latin lookup 1" 88 -12 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" e.sc
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2091
 EndChar
@@ -2846,7 +2832,7 @@ SplineSet
  130 149 147.9 251.8 154 280 c 2
  177 387 l 1
 EndSplineSet
-Kerns2: 79 -11 "'kern' Horizontales Kerning in Latin lookup 1" 76 11 "'kern' Horizontales Kerning in Latin lookup 1" 72 11 "'kern' Horizontales Kerning in Latin lookup 1" 70 -36 "'kern' Horizontales Kerning in Latin lookup 1" 69 -9 "'kern' Horizontales Kerning in Latin lookup 1" 68 -11 "'kern' Horizontales Kerning in Latin lookup 1" 66 36 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 66 36 "'kern' Horizontales Kerning in Latin lookup 1" 68 -11 "'kern' Horizontales Kerning in Latin lookup 1" 69 -9 "'kern' Horizontales Kerning in Latin lookup 1" 70 -36 "'kern' Horizontales Kerning in Latin lookup 1" 72 11 "'kern' Horizontales Kerning in Latin lookup 1" 76 11 "'kern' Horizontales Kerning in Latin lookup 1" 79 -11 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" f.sc
 EndChar
 
@@ -2895,7 +2881,7 @@ SplineSet
  218 234 217 172 264 172 c 0
  296.2 172 321 229 321 291 c 0
 EndSplineSet
-Kerns2: 79 -18 "'kern' Horizontales Kerning in Latin lookup 1" 69 -11 "'kern' Horizontales Kerning in Latin lookup 1" 65 -9 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 65 -9 "'kern' Horizontales Kerning in Latin lookup 1" 69 -11 "'kern' Horizontales Kerning in Latin lookup 1" 79 -18 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" g.sc
 EndChar
 
@@ -3018,7 +3004,7 @@ SplineSet
  88 -10 83.1 0.5 83.1 17.2 c 0
  83.1 27 91.2 51.9 95.8 72 c 2
 EndSplineSet
-Kerns2: 79 -37 "'kern' Horizontales Kerning in Latin lookup 1" 69 -13 "'kern' Horizontales Kerning in Latin lookup 1" 65 -4 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 65 -4 "'kern' Horizontales Kerning in Latin lookup 1" 69 -13 "'kern' Horizontales Kerning in Latin lookup 1" 79 -37 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" k.sc
 EndChar
 
@@ -3105,7 +3091,7 @@ SplineSet
  425 321 l 2
  425.1 321.4 425.2 321.8 425.3 322.1 c 0
 EndSplineSet
-Kerns2: 116 -9 "'kern' Horizontales Kerning in Latin lookup 1" 84 -13 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 84 -13 "'kern' Horizontales Kerning in Latin lookup 1" 116 -9 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" m.sc
 EndChar
 
@@ -3180,7 +3166,7 @@ SplineSet
  517 121 383 -10 246 -10 c 0
  103 -10 72 111 72 165 c 0
 EndSplineSet
-Kerns2: 89 -9 "'kern' Horizontales Kerning in Latin lookup 1" 88 -11 "'kern' Horizontales Kerning in Latin lookup 1" 87 -9 "'kern' Horizontales Kerning in Latin lookup 1" 86 -9 "'kern' Horizontales Kerning in Latin lookup 1" 84 -9 "'kern' Horizontales Kerning in Latin lookup 1" 81 11 "'kern' Horizontales Kerning in Latin lookup 1" 68 11 "'kern' Horizontales Kerning in Latin lookup 1" 67 11 "'kern' Horizontales Kerning in Latin lookup 1" 52 -62 "'kern' Horizontales Kerning in Latin lookup 1" 14 -4 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 14 -4 "'kern' Horizontales Kerning in Latin lookup 1" 52 -62 "'kern' Horizontales Kerning in Latin lookup 1" 67 11 "'kern' Horizontales Kerning in Latin lookup 1" 68 11 "'kern' Horizontales Kerning in Latin lookup 1" 81 11 "'kern' Horizontales Kerning in Latin lookup 1" 84 -9 "'kern' Horizontales Kerning in Latin lookup 1" 86 -9 "'kern' Horizontales Kerning in Latin lookup 1" 87 -9 "'kern' Horizontales Kerning in Latin lookup 1" 88 -11 "'kern' Horizontales Kerning in Latin lookup 1" 89 -9 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" o.sc
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2092
 EndChar
@@ -3225,7 +3211,7 @@ SplineSet
  -40 -228 -41 -207 -34 -201 c 1
  26.7 -198 43.4 -192.3 62 -110 c 2
 EndSplineSet
-Kerns2: 181 11 "'kern' Horizontales Kerning in Latin lookup 1" 79 11 "'kern' Horizontales Kerning in Latin lookup 1" 69 11 "'kern' Horizontales Kerning in Latin lookup 1" 14 -4 "'kern' Horizontales Kerning in Latin lookup 1" 12 -4 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 12 -4 "'kern' Horizontales Kerning in Latin lookup 1" 14 -4 "'kern' Horizontales Kerning in Latin lookup 1" 69 11 "'kern' Horizontales Kerning in Latin lookup 1" 79 11 "'kern' Horizontales Kerning in Latin lookup 1" 181 11 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" p.sc
 EndChar
 
@@ -3303,7 +3289,7 @@ SplineSet
  291.5 393.8 283 359 274.3 320.2 c 2
  266 285 l 1
 EndSplineSet
-Kerns2: 181 -7 "'kern' Horizontales Kerning in Latin lookup 1" 79 -2 "'kern' Horizontales Kerning in Latin lookup 1" 71 -11 "'kern' Horizontales Kerning in Latin lookup 1" 68 -4 "'kern' Horizontales Kerning in Latin lookup 1" 14 -27 "'kern' Horizontales Kerning in Latin lookup 1" 12 -27 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 12 -27 "'kern' Horizontales Kerning in Latin lookup 1" 14 -27 "'kern' Horizontales Kerning in Latin lookup 1" 68 -4 "'kern' Horizontales Kerning in Latin lookup 1" 71 -11 "'kern' Horizontales Kerning in Latin lookup 1" 79 -2 "'kern' Horizontales Kerning in Latin lookup 1" 181 -7 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" r.sc
 EndChar
 
@@ -3376,7 +3362,7 @@ SplineSet
  128.1 -10 113.3 12.7 113.3 47.1 c 0
  113.3 67.7 117.8 95.4 123 118 c 2
 EndSplineSet
-Kerns2: 181 -9 "'kern' Horizontales Kerning in Latin lookup 1" 163 -4 "'kern' Horizontales Kerning in Latin lookup 1" 84 -7 "'kern' Horizontales Kerning in Latin lookup 1" 79 -11 "'kern' Horizontales Kerning in Latin lookup 1" 16 -11 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 16 -11 "'kern' Horizontales Kerning in Latin lookup 1" 79 -11 "'kern' Horizontales Kerning in Latin lookup 1" 84 -7 "'kern' Horizontales Kerning in Latin lookup 1" 163 -4 "'kern' Horizontales Kerning in Latin lookup 1" 181 -9 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" t.sc
 EndChar
 
@@ -3455,7 +3441,7 @@ SplineSet
  285 444 291.5 399.2 297 344 c 2
  318.3 131 l 1
 EndSplineSet
-Kerns2: 181 -9 "'kern' Horizontales Kerning in Latin lookup 1" 163 -4 "'kern' Horizontales Kerning in Latin lookup 1" 69 -9 "'kern' Horizontales Kerning in Latin lookup 1" 67 -9 "'kern' Horizontales Kerning in Latin lookup 1" 65 -4 "'kern' Horizontales Kerning in Latin lookup 1" 14 -40 "'kern' Horizontales Kerning in Latin lookup 1" 13 -11 "'kern' Horizontales Kerning in Latin lookup 1" 12 -40 "'kern' Horizontales Kerning in Latin lookup 1" 0 -9 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 0 -9 "'kern' Horizontales Kerning in Latin lookup 1" 12 -40 "'kern' Horizontales Kerning in Latin lookup 1" 13 -11 "'kern' Horizontales Kerning in Latin lookup 1" 14 -40 "'kern' Horizontales Kerning in Latin lookup 1" 65 -4 "'kern' Horizontales Kerning in Latin lookup 1" 67 -9 "'kern' Horizontales Kerning in Latin lookup 1" 69 -9 "'kern' Horizontales Kerning in Latin lookup 1" 163 -4 "'kern' Horizontales Kerning in Latin lookup 1" 181 -9 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" v.sc
 EndChar
 
@@ -3500,7 +3486,7 @@ SplineSet
  164 362 140 339 127 319.5 c 1
  112.7 328.7 106.7 336.3 102 350 c 1
 EndSplineSet
-Kerns2: 181 -9 "'kern' Horizontales Kerning in Latin lookup 1" 163 -4 "'kern' Horizontales Kerning in Latin lookup 1" 79 -7 "'kern' Horizontales Kerning in Latin lookup 1" 69 -7 "'kern' Horizontales Kerning in Latin lookup 1" 65 -7 "'kern' Horizontales Kerning in Latin lookup 1" 14 -40 "'kern' Horizontales Kerning in Latin lookup 1" 13 -11 "'kern' Horizontales Kerning in Latin lookup 1" 12 -40 "'kern' Horizontales Kerning in Latin lookup 1" 0 -9 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 0 -9 "'kern' Horizontales Kerning in Latin lookup 1" 12 -40 "'kern' Horizontales Kerning in Latin lookup 1" 13 -11 "'kern' Horizontales Kerning in Latin lookup 1" 14 -40 "'kern' Horizontales Kerning in Latin lookup 1" 65 -7 "'kern' Horizontales Kerning in Latin lookup 1" 69 -7 "'kern' Horizontales Kerning in Latin lookup 1" 79 -7 "'kern' Horizontales Kerning in Latin lookup 1" 163 -4 "'kern' Horizontales Kerning in Latin lookup 1" 181 -9 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" w.sc
 EndChar
 
@@ -3543,7 +3529,7 @@ SplineSet
  206.8 123.6 239.2 167.5 258.7 202.5 c 1
  240.7 255.3 201.7 340 201.7 340 c 2
 EndSplineSet
-Kerns2: 79 -11 "'kern' Horizontales Kerning in Latin lookup 1" 69 -11 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 69 -11 "'kern' Horizontales Kerning in Latin lookup 1" 79 -11 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" x.sc
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2093
 EndChar
@@ -3581,7 +3567,7 @@ SplineSet
  140 410 173 444 234 444 c 0
  278 444 285.8 398.4 295 344 c 2
 EndSplineSet
-Kerns2: 181 -9 "'kern' Horizontales Kerning in Latin lookup 1" 163 -4 "'kern' Horizontales Kerning in Latin lookup 1" 79 -9 "'kern' Horizontales Kerning in Latin lookup 1" 69 -9 "'kern' Horizontales Kerning in Latin lookup 1" 67 -9 "'kern' Horizontales Kerning in Latin lookup 1" 65 -4 "'kern' Horizontales Kerning in Latin lookup 1" 14 -40 "'kern' Horizontales Kerning in Latin lookup 1" 13 -11 "'kern' Horizontales Kerning in Latin lookup 1" 12 -40 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 12 -40 "'kern' Horizontales Kerning in Latin lookup 1" 13 -11 "'kern' Horizontales Kerning in Latin lookup 1" 14 -40 "'kern' Horizontales Kerning in Latin lookup 1" 65 -4 "'kern' Horizontales Kerning in Latin lookup 1" 67 -9 "'kern' Horizontales Kerning in Latin lookup 1" 69 -9 "'kern' Horizontales Kerning in Latin lookup 1" 79 -9 "'kern' Horizontales Kerning in Latin lookup 1" 163 -4 "'kern' Horizontales Kerning in Latin lookup 1" 181 -9 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" y.sc
 EndChar
 
@@ -5560,7 +5546,7 @@ LayerCount: 2
 Fore
 Refer: 665 776 N 1 0 0 1 475 -5.7998 2
 Refer: 65 97 N 1 0 0 1 0 0 2
-Kerns2: 89 -2 "'kern' Horizontales Kerning in Latin lookup 1" 87 -2 "'kern' Horizontales Kerning in Latin lookup 1" 86 -2 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 86 -2 "'kern' Horizontales Kerning in Latin lookup 1" 87 -2 "'kern' Horizontales Kerning in Latin lookup 1" 89 -2 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" adieresis.sc
 EndChar
 
@@ -5937,7 +5923,7 @@ LayerCount: 2
 Fore
 Refer: 665 776 N 1 0 0 1 459 -5.7998 2
 Refer: 79 111 N 1 0 0 1 0 0 2
-Kerns2: 89 -9 "'kern' Horizontales Kerning in Latin lookup 1" 87 -9 "'kern' Horizontales Kerning in Latin lookup 1" 86 -9 "'kern' Horizontales Kerning in Latin lookup 1" 68 11 "'kern' Horizontales Kerning in Latin lookup 1" 67 11 "'kern' Horizontales Kerning in Latin lookup 1" 65 -9 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 65 -9 "'kern' Horizontales Kerning in Latin lookup 1" 67 11 "'kern' Horizontales Kerning in Latin lookup 1" 68 11 "'kern' Horizontales Kerning in Latin lookup 1" 86 -9 "'kern' Horizontales Kerning in Latin lookup 1" 87 -9 "'kern' Horizontales Kerning in Latin lookup 1" 89 -9 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" odieresis.sc
 EndChar
 
@@ -9125,7 +9111,7 @@ SplineSet
  -41 -241 -88 -216 -88 -195 c 0
  -88 -170 -59 -154 -33 -154 c 0
 EndSplineSet
-Kerns2: 116 -33 "'kern' Horizontales Kerning in Latin lookup 1" 90 -44 "'kern' Horizontales Kerning in Latin lookup 1" 89 -44 "'kern' Horizontales Kerning in Latin lookup 1" 79 -44 "'kern' Horizontales Kerning in Latin lookup 1" 67 -44 "'kern' Horizontales Kerning in Latin lookup 1" 65 -44 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 65 -44 "'kern' Horizontales Kerning in Latin lookup 1" 67 -44 "'kern' Horizontales Kerning in Latin lookup 1" 79 -44 "'kern' Horizontales Kerning in Latin lookup 1" 89 -44 "'kern' Horizontales Kerning in Latin lookup 1" 90 -44 "'kern' Horizontales Kerning in Latin lookup 1" 116 -33 "'kern' Horizontales Kerning in Latin lookup 1"
 Substitution2: "'smcp' Gemeine nach Kapitaelchen 1" s.sc
 EndChar
 
@@ -36692,7 +36678,7 @@ SplineSet
  228 45 229 50 229 55 c 1
  235 84 258 107 296 107 c 0
 EndSplineSet
-Kerns2: 57 -44 "'kern' Horizontales Kerning in Latin lookup 1" 55 -44 "'kern' Horizontales Kerning in Latin lookup 1" 54 -44 "'kern' Horizontales Kerning in Latin lookup 1" 52 -44 "'kern' Horizontales Kerning in Latin lookup 1"
+Kerns2: 52 -44 "'kern' Horizontales Kerning in Latin lookup 1" 54 -44 "'kern' Horizontales Kerning in Latin lookup 1" 55 -44 "'kern' Horizontales Kerning in Latin lookup 1" 57 -44 "'kern' Horizontales Kerning in Latin lookup 1"
 EndChar
 
 StartChar: uni201F
@@ -37751,34 +37737,31 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-380 619 m 1
- 357 506 l 1
- 409 506 l 1
- 401 468 l 1
- 350 468 l 1
- 338 410 l 2
- 335 396 335 391 339 391 c 2
- 355 391 l 2
- 372 391 375 385 375 381 c 2
- 370 359 l 1
- 285 360 l 1
- 201 359 l 1
- 206 382 l 2
- 207 385 212 391 229 391 c 2
- 247 391 l 2
- 251 391 253 393 256 410 c 2
- 268 468 l 1
- 128 468 l 1
- 124 479 l 1
- 158 511 180 547 194 577 c 0
- 206 602 224 647 230 683 c 1
- 299 683 l 1
- 292 644 278 609 264 572 c 0
- 255 550 238 523 225 506 c 1
- 276 506 l 1
- 293 593 l 1
- 293 593 346 618 347 619 c 1
- 380 619 l 1
+317 640 m 0
+ 298 616 219 530 191 505 c 0
+ 288 505 l 0
+ 317 640 l 0
+340 444 m 0
+ 330 402 343 396 378 394 c 0
+ 380 386 376 371 371 364 c 0
+ 342 365 316 365 282 365 c 0
+ 248 365 226 365 197 364 c 0
+ 194 370 197 386 204 394 c 0
+ 243 396 265 398 275 444 c 0
+ 279 467 l 0
+ 152 467 l 0
+ 145 467 141 472 141 475 c 0
+ 141 478 141 483 142 485 c 0
+ 143 487 144 492 145 492 c 0
+ 205 553 283 634 329 687 c 0
+ 334 692 344 700 356 702 c 0
+ 356 702 379 703 380 703 c 0
+ 386 703 396 702 394 693 c 0
+ 353 505 l 0
+ 409 505 l 0
+ 396 467 l 0
+ 344 467 l 0
+ 340 444 l 0
 EndSplineSet
 EndChar
 
@@ -48040,105 +48023,102 @@ EndChar
 
 StartChar: zero.fitted
 Encoding: 1114121 -1 1725
-Width: 480
+Width: 470
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 16 48 N 1 0 0 1 8 0 2
+Refer: 16 48 N 1 0 0 1 6 0 2
 EndChar
 
 StartChar: one.fitted
 Encoding: 1114122 -1 1726
-Width: 387
+Width: 366
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 17 49 N 1 0 0 1 -29 0 2
+Refer: 17 49 N 1 0 0 1 -32 0 2
 EndChar
 
 StartChar: two.fitted
 Encoding: 1114123 -1 1727
-Width: 453
+Width: 461
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 18 50 N 1 0 0 1 6 0 2
+Refer: 18 50 N 1 0 0 1 7 0 2
 EndChar
 
 StartChar: three.fitted
 Encoding: 1114124 -1 1728
-Width: 448
+Width: 456
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 19 51 N 1 0 0 1 -3 0 2
+Refer: 19 51 N 1 0 0 1 -5 0 2
 EndChar
 
 StartChar: four.fitted
 Encoding: 1114125 -1 1729
-Width: 486
+Width: 490
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 20 52 N 1 0 0 1 3 0 2
+Refer: 20 52 N 1 0 0 1 10 0 2
 EndChar
 
 StartChar: five.fitted
 Encoding: 1114126 -1 1730
-Width: 431
+Width: 445
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 21 53 N 1 0 0 1 -12 0 2
+Refer: 21 53 N 1 0 0 1 -2 0 2
 EndChar
 
 StartChar: six.fitted
 Encoding: 1114127 -1 1731
-Width: 476
+Width: 464
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 22 54 N 1 0 0 1 6 0 2
+Refer: 22 54 N 1 0 0 1 8 0 2
 EndChar
 
 StartChar: seven.fitted
 Encoding: 1114128 -1 1732
-Width: 420
+Width: 422
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 23 55 N 1 0 0 1 -10 0 2
+Refer: 23 55 N 1 0 0 1 -18 0 2
 EndChar
 
 StartChar: eight.fitted
 Encoding: 1114129 -1 1733
-Width: 471
+Width: 449
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-263.6 473.6 m 1024,4,5
-EndSplineSet
 Refer: 24 56 N 1 0 0 1 2 0 2
 EndChar
 
 StartChar: nine.fitted
 Encoding: 1114130 -1 1734
-Width: 463
+Width: 459
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 25 57 N 1 0 0 1 -1 0 2
+Refer: 25 57 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniE01F
@@ -48258,110 +48238,78 @@ EndChar
 
 StartChar: three.oldstyle
 Encoding: 1114135 -1 1739
-Width: 447
+Width: 449
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 19 51 N 1 0 0 1 -38 -166 2
+Refer: 19 51 N 1 0 0 1 -36 -167 2
 Substitution2: "'lnum' Versalziffern 1" three.fitted
 EndChar
 
 StartChar: four.oldstyle
 Encoding: 1114136 -1 1740
-Width: 490
+Width: 469
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 20 52 N 1 0 0 1 -30 -169 2
+Refer: 20 52 N 1 0 0 1 -19 -169 2
 Substitution2: "'lnum' Versalziffern 1" four.fitted
 EndChar
 
 StartChar: five.oldstyle
 Encoding: 1114137 -1 1741
-Width: 437
+Width: 435
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 21 53 N 1 0 0 1 -58 -167 2
+Refer: 21 53 N 1 0 0 1 -49 -170 2
 Substitution2: "'lnum' Versalziffern 1" five.fitted
 EndChar
 
 StartChar: six.oldstyle
 Encoding: 1114138 -1 1742
-Width: 472
+Width: 458
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 22 54 N 1 0 0 1 -2 0 2
+Refer: 22 54 N 1 0 0 1 6 0 2
 Substitution2: "'lnum' Versalziffern 1" six.fitted
 EndChar
 
 StartChar: seven.oldstyle
 Encoding: 1114139 -1 1743
-Width: 421
+Width: 437
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 23 55 N 1 0 0 1 -45 -158 2
+Refer: 23 55 N 1 0 0 1 -47 -159 2
 Substitution2: "'lnum' Versalziffern 1" seven.fitted
 EndChar
 
 StartChar: eight.oldstyle
 Encoding: 1114140 -1 1744
-Width: 470
+Width: 482
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-348 575 m 0
- 297 575 272 537 263 491 c 0
- 261.9 485.4 261.3 479.6 261.3 473.6 c 0
- 261.3 446.1 273.1 415.2 301 393 c 2
- 325 374 l 1
- 355 394 387 426 397 480 c 0
- 399.4 492.3 401 504.9 401 516.7 c 0
- 401 548.8 389 575 348 575 c 0
-496 489 m 0
- 484 425 402 380 355 350 c 1
- 404 310 l 2
- 438.1 281.7 459.8 237.5 459.8 190.1 c 0
- 459.8 180.5 458.9 170.8 457 161 c 0
- 442 85 350 -11 225 -11 c 0
- 134.6 -11 68.6 32.1 68.6 112.9 c 0
- 68.6 123.3 69.7 134.4 72 146 c 0
- 87 222 152 258 235 316 c 1
- 220 326 l 1
- 178.7 358 154.4 400.1 154.4 446 c 0
- 154.4 454.6 155.3 463.2 157 472 c 0
- 172 549 242 610 360 610 c 0
- 452.6 610 498.5 571.9 498.5 513.6 c 0
- 498.5 505.8 497.7 497.5 496 489 c 0
-235 28 m 0
- 277 28 333 46 351 141 c 0
- 353 151.3 354.1 161.2 354.1 170.7 c 0
- 354.1 204.7 340 234.3 301 264 c 2
- 263 292 l 1
- 190 242 176 176 170 146 c 0
- 167.2 131.8 166 119 166 107.7 c 0
- 166 49 199.8 28 235 28 c 0
-EndSplineSet
+Refer: 24 56 N 1 0 0 1 11 -1 2
 Substitution2: "'lnum' Versalziffern 1" eight.fitted
 EndChar
 
 StartChar: nine.oldstyle
 Encoding: 1114141 -1 1745
-Width: 468
+Width: 456
 GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 25 57 N 1 0 0 1 -33 -166 2
+Refer: 25 57 N 1 0 0 1 -29 -154 2
 Substitution2: "'lnum' Versalziffern 1" nine.fitted
 EndChar
 
@@ -68705,16 +68653,16 @@ Width: 490
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 19 51 N 1 0 0 1 -41 -166 2
+Refer: 19 51 N 1 0 0 1 -40 -167 2
 EndChar
 
 StartChar: four.taboldstyle
 Encoding: 1114304 -1 2245
-Width: 490
+Width: 489
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 20 52 N 1 0 0 1 -38 -169 2
+Refer: 20 52 N 1 0 0 1 -17 -169 2
 EndChar
 
 StartChar: five.taboldstyle
@@ -68723,7 +68671,7 @@ Width: 490
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 21 53 N 1 0 0 1 -45 -167 2
+Refer: 21 53 N 1 0 0 1 -35 -170 2
 EndChar
 
 StartChar: six.taboldstyle
@@ -68732,7 +68680,7 @@ Width: 490
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 22 54 N 1 0 0 1 -2 0 2
+Refer: 22 54 N 1 0 0 1 13 0 2
 EndChar
 
 StartChar: seven.taboldstyle
@@ -68741,7 +68689,7 @@ Width: 490
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 23 55 N 1 0 0 1 -14 -158 2
+Refer: 23 55 N 1 0 0 1 -24 -159 2
 EndChar
 
 StartChar: eight.taboldstyle
@@ -68750,16 +68698,16 @@ Width: 490
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 1744 -1 N 1 0 0 1 0 0 2
+Refer: 24 56 N 1 0 0 1 5 -1 2
 EndChar
 
 StartChar: nine.taboldstyle
 Encoding: 1114309 -1 2250
-Width: 490
+Width: 489
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 25 57 N 1 0 0 1 -23 -166 2
+Refer: 25 57 N 1 0 0 1 -12 -154 2
 EndChar
 
 StartChar: uniE01A
