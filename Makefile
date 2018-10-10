@@ -11,6 +11,7 @@ TOOLS=tools
 PY?=python
 BUILD=$(TOOLS)/build.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
+PSEUDOENC=$(TOOLS)/ff_sfd_pseudoenc
 CHECKERRS=$(TOOLS)/check-errors.py
 LO?=lowriter
 
@@ -31,6 +32,22 @@ FONTS=Math-Regular \
       Mono-Regular \
       Keyboard-Regular \
       $(NULL)
+
+# pseudoenc dependencies 
+$(SRC)/$(NAME)Sans-Regular.nrm : $(SRC)/$(NAME)_Sans_pse.ini
+$(SRC)/$(NAME)Sans-Bold.nrm : $(SRC)/$(NAME)_Sans_pse.ini
+$(SRC)/$(NAME)Sans-Italic.nrm : $(SRC)/$(NAME)_Sans_pse.ini
+$(SRC)/$(NAME)Serif-Regular.nrm : $(SRC)/$(NAME)_Serif_pse.ini
+$(SRC)/$(NAME)Serif-Bold.nrm : $(SRC)/$(NAME)_Serif_pse.ini
+$(SRC)/$(NAME)Serif-Italic.nrm : $(SRC)/$(NAME)_Serif_pse.ini
+$(SRC)/$(NAME)Serif-BoldItalic.nrm : $(SRC)/$(NAME)_Serif_pse.ini
+$(SRC)/$(NAME)Serif-Semibold.nrm : $(SRC)/$(NAME)_Serif_pse.ini
+$(SRC)/$(NAME)Serif-SemiboldItalic.nrm : $(SRC)/$(NAME)_Serif_pse.ini
+$(SRC)/$(NAME)Math-Regular.nrm : $(SRC)/$(NAME)_Math_pse.ini
+$(SRC)/$(NAME)SerifDisplay-Regular.nrm : $(SRC)/$(NAME)_Serif_Display_pse.ini
+$(SRC)/$(NAME)SerifInitials-Regular.nrm : $(SRC)/$(NAME)_Serif_Initials_pse.ini
+$(SRC)/$(NAME)Mono-Regular.nrm : $(SRC)/$(NAME)_Mono_pse.ini
+$(SRC)/$(NAME)Keyboard-Regular.nrm : $(SRC)/$(NAME)_Keyboard_pse.ini
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
@@ -58,14 +75,18 @@ check: $(LNT) $(CHK) $(DUP)
 	@echo "   OTF	$@"
 	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
 
-%.nrm: %.sfd $(NORMALIZE)
+%.nrm: %.sfd $(NORMALIZE) $($*_PSE)
 	@echo "   NRM	$(<F)"
-	@$(PY) $(NORMALIZE) $< $@
+	@$(PY) $(NORMALIZE) $< $*.nrt
+	@$(PY) $(PSEUDOENC) --input $*.nrt --output $@ --overwrite 
+	@$(RM) $*.nrt
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
 %.chk: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
-	@$(PY) $(NORMALIZE) $< $@
+	@$(PY) $(NORMALIZE) $< $*.nrt
+	@$(PY) $(PSEUDOENC) --input $*.nrt --output $@ --overwrite --silent
+	@$(RM) $*.nrt
 	@diff -u $< $@ || (rm -rf $@ && false)
 
 %.dup: %.sfd $(FINDDUPS)

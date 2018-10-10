@@ -1,0 +1,1153 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import math
+import sys
+import os
+import copy
+import tempfile
+import collections
+import re
+import itertools
+import unicodedata
+import argparse
+import configparser
+
+## Author: Skef Iterum (github@skef.org)
+
+## FontForge Revised BSD License
+
+# The fontforge_coverage_tools software and supporting files are 
+# distributed under the terms of the FontForge Revised BSD License,
+# reproduced below.
+
+
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions
+# are met:
+# 
+# Redistributions of source code must retain the above copyright
+# notice, this list of conditions and the following disclaimer.
+# 
+# Redistributions in binary form must reproduce the above copyright
+# notice, this list of conditions and the following disclaimer in the
+# documentation and/or other materials provided with the distribution.
+# 
+# The name of the author may not be used to endorse or promote
+# products derived from this software without specific prior written
+# permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS
+# OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+# DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+# GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+## Unicode structures license
+
+# UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
+# COPYRIGHT AND PERMISSION NOTICE
+# 
+# Copyright © 1991-2018 Unicode, Inc. All rights reserved.
+# Distributed under the Terms of Use in http://www.unicode.org/copyright.html.
+# 
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of the Unicode data files and any associated documentation
+# (the "Data Files") or Unicode software and any associated documentation
+# (the "Software") to deal in the Data Files or Software
+# without restriction, including without limitation the rights to use,
+# copy, modify, merge, publish, distribute, and/or sell copies of
+# the Data Files or Software, and to permit persons to whom the Data Files
+# or Software are furnished to do so, provided that either
+# (a) this copyright and permission notice appear with all copies
+# of the Data Files or Software, or
+# (b) this copyright and permission notice appear in associated
+# Documentation.
+# 
+# THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF
+# ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+# WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+# IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+# NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+# DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+# DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+# TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+# 
+# Except as contained in this notice, the name of a copyright holder
+# shall not be used in advertising or otherwise to promote the sale,
+# use or other dealings in these Data Files or Software without prior
+# written authorization of the copyright holder.
+
+uniblock_str = """0000..007F; Basic Latin
+0080..00FF; Latin-1 Supplement
+0100..017F; Latin Extended-A
+0180..024F; Latin Extended-B
+0250..02AF; IPA Extensions
+02B0..02FF; Spacing Modifier Letters
+0300..036F; Combining Diacritical Marks
+0370..03FF; Greek and Coptic
+0400..04FF; Cyrillic
+0500..052F; Cyrillic Supplement
+0530..058F; Armenian
+0590..05FF; Hebrew
+0600..06FF; Arabic
+0700..074F; Syriac
+0750..077F; Arabic Supplement
+0780..07BF; Thaana
+07C0..07FF; NKo
+0800..083F; Samaritan
+0840..085F; Mandaic
+0860..086F; Syriac Supplement
+08A0..08FF; Arabic Extended-A
+0900..097F; Devanagari
+0980..09FF; Bengali
+0A00..0A7F; Gurmukhi
+0A80..0AFF; Gujarati
+0B00..0B7F; Oriya
+0B80..0BFF; Tamil
+0C00..0C7F; Telugu
+0C80..0CFF; Kannada
+0D00..0D7F; Malayalam
+0D80..0DFF; Sinhala
+0E00..0E7F; Thai
+0E80..0EFF; Lao
+0F00..0FFF; Tibetan
+1000..109F; Myanmar
+10A0..10FF; Georgian
+1100..11FF; Hangul Jamo
+1200..137F; Ethiopic
+1380..139F; Ethiopic Supplement
+13A0..13FF; Cherokee
+1400..167F; Unified Canadian Aboriginal Syllabics
+1680..169F; Ogham
+16A0..16FF; Runic
+1700..171F; Tagalog
+1720..173F; Hanunoo
+1740..175F; Buhid
+1760..177F; Tagbanwa
+1780..17FF; Khmer
+1800..18AF; Mongolian
+18B0..18FF; Unified Canadian Aboriginal Syllabics Extended
+1900..194F; Limbu
+1950..197F; Tai Le
+1980..19DF; New Tai Lue
+19E0..19FF; Khmer Symbols
+1A00..1A1F; Buginese
+1A20..1AAF; Tai Tham
+1AB0..1AFF; Combining Diacritical Marks Extended
+1B00..1B7F; Balinese
+1B80..1BBF; Sundanese
+1BC0..1BFF; Batak
+1C00..1C4F; Lepcha
+1C50..1C7F; Ol Chiki
+1C80..1C8F; Cyrillic Extended-C
+1C90..1CBF; Georgian Extended
+1CC0..1CCF; Sundanese Supplement
+1CD0..1CFF; Vedic Extensions
+1D00..1D7F; Phonetic Extensions
+1D80..1DBF; Phonetic Extensions Supplement
+1DC0..1DFF; Combining Diacritical Marks Supplement
+1E00..1EFF; Latin Extended Additional
+1F00..1FFF; Greek Extended
+2000..206F; General Punctuation
+2070..209F; Superscripts and Subscripts
+20A0..20CF; Currency Symbols
+20D0..20FF; Combining Diacritical Marks for Symbols
+2100..214F; Letterlike Symbols
+2150..218F; Number Forms
+2190..21FF; Arrows
+2200..22FF; Mathematical Operators
+2300..23FF; Miscellaneous Technical
+2400..243F; Control Pictures
+2440..245F; Optical Character Recognition
+2460..24FF; Enclosed Alphanumerics
+2500..257F; Box Drawing
+2580..259F; Block Elements
+25A0..25FF; Geometric Shapes
+2600..26FF; Miscellaneous Symbols
+2700..27BF; Dingbats
+27C0..27EF; Miscellaneous Mathematical Symbols-A
+27F0..27FF; Supplemental Arrows-A
+2800..28FF; Braille Patterns
+2900..297F; Supplemental Arrows-B
+2980..29FF; Miscellaneous Mathematical Symbols-B
+2A00..2AFF; Supplemental Mathematical Operators
+2B00..2BFF; Miscellaneous Symbols and Arrows
+2C00..2C5F; Glagolitic
+2C60..2C7F; Latin Extended-C
+2C80..2CFF; Coptic
+2D00..2D2F; Georgian Supplement
+2D30..2D7F; Tifinagh
+2D80..2DDF; Ethiopic Extended
+2DE0..2DFF; Cyrillic Extended-A
+2E00..2E7F; Supplemental Punctuation
+2E80..2EFF; CJK Radicals Supplement
+2F00..2FDF; Kangxi Radicals
+2FF0..2FFF; Ideographic Description Characters
+3000..303F; CJK Symbols and Punctuation
+3040..309F; Hiragana
+30A0..30FF; Katakana
+3100..312F; Bopomofo
+3130..318F; Hangul Compatibility Jamo
+3190..319F; Kanbun
+31A0..31BF; Bopomofo Extended
+31C0..31EF; CJK Strokes
+31F0..31FF; Katakana Phonetic Extensions
+3200..32FF; Enclosed CJK Letters and Months
+3300..33FF; CJK Compatibility
+3400..4DBF; CJK Unified Ideographs Extension A
+4DC0..4DFF; Yijing Hexagram Symbols
+4E00..9FFF; CJK Unified Ideographs
+A000..A48F; Yi Syllables
+A490..A4CF; Yi Radicals
+A4D0..A4FF; Lisu
+A500..A63F; Vai
+A640..A69F; Cyrillic Extended-B
+A6A0..A6FF; Bamum
+A700..A71F; Modifier Tone Letters
+A720..A7FF; Latin Extended-D
+A800..A82F; Syloti Nagri
+A830..A83F; Common Indic Number Forms
+A840..A87F; Phags-pa
+A880..A8DF; Saurashtra
+A8E0..A8FF; Devanagari Extended
+A900..A92F; Kayah Li
+A930..A95F; Rejang
+A960..A97F; Hangul Jamo Extended-A
+A980..A9DF; Javanese
+A9E0..A9FF; Myanmar Extended-B
+AA00..AA5F; Cham
+AA60..AA7F; Myanmar Extended-A
+AA80..AADF; Tai Viet
+AAE0..AAFF; Meetei Mayek Extensions
+AB00..AB2F; Ethiopic Extended-A
+AB30..AB6F; Latin Extended-E
+AB70..ABBF; Cherokee Supplement
+ABC0..ABFF; Meetei Mayek
+AC00..D7AF; Hangul Syllables
+D7B0..D7FF; Hangul Jamo Extended-B
+D800..DB7F; High Surrogates
+DB80..DBFF; High Private Use Surrogates
+DC00..DFFF; Low Surrogates
+E000..F8FF; Private Use Area
+F900..FAFF; CJK Compatibility Ideographs
+FB00..FB4F; Alphabetic Presentation Forms
+FB50..FDFF; Arabic Presentation Forms-A
+FE00..FE0F; Variation Selectors
+FE10..FE1F; Vertical Forms
+FE20..FE2F; Combining Half Marks
+FE30..FE4F; CJK Compatibility Forms
+FE50..FE6F; Small Form Variants
+FE70..FEFF; Arabic Presentation Forms-B
+FF00..FFEF; Halfwidth and Fullwidth Forms
+FFF0..FFFF; Specials
+10000..1007F; Linear B Syllabary
+10080..100FF; Linear B Ideograms
+10100..1013F; Aegean Numbers
+10140..1018F; Ancient Greek Numbers
+10190..101CF; Ancient Symbols
+101D0..101FF; Phaistos Disc
+10280..1029F; Lycian
+102A0..102DF; Carian
+102E0..102FF; Coptic Epact Numbers
+10300..1032F; Old Italic
+10330..1034F; Gothic
+10350..1037F; Old Permic
+10380..1039F; Ugaritic
+103A0..103DF; Old Persian
+10400..1044F; Deseret
+10450..1047F; Shavian
+10480..104AF; Osmanya
+104B0..104FF; Osage
+10500..1052F; Elbasan
+10530..1056F; Caucasian Albanian
+10600..1077F; Linear A
+10800..1083F; Cypriot Syllabary
+10840..1085F; Imperial Aramaic
+10860..1087F; Palmyrene
+10880..108AF; Nabataean
+108E0..108FF; Hatran
+10900..1091F; Phoenician
+10920..1093F; Lydian
+10980..1099F; Meroitic Hieroglyphs
+109A0..109FF; Meroitic Cursive
+10A00..10A5F; Kharoshthi
+10A60..10A7F; Old South Arabian
+10A80..10A9F; Old North Arabian
+10AC0..10AFF; Manichaean
+10B00..10B3F; Avestan
+10B40..10B5F; Inscriptional Parthian
+10B60..10B7F; Inscriptional Pahlavi
+10B80..10BAF; Psalter Pahlavi
+10C00..10C4F; Old Turkic
+10C80..10CFF; Old Hungarian
+10D00..10D3F; Hanifi Rohingya
+10E60..10E7F; Rumi Numeral Symbols
+10F00..10F2F; Old Sogdian
+10F30..10F6F; Sogdian
+11000..1107F; Brahmi
+11080..110CF; Kaithi
+110D0..110FF; Sora Sompeng
+11100..1114F; Chakma
+11150..1117F; Mahajani
+11180..111DF; Sharada
+111E0..111FF; Sinhala Archaic Numbers
+11200..1124F; Khojki
+11280..112AF; Multani
+112B0..112FF; Khudawadi
+11300..1137F; Grantha
+11400..1147F; Newa
+11480..114DF; Tirhuta
+11580..115FF; Siddham
+11600..1165F; Modi
+11660..1167F; Mongolian Supplement
+11680..116CF; Takri
+11700..1173F; Ahom
+11800..1184F; Dogra
+118A0..118FF; Warang Citi
+11A00..11A4F; Zanabazar Square
+11A50..11AAF; Soyombo
+11AC0..11AFF; Pau Cin Hau
+11C00..11C6F; Bhaiksuki
+11C70..11CBF; Marchen
+11D00..11D5F; Masaram Gondi
+11D60..11DAF; Gunjala Gondi
+11EE0..11EFF; Makasar
+12000..123FF; Cuneiform
+12400..1247F; Cuneiform Numbers and Punctuation
+12480..1254F; Early Dynastic Cuneiform
+13000..1342F; Egyptian Hieroglyphs
+14400..1467F; Anatolian Hieroglyphs
+16800..16A3F; Bamum Supplement
+16A40..16A6F; Mro
+16AD0..16AFF; Bassa Vah
+16B00..16B8F; Pahawh Hmong
+16E40..16E9F; Medefaidrin
+16F00..16F9F; Miao
+16FE0..16FFF; Ideographic Symbols and Punctuation
+17000..187FF; Tangut
+18800..18AFF; Tangut Components
+1B000..1B0FF; Kana Supplement
+1B100..1B12F; Kana Extended-A
+1B170..1B2FF; Nushu
+1BC00..1BC9F; Duployan
+1BCA0..1BCAF; Shorthand Format Controls
+1D000..1D0FF; Byzantine Musical Symbols
+1D100..1D1FF; Musical Symbols
+1D200..1D24F; Ancient Greek Musical Notation
+1D2E0..1D2FF; Mayan Numerals
+1D300..1D35F; Tai Xuan Jing Symbols
+1D360..1D37F; Counting Rod Numerals
+1D400..1D7FF; Mathematical Alphanumeric Symbols
+1D800..1DAAF; Sutton SignWriting
+1E000..1E02F; Glagolitic Supplement
+1E800..1E8DF; Mende Kikakui
+1E900..1E95F; Adlam
+1EC70..1ECBF; Indic Siyaq Numbers
+1EE00..1EEFF; Arabic Mathematical Alphabetic Symbols
+1F000..1F02F; Mahjong Tiles
+1F030..1F09F; Domino Tiles
+1F0A0..1F0FF; Playing Cards
+1F100..1F1FF; Enclosed Alphanumeric Supplement
+1F200..1F2FF; Enclosed Ideographic Supplement
+1F300..1F5FF; Miscellaneous Symbols and Pictographs
+1F600..1F64F; Emoticons
+1F650..1F67F; Ornamental Dingbats
+1F680..1F6FF; Transport and Map Symbols
+1F700..1F77F; Alchemical Symbols
+1F780..1F7FF; Geometric Shapes Extended
+1F800..1F8FF; Supplemental Arrows-C
+1F900..1F9FF; Supplemental Symbols and Pictographs
+1FA00..1FA6F; Chess Symbols
+20000..2A6DF; CJK Unified Ideographs Extension B
+2A700..2B73F; CJK Unified Ideographs Extension C
+2B740..2B81F; CJK Unified Ideographs Extension D
+2B820..2CEAF; CJK Unified Ideographs Extension E
+2CEB0..2EBEF; CJK Unified Ideographs Extension F
+2F800..2FA1F; CJK Compatibility Ideographs Supplement
+E0000..E007F; Tags
+E0100..E01EF; Variation Selectors Supplement
+F0000..FFFFF; Supplementary Private Use Area-A
+100000..10FFFF; Supplementary Private Use Area-B"""
+
+# These are less for efficiency than for format centralization
+field_delim = re.compile('[, ]+')
+comma_delim = re.compile(', *')
+two_dots = re.compile('\.\.')
+bl_re = re.compile('^([0-9A-F]{4,6})\.\.([0-9A-F]{4,6}); (.+)$')
+
+uniblock_dict = collections.OrderedDict( (x[3].lower(), (int(x[1], 16), int(x[2], 16))) for x 
+                                         in ( bl_re.match(y) for y in uniblock_str.splitlines() ) )
+
+unicat_map = { 'l': ['lu', 'll', 'lt', 'lm', 'lo'],
+               'm': ['mn', 'mc', 'me'],
+               'n': ['nd', 'nl', 'no'], 
+               'p': ['pc', 'pd', 'ps', 'pe', 'pi', 'pf', 'po'], 
+               's': ['sm', 'sc', 'sk', 'so'], 
+               'z': ['zs', 'zl', 'zp'], 
+               'c': ['cc', 'cf', 'cs', 'co', 'cn'] 
+               }
+
+def showblocks():
+    """Print Unicode block names to stdout"""
+    for b in uniblock_dict.keys():
+        print(b)
+
+def unicat_dict(cs):
+    """Return a dictionary of Unicode Category->True corresponding to the string argument"""
+    d = {}
+    for k in field_delim.split(cs.lower()):
+        umv = unicat_map.get(k)
+        if umv:
+            for i in umv:
+                d[i] = True
+        else:
+            d[k] = True
+    return d
+
+# Command line arguments
+
+def parseArgs():
+    parser = argparse.ArgumentParser(
+             description='ff_sfd_pseudoenc: Organize unencoded glyphs in a FontForge SFD file',
+             epilog='Documentation available at:\n'
+                 + '   https://github.com/skef/fontforge_coverage_tools\n',
+             formatter_class=argparse.RawDescriptionHelpFormatter
+            )
+    parser.add_argument('-i', '--input', metavar='(input_file)')
+    parser.add_argument('-o', '--output', metavar='(output_file)')
+    parser.add_argument('-c', '--config', metavar='(config_file)')
+    parser.add_argument('--overwrite', action='store_true', help='write replace (input_file) with output')
+    parser.add_argument('--check', action='store_true', help='Report order changes and errors')
+    parser.add_argument('-v', '--verbosity', action='count', help='(increasingly) descriptive messages')
+    parser.add_argument('-s', '--silent', action='store_true', help='no messages')
+    parser.add_argument('-m', '--memory', action='store_true', help="do not store entire .sfd in memory")
+    parser.add_argument('--showblocks', action='store_true', help='print unicode block names and exit')
+    parser.add_argument('--showconfpath', action='store_true',
+                        help='Print (input_file)-relative config file search path ')
+
+    return parser.parse_args()
+
+args = parseArgs()
+
+if args.verbosity and args.silent:
+    sys.stderr.write("Specify only one of --verbosity and --silent\n")
+    sys.exit(2)
+
+# Globals
+
+if args.silent:
+    verbosity = -1
+else:
+    verbosity = args.verbosity or 0
+
+def do_log(msg, level, err=-1):
+    if verbosity >= level:
+        sys.stderr.write(msg)
+    if err >= 0:
+        sys.exit(err)
+
+if (args.input and args.output and os.path.exists(args.output)
+    and os.path.samefile(args.input, args.output)):
+    do_log("Input and output cannot point to same file, use --input with --overwrite instead", 0, 2)
+if args.overwrite and not (args.input or args.output):
+    do_log("Must specify --input or --output to use --overwrite\n", 0, 2)
+if args.output and os.path.exists(args.output) and not args.overwrite:
+    do_log("Output file '" + args.output + "' exists and --overwrite flag is not set\n", 0, 2)
+
+if args.showblocks:
+    do_log("Printing Unicode block names and exiting\n", 1)
+    showblocks()
+    sys.exit(0)
+
+spool_cutoff = 0x40000 # quarter megabyte
+first_custenc = { 'UnicodeFull': 0x110000, 'UnicodeBmp': 0x10000 }
+
+# Classes
+
+class IntRanges:
+    """Represents a set of integers as an ordered list of tuples (low..high)"""
+
+    def __init__(self, i=None):
+        if isinstance(i, IntRanges):
+            self.rl = copy.copy(i.rl)
+            do_log("Initializing IntRanges object from another IntRanges object\n", 4)
+        else:
+            self.rl = self.sortCollapse(self.convert(i))
+
+    def convert(self, i):
+        """Returns a range list corresponding to the string, list, or IntRanges argument"""
+
+        # another IntRange object
+        if isinstance(i, IntRanges):
+            do_log("Initializing IntRanges object from another IntRanges object\n", 4)
+            return copy.copy(i.rl)
+        # Range string (decimals by default, octal with 0o and hexdecimal with 0x)
+        # Either ranges ('13..30') or individual integers are accepted
+        elif isinstance(i, str):
+            if verbosity >= 3:
+                do_log("Converting range string to IntRanges object: " + i + "\n", 5)
+            return [ (int(g[0],0), int(g[1],0))
+                    if len(g) > 1 else (int(g[0],0), int(g[0],0))
+                    for g in ( two_dots.split(x) for x in field_delim.split(i) ) ]
+        # List of integers (any order)
+        elif isinstance(i, list) and len(i) == 0:
+            do_log("Converting Empty list to IntRanges object\n", 5)
+            return []
+        elif isinstance(i, list) and isinstance(i[0], int):
+            if verbosity >= 3:
+                do_log("Converting Integer list to IntRanges object: " + str(i) + "\n", 5)
+            return [ (x, x) for x in i ]
+        # List of range tuples (any order, with potential duplication)
+        elif isinstance(i, list) and isinstance(i[0], tuple):
+            if verbosity >= 4:
+                do_log("Converting list of (potentially unordered and/or overlapping) range tuples to IntRanges object: " + str(i) + "\n", 5)
+            return i
+        elif i:
+            do_log("Unknown structure used to initialize IntRanges object\n", 0, 1)
+        else:
+            do_log("Converting Empty list to IntRanges object\n", 5)
+            return []
+
+    def sortCollapse(self, tups):
+        return self.collapse(sorted(tups))
+
+    def collapse(self, stups):
+        """
+        Returns compressed ranges free of duplication
+        stups should be a list of range tuples ordered by first and then second element
+        """
+
+        rl = []
+        if len(stups) == 0:
+            return rl
+        l = stups.pop(0)
+        for c in stups:
+            if c[0] > l[1]+1:
+                rl.append(l)
+                l = c
+            else:
+                l = (l[0], max(l[1], c[1]))
+        rl.append(l)
+        return rl
+
+    def ints(self):
+        """Returns an ordered list of integers corresponding to the current ranges"""
+
+        r = []
+        for t in self.rl:
+            r.extend(list(range(t[0],t[1]+1)))
+        return r
+
+    def add(self, orl):
+        """
+        Updates the ranges to be the union of the current ranges and that of
+        the argument (which may be any of the constructor types)
+        """
+
+        do_log("Adding ranges to IntRanges object\n", 4)
+        # Could be optimized for when orl is another IntRange
+        self.rl = self.sortCollapse(self.rl + self.convert(orl))
+
+    def count(self):
+        """Returns the number of integers represented by the current ranges"""
+
+        c = 0
+        for tp in self.rl:
+            c += tp[1]-tp[0]+1
+        return c
+
+    def offsetIntersect(self, orl):
+        """
+        Returns a list of three-element tuples
+        The last two elements of each tuple are ranges that represent the
+        intersection of the current ranges and the ranges of the argument
+
+        The first element represents the offset of the start of that range
+        with respect to the current list. (Or in other words the index of
+        tup[1] in the list that would be returned by ints().)
+        """
+
+        do_log("Computing intersection (with offsets) between two IntRages objects\n", 4)
+        if not isinstance(orl, IntRanges):
+            raise Exception("Argument other than IntRanges object passed to IntRanges.objectIntersect")
+        if verbosity >= 4:
+            do_log("Range lists are " + str(self.rl) + " and " + str(orl.rl) + "\n", 5)
+        r = []
+        i = j = 0
+        offset = 0
+        while i < len(self.rl) and j < len(orl.rl):
+            srll, srlh = self.rl[i]
+            orll, orlh = orl.rl[j]
+            al, ah = sorted([srll, srlh, orll, orlh])[1:3]
+
+            if srlh >= orll and orlh >= srll:
+                # The offset of the first element is the current offset plus the
+                # difference between the low element in the appended range and
+                # the low element of the current tuple of this object
+                r.append((offset+al-srll, al, ah))
+
+            if srlh < orlh:
+                i += 1
+                # When advancing to the next tuple of this object, advance
+                # offset by the number of element in the tuple
+                offset += srlh-srll+1
+            else:
+                j += 1
+
+        return r
+
+class ExtensionMatcher:
+    """Utility class for handling 'extensions' and 'has_extensions' directives"""
+
+    def __init__(self, sec):
+        do_log("Initializing ExtensionMatcher object\n", 4)
+        self.hasext = sec.get('has_extensions')
+        self.ext = sec.get('extensions')
+        if verbosity >= 3:
+            do_log("has_extensions value is '" + (self.hasext or '') + "', extensions value is '" + (self.ext or '') + "'\n", 4)
+        self.extlist = []
+        self.extstr = ''
+        if self.ext and self.hasext:
+            do_log("Section '" + sec.name + "': only specify one of 'extensions' and 'has_extensions'\n", 0, 1)
+        if self.hasext:
+            if self.hasext[0] != '.':
+                do_log("Section '" + sec.name + "': 'has_extensions' value must start with '.'\n", 0, 1)
+            self.hasextlist = re.split('\.', self.hasext)[1:]
+        elif self.ext:
+            if self.ext[0] != '.':
+                do_log("Section '" + sec.name + "': 'extensions' value must start with '.'\n", 0, 1)
+            self.extlist = sorted(set(re.split('\.', self.ext)[1:]))
+            self.extstr = '.' + '.'.join(self.extlist)
+
+    def matchingRequested(self):
+        return self.ext or self.hasext
+
+    def matches(self, gtup):
+        if self.hasext:
+            if verbosity >= 3:
+                do_log("Checking if all of " + str(self.hasextlist) + " are in " + str(gtup[5]) + "\n", 4)
+            return all( ( gtup[5].get(z) for z in self.hasextlist ) )
+        elif self.ext:
+            do_log("Checking if '" + self.extstr + "' equals '" + '.' + gtup[4] + "'\n", 4)
+            return '.' + gtup[4] == self.extstr
+        else:
+            return True
+
+class SFDFile:
+    """
+    Represents (the relevant entries in) a fontforge .sfd file
+
+    Only interprets lines starting with "BeginChars", "StartChar:",
+    and "Encoding:" (in both headers and individual glyphs), as well 
+    as "FontName", "FullName" and "FamilyName".
+
+    On output only "BeginChars" and "Encoding:" (in the individual
+    glyphs) will be altered
+    """
+
+    def __init__(self, args):
+
+        self.args = args
+
+        self.header_encoding_ln = -1
+        self.base_encoding = None
+        self.glyph_count = 0;
+        self.max_custenc = 0
+        self.lines = []
+        self.fnames = [] # Font and family names
+        self.tmp_input = False
+
+        # "Encoding:" directive file line number -> corresponding glyph number
+        self.ln_to_gnum = {}
+
+        # Canonincalized name of glyph -> corresponding glyph number
+        self.canon_name_to_gnum = {}
+
+        # Unicode code point (if not -1) -> corresponding glyph number
+        self.uni_to_gnum = {}
+
+        # glyph number -> tuple of (name, unicode code point, custom encoding number,
+        #    basename, canonicalized extension string, extension dict)
+        self.gnum_tuple = {}
+
+        # True for any (as yet) unprocessed un-unicoded glyph
+        self.unenc_dict = collections.OrderedDict() 
+
+    def getCanonPair(self, gname):
+        """Return tuple of (basename, extensions) where the latter are ordered alphanumerically"""
+
+        el = re.split('\.', gname)
+        if len(el) == 1:
+            es = ''
+        else:
+            es = '.'.join(sorted(set(el[1:])))
+        if verbosity >= 3:
+            do_log("Canonical pair of '" + gname + "' is " + str((el[0], es)) + "\n", 5)
+        return (el[0], es)
+
+    def getCanonName(self, cpair):
+        """Intelligently concatenate a canonPair"""
+
+        if cpair[1] == '':
+            return cpair[0]
+        return cpair[0] + '.' + cpair[1]
+
+    def noteExtensions(self, extstr):
+        """Return an extension Truth dictionary of corresponding to extstr"""
+
+        d = {}
+        if extstr == '':
+            d[' None'] = True
+        else:
+            for ext in re.split('\.', extstr):
+                d[ext] = True
+        if verbosity >= 3:
+            do_log("Extension dictionary of '" + extstr + "' is " + str(d) + "\n", 4)
+        return d
+
+    def openIn(self):
+        """Determine and open the input file"""
+
+        try:
+            if self.args.input:
+                do_log("Reading .sfd file from file '" + self.args.input + "'\n", 1)
+                self.ifd = open(self.args.input, 'r')
+            else:
+                do_log("Reading .sfd file from standard input\n", 1)
+                self.ifd = sys.stdin
+                if self.args.memory:
+                    self.tmp_input = tempfile.SpooledTemporaryFile(max_size=spool_cutoff, mode='w+')
+                    do_log("Using temporary input spool file '" + self.tmp_input.name + "'\n", 1)
+        except IOError as e:
+            if self.args.input and not os.path.exists(self.args.input):
+                do_log('File ' + args.input + ' not found.', 0, 1)
+            else:
+                do_log('Input File Read Error: ' + str(e), 0, 1);
+
+    def openOut(self):
+        """Determine and open the output file"""
+
+        if self.args.check:
+            return
+        try:
+            if self.args.output:
+                do_log("Writing .sfd file to file '" + self.args.output + "'\n", 1)
+                self.ofd = open(self.args.output, 'w')
+            elif self.args.overwrite:
+                self.ofd = tempfile.NamedTemporaryFile(mode='w',
+                                                       dir=os.path.dirname(self.args.input), delete=False)
+                do_log("Writing .sfd file to temporary file '" + self.ofd.name + "'\n", 1)
+            else:
+                do_log("Reading .sfd file from standard input\n", 1)
+                self.ofd = sys.stdout
+        except IOError as e:
+            do_log('Output File Write Error: ' + str(e), 0, 1);
+
+    def readIn(self):
+        """Read in the input file, noting relevant lines"""
+
+        fn_re = re.compile('^F[oua][a-z]{2,4}Name: (.+)$')
+        he_re = re.compile('^Encoding: (\S+)$')
+        hbc_re = re.compile('^BeginChars: (\d+) (\d+)$')
+        st_re = re.compile('^StartChar: (\S+)$')
+        e_re = re.compile('^Encoding: (-?\d+) (-?\d+) (\d+)$')
+        
+        found_chars = False
+        sc_line = -1
+        gname = '';
+        
+        try:
+            for lnum, line in enumerate(self.ifd):
+                if self.tmp_input:
+                    self.tmp_input.write(line)
+                else:
+                    self.lines.append(line)
+                if not found_chars:
+                    m = he_re.match(line)
+                    if (m):
+                        self.base_encoding = m.group(1)
+                        if not first_custenc.get(self.base_encoding):
+                            do_log("Base encoding '" + self.base_encoding + "' not supported, must be Unicode BMP or Unicode Full\n", 0, 1);
+                        else:
+                            do_log("Base encoding '" + self.base_encoding + "' is supported.\n", 2);
+                        continue
+                    m = fn_re.match(line)
+                    if (m):
+                        self.fnames.append(m.group(1))
+                        do_log("Adding font/family/full name '" + m.group(1) + "'\n", 2)
+                        continue
+                    m = hbc_re.match(line)
+                    if (m):
+                        self.glyph_count = int(m.group(2))
+                        self.max_custenc = int(m.group(1))
+                        self.header_encoding_ln = lnum
+                        found_chars = True
+                        do_log("Line " + str(lnum) + ": BeginChars line marks end of SFD headers\n", 2)
+                        continue
+                else:
+                    m = st_re.match(line)
+                    if (m):
+                        gname = m.group(1)
+                        do_log("Reached " + line, 4)
+                        sc_line = lnum
+                        continue
+                    m = e_re.match(line)
+                    if (m):
+                        canon_pair = self.getCanonPair(gname)
+                        if lnum != (sc_line + 1):
+                            raise Exception("Line " + str(lnum) + ": Encoding not next line after StartChar")
+                        cust_enc = int(m.group(1))
+                        uni_enc = int(m.group(2))
+                        gnum = int(m.group(3))
+                        self.ln_to_gnum[lnum] = gnum
+                        self.canon_name_to_gnum[self.getCanonName(canon_pair)] = gnum
+                        ext_dict = {}
+                        if uni_enc > 0:
+                            self.uni_to_gnum[uni_enc] = gnum
+                        else:
+                            self.unenc_dict[gnum] = True
+                            ext_dict = self.noteExtensions(canon_pair[1])
+                        self.gnum_tuple[gnum] = (gname, uni_enc, cust_enc,
+                                                 canon_pair[0], canon_pair[1], ext_dict)
+        except ValueError:
+            do_log("Expected integer on line " + str(lnum) + "\n", 0, 1)
+        except Exception as e:
+            do_log("Unknown error reading SFD line " + str(lnum) + ': ' + str(e), 0, 1)
+        self.uni_list = IntRanges(list(self.uni_to_gnum.keys()))
+
+    def writeOut(self, abs_cust_dict):
+        """Write the output file"""
+
+        differs = False
+        if self.tmp_input:
+            self.tmp_input.seek(0)
+            lines = self.tmp_input
+        else:
+            lines = self.lines
+        for lnum, line in enumerate(lines):
+            gn = self.ln_to_gnum.get(lnum, -1)
+        
+            if lnum == self.header_encoding_ln:
+                oline = "BeginChars: " + str(self.max_custenc) + " " + str(self.glyph_count) + "\n"
+            elif gn != -1 and self.gnum_tuple[gn][1] <= 1:
+                cust_enc = abs_cust_dict[gn]
+                oline = "Encoding: " + str(cust_enc) + " -1 " + str(gn) + "\n"
+                if oline != line:
+                    differs = True
+            else:
+                oline = line
+            if not self.args.check:
+                if verbosity >= 3 and oline != line:
+                    do_log("Output line " + str(lnum) + ": Changing \n   " + line + "to\n   " + oline, 4)
+                self.ofd.write(oline)
+            else:
+                if verbosity >= 3 and oline != line:
+                    do_log("Output line " + str(lnum) + ": would change from \n   " + line + "to\n   " + oline, 4)
+        if self.tmp_input:
+            self.tmp_input.close() # SpooledTemporaryFile cleans itself up on close
+        if not self.args.check:
+            self.ofd.close()
+            if self.args.overwrite and not self.args.output:
+                do_log("Renaming '" + self.ofd.name + "' to '" + self.args.input + "'\n", 1)
+                os.rename(self.ofd.name, self.args.input)
+        elif differs:
+            do_log("Display of unencoded glyphs would change.\n", 0, 3)
+
+    def codePointPairs(self, sec, bnpl, offset):
+        """Add the glyph names corresponding to the unicode codepoints specified in sec, if any"""
+
+        if not sec.get('codepoints') and not sec.get('blocks'):
+            return (bnpl, offset)
+        if offset == -1:
+            offset = 0
+        cp_ranges = IntRanges()
+        if sec.get('codepoints'):
+            cp_ranges.add(sec['codepoints'])
+        if sec.get('blocks'):
+            cp_ranges.add([ uniblock_dict[x.lower()] for x
+                            in comma_delim.split(sec['blocks'])
+                            if uniblock_dict[x.lower()] ])
+        if sec.get('categories'):
+            ucd = unicat_dict(sec['categories'])
+            cp_ranges = IntRanges([ x for x in cp_ranges.ints()
+                                    if ucd.get(unicodedata.category(chr(x)).lower()) ])
+        for uni_off in cp_ranges.offsetIntersect(self.uni_list):
+            for uni_point in range(uni_off[1], uni_off[2]+1):
+                gn = self.uni_to_gnum.get(uni_point, -1)
+                if gn != -1:
+                    bnpl.append((uni_off[0] + uni_point - uni_off[1], self.gnum_tuple[gn][0]))
+        offset += cp_ranges.count()
+        if verbosity >= 3:
+            do_log("Codepoint-based offset pair list: " + str(bnpl) + "\n", 3)
+        return (bnpl, offset)
+
+    def basenamePairs(self, sec, bnpl, offset):
+        """Add the glyph names corresponding to basenames list in sec"""
+
+        if sec.get('basenames'):
+            if offset == -1:
+                offset = 0
+            bnpl.extend(list(enumerate(field_delim.split(sec.get('basenames')), offset)))
+            if len(bnpl) > 0:
+                offset = bnpl[-1][0]+1
+            if verbosity >= 3:
+                do_log("Basename-based offset pair list: " + str(bnpl) + "\n", 3)
+        return (bnpl, offset)
+
+    def regexPairs(self, bregex, nregex, match_ext):
+        """Add any glyphs corresponding to baseregex or nameregex in sec"""
+
+        if bregex and nregex:
+            do_log("Section '" + sec.name + "' has both 'baseregex' and 'nameregex'\n", 0, 1)
+        if nregex:
+            tupidx = 0
+            regstr = nregex
+        else:
+            tupidx = 3
+            regstr = bregex
+
+        bre = re.compile(regstr)
+
+        l = list(enumerate(sorted(( self.getCanonName((y[3], y[4])) for y 
+                                    in ( self.gnum_tuple[x] for x in self.unenc_dict.keys() )
+                                    if bre.match(y[tupidx]) and match_ext.matches(y) ))))
+        if verbosity >= 3:
+            do_log("Nameregex '" if nregex else "Baseregex '" + regstr + "' offset pair list: " + str(l) + "\n", 3)
+        return l
+
+    def pairsByExtension(self, match_ext):
+        """Add unencoded glyphs by extension match"""
+
+        l = list(enumerate(sorted(( self.getCanonName((y[3],y[4])) for y
+                                    in ( self.gnum_tuple[x] for x in self.unenc_dict.keys() )
+                                    if match_ext.matches(y) ))))
+        if verbosity >= 3:
+            do_log("Extension-based offset pair list: " + str(l) + "\n", 3)
+        return l
+
+    def narrowByExtension(self, sec, bntl, match_ext):
+        """
+        Narrow a list of basenames or names pulled from Unicode 
+        codepoints to those that match the specified extensions
+        (or are an exact match)
+        """
+
+        if match_ext.hasext:
+            do_log("Section '" + sec.name + "': 'has_extensions' not compatible with 'basenames' or 'codepoints'/'blocks': can use 'extensions'\n", 0, 1)
+
+        l = [ y for y
+              in ( (x[0], self.getCanonName(self.getCanonPair(x[1] + match_ext.extstr))) for x in bntl )
+              if self.unenc_dict.get(self.canon_name_to_gnum.get(y[1], -2)) ]
+
+        if verbosity >= 3:
+            do_log("Codepoint/basename list narrowed by extension to: " + str(l) + "\n", 3)
+
+        return l
+
+    def getPairs(self, sec):
+        """Return pairs of (offset, canonical glyph name) corresponding to the directives in sec"""
+
+        match_ext = ExtensionMatcher(sec)
+
+        (bnpl, offset) = self.codePointPairs(sec, [], -1)
+        (bnpl, offset) = self.basenamePairs(sec, bnpl, offset)
+        # now offset == -1 means there were no relevant unicode or
+        # basename directives, 0 means no matches were found, and
+        # > 0 means some were found
+
+        bregex = sec.get('baseregex')
+        nregex = sec.get('nameregex')
+        if bregex or nregex:
+            if offset > -1:
+                do_log("Section '" + sec.name + "': cannot combine basenames or codepoints/blocks with regex\n", 0, 1)
+            else:
+                return self.regexPairs(bregex, nregex, match_ext)
+        elif offset == -1:
+            if match_ext.matchingRequested():
+                return self.pairsByExtension(match_ext)
+            else:
+                do_log("Section '" + sec.name + "': insufficient selection directives\n", 0, 1)
+        else:
+            return self.narrowByExtension(sec, bnpl, match_ext)
+
+class ConfigFile:
+    """Represents the contents of a configuration file"""
+
+    def __init__(self, args, fnames):
+        self.args = args
+        try:
+            self.config = configparser.ConfigParser()
+            if args.config:
+                if not os.path.exists(args.config):
+                    raise Exception("Specified configuration file '" + configname + "' not found")
+                else:
+                    path = args.config
+            else:
+                paths = self.__class__.configNames(fnames)
+                for path in paths:
+                    do_log("Checking location '" + path + "' for configuration file\n", 2)
+                    if os.path.isfile(path):
+                        break
+                else:
+                    do_log("Did not find configuration file (checked '" + "', '".join(paths) + "')\n", 0, 1)
+            do_log("Reading configuration from file '" + path + "'\n", 1)
+            self.config.read(path)
+            if 'top' in self.config:
+                do_log("Configuration file has 'top' section\n", 2)
+                self.top = self.config['top']
+            else:
+                do_log("Configuration file does not have 'top' section\n", 2)
+                self.top = {}
+        except Exception as e:
+            do_log("Unknown error reading configuration file: " + str(e), 0, 1) 
+
+    @staticmethod
+    def configNames(fnames):
+        """Returns a list of pathnames that will be checked for configuration contents"""
+
+        dirs = [os.getcwd()]
+        if args.input:
+            ipath = os.path.dirname(args.input)
+            if os.path.exists(ipath) and not os.path.samefile(dirs[0], ipath):
+                dirs.insert(0, ipath)
+        names = [ (x[0] + ' pse.ini').replace(' ', x[1]) for x in itertools.product(fnames,(' ', '_', '-', '')) ]
+        names.append('ff_sfd_pseudoenc.ini')
+        return [ os.path.join(x[0],x[1]) for x in itertools.product(dirs, names) ]
+
+    def sectionsOrder(self, prefix):
+        """Returns sections in the order specified by prefix"""
+
+        has_o = False
+        if self.top.get(prefix + '_order'):
+            snl = field_delim.split(self.top[prefix + '_order'])
+            has_o = True
+        else:
+            snl = [ x for x in self.config.sections() if x != 'top' ]
+        sl = [ self.config[x] for x in snl ]
+        if not has_o:
+            i = 0
+            seenDict = {}
+            while i < len(sl):
+                if seenDict.get(sl[i].name):
+                    i += 1
+                    continue
+                s_off = int(sl[i].get(prefix + '_offset', '0'))
+                seenDict[sl[i].name] = 1
+                if s_off == 0:
+                    i += 1
+                    continue
+                sl.insert(i + s_off, sl.pop(i))
+                if s_off < 0:
+                    i += 1
+        return sl
+   
+    def sectionsPOrder(self):
+        """Returns sections in processing order"""
+
+        return self.sectionsOrder('process')
+
+    def sectionsDOrder(self):
+        """Returns sections in display order"""
+
+        return self.sectionsOrder('display')
+
+    def hierOpt(self, name, sec, default):
+        """Utility for options that can be specified at [top] or section level"""
+
+        # sec can be passed as either object or name
+        if isinstance(sec, str):
+            sec = self.config.get(sec)
+        if sec and sec.get(name):
+            return sec[name]
+        if self.top and self.top.get(name):
+            return self.top[name]
+        return default
+
+    def groupAlign(self, sec = None):
+        """Returns the group alignment for the specified section"""
+
+        return int(self.hierOpt('group_align', sec, 8))
+
+    def compact(self, sec = None):
+        """Returns the boolean compact value for the specified section"""
+
+        return self.hierOpt('compact', sec, 'False').lower() == 'true'
+
+def nextOffset(cur_off, align):
+    return int(math.ceil(cur_off / align)) * align
+
+# Start of script proper
+
+def main(): 
+    sfd = SFDFile(args)
+    sfd.openIn()
+    sfd.readIn()
+    if args.showconfpath:
+        print("Potential config file locations will be checked in this order:")
+        for name in ConfigFile.configNames(sfd.fnames):
+            print("    " + name)
+        sys.exit(0)
+    config = ConfigFile(args, sfd.fnames)
+
+    rel_cust_dict = {}
+
+    # Determine relative offsets within groupings in search order
+    for sec in config.sectionsPOrder():
+        compact = config.compact(sec)
+        do_log("Processing section '" + sec.name + "', compact is " + str(bool(compact)) + "\n", 2)
+        compact_offset = 0
+        offset_dict = {}
+        for (roff, cn) in sfd.getPairs(sec):
+            gn = sfd.canon_name_to_gnum.get(cn, -1)
+            if not sfd.unenc_dict.get(gn):
+                do_log("Warning: Glyph '" + cn + "' specified twice in section '" + sec.name + "'\n", 1)
+                continue
+            sfd.unenc_dict.pop(gn)
+            if compact:
+                offset_dict[gn] = compact_offset
+            else:
+                offset_dict[gn] = roff
+            do_log("Adding offset pair ( " + str(offset_dict[gn]) + ", " + str(gn) + " (" + cn + ") )\n", 4)
+            compact_offset += 1
+        rel_cust_dict[sec.name] = offset_dict
+    
+    cur_offset = first_custenc[sfd.base_encoding]
+    abs_cust_dict = {}
+    
+    # Assign absolute encoding numbers in display order
+    for sec in config.sectionsDOrder():
+        offset_dict = rel_cust_dict[sec.name]
+        ga = config.groupAlign(sec)
+        do_log("Displaying section '" + sec.name + "', group_align is " + str(ga) + "\n", 2)
+        if len(offset_dict) == 0:
+            do_log("Notice: no (unencoded) glyphs found for section '" + sec.name + "'\n", 0)
+            continue
+        udict = {k: v+cur_offset for (k,v) in offset_dict.items()}
+        if verbosity >= 3:
+            do_log("Setting these absolute offset values: " + str(udict) + "\n", 3)
+        abs_cust_dict.update(udict)
+        cur_offset = nextOffset(cur_offset + max(offset_dict.values()) + 1, ga)
+    
+    # Put any additional unencoded glyphs at end
+    for gn in sfd.unenc_dict.keys():
+        do_log("Glyph '" + sfd.gnum_tuple[gn][0] + "' not matched, appending\n", 0)
+        abs_cust_dict[gn] = cur_offset
+        cur_offset += 1
+    
+    # Set the max encoding number for the headers
+    sfd.max_custenc = nextOffset(cur_offset, 1)
+    
+    sfd.openOut()
+    sfd.writeOut(abs_cust_dict)
+
+if __name__ == '__main__':
+    main()
