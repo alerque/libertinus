@@ -1,0 +1,112 @@
+
+lookup onum_sub {
+  lookupflag 0;
+    sub \zero by \zero.taboldstyle ;
+    sub \one by \one.taboldstyle ;
+    sub \two by \two.taboldstyle ;
+    sub \three by \three.taboldstyle ;
+    sub \four by \four.taboldstyle ;
+    sub \five by \five.taboldstyle ;
+    sub \six by \six.taboldstyle ;
+    sub \seven by \seven.taboldstyle ;
+    sub \eight by \eight.taboldstyle ;
+    sub \nine by \nine.taboldstyle ;
+} onum_sub;
+
+lookup lnum_sub {
+  lookupflag 0;
+    sub \zero.taboldstyle by \zero ;
+    sub \one.taboldstyle by \one ;
+    sub \two.taboldstyle by \two ;
+    sub \three.taboldstyle by \three ;
+    sub \four.taboldstyle by \four ;
+    sub \five.taboldstyle by \five ;
+    sub \six.taboldstyle by \six ;
+    sub \seven.taboldstyle by \seven ;
+    sub \eight.taboldstyle by \eight ;
+    sub \nine.taboldstyle by \nine ;
+} lnum_sub;
+
+lookup pnum_sub {
+  lookupflag 0;
+    sub \zero by \zero.fitted ;
+    sub \one by \one.fitted ;
+    sub \two by \two.fitted ;
+    sub \three by \three.fitted ;
+    sub \four by \four.fitted ;
+    sub \five by \five.fitted ;
+    sub \six by \six.fitted ;
+    sub \seven by \seven.fitted ;
+    sub \eight by \eight.fitted ;
+    sub \nine by \nine.fitted ;
+    sub \zero.taboldstyle by \zero.oldstyle ;
+    sub \one.taboldstyle by \one.oldstyle ;
+    sub \two.taboldstyle by \two.oldstyle ;
+    sub \three.taboldstyle by \three.oldstyle ;
+    sub \four.taboldstyle by \four.oldstyle ;
+    sub \five.taboldstyle by \five.oldstyle ;
+    sub \six.taboldstyle by \six.oldstyle ;
+    sub \seven.taboldstyle by \seven.oldstyle ;
+    sub \eight.oldstyle by \eight.fitted ;
+    sub \nine.taboldstyle by \nine.oldstyle ;
+    sub \Euro by \Euro.fitted ;
+    sub \yen by \Yen.fitted ;
+} pnum_sub;
+
+lookup tnum_sub {
+  lookupflag 0;
+    sub \zero.fitted by \zero ;
+    sub \one.fitted by \one ;
+    sub \two.fitted by \two ;
+    sub \three.fitted by \three ;
+    sub \four.fitted by \four ;
+    sub \five.fitted by \five ;
+    sub \six.fitted by \six ;
+    sub \seven.fitted by \seven ;
+    sub \eight.fitted by \eight ;
+    sub \nine.fitted by \nine ;
+    sub \zero.oldstyle by \zero.taboldstyle ;
+    sub \one.oldstyle by \one.taboldstyle ;
+    sub \two.oldstyle by \two.taboldstyle ;
+    sub \three.oldstyle by \three.taboldstyle ;
+    sub \four.oldstyle by \four.taboldstyle ;
+    sub \five.oldstyle by \five.taboldstyle ;
+    sub \six.oldstyle by \six.taboldstyle ;
+    sub \seven.oldstyle by \seven.taboldstyle ;
+    sub \eight.oldstyle by \eight.taboldstyle ;
+    sub \nine.oldstyle by \nine.taboldstyle ;
+    sub \Euro.fitted by \Euro ;
+    sub \Yen.fitted by \yen ;
+} tnum_sub;
+
+lookup zero_sub {
+  lookupflag 0;
+    sub \zero by \zero.slash ;
+    sub \zero.fitted by \zero.slash.fitted ;
+} zero_sub;
+
+lookup case_fig {
+  lookupflag 0;
+    sub \zero.slash by \zero.slash.cap ;
+    sub \zero by \zero.cap ;
+    sub \one by \one.cap ;
+    sub \two by \two.cap ;
+    sub \three by \three.cap ;
+    sub \four by \four.cap ;
+    sub \five by \five.cap ;
+    sub \six by \six.cap ;
+    sub \seven by \seven.cap ;
+    sub \eight by \eight.cap ;
+    sub \nine by \nine.cap ;
+    sub \zero.slash.fitted by \zero.slash.cap.fitted ;
+    sub \zero.fitted by \zero.cap.fitted ;
+    sub \one.fitted by \one.cap.fitted ;
+    sub \two.fitted by \two.cap.fitted ;
+    sub \three.fitted by \three.cap.fitted ;
+    sub \four.fitted by \four.cap.fitted ;
+    sub \five.fitted by \five.cap.fitted ;
+    sub \six.fitted by \six.cap.fitted ;
+    sub \seven.fitted by \seven.cap.fitted ;
+    sub \eight.fitted by \eight.cap.fitted ;
+    sub \nine.fitted by \nine.cap.fitted ;
+} case_fig;

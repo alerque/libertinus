@@ -50,11 +50,14 @@ Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin lookup 13" { "'hlig' Historic 
 Lookup: 4 0 0 "'frac' Diagonal Fractions in Latin lookup 2" { "'frac' Diagonal Fractions in Latin lookup 2"  } ['frac' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'salt' Stylistic alternates" { "'salt' Stylistic alternates 1" ("alt") } ['salt' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss07' Swap 'Eng' forms" { "'ss07' Swap 'Eng' forms-1"  } ['ss07' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'onum' Minuskelziffern" { "'onum' Minuskelziffern 1" ("oldstyle") } ['onum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'lnum' Versalziffern" { "'lnum' Versalziffern 1"  } ['lnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'onum' Minuskelziffern in Latin lookup 3" { "'onum' Minuskelziffern in Latin lookup 3" ("oldstyle") } ['onum' ('latn' <'dflt' > ) ]
-Lookup: 1 0 0 "'pnum' Proportionalziffern in Latin lookup 4" { "'pnum' Proportionalziffern in Latin lookup 4" ("fitted") } ['pnum' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'pnum' Proportionalziffern" { "'pnum' Proportionalziffern 1"  } ['pnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'tnum' Tabellenziffern" { "'tnum' Tabellenziffern 1"  } ['tnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'zero' gestrichene Null" { "'zero' gestrichene Null 1"  } ['zero' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'sinf' Wissenschaftliche Indices in Latin lookup 5" { "'sinf' Wissenschaftliche Indices in Latin lookup 5" ("inferior") } ['sinf' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'sups' Superscript in Latin lookup 6" { "'sups' Superscript in Latin lookup 6" ("superior") } ['sups' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'case' Versalformen" { "'case' Versalformen Figures"  } ['case' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Cyrillic lookup 0" { "'kern' Horizontales Kerning in Cyrillic lookup 0"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1" { "'kern' Horizontales Kerning in Latin lookup 1" [150,15,0] } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Top rechts"  "'mark' Top Punkt"  "'mark' Komb OR"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -222,7 +225,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR" "top_rechts" "'mark' Top rechts"
-BeginChars: 1114328 2270
+BeginChars: 1114352 2294
 
 StartChar: space
 Encoding: 32 32 0
@@ -685,10 +688,12 @@ SplineSet
  370 567 359 572 346 572 c 0
 EndSplineSet
 Kerns2: 12 -4 "'kern' Horizontales Kerning in Latin lookup 1"
+Substitution2: "'case' Versalformen Figures" zero.cap
+Substitution2: "'zero' gestrichene Null 1" zero.slash
+Substitution2: "'pnum' Proportionalziffern 1" zero.fitted
+Substitution2: "'onum' Minuskelziffern 1" zero.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2070
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2080
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" zero.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" zero.oldstyle
 EndChar
 
 StartChar: one
@@ -717,10 +722,11 @@ SplineSet
  413 599 393 518 387 492 c 2
  311 122 l 2
 EndSplineSet
+Substitution2: "'case' Versalformen Figures" one.cap
+Substitution2: "'pnum' Proportionalziffern 1" one.fitted
+Substitution2: "'onum' Minuskelziffern 1" one.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B9
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2081
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" one.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" one.oldstyle
 EndChar
 
 StartChar: two
@@ -756,10 +762,11 @@ SplineSet
  140 422 124 444 124 463 c 0
  126 509 171 556 230 585 c 0
 EndSplineSet
+Substitution2: "'case' Versalformen Figures" two.cap
+Substitution2: "'pnum' Proportionalziffern 1" two.fitted
+Substitution2: "'onum' Minuskelziffern 1" two.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B2
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2082
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" two.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" two.oldstyle
 EndChar
 
 StartChar: three
@@ -795,10 +802,11 @@ SplineSet
  363 397 391 438 391 493 c 0
  391 536 357 564 318 564 c 0
 EndSplineSet
+Substitution2: "'case' Versalformen Figures" three.cap
+Substitution2: "'pnum' Proportionalziffern 1" three.fitted
+Substitution2: "'onum' Minuskelziffern 1" three.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni00B3
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2083
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" three.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" three.oldstyle
 EndChar
 
 StartChar: four
@@ -835,10 +843,11 @@ SplineSet
  385 211 l 1
  470 211 l 2
 EndSplineSet
+Substitution2: "'case' Versalformen Figures" four.cap
+Substitution2: "'pnum' Proportionalziffern 1" four.fitted
+Substitution2: "'onum' Minuskelziffern 1" four.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2074
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2084
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" four.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" four.oldstyle
 EndChar
 
 StartChar: five
@@ -873,10 +882,11 @@ SplineSet
  234 28 263 38 288 64 c 0
  320 96 343 142 343 205 c 0
 EndSplineSet
+Substitution2: "'case' Versalformen Figures" five.cap
+Substitution2: "'pnum' Proportionalziffern 1" five.fitted
+Substitution2: "'onum' Minuskelziffern 1" five.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2075
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2085
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" five.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" five.oldstyle
 EndChar
 
 StartChar: six
@@ -906,10 +916,11 @@ SplineSet
  362 264 339 322 276 322 c 0
  255 322 230 316 185 286 c 1
 EndSplineSet
+Substitution2: "'case' Versalformen Figures" six.cap
+Substitution2: "'pnum' Proportionalziffern 1" six.fitted
+Substitution2: "'onum' Minuskelziffern 1" six.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2076
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2086
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" six.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" six.oldstyle
 EndChar
 
 StartChar: seven
@@ -936,10 +947,11 @@ SplineSet
  253 521 l 2
 EndSplineSet
 Kerns2: 12 -44 "'kern' Horizontales Kerning in Latin lookup 1" 14 -44 "'kern' Horizontales Kerning in Latin lookup 1"
+Substitution2: "'case' Versalformen Figures" seven.cap
+Substitution2: "'pnum' Proportionalziffern 1" seven.fitted
+Substitution2: "'onum' Minuskelziffern 1" seven.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2077
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2087
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" seven.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" seven.oldstyle
 EndChar
 
 StartChar: eight
@@ -980,10 +992,11 @@ SplineSet
  390 414 410 455 410 496 c 0
  410 535 382 574 338 574 c 0
 EndSplineSet
+Substitution2: "'case' Versalformen Figures" eight.cap
+Substitution2: "'pnum' Proportionalziffern 1" eight.fitted
+Substitution2: "'onum' Minuskelziffern 1" eight.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2078
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2088
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" eight.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" eight.oldstyle
 EndChar
 
 StartChar: nine
@@ -1013,10 +1026,11 @@ SplineSet
  206 335 228 278 291 278 c 0
  312 278 337 283 382 313 c 1
 EndSplineSet
+Substitution2: "'case' Versalformen Figures" nine.cap
+Substitution2: "'pnum' Proportionalziffern 1" nine.fitted
+Substitution2: "'onum' Minuskelziffern 1" nine.taboldstyle
 Substitution2: "'sups' Superscript in Latin lookup 6" uni2079
 Substitution2: "'sinf' Wissenschaftliche Indices in Latin lookup 5" uni2089
-Substitution2: "'pnum' Proportionalziffern in Latin lookup 4" nine.fitted
-Substitution2: "'onum' Minuskelziffern in Latin lookup 3" nine.oldstyle
 EndChar
 
 StartChar: colon
@@ -3933,6 +3947,7 @@ SplineSet
  357 172 l 1
  494 172 l 1
 EndSplineSet
+Substitution2: "'pnum' Proportionalziffern 1" Yen.fitted
 EndChar
 
 StartChar: brokenbar
@@ -38815,6 +38830,7 @@ SplineSet
  104.8 288.2 106.8 297.2 109 306 c 1
  78 306 l 1
 EndSplineSet
+Substitution2: "'pnum' Proportionalziffern 1" Euro.fitted
 EndChar
 
 StartChar: uni2100
@@ -48029,6 +48045,9 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 16 48 N 1 0 0 1 6 0 2
+Substitution2: "'case' Versalformen Figures" zero.cap.fitted
+Substitution2: "'zero' gestrichene Null 1" zero.slash.fitted
+Substitution2: "'tnum' Tabellenziffern 1" zero
 EndChar
 
 StartChar: one.fitted
@@ -48039,6 +48058,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 17 49 N 1 0 0 1 -32 0 2
+Substitution2: "'case' Versalformen Figures" one.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" one
 EndChar
 
 StartChar: two.fitted
@@ -48049,6 +48070,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 18 50 N 1 0 0 1 7 0 2
+Substitution2: "'case' Versalformen Figures" two.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" two
 EndChar
 
 StartChar: three.fitted
@@ -48059,6 +48082,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 19 51 N 1 0 0 1 -5 0 2
+Substitution2: "'case' Versalformen Figures" three.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" three
 EndChar
 
 StartChar: four.fitted
@@ -48069,6 +48094,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 20 52 N 1 0 0 1 10 0 2
+Substitution2: "'case' Versalformen Figures" four.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" four
 EndChar
 
 StartChar: five.fitted
@@ -48079,6 +48106,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 21 53 N 1 0 0 1 -2 0 2
+Substitution2: "'case' Versalformen Figures" five.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" five
 EndChar
 
 StartChar: six.fitted
@@ -48089,6 +48118,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 22 54 N 1 0 0 1 8 0 2
+Substitution2: "'case' Versalformen Figures" six.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" six
 EndChar
 
 StartChar: seven.fitted
@@ -48099,6 +48130,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 23 55 N 1 0 0 1 -18 0 2
+Substitution2: "'case' Versalformen Figures" seven.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" seven
 EndChar
 
 StartChar: eight.fitted
@@ -48109,6 +48142,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 24 56 N 1 0 0 1 2 0 2
+Substitution2: "'case' Versalformen Figures" eight.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" eight
 EndChar
 
 StartChar: nine.fitted
@@ -48119,6 +48154,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 25 57 N 1 0 0 1 0 0 2
+Substitution2: "'case' Versalformen Figures" nine.cap.fitted
+Substitution2: "'tnum' Tabellenziffern 1" nine
 EndChar
 
 StartChar: uniE01F
@@ -48169,7 +48206,7 @@ SplineSet
  75.5 183.5 77.3 201.9 81 221 c 0
  104 340 213 444 337 444 c 0
 EndSplineSet
-Substitution2: "'lnum' Versalziffern 1" zero.fitted
+Substitution2: "'tnum' Tabellenziffern 1" zero.taboldstyle
 EndChar
 
 StartChar: one.oldstyle
@@ -48202,7 +48239,7 @@ SplineSet
  51.8 16.1 55.2 27.9 60 32 c 1
  102 35 158 35 167 81 c 2
 EndSplineSet
-Substitution2: "'lnum' Versalziffern 1" one.fitted
+Substitution2: "'tnum' Tabellenziffern 1" one.taboldstyle
 EndChar
 
 StartChar: two.oldstyle
@@ -48233,7 +48270,7 @@ SplineSet
  206 75 l 1
  314 82 l 2
 EndSplineSet
-Substitution2: "'lnum' Versalziffern 1" two.fitted
+Substitution2: "'tnum' Tabellenziffern 1" two.taboldstyle
 EndChar
 
 StartChar: three.oldstyle
@@ -48244,7 +48281,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 19 51 N 1 0 0 1 -36 -167 2
-Substitution2: "'lnum' Versalziffern 1" three.fitted
+Substitution2: "'tnum' Tabellenziffern 1" three.taboldstyle
 EndChar
 
 StartChar: four.oldstyle
@@ -48255,7 +48292,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 20 52 N 1 0 0 1 -19 -169 2
-Substitution2: "'lnum' Versalziffern 1" four.fitted
+Substitution2: "'tnum' Tabellenziffern 1" four.taboldstyle
 EndChar
 
 StartChar: five.oldstyle
@@ -48266,7 +48303,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 21 53 N 1 0 0 1 -49 -170 2
-Substitution2: "'lnum' Versalziffern 1" five.fitted
+Substitution2: "'tnum' Tabellenziffern 1" five.taboldstyle
 EndChar
 
 StartChar: six.oldstyle
@@ -48277,7 +48314,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 22 54 N 1 0 0 1 6 0 2
-Substitution2: "'lnum' Versalziffern 1" six.fitted
+Substitution2: "'tnum' Tabellenziffern 1" six.taboldstyle
 EndChar
 
 StartChar: seven.oldstyle
@@ -48288,7 +48325,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 23 55 N 1 0 0 1 -47 -159 2
-Substitution2: "'lnum' Versalziffern 1" seven.fitted
+Substitution2: "'tnum' Tabellenziffern 1" seven.taboldstyle
 EndChar
 
 StartChar: eight.oldstyle
@@ -48299,7 +48336,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 24 56 N 1 0 0 1 11 -1 2
-Substitution2: "'lnum' Versalziffern 1" eight.fitted
+Substitution2: "'tnum' Tabellenziffern 1" eight.taboldstyle
+Substitution2: "'pnum' Proportionalziffern 1" eight.fitted
 EndChar
 
 StartChar: nine.oldstyle
@@ -48310,7 +48348,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 25 57 N 1 0 0 1 -29 -154 2
-Substitution2: "'lnum' Versalziffern 1" nine.fitted
+Substitution2: "'tnum' Tabellenziffern 1" nine.taboldstyle
 EndChar
 
 StartChar: Adieresis.alt
@@ -48850,6 +48888,7 @@ SplineSet
  118 308 l 1
  158 359 l 1
 EndSplineSet
+Substitution2: "'tnum' Tabellenziffern 1" Euro
 EndChar
 
 StartChar: Yen.fitted
@@ -48995,6 +49034,7 @@ SplineSet
  692 553 l 1
  692 552 l 1
 EndSplineSet
+Substitution2: "'tnum' Tabellenziffern 1" yen
 EndChar
 
 StartChar: t_z
@@ -67123,42 +67163,16 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: zero.slashfitted
+StartChar: zero.slash.fitted
 Encoding: 1114243 -1 2179
-Width: 480
+Width: 470
+UnlinkRmOvrlpSave: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-354.3 566 m 0
- 321.3 566 261.3 525 214.3 284 c 0
- 209.5 258.9 204.8 226.3 202.2 193 c 1
- 401.9 489.3 l 1
- 398.1 520.5 389.8 540.6 380.3 551 c 0
- 372.3 560 362.3 566 354.3 566 c 0
-403.4 423.3 m 1
- 200.8 122 l 1
- 203.6 72.1 216.4 33 248.3 33 c 0
- 260.3 33 296.3 44 329.3 122 c 1
- 351.3 171 372.3 231 390.3 323 c 0
- 397.8 361.5 401.9 394.8 403.4 423.3 c 1
-481.3 539.1 m 2
- 481.3 539 l 0
- 499.8 501.5 508.7 456.7 508.7 406 c 0
- 508.7 374.3 505.2 340.2 498.3 304 c 0
- 452.3 69 319.3 -10 239.3 -10 c 0
- 199.2 -10 166.8 6.8 142.8 35.6 c 1
- 100 -28 l 1
- 64 -12 l 1
- 120.2 71.3 l 1
- 103 106.9 94.1 151.9 94.1 202 c 0
- 94.1 231.2 97.1 262.2 103.3 294 c 0
- 141.3 491 260.3 610 363.3 610 c 0
- 398.2 610 431.6 593.2 456.2 569.9 c 1
- 496 629 l 1
- 531 613 l 1
- 481.3 539.1 l 2
-EndSplineSet
+Refer: 2293 -1 N 1 0 0 1 0 4 2
+Refer: 1725 -1 N 1 0 0 1 0 0 2
+Substitution2: "'case' Versalformen Figures" zero.slash.cap.fitted
 EndChar
 
 StartChar: dcroat.sc
@@ -68143,39 +68157,13 @@ EndChar
 StartChar: zero.slash
 Encoding: 1114291 -1 2232
 Width: 470
+UnlinkRmOvrlpSave: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-346 566 m 0
- 313 566 253 525 206 284 c 0
- 199.8 251.6 193.7 206.8 192.2 164 c 1
- 389.7 511.6 l 1
- 385.3 530.4 379 543.4 372 551 c 0
- 364 560 354 566 346 566 c 0
-395.8 445 m 1
- 195.6 92.6 l 1
- 201.4 57.5 214.7 33 240 33 c 0
- 252 33 288 44 321 122 c 1
- 343 171 364 231 382 323 c 0
- 391.5 371.8 395.5 412.2 395.8 445 c 1
-459.7 557.5 m 1
- 464.7 551.6 469.2 545.3 473 539 c 0
- 491.5 501.5 500.4 456.7 500.4 406 c 0
- 500.4 374.3 496.9 340.2 490 304 c 0
- 444 69 311 -10 231 -10 c 0
- 200.4 -10 174.1 -0.200001 152.8 17.3 c 1
- 118 -44 l 1
- 82 -30 l 1
- 125.8 47.1 l 1
- 99.6 85.2 85.7 139.7 85.7 202 c 0
- 85.7 231.2 88.8 262.2 95 294 c 0
- 133 491 252 610 355 610 c 0
- 382.4 610 408.8 599.7 430.8 584 c 1
- 462 639 l 1
- 498 625 l 1
- 459.7 557.5 l 1
-EndSplineSet
+Refer: 2293 -1 N 1 0 0 1 -6 5 2
+Refer: 16 48 N 1 0 0 1 0 0 2
+Substitution2: "'case' Versalformen Figures" zero.slash.cap
 EndChar
 
 StartChar: uni021B.sc
@@ -68627,6 +68615,8 @@ SplineSet
  132 -10 52 74 81 221 c 0
  106 352 223 444 332 444 c 0
 EndSplineSet
+Substitution2: "'pnum' Proportionalziffern 1" zero.oldstyle
+Substitution2: "'lnum' Versalziffern 1" zero
 EndChar
 
 StartChar: one.taboldstyle
@@ -68636,6 +68626,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 1737 -1 N 1 0 0 1 47 0 2
+Substitution2: "'pnum' Proportionalziffern 1" one.oldstyle
+Substitution2: "'lnum' Versalziffern 1" one
 EndChar
 
 StartChar: two.taboldstyle
@@ -68645,6 +68637,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 1738 -1 N 1 0 0 1 -11 0 2
+Substitution2: "'pnum' Proportionalziffern 1" two.oldstyle
+Substitution2: "'lnum' Versalziffern 1" two
 EndChar
 
 StartChar: three.taboldstyle
@@ -68654,6 +68648,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 19 51 N 1 0 0 1 -40 -167 2
+Substitution2: "'pnum' Proportionalziffern 1" three.oldstyle
+Substitution2: "'lnum' Versalziffern 1" three
 EndChar
 
 StartChar: four.taboldstyle
@@ -68663,6 +68659,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 20 52 N 1 0 0 1 -17 -169 2
+Substitution2: "'pnum' Proportionalziffern 1" four.oldstyle
+Substitution2: "'lnum' Versalziffern 1" four
 EndChar
 
 StartChar: five.taboldstyle
@@ -68672,6 +68670,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 21 53 N 1 0 0 1 -35 -170 2
+Substitution2: "'pnum' Proportionalziffern 1" five.oldstyle
+Substitution2: "'lnum' Versalziffern 1" five
 EndChar
 
 StartChar: six.taboldstyle
@@ -68681,6 +68681,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 22 54 N 1 0 0 1 13 0 2
+Substitution2: "'pnum' Proportionalziffern 1" six.oldstyle
+Substitution2: "'lnum' Versalziffern 1" six
 EndChar
 
 StartChar: seven.taboldstyle
@@ -68690,6 +68692,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 23 55 N 1 0 0 1 -24 -159 2
+Substitution2: "'pnum' Proportionalziffern 1" seven.oldstyle
+Substitution2: "'lnum' Versalziffern 1" seven
 EndChar
 
 StartChar: eight.taboldstyle
@@ -68699,6 +68703,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 24 56 N 1 0 0 1 5 -1 2
+Substitution2: "'lnum' Versalziffern 1" eight
 EndChar
 
 StartChar: nine.taboldstyle
@@ -68708,6 +68713,8 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 25 57 N 1 0 0 1 -12 -154 2
+Substitution2: "'pnum' Proportionalziffern 1" nine.oldstyle
+Substitution2: "'lnum' Versalziffern 1" nine
 EndChar
 
 StartChar: uniE01A
@@ -69606,6 +69613,477 @@ SplineSet
  156 381 131 381 119 381 c 1
  128 417 l 1
  165 421 186 431 193 461 c 1
+EndSplineSet
+EndChar
+
+StartChar: zero.slash.cap
+Encoding: 1114328 -1 2270
+Width: 507
+VWidth: 1077
+UnlinkRmOvrlpSave: 1
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2292 -1 N 1 0 0 1 18 27 2
+Refer: 2271 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: zero.cap
+Encoding: 1114329 -1 2271
+Width: 507
+VWidth: 1077
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+240 -10 m 0
+ 130 -10 85 91 85 210 c 0
+ 85 385 167 537 248 602 c 0
+ 289 639 336 658 381 658 c 0
+ 477 658 539 582 539 449 c 0
+ 539 309 480 167 427 99 c 0
+ 367 20 293 -10 240 -10 c 0
+373 619 m 0
+ 351 619 324 607 295 560 c 0
+ 257 502 186 293 186 140 c 0
+ 186 79 202 29 250 29 c 0
+ 273 29 318 47 356 136 c 0
+ 385 203 433 391 433 501 c 0
+ 433 554 423 587 408 603 c 0
+ 398 614 387 619 373 619 c 0
+EndSplineSet
+EndChar
+
+StartChar: one.cap
+Encoding: 1114330 -1 2272
+Width: 508
+VWidth: 1078
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+338 129 m 2
+ 320 39 354 34 419 32 c 1
+ 425 26 422 4 412 -2 c 1
+ 353 -1 307 0 262 0 c 0
+ 212 0 127 -2 100 -2 c 1
+ 94 4 98 26 108 32 c 1
+ 175 34 216 39 234 129 c 2
+ 303 477 l 0
+ 306 494 308 504 308 514 c 0
+ 308 529 303 537 294 537 c 0
+ 277 537 234 532 188 514 c 1
+ 180 523 177 538 178 551 c 1
+ 272 584 341 613 397 641 c 0
+ 415 650 428 654 438 657 c 0
+ 444 658 449 655 448 646 c 0
+ 448 646 426 559 420 531 c 2
+ 338 129 l 2
+EndSplineSet
+EndChar
+
+StartChar: two.cap
+Encoding: 1114331 -1 2273
+Width: 507
+VWidth: 1078
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+248 631 m 0
+ 283 647 317 658 363 658 c 0
+ 441 658 526 616 526 525 c 0
+ 526 427 452 361 352 271 c 1
+ 261 192 l 2
+ 238 172 186 124 170 85 c 1
+ 339 85 l 2
+ 381 85 397 100 429 169 c 1
+ 442 170 454 166 463 160 c 1
+ 453 129 426 48 403 -1 c 1
+ 403 -1 347 0 332 0 c 2
+ 115 0 l 2
+ 99 0 42 -1 42 -1 c 1
+ 42 12 46 30 52 44 c 1
+ 78 81 124 131 216 219 c 2
+ 305 304 l 2
+ 369 365 414 429 414 513 c 0
+ 414 577 369 610 330 610 c 0
+ 266 610 239 579 233 554 c 0
+ 232 548 233 539 233 533 c 0
+ 233 520 237 507 233 494 c 0
+ 227 469 201 455 177 455 c 0
+ 151 455 134 479 134 499 c 0
+ 136 549 184 600 248 631 c 0
+EndSplineSet
+EndChar
+
+StartChar: three.cap
+Encoding: 1114332 -1 2274
+Width: 507
+VWidth: 1077
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+343 610 m 0
+ 312 610 256 596 245 542 c 0
+ 240 514 221 477 187 477 c 0
+ 167 477 152 489 152 511 c 0
+ 152 535 172 564 204 591 c 0
+ 242 622 299 658 378 658 c 0
+ 472 658 517 592 517 546 c 0
+ 517 481 484 434 391 380 c 1
+ 457 361 499 321 499 240 c 0
+ 499 170 467 114 421 68 c 0
+ 365 12 286 -10 210 -10 c 0
+ 165 -10 105 4 75 23 c 0
+ 61 32 53 43 53 57 c 0
+ 53 81 76 106 103 106 c 0
+ 135 106 148 81 161 63 c 0
+ 172 47 195 27 231 27 c 0
+ 261 27 306 43 340 82 c 0
+ 369 115 391 153 391 214 c 0
+ 391 297 329 327 281 327 c 0
+ 266 327 251 326 232 324 c 1
+ 235 360 l 1
+ 267 364 301 378 332 395 c 0
+ 391 428 421 474 421 533 c 0
+ 421 579 385 610 343 610 c 0
+EndSplineSet
+EndChar
+
+StartChar: four.cap
+Encoding: 1114333 -1 2275
+Width: 507
+VWidth: 1078
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+376 542 m 1
+ 330 477 158 277 108 228 c 1
+ 311 228 l 1
+ 376 542 l 1
+506 228 m 2
+ 516 228 520 223 519 214 c 0
+ 517 200 496 179 482 179 c 2
+ 404 179 l 1
+ 389 105 l 2
+ 375 34 405 33 457 30 c 1
+ 463 24 460 4 450 -2 c 1
+ 393 -1 358 0 318 0 c 0
+ 275 0 192 -2 176 -2 c 1
+ 170 4 174 24 183 30 c 1
+ 234 32 273 34 287 105 c 2
+ 305 179 l 1
+ 101 179 l 0
+ 83 179 77 183 73 188 c 0
+ 65 197 55 217 57 227 c 1
+ 122 290 355 554 420 649 c 1
+ 422 651 447 658 452 658 c 2
+ 503 658 l 1
+ 501 650 484 574 478 543 c 2
+ 414 228 l 1
+ 506 228 l 2
+EndSplineSet
+EndChar
+
+StartChar: five.cap
+Encoding: 1114334 -1 2276
+Width: 507
+VWidth: 1077
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+369 222 m 0
+ 369 290 337 336 287 344 c 0
+ 251 349 190 352 142 343 c 1
+ 138 349 l 1
+ 238 655 l 1
+ 284 652 317 647 357 647 c 0
+ 414 647 465 651 533 660 c 1
+ 545 651 l 1
+ 512 571 l 1
+ 459 566 432 563 399 563 c 0
+ 358 563 298 567 262 571 c 1
+ 254 554 221 450 211 422 c 1
+ 237 424 287 422 325 417 c 0
+ 429 404 478 322 478 242 c 0
+ 478 159 445 106 390 55 c 0
+ 343 12 274 -10 207 -10 c 0
+ 161 -10 107 -1 76 21 c 0
+ 60 32 51 47 51 62 c 0
+ 51 87 71 112 101 112 c 0
+ 131 112 148 91 160 71 c 0
+ 172 49 193 29 221 29 c 0
+ 252 29 283 41 310 69 c 0
+ 344 103 369 154 369 222 c 0
+EndSplineSet
+EndChar
+
+StartChar: six.cap
+Encoding: 1114335 -1 2277
+Width: 507
+VWidth: 1075
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+541 640 m 1
+ 469 623 401 588 334 533 c 0
+ 281 489 236 421 211 346 c 1
+ 250 372 302 391 334 392 c 0
+ 470 391 499 308 499 245 c 0
+ 499 183 471 111 418 59 c 0
+ 376 19 315 -10 244 -10 c 0
+ 162 -10 74 42 74 188 c 0
+ 74 274 117 424 241 536 c 0
+ 327 610 424 656 536 672 c 1
+ 540 664 542 652 541 640 c 1
+201 309 m 1
+ 189 275 178 213 178 160 c 0
+ 178 61 232 27 265 27 c 0
+ 293 27 325 47 348 82 c 0
+ 372 117 390 179 390 231 c 0
+ 390 285 367 348 299 348 c 0
+ 276 348 249 341 201 309 c 1
+EndSplineSet
+EndChar
+
+StartChar: seven.cap
+Encoding: 1114336 -1 2278
+Width: 507
+VWidth: 1076
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+271 562 m 2
+ 227 562 209 546 178 476 c 1
+ 169 475 158 476 149 480 c 1
+ 164 538 180 606 192 657 c 1
+ 192 660 200 660 203 658 c 0
+ 213 654 215 647 247 647 c 2
+ 500 647 l 2
+ 519 647 570 652 580 654 c 1
+ 589 643 l 1
+ 407 349 317 177 219 -6 c 1
+ 128 -12 l 1
+ 123 -2 l 1
+ 231 158 376 382 485 562 c 1
+ 271 562 l 2
+EndSplineSet
+EndChar
+
+StartChar: eight.cap
+Encoding: 1114337 -1 2279
+Width: 507
+VWidth: 1077
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+250 26 m 0
+ 283 26 317 36 344 65 c 0
+ 369 91 389 137 389 189 c 0
+ 389 226 369 258 324 290 c 2
+ 283 320 l 1
+ 199 266 156 202 156 127 c 0
+ 156 61 207 26 250 26 c 0
+475 429 m 0
+ 450 406 419 387 385 370 c 1
+ 431 338 l 2
+ 473 309 490 264 490 218 c 0
+ 490 146 460 90 406 46 c 0
+ 364 12 307 -10 239 -10 c 0
+ 142 -10 61 34 61 126 c 0
+ 61 182 90 228 128 262 c 0
+ 161 294 202 318 250 343 c 1
+ 229 358 l 2
+ 179 395 156 430 156 472 c 0
+ 156 526 184 572 228 608 c 0
+ 265 638 315 658 377 658 c 0
+ 475 658 531 599 531 537 c 0
+ 531 489 511 460 475 429 c 0
+364 621 m 0
+ 335 621 313 614 297 600 c 0
+ 271 577 258 538 258 506 c 0
+ 258 477 267 447 315 417 c 2
+ 349 395 l 1
+ 420 447 442 491 442 535 c 0
+ 442 577 411 621 364 621 c 0
+EndSplineSet
+EndChar
+
+StartChar: nine.cap
+Encoding: 1114338 -1 2280
+Width: 507
+VWidth: 1076
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+71 7 m 1
+ 143 24 211 58 277 114 c 0
+ 330 159 376 227 401 301 c 1
+ 362 276 309 257 277 255 c 0
+ 141 257 113 340 113 403 c 0
+ 113 464 141 536 194 588 c 0
+ 236 629 297 658 368 658 c 0
+ 451 658 538 606 538 460 c 0
+ 538 374 495 223 371 112 c 0
+ 285 37 188 -9 76 -24 c 1
+ 71 -16 70 -4 71 7 c 1
+411 338 m 1
+ 423 373 433 435 433 488 c 0
+ 433 586 380 621 347 621 c 0
+ 319 621 286 600 263 566 c 0
+ 239 531 223 468 223 416 c 0
+ 223 362 245 300 313 300 c 0
+ 336 300 363 306 411 338 c 1
+EndSplineSet
+EndChar
+
+StartChar: zero.slash.cap.fitted
+Encoding: 1114339 -1 2281
+Width: 506
+VWidth: 1077
+UnlinkRmOvrlpSave: 1
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2292 -1 N 1 0 0 1 23 27 2
+Refer: 2282 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: zero.cap.fitted
+Encoding: 1114340 -1 2282
+Width: 506
+VWidth: 1077
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2271 -1 N 1 0 0 1 5 0 2
+EndChar
+
+StartChar: one.cap.fitted
+Encoding: 1114341 -1 2283
+Width: 394
+VWidth: 1078
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2272 -1 N 1 0 0 1 -39 0 2
+EndChar
+
+StartChar: two.cap.fitted
+Encoding: 1114342 -1 2284
+Width: 496
+VWidth: 1078
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2273 -1 N 1 0 0 1 6 0 2
+EndChar
+
+StartChar: three.cap.fitted
+Encoding: 1114343 -1 2285
+Width: 490
+VWidth: 1077
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2274 -1 N 1 0 0 1 -7 0 2
+EndChar
+
+StartChar: four.cap.fitted
+Encoding: 1114344 -1 2286
+Width: 529
+VWidth: 1078
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2275 -1 N 1 0 0 1 12 0 2
+EndChar
+
+StartChar: five.cap.fitted
+Encoding: 1114345 -1 2287
+Width: 479
+VWidth: 1077
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2276 -1 N 1 0 0 1 -4 0 2
+EndChar
+
+StartChar: six.cap.fitted
+Encoding: 1114346 -1 2288
+Width: 499
+VWidth: 1075
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2277 -1 N 1 0 0 1 6 0 2
+EndChar
+
+StartChar: seven.cap.fitted
+Encoding: 1114347 -1 2289
+Width: 454
+VWidth: 1076
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2278 -1 N 1 0 0 1 -23 0 2
+EndChar
+
+StartChar: eight.cap.fitted
+Encoding: 1114348 -1 2290
+Width: 484
+VWidth: 1077
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2279 -1 N 1 0 0 1 1 0 2
+EndChar
+
+StartChar: nine.cap.fitted
+Encoding: 1114349 -1 2291
+Width: 492
+VWidth: 1076
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2280 -1 N 1 0 0 1 -4 0 2
+EndChar
+
+StartChar: zslash.cap.util
+Encoding: 1114350 -1 2292
+Width: 470
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+526.201171875 642.254882812 m 1
+ 91.8837890625 -63.798828125 l 1
+ 54.798828125 -45.2548828125 l 1
+ 489.116210938 660.798828125 l 1
+ 526.201171875 642.254882812 l 1
+EndSplineSet
+EndChar
+
+StartChar: zslash.util
+Encoding: 1114351 -1 2293
+Width: 470
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+509.268554688 617.559570312 m 1
+ 106.15234375 -37.771484375 l 1
+ 71.7314453125 -20.5595703125 l 1
+ 474.84765625 634.771484375 l 1
+ 509.268554688 617.559570312 l 1
 EndSplineSet
 EndChar
 EndChars
