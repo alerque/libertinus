@@ -50,7 +50,7 @@ After modifying the SFD files, they should be normalized with:
 
 (Make sure to save a copy of the SFD files before running this tool. The
 simplest way is to commit the SFD files, normalize, check the diffs and verify
-they are OK, then `git commit --ammend` the changes).
+they are OK, then `git commit --amend` the changes).
 
 We keep the generated fonts under version control, so the last step is to run
 `make` and commit the modified sources and the generated fonts.
