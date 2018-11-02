@@ -21,6 +21,8 @@ The family consists of:
 Libertinus fonts are available under the terms of the Open Font License version
 1.1.
 
+A zip file containing the font files can be downloaded from the "Releases" page of the project (you must be logged in to github to see the "Releases" tab).
+
 Building
 --------
 To build the fonts, you need GNU Make, [FontForge][1] with Python support, and
