@@ -4,6 +4,7 @@
 # (c) 2004, 2005 Stepan Roh (PUBLIC DOMAIN)
 # (c) 2009 Alexey Kryukov
 # (c) 2018 Khaled Hosny
+# (c) 2018 Skef Iterum
 #
 # usage: ./sfdnormalize.py sfd_file(s)
 #  will rewrites files in place
@@ -32,6 +33,8 @@ from collections import OrderedDict
 
 import sys, re
 
+fealines_tok = '__X_FEALINES_X__'
+
 FONT_RE = re.compile(r"^SplineFontDB:\s(\d+\.?\d*)")
 DROP_RE = re.compile(r"^(WinInfo|DisplaySize|AntiAlias|FitToEm|Compacted|GenTags|ModificationTime|DupEnc)")
 SPLINESET_RE = re.compile(r"^(Fore|Back|SplineSet|Grid)\s*$")
@@ -45,6 +48,10 @@ SELECTED_POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)$")
 SELECTED_REF_RE = re.compile(r"(-?\d+\s+)S(\s+-?\d+)")
 OTFFEATNAME_RE = re.compile(r"OtfFeatName:\s*'(....)'\s*(\d+)\s*(.*)$")
 HINTS_RE =  re.compile(r"^[HVD]Stem2?: ")
+FEASUBPOS_RE = re.compile(r"^(Position|PairPos|LCarets|Ligature|Substitution|MultipleSubs|AlternateSubs)2?:")
+
+fealine_order = {'Position': 1, 'PairPos': 2, 'LCarets': 3, 'Ligature': 4,
+                 'Substitution': 5, 'MultipleSubs': 6, 'AlternateSubs': 7 }
 
 # The following class is used to emulate variable assignment in
 # conditions: while testing if a pattern corresponds to a specific
@@ -132,6 +139,10 @@ def process_sfd_file(sfdname, outname):
                         gl = SELECTED_REF_RE.sub(r"\1N\2", gl)
                     elif gl.endswith(" [ddx={} ddy={} ddh={} ddv={}]\n"):
                         gl = gl.replace(" [ddx={} ddy={} ddh={} ddv={}]", "")
+                    elif gl == fealines_tok:
+                        for (flt, fll) in sorted(glyph['fealines']):
+                            out.write(fll)
+                        continue
                     elif proc.test(HINTS_RE, gl):
                         continue
                     elif gl.startswith("Validated:"):
@@ -143,7 +154,7 @@ def process_sfd_file(sfdname, outname):
 
         elif proc.test(STARTCHAR_RE, fl):
             curglyph = proc.match().group(1)
-            glyph = { 'name' : curglyph, 'lines' : [] }
+            glyph = { 'name' : curglyph, 'lines' : [] , 'fealines': [] }
 
             while curglyph in glyphs:
                 curglyph = curglyph + '#'
@@ -161,6 +172,12 @@ def process_sfd_file(sfdname, outname):
             glyphs[curglyph]['dec_enc'] = dec_enc;
             glyphs[curglyph]['unicode'] = unicode_enc;
             glyphs[curglyph]['gid'] = gid;
+
+        elif proc.test(FEASUBPOS_RE, fl):
+            fea_type = proc.match().group(1)
+            if len(glyphs[curglyph]['fealines']) == 0:
+                glyphs[curglyph]['lines'].append(fealines_tok)
+            glyphs[curglyph]['fealines'].append((fealine_order.get(fea_type, 0), fl))
 
         elif fl.startswith("EndChar"):
             curglyph = '';
