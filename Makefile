@@ -54,9 +54,10 @@ check: $(LNT) $(CHK) $(DUP)
 %.fea:
 	@if test ! -f $@; then touch $@; fi
 
-%.otf: $(SRC)/%.sfd $(FEA)/%.fea $(BUILD)
+# %.otf: $(SRC)/%.sfd $(FEA)/%.fea $(BUILD)
+%.otf: $(SRC)/%.sfd $(BUILD)
 	@echo "   OTF	$@"
-	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
+	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< # -f $(FEA)/$(@:%.otf=%.fea)
 
 %.nrm: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"

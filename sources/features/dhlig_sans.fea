@@ -1,0 +1,11 @@
+lookup hlig_sub {
+  lookupflag 0;
+    sub \s \t  by \s_t;
+    sub \c \t  by \c_t;
+} hlig_sub;
+
+lookup dlig_sub {
+  lookupflag 0;
+    sub \t \t  by \t_t;
+    sub \t \z  by \t_z;
+} dlig_sub;

@@ -1,0 +1,16 @@
+lookup case_sub {
+  lookupflag 0;
+    sub \parenleft by \parenleft.sc ;
+    sub \parenright by \parenright.sc ;
+    sub \hyphen by \hyphen.cap ;
+    sub \bracketleft by \bracketleft.sc ;
+    sub \bracketright by \bracketright.sc ;
+    sub \braceleft by \braceleft.sc ;
+    sub \braceright by \braceright.sc ;
+    sub \exclamdown by \exclamdown.sc ;
+    sub \guillemotleft by \guillemotleft.sc ;
+    sub \guillemotright by \guillemotright.sc ;
+    sub \questiondown by \questiondown.sc ;
+    sub \guilsinglleft by \guilsinglleft.sc ;
+    sub \guilsinglright by \guilsinglright.sc ;
+} case_sub;

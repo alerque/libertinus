@@ -1,0 +1,60 @@
+lookup ss01_sub {
+  lookupflag 0;
+    sub \Adieresis by \Adieresis.alt ;
+    sub \Odieresis by \Odieresis.alt ;
+    sub \Udieresis by \Udieresis.alt ;
+} ss01_sub;
+
+lookup ss02_sub {
+  lookupflag 0;
+    sub \J by \J.alt ;
+    sub \K by \K.alt ;
+    sub \R by \R.alt ;
+} ss02_sub;
+
+lookup ss03_sub {
+  lookupflag 0;
+    sub \germandbls by \germandbls.ss03 ;
+    sub \uni1E9E by \uni1E9E.alt ;
+} ss03_sub;
+
+lookup ss04_sub {
+  lookupflag 0;
+    sub \uni1E9E by \uni1E9E.alt ;
+} ss04_sub;
+
+lookup ss05_sub {
+  lookupflag 0;
+    sub \W by \W.alt ;
+} ss05_sub;
+
+lookup ss06_sub {
+  lookupflag 0;
+    sub \ampersand by \ampersand.alt ;
+} ss06_sub;
+
+lookup ss07_sub {
+  lookupflag 0;
+    sub \Eng by \Eng.UCStyle ;
+    sub \Eng.UCStyle by \Eng ;
+} ss07_sub;
+
+lookup salt_sub {
+  lookupflag 0;
+    sub \h by \h.alt ;
+    sub \y by \y.alt ;
+    sub \J by \J.alt ;
+    sub \K by \K.alt ;
+    sub \Q by \Q.u ;
+    sub \R by \R.alt ;
+    sub \W by \W.alt ;
+    sub \Eng by \Eng.UCStyle ;
+    sub \uni1E9E by \uni1E9E.alt ;
+    sub \germandbls from [\germandbls.ss03 \germandbls.alt] ;
+    sub \beta by \uni03D0 ;
+    sub \theta by \theta1 ;
+    sub \kappa by \uni03F0 ;
+    sub \phi by \phi1 ;
+    sub \uni0431 by \uni0431.ital ;
+    sub \ampersand by \ampersand.alt ;
+} salt_sub;

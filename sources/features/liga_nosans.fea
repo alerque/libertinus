@@ -1,0 +1,41 @@
+lookup liga_sub {
+ #sub f f h by f_f_h;
+  sub f f i by f_f_i;
+  sub f f j by f_f_j;
+ #sub f f k by f_f_k;
+  sub f f l by f_f_l;
+  sub longs longs i by longs_longs_i;
+  sub longs longs j by longs_longs_j;
+  sub longs longs l by longs_longs_l;
+  sub longs longs by longs_longs;
+ #sub longs h by longs_h;
+  sub longs i by longs_i;
+  sub longs j by longs_j;
+  sub longs l by longs_l;
+ #sub longs s by longs_s;
+  sub longs t by longs_t;
+  sub f f by f_f;
+  sub f f.short by f_f.short;
+ #sub f h by f_h;
+  sub f i by f_i;
+  sub f j by f_j;
+ #sub f k by f_k;
+  sub f l by f_l;
+  sub f t by f_t;
+  sub \degree \C by \uni2103;
+  sub \degree \F by \uni2109;
+
+  # These are also in dlig, but we alternatively enable when when ZWJ is used.
+  sub T uni200D h by T_h;
+  sub t uni200D t by t_t;
+  sub c uni200D h by c_h;
+  sub c uni200D k by c_k;
+  sub t uni200D z by t_z;
+} liga_sub;
+
+lookup unfi_sub {
+  sub f_i by f i;
+  sub f_f_i by f_f i;
+  sub longs_i by longs i;
+  sub longs_longs_i by longs_longs i;
+} unfi_sub;
