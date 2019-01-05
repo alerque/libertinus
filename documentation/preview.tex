@@ -1,0 +1,45 @@
+\documentclass{minimal}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage{graphicx}
+
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\setmonofont{Libertinus Mono}
+\setmathfont{Libertinus Math}
+
+\begin{document}
+\pagestyle{empty}
+\def\fname#1{\scalebox{.6}[1]{\texttt{#1}}}
+\def\panagram{The Quick Brown Fox Jumps Over The Lazy Dog}
+
+\begin{center}
+  \begin{tabular}{l r}
+    \font\test="Libertinus Serif" {\test\panagram} & \fname{Libertinus Serif} \\
+    \font\test="Libertinus Serif Display" {\test\panagram} & \fname{Libertinus Serif Display} \\
+    \font\test="Libertinus Serif Italic" {\test\panagram} & \fname{Libertinus Serif Italic} \\
+    \font\test="Libertinus Serif Semibold" {\test\panagram} & \fname{Libertinus Serif Semibold} \\
+    \font\test="Libertinus Serif Semibold Italic" {\test\panagram} & \fname{Libertinus Serif Semibold Italic} \\
+    \font\test="Libertinus Serif Bold" {\test\panagram} & \fname{Libertinus Serif Bold} \\
+    \font\test="Libertinus Serif Bold Italic" {\test\panagram} & \fname{Libertinus Serif Bold Italic} \\
+    \font\test="Libertinus Sans" {\test\panagram} & \fname{Libertinus Sans} \\
+    \font\test="Libertinus Sans Italic" {\test\panagram} & \fname{Libertinus Sans Italic} \\
+    \font\test="Libertinus Sans Bold" {\test\panagram} & \fname{Libertinus Sans Bold} \\
+    \font\test="Libertinus Mono" {\test\panagram} & \fname{Libertinus Mono} \\
+    \font\test="Libertinus Serif Initials" {\test ABCDEFGHIJKLMOPQRSTUVWXYZ} & \fname{Libertinus Serif Initials} \\
+    \font\test="Libertinus Keyboard" {\test Ctrl \textsf{+} Alt \textsf{+} F1 Enter} & \fname{Libertinus Keyboard} \\
+  \end{tabular}
+\end{center}
+
+\begin{align*}
+\left(x+α\right)^n	& =\sum_{k=0}^n \binom nk x^k α^{n-k}	\\
+\left|x\right|		& =\begin{cases}
+				-x,		& x<0	\\
+				\phantom{-}x,	& x≥0	\\
+			   \end{cases}				\\
+	∇⋅∇ψ			& =\frac{∂^2ψ}{∂x^2}\mathbin{+}\frac{∂^2ψ}{∂y^2}+\frac{∂^2ψ}{∂z^2} \\
+			& =\frac{1}{r^{2}\sin θ} \Bigg[\sin θ\frac{∂}{∂r}\bigg(r^{2}\frac{∂ψ}{∂r}\bigg)
+			  +\frac{∂}{∂θ}\bigg(\sin θ\frac{∂ψ}{∂θ}\bigg)+\frac{1}{\sin θ}\frac{∂^{2}ψ}{∂φ^{2}}\Bigg]
+\end{align*}
+\end{document}
