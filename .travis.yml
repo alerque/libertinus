@@ -14,6 +14,7 @@ addons:
 
 install:
   - pip install fonttools
+  - pip install https://github.com/doconce/preprocess/archive/master.zip
 
 script:
   - make otf
