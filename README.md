@@ -31,12 +31,19 @@ Building
 --------
 To build the fonts, you need GNU Make, [FontForge][1] with Python support, and
 [FontTools][2]. The latest versions of FontForge and FontTools are preferred.
+To load and compare GSUB features you also need the [preprocess][3] python module,
+which can be installed by following the instructions on the web page or, if your
+system has `pip`, with the commands:
+
+   pip install https://github.com/doconce/preprocess/archive/master.zip
+
+(The version of preprocess registered with `PyPi` is out of date.)
 
 To build the fonts:
 
     make
 
-To build the PDF samples you need [fntsample][3], and then:
+To build the PDF samples you need [fntsample][4], and then:
 
     make doc
 
@@ -61,4 +68,5 @@ Generating the fonts for each commit is preferred, but not absolutely required.
 
 [1]: https://fontforge.github.io
 [2]: https://github.com/fonttools/fonttools
-[3]: https://github.com/eugmes/fntsample
+[3]: https://github.com/doconce/preprocess
+[4]: https://github.com/eugmes/fntsample
