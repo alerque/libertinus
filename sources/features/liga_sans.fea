@@ -1,0 +1,11 @@
+lookup liga_standard_ligatures {
+  sub f f by f_f;
+  sub f f.short by f_f.short;
+  sub f t by f_t;
+  sub \degree \C by \uni2103;
+  sub \degree \F by \uni2109;
+
+  # These are also in dlig, but we alternatively enable when when ZWJ is used.
+  sub t uni200D t by t_t;
+  sub t uni200D z by t_z;
+} liga_standard_ligatures;

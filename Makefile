@@ -4,42 +4,59 @@ VERSION=6.7
 DIST=$(NAME)-$(VERSION)
 
 SRC=sources
-FEA=$(SRC)/features
+FEADIR=$(SRC)/features
+GSUB=$(FEADIR)/gsub.fea
 DOC=documentation
 TOOLS=tools
 
 PY?=python
+PREPROP?=preprocess
 BUILD=$(TOOLS)/build.py
+LOADFEAT=$(TOOLS)/load-features.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
 CHECKERRS=$(TOOLS)/check-errors.py
 LO?=lowriter
 
 NULL=
 
-FONTS=Math-Regular \
-      Sans-Regular \
-      Sans-Bold \
-      Sans-Italic \
-      Serif-Regular \
-      Serif-Semibold \
-      Serif-Bold \
-      Serif-Italic \
-      Serif-SemiboldItalic \
-      Serif-BoldItalic \
-      SerifDisplay-Regular \
-      SerifInitials-Regular \
-      Mono-Regular \
-      Keyboard-Regular \
-      $(NULL)
+MFONTS=Sans-Regular \
+       Sans-Bold \
+       Sans-Italic \
+       Serif-Regular \
+       Serif-Semibold \
+       Serif-Bold \
+       Serif-Italic \
+       Serif-SemiboldItalic \
+       Serif-BoldItalic \
+       SerifDisplay-Regular \
+       $(NULL)
+
+OFONTS=Math-Regular \
+       SerifInitials-Regular \
+       Mono-Regular \
+       Keyboard-Regular \
+       $(NULL)
+
+FONTS=$(MFONTS) \
+      $(OFONTS)
 
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
-NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
-CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
+MNRM=$(MFONTS:%=$(SRC)/$(NAME)%.nrm)
+ONRM=$(OFONTS:%=$(SRC)/$(NAME)%.nrm)
+NRM=$(MNRM) $(ONRM)
+FEA=$(MFONTS:%=$(SRC)/$(NAME)%.fea)
+MCHK=$(MFONTS:%=$(SRC)/$(NAME)%.chk)
+OCHK=$(OFONTS:%=$(SRC)/$(NAME)%.chk)
+CHK=$(MCHK) $(OCHK)
 DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
 LNT=$(FONTS:%=$(NAME)%.lnt)
-OTF=$(FONTS:%=$(NAME)%.otf)
+MOTF=$(MFONTS:%=$(NAME)%.otf)
+OOTF=$(OFONTS:%=$(NAME)%.otf)
+OTF=$(MOTF) $(OOTF)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
 OPDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
+
+FEADEFS=
 
 export SOURCE_DATE_EPOCH ?= 0
 
@@ -47,23 +64,48 @@ all: otf
 
 otf: $(OTF)
 doc: $(PDF) $(OPDF)
+feature-files: $(FEA)
 normalize: $(NRM)
 check: $(LNT) $(CHK) $(DUP)
 
 
-%.fea:
-	@if test ! -f $@; then touch $@; fi
+%.fea: FEADEFS += $(subst Italic,-D ITALIC,$(findstring Italic,$@))
+%.fea: FEADEFS += $(subst Sans,-D SANS,$(findstring Sans,$@))
+%.fea: FEADEFS += $(subst Display,-D NOSMALLCAPS,$(findstring Display,$@))
+%.fea: %.sfd $(GSUB)
+	@echo "   FEA	$@"
+	@$(PREPROP) -c $(FEADIR)/pp_content_types $(FEADEFS) -I $(FEADIR) -o $@ $(GSUB)
 
-%.otf: $(SRC)/%.sfd $(FEA)/%.fea $(BUILD)
+$(MOTF): %.otf: $(SRC)/%.sfd $(SRC)/%.fea $(BUILD)
 	@echo "   OTF	$@"
-	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $< -f $(FEA)/$(@:%.otf=%.fea)
+	@$(PY) $(BUILD) -f $(SRC)/$*.fea -o $@ -v $(VERSION) -i $<
 
-%.nrm: %.sfd $(NORMALIZE)
+$(OOTF): %.otf: $(SRC)/%.sfd $(BUILD)
+	@echo "   OTF	$@"
+	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $<
+
+$(MNRM): TMPFILE = $(subst nrm,tmpnrm,$@)
+$(MNRM): %.nrm: %.sfd $(NORMALIZE) $(LOADFEAT)
+	@echo "   NRM	$(<F)"
+	@$(PY) $(LOADFEAT) -e -o $(TMPFILE) $<
+	@$(PY) $(NORMALIZE) $(TMPFILE) $@
+	@rm -f $(TMPFILE)
+	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
+
+$(ONRM): %.nrm: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
-%.chk: %.sfd $(NORMALIZE)
+$(MCHK): TMPFILE = $(subst chk,tmpchk,$@)
+$(MCHK): %.chk: %.sfd $(NORMALIZE) $(LOADFEAT)
+	@echo "   NRM	$(<F)"
+	@$(PY) $(LOADFEAT) -e -o $(TMPFILE) $<
+	@$(PY) $(NORMALIZE) $(TMPFILE) $@
+	@rm -f $(TMPFILE)
+	@diff -u $< $@ || (rm -rf $@ && false)
+
+$(OCHK): %.chk: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@ || (rm -rf $@ && false)
@@ -121,4 +163,7 @@ dist: check $(OTF) $(PDF) $(OPDF)
 	@zip -rq $(DIST).zip $(DIST)
 
 clean:
-	@rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(DUP) $(NRM) $(OTF) $(PDF)
+	@rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(DUP) $(FEA) $(NRM) $(LNT)
+
+cleaner: clean
+	@rm -rf $(MOTF) $(OOTF) $(PDF) $(OPDF)

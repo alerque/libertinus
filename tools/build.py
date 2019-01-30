@@ -81,7 +81,6 @@ class Font:
 
         dirname = os.path.dirname(font.path)
         fea = []
-        fea.append("include(%s/features/langsys.fea)" % dirname)
         fea.append("feature mark {")
         fea.append("  @OverSet = [%s];" % " ".join(bases))
         fea.append("  lookupflag UseMarkFilteringSet @OverSet;")

@@ -1,0 +1,82 @@
+lookup ss01_alt_dieresis {
+  lookupflag 0;
+    sub \Adieresis by \Adieresis.alt ;
+    sub \Odieresis by \Odieresis.alt ;
+    sub \Udieresis by \Udieresis.alt ;
+} ss01_alt_dieresis ;
+
+# #ifndef SANS
+lookup ss02_swashes {
+  lookupflag 0;
+    sub \J by \J.alt ;
+    sub \K by \K.alt ;
+    sub \R by \R.alt ;
+} ss02_swashes;
+# #endif
+
+lookup ss03_germandbls_as_ss {
+  lookupflag 0;
+    sub \germandbls by \germandbls.ss03 ;
+    sub \uni1E9E by \uni1E9E.alt ;
+# #ifndef NOSMALLCAPS
+    sub \germandbls.sc by \germandbls.scalt ;
+# #endif
+} ss03_germandbls_as_ss;
+
+lookup ss04_Germandbls_as_SS {
+  lookupflag 0;
+    sub \uni1E9E by \uni1E9E.alt ;
+# #ifndef NOSMALLCAPS
+    sub \germandbls.sc by \germandbls.scalt ;
+# #endif
+} ss04_Germandbls_as_SS;
+
+# #ifndef SANS
+lookup ss05_crossed_W {
+  lookupflag 0;
+    sub \W by \W.alt ;
+} ss05_crossed_W;
+# #endif
+
+lookup ss06_alt_ampersand {
+  lookupflag 0;
+    sub \ampersand by \ampersand.alt ;
+} ss06_alt_ampersand;
+
+lookup ss07_swap_eng_forms {
+  lookupflag 0;
+    sub \Eng by \Eng.UCStyle ;
+    sub \Eng.UCStyle by \Eng ;
+# #ifndef NOSMALLCAPS
+    sub \eng.sc by \Eng.UCStyle.sc ;
+    sub \Eng.UCStyle.sc by \eng.sc ;
+# #endif
+} ss07_swap_eng_forms;
+
+lookup salt_stylistic_alternatives {
+  lookupflag 0;
+# #ifndef SANS
+    sub \J by \J.alt ;
+    sub \K by \K.alt ;
+    sub \R by \R.alt ;
+    sub \W by \W.alt ;
+# #endif
+# #ifndef NOSMALLCAPS
+    sub \a.sc by \a.scalt ;
+    sub \q.sc by \q.sc.u ;
+    sub \eng.sc by \Eng.UCStyle.sc ;
+    sub \germandbls.sc by \germandbls.scalt ;
+# #endif
+    sub \Q by \Q.u ;
+    sub \h by \h.alt ;
+    sub \y by \y.alt ;
+    sub \Eng by \Eng.UCStyle ;
+    sub \uni1E9E by \uni1E9E.alt ;
+    sub \germandbls from [\germandbls.ss03 \germandbls.alt] ;
+    sub \beta by \uni03D0 ;
+    sub \theta by \theta1 ;
+    sub \kappa by \uni03F0 ;
+    sub \phi by \phi1 ;
+    sub \uni0431 by \uni0431.ital ;
+    sub \ampersand by \ampersand.alt ;
+} salt_stylistic_alternatives;
