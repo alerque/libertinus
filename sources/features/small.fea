@@ -1,8 +1,4 @@
-# #ifdef FOR_FRAC
-lookup frac_superiors {
-# #else
-lookup sups_superiors {
-# #endif
+lookup superiors {
   sub parenleft by uni207D;
   sub parenright by uni207E;
   sub hyphen by uni207B;
@@ -57,17 +53,9 @@ lookup sups_superiors {
   sub uni0263 by uni02E0;
   sub uni027B by uni02B5;
   sub uni0266 by uni02B1;
-# #ifdef FOR_FRAC
-} frac_superiors;
-# #else
-} sups_superiors;
-# #endif
+} superiors;
 
-# #ifdef FOR_FRAC
-lookup frac_inferiors {
-# #else
-lookup sinf_inferiors {
-# #endif
+lookup inferiors {
   sub parenleft by uni208D;
   sub parenright by uni208E;
   sub zero by uni2080;
@@ -111,18 +99,14 @@ lookup sinf_inferiors {
   sub x by uni2093;
   sub y by y.inferior;
   sub z by z.inferior;
-# #ifdef FOR_FRAC
-} frac_inferiors;
-# #else
-} sinf_inferiors;
-# #endif
-# #ifndef FOR_FRAC
+} inferiors;
 
+# #ifndef FOR_FRAC
 feature sups {
-  lookup sups_superiors;
+  lookup superiors;
 } sups;
 
 feature sinf {
-  lookup sinf_inferiors;
+  lookup inferiors;
 } sinf;
 # #endif
