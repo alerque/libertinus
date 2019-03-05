@@ -13,3 +13,30 @@ lookup locl_sami {
   lookupflag 0;
     sub \Eng by \Eng.UCStyle ;
 } locl_sami;
+
+feature locl {
+
+ script cyrl;
+     language SRB  exclude_dflt;
+      lookup locl_cyrillic;
+
+ script latn;
+     language FIN  exclude_dflt;
+      lookup locl_sami;
+     language ISM  exclude_dflt;
+      lookup locl_sami;
+     language LSM  exclude_dflt;
+      lookup locl_sami;
+     language NOR  exclude_dflt;
+      lookup locl_sami;
+     language NSM  exclude_dflt;
+      lookup locl_sami;
+     language SKS  exclude_dflt;
+      lookup locl_sami;
+     language SSM  exclude_dflt;
+      lookup locl_sami;
+     language SVE  exclude_dflt;
+      lookup locl_sami;
+     language TRK  exclude_dflt;
+      lookup locl_sami;
+} locl;

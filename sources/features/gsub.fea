@@ -16,13 +16,30 @@ languagesystem latn SSM ;
 languagesystem latn SVE ;
 languagesystem latn TRK ;
 
+lookup chaining_substitutions {
+  sub Q by Q.u ;
+# #ifndef NOSMALLCAPS
+  sub q.sc by q.sc.u ;
+# #endif
+  sub f by f.short ;
+  sub f_f by f_f.short ;
+  sub acutecomb by acute.cap ;
+  sub gravecomb by grave.cap ;
+  sub uni0302 by circumflex.cap ;
+  sub uni0306 by breve.cap ;
+  sub i by dotlessi ;
+  sub j by uni0237 ;
+  sub uni0249 by dotless0249 ;
+  sub uni0268 by dotless0268 ;
+} chaining_substitutions;
+
 # #include "locl.fea"
+
+# #include "frac.fea"
 
 # #include "small.fea"
 
 # #include "case.fea"
-
-# #include "contextual.fea"
 
 # #ifndef NOSMALLCAPS
 # #include "sc.fea"
@@ -32,6 +49,10 @@ languagesystem latn TRK ;
 
 # #include "num.fea"
 
+# #include "salt.fea"
+
+# #include "ccmp.fea"
+
 # #include "sscv.fea"
 
 # #ifdef SANS
@@ -40,217 +61,4 @@ languagesystem latn TRK ;
 # #include "liga.fea"
 # #endif
 
-feature locl {
-
- script cyrl;
-     language SRB  exclude_dflt;
-      lookup locl_cyrillic;
-
- script latn;
-     language AZE  exclude_dflt;
-# #ifndef SANS
-      lookup locl_undo_fi;
-# #endif
-     language CRT  exclude_dflt;
-# #ifndef SANS
-      lookup locl_undo_fi;
-# #endif
-     language FIN  exclude_dflt;
-      lookup locl_sami;
-     language ISM  exclude_dflt;
-      lookup locl_sami;
-     language LSM  exclude_dflt;
-      lookup locl_sami;
-     language NOR  exclude_dflt;
-      lookup locl_sami;
-     language NSM  exclude_dflt;
-      lookup locl_sami;
-     language SKS  exclude_dflt;
-      lookup locl_sami;
-     language SSM  exclude_dflt;
-      lookup locl_sami;
-     language SVE  exclude_dflt;
-      lookup locl_sami;
-     language TRK  exclude_dflt;
-      lookup locl_sami;
-# #ifndef SANS
-      lookup locl_undo_fi;
-# #endif
-} locl;
-
-feature frac {
-      lookup frac_contextual;
-      lookup frac_unicodepoint;
-} frac;
-
-feature sups {
-      lookup sups_superiors;
-} sups;
-
-feature sinf {
-      lookup sinf_inferiors;
-} sinf;
-
-feature case {
-      lookup case_punctuation;
-      lookup case_figures;
-} case;
-
-# #ifndef NOSMALLCAPS
-feature smcp {
-
- script DFLT;
-     language dflt ;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
-
- script cyrl;
-     language dflt ;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
-
- script grek;
-     language dflt ;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
-
- script latn;
-     language dflt ;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
-     language AZE  exclude_dflt;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
-      lookup smcp_smallcap_idot;
-     language CRT  exclude_dflt;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
-      lookup smcp_smallcap_idot;
-     language TRK  exclude_dflt;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
-      lookup smcp_smallcap_idot;
-} smcp;
-
-feature c2sc {
-      lookup c2sc_smallcap_fromcaps;
-} c2sc;
-# #endif
-
-feature hlig {
-      lookup hlig_historical_ligatures;
-} hlig;
-
-feature dlig {
-      lookup dlig_optional_ligatures;
-} dlig;
-
-feature onum {
-      lookup onum_oldstyle_figures;
-} onum;
-
-feature lnum {
-
- script DFLT;
-      lookup lnum_lining_figures;
-} lnum;
-
-feature pnum {
-      lookup pnum_proportional_figures;
-} pnum;
-
-feature tnum {
-      lookup tnum_tabular_figures;
-} tnum;
-
-feature zero {
-      lookup zero_slash;
-} zero;
-
-feature salt {
-      lookup salt_stylistic_alternatives;
-} salt;
-
-feature ccmp {
-      lookup ccmp_contextual;
-} ccmp;
-
-feature ss01 {
-  featureNames {
-    name "Low diaeresis on 'A', 'E', 'O'";
-  };
-
-      lookup ss01_alt_dieresis;
-} ss01;
-
-# #ifndef SANS
-feature ss02 {
-  featureNames {
-    name "Swashy 'J' 'K' 'R'";
-  };
-
-      lookup ss02_swashes;
-} ss02;
-# #endif
-
-feature ss03 {
-  featureNames {
-    name "'double s' to two 's'";
-  };
-
-      lookup ss03_germandbls_as_ss;
-} ss03;
-
-feature ss04 {
-  featureNames {
-    name "Upper case 'double s' to two 'S'";
-  };
-
-      lookup ss04_Germandbls_as_SS;
-} ss04;
-
-# #ifndef SANS
-feature ss05 {
-  featureNames {
-    name "Crossed 'W'";
-  };
-
-      lookup ss05_crossed_W;
-} ss05;
-# #endif
-
-feature ss06 {
-  featureNames {
-    name "Swash '&'";
-  };
-      lookup ss06_alt_ampersand;
-} ss06;
-
-feature ss07 {
-  featureNames {
-    name "Swap 'Eng' forms";
-  };
-
-      lookup ss07_swap_eng_forms;
-} ss07;
-
-feature liga {
-      lookup liga_standard_ligatures;
-} liga;
-
-# #ifndef SANS
-feature locl {
-
- script latn;
-     language AZE  exclude_dflt;
-      lookup locl_undo_fi;
-     language CRT  exclude_dflt;
-      lookup locl_undo_fi;
-     language TRK  exclude_dflt;
-      lookup locl_undo_fi;
-} locl;
-# #endif
-
-feature calt {
-      lookup calt_contextual;
-} calt;
+# #include "calt.fea"

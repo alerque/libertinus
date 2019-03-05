@@ -1,18 +1,3 @@
-
-lookup case_figures {
-  lookupflag 0;
-    sub \zero by \zero.cap ;
-    sub \one by \one.cap ;
-    sub \two by \two.cap ;
-    sub \three by \three.cap ;
-    sub \four by \four.cap ;
-    sub \five by \five.cap ;
-    sub \six by \six.cap ;
-    sub \seven by \seven.cap ;
-    sub \eight by \eight.cap ;
-    sub \nine by \nine.cap ;
-} case_figures;
-
 lookup onum_oldstyle_figures {
   lookupflag 0;
     sub \zero by \zero.taboldstyle ;
@@ -120,3 +105,23 @@ lookup zero_slash {
     sub \zero.cap by \zero.slash.cap ;
     sub \zero.cap.fitted by \zero.slash.cap.fitted ;
 } zero_slash;
+
+feature onum {
+      lookup onum_oldstyle_figures;
+} onum;
+
+feature lnum {
+      lookup lnum_lining_figures;
+} lnum;
+
+feature pnum {
+      lookup pnum_proportional_figures;
+} pnum;
+
+feature tnum {
+      lookup tnum_tabular_figures;
+} tnum;
+
+feature zero {
+      lookup zero_slash;
+} zero;

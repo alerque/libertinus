@@ -1,38 +1,8 @@
-lookup frac_unicodepoint {
-  lookupflag 0;
-    sub \uni2215  by \slash;
-    sub \one \slash \four  by \onequarter;
-    sub \one \slash \two  by \onehalf;
-    sub \three \slash \four  by \threequarters;
-    sub \one \slash \three  by \onethird;
-    sub \one \fraction \three  by \onethird;
-    sub \two \slash \three  by \twothirds;
-    sub \two \fraction \three  by \twothirds;
-    sub \one \slash \five  by \uni2155;
-    sub \one \fraction \five  by \uni2155;
-    sub \two \slash \five  by \uni2156;
-    sub \two \fraction \five  by \uni2156;
-    sub \three \slash \five  by \uni2157;
-    sub \three \fraction \five  by \uni2157;
-    sub \four \slash \five  by \uni2158;
-    sub \four \fraction \five  by \uni2158;
-    sub \one \slash \eight  by \oneeighth;
-    sub \one \fraction \eight  by \oneeighth;
-    sub \three \slash \eight  by \threeeighths;
-    sub \three \fraction \eight  by \threeeighths;
-    sub \five \slash \eight  by \fiveeighths;
-    sub \five \fraction \eight  by \fiveeighths;
-    sub \seven \slash \eight  by \seveneighths;
-    sub \seven \fraction \eight  by \seveneighths;
-    sub \one \slash  by \uni215F;
-    sub \one \fraction  by \uni215F;
-    sub \one \slash \six  by \uni2159;
-    sub \one \fraction \six  by \uni2159;
-    sub \five \slash \six  by \uni215A;
-    sub \five \fraction \six  by \uni215A;
-} frac_unicodepoint;
-
+# #ifdef FOR_FRAC
+lookup frac_superiors {
+# #else
 lookup sups_superiors {
+# #endif
   lookupflag 0;
     sub \parenleft by \uni207D ;
     sub \parenright by \uni207E ;
@@ -88,9 +58,17 @@ lookup sups_superiors {
     sub \uni0263 by \uni02E0 ;
     sub \uni027B by \uni02B5 ;
     sub \uni0266 by \uni02B1 ;
+# #ifdef FOR_FRAC
+} frac_superiors;
+# #else
 } sups_superiors;
+# #endif
 
+# #ifdef FOR_FRAC
+lookup frac_inferiors {
+# #else
 lookup sinf_inferiors {
+# #endif
   lookupflag 0;
     sub \parenleft by \uni208D ;
     sub \parenright by \uni208E ;
@@ -135,4 +113,18 @@ lookup sinf_inferiors {
     sub \x by \uni2093 ;
     sub \y by \y.inferior ;
     sub \z by \z.inferior ;
+# #ifdef FOR_FRAC
+} frac_inferiors;
+# #else
 } sinf_inferiors;
+# #endif
+# #ifndef FOR_FRAC
+
+feature sups {
+      lookup sups_superiors;
+} sups;
+
+feature sinf {
+      lookup sinf_inferiors;
+} sinf;
+# #endif
