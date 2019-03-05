@@ -1,42 +1,39 @@
 lookup locl_cyrillic {
-  lookupflag 0;
-    sub \uni0431 by \uni0431.ital ;
+  sub uni0431 by uni0431.ital;
 # #ifdef ITALIC
-    sub \uni0433 by \uni0433.ital ;
-    sub \uni0434 by \uni0434.ital ;
-    sub \uni043F by \uni043F.ital ;
-    sub \uni0442 by \uni0442.ital ;
+  sub uni0433 by uni0433.ital;
+  sub uni0434 by uni0434.ital;
+  sub uni043F by uni043F.ital;
+  sub uni0442 by uni0442.ital;
 # #endif
 } locl_cyrillic;
 
 lookup locl_sami {
-  lookupflag 0;
-    sub \Eng by \Eng.UCStyle ;
+  sub Eng by Eng.UCStyle;
 } locl_sami;
 
 feature locl {
-
- script cyrl;
-     language SRB  exclude_dflt;
+  script cyrl;
+    language SRB exclude_dflt;
       lookup locl_cyrillic;
 
- script latn;
-     language FIN  exclude_dflt;
+  script latn;
+    language FIN exclude_dflt;
       lookup locl_sami;
-     language ISM  exclude_dflt;
+    language ISM exclude_dflt;
       lookup locl_sami;
-     language LSM  exclude_dflt;
+    language LSM exclude_dflt;
       lookup locl_sami;
-     language NOR  exclude_dflt;
+    language NOR exclude_dflt;
       lookup locl_sami;
-     language NSM  exclude_dflt;
+    language NSM exclude_dflt;
       lookup locl_sami;
-     language SKS  exclude_dflt;
+    language SKS exclude_dflt;
       lookup locl_sami;
-     language SSM  exclude_dflt;
+    language SSM exclude_dflt;
       lookup locl_sami;
-     language SVE  exclude_dflt;
+    language SVE exclude_dflt;
       lookup locl_sami;
-     language TRK  exclude_dflt;
+    language TRK exclude_dflt;
       lookup locl_sami;
 } locl;

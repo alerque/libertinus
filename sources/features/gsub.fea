@@ -1,36 +1,36 @@
 languagesystem DFLT dflt;
 languagesystem cyrl dflt;
-languagesystem cyrl SRB ;
+languagesystem cyrl SRB;
 languagesystem grek dflt;
 languagesystem hebr dflt;
-languagesystem latn AZE ;
-languagesystem latn CRT ;
+languagesystem latn AZE;
+languagesystem latn CRT;
 languagesystem latn dflt;
-languagesystem latn FIN ;
-languagesystem latn ISM ;
-languagesystem latn LSM ;
-languagesystem latn NOR ;
-languagesystem latn NSM ;
-languagesystem latn SKS ;
-languagesystem latn SSM ;
-languagesystem latn SVE ;
-languagesystem latn TRK ;
+languagesystem latn FIN;
+languagesystem latn ISM;
+languagesystem latn LSM;
+languagesystem latn NOR;
+languagesystem latn NSM;
+languagesystem latn SKS;
+languagesystem latn SSM;
+languagesystem latn SVE;
+languagesystem latn TRK;
 
 lookup chaining_substitutions {
-  sub Q by Q.u ;
+  sub Q by Q.u;
 # #ifndef NOSMALLCAPS
-  sub q.sc by q.sc.u ;
+  sub q.sc by q.sc.u;
 # #endif
-  sub f by f.short ;
-  sub f_f by f_f.short ;
-  sub acutecomb by acute.cap ;
-  sub gravecomb by grave.cap ;
-  sub uni0302 by circumflex.cap ;
-  sub uni0306 by breve.cap ;
-  sub i by dotlessi ;
-  sub j by uni0237 ;
-  sub uni0249 by dotless0249 ;
-  sub uni0268 by dotless0268 ;
+  sub f by f.short;
+  sub f_f by f_f.short;
+  sub acutecomb by acute.cap;
+  sub gravecomb by grave.cap;
+  sub uni0302 by circumflex.cap;
+  sub uni0306 by breve.cap;
+  sub i by dotlessi;
+  sub j by uni0237;
+  sub uni0249 by dotless0249;
+  sub uni0268 by dotless0268;
 } chaining_substitutions;
 
 # #include "locl.fea"

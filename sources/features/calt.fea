@@ -1,4 +1,4 @@
-lookup calt_contextual {
+feature calt {
   @ahead = [abreve adieresis agrave amacron atilde 
             b bar braceright bracketright brokenbar ebreve ecaron edieresis 
             egrave emacron h h.alt hbar hcircumflex i iacute ibreve 
@@ -19,8 +19,4 @@ lookup calt_contextual {
   sub Q' lookup chaining_substitutions [u u.sc v v.sc];
   sub q.sc' lookup chaining_substitutions [u.sc v.sc];
 # #endif
-} calt_contextual;
-
-feature calt {
-      lookup calt_contextual;
 } calt;
