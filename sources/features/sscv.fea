@@ -53,30 +53,61 @@ lookup ss07_swap_eng_forms {
 # #endif
 } ss07_swap_eng_forms;
 
-lookup salt_stylistic_alternatives {
-  lookupflag 0;
+feature ss01 {
+  featureNames {
+    name "Low diaeresis on 'A', 'E', 'O'";
+  };
+
+      lookup ss01_alt_dieresis;
+} ss01;
+
 # #ifndef SANS
-    sub \J by \J.alt ;
-    sub \K by \K.alt ;
-    sub \R by \R.alt ;
-    sub \W by \W.alt ;
+feature ss02 {
+  featureNames {
+    name "Swashy 'J' 'K' 'R'";
+  };
+
+      lookup ss02_swashes;
+} ss02;
 # #endif
-# #ifndef NOSMALLCAPS
-    sub \a.sc by \a.scalt ;
-    sub \q.sc by \q.sc.u ;
-    sub \eng.sc by \Eng.UCStyle.sc ;
-    sub \germandbls.sc by \germandbls.scalt ;
+
+feature ss03 {
+  featureNames {
+    name "'double s' to two 's'";
+  };
+
+      lookup ss03_germandbls_as_ss;
+} ss03;
+
+feature ss04 {
+  featureNames {
+    name "Upper case 'double s' to two 'S'";
+  };
+
+      lookup ss04_Germandbls_as_SS;
+} ss04;
+
+# #ifndef SANS
+feature ss05 {
+  featureNames {
+    name "Crossed 'W'";
+  };
+
+      lookup ss05_crossed_W;
+} ss05;
 # #endif
-    sub \Q by \Q.u ;
-    sub \h by \h.alt ;
-    sub \y by \y.alt ;
-    sub \Eng by \Eng.UCStyle ;
-    sub \uni1E9E by \uni1E9E.alt ;
-    sub \germandbls from [\germandbls.ss03 \germandbls.alt] ;
-    sub \beta by \uni03D0 ;
-    sub \theta by \theta1 ;
-    sub \kappa by \uni03F0 ;
-    sub \phi by \phi1 ;
-    sub \uni0431 by \uni0431.ital ;
-    sub \ampersand by \ampersand.alt ;
-} salt_stylistic_alternatives;
+
+feature ss06 {
+  featureNames {
+    name "Swash '&'";
+  };
+      lookup ss06_alt_ampersand;
+} ss06;
+
+feature ss07 {
+  featureNames {
+    name "Swap 'Eng' forms";
+  };
+
+      lookup ss07_swap_eng_forms;
+} ss07;

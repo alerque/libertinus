@@ -9,3 +9,7 @@ lookup liga_standard_ligatures {
   sub t uni200D t by t_t;
   sub t uni200D z by t_z;
 } liga_standard_ligatures;
+
+feature liga {
+      lookup liga_standard_ligatures;
+} liga;

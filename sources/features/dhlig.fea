@@ -14,3 +14,11 @@ lookup dlig_optional_ligatures {
     sub \c \h  by \c_h;
 # #endif
 } dlig_optional_ligatures;
+
+feature hlig {
+      lookup hlig_historical_ligatures;
+} hlig;
+
+feature dlig {
+      lookup dlig_optional_ligatures;
+} dlig;

@@ -39,3 +39,18 @@ lookup locl_undo_fi {
   sub longs_i by longs i;
   sub longs_longs_i by longs_longs i;
 } locl_undo_fi;
+
+feature liga {
+      lookup liga_standard_ligatures;
+} liga;
+
+feature locl {
+
+ script latn;
+     language AZE  exclude_dflt;
+      lookup locl_undo_fi;
+     language CRT  exclude_dflt;
+      lookup locl_undo_fi;
+     language TRK  exclude_dflt;
+      lookup locl_undo_fi;
+} locl;

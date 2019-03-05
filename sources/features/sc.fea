@@ -1,4 +1,3 @@
-
 lookup smcp_smallcap_i {
   lookupflag 0;
     sub \i by \i.sc ;
@@ -222,3 +221,42 @@ lookup c2sc_smallcap_fromcaps {
     sub \uni1E9E by \germandbls.sc ;
     sub \H by \h.sc ;
 } c2sc_smallcap_fromcaps;
+
+feature smcp {
+
+ script DFLT;
+     language dflt ;
+      lookup smcp_smallcap_i;
+      lookup smcp_smallcap;
+
+ script cyrl;
+     language dflt ;
+      lookup smcp_smallcap_i;
+      lookup smcp_smallcap;
+
+ script grek;
+     language dflt ;
+      lookup smcp_smallcap_i;
+      lookup smcp_smallcap;
+
+ script latn;
+     language dflt ;
+      lookup smcp_smallcap_i;
+      lookup smcp_smallcap;
+     language AZE  exclude_dflt;
+      lookup smcp_smallcap_i;
+      lookup smcp_smallcap;
+      lookup smcp_smallcap_idot;
+     language CRT  exclude_dflt;
+      lookup smcp_smallcap_i;
+      lookup smcp_smallcap;
+      lookup smcp_smallcap_idot;
+     language TRK  exclude_dflt;
+      lookup smcp_smallcap_i;
+      lookup smcp_smallcap;
+      lookup smcp_smallcap_idot;
+} smcp;
+
+feature c2sc {
+      lookup c2sc_smallcap_fromcaps;
+} c2sc;
