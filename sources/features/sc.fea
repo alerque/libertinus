@@ -220,19 +220,16 @@ lookup c2sc_smallcap_fromcaps {
 
 feature smcp {
   script DFLT;
-    language dflt;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
+    lookup smcp_smallcap_i;
+    lookup smcp_smallcap;
 
   script cyrl;
-    language dflt;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
+    lookup smcp_smallcap_i;
+    lookup smcp_smallcap;
 
   script grek;
-    language dflt;
-      lookup smcp_smallcap_i;
-      lookup smcp_smallcap;
+    lookup smcp_smallcap_i;
+    lookup smcp_smallcap;
 
   script latn;
     language dflt;
