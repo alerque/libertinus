@@ -106,6 +106,10 @@ feature sups {
   lookup superiors;
 } sups;
 
+feature subs {
+  lookup inferiors;
+} subs;
+
 feature sinf {
   lookup inferiors;
 } sinf;
