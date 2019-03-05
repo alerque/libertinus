@@ -117,8 +117,8 @@ $(OCHK): %.chk: %.sfd $(NORMALIZE)
 
 # Currently ignored errors:
 #  2: Self-intersecting glyph
-#  7: More points in a glyph than PostScript allows
 #  5: Missing points at extrema
+#  7: More points in a glyph than PostScript allows
 # 23: Overlapping hints in a glyph
 LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
 	@echo "   LNT  $(<F)"
