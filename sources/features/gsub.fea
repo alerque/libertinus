@@ -115,83 +115,14 @@ feature frac {
 } frac;
 
 feature sups {
-
- script DFLT;
-     language dflt ;
-      lookup sups_superiors;
-
- script cyrl;
-     language dflt ;
-      lookup sups_superiors;
-
- script grek;
-     language dflt ;
-      lookup sups_superiors;
-
- script latn;
-     language dflt ;
-      lookup sups_superiors;
-     language AZE  exclude_dflt;
-      lookup sups_superiors;
-     language CRT  exclude_dflt;
-      lookup sups_superiors;
-     language TRK  exclude_dflt;
       lookup sups_superiors;
 } sups;
 
 feature sinf {
-
- script DFLT;
-     language dflt ;
-      lookup sinf_inferiors;
-
- script cyrl;
-     language dflt ;
-      lookup sinf_inferiors;
-
- script grek;
-     language dflt ;
-      lookup sinf_inferiors;
-
- script latn;
-     language dflt ;
-      lookup sinf_inferiors;
-     language AZE  exclude_dflt;
-      lookup sinf_inferiors;
-     language CRT  exclude_dflt;
-      lookup sinf_inferiors;
-     language TRK  exclude_dflt;
       lookup sinf_inferiors;
 } sinf;
 
 feature case {
-
- script DFLT;
-     language dflt ;
-      lookup case_punctuation;
-      lookup case_figures;
-
- script cyrl;
-     language dflt ;
-      lookup case_punctuation;
-      lookup case_figures;
-
- script grek;
-     language dflt ;
-      lookup case_punctuation;
-      lookup case_figures;
-
- script latn;
-     language dflt ;
-      lookup case_punctuation;
-      lookup case_figures;
-     language AZE  exclude_dflt;
-      lookup case_punctuation;
-      lookup case_figures;
-     language CRT  exclude_dflt;
-      lookup case_punctuation;
-      lookup case_figures;
-     language TRK  exclude_dflt;
       lookup case_punctuation;
       lookup case_figures;
 } case;
@@ -233,520 +164,124 @@ feature smcp {
 } smcp;
 
 feature c2sc {
-
- script DFLT;
-     language dflt ;
-      lookup c2sc_smallcap_fromcaps;
-
- script cyrl;
-     language dflt ;
-      lookup c2sc_smallcap_fromcaps;
-
- script grek;
-     language dflt ;
-      lookup c2sc_smallcap_fromcaps;
-
- script latn;
-     language dflt ;
-      lookup c2sc_smallcap_fromcaps;
-     language AZE  exclude_dflt;
-      lookup c2sc_smallcap_fromcaps;
-     language CRT  exclude_dflt;
-      lookup c2sc_smallcap_fromcaps;
-     language TRK  exclude_dflt;
       lookup c2sc_smallcap_fromcaps;
 } c2sc;
 # #endif
 
 feature hlig {
-
- script DFLT;
-     language dflt ;
-      lookup hlig_historical_ligatures;
-
- script cyrl;
-     language dflt ;
-      lookup hlig_historical_ligatures;
-
- script grek;
-     language dflt ;
-      lookup hlig_historical_ligatures;
-
- script latn;
-     language dflt ;
-      lookup hlig_historical_ligatures;
-     language AZE  exclude_dflt;
-      lookup hlig_historical_ligatures;
-     language CRT  exclude_dflt;
-      lookup hlig_historical_ligatures;
-     language TRK  exclude_dflt;
       lookup hlig_historical_ligatures;
 } hlig;
 
 feature dlig {
-
- script DFLT;
-     language dflt ;
-      lookup dlig_optional_ligatures;
-
- script cyrl;
-     language dflt ;
-      lookup dlig_optional_ligatures;
-
- script grek;
-     language dflt ;
-      lookup dlig_optional_ligatures;
-
- script latn;
-     language dflt ;
-      lookup dlig_optional_ligatures;
-     language AZE  exclude_dflt;
-      lookup dlig_optional_ligatures;
-     language CRT  exclude_dflt;
-      lookup dlig_optional_ligatures;
-     language TRK  exclude_dflt;
       lookup dlig_optional_ligatures;
 } dlig;
 
 feature onum {
-
- script DFLT;
-     language dflt ;
-      lookup onum_oldstyle_figures;
-
- script cyrl;
-     language dflt ;
-      lookup onum_oldstyle_figures;
-
- script grek;
-     language dflt ;
-      lookup onum_oldstyle_figures;
-
- script latn;
-     language dflt ;
-      lookup onum_oldstyle_figures;
-     language AZE  exclude_dflt;
-      lookup onum_oldstyle_figures;
-     language CRT  exclude_dflt;
-      lookup onum_oldstyle_figures;
-     language TRK  exclude_dflt;
       lookup onum_oldstyle_figures;
 } onum;
 
 feature lnum {
 
  script DFLT;
-     language dflt ;
-      lookup lnum_lining_figures;
-
- script cyrl;
-     language dflt ;
-      lookup lnum_lining_figures;
-
- script grek;
-     language dflt ;
-      lookup lnum_lining_figures;
-
- script hebr;
-     language dflt ;
-      lookup lnum_lining_figures;
-
- script latn;
-     language dflt ;
-      lookup lnum_lining_figures;
-     language AZE  exclude_dflt;
-      lookup lnum_lining_figures;
-     language CRT  exclude_dflt;
-      lookup lnum_lining_figures;
-     language TRK  exclude_dflt;
       lookup lnum_lining_figures;
 } lnum;
 
 feature pnum {
-
- script DFLT;
-     language dflt ;
-      lookup pnum_proportional_figures;
-
- script cyrl;
-     language dflt ;
-      lookup pnum_proportional_figures;
-
- script grek;
-     language dflt ;
-      lookup pnum_proportional_figures;
-
- script latn;
-     language dflt ;
-      lookup pnum_proportional_figures;
-     language AZE  exclude_dflt;
-      lookup pnum_proportional_figures;
-     language CRT  exclude_dflt;
-      lookup pnum_proportional_figures;
-     language TRK  exclude_dflt;
       lookup pnum_proportional_figures;
 } pnum;
 
 feature tnum {
-
- script DFLT;
-     language dflt ;
-      lookup tnum_tabular_figures;
-
- script cyrl;
-     language dflt ;
-      lookup tnum_tabular_figures;
-
- script grek;
-     language dflt ;
-      lookup tnum_tabular_figures;
-
- script latn;
-     language dflt ;
-      lookup tnum_tabular_figures;
-     language AZE  exclude_dflt;
-      lookup tnum_tabular_figures;
-     language CRT  exclude_dflt;
-      lookup tnum_tabular_figures;
-     language TRK  exclude_dflt;
       lookup tnum_tabular_figures;
 } tnum;
 
 feature zero {
-
- script DFLT;
-     language dflt ;
-      lookup zero_slash;
-
- script cyrl;
-     language dflt ;
-      lookup zero_slash;
-
- script grek;
-     language dflt ;
-      lookup zero_slash;
-
- script latn;
-     language dflt ;
-      lookup zero_slash;
-     language AZE  exclude_dflt;
-      lookup zero_slash;
-     language CRT  exclude_dflt;
-      lookup zero_slash;
-     language TRK  exclude_dflt;
       lookup zero_slash;
 } zero;
 
 feature salt {
-
- script DFLT;
-     language dflt ;
-      lookup salt_stylistic_alternatives;
-
- script cyrl;
-     language dflt ;
-      lookup salt_stylistic_alternatives;
-
- script grek;
-     language dflt ;
-      lookup salt_stylistic_alternatives;
-
- script latn;
-     language dflt ;
-      lookup salt_stylistic_alternatives;
-     language AZE  exclude_dflt;
-      lookup salt_stylistic_alternatives;
-     language CRT  exclude_dflt;
-      lookup salt_stylistic_alternatives;
-     language TRK  exclude_dflt;
       lookup salt_stylistic_alternatives;
 } salt;
 
 feature ccmp {
-
- script DFLT;
-     language dflt ;
-      lookup ccmp_contextual;
-
- script cyrl;
-     language dflt ;
-      lookup ccmp_contextual;
-
- script grek;
-     language dflt ;
-      lookup ccmp_contextual;
-
- script hebr;
-     language dflt ;
-      lookup ccmp_contextual;
-
- script latn;
-     language dflt ;
-      lookup ccmp_contextual;
-     language AZE  exclude_dflt;
-      lookup ccmp_contextual;
-     language CRT  exclude_dflt;
-      lookup ccmp_contextual;
-     language TRK  exclude_dflt;
       lookup ccmp_contextual;
 } ccmp;
 
 feature ss01 {
   featureNames {
-    name 3 1 0x409 "Low diaeresis on 'A', 'E', 'O'";
+    name "Low diaeresis on 'A', 'E', 'O'";
   };
 
- script DFLT;
-     language dflt ;
-      lookup ss01_alt_dieresis;
-
- script cyrl;
-     language dflt ;
-      lookup ss01_alt_dieresis;
-
- script grek;
-     language dflt ;
-      lookup ss01_alt_dieresis;
-
- script latn;
-     language dflt ;
-      lookup ss01_alt_dieresis;
-     language AZE  exclude_dflt;
-      lookup ss01_alt_dieresis;
-     language CRT  exclude_dflt;
-      lookup ss01_alt_dieresis;
-     language TRK  exclude_dflt;
       lookup ss01_alt_dieresis;
 } ss01;
 
 # #ifndef SANS
 feature ss02 {
   featureNames {
-    name 3 1 0x409 "Swashy 'J' 'K' 'R'";
+    name "Swashy 'J' 'K' 'R'";
   };
 
- script DFLT;
-     language dflt ;
-      lookup ss02_swashes;
-
- script cyrl;
-     language dflt ;
-      lookup ss02_swashes;
-
- script grek;
-     language dflt ;
-      lookup ss02_swashes;
-
- script latn;
-     language dflt ;
-      lookup ss02_swashes;
-     language AZE  exclude_dflt;
-      lookup ss02_swashes;
-     language CRT  exclude_dflt;
-      lookup ss02_swashes;
-     language TRK  exclude_dflt;
       lookup ss02_swashes;
 } ss02;
 # #endif
 
 feature ss03 {
   featureNames {
-    name 3 1 0x409 "'double s' to two 's'";
+    name "'double s' to two 's'";
   };
 
- script DFLT;
-     language dflt ;
-      lookup ss03_germandbls_as_ss;
-
- script cyrl;
-     language dflt ;
-      lookup ss03_germandbls_as_ss;
-
- script grek;
-     language dflt ;
-      lookup ss03_germandbls_as_ss;
-
- script latn;
-     language dflt ;
-      lookup ss03_germandbls_as_ss;
-     language AZE  exclude_dflt;
-      lookup ss03_germandbls_as_ss;
-     language CRT  exclude_dflt;
-      lookup ss03_germandbls_as_ss;
-     language TRK  exclude_dflt;
       lookup ss03_germandbls_as_ss;
 } ss03;
 
 feature ss04 {
   featureNames {
-    name 3 1 0x409 "Upper case 'double s' to two 'S'";
+    name "Upper case 'double s' to two 'S'";
   };
 
- script DFLT;
-     language dflt ;
-      lookup ss04_Germandbls_as_SS;
-
- script cyrl;
-     language dflt ;
-      lookup ss04_Germandbls_as_SS;
-
- script grek;
-     language dflt ;
-      lookup ss04_Germandbls_as_SS;
-
- script hebr;
-     language dflt ;
-      lookup ss04_Germandbls_as_SS;
-
- script latn;
-     language dflt ;
-      lookup ss04_Germandbls_as_SS;
-     language AZE  exclude_dflt;
-      lookup ss04_Germandbls_as_SS;
-     language CRT  exclude_dflt;
-      lookup ss04_Germandbls_as_SS;
-     language TRK  exclude_dflt;
       lookup ss04_Germandbls_as_SS;
 } ss04;
 
 # #ifndef SANS
 feature ss05 {
   featureNames {
-    name 3 1 0x409 "Crossed 'W'";
+    name "Crossed 'W'";
   };
 
- script DFLT;
-     language dflt ;
-      lookup ss05_crossed_W;
-
- script cyrl;
-     language dflt ;
-      lookup ss05_crossed_W;
-
- script grek;
-     language dflt ;
-      lookup ss05_crossed_W;
-
- script hebr;
-     language dflt ;
-      lookup ss05_crossed_W;
-
- script latn;
-     language dflt ;
-      lookup ss05_crossed_W;
-     language AZE  exclude_dflt;
-      lookup ss05_crossed_W;
-     language CRT  exclude_dflt;
-      lookup ss05_crossed_W;
-     language TRK  exclude_dflt;
       lookup ss05_crossed_W;
 } ss05;
 # #endif
 
 feature ss06 {
   featureNames {
-    name 3 1 0x409 "Swash '&'";
+    name "Swash '&'";
   };
-
- script DFLT;
-     language dflt ;
-      lookup ss06_alt_ampersand;
-
- script cyrl;
-     language dflt ;
-      lookup ss06_alt_ampersand;
-
- script grek;
-     language dflt ;
-      lookup ss06_alt_ampersand;
-
- script hebr;
-     language dflt ;
-      lookup ss06_alt_ampersand;
-
- script latn;
-     language dflt ;
-      lookup ss06_alt_ampersand;
-     language AZE  exclude_dflt;
-      lookup ss06_alt_ampersand;
-     language CRT  exclude_dflt;
-      lookup ss06_alt_ampersand;
-     language TRK  exclude_dflt;
       lookup ss06_alt_ampersand;
 } ss06;
 
 feature ss07 {
   featureNames {
-    name 3 1 0x409 "Swap 'Eng' forms";
+    name "Swap 'Eng' forms";
   };
 
- script DFLT;
-     language dflt ;
-      lookup ss07_swap_eng_forms;
-
- script cyrl;
-     language dflt ;
-      lookup ss07_swap_eng_forms;
-
- script grek;
-     language dflt ;
-      lookup ss07_swap_eng_forms;
-
- script hebr;
-     language dflt ;
-      lookup ss07_swap_eng_forms;
-
- script latn;
-     language dflt ;
       lookup ss07_swap_eng_forms;
 } ss07;
 
 feature liga {
-
- script DFLT;
-     language dflt ;
-      lookup liga_standard_ligatures;
-
- script cyrl;
-     language dflt ;
-      lookup liga_standard_ligatures;
-
- script grek;
-     language dflt ;
-      lookup liga_standard_ligatures;
-
- script latn;
-     language dflt ;
-      lookup liga_standard_ligatures;
-     language AZE  exclude_dflt;
-      lookup liga_standard_ligatures;
-     language CRT  exclude_dflt;
-      lookup liga_standard_ligatures;
-     language TRK  exclude_dflt;
       lookup liga_standard_ligatures;
 } liga;
 
-feature calt {
-
- script DFLT;
-     language dflt ;
-      lookup calt_contextual;
-
- script cyrl;
-     language dflt ;
-      lookup calt_contextual;
-
- script grek;
-     language dflt ;
-      lookup calt_contextual;
+# #ifndef SANS
+feature locl {
 
  script latn;
-     language dflt ;
-      lookup calt_contextual;
      language AZE  exclude_dflt;
-      lookup calt_contextual;
+      lookup locl_undo_fi;
      language CRT  exclude_dflt;
-      lookup calt_contextual;
+      lookup locl_undo_fi;
      language TRK  exclude_dflt;
+      lookup locl_undo_fi;
+} locl;
+# #endif
+
+feature calt {
       lookup calt_contextual;
 } calt;
