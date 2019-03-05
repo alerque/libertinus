@@ -1,4 +1,4 @@
-lookup case_punctuation {
+feature case {
   sub parenleft by parenleft.sc;
   sub parenright by parenright.sc;
   sub hyphen by hyphen.cap;
@@ -12,9 +12,6 @@ lookup case_punctuation {
   sub questiondown by questiondown.sc;
   sub guilsinglleft by guilsinglleft.sc;
   sub guilsinglright by guilsinglright.sc;
-} case_punctuation;
-
-lookup case_figures {
   sub zero by zero.cap;
   sub one by one.cap;
   sub two by two.cap;
@@ -25,9 +22,4 @@ lookup case_figures {
   sub seven by seven.cap;
   sub eight by eight.cap;
   sub nine by nine.cap;
-} case_figures;
-
-feature case {
-  lookup case_punctuation;
-  lookup case_figures;
 } case;
