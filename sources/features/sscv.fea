@@ -1,64 +1,11 @@
-lookup ss01_alt_dieresis {
-  lookupflag 0;
-    sub \Adieresis by \Adieresis.alt ;
-    sub \Odieresis by \Odieresis.alt ;
-    sub \Udieresis by \Udieresis.alt ;
-} ss01_alt_dieresis ;
-
-# #ifndef SANS
-lookup ss02_swashes {
-  lookupflag 0;
-    sub \J by \J.alt ;
-    sub \K by \K.alt ;
-    sub \R by \R.alt ;
-} ss02_swashes;
-# #endif
-
-lookup ss03_germandbls_as_ss {
-  lookupflag 0;
-    sub \germandbls by \germandbls.ss03 ;
-    sub \uni1E9E by \uni1E9E.alt ;
-# #ifndef NOSMALLCAPS
-    sub \germandbls.sc by \germandbls.scalt ;
-# #endif
-} ss03_germandbls_as_ss;
-
-lookup ss04_Germandbls_as_SS {
-  lookupflag 0;
-    sub \uni1E9E by \uni1E9E.alt ;
-# #ifndef NOSMALLCAPS
-    sub \germandbls.sc by \germandbls.scalt ;
-# #endif
-} ss04_Germandbls_as_SS;
-
-# #ifndef SANS
-lookup ss05_crossed_W {
-  lookupflag 0;
-    sub \W by \W.alt ;
-} ss05_crossed_W;
-# #endif
-
-lookup ss06_alt_ampersand {
-  lookupflag 0;
-    sub \ampersand by \ampersand.alt ;
-} ss06_alt_ampersand;
-
-lookup ss07_swap_eng_forms {
-  lookupflag 0;
-    sub \Eng by \Eng.UCStyle ;
-    sub \Eng.UCStyle by \Eng ;
-# #ifndef NOSMALLCAPS
-    sub \eng.sc by \Eng.UCStyle.sc ;
-    sub \Eng.UCStyle.sc by \eng.sc ;
-# #endif
-} ss07_swap_eng_forms;
-
 feature ss01 {
   featureNames {
     name "Low diaeresis on 'A', 'E', 'O'";
   };
 
-      lookup ss01_alt_dieresis;
+  sub Adieresis by Adieresis.alt;
+  sub Odieresis by Odieresis.alt;
+  sub Udieresis by Udieresis.alt;
 } ss01;
 
 # #ifndef SANS
@@ -67,7 +14,9 @@ feature ss02 {
     name "Swashy 'J' 'K' 'R'";
   };
 
-      lookup ss02_swashes;
+  sub J by J.alt;
+  sub K by K.alt;
+  sub R by R.alt;
 } ss02;
 # #endif
 
@@ -76,7 +25,11 @@ feature ss03 {
     name "'double s' to two 's'";
   };
 
-      lookup ss03_germandbls_as_ss;
+  sub germandbls by germandbls.ss03;
+  sub uni1E9E by uni1E9E.alt;
+# #ifndef NOSMALLCAPS
+  sub germandbls.sc by germandbls.scalt;
+# #endif
 } ss03;
 
 feature ss04 {
@@ -84,7 +37,10 @@ feature ss04 {
     name "Upper case 'double s' to two 'S'";
   };
 
-      lookup ss04_Germandbls_as_SS;
+  sub uni1E9E by uni1E9E.alt;
+# #ifndef NOSMALLCAPS
+  sub germandbls.sc by germandbls.scalt;
+# #endif
 } ss04;
 
 # #ifndef SANS
@@ -93,7 +49,7 @@ feature ss05 {
     name "Crossed 'W'";
   };
 
-      lookup ss05_crossed_W;
+  sub W by W.alt;
 } ss05;
 # #endif
 
@@ -101,7 +57,8 @@ feature ss06 {
   featureNames {
     name "Swash '&'";
   };
-      lookup ss06_alt_ampersand;
+
+  sub ampersand by ampersand.alt;
 } ss06;
 
 feature ss07 {
@@ -109,5 +66,10 @@ feature ss07 {
     name "Swap 'Eng' forms";
   };
 
-      lookup ss07_swap_eng_forms;
+  sub Eng by Eng.UCStyle;
+  sub Eng.UCStyle by Eng;
+# #ifndef NOSMALLCAPS
+  sub eng.sc by Eng.UCStyle.sc;
+  sub Eng.UCStyle.sc by eng.sc;
+# #endif
 } ss07;

@@ -1,4 +1,4 @@
-lookup liga_standard_ligatures {
+feature liga {
  #sub f f h by f_f_h;
   sub f f i by f_f_i;
   sub f f j by f_f_j;
@@ -22,8 +22,8 @@ lookup liga_standard_ligatures {
  #sub f k by f_k;
   sub f l by f_l;
   sub f t by f_t;
-  sub \degree \C by \uni2103;
-  sub \degree \F by \uni2109;
+  sub degree C by uni2103;
+  sub degree F by uni2109;
 
   # These are also in dlig, but we alternatively enable when when ZWJ is used.
   sub T uni200D h by T_h;
@@ -31,7 +31,7 @@ lookup liga_standard_ligatures {
   sub c uni200D h by c_h;
   sub c uni200D k by c_k;
   sub t uni200D z by t_z;
-} liga_standard_ligatures;
+} liga;
 
 lookup locl_undo_fi {
   sub f_i by f i;
@@ -40,17 +40,12 @@ lookup locl_undo_fi {
   sub longs_longs_i by longs_longs i;
 } locl_undo_fi;
 
-feature liga {
-      lookup liga_standard_ligatures;
-} liga;
-
 feature locl {
-
- script latn;
-     language AZE  exclude_dflt;
+  script latn;
+    language AZE exclude_dflt;
       lookup locl_undo_fi;
-     language CRT  exclude_dflt;
+    language CRT exclude_dflt;
       lookup locl_undo_fi;
-     language TRK  exclude_dflt;
+    language TRK exclude_dflt;
       lookup locl_undo_fi;
 } locl;

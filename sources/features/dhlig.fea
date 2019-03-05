@@ -1,24 +1,14 @@
-lookup hlig_historical_ligatures {
-  lookupflag 0;
-    sub \s \t  by \s_t;
-    sub \c \t  by \c_t;
-} hlig_historical_ligatures;
-
-lookup dlig_optional_ligatures {
-  lookupflag 0;
-    sub \t \t  by \t_t;
-    sub \t \z  by \t_z;
-# #ifndef SANS
-    sub \T \h  by \T_h;
-    sub \c \k  by \c_k;
-    sub \c \h  by \c_h;
-# #endif
-} dlig_optional_ligatures;
-
 feature hlig {
-      lookup hlig_historical_ligatures;
+  sub s t by s_t;
+  sub c t by c_t;
 } hlig;
 
 feature dlig {
-      lookup dlig_optional_ligatures;
+  sub t t by t_t;
+  sub t z by t_z;
+# #ifndef SANS
+  sub T h by T_h;
+  sub c k by c_k;
+  sub c h by c_h;
+# #endif
 } dlig;

@@ -1,35 +1,33 @@
 lookup case_punctuation {
-  lookupflag 0;
-    sub \parenleft by \parenleft.sc ;
-    sub \parenright by \parenright.sc ;
-    sub \hyphen by \hyphen.cap ;
-    sub \bracketleft by \bracketleft.sc ;
-    sub \bracketright by \bracketright.sc ;
-    sub \braceleft by \braceleft.sc ;
-    sub \braceright by \braceright.sc ;
-    sub \exclamdown by \exclamdown.sc ;
-    sub \guillemotleft by \guillemotleft.sc ;
-    sub \guillemotright by \guillemotright.sc ;
-    sub \questiondown by \questiondown.sc ;
-    sub \guilsinglleft by \guilsinglleft.sc ;
-    sub \guilsinglright by \guilsinglright.sc ;
+  sub parenleft by parenleft.sc;
+  sub parenright by parenright.sc;
+  sub hyphen by hyphen.cap;
+  sub bracketleft by bracketleft.sc;
+  sub bracketright by bracketright.sc;
+  sub braceleft by braceleft.sc;
+  sub braceright by braceright.sc;
+  sub exclamdown by exclamdown.sc;
+  sub guillemotleft by guillemotleft.sc;
+  sub guillemotright by guillemotright.sc;
+  sub questiondown by questiondown.sc;
+  sub guilsinglleft by guilsinglleft.sc;
+  sub guilsinglright by guilsinglright.sc;
 } case_punctuation;
 
 lookup case_figures {
-  lookupflag 0;
-    sub \zero by \zero.cap ;
-    sub \one by \one.cap ;
-    sub \two by \two.cap ;
-    sub \three by \three.cap ;
-    sub \four by \four.cap ;
-    sub \five by \five.cap ;
-    sub \six by \six.cap ;
-    sub \seven by \seven.cap ;
-    sub \eight by \eight.cap ;
-    sub \nine by \nine.cap ;
+  sub zero by zero.cap;
+  sub one by one.cap;
+  sub two by two.cap;
+  sub three by three.cap;
+  sub four by four.cap;
+  sub five by five.cap;
+  sub six by six.cap;
+  sub seven by seven.cap;
+  sub eight by eight.cap;
+  sub nine by nine.cap;
 } case_figures;
 
 feature case {
-      lookup case_punctuation;
-      lookup case_figures;
+  lookup case_punctuation;
+  lookup case_figures;
 } case;
