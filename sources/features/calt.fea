@@ -12,11 +12,11 @@ feature calt {
             uni1E25 uni1E27 uni1E29 uni1E2B uni1E2D uni1E2F uni1E31 uni1E33
             uni1E35 uni1E37 uni1E39 uni1E3B uni1E3D uni1EC9 uni1ECB uni1EFB
             uni2047 uni2048 uni2C61 V W Y Yacute ydieresis];
-  sub [f f_f]' lookup chaining_substitutions @ahead;
+  sub [f f_f]' @ahead by [f.short f_f.short];
 # #ifdef NOSMALLCAPS
-  sub Q' lookup chaining_substitutions [u v];
+  sub Q' [u v] by Q.u;
 # #else
-  sub Q' lookup chaining_substitutions [u u.sc v v.sc];
-  sub q.sc' lookup chaining_substitutions [u.sc v.sc];
+  sub Q' [u u.sc v v.sc] by Q.u;
+  sub q.sc' [u.sc v.sc] by q.sc.u;
 # #endif
 } calt;

@@ -1,5 +1,13 @@
+lookup ccmp_cap_accents {
+  sub acutecomb by acute.cap;
+  sub gravecomb by grave.cap;
+  sub uni0302 by circumflex.cap;
+  sub uni0306 by breve.cap;
+} ccmp_cap_accents;
+
 feature ccmp {
   @dotted   = [i j uni0249 uni0268];
+  @dotless  = [dotlessi uni0237 dotless0249 dotless0268];
   @accents  = [gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306
                uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D
                uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315
@@ -17,6 +25,6 @@ feature ccmp {
                uni0425 uni0426 uni0427 uni0428 uni0429 uni042A uni042B uni042C
                uni042D uni042E uni042F];
 
-  sub @dotted' lookup chaining_substitutions @accents;
-  sub @capitals @accents' lookup chaining_substitutions;
+  sub @dotted' @accents by @dotless;
+  sub @capitals @accents' lookup ccmp_cap_accents;
 } ccmp;
