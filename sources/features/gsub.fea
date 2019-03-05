@@ -79,37 +79,6 @@ feature locl {
 } locl;
 
 feature frac {
-
- script DFLT;
-     language dflt ;
-      lookup frac_contextual;
-      lookup frac_unicodepoint;
-
- script cyrl;
-     language dflt ;
-      lookup frac_contextual;
-      lookup frac_unicodepoint;
-
- script grek;
-     language dflt ;
-      lookup frac_contextual;
-      lookup frac_unicodepoint;
-
- script hebr;
-     language dflt ;
-      lookup frac_contextual;
-
- script latn;
-     language dflt ;
-      lookup frac_contextual;
-      lookup frac_unicodepoint;
-     language AZE  exclude_dflt;
-      lookup frac_contextual;
-      lookup frac_unicodepoint;
-     language CRT  exclude_dflt;
-      lookup frac_contextual;
-      lookup frac_unicodepoint;
-     language TRK  exclude_dflt;
       lookup frac_contextual;
       lookup frac_unicodepoint;
 } frac;
