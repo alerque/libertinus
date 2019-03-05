@@ -1,0 +1,59 @@
+# #define FOR_FRAC
+# #include "small.fea"
+# #undef FOR_FRAC
+
+lookup frac_contextual {
+    sub [\slash \zero \one \two \three \four \five \six \seven \eight \nine \onequarter 
+         \onehalf \threequarters \fraction \uni2080 \uni2081 \uni2082 \uni2083 
+         \uni2084 \uni2085 \uni2086 \uni2087 \uni2088 \uni2089 \onethird 
+         \twothirds \uni2155 \uni2156 \uni2157 \uni2158 \uni2159 \uni215A 
+         \oneeighth \threeeighths \fiveeighths \seveneighths \uni215F ]
+        [\one \two \three \four \five \six \seven \eight \nine \zero ]'
+        lookup frac_inferiors ;
+    sub [\one \two \three \four \five \six \seven \eight \nine \zero \slash ]'
+        lookup frac_superiors 
+        [\slash \zero \one \two \three \four \five \six \seven \eight \nine \onequarter 
+         \onehalf \threequarters \fraction \uni2070 \uni00B9 \uni00B2 \uni00B3 
+         \uni2074 \uni2075 \uni2076 \uni2077 \uni2078 \uni2079 \onethird 
+         \twothirds \uni2155 \uni2156 \uni2157 \uni2158 \uni2159 \uni215A 
+         \oneeighth \threeeighths \fiveeighths \seveneighths \uni215F ] ;
+} frac_contextual;
+
+lookup frac_unicodepoint {
+  lookupflag 0;
+    sub \uni2215  by \slash;
+    sub \one \slash \four  by \onequarter;
+    sub \one \slash \two  by \onehalf;
+    sub \three \slash \four  by \threequarters;
+    sub \one \slash \three  by \onethird;
+    sub \one \fraction \three  by \onethird;
+    sub \two \slash \three  by \twothirds;
+    sub \two \fraction \three  by \twothirds;
+    sub \one \slash \five  by \uni2155;
+    sub \one \fraction \five  by \uni2155;
+    sub \two \slash \five  by \uni2156;
+    sub \two \fraction \five  by \uni2156;
+    sub \three \slash \five  by \uni2157;
+    sub \three \fraction \five  by \uni2157;
+    sub \four \slash \five  by \uni2158;
+    sub \four \fraction \five  by \uni2158;
+    sub \one \slash \eight  by \oneeighth;
+    sub \one \fraction \eight  by \oneeighth;
+    sub \three \slash \eight  by \threeeighths;
+    sub \three \fraction \eight  by \threeeighths;
+    sub \five \slash \eight  by \fiveeighths;
+    sub \five \fraction \eight  by \fiveeighths;
+    sub \seven \slash \eight  by \seveneighths;
+    sub \seven \fraction \eight  by \seveneighths;
+    sub \one \slash  by \uni215F;
+    sub \one \fraction  by \uni215F;
+    sub \one \slash \six  by \uni2159;
+    sub \one \fraction \six  by \uni2159;
+    sub \five \slash \six  by \uni215A;
+    sub \five \fraction \six  by \uni215A;
+} frac_unicodepoint;
+
+feature frac {
+      lookup frac_contextual;
+      lookup frac_unicodepoint;
+} frac;
