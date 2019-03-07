@@ -1,6 +1,10 @@
-# #define FOR_FRAC
-# #include "small.fea"
-# #undef FOR_FRAC
+lookup denominators {
+# #include "inferiors.fea"
+} denominators;
+
+lookup numerators {
+# #include "superiors.fea"
+} numerators;
 
 lookup frac_contextual {
     sub [slash zero one two three four five six seven eight nine onequarter
@@ -9,9 +13,9 @@ lookup frac_contextual {
          twothirds uni2155 uni2156 uni2157 uni2158 uni2159 uni215A
          oneeighth threeeighths fiveeighths seveneighths uni215F]
         [one two three four five six seven eight nine zero]'
-        lookup inferiors;
+        lookup denominators;
     sub [one two three four five six seven eight nine zero slash]'
-        lookup superiors
+        lookup numerators
         [slash zero one two three four five six seven eight nine onequarter
          onehalf threequarters fraction uni2070 uni00B9 uni00B2 uni00B3
          uni2074 uni2075 uni2076 uni2077 uni2078 uni2079 onethird
