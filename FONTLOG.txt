@@ -45,6 +45,49 @@ https://github.com/libertinus-fonts/libertinus
 ChangeLog
 ---------
 
+3 April 2019 (Khaled Hosny) <Libertinus> Version 6.7
+- Add Cyrillic to Libertinus Serif Bold Italic.
+- Many character additions to Libertinus Math.
+- Set “is extended shape” flag to relevant Libertinus Math glyphs to fix script
+  position on large symbols in Microsoft Word.
+- Improve \coloneq and \eqcolon by increasing the space between the colon and
+  the equal sign.
+- Make upright \partial and \mbfpartial look upright, and make \mbfpartial
+  really bold.
+- Make the vertical bars in Libertinus Math match the height of the other
+  delimiters.
+- Use smaller value for SubscriptBaselineDropMin, the subscripts applied to sub
+  formulas were positioned too low.
+- Fix the side bearings for italic mathematical glyphs in Libertinus Math,
+  making them symmetrical (20 units) and rework kerning tables according to
+  text font kerning.
+- Fix vertical variants of math symbols.
+- Add more ligatures to Libertinus Serif, and add missing ligatures to other
+  Libertinus Serif fonts for parity with the regular style.
+- Move Th ligature to Discretionary Ligatures (“dlig”).
+- Discretionary Ligatures can also be enable using ZWJ control character.
+- Drop “fina” feature for Greek sigma, this feature is for Arabic-like scripts.
+- Move short f substitutions to the more appropriate “calt” feature instead of
+  “ccmp”.
+- Drop “nalt” feature as all glyphs it substitutes to are encoded Unicode
+  characters that can be accessed directly.
+- Rename font files to match the PostScript name of each font.
+- Make Libertinus Serif Semibold work on legacy applications that support only
+  4 styles per family.
+- Fix disordered BlueValues causing warnings with Ghostscript.
+- Make the PUA symbols that were in Libertinus Keyboard accessed as ligatures.
+- Align the bottom of the colon with the period.
+- Kern alternate W glyph similar to regular one.
+- Harmonize the design of italic figures.
+- Extend caps lining figures to (almost) all Serif faces and both proportional
+  and tabular spacing.
+- Fix Libertinus Serif Italic ђ, it looked like an т.
+- Make few marks that combine two glyphs higher, so that they don’t bump into
+  glyph ascenders.
+- Lower Libertinus Mono asterisk and make it bigger.
+- Make combining low line and over line contiguous.
+- Make OpenType features more consistent across fonts.
+
 26 April 2018 (Khaled Hosny) <Libertinus> Version 6.6
 - Align MATH AxisHeight with minus and similar operators.
 - Align single and double arrows to minus and equal signs.
