@@ -128,7 +128,7 @@ LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
 
 LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
 	@echo "   LNT  $(<F)"
-	@fontlint -i2,5,7,23 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
+	@fontlint -i2,5,7,23,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 # Currently ignored errors:
 #  5: Missing points at extrema
