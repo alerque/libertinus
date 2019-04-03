@@ -29,9 +29,10 @@ MFONTS=Sans-Regular \
        Serif-SemiboldItalic \
        Serif-BoldItalic \
        SerifDisplay-Regular \
+       Math-Regular \
        $(NULL)
 
-OFONTS=Math-Regular \
+OFONTS= \
        SerifInitials-Regular \
        Mono-Regular \
        Keyboard-Regular \
@@ -72,6 +73,7 @@ check: $(LNT) $(CHK) $(DUP)
 %.fea: FEADEFS += $(subst Italic,-D ITALIC,$(findstring Italic,$@))
 %.fea: FEADEFS += $(subst Sans,-D SANS,$(findstring Sans,$@))
 %.fea: FEADEFS += $(subst Display,-D NOSMALLCAPS,$(findstring Display,$@))
+%.fea: FEADEFS += $(subst Math,-D MATH,$(findstring Math,$@))
 %.fea: %.sfd $(GSUB)
 	@echo "   FEA	$@"
 	@$(PREPROP) -c $(FEADIR)/pp_content_types $(FEADEFS) -I $(FEADIR) -o $@ $(GSUB)
@@ -82,7 +84,7 @@ $(MOTF): %.otf: $(SRC)/%.sfd $(SRC)/%.fea $(BUILD)
 
 $(OOTF): %.otf: $(SRC)/%.sfd $(BUILD)
 	@echo "   OTF	$@"
-	@$(PY) $(BUILD) -o $@ -v $(VERSION) -i $<
+	@$(PY) $(BUILD) -f $(SRC)/features/$*.fea -o $@ -v $(VERSION) -i $<
 
 $(MNRM): TMPFILE = $(subst nrm,tmpnrm,$@)
 $(MNRM): %.nrm: %.sfd $(NORMALIZE) $(LOADFEAT)
