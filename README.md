@@ -38,7 +38,7 @@ To load and compare GSUB features you also need the [preprocess][3] python modul
 which can be installed by following the instructions on the web page or, if your
 system has `pip`, with the commands:
 
-   pip install https://github.com/doconce/preprocess/archive/master.zip
+    pip install https://github.com/doconce/preprocess/archive/master.zip
 
 (The version of preprocess registered with `PyPi` is out of date.)
 
