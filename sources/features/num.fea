@@ -1,3 +1,4 @@
+# #ifndef MATH
 feature onum {
   sub zero by zero.taboldstyle;
   sub one by one.taboldstyle;
@@ -93,10 +94,13 @@ feature tnum {
   sub Euro.fitted by Euro;
   sub Yen.fitted by yen;
 } tnum;
+# #endif
 
 feature zero {
   sub zero by zero.slash;
+# #ifndef MATH
   sub zero.fitted by zero.slash.fitted;
   sub zero.cap by zero.slash.cap;
   sub zero.cap.fitted by zero.slash.cap.fitted;
+# #endif
 } zero;

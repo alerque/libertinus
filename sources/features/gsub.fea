@@ -1,3 +1,7 @@
+# #ifdef MATH
+# #define NOSMALLCAPS
+# #endif
+
 languagesystem DFLT dflt;
 languagesystem cyrl dflt;
 languagesystem cyrl SRB;
@@ -15,7 +19,11 @@ languagesystem latn SKS;
 languagesystem latn SSM;
 languagesystem latn SVE;
 languagesystem latn TRK;
+# #ifdef MATH
+languagesystem math dflt;
+# #endif
 
+# #ifndef MATH
 # #include "locl.fea"
 
 # #include "frac.fea"
@@ -23,6 +31,7 @@ languagesystem latn TRK;
 # #include "small.fea"
 
 # #include "case.fea"
+# #endif
 
 # #ifndef NOSMALLCAPS
 # #include "sc.fea"
@@ -32,11 +41,13 @@ languagesystem latn TRK;
 
 # #include "num.fea"
 
+# #ifndef MATH
 # #include "salt.fea"
 
 # #include "ccmp.fea"
 
 # #include "sscv.fea"
+# #endif
 
 # #ifdef SANS
 # #include "liga_sans.fea"
@@ -44,4 +55,10 @@ languagesystem latn TRK;
 # #include "liga.fea"
 # #endif
 
+# #ifndef MATH
 # #include "calt.fea"
+# #endif
+
+# #ifdef MATH
+# #include "ssty.fea"
+# #endif
