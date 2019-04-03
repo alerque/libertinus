@@ -32,9 +32,10 @@ of the project on GitHub.
 
 Building
 --------
-To build the fonts, you need GNU Make, [FontForge][1] with Python support, and
-[FontTools][2]. The latest versions of FontForge and FontTools are preferred.
-To load and compare GSUB features you also need the [preprocess][3] python module,
+To build the fonts, you need GNU Make, [FontForge][1] with Python support, and the
+[FontTools][2] Python module. The latest versions of FontForge and FontTools are
+preferred.
+To load and compare GSUB features you also need the [preprocess][3] Python module,
 which can be installed by following the instructions on the web page or, if your
 system has `pip`, with the commands:
 
