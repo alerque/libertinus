@@ -303,7 +303,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "SekAccPos" "'mkmk' Mark to Mark-1" "top_rechts" "'mark' Top rechts" "komb_OR" "'mark' Komb OR" "top_punkt2" "'mark' Top Punkt2" "top_akzent" "'mark' Top Akzent" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt"
-BeginChars: 1114450 2668
+BeginChars: 1114450 2670
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -72027,6 +72027,97 @@ SplineSet
  275 247 264 232 252 230 c 1
  195 230 l 1
  195 122 l 2
+EndSplineSet
+EndChar
+
+StartChar: uniAB52
+Encoding: 43858 43858 2668
+Width: 652
+VWidth: 0
+Flags: W
+AnchorPoint: "top_akzent" 376 645 basechar 0
+AnchorPoint: "unten_punkt" 360 -110 basechar 0
+AnchorPoint: "ogonek" 414 7 basechar 0
+AnchorPoint: "unten_anhang" 334 0 basechar 0
+AnchorPoint: "mittelpunkt" 373 215 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+209 175 m 1xbc
+ 209 207 l 2
+ 209 209 209 211 209 213 c 0
+ 209 273 203 318 194 349 c 0
+ 184 381 166 396 140 396 c 0
+ 122 396 110 383 105 357 c 0
+ 100 331 85 317 60 317 c 0
+ 48 317 39 320 34 328 c 0
+ 28 335 25 344 25 354 c 0
+ 25 369 33 385 51 400 c 0
+ 73 420 101 431 133 431 c 0
+ 173 431 209 412 240 374 c 0
+ 272 336 288 282 288 209 c 2
+ 288 180 l 1
+ 288 140 l 2
+ 288 51 338 37 368 37 c 0xbc
+ 393 37 431 53 468 85 c 0
+ 482 97 484 105 484 124 c 2
+ 484 317 l 2
+ 484 383 471 396 422 396 c 1
+ 419 399 418 408 418 414 c 0
+ 418 421 419 428 422 431 c 1
+ 456 431 492 431 524 431 c 0
+ 539 431 554 430 559 431 c 0
+ 564 431 567 428 567 425 c 2
+ 567 425 563 352 563 322 c 2
+ 563 130 l 2
+ 563 81 572 57 636 57 c 1
+ 639 54 640 49 640 44 c 0
+ 640 38 639 33 636 30 c 1x7c
+ 575 23 540 8 518 -10 c 1
+ 515 -11 512 -10 509 -10 c 0
+ 506 -10 503 -11 499 -10 c 1
+ 499 -10 488 24 488 49 c 0
+ 488 52 485 54 483 54 c 0
+ 479 54 476 52 473 50 c 0
+ 424 10 377 -10 338 -10 c 0
+ 239 -10 209 57 209 126 c 2
+ 209 175 l 1xbc
+EndSplineSet
+EndChar
+
+StartChar: uniA793
+Encoding: 42899 42899 2669
+Width: 513
+VWidth: 999
+Flags: W
+AnchorPoint: "top_akzent" 327 645 basechar 0
+AnchorPoint: "unten_punkt" 321 -110 basechar 0
+AnchorPoint: "unten_anhang" 327 -2 basechar 0
+AnchorPoint: "ogonek" 446 42 basechar 0
+AnchorPoint: "mittelpunkt" 321 215 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+483 91 m 1
+ 433 9 380 -10 320 -10 c 0
+ 198 -10 122 74 122 197 c 1
+ 48 197 l 2
+ 40 197 37 205 37 211 c 0
+ 37 221 47 236 56 236 c 2
+ 122 236 l 1
+ 135 362 235 439 327 439 c 0
+ 423 439 480 399 480 344 c 0
+ 480 313 452 300 431 300 c 0
+ 410 300 396 309 393 336 c 0
+ 389 371 381 406 322 406 c 0
+ 257 406 208 342 208 236 c 1
+ 306 236 l 2
+ 315 236 318 228 318 223 c 0
+ 318 212 309 197 297 197 c 2
+ 210 197 l 1
+ 220 99 276 39 342 39 c 0
+ 385 39 428 61 462 105 c 1
+ 471 104 479 100 483 91 c 1
 EndSplineSet
 EndChar
 EndChars
