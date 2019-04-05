@@ -164,9 +164,6 @@ dist: check $(OTF) $(PDF) $(OPDF)
 	@cp README.md $(DIST)/README.txt
 	@zip -rq $(DIST).zip $(DIST)
 
-cleanish:
+clean:
 	@rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(DUP) $(FEA) $(NRM) $(LNT) \
-		$(PDF)
-
-clean: cleanish
-	@rm -rf $(OTF) $(OPDF)
+		$(PDF) $(OTF) $(OPDF)
