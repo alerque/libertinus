@@ -6,9 +6,9 @@ feature hlig {
 feature dlig {
   sub t t by t_t;
   sub t z by t_z;
-# #ifndef SANS
+#ifndef SANS
   sub T h by T_h;
   sub c k by c_k;
   sub c h by c_h;
-# #endif
+#endif
 } dlig;

@@ -13,10 +13,10 @@ feature calt {
             uni1E35 uni1E37 uni1E39 uni1E3B uni1E3D uni1EC9 uni1ECB uni1EFB
             uni2047 uni2048 uni2C61 V W Y Yacute ydieresis];
   sub [f f_f]' @ahead by [f.short f_f.short];
-# #ifdef NOSMALLCAPS
+#ifdef NOSMALLCAPS
   sub Q' [u v] by Q.u;
-# #else
+#else
   sub Q' [u u.sc v v.sc] by Q.u;
   sub q.sc' [u.sc v.sc] by q.sc.u;
-# #endif
+#endif
 } calt;

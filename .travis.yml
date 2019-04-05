@@ -13,8 +13,7 @@ addons:
       - python-fontforge
 
 install:
-  - pip install fonttools
-  - pip install https://github.com/doconce/preprocess/archive/master.zip
+  - pip install fonttools pcpp
 
 script:
   - make otf
