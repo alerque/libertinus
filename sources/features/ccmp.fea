@@ -7,7 +7,7 @@ lookup ccmp_cap_accents {
 
 feature ccmp {
   @dotted   = [i j uni0249 uni0268];
-  @dotless  = [dotlessi uni0237 dotless0249 dotless0268];
+  @dotless  = [dotlessi uni0237 uni0249.dotless uni0268.dotless];
   @accents  = [gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306
                uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D
                uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315
