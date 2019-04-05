@@ -33,7 +33,7 @@ of the project on GitHub.
 Building
 --------
 To build the fonts, you need GNU Make, [FontForge][1] with Python support, the
-[FontTools][2] Python module. and the [pcpp][3] Python module. The latest
+[FontTools][2] Python module, and the [pcpp][3] Python module. The latest
 versions of FontForge and FontTools are preferred.
 
 To build the fonts:
