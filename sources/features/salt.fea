@@ -1,16 +1,16 @@
 feature salt {
-# #ifndef SANS
+#ifndef SANS
   sub J by J.alt;
   sub K by K.alt;
   sub R by R.alt;
   sub W by W.alt;
-# #endif
-# #ifndef NOSMALLCAPS
+#endif
+#ifndef NOSMALLCAPS
   sub a.sc by a.scalt;
   sub q.sc by q.sc.u;
   sub eng.sc by Eng.UCStyle.sc;
   sub germandbls.sc by germandbls.scalt;
-# #endif
+#endif
   sub Q by Q.u;
   sub h by h.alt;
   sub y by y.alt;

@@ -1,6 +1,6 @@
-# #ifdef MATH
-# #define NOSMALLCAPS
-# #endif
+#ifdef MATH
+#define NOSMALLCAPS
+#endif
 
 languagesystem DFLT dflt;
 languagesystem cyrl dflt;
@@ -19,46 +19,46 @@ languagesystem latn SKS;
 languagesystem latn SSM;
 languagesystem latn SVE;
 languagesystem latn TRK;
-# #ifdef MATH
+#ifdef MATH
 languagesystem math dflt;
-# #endif
+#endif
 
-# #ifndef MATH
-# #include "locl.fea"
+#ifndef MATH
+#include "locl.fea"
 
-# #include "frac.fea"
+#include "frac.fea"
 
-# #include "small.fea"
+#include "small.fea"
 
-# #include "case.fea"
-# #endif
+#include "case.fea"
+#endif
 
-# #ifndef NOSMALLCAPS
-# #include "sc.fea"
-# #endif
+#ifndef NOSMALLCAPS
+#include "sc.fea"
+#endif
 
-# #include "dhlig.fea"
+#include "dhlig.fea"
 
-# #include "num.fea"
+#include "num.fea"
 
-# #ifndef MATH
-# #include "salt.fea"
+#ifndef MATH
+#include "salt.fea"
 
-# #include "ccmp.fea"
+#include "ccmp.fea"
 
-# #include "sscv.fea"
-# #endif
+#include "sscv.fea"
+#endif
 
-# #ifdef SANS
-# #include "liga_sans.fea"
-# #else
-# #include "liga.fea"
-# #endif
+#ifdef SANS
+#include "liga_sans.fea"
+#else
+#include "liga.fea"
+#endif
 
-# #ifndef MATH
-# #include "calt.fea"
-# #endif
+#ifndef MATH
+#include "calt.fea"
+#endif
 
-# #ifdef MATH
-# #include "ssty.fea"
-# #endif
+#ifdef MATH
+#include "ssty.fea"
+#endif

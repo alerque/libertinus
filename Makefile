@@ -10,7 +10,7 @@ DOC=documentation
 TOOLS=tools
 
 PY?=python
-PREPROP?=preprocess
+PREPROP?=pcpp
 BUILD=$(TOOLS)/build.py
 LOADFEAT=$(TOOLS)/load-features.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
@@ -76,7 +76,7 @@ check: $(LNT) $(CHK) $(DUP)
 %.fea: FEADEFS += $(subst Math,-D MATH,$(findstring Math,$@))
 %.fea: %.sfd $(GSUB)
 	@echo "   FEA	$@"
-	@$(PREPROP) -c $(FEADIR)/pp_content_types $(FEADEFS) -I $(FEADIR) -o $@ $(GSUB)
+	@$(PREPROP) $(FEADEFS) -I $(FEADIR) -o $@ $(GSUB)
 
 $(MOTF): %.otf: $(SRC)/%.sfd $(SRC)/%.fea $(BUILD)
 	@echo "   OTF	$@"

@@ -8,7 +8,7 @@ feature ss01 {
   sub Udieresis by Udieresis.alt;
 } ss01;
 
-# #ifndef SANS
+#ifndef SANS
 feature ss02 {
   featureNames {
     name "Swashy 'J' 'K' 'R'";
@@ -18,7 +18,7 @@ feature ss02 {
   sub K by K.alt;
   sub R by R.alt;
 } ss02;
-# #endif
+#endif
 
 feature ss03 {
   featureNames {
@@ -27,9 +27,9 @@ feature ss03 {
 
   sub germandbls by germandbls.ss03;
   sub uni1E9E by uni1E9E.alt;
-# #ifndef NOSMALLCAPS
+#ifndef NOSMALLCAPS
   sub germandbls.sc by germandbls.scalt;
-# #endif
+#endif
 } ss03;
 
 feature ss04 {
@@ -38,12 +38,12 @@ feature ss04 {
   };
 
   sub uni1E9E by uni1E9E.alt;
-# #ifndef NOSMALLCAPS
+#ifndef NOSMALLCAPS
   sub germandbls.sc by germandbls.scalt;
-# #endif
+#endif
 } ss04;
 
-# #ifndef SANS
+#ifndef SANS
 feature ss05 {
   featureNames {
     name "Crossed 'W'";
@@ -51,7 +51,7 @@ feature ss05 {
 
   sub W by W.alt;
 } ss05;
-# #endif
+#endif
 
 feature ss06 {
   featureNames {
@@ -68,8 +68,8 @@ feature ss07 {
 
   sub Eng by Eng.UCStyle;
   sub Eng.UCStyle by Eng;
-# #ifndef NOSMALLCAPS
+#ifndef NOSMALLCAPS
   sub eng.sc by Eng.UCStyle.sc;
   sub Eng.UCStyle.sc by eng.sc;
-# #endif
+#endif
 } ss07;
