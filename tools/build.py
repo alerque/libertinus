@@ -70,10 +70,10 @@ class Font:
 
     def _make_over_under_line(self):
         font = self._font
-        bases = ["uni0305", "uni0332"]
         minwidth = 50
 
-        if any([name not in font for name in bases]):
+        bases = [n for n in ("uni0305", "uni0332") if n in font]
+        if not bases:
             return
 
         # Collect glyphs grouped by their widths rounded by minwidth, we will
