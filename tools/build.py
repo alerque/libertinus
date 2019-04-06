@@ -105,16 +105,13 @@ class Font:
                                                       " ".join(replacements)))
         fea.append("} mark;")
 
-        with NamedTemporaryFile(suffix=".fea") as temp:
-            temp.write("\n".join(fea).encode("utf-8"))
-            temp.flush()
-            font.mergeFeature(temp.name)
+        self._features += "\n".join(fea)
 
     def generate(self, output):
         self._update_metadata()
         self._cleanup_glyphs()
-        self._merge_features()
         self._make_over_under_line()
+        self._merge_features()
         self._font.generate(output, flags=("opentype"))
 
         font = TTFont(output)
