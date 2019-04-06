@@ -6,7 +6,9 @@ import os
 import fontforge
 
 from fontTools import subset
+from fontTools.misc.py23 import UnicodeIO
 from fontTools.ttLib import TTFont
+from pcpp.preprocessor import Preprocessor
 
 from tempfile import NamedTemporaryFile
 
@@ -16,14 +18,19 @@ class Font:
         self._font = fontforge.open(filename)
         self._version = version
 
-        self._features = ""
+        self._features = UnicodeIO()
         if features and os.path.isfile(features):
+            preprocessor = Preprocessor()
+            for d in ("italic", "sans", "display", "math"):
+                if d in filename.lower():
+                    preprocessor.define(d.upper())
             with open(features) as f:
-                self._features = f.read()
+                preprocessor.parse(f)
+            preprocessor.write(self._features)
 
     def _merge_features(self):
         with NamedTemporaryFile(suffix=".fea") as temp:
-            temp.write(self._features.encode("utf-8"))
+            temp.write(self._features.getvalue().encode("utf-8"))
             temp.flush()
             self._font.mergeFeature(temp.name)
 
@@ -105,7 +112,7 @@ class Font:
                                                       " ".join(replacements)))
         fea.append("} mark;")
 
-        self._features += "\n".join(fea)
+        self._features.write("\n".join(fea))
 
     def generate(self, output):
         self._update_metadata()
