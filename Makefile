@@ -4,13 +4,11 @@ VERSION=6.8
 DIST=$(NAME)-$(VERSION)
 
 SRC=sources
-FEADIR=$(SRC)/features
-GSUB=$(FEADIR)/gsub.fea
+GSUB=$(SRC)/features/gsub.fea
 DOC=documentation
 TOOLS=tools
 
 PY?=python
-PREPROP?=pcpp
 BUILD=$(TOOLS)/build.py
 LOADFEAT=$(TOOLS)/load-features.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
@@ -45,7 +43,6 @@ SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
 MNRM=$(MFONTS:%=$(SRC)/$(NAME)%.nrm)
 ONRM=$(OFONTS:%=$(SRC)/$(NAME)%.nrm)
 NRM=$(MNRM) $(ONRM)
-FEA=$(MFONTS:%=$(SRC)/$(NAME)%.fea)
 MCHK=$(MFONTS:%=$(SRC)/$(NAME)%.chk)
 OCHK=$(OFONTS:%=$(SRC)/$(NAME)%.chk)
 CHK=$(MCHK) $(OCHK)
@@ -57,30 +54,19 @@ OTF=$(MOTF) $(OOTF)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
 OPDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
 
-FEADEFS=
-
 export SOURCE_DATE_EPOCH ?= 0
 
 all: otf
 
 otf: $(OTF)
 doc: $(PDF) $(OPDF)
-feature-files: $(FEA)
 normalize: $(NRM)
 check: $(LNT) $(CHK) $(DUP)
 
 
-%.fea: FEADEFS += $(subst Italic,-D ITALIC,$(findstring Italic,$@))
-%.fea: FEADEFS += $(subst Sans,-D SANS,$(findstring Sans,$@))
-%.fea: FEADEFS += $(subst Display,-D NOSMALLCAPS,$(findstring Display,$@))
-%.fea: FEADEFS += $(subst Math,-D MATH,$(findstring Math,$@))
-%.fea: %.sfd $(GSUB)
-	@echo "   FEA	$@"
-	@$(PREPROP) $(FEADEFS) -I $(FEADIR) -o $@ $(GSUB)
-
-$(MOTF): %.otf: $(SRC)/%.sfd $(SRC)/%.fea $(BUILD)
+$(MOTF): %.otf: $(SRC)/%.sfd $(GSUB) $(BUILD)
 	@echo "   OTF	$@"
-	@$(PY) $(BUILD) -f $(SRC)/$*.fea -o $@ -v $(VERSION) -i $<
+	@$(PY) $(BUILD) -f $(GSUB) -o $@ -v $(VERSION) -i $<
 
 $(OOTF): %.otf: $(SRC)/%.sfd $(BUILD)
 	@echo "   OTF	$@"
