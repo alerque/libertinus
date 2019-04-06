@@ -12,10 +12,20 @@ from tempfile import NamedTemporaryFile
 
 
 class Font:
-    def __init__(self, filename, features):
+    def __init__(self, filename, features, version):
         self._font = fontforge.open(filename)
+        self._version = version
+
+        self._features = ""
         if features and os.path.isfile(features):
-            self._font.mergeFeature(features)
+            with open(features) as f:
+                self._features = f.read()
+
+    def _merge_features(self):
+        with NamedTemporaryFile(suffix=".fea") as temp:
+            temp.write(self._features.encode("utf-8"))
+            temp.flush()
+            self._font.mergeFeature(temp.name)
 
     def _cleanup_glyphs(self):
         font = self._font
@@ -26,7 +36,8 @@ class Font:
             glyph.correctDirection()
             glyph.autoHint()
 
-    def _update_metadata(self, version):
+    def _update_metadata(self):
+        version = self._version
         font = self._font
 
         year = datetime.date.today().year
@@ -99,9 +110,10 @@ class Font:
             temp.flush()
             font.mergeFeature(temp.name)
 
-    def generate(self, version, output):
-        self._update_metadata(version)
+    def generate(self, output):
+        self._update_metadata()
         self._cleanup_glyphs()
+        self._merge_features()
         self._make_over_under_line()
         self._font.generate(output, flags=("opentype"))
 
@@ -135,8 +147,8 @@ def main():
     parser.add_argument("-f", "--feature-file", required=False)
 
     args = parser.parse_args()
-    font = Font(args.input, args.feature_file)
-    font.generate(args.version, args.output)
+    font = Font(args.input, args.feature_file, args.version)
+    font.generate(args.output)
 
 
 if __name__ == "__main__":
