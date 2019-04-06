@@ -29,8 +29,8 @@ class Font:
             preprocessor.write(self._features)
 
     def _merge_features(self):
-        with NamedTemporaryFile(suffix=".fea") as temp:
-            temp.write(self._features.getvalue().encode("utf-8"))
+        with NamedTemporaryFile(suffix=".fea", mode="w") as temp:
+            temp.write(self._features.getvalue())
             temp.flush()
             self._font.mergeFeature(temp.name)
 
