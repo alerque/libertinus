@@ -10,7 +10,6 @@ TOOLS=tools
 
 PY?=python
 BUILD=$(TOOLS)/build.py
-LOADFEAT=$(TOOLS)/load-features.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
 CHECKERRS=$(TOOLS)/check-errors.py
 LO?=lowriter
@@ -73,10 +72,9 @@ $(OOTF): %.otf: $(SRC)/%.sfd $(BUILD)
 	@$(PY) $(BUILD) -f $(SRC)/features/$*.fea -o $@ -v $(VERSION) -i $<
 
 $(MNRM): TMPFILE = $(subst nrm,tmpnrm,$@)
-$(MNRM): %.nrm: %.sfd $(NORMALIZE) $(LOADFEAT)
+$(MNRM): %.nrm: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
-	@$(PY) $(LOADFEAT) -e -o $(TMPFILE) $<
-	@$(PY) $(NORMALIZE) $(TMPFILE) $@
+	@$(PY) $(NORMALIZE) $< $@
 	@rm -f $(TMPFILE)
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
@@ -85,11 +83,9 @@ $(ONRM): %.nrm: %.sfd $(NORMALIZE)
 	@$(PY) $(NORMALIZE) $< $@
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
-$(MCHK): TMPFILE = $(subst chk,tmpchk,$@)
-$(MCHK): %.chk: %.sfd $(NORMALIZE) $(LOADFEAT)
+$(MCHK): %.chk: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
-	@$(PY) $(LOADFEAT) -e -o $(TMPFILE) $<
-	@$(PY) $(NORMALIZE) $(TMPFILE) $@
+	@$(PY) $(NORMALIZE) $< $@
 	@rm -f $(TMPFILE)
 	@diff -u $< $@ || (rm -rf $@ && false)
 
