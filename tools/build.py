@@ -6,7 +6,7 @@ import os
 import fontforge
 
 from fontTools import subset
-from fontTools.misc.py23 import UnicodeIO
+from fontTools.misc.py23 import StringIO
 from fontTools.ttLib import TTFont
 from pcpp.preprocessor import Preprocessor
 
@@ -18,7 +18,7 @@ class Font:
         self._font = fontforge.open(filename)
         self._version = version
 
-        self._features = UnicodeIO()
+        self._features = StringIO()
         if features and os.path.isfile(features):
             preprocessor = Preprocessor()
             for d in ("italic", "sans", "display", "math"):
