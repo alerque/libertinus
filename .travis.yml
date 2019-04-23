@@ -14,7 +14,7 @@ addons:
       - python-fontforge
 
 install:
-  - pip install fonttools pcpp
+  - pip install -r requirements.txt
 
 script:
   - make otf
