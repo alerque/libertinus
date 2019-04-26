@@ -51,6 +51,7 @@ MOTF=$(MFONTS:%=$(NAME)%.otf)
 OOTF=$(OFONTS:%=$(NAME)%.otf)
 OTF=$(MOTF) $(OOTF)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
+PNG=$(DOC)/preview.png
 OPDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
@@ -135,12 +136,17 @@ $(DOC)/%.pdf: $(DOC)/%.fodt
 	@VCL_DEBUG_DISABLE_PDFCOMPRESSION=1 LC_ALL=en_US.utf-8 \
 	 $(LO) --convert-to pdf --outdir $(DOC) $< 1> /dev/null
 
-dist: check $(OTF) $(PDF) $(OPDF)
+$(DOC)/preview.png: $(DOC)/preview.tex $(MOTF) $(OOTF)
+	@echo "   PNG	$@"
+	@xelatex --interaction=batchmode -output-directory=$(dir $@) $<
+	@pdftocairo -png -singlefile -r 300 $(basename $@).pdf $(basename $@)
+
+dist: check $(OTF) $(PDF) $(OPDF) $(PNG)
 	@echo "   DST	$(DIST).zip"
 	@rm -rf $(DIST) $(DIST).zip
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
-	@cp $(PDF) $(OPDF) $(DIST)/$(DOC)
+	@cp $(PDF) $(OPDF) $(PNG) $(DIST)/$(DOC)
 	@cp $(DOC)/Math-Sample.pdf $(DIST)/$(DOC)
 	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
