@@ -9,26 +9,27 @@
 \setmonofont{Libertinus Mono}
 \setmathfont{Libertinus Math}
 
+\def\sample#1#2{{\fontspec{#1} #2} & \scalebox{.6}[1]{\texttt{#1}}}
+\def\panagram#1{\sample{#1}{The Quick Brown Fox Jumps Over The Lazy Dog}}
+
 \begin{document}
 \pagestyle{empty}
-\def\fname#1{\scalebox{.6}[1]{\texttt{#1}}}
-\def\panagram{The Quick Brown Fox Jumps Over The Lazy Dog}
 
 \begin{center}
   \begin{tabular}{l r}
-    \font\test="Libertinus Serif" {\test\panagram} & \fname{Libertinus Serif} \\
-    \font\test="Libertinus Serif Display" {\test\panagram} & \fname{Libertinus Serif Display} \\
-    \font\test="Libertinus Serif Italic" {\test\panagram} & \fname{Libertinus Serif Italic} \\
-    \font\test="Libertinus Serif Semibold" {\test\panagram} & \fname{Libertinus Serif Semibold} \\
-    \font\test="Libertinus Serif Semibold Italic" {\test\panagram} & \fname{Libertinus Serif Semibold Italic} \\
-    \font\test="Libertinus Serif Bold" {\test\panagram} & \fname{Libertinus Serif Bold} \\
-    \font\test="Libertinus Serif Bold Italic" {\test\panagram} & \fname{Libertinus Serif Bold Italic} \\
-    \font\test="Libertinus Sans" {\test\panagram} & \fname{Libertinus Sans} \\
-    \font\test="Libertinus Sans Italic" {\test\panagram} & \fname{Libertinus Sans Italic} \\
-    \font\test="Libertinus Sans Bold" {\test\panagram} & \fname{Libertinus Sans Bold} \\
-    \font\test="Libertinus Mono" {\test\panagram} & \fname{Libertinus Mono} \\
-    \font\test="Libertinus Serif Initials" {\test ABCDEFGHIJKLMOPQRSTUVWXYZ} & \fname{Libertinus Serif Initials} \\
-    \font\test="Libertinus Keyboard" {\test Ctrl \textsf{+} Alt \textsf{+} F1 Enter} & \fname{Libertinus Keyboard} \\
+   \panagram{Libertinus Serif} \\
+   \panagram{Libertinus Serif Display} \\
+   \panagram{Libertinus Serif Italic} \\
+   \panagram{Libertinus Serif Semibold} \\
+   \panagram{Libertinus Serif Semibold Italic} \\
+   \panagram{Libertinus Serif Bold} \\
+   \panagram{Libertinus Serif Bold Italic} \\
+   \panagram{Libertinus Sans} \\
+   \panagram{Libertinus Sans Italic} \\
+   \panagram{Libertinus Sans Bold} \\
+   \panagram{Libertinus Mono} \\
+   \sample{Libertinus Serif Initials}{ABCDEFGHIJKLMOPQRSTUVWXYZ} \\
+   \sample{Libertinus Keyboard}{Ctrl \textsf{+} Alt \textsf{+} F1 Enter} \\
   \end{tabular}
 \end{center}
 
