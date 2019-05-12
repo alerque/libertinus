@@ -3,22 +3,20 @@ FontName: LibertinusSerifInitials-Regular
 FullName: Libertinus Serif Initials Regular
 FamilyName: Libertinus Serif Initials
 Weight: Regular
-Copyright: Copyright (c) 2012-2018 The Libertinus Project Authors.
-Version: 6.7
+Copyright:
+UComments: "2003-08-29: Created.+AAoA-2004-07-25: v(1.0) release candidate+AAoA-2005-12-28: v(1.1.0) stable+AAoA-2006-01-01: v(2.0.0) stable+AAoA-2006-09-05: v(2.2.0) stable+AAoA-2006-12-04: v(2.3.0) stable+AAoA-2007-03-11: v(2.4.0) stable+AAoA-2007-12-00: v(2.7.0) stable+AAoA-2008-06-00: v(2.8.14) stable+AAoA"
+Version: 5.0.6
 ItalicAngle: 0
 UnderlinePosition: -98
 UnderlineWidth: 40
-Ascent: 800
-Descent: 200
-InvalidEm: 0
-sfntRevision: 0x0006b333
+Ascent: 754
+Descent: 246
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-XUID: [1021 758 -1776231353 15626709]
-StyleMap: 0x0040
+XUID: [1021 993 1524925707 2876416]
 FSType: 0
-OS2Version: 4
+OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
@@ -27,7 +25,6 @@ TTFWeight: 400
 TTFWidth: 5
 LineGap: 0
 VLineGap: 0
-Panose: 2 0 5 3 0 0 0 0 0 0
 OS2TypoAscent: 894
 OS2TypoAOffset: 0
 OS2TypoDescent: -246
@@ -41,27 +38,15 @@ HheadAscent: 894
 HheadAOffset: 0
 HheadDescent: -246
 HheadDOffset: 0
-OS2SubXSize: 650
-OS2SubYSize: 700
-OS2SubXOff: 0
-OS2SubYOff: 140
-OS2SupXSize: 650
-OS2SupYSize: 700
-OS2SupXOff: 0
-OS2SupYOff: 480
-OS2StrikeYSize: 49
-OS2StrikeYPos: 258
 OS2CapHeight: 688
 OS2FamilyClass: 261
 OS2Vendor: 'ALIF'
-OS2CodePages: 0000002c.00000000
-OS2UnicodeRanges: 20000a87.12000410.00000020.00000000
 Lookup: 257 0 0 "'cpsp' Capital Spacing lookup 0" { "'cpsp' Capital Spacing lookup 0 subtable"  } ['cpsp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning lookup 1" { "'mark' Mark Positioning lookup 1 subtable"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 2" { "'kern' Horizontal Kerning lookup 2 subtable" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 2" { "'kern' Kerning 1" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-KernClass2: 18 16 "'kern' Horizontal Kerning lookup 2 subtable"
+KernClass2: 18 16 "'kern' Kerning 1"
  31 T Gamma Tau afii10020 afii10036
  44 Y Upsilon Upsilon1 afii10062 afii10037 seven
  9 V W W.alt
@@ -95,21 +80,152 @@ KernClass2: 18 16 "'kern' Horizontal Kerning lookup 2 subtable"
  21 u.sc uhungarumlaut.sc
  49 k.sc b.sc d.sc f.sc h.sc i.sc l.sc n.sc p.sc r.sc
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 24 {} -5 {} -49 {} -34 {} -49 {} -63 {} 0 {} -59 {} 37 {} 24 {} -49 {} 0 {} 0 {} 0 {} 24 {} 24 {} 24 {} -37 {} -44 {} -24 {} -61 {} -61 {} 0 {} -49 {} 24 {} 24 {} -68 {} 0 {} 0 {} 0 {} 24 {} 24 {} 24 {} -34 {} -49 {} -24 {} -112 {} -49 {} 0 {} -49 {} 24 {} 24 {} -112 {} 0 {} -50 {} 0 {} 0 {} 24 {} 24 {} -24 {} -54 {} 0 {} 0 {} -20 {} 0 {} -24 {} 24 {} 37 {} 0 {} -15 {} 0 {} 0 {} -5 {} -34 {} -24 {} 5 {} 10 {} 10 {} -29 {} 5 {} 0 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} -39 {} -12 {} -24 {} 10 {} 15 {} 10 {} -49 {} -8 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} -12 {} -24 {} 0 {} 0 {} 10 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -54 {} -54 {} 0 {} -7 {} -7 {} -40 {} 7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} 0 {} 0 {} -12 {} 0 {} 0 {} 0 {} 0 {} 10 {} -24 {} 0 {} 0 {} -63 {} -73 {} -112 {} -34 {} -34 {} 0 {} 0 {} -12 {} 0 {} -37 {} -59 {} 0 {} 0 {} 0 {} 0 {} 0 {} -49 {} -49 {} -49 {} 0 {} 0 {} 0 {} -37 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 24 {} 24 {} -12 {} 0 {} 0 {} 0 {} 37 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 24 {} 0 {} 0 {} 0 {} -59 {} 0 {} 0 {} 0 {} 49 {} 29 {} -49 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -24 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {}
-LangName: 1033 "Copyright +AKkA 2012-2018 The Libertinus Project Authors." "" "" "6.7;ALIF;LibertinusSerifInitials-Regular" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/alif-type/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "https://scripts.sil.org/OFL"
+LangName: 1033 "" "" "" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "https://github.com/alif-type/libertinus" "http://www.linuxlibertine.org" "This Font Software is licensed under the SIL Open Font License, Version 1.1." "http://scripts.sil.org/OFL"
+GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL For New Fonts
+ExtremaBound: 50
 BeginPrivate: 9
 BlueValues 47 [-12 0 429 442 460 472 600 610 645 658 688 698]
 OtherBlues 11 [-238 -227]
 FamilyBlues 47 [-12 0 429 442 460 472 600 610 645 658 688 698]
 FamilyOtherBlues 11 [-238 -227]
-BlueShift 1 6
+BlueScale 8 0.039625
 StdHW 4 [29]
 StdVW 4 [79]
 StemSnapH 16 [29 34 39 44 49]
 StemSnapV 10 [49 79 85]
 EndPrivate
+Grid
+-392 -319 m 25
+ 400 -319 l 1049
+367 -341 m 2
+ 122 -341 l 2
+ 114 -341 110 -333 110 -326 c 0
+ 110 -314 120 -297 132 -297 c 2
+ 377 -297 l 2
+ 386 -297 390 -304 390 -311 c 0
+ 390 -323 380 -341 367 -341 c 2
+-1000 614 m 0
+ 2000 614 l 1024
+367 -131 m 2
+ 122 -131 l 2
+ 114 -131 110 -123 110 -116 c 0
+ 110 -104 120 -87 132 -87 c 2
+ 377 -87 l 2
+ 386 -87 390 -94 390 -101 c 0
+ 390 -113 380 -131 367 -131 c 2
+574 850 m 25
+ -47 850 l 25
+ 574 850 l 25
+-1000 -232 m 0
+ 2000 -232 l 1024
+-1000 429 m 0
+ 2000 429 l 1024
+-1000 645 m 0
+ 2000 645 l 1024
+-1000 698 m 0
+ 2000 698 l 1024
+-409 -67 m 25
+ 424 -67 l 25
+ 423 -163 l 25
+ -410 -163 l 25
+ -409 -67 l 25
+-442 733 m 25
+ 1172 733 l 1049
+1237 894 m 25
+ 1237 -244 l 1049
+1321 894 m 25
+ 1321 -246 l 25
+ -581 -246 l 25
+ -581 894 l 25
+ 1321 894 l 25
+-497 894 m 25
+ -497 -244 l 1049
+0 658 m 1
+ 674 658 l 1033
+672 650 m 1
+ 674 645 l 1
+ 674 635 l 2
+ 674 630 671 627 666 627 c 2
+ 640 627 l 2
+ 599 627 82 627 42 627 c 2
+ 8 627 l 2
+ 4 627 0 630 0 635 c 2
+ 0 645 l 1
+ 2 650 l 1
+ 672 650 l 1
+0 645 m 1
+ 674 645 l 1025
+-261 -141 m 25
+ 905 -141 l 1049
+905 -128 m 25
+ -261 -128 l 25
+ 905 -128 l 25
+-20 -10 m 17
+ 1054.5 -10 l 1033
+-28 439 m 1
+ 638 439 l 1
+ 1139 439 l 1025
+-42 321 m 1
+ 658 321 l 1025
+637 431 m 1
+ 639 429 l 1
+ 639 406 l 2
+ 639 401 636 398 631 398 c 2
+ 604 398 l 2
+ 563 398 47 398 7 398 c 2
+ -23 398 l 2
+ -27 398 -30 401 -31 406 c 2
+ -31 429 l 1
+ -25 431 l 1
+ 637 431 l 1
+-20 0 m 1
+ 833 0 l 1025
+798 18 m 2
+ 825 18 l 2
+ 829 18 833 15 833 10 c 2
+ 833 0 l 1
+ 829 -5 l 1
+ -16 -5 l 1
+ -20 0 l 1
+ -20 10 l 2
+ -20 15 -17 18 -12 18 c 2
+ 14 18 l 2
+ 55 18 759 18 798 18 c 2
+-14 122 m 25
+ 886 122 l 1049
+592 805 m 25
+ -450 805 l 25
+ 592 805 l 25
+397 230 m 25
+ 124 230 l 25
+ 397 230 l 25
+-413 -110 m 25
+ 379 -110 l 1049
+295 287 m 1
+ 295 238 l 1
+ 42 238 l 1
+ 42 287 l 1
+ 295 287 l 1
+0 581 m 1049
+0 576 m 25
+ 7 576 l 25
+ 0 568 l 25
+ 433 568 l 25
+ 438 575 l 25
+ 432 575 l 1049
+432 580 m 1049
+574 833 m 25
+ -47 833 l 25
+ 574 833 l 25
+780 550 m 1
+ 236 550 l 1
+ 213 506 l 1
+ 193 550 l 1
+ -113 550 l 1025
+EndSplineSet
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning lookup 1 subtable"
 BeginChars: 1114293 258
 
