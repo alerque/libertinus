@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/libertinus-fonts/libertinus.svg?branch=master)](https://travis-ci.org/libertinus-fonts/libertinus)
+[![Build Status](https://travis-ci.org/alif-type/libertinus.svg?branch=master)](https://travis-ci.org/alif-type/libertinus)
 
 Libertinus fonts
 ================
@@ -27,7 +27,7 @@ Libertinus fonts are available under the terms of the Open Font License version
 1.1.
 
 A zip file containing the font files can be downloaded from the 
-“[Releases](https://github.com/libertinus-fonts/libertinus/releases)” page
+“[Releases](https://github.com/alif-type/libertinus/releases)” page
 of the project on GitHub.
 
 Building
