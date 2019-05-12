@@ -55,6 +55,8 @@ class Font:
         # Override the default which includes the build date
         font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" %
                             (version, font.os2_vendor, font.fontname))
+        font.appendSFNTName("English (US)", "Vendor URL",
+                            "https://github.com/alif-type/libertinus")
 
     def _draw_over_under_line(self, name, widths):
         font = self._font
