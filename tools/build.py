@@ -19,7 +19,7 @@ class Font:
         self._version = version
 
         self._features = StringIO()
-        if features and os.path.isfile(features):
+        if features:
             preprocessor = Preprocessor()
             for d in ("italic", "sans", "display", "math"):
                 if d in filename.lower():

@@ -16,7 +16,7 @@ LO?=lowriter
 
 NULL=
 
-MFONTS=Sans-Regular \
+FONTS=Sans-Regular \
        Sans-Bold \
        Sans-Italic \
        Serif-Regular \
@@ -27,29 +27,17 @@ MFONTS=Sans-Regular \
        Serif-BoldItalic \
        SerifDisplay-Regular \
        Math-Regular \
-       $(NULL)
-
-OFONTS= \
        SerifInitials-Regular \
        Mono-Regular \
        Keyboard-Regular \
        $(NULL)
 
-FONTS=$(MFONTS) \
-      $(OFONTS)
-
 SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
-MNRM=$(MFONTS:%=$(SRC)/$(NAME)%.nrm)
-ONRM=$(OFONTS:%=$(SRC)/$(NAME)%.nrm)
-NRM=$(MNRM) $(ONRM)
-MCHK=$(MFONTS:%=$(SRC)/$(NAME)%.chk)
-OCHK=$(OFONTS:%=$(SRC)/$(NAME)%.chk)
-CHK=$(MCHK) $(OCHK)
+NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
+CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
 DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
 LNT=$(FONTS:%=$(NAME)%.lnt)
-MOTF=$(MFONTS:%=$(NAME)%.otf)
-OOTF=$(OFONTS:%=$(NAME)%.otf)
-OTF=$(MOTF) $(OOTF)
+OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
 PNG=$(DOC)/preview.png
 OPDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
@@ -64,33 +52,23 @@ normalize: $(NRM)
 check: $(LNT) $(CHK) $(DUP)
 
 
-$(MOTF): %.otf: $(SRC)/%.sfd $(GSUB) $(BUILD)
+nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
+
+%.otf: $(SRC)/%.sfd $(GSUB) $(BUILD)
 	@echo "   OTF	$@"
-	@$(PY) $(BUILD) -f $(GSUB) -o $@ -v $(VERSION) -i $<
+	@$(PY) $(BUILD)                                                        \
+		-i $<                                                          \
+		-o $@                                                          \
+		-v $(VERSION)                                                  \
+		$(if $(call nofea,$@),,-f $(GSUB))                             \
+		;
 
-$(OOTF): %.otf: $(SRC)/%.sfd $(BUILD)
-	@echo "   OTF	$@"
-	@$(PY) $(BUILD) -f $(SRC)/features/$*.fea -o $@ -v $(VERSION) -i $<
-
-$(MNRM): TMPFILE = $(subst nrm,tmpnrm,$@)
-$(MNRM): %.nrm: %.sfd $(NORMALIZE)
-	@echo "   NRM	$(<F)"
-	@$(PY) $(NORMALIZE) $< $@
-	@rm -f $(TMPFILE)
-	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
-
-$(ONRM): %.nrm: %.sfd $(NORMALIZE)
+%.nrm: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
-$(MCHK): %.chk: %.sfd $(NORMALIZE)
-	@echo "   NRM	$(<F)"
-	@$(PY) $(NORMALIZE) $< $@
-	@rm -f $(TMPFILE)
-	@diff -u $< $@ || (rm -rf $@ && false)
-
-$(OCHK): %.chk: %.sfd $(NORMALIZE)
+%.chk: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@ || (rm -rf $@ && false)
@@ -136,7 +114,7 @@ $(DOC)/%.pdf: $(DOC)/%.fodt
 	@VCL_DEBUG_DISABLE_PDFCOMPRESSION=1 LC_ALL=en_US.utf-8 \
 	 $(LO) --convert-to pdf --outdir $(DOC) $< 1> /dev/null
 
-$(DOC)/preview.png: $(DOC)/preview.tex $(MOTF) $(OOTF)
+$(DOC)/preview.png: $(DOC)/preview.tex $(OTF)
 	@echo "   PNG	$@"
 	@xelatex --interaction=batchmode -output-directory=$(dir $@) $<
 	@pdftocairo -png -singlefile -r 300 $(basename $@).pdf $(basename $@)
