@@ -4,6 +4,7 @@ VERSION=6.8
 DIST=$(NAME)-$(VERSION)
 
 SOURCEDIR=sources
+BUILDDIR=build
 GSUB=$(SOURCEDIR)/features/gsub.fea
 DOC=documentation
 TOOLS=tools
@@ -33,10 +34,10 @@ FONTS=Sans-Regular \
        $(NULL)
 
 SFD=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.sfd)
-NRM=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.nrm)
-CHK=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.chk)
-DUP=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.dup)
-LNT=$(FONTS:%=$(NAME)%.lnt)
+NRM=$(FONTS:%=$(BUILDDIR)/$(NAME)%.nrm)
+CHK=$(FONTS:%=$(BUILDDIR)/$(NAME)%.chk)
+DUP=$(FONTS:%=$(BUILDDIR)/$(NAME)%.dup)
+LNT=$(FONTS:%=$(BUILDDIR)/$(NAME)%.lnt)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
 PNG=$(DOC)/preview.png
@@ -54,14 +55,18 @@ check: $(LNT) $(CHK) $(DUP)
 
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
-%.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
-	@echo "   OTF	$@"
+$(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
+	@echo "   BUILD	$(*F)"
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(BUILD)                                                        \
 		-i $<                                                          \
 		-o $@                                                          \
 		-v $(VERSION)                                                  \
 		$(if $(call nofea,$@),,-f $(GSUB))                             \
 		;
+
+$(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.ff.otf
+	@echo "   PRUNE	$(*F)"
 	@fonttools subset                                                      \
 		--unicodes='*'                                                 \
 		--layout-features='*'                                          \
@@ -70,23 +75,28 @@ nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 		--recalc-average-width                                         \
 		--recalc-bounds                                                \
 		--drop-tables=FFTM                                             \
-		--output-file=$@.subset                                        \
-		$@                                                             \
+		--output-file=$@                                               \
+		$<                                                             \
 		;
-	@mv $@.subset $@
 
-%.nrm: %.sfd $(NORMALIZE)
-	@echo "   NRM	$(<F)"
+%.otf: $(BUILDDIR)/%.subset.otf
+	@cp $< $@
+
+$(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE)
+	@echo "   NORMALIZE	$(*F)"
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(NORMALIZE) $< $@
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
-%.chk: %.sfd $(NORMALIZE)
-	@echo "   NRM	$(<F)"
+$(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE)
+	@echo "   NORMALIZE	$(*F)"
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@ || (rm -rf $@ && false)
 
-%.dup: %.sfd $(FINDDUPS)
-	@echo "   CHK	$(<F)"
+$(BUILDDIR)/%.dup: $(SOURCEDIR)/%.sfd $(FINDDUPS)
+	@echo "   CHECK	$(*F)"
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
 
 
@@ -95,19 +105,22 @@ nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 #  5: Missing points at extrema
 #  7: More points in a glyph than PostScript allows
 # 23: Overlapping hints in a glyph
-LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
-	@echo "   LNT  $(<F)"
+$(BUILDDIR)/LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
+	@echo "   LINT		LibertinusKeyboard-Regular"
+	@mkdir -p $(BUILDDIR)
 	@fontlint -i2,5,7,23 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
-LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
-	@echo "   LNT  $(<F)"
+$(BUILDDIR)/LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
+	@echo "   LINT		LibertinusSerifInitials-Regular"
+	@mkdir -p $(BUILDDIR)
 	@fontlint -i2,5,7,23,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 # Currently ignored errors:
 #  5: Missing points at extrema
 # 34: Bad 'CFF ' table
-%.lnt: %.otf
-	@echo "   LNT	$(<F)"
+$(BUILDDIR)/%.lnt: %.otf
+	@echo "   LINT		$(*F)"
+	@mkdir -p $(BUILDDIR)
 	@fontlint -i5,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOC)/%-Table.pdf: %.otf
