@@ -5,9 +5,7 @@ import os
 
 import fontforge
 
-from fontTools import subset
 from fontTools.misc.py23 import StringIO
-from fontTools.ttLib import TTFont
 from pcpp.preprocessor import Preprocessor
 
 from tempfile import NamedTemporaryFile
@@ -122,27 +120,6 @@ class Font:
         self._make_over_under_line()
         self._merge_features()
         self._font.generate(output, flags=("opentype"))
-
-        font = TTFont(output)
-
-        # https://github.com/fontforge/fontforge/pull/3235
-        # fontDirectionHint is deprecated and must be set to 2
-        font["head"].fontDirectionHint = 2
-        # unset bits 6..10
-        font["head"].flags &= ~0x7e0
-
-        options = subset.Options()
-        options.set(layout_features='*', name_IDs='*', notdef_outline=True,
-                    glyph_names=True, recalc_average_width=True,
-                    drop_tables=["FFTM"])
-
-        unicodes = font["cmap"].getBestCmap().keys()
-
-        subsetter = subset.Subsetter(options=options)
-        subsetter.populate(unicodes=unicodes)
-        subsetter.subset(font)
-
-        font.save(output)
 
 
 def main():

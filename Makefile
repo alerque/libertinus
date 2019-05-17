@@ -62,6 +62,18 @@ nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 		-v $(VERSION)                                                  \
 		$(if $(call nofea,$@),,-f $(GSUB))                             \
 		;
+	@fonttools subset                                                      \
+		--unicodes='*'                                                 \
+		--layout-features='*'                                          \
+		--name-IDs='*'                                                 \
+		--notdef-outline                                               \
+		--recalc-average-width                                         \
+		--recalc-bounds                                                \
+		--drop-tables=FFTM                                             \
+		--output-file=$@.subset                                        \
+		$@                                                             \
+		;
+	@mv $@.subset $@
 
 %.nrm: %.sfd $(NORMALIZE)
 	@echo "   NRM	$(<F)"
