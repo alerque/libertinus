@@ -3,8 +3,8 @@ VERSION=6.8
 
 DIST=$(NAME)-$(VERSION)
 
-SRC=sources
-GSUB=$(SRC)/features/gsub.fea
+SOURCEDIR=sources
+GSUB=$(SOURCEDIR)/features/gsub.fea
 DOC=documentation
 TOOLS=tools
 
@@ -32,10 +32,10 @@ FONTS=Sans-Regular \
        Keyboard-Regular \
        $(NULL)
 
-SFD=$(FONTS:%=$(SRC)/$(NAME)%.sfd)
-NRM=$(FONTS:%=$(SRC)/$(NAME)%.nrm)
-CHK=$(FONTS:%=$(SRC)/$(NAME)%.chk)
-DUP=$(FONTS:%=$(SRC)/$(NAME)%.dup)
+SFD=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.sfd)
+NRM=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.nrm)
+CHK=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.chk)
+DUP=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.dup)
 LNT=$(FONTS:%=$(NAME)%.lnt)
 OTF=$(FONTS:%=$(NAME)%.otf)
 PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
@@ -54,7 +54,7 @@ check: $(LNT) $(CHK) $(DUP)
 
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
-%.otf: $(SRC)/%.sfd $(GSUB) $(BUILD)
+%.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 	@echo "   OTF	$@"
 	@$(PY) $(BUILD)                                                        \
 		-i $<                                                          \
