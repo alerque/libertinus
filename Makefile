@@ -65,7 +65,12 @@ $(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 		$(if $(call nofea,$@),,-f $(GSUB))                             \
 		;
 
-$(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.ff.otf
+$(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.ff.otf
+	@echo "   HINT		$(*F)"
+	@rm -rf $@.log
+	@psautohint $< -o $@ --log $@.log
+
+$(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
 	@echo "   PRUNE	$(*F)"
 	@fonttools subset                                                      \
 		--unicodes='*'                                                 \
