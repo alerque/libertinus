@@ -39,7 +39,6 @@ class Font:
             if glyph.unlinkRmOvrlpSave:
                 glyph.removeOverlap()
             glyph.correctDirection()
-            glyph.autoHint()
 
     def _update_metadata(self):
         version = self._version
