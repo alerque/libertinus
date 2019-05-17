@@ -17,5 +17,5 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - make otf
-  - make check
+  - make -j4
+  - make -j4 check
