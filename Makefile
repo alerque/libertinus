@@ -123,12 +123,14 @@ $(BUILDDIR)/LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular
 	@fontlint -i2,5,7,23,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 # Currently ignored errors:
+#  2: Self-intersecting glyph
 #  5: Missing points at extrema
 # 34: Bad 'CFF ' table
+# 98: Self-intersecting glyph when FontForge is able to correct this
 $(BUILDDIR)/%.lnt: %.otf
 	@echo "   LINT		$(*F)"
 	@mkdir -p $(BUILDDIR)
-	@fontlint -i5,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
+	@fontlint -i2,5,34,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOC)/%-Table.pdf: %.otf
 	@echo "   PDF	$@"
