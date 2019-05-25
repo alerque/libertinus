@@ -1,0 +1,14 @@
+image: ubuntu1804
+stack: python 2.7
+
+install:
+  - sudo apt-add-repository -y "ppa:fontforge/fontforge"
+  - sudo apt-get -yq update
+  - sudo apt-get -yq install fontforge python-fontforge
+  - sudo pip install -r requirements.txt
+
+build_script:
+  - make -j4
+
+test_script:
+  - make -j4 check
