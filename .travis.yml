@@ -14,7 +14,6 @@ addons:
 
 install:
   - pip install -r requirements.txt
-  - pip install enum34 # for Python 2.7
 
 script:
   - make -j4
