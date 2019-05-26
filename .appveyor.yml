@@ -3,8 +3,8 @@ image: ubuntu1804
 install:
   - sudo apt-add-repository -y "ppa:silnrsi/smith-py3"
   - sudo apt-get -yq update
-  - sudo apt-get -yq install python3-fontforge
-  - sudo python3 -m pip install -r requirements.txt
+  - sudo apt-get -yq install python3-pip python3-fontforge
+  - sudo pip3 install -r requirements.txt
 
 build_script:
   - make PY=python3 -j4
