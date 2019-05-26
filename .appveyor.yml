@@ -7,7 +7,7 @@ install:
   - sudo pip3 install -r requirements.txt
 
 build_script:
-  - make PY=python3 -j4
+  - make PY=python3
 
 test_script:
-  - make PY=python3 -j4 check
+  - make PY=python3 check
