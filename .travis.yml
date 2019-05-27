@@ -11,6 +11,8 @@ addons:
     packages:
       - fontforge
       - python-fontforge
+      - texlive-xetex
+      - poppler-utils
 
 install:
   - pip install -r requirements.txt
