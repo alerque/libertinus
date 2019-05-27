@@ -47,7 +47,7 @@ export SOURCE_DATE_EPOCH ?= 0
 
 .SECONDARY:
 
-all: otf
+all: otf $(PNG)
 
 otf: $(OTF)
 doc: $(PDF) $(OPDF)
