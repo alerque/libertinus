@@ -14,32 +14,33 @@
 	bottom = 0mm,
 ]{geometry}
 
-\setmainfont{Libertinus Serif}
-\setsansfont{Libertinus Sans}
-\setmonofont{Libertinus Mono}
-\setmathfont{Libertinus Math}
+\setmainfont{LibertinusSerif-Regular.otf}
+\setsansfont{LibertinusSans-Regular.otf}
+\setmonofont{LibertinusMono-Regular.otf}
+\setmathfont{LibertinusMath-Regular.otf}
+\setmathfont{LibertinusMath-Regular.otf}
 
-\def\sample#1#2{{\fontspec{#1} #2} & \scalebox{.6}[1]{\texttt{#1}}}
-\def\panagram#1{\sample{#1}{The Quick Brown Fox Jumps Over The Lazy Dog}}
+\def\sample#1#2#3{{\fontspec{#1} #3} & \scalebox{.6}[1]{\texttt{#2}}}
+\def\panagram#1#2{\sample{#1}{#2}{The Quick Brown Fox Jumps Over The Lazy Dog}}
 
 \begin{document}
 \pagestyle{empty}
 
 \begin{center}
   \begin{tabular}{l r}
-   \panagram{Libertinus Serif} \\
-   \panagram{Libertinus Serif Display} \\
-   \panagram{Libertinus Serif Italic} \\
-   \panagram{Libertinus Serif Semibold} \\
-   \panagram{Libertinus Serif Semibold Italic} \\
-   \panagram{Libertinus Serif Bold} \\
-   \panagram{Libertinus Serif Bold Italic} \\
-   \panagram{Libertinus Sans} \\
-   \panagram{Libertinus Sans Italic} \\
-   \panagram{Libertinus Sans Bold} \\
-   \panagram{Libertinus Mono} \\
-   \sample{Libertinus Serif Initials}{ABCDEFGHIJKLMOPQRSTUVWXYZ} \\
-   \sample{Libertinus Keyboard}{Ctrl \textsf{+} Alt \textsf{+} F1 Enter} \\
+   \panagram{LibertinusSerif-Regular.otf}        {Libertinus Serif} \\
+   \panagram{LibertinusSerifDisplay-Regular.otf} {Libertinus Serif Display} \\
+   \panagram{LibertinusSerif-Italic.otf}         {Libertinus Serif Italic} \\
+   \panagram{LibertinusSerif-Semibold.otf}       {Libertinus Serif Semibold} \\
+   \panagram{LibertinusSerif-SemiboldItalic.otf} {Libertinus Serif Semibold Italic} \\
+   \panagram{LibertinusSerif-Bold.otf}           {Libertinus Serif Bold} \\
+   \panagram{LibertinusSerif-BoldItalic.otf}     {Libertinus Serif Bold Italic} \\
+   \panagram{LibertinusSans-Regular.otf}         {Libertinus Sans} \\
+   \panagram{LibertinusSans-Italic.otf}          {Libertinus Sans Italic} \\
+   \panagram{LibertinusSans-Bold.otf}            {Libertinus Sans Bold} \\
+   \panagram{LibertinusMono-Regular.otf}         {Libertinus Mono} \\
+   \sample{LibertinusSerifInitials-Regular.otf}  {Libertinus Serif Initials}{ABCDEFGHIJKLMOPQRSTUVWXYZ} \\
+   \sample{LibertinusKeyboard-Regular.otf}       {Libertinus Keyboard}{Ctrl \textsf{+} Alt \textsf{+} F1 Enter} \\
   \end{tabular}
 \end{center}
 
