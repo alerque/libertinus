@@ -150,7 +150,7 @@ $(DOC)/%.pdf: $(DOC)/%.fodt
 
 $(DOC)/preview.png: $(DOC)/preview.tex $(OTF)
 	@echo "   PNG	$@"
-	@xelatex --interaction=batchmode -output-directory=$(dir $@) $<
+	@xelatex --interaction=batchmode -output-directory=$(dir $@) $< 1>/dev/null || (cat $(basename $<).log && false)
 	@pdftocairo -png -singlefile -r 300 $(basename $@).pdf $(basename $@)
 
 dist: check $(OTF) $(PDF) $(OPDF) $(PNG)
