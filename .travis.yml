@@ -12,8 +12,9 @@ addons:
       - fontforge
       - python-fontforge
       - texlive-xetex
-      - lmodern
-      - poppler-utils
+      - lmodern            # required by EU1 encodong
+      - texlive-math-extra # for unicode-math
+      - poppler-utils      # for pdftocairo
 
 install:
   - pip install -r requirements.txt
