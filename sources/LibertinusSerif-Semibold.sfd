@@ -235,7 +235,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "acute" "'mark' Mark Positioning lookup 5" "top_akzent" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "unten_punkt" "'mark' Mark Positioning lookup 3" "unten_anhang" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "mittelpunkt" "'mark' Mark Positioning in Hebrew lookup 0"
-BeginChars: 65809 2346
+BeginChars: 65810 2347
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -58272,7 +58272,7 @@ EndSplineSet
 EndChar
 
 StartChar: f_h
-Encoding: 65807 -1 2340
+Encoding: 65803 -1 2340
 Width: 852
 UnlinkRmOvrlpSave: 1
 Flags: W
@@ -58358,7 +58358,7 @@ EndSplineSet
 EndChar
 
 StartChar: f_k
-Encoding: 65808 -1 2341
+Encoding: 65804 -1 2341
 Width: 827
 UnlinkRmOvrlpSave: 1
 Flags: W
@@ -58535,7 +58535,7 @@ EndSplineSet
 EndChar
 
 StartChar: f_f_h
-Encoding: 65803 -1 2343
+Encoding: 65806 -1 2343
 Width: 1112
 UnlinkRmOvrlpSave: 1
 Flags: W
@@ -58643,7 +58643,7 @@ EndSplineSet
 EndChar
 
 StartChar: f_f_k
-Encoding: 65804 -1 2344
+Encoding: 65807 -1 2344
 Width: 1087
 UnlinkRmOvrlpSave: 1
 Flags: W
@@ -58762,13 +58762,22 @@ EndSplineSet
 EndChar
 
 StartChar: longs_s
-Encoding: 65806 -1 2345
+Encoding: 65808 -1 2345
 Width: 661
 Flags: W
 LayerCount: 2
 Fore
 Refer: 497 383 N 1 0 0 1 0 0 2
 Refer: 1981 115 N 1 0 0 1 260 0 2
+EndChar
+
+StartChar: uni1EFB
+Encoding: 65809 -1 2346
+Width: 0
+VWidth: 0
+Flags: W
+LayerCount: 2
+Colour: 110000
 EndChar
 EndChars
 EndSplineFont
