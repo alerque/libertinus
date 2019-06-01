@@ -27,10 +27,23 @@ class Font:
             preprocessor.write(self._features)
 
     def _merge_features(self):
+        font = self._font
+        features = self._features
+
+        with NamedTemporaryFile(suffix=".fea", mode="rt") as temp:
+            font.generateFeatureFile(temp.name)
+            lines = temp.readlines()
+            for line in lines:
+                if not line.startswith("languagesystem"):
+                    features.write(line)
+
+        for lookup in font.gpos_lookups + font.gsub_lookups:
+            font.removeLookup(lookup)
+
         with NamedTemporaryFile(suffix=".fea", mode="w") as temp:
-            temp.write(self._features.getvalue())
+            temp.write(features.getvalue())
             temp.flush()
-            self._font.mergeFeature(temp.name)
+            font.mergeFeature(temp.name)
 
     def _cleanup_glyphs(self):
         font = self._font
