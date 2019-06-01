@@ -58,7 +58,7 @@ check: $(LNT) $(CHK) $(DUP)
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
 $(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
-	@echo "   BUILD	$(*F)"
+	@echo "      BUILD  $(*F)"
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(BUILD)                                                        \
 		-i $<                                                          \
@@ -68,12 +68,12 @@ $(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 		;
 
 $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.ff.otf
-	@echo "   HINT		$(*F)"
+	@echo "       HINT  $(*F)"
 	@rm -rf $@.log
 	@psautohint $< -o $@ --log $@.log
 
 $(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
-	@echo "   PRUNE	$(*F)"
+	@echo "      PRUNE  $(*F)"
 	@fonttools subset                                                      \
 		--unicodes='*'                                                 \
 		--layout-features='*'                                          \
@@ -90,19 +90,19 @@ $(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
 	@cp $< $@
 
 $(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE)
-	@echo "   NORMALIZE	$(*F)"
+	@echo "  NORMALIZE  $(*F)"
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(NORMALIZE) $< $@
 	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
 $(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE)
-	@echo "   NORMALIZE	$(*F)"
+	@echo "  NORMALIZE  $(*F)"
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@ || (rm -rf $@ && false)
 
 $(BUILDDIR)/%.dup: $(SOURCEDIR)/%.sfd $(FINDDUPS)
-	@echo "   CHECK	$(*F)"
+	@echo "      CHECK  $(*F)"
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
 
@@ -113,12 +113,12 @@ $(BUILDDIR)/%.dup: $(SOURCEDIR)/%.sfd $(FINDDUPS)
 #  7: More points in a glyph than PostScript allows
 # 23: Overlapping hints in a glyph
 $(BUILDDIR)/LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
-	@echo "   LINT		LibertinusKeyboard-Regular"
+	@echo "       LINT  LibertinusKeyboard-Regular"
 	@mkdir -p $(BUILDDIR)
 	@fontlint -i2,5,7,23 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(BUILDDIR)/LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
-	@echo "   LINT		LibertinusSerifInitials-Regular"
+	@echo "       LINT  LibertinusSerifInitials-Regular"
 	@mkdir -p $(BUILDDIR)
 	@fontlint -i2,5,7,23,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
@@ -128,12 +128,12 @@ $(BUILDDIR)/LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular
 # 34: Bad 'CFF ' table
 # 98: Self-intersecting glyph when FontForge is able to correct this
 $(BUILDDIR)/%.lnt: %.otf
-	@echo "   LINT		$(*F)"
+	@echo "       LINT  $(*F)"
 	@mkdir -p $(BUILDDIR)
 	@fontlint -i2,5,34,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOC)/%-Table.pdf: %.otf
-	@echo "   PDF	$@"
+	@echo "        PDF  $@"
 	@mkdir -p $(DOC)
 	@fntsample --font-file $< --output-file $@                             \
 		   --write-outline --use-pango                                 \
@@ -143,18 +143,18 @@ $(DOC)/%-Table.pdf: %.otf
 		   --style="cell-numbers-font:Noto Sans Mono 8"
 
 $(DOC)/%.pdf: $(DOC)/%.fodt
-	@echo "   PDF	$@"
+	@echo "        PDF  $@"
 	@mkdir -p $(DOC)
 	@VCL_DEBUG_DISABLE_PDFCOMPRESSION=1 LC_ALL=en_US.utf-8 \
 	 $(LO) --convert-to pdf --outdir $(DOC) $< 1> /dev/null
 
 $(DOC)/preview.png: $(DOC)/preview.tex $(OTF)
-	@echo "   PNG	$@"
+	@echo "        PNG  $@"
 	@xelatex --interaction=batchmode -output-directory=$(dir $@) $< 1>/dev/null || (cat $(basename $<).log && false)
 	@pdftocairo -png -singlefile -r 300 $(basename $@).pdf $(basename $@)
 
 dist: check $(OTF) $(PDF) $(OPDF) $(PNG)
-	@echo "   DST	$(DIST).zip"
+	@echo "       DIST  $(DIST).zip"
 	@rm -rf $(DIST) $(DIST).zip
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
