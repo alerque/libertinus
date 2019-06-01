@@ -26,7 +26,7 @@ class Font:
                 preprocessor.parse(f)
             preprocessor.write(self._features)
 
-    def _merge_features(self):
+    def _save_features(self, filename):
         font = self._font
         features = self._features
 
@@ -40,10 +40,8 @@ class Font:
         for lookup in font.gpos_lookups + font.gsub_lookups:
             font.removeLookup(lookup)
 
-        with NamedTemporaryFile(suffix=".fea", mode="w") as temp:
-            temp.write(features.getvalue())
-            temp.flush()
-            font.mergeFeature(temp.name)
+        with open(filename, "wt") as f:
+            f.write(features.getvalue())
 
     def _cleanup_glyphs(self):
         font = self._font
@@ -126,11 +124,11 @@ class Font:
 
         self._features.write("\n".join(fea))
 
-    def generate(self, output):
+    def generate(self, output, output_features):
         self._update_metadata()
         self._cleanup_glyphs()
         self._make_over_under_line()
-        self._merge_features()
+        self._save_features(output_features)
         self._font.generate(output, flags=("opentype"))
 
 
@@ -140,10 +138,11 @@ def main():
     parser.add_argument("-o", "--output", required=True)
     parser.add_argument("-v", "--version", required=True)
     parser.add_argument("-f", "--feature-file", required=False)
+    parser.add_argument("-F", "--output-feature-file", required=True)
 
     args = parser.parse_args()
     font = Font(args.input, args.feature_file, args.version)
-    font.generate(args.output)
+    font.generate(args.output, args.output_feature_file)
 
 
 if __name__ == "__main__":
