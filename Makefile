@@ -61,13 +61,18 @@ $(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 	@echo "      BUILD  $(*F)"
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(BUILD)                                                        \
-		-i $<                                                          \
-		-o $@                                                          \
-		-v $(VERSION)                                                  \
-		$(if $(call nofea,$@),,-f $(GSUB))                             \
+		--input=$<                                                     \
+		--output=$@                                                    \
+		--version=$(VERSION)                                           \
+		--output-feature-file=$(BUILDDIR)/$(*F).fea                    \
+		$(if $(call nofea,$@),,--feature-file=$(GSUB))                 \
 		;
 
-$(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.ff.otf
+$(BUILDDIR)/%.otl.otf: $(BUILDDIR)/%.ff.otf
+	@echo "        OTL  $(*F)"
+	@fonttools feaLib $(BUILDDIR)/$(*F).fea $< -o $@
+
+$(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
 	@echo "       HINT  $(*F)"
 	@rm -rf $@.log
 	@psautohint $< -o $@ --log $@.log
