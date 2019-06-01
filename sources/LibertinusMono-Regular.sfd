@@ -46,10 +46,6 @@ OS2Vendor: 'ALIF'
 Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution" { "'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localised Forms for Sami" { "'locl' Localised Forms for Sami-1"  } ['locl' ('latn' <'FIN ' 'ISM ' 'LSM ' 'NOR ' 'NSM ' 'SKS ' 'SSM ' 'SVE ' > ) ]
 Lookup: 1 0 0 "Substitution dotless forms" { "Substitution dotless forms 1"  } []
-Lookup: 4 0 0 "'frac' Brueche" { "'frac' Brueche 1"  } ['frac' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'case' Versalformen" { "'case' Versalformen 1"  } ['case' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'tnum' Tabellenziffern" { "'tnum' Tabellenziffern 1"  } ['tnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 1 0 0 "'pnum' Proportionalziffern" { "'pnum' Proportionalziffern 1"  } ['pnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'zero' gestrichene Null" { "'zero' gestrichene Null 1"  } ['zero' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss01' Stilgruppe 1" { "'ss01' Stilgruppe 1 1"  } ['ss01' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'ss07' Swap Eng styles" { "'ss07' Swap Eng styles-1"  } ['ss07' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
@@ -58,14 +54,14 @@ Lookup: 1 0 0 "'sinf' Tiefgestellte" { "'sinf' Wissenschaftliche Indices 1" ("in
 Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Komb OR"  "'mark' Top rechts"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 5 1 5 2
+ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 5 1 5 1
   Class: 3 i j
   Class: 323 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 uniE358 uni0359 uni035A uni035B uniE35C uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363 uniE364
-  Class: 5 f f_f
+  Class: 1 f
   Class: 376 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
   FClass: 3 i j
   FClass: 323 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 uniE358 uni0359 uni035A uni035B uniE35C uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363 uniE364
-  FClass: 5 f f_f
+  FClass: 1 f
   FClass: 376 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 ij
  1 0 1
   ClsList: 1
@@ -73,11 +69,6 @@ ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 5 1 5 2
   FClsList: 2
  1
   SeqLookup: 0 "Substitution dotless forms"
- 1 0 1
-  ClsList: 3
-  BClsList:
-  FClsList: 4
- 0
   ClassNames: "0" "1" "2" "3" "4"
   BClassNames: "0"
   FClassNames: "0" "1" "2" "3" "4"
@@ -1228,7 +1219,6 @@ SplineSet
  179.4 670 195.8 689 271 689 c 0
  280.6 689 293.4 688 299.8 686 c 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni0358
 EndChar
 
 StartChar: ograve
@@ -7638,7 +7628,7 @@ SplineSet
 EndSplineSet
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2080
 Substitution2: "'sups' Hochgestellte 1" uni2070
-Substitution2: "'zero' gestrichene Null 1" uniF638
+Substitution2: "'zero' gestrichene Null 1" zero.slash
 EndChar
 
 StartChar: H
@@ -10251,7 +10241,6 @@ SplineSet
  406.6 670 390.2 689 315 689 c 0
  305.4 689 292.6 688 286.2 686 c 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni0359
 EndChar
 
 StartChar: mu
@@ -10492,7 +10481,6 @@ SplineSet
  475.5 -50 488.5 -47 488.5 -6 c 2
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" one slash four
 EndChar
 
 StartChar: onehalf
@@ -10540,7 +10528,6 @@ SplineSet
  437.3 147 419.7 141.7 409.7 141.7 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" one slash two
 EndChar
 
 StartChar: threequarters
@@ -10600,7 +10587,6 @@ SplineSet
  174 503 201 529 201 570 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" three slash four
 EndChar
 
 StartChar: questiondown
@@ -10861,7 +10847,7 @@ SplineSet
  201 229 195 227 190 213 c 2
  145 79 l 2
 EndSplineSet
-Substitution2: "'ss01' Stilgruppe 1 1" uniE02C
+Substitution2: "'ss01' Stilgruppe 1 1" Adieresis.ss01
 EndChar
 
 StartChar: Aring
@@ -11603,7 +11589,7 @@ SplineSet
  149 585 228 625 318 625 c 0
  481 625 606 507 606 313 c 0
 EndSplineSet
-Substitution2: "'ss01' Stilgruppe 1 1" uniE02D
+Substitution2: "'ss01' Stilgruppe 1 1" Odieresis.ss01
 EndChar
 
 StartChar: multiply
@@ -11827,7 +11813,7 @@ SplineSet
  470 681 449 660 423 660 c 0
  397 660 376 681 376 707 c 0
 EndSplineSet
-Substitution2: "'ss01' Stilgruppe 1 1" uniE02E
+Substitution2: "'ss01' Stilgruppe 1 1" Udieresis.ss01
 EndChar
 
 StartChar: Yacute
@@ -17072,7 +17058,6 @@ SplineSet
  -409 714 -386 731 -352 731 c 0
  -347 731 -341 730 -337 729 c 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni0358
 EndChar
 
 StartChar: acutecomb
@@ -17094,7 +17079,6 @@ SplineSet
  -379 593.2 -375.7 597.2 -367.6 610 c 2
  -292 729 l 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni0359
 EndChar
 
 StartChar: uni0302
@@ -17115,7 +17099,6 @@ SplineSet
  -410 622 -364 676 -335 722 c 1
  -324.3 724.3 -313.7 725 -303 722 c 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni035A
 EndChar
 
 StartChar: tildecomb
@@ -17178,7 +17161,6 @@ SplineSet
  -173 618 -194 597 -220 597 c 0
  -246 597 -267 618 -267 644 c 0
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni0362
 EndChar
 
 StartChar: hookabovecomb
@@ -17225,7 +17207,6 @@ SplineSet
  -228 675 -266 630 -295 584 c 1
  -345 584 l 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni035B
 EndChar
 
 StartChar: uni030F
@@ -24798,8 +24779,6 @@ SplineSet
  503.5 111 530.5 137 530.5 178 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" one fraction three
-Ligature2: "'frac' Brueche 1" one slash three
 EndChar
 
 StartChar: twothirds
@@ -24852,8 +24831,6 @@ SplineSet
  102.7 542 85 536.7 75 536.7 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" two fraction three
-Ligature2: "'frac' Brueche 1" two slash three
 EndChar
 
 StartChar: uni2155
@@ -24902,8 +24879,6 @@ SplineSet
  521.7 -59 538.7 -24 538.7 17 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" one fraction five
-Ligature2: "'frac' Brueche 1" one slash five
 EndChar
 
 StartChar: uni2156
@@ -24955,8 +24930,6 @@ SplineSet
  532.7 -58 549.7 -23 549.7 18 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" two fraction five
-Ligature2: "'frac' Brueche 1" two slash five
 EndChar
 
 StartChar: uni2157
@@ -25010,8 +24983,6 @@ SplineSet
  164.5 505 191.5 531 191.5 572 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" three fraction five
-Ligature2: "'frac' Brueche 1" three slash five
 EndChar
 
 StartChar: uni2158
@@ -25070,8 +25041,6 @@ SplineSet
  189.1 348 202.1 351 202.1 392 c 2
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" four fraction five
-Ligature2: "'frac' Brueche 1" four slash five
 EndChar
 
 StartChar: oneeighth
@@ -25125,8 +25094,6 @@ SplineSet
  484.7 77 l 1
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" one fraction eight
-Ligature2: "'frac' Brueche 1" one slash eight
 EndChar
 
 StartChar: threeeighths
@@ -25185,8 +25152,6 @@ SplineSet
  177.5 504 204.5 530 204.5 571 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" three fraction eight
-Ligature2: "'frac' Brueche 1" three slash eight
 EndChar
 
 StartChar: fiveeighths
@@ -25244,8 +25209,6 @@ SplineSet
  231.3 338 248.3 373 248.3 414 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" five slash eight
-Ligature2: "'frac' Brueche 1" three fraction eight
 EndChar
 
 StartChar: seveneighths
@@ -25296,8 +25259,6 @@ SplineSet
  190 597 l 2
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" seven fraction eight
-Ligature2: "'frac' Brueche 1" seven slash eight
 EndChar
 
 StartChar: uni215F
@@ -25327,8 +25288,6 @@ SplineSet
  149 531 l 2
  149 563 147 572 135 572 c 0
 EndSplineSet
-Ligature2: "'frac' Brueche 1" one fraction
-Ligature2: "'frac' Brueche 1" one slash
 EndChar
 
 StartChar: arrowleft
@@ -26612,7 +26571,6 @@ SplineSet
  -390 580 -441 630 -455 715 c 1
  -428 727 l 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni035C
 EndChar
 
 StartChar: uni030A
@@ -26665,7 +26623,6 @@ SplineSet
  -229 783 -213 784 -209 784 c 0
  -188.1 784 -171 768.5 -171 748 c 0
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni035D
 EndChar
 
 StartChar: uni030D
@@ -26752,7 +26709,6 @@ SplineSet
  21 594 72 544 86 459 c 1
  59 447 l 1
 EndSplineSet
-Substitution2: "'case' Versalformen 1" uni035F
 EndChar
 
 StartChar: uni0312
@@ -27656,8 +27612,6 @@ SplineSet
  598 111 608 32 608 15 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" one fraction six
-Ligature2: "'frac' Brueche 1" one slash six
 EndChar
 
 StartChar: uni215A
@@ -27706,8 +27660,6 @@ SplineSet
  214.3 338 231.3 373 231.3 414 c 0
 EndSplineSet
 LCarets2: 2 0 0
-Ligature2: "'frac' Brueche 1" five fraction six
-Ligature2: "'frac' Brueche 1" five slash six
 EndChar
 
 StartChar: uniE01F
@@ -27901,7 +27853,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniE02C
+StartChar: Adieresis.ss01
 Encoding: 65539 -1 774
 Width: 640
 Flags: MW
@@ -27949,7 +27901,7 @@ Comment: "Dies sind alternative Umlaute, die im Deutschen vorzuziehen sind."
 Colour: ffffff
 EndChar
 
-StartChar: uniE02D
+StartChar: Odieresis.ss01
 Encoding: 65540 -1 775
 Width: 640
 Flags: MW
@@ -27983,7 +27935,7 @@ Comment: "Dies sind alternative Umlaute, die im Deutschen vorzuziehen sind."
 Colour: ffffff
 EndChar
 
-StartChar: uniE02E
+StartChar: Udieresis.ss01
 Encoding: 65541 -1 776
 Width: 640
 Flags: MW
@@ -28525,7 +28477,6 @@ SplineSet
  452 181 455 250 455 349 c 0
  455 404.3 450.9 450.3 443.5 487.6 c 1
 EndSplineSet
-Substitution2: "'tnum' Tabellenziffern 1" uniF638
 EndChar
 
 StartChar: uni032C
@@ -29425,7 +29376,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uniF638
+StartChar: zero.slash
 Encoding: 65543 -1 817
 Width: 640
 Flags: MW
@@ -29459,7 +29410,6 @@ SplineSet
  547 625 l 1
  499.2 544.8 l 1
 EndSplineSet
-Substitution2: "'pnum' Proportionalziffern 1" uniE00F
 Substitution2: "'sinf' Wissenschaftliche Indices 1" uni2080
 Substitution2: "'sups' Hochgestellte 1" uni2070
 EndChar
