@@ -1,5 +1,5 @@
 NAME=Libertinus
-VERSION=6.10
+VERSION=6.11
 
 DIST=$(NAME)-$(VERSION)
 
