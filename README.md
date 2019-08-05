@@ -40,10 +40,6 @@ To build the fonts:
 
     make
 
-To build the PDF samples you need [fntsample][4], and then:
-
-    make doc
-
 Contributing
 ------------
 The source files are under the `sources` subdirectory. The `.sfd` files are
@@ -66,4 +62,3 @@ Generating the fonts for each commit is preferred, but not absolutely required.
 [1]: https://fontforge.github.io
 [2]: https://github.com/fonttools/fonttools
 [3]: https://github.com/ned14/pcpp
-[4]: https://github.com/eugmes/fntsample

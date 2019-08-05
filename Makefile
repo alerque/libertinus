@@ -39,9 +39,8 @@ CHK=$(FONTS:%=$(BUILDDIR)/$(NAME)%.chk)
 DUP=$(FONTS:%=$(BUILDDIR)/$(NAME)%.dup)
 LNT=$(FONTS:%=$(BUILDDIR)/$(NAME)%.lnt)
 OTF=$(FONTS:%=$(NAME)%.otf)
-PDF=$(FONTS:%=$(DOC)/$(NAME)%-Table.pdf)
 PNG=$(DOC)/preview.png
-OPDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
+PDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
 
@@ -50,7 +49,7 @@ export SOURCE_DATE_EPOCH ?= 0
 all: otf $(PNG)
 
 otf: $(OTF)
-doc: $(PDF) $(OPDF)
+doc: $(PDF)
 normalize: $(NRM)
 check: $(LNT) $(CHK) $(DUP)
 
@@ -137,16 +136,6 @@ $(BUILDDIR)/%.lnt: %.otf
 	@mkdir -p $(BUILDDIR)
 	@fontlint -i2,5,34,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
-$(DOC)/%-Table.pdf: %.otf
-	@echo "        PDF  $@"
-	@mkdir -p $(DOC)
-	@fntsample --font-file $< --output-file $@                             \
-		   --write-outline --use-pango                                 \
-		   --style="header-font: Noto Sans Bold 12"                    \
-		   --style="font-name-font: Noto Serif Bold 12"                \
-		   --style="table-numbers-font: Noto Sans 10"                  \
-		   --style="cell-numbers-font:Noto Sans Mono 8"
-
 $(DOC)/%.pdf: $(DOC)/%.fodt
 	@echo "        PDF  $@"
 	@mkdir -p $(DOC)
@@ -158,12 +147,12 @@ $(DOC)/preview.png: $(DOC)/preview.tex $(OTF)
 	@xelatex --interaction=batchmode -output-directory=$(dir $@) $< 1>/dev/null || (cat $(basename $<).log && false)
 	@pdftocairo -png -singlefile -r 300 $(basename $@).pdf $(basename $@)
 
-dist: check $(OTF) $(PDF) $(OPDF) $(PNG)
+dist: check $(OTF) $(PDF) $(PNG)
 	@echo "       DIST  $(DIST).zip"
 	@rm -rf $(DIST) $(DIST).zip
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
-	@cp $(PDF) $(OPDF) $(PNG) $(DIST)/$(DOC)
+	@cp $(PDF) $(PNG) $(DIST)/$(DOC)
 	@cp $(DOC)/Math-Sample.pdf $(DIST)/$(DOC)
 	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
@@ -171,4 +160,4 @@ dist: check $(OTF) $(PDF) $(OPDF) $(PNG)
 
 clean:
 	@rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(DUP) $(FEA) $(NRM) $(LNT) \
-		$(PDF) $(OTF) $(OPDF)
+		$(PDF) $(OTF)
