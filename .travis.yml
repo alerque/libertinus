@@ -8,6 +8,7 @@ addons:
   apt:
     sources:
       - sourceline: 'ppa:fontforge/fontforge'
+      - sourceline: 'ppa:jonathonf/backports'
     packages:
       - fontforge
       - python-fontforge
