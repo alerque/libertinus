@@ -8,18 +8,13 @@ addons:
   apt:
     sources:
       - sourceline: 'ppa:fontforge/fontforge'
-      - sourceline: 'ppa:jonathonf/backports'
     packages:
       - fontforge
       - python-fontforge
-      - texlive-xetex
-      - lmodern            # required by EU1 encodong
-      - texlive-math-extra # for unicode-math
-      - mupdf-tools        # for mutool
 
 install:
   - pip install -r requirements.txt
 
 script:
-  - make -j4
+  - make -j4 otf
   - make -j4 check
