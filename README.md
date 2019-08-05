@@ -3,7 +3,7 @@
 Libertinus fonts
 ================
 
-![Sample of Libertinus fonts](documentation/preview.png)
+![Sample of Libertinus fonts](documentation/preview.svg)
 
 ***This project is in maintenance mode. Only bug reports will be considered, or
 feature requests accompanied by pull requests.***
