@@ -13,7 +13,6 @@ PY?=python
 BUILD=$(TOOLS)/build.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
 CHECKERRS=$(TOOLS)/check-errors.py
-LO?=lowriter
 
 NULL=
 
@@ -40,7 +39,7 @@ DUP=$(FONTS:%=$(BUILDDIR)/$(NAME)%.dup)
 LNT=$(FONTS:%=$(BUILDDIR)/$(NAME)%.lnt)
 OTF=$(FONTS:%=$(NAME)%.otf)
 SVG=$(DOC)/preview.svg
-PDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
+PDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf $(DOC)/Math-Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
 
@@ -136,12 +135,6 @@ $(BUILDDIR)/%.lnt: %.otf
 	@mkdir -p $(BUILDDIR)
 	@fontlint -i2,5,34,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
-$(DOC)/%.pdf: $(DOC)/%.fodt
-	@echo "        PDF  $@"
-	@mkdir -p $(DOC)
-	@VCL_DEBUG_DISABLE_PDFCOMPRESSION=1 LC_ALL=en_US.utf-8 \
-	 $(LO) --convert-to pdf --outdir $(DOC) $< 1> /dev/null
-
 $(DOC)/preview.svg: $(DOC)/preview.tex $(OTF)
 	@echo "        SVG  $@"
 	@xelatex --interaction=batchmode -output-directory=$(dir $@) $< 1>/dev/null || (cat $(basename $<).log && false)
@@ -153,7 +146,6 @@ dist: check $(OTF) $(PDF) $(SVG)
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
 	@cp $(PDF) $(SVG) $(DIST)/$(DOC)
-	@cp $(DOC)/Math-Sample.pdf $(DIST)/$(DOC)
 	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
 	@zip -rq $(DIST).zip $(DIST)
