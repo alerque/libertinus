@@ -39,14 +39,14 @@ CHK=$(FONTS:%=$(BUILDDIR)/$(NAME)%.chk)
 DUP=$(FONTS:%=$(BUILDDIR)/$(NAME)%.dup)
 LNT=$(FONTS:%=$(BUILDDIR)/$(NAME)%.lnt)
 OTF=$(FONTS:%=$(NAME)%.otf)
-PNG=$(DOC)/preview.png
+SVG=$(DOC)/preview.svg
 PDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
 
 .SECONDARY:
 
-all: otf $(PNG)
+all: otf $(SVG)
 
 otf: $(OTF)
 doc: $(PDF)
@@ -142,17 +142,17 @@ $(DOC)/%.pdf: $(DOC)/%.fodt
 	@VCL_DEBUG_DISABLE_PDFCOMPRESSION=1 LC_ALL=en_US.utf-8 \
 	 $(LO) --convert-to pdf --outdir $(DOC) $< 1> /dev/null
 
-$(DOC)/preview.png: $(DOC)/preview.tex $(OTF)
-	@echo "        PNG  $@"
+$(DOC)/preview.svg: $(DOC)/preview.tex $(OTF)
+	@echo "        SVG  $@"
 	@xelatex --interaction=batchmode -output-directory=$(dir $@) $< 1>/dev/null || (cat $(basename $<).log && false)
-	@mutool draw -q -r 300 -o $@ $(basename $@).pdf
+	@mutool draw -q -r 200 -o $@ $(basename $@).pdf
 
-dist: check $(OTF) $(PDF) $(PNG)
+dist: check $(OTF) $(PDF) $(SVG)
 	@echo "       DIST  $(DIST).zip"
 	@rm -rf $(DIST) $(DIST).zip
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
-	@cp $(PDF) $(PNG) $(DIST)/$(DOC)
+	@cp $(PDF) $(SVG) $(DIST)/$(DOC)
 	@cp $(DOC)/Math-Sample.pdf $(DIST)/$(DOC)
 	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
