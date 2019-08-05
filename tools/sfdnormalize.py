@@ -10,6 +10,7 @@
 #  will rewrites files in place
 
 # changes done:
+#   SplineFontDB - fix version number on 3.0
 #   WinInfo - discarded
 #   DisplaySize - discarded
 #   AntiAlias - discarded
@@ -78,7 +79,7 @@ def process_sfd_file(sfdname, outname):
         print("%s is not a valid spline font database" % sfdname)
         return
 
-    out.write(fl)
+    out.write("SplineFontDB: 3.0\n")
 
     curglyph = ''
     cur_gid = 0
