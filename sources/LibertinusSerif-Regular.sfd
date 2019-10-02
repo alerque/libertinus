@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
-ModificationTime: 1570010840
+ModificationTime: 1570011325
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -162,7 +162,7 @@ DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
 ExtremaBound: 50
-WinInfo: 722 19 9
+WinInfo: 42864 19 9
 BeginPrivate: 9
 BlueValues 47 [-12 0 429 442 460 472 600 610 645 658 688 698]
 OtherBlues 11 [-238 -227]
@@ -308,7 +308,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "SekAccPos" "'mkmk' Mark to Mark-1" "top_rechts" "'mark' Top rechts" "komb_OR" "'mark' Komb OR" "top_punkt2" "'mark' Top Punkt2" "top_akzent" "'mark' Top Akzent" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt"
-BeginChars: 1114450 2676
+BeginChars: 1114450 2677
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -74675,6 +74675,32 @@ SplineSet
  50 407 l 1
  270 407 l 1
  270 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniA78A
+Encoding: 42890 42890 2676
+Width: 338
+Flags: WO
+HStem: 143 50<42.4894 292.691> 309 50<42.4894 292.691>
+VStem: 40 256<144.264 192.518 310.264 358.518>
+LayerCount: 2
+Fore
+SplineSet
+269 309 m 2
+ 55 309 l 2
+ 46.0001983549 309 40 317 40 325 c 0
+ 40 340 53.0002602234 359 65 359 c 2
+ 282 359 l 2
+ 292 359 296 350 296 342 c 0
+ 296 332 282 309 269 309 c 2
+269 143 m 2
+ 55 143 l 2
+ 46.0001983549 143 40 151 40 159 c 0
+ 40 174 53.0002602234 193 65 193 c 2
+ 282 193 l 2
+ 292 193 296 184 296 176 c 0
+ 296 166 282 143 269 143 c 2
 EndSplineSet
 EndChar
 EndChars

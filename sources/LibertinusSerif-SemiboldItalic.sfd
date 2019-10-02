@@ -21,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1162161130
+ModificationTime: 1570011761
 PfmFamily: 17
 TTFWeight: 600
 TTFWidth: 5
@@ -52,6 +53,10 @@ LangName: 1033 "" "" "Italic" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" ""
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL For New Fonts
+DisplaySize: -128
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 42864 19 9
 BeginPrivate: 6
 BlueValues 47 [-20 0 434 447 460 474 580 581 645 662 696 705]
 OtherBlues 11 [-239 -219]
@@ -61,6 +66,8 @@ StdVW 5 [117]
 StemSnapV 24 [36 114 117 121 123 134]
 EndPrivate
 Grid
+405.666656494 1254 m 0
+ 405.666656494 -746 l 1024
 -1000 368 m 0
  2000 368 l 1024
 -28 470 m 1
@@ -209,7 +216,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR" "top_rechts" "'mark' Top rechts"
-BeginChars: 1114414 2359
+BeginChars: 1114414 2360
 
 StartChar: space
 Encoding: 32 32 0
@@ -72672,6 +72679,27 @@ VWidth: 0
 Flags: W
 LayerCount: 2
 Colour: 110000
+EndChar
+
+StartChar: uniA78A
+Encoding: 42890 42890 2359
+Width: 374
+Flags: WO
+HStem: 142 56<79 368.667> 266 57<104 393.667>
+LayerCount: 2
+Fore
+SplineSet
+380.666992188 198 m 1
+ 368.666992188 142 l 1
+ 67 142 l 1
+ 79 198 l 1
+ 380.666992188 198 l 1
+405.666992188 323 m 1
+ 393.666992188 266 l 1
+ 93 266 l 1
+ 104 323 l 1
+ 405.666992188 323 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

@@ -21,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
+ModificationTime: 1570011617
 PfmFamily: 17
 TTFWeight: 600
 TTFWidth: 5
@@ -95,6 +96,10 @@ GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
+DisplaySize: -128
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 42864 19 9
 BeginPrivate: 6
 BlueValues 47 [-12 1 433 447 460 474 563 580 645 662 690 698]
 OtherBlues 11 [-238 -212]
@@ -235,7 +240,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "acute" "'mark' Mark Positioning lookup 5" "top_akzent" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "unten_punkt" "'mark' Mark Positioning lookup 3" "unten_anhang" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "mittelpunkt" "'mark' Mark Positioning in Hebrew lookup 0"
-BeginChars: 65810 2347
+BeginChars: 65810 2348
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -60985,6 +60990,28 @@ VWidth: 0
 Flags: W
 LayerCount: 2
 Colour: 110000
+EndChar
+
+StartChar: uniA78A
+Encoding: 42890 42890 2347
+Width: 358
+Flags: WO
+HStem: 142 56<39 320> 266 57<39 320>
+VStem: 39 281<142 198 266 323>
+LayerCount: 2
+Fore
+SplineSet
+320 198 m 1
+ 320 142 l 1
+ 39 142 l 1
+ 39 198 l 1
+ 320 198 l 1
+320 323 m 1
+ 320 266 l 1
+ 39 266 l 1
+ 39 323 l 1
+ 320 323 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

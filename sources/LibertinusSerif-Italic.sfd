@@ -21,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1155510122
+ModificationTime: 1570011497
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -152,6 +153,10 @@ LangName: 1033 "" "" "" "" "" "" "" "" "Khaled Hosny" "Philipp H. Poll" "" "" "h
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
+DisplaySize: -128
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 42864 19 9
 BeginPrivate: 9
 BlueValues 47 [-12 1 429 442 460 474 567 578 645 658 688 698]
 OtherBlues 11 [-238 -227]
@@ -307,7 +312,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "top_rechts" "'mark' Top rechts" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR"
-BeginChars: 65826 2380
+BeginChars: 65826 2381
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -72944,6 +72949,28 @@ VWidth: 0
 Flags: W
 LayerCount: 2
 Colour: 110000
+EndChar
+
+StartChar: uniA78A
+Encoding: 42890 42890 2380
+Width: 333
+Flags: WO
+HStem: 144 49<80 317> 269 49<102 339>
+VStem: 71 277
+LayerCount: 2
+Fore
+SplineSet
+326 193 m 1
+ 317 144 l 1
+ 71 144 l 1
+ 80 193 l 1
+ 326 193 l 1
+348 318 m 1
+ 339 269 l 1
+ 93 269 l 1
+ 102 318 l 1
+ 348 318 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
