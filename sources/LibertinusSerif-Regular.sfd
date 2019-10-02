@@ -21,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
+ModificationTime: 1570010840
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -157,7 +158,11 @@ GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL For New Fonts
+DisplaySize: -128
+AntiAlias: 1
+FitToEm: 0
 ExtremaBound: 50
+WinInfo: 722 19 9
 BeginPrivate: 9
 BlueValues 47 [-12 0 429 442 460 472 600 610 645 658 688 698]
 OtherBlues 11 [-238 -227]
@@ -303,7 +308,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "SekAccPos" "'mkmk' Mark to Mark-1" "top_rechts" "'mark' Top rechts" "komb_OR" "'mark' Komb OR" "top_punkt2" "'mark' Top Punkt2" "top_akzent" "'mark' Top Akzent" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt"
-BeginChars: 1114450 2671
+BeginChars: 1114450 2676
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -74575,6 +74580,102 @@ AnchorPoint: "top_akzent" 201 -203 basechar 0
 LayerCount: 2
 Fore
 Refer: 29 70 N -1 0 0 -1 485 647 3
+EndChar
+
+StartChar: uni02E7
+Encoding: 743 743 2671
+Width: 372
+Flags: HW
+VStem: 50 272
+LayerCount: 2
+Fore
+SplineSet
+270 0 m 1
+ 322 0 l 1
+ 322 645 l 1
+ 270 645 l 1
+ 270 346 l 1
+ 50 346 l 1
+ 50 300 l 1
+ 270 300 l 1
+ 270 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni02E9
+Encoding: 745 745 2672
+Width: 372
+Flags: HW
+VStem: 50 272
+LayerCount: 2
+Fore
+SplineSet
+322 0 m 1
+ 322 645 l 1
+ 270 645 l 1
+ 270 46 l 1
+ 50 46 l 1
+ 50 0 l 1
+ 140.666666667 -0 231.333333333 0 322 0 c 1
+EndSplineSet
+EndChar
+
+StartChar: uni02E5
+Encoding: 741 741 2673
+Width: 372
+Flags: HW
+VStem: 50 272
+LayerCount: 2
+Fore
+SplineSet
+270 0 m 1
+ 322 0 l 1
+ 322 645 l 1
+ 231.333333333 645 140.666666667 645 50 645 c 1
+ 50 599 l 1
+ 270 599 l 1
+ 270 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni02E8
+Encoding: 744 744 2674
+Width: 372
+Flags: HW
+VStem: 50 272
+LayerCount: 2
+Fore
+SplineSet
+270 0 m 1
+ 322 0 l 1
+ 322 645 l 1
+ 270 645 l 1
+ 270 238 l 1
+ 50 238 l 1
+ 50 192 l 1
+ 270 192 l 1
+ 270 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni02E6
+Encoding: 742 742 2675
+Width: 372
+Flags: HW
+VStem: 50 272
+LayerCount: 2
+Fore
+SplineSet
+270 0 m 1
+ 322 0 l 1
+ 322 645 l 1
+ 270 645 l 1
+ 270 453 l 1
+ 50 453 l 1
+ 50 407 l 1
+ 270 407 l 1
+ 270 0 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
