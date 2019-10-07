@@ -51,7 +51,7 @@ Lookup: 1 0 0 "'ss01' Stilgruppe 1" { "'ss01' Stilgruppe 1 1"  } ['ss01' ('DFLT'
 Lookup: 1 0 0 "'ss07' Swap Eng styles" { "'ss07' Swap Eng styles-1"  } ['ss07' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'sups' Hochgestellte" { "'sups' Hochgestellte 1" ("superior") } ['sups' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'sinf' Tiefgestellte" { "'sinf' Wissenschaftliche Indices 1" ("inferior") } ['sinf' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Komb OR"  "'mark' Top rechts"  "'mark' Top Akzent"  "'mark' Mittelpunkt"  "'mark' Ogonek"  "'mark' Unten Anhang"  "'mark' Unten Punkt"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Komb OR"  "'mark' Top rechts"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 5 1 5 1
@@ -225,7 +225,7 @@ Grid
  193 550 l 1
  -463 550 l 1025
 EndSplineSet
-AnchorClass2: "top_rechts" "'mark' Top rechts" "top_punkt2" "'mark' Top Punkt2" "unten_punkt" "'mark' Unten Punkt" "unten_anhang" "'mark' Unten Anhang" "ogonek" "'mark' Ogonek" "mittelpunkt" "'mark' Mittelpunkt" "top_akzent" "'mark' Top Akzent" "komb_OR" "'mark' Komb OR"
+AnchorClass2: "top_rechts" "'mark' Top rechts" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR"
 BeginChars: 65610 1015
 
 StartChar: exclam
@@ -965,9 +965,9 @@ Encoding: 65 65 25
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 308 -104 basechar 0
-AnchorPoint: "unten_anhang" 116 5 basechar 0
-AnchorPoint: "top_akzent" 354 808 basechar 0
+AnchorPoint: "below" 308 -104 basechar 0
+AnchorPoint: "cedilla" 116 5 basechar 0
+AnchorPoint: "above" 354 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1005,11 +1005,11 @@ Encoding: 66 66 26
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 330 176 basechar 0
+AnchorPoint: "middle" 330 176 basechar 0
 AnchorPoint: "top_rechts" 513 695 basechar 0
-AnchorPoint: "unten_punkt" 272 -104 basechar 0
-AnchorPoint: "unten_anhang" 244 0 basechar 0
-AnchorPoint: "top_akzent" 271 808 basechar 0
+AnchorPoint: "below" 272 -104 basechar 0
+AnchorPoint: "cedilla" 244 0 basechar 0
+AnchorPoint: "above" 271 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1048,11 +1048,11 @@ Encoding: 67 67 27
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 346 299 basechar 0
+AnchorPoint: "middle" 346 299 basechar 0
 AnchorPoint: "top_rechts" 609 695 basechar 0
-AnchorPoint: "unten_punkt" 356 -104 basechar 0
-AnchorPoint: "unten_anhang" 359 -7 basechar 0
-AnchorPoint: "top_akzent" 340 808 basechar 0
+AnchorPoint: "below" 356 -104 basechar 0
+AnchorPoint: "cedilla" 359 -7 basechar 0
+AnchorPoint: "above" 340 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1076,11 +1076,11 @@ Encoding: 68 68 28
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 346 299 basechar 0
+AnchorPoint: "middle" 346 299 basechar 0
 AnchorPoint: "top_rechts" 579 600 basechar 0
-AnchorPoint: "unten_punkt" 279 -104 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
-AnchorPoint: "top_akzent" 306 808 basechar 0
+AnchorPoint: "below" 279 -104 basechar 0
+AnchorPoint: "cedilla" 279 4 basechar 0
+AnchorPoint: "above" 306 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1111,9 +1111,9 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "top_rechts" 519 695 basechar 0
-AnchorPoint: "unten_anhang" 299 4 basechar 0
-AnchorPoint: "unten_punkt" 289 -104 basechar 0
-AnchorPoint: "top_akzent" 273 808 basechar 0
+AnchorPoint: "cedilla" 299 4 basechar 0
+AnchorPoint: "below" 289 -104 basechar 0
+AnchorPoint: "above" 273 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1159,9 +1159,9 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "top_rechts" 519 695 basechar 0
-AnchorPoint: "unten_anhang" 205 -1 basechar 0
-AnchorPoint: "unten_punkt" 221 -104 basechar 0
-AnchorPoint: "top_akzent" 296 808 basechar 0
+AnchorPoint: "cedilla" 205 -1 basechar 0
+AnchorPoint: "below" 221 -104 basechar 0
+AnchorPoint: "above" 296 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1203,11 +1203,11 @@ Encoding: 71 71 31
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 308 318 basechar 0
+AnchorPoint: "middle" 308 318 basechar 0
 AnchorPoint: "top_rechts" 631 695 basechar 0
-AnchorPoint: "unten_anhang" 367 2 basechar 0
-AnchorPoint: "unten_punkt" 367 -104 basechar 0
-AnchorPoint: "top_akzent" 365 808 basechar 0
+AnchorPoint: "cedilla" 367 2 basechar 0
+AnchorPoint: "below" 367 -104 basechar 0
+AnchorPoint: "above" 365 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1259,7 +1259,7 @@ Encoding: 242 242 33
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 325 834 basechar 0
+AnchorPoint: "above" 325 834 basechar 0
 AnchorPoint: "komb_OR" 490 396 basechar 0
 LayerCount: 2
 Fore
@@ -1293,7 +1293,7 @@ Encoding: 243 243 34
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 335 834 basechar 0
+AnchorPoint: "above" 335 834 basechar 0
 AnchorPoint: "komb_OR" 500 396 basechar 0
 LayerCount: 2
 Fore
@@ -1327,7 +1327,7 @@ Encoding: 244 244 35
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 285 833 basechar 0
+AnchorPoint: "above" 285 833 basechar 0
 AnchorPoint: "komb_OR" 480 396 basechar 0
 LayerCount: 2
 Fore
@@ -1360,7 +1360,7 @@ Encoding: 245 245 36
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 315 834 basechar 0
+AnchorPoint: "above" 315 834 basechar 0
 AnchorPoint: "komb_OR" 480 396 basechar 0
 LayerCount: 2
 Fore
@@ -1396,7 +1396,7 @@ Encoding: 246 246 37
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 319 834 basechar 0
+AnchorPoint: "above" 319 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1458,7 +1458,7 @@ Encoding: 249 249 39
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 295 834 basechar 0
+AnchorPoint: "above" 295 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1559,7 +1559,7 @@ Encoding: 251 251 41
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 327 834 basechar 0
+AnchorPoint: "above" 327 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1610,9 +1610,9 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "ogonek" 361 42 basechar 0
-AnchorPoint: "unten_anhang" 242 -2 basechar 0
-AnchorPoint: "unten_punkt" 236 -110 basechar 0
-AnchorPoint: "top_akzent" 227 795 basechar 0
+AnchorPoint: "cedilla" 242 -2 basechar 0
+AnchorPoint: "below" 236 -110 basechar 0
+AnchorPoint: "above" 227 795 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1648,9 +1648,9 @@ Encoding: 278 278 43
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 273 970 basechar 0
-AnchorPoint: "unten_punkt" 279 -110 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
+AnchorPoint: "above" 273 970 basechar 0
+AnchorPoint: "below" 279 -110 basechar 0
+AnchorPoint: "cedilla" 279 4 basechar 0
 AnchorPoint: "top_rechts" 519 732 basechar 0
 LayerCount: 2
 Fore
@@ -1701,10 +1701,10 @@ Encoding: 279 279 44
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 330 795 basechar 0
+AnchorPoint: "above" 330 795 basechar 0
 AnchorPoint: "ogonek" 461 42 basechar 0
-AnchorPoint: "unten_anhang" 342 -2 basechar 0
-AnchorPoint: "unten_punkt" 336 -110 basechar 0
+AnchorPoint: "cedilla" 342 -2 basechar 0
+AnchorPoint: "below" 336 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1738,9 +1738,9 @@ Encoding: 280 280 45
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 273 850 basechar 0
-AnchorPoint: "unten_punkt" 279 -110 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
+AnchorPoint: "above" 273 850 basechar 0
+AnchorPoint: "below" 279 -110 basechar 0
+AnchorPoint: "cedilla" 279 4 basechar 0
 AnchorPoint: "top_rechts" 519 732 basechar 0
 LayerCount: 2
 Fore
@@ -1794,8 +1794,8 @@ Encoding: 281 281 46
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 70 -108 basechar 0
-AnchorPoint: "top_akzent" 231 645 basechar 0
+AnchorPoint: "below" 70 -108 basechar 0
+AnchorPoint: "above" 231 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2536,9 +2536,9 @@ Encoding: 297 297 62
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_anhang" 142 -2 basechar 0
-AnchorPoint: "unten_punkt" 136 -110 basechar 0
-AnchorPoint: "top_akzent" 139 795 basechar 0
+AnchorPoint: "cedilla" 142 -2 basechar 0
+AnchorPoint: "below" 136 -110 basechar 0
+AnchorPoint: "above" 139 795 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2710,7 +2710,7 @@ Encoding: 302 302 67
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 326 850 basechar 0
+AnchorPoint: "above" 326 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2746,7 +2746,7 @@ Encoding: 303 303 68
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 332 825 basechar 0
+AnchorPoint: "above" 332 825 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7326,7 +7326,7 @@ Encoding: 7794 7794 184
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 346 850 basechar 0
+AnchorPoint: "above" 346 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7370,7 +7370,7 @@ Encoding: 7795 7795 185
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 646 basechar 0
+AnchorPoint: "above" 255 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7835,11 +7835,11 @@ Encoding: 72 72 199
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 316 461 basechar 0
+AnchorPoint: "middle" 316 461 basechar 0
 AnchorPoint: "top_rechts" 585 695 basechar 0
-AnchorPoint: "unten_anhang" 130 0 basechar 0
-AnchorPoint: "unten_punkt" 360 -104 basechar 0
-AnchorPoint: "top_akzent" 361 808 basechar 0
+AnchorPoint: "cedilla" 130 0 basechar 0
+AnchorPoint: "below" 360 -104 basechar 0
+AnchorPoint: "above" 361 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7884,10 +7884,10 @@ Encoding: 73 73 200
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 332 941 basechar 0
-AnchorPoint: "unten_punkt" 309 -104 basechar 0
-AnchorPoint: "unten_anhang" 328 1 basechar 0
-AnchorPoint: "mittelpunkt" 330 309 basechar 0
+AnchorPoint: "above" 332 941 basechar 0
+AnchorPoint: "below" 309 -104 basechar 0
+AnchorPoint: "cedilla" 328 1 basechar 0
+AnchorPoint: "middle" 330 309 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7914,8 +7914,8 @@ Encoding: 74 74 201
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 376 299 basechar 0
-AnchorPoint: "top_akzent" 372 808 basechar 0
+AnchorPoint: "middle" 376 299 basechar 0
+AnchorPoint: "above" 372 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7943,10 +7943,10 @@ Encoding: 75 75 202
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 158 309 basechar 0
-AnchorPoint: "unten_punkt" 292 -104 basechar 0
-AnchorPoint: "unten_anhang" 158 -1 basechar 0
-AnchorPoint: "top_akzent" 466 808 basechar 0
+AnchorPoint: "middle" 158 309 basechar 0
+AnchorPoint: "below" 292 -104 basechar 0
+AnchorPoint: "cedilla" 158 -1 basechar 0
+AnchorPoint: "above" 466 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -7994,11 +7994,11 @@ Encoding: 76 76 203
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 326 299 basechar 0
+AnchorPoint: "middle" 326 299 basechar 0
 AnchorPoint: "top_rechts" 509 695 basechar 0
-AnchorPoint: "unten_anhang" 300 1 basechar 0
-AnchorPoint: "unten_punkt" 300 -104 basechar 0
-AnchorPoint: "top_akzent" 189 808 basechar 0
+AnchorPoint: "cedilla" 300 1 basechar 0
+AnchorPoint: "below" 300 -104 basechar 0
+AnchorPoint: "above" 189 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8029,10 +8029,10 @@ Encoding: 77 77 204
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 476 423 basechar 0
-AnchorPoint: "unten_anhang" 96 2 basechar 0
-AnchorPoint: "unten_punkt" 373 -104 basechar 0
-AnchorPoint: "top_akzent" 411 808 basechar 0
+AnchorPoint: "middle" 476 423 basechar 0
+AnchorPoint: "cedilla" 96 2 basechar 0
+AnchorPoint: "below" 373 -104 basechar 0
+AnchorPoint: "above" 411 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8076,10 +8076,10 @@ Encoding: 78 78 205
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 356 304 basechar 0
-AnchorPoint: "unten_anhang" 130 -4 basechar 0
-AnchorPoint: "unten_punkt" 348 -104 basechar 0
-AnchorPoint: "top_akzent" 346 808 basechar 0
+AnchorPoint: "middle" 356 304 basechar 0
+AnchorPoint: "cedilla" 130 -4 basechar 0
+AnchorPoint: "below" 348 -104 basechar 0
+AnchorPoint: "above" 346 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8119,11 +8119,11 @@ Encoding: 79 79 206
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 315 306 basechar 0
+AnchorPoint: "middle" 315 306 basechar 0
 AnchorPoint: "komb_OR" 564 576 basechar 0
-AnchorPoint: "unten_anhang" 318 0 basechar 0
-AnchorPoint: "unten_punkt" 318 -104 basechar 0
-AnchorPoint: "top_akzent" 305 808 basechar 0
+AnchorPoint: "cedilla" 318 0 basechar 0
+AnchorPoint: "below" 318 -104 basechar 0
+AnchorPoint: "above" 305 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8147,11 +8147,11 @@ Encoding: 80 80 207
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 353 441 basechar 0
+AnchorPoint: "middle" 353 441 basechar 0
 AnchorPoint: "top_rechts" 559 695 basechar 0
-AnchorPoint: "unten_anhang" 200 -3 basechar 0
-AnchorPoint: "unten_punkt" 290 -104 basechar 0
-AnchorPoint: "top_akzent" 327 808 basechar 0
+AnchorPoint: "cedilla" 200 -3 basechar 0
+AnchorPoint: "below" 290 -104 basechar 0
+AnchorPoint: "above" 327 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8185,10 +8185,10 @@ Encoding: 81 81 208
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 331 308 basechar 0
+AnchorPoint: "middle" 331 308 basechar 0
 AnchorPoint: "top_rechts" 614 695 basechar 0
 AnchorPoint: "komb_OR" 615 576 basechar 0
-AnchorPoint: "top_akzent" 343 808 basechar 0
+AnchorPoint: "above" 343 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8224,11 +8224,11 @@ Encoding: 82 82 209
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 278 445 basechar 0
+AnchorPoint: "middle" 278 445 basechar 0
 AnchorPoint: "top_rechts" 519 695 basechar 0
-AnchorPoint: "unten_anhang" 148 -1 basechar 0
-AnchorPoint: "unten_punkt" 258 -104 basechar 0
-AnchorPoint: "top_akzent" 269 808 basechar 0
+AnchorPoint: "cedilla" 148 -1 basechar 0
+AnchorPoint: "below" 258 -104 basechar 0
+AnchorPoint: "above" 269 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8269,11 +8269,11 @@ Encoding: 83 83 210
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 236 328 basechar 0
+AnchorPoint: "middle" 236 328 basechar 0
 AnchorPoint: "top_rechts" 481 695 basechar 0
-AnchorPoint: "unten_anhang" 224 2 basechar 0
-AnchorPoint: "unten_punkt" 234 -104 basechar 0
-AnchorPoint: "top_akzent" 232 808 basechar 0
+AnchorPoint: "cedilla" 224 2 basechar 0
+AnchorPoint: "below" 234 -104 basechar 0
+AnchorPoint: "above" 232 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8303,11 +8303,11 @@ Encoding: 84 84 211
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 330 271 basechar 0
+AnchorPoint: "middle" 330 271 basechar 0
 AnchorPoint: "top_rechts" 642 695 basechar 0
-AnchorPoint: "unten_anhang" 331 10 basechar 0
-AnchorPoint: "unten_punkt" 323 -104 basechar 0
-AnchorPoint: "top_akzent" 330 808 basechar 0
+AnchorPoint: "cedilla" 331 10 basechar 0
+AnchorPoint: "below" 323 -104 basechar 0
+AnchorPoint: "above" 330 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8343,10 +8343,10 @@ Encoding: 85 85 212
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 323 305 basechar 0
-AnchorPoint: "unten_anhang" 315 4 basechar 0
-AnchorPoint: "unten_punkt" 315 -104 basechar 0
-AnchorPoint: "top_akzent" 332 808 basechar 0
+AnchorPoint: "middle" 323 305 basechar 0
+AnchorPoint: "cedilla" 315 4 basechar 0
+AnchorPoint: "below" 315 -104 basechar 0
+AnchorPoint: "above" 332 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8380,11 +8380,11 @@ Encoding: 86 86 213
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 334 450 basechar 0
+AnchorPoint: "middle" 334 450 basechar 0
 AnchorPoint: "top_rechts" 679 695 basechar 0
-AnchorPoint: "unten_anhang" 318 3 basechar 0
-AnchorPoint: "unten_punkt" 318 -104 basechar 0
-AnchorPoint: "top_akzent" 336 808 basechar 0
+AnchorPoint: "cedilla" 318 3 basechar 0
+AnchorPoint: "below" 318 -104 basechar 0
+AnchorPoint: "above" 336 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8416,11 +8416,11 @@ Encoding: 87 87 214
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 326 546 basechar 0
+AnchorPoint: "middle" 326 546 basechar 0
 AnchorPoint: "top_rechts" 599 695 basechar 0
-AnchorPoint: "unten_anhang" 295 0 basechar 0
-AnchorPoint: "unten_punkt" 299 -104 basechar 0
-AnchorPoint: "top_akzent" 340 808 basechar 0
+AnchorPoint: "cedilla" 295 0 basechar 0
+AnchorPoint: "below" 299 -104 basechar 0
+AnchorPoint: "above" 340 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8460,11 +8460,11 @@ Encoding: 88 88 215
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 326 309 basechar 0
+AnchorPoint: "middle" 326 309 basechar 0
 AnchorPoint: "top_rechts" 689 695 basechar 0
-AnchorPoint: "unten_anhang" 102 0 basechar 0
-AnchorPoint: "unten_punkt" 307 -104 basechar 0
-AnchorPoint: "top_akzent" 332 808 basechar 0
+AnchorPoint: "cedilla" 102 0 basechar 0
+AnchorPoint: "below" 307 -104 basechar 0
+AnchorPoint: "above" 332 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8517,9 +8517,9 @@ Encoding: 89 89 216
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_anhang" 329 1 basechar 0
-AnchorPoint: "unten_punkt" 331 -104 basechar 0
-AnchorPoint: "top_akzent" 331 808 basechar 0
+AnchorPoint: "cedilla" 329 1 basechar 0
+AnchorPoint: "below" 331 -104 basechar 0
+AnchorPoint: "above" 331 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8559,11 +8559,11 @@ Encoding: 90 90 217
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 305 305 basechar 0
+AnchorPoint: "middle" 305 305 basechar 0
 AnchorPoint: "top_rechts" 619 695 basechar 0
-AnchorPoint: "unten_anhang" 287 4 basechar 0
-AnchorPoint: "unten_punkt" 287 -104 basechar 0
-AnchorPoint: "top_akzent" 320 808 basechar 0
+AnchorPoint: "cedilla" 287 4 basechar 0
+AnchorPoint: "below" 287 -104 basechar 0
+AnchorPoint: "above" 320 808 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8691,9 +8691,9 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "ogonek" 484.7 16 basechar 0
-AnchorPoint: "unten_anhang" 207.7 -2.9 basechar 0
-AnchorPoint: "unten_punkt" 248.6 -110 basechar 0
-AnchorPoint: "top_akzent" 263.5 645 basechar 0
+AnchorPoint: "cedilla" 207.7 -2.9 basechar 0
+AnchorPoint: "below" 248.6 -110 basechar 0
+AnchorPoint: "above" 263.5 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8736,9 +8736,9 @@ Encoding: 98 98 224
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 326 215 basechar 0
+AnchorPoint: "middle" 326 215 basechar 0
 AnchorPoint: "top_rechts" 500 580 basechar 0
-AnchorPoint: "unten_punkt" 327.9 -108 basechar 0
+AnchorPoint: "below" 327.9 -108 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8776,11 +8776,11 @@ Encoding: 99 99 225
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 339.5 215 basechar 0
+AnchorPoint: "middle" 339.5 215 basechar 0
 AnchorPoint: "ogonek" 453.6 42 basechar 0
-AnchorPoint: "unten_anhang" 337.4 -2 basechar 0
-AnchorPoint: "unten_punkt" 328.7 -110 basechar 0
-AnchorPoint: "top_akzent" 336.8 645 basechar 0
+AnchorPoint: "cedilla" 337.4 -2 basechar 0
+AnchorPoint: "below" 328.7 -110 basechar 0
+AnchorPoint: "above" 336.8 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8807,12 +8807,12 @@ Encoding: 100 100 226
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 250.9 239.7 basechar 0
+AnchorPoint: "middle" 250.9 239.7 basechar 0
 AnchorPoint: "komb_OR" 566 466 basechar 0
 AnchorPoint: "top_rechts" 556 580 basechar 0
-AnchorPoint: "top_akzent" 258 645 basechar 0
+AnchorPoint: "above" 258 645 basechar 0
 AnchorPoint: "ogonek" 366.8 22.3 basechar 0
-AnchorPoint: "unten_punkt" 261 -110 basechar 0
+AnchorPoint: "below" 261 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8855,12 +8855,12 @@ Encoding: 101 101 227
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 318.1 215 basechar 0
+AnchorPoint: "middle" 318.1 215 basechar 0
 AnchorPoint: "komb_OR" 510.5 398 basechar 0
-AnchorPoint: "unten_anhang" 323.6 -3 basechar 0
+AnchorPoint: "cedilla" 323.6 -3 basechar 0
 AnchorPoint: "ogonek" 487.7 41 basechar 0
-AnchorPoint: "top_akzent" 343.3 645 basechar 0
-AnchorPoint: "unten_punkt" 316.1 -110 basechar 0
+AnchorPoint: "above" 343.3 645 basechar 0
+AnchorPoint: "below" 316.1 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8891,9 +8891,9 @@ Encoding: 102 102 228
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 241.5 215 basechar 0
+AnchorPoint: "middle" 241.5 215 basechar 0
 AnchorPoint: "top_rechts" 466.5 750 basechar 0
-AnchorPoint: "unten_punkt" 238.5 -110 basechar 0
+AnchorPoint: "below" 238.5 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8937,10 +8937,10 @@ Encoding: 103 103 229
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 249 285 basechar 0
+AnchorPoint: "middle" 249 285 basechar 0
 AnchorPoint: "top_rechts" 514 580 basechar 0
-AnchorPoint: "unten_punkt" 236 -319 basechar 0
-AnchorPoint: "top_akzent" 253 645 basechar 0
+AnchorPoint: "below" 236 -319 basechar 0
+AnchorPoint: "above" 253 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8991,11 +8991,11 @@ Encoding: 104 104 230
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 310 215 basechar 0
+AnchorPoint: "middle" 310 215 basechar 0
 AnchorPoint: "top_rechts" 449 580 basechar 0
 AnchorPoint: "ogonek" 453 10 basechar 0
-AnchorPoint: "top_akzent" 319 645 basechar 0
-AnchorPoint: "unten_punkt" 279 -110 basechar 0
+AnchorPoint: "above" 319 645 basechar 0
+AnchorPoint: "below" 279 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9039,8 +9039,8 @@ Encoding: 105 105 231
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 336 -107 basechar 0
-AnchorPoint: "unten_anhang" 337 12 basechar 0
+AnchorPoint: "below" 336 -107 basechar 0
+AnchorPoint: "cedilla" 337 12 basechar 0
 AnchorPoint: "ogonek" 409 10 basechar 0
 LayerCount: 2
 Fore
@@ -9114,9 +9114,9 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "top_rechts" 535.6 696.4 basechar 0
-AnchorPoint: "unten_punkt" 246.7 -107 basechar 0
-AnchorPoint: "unten_anhang" 139 9 basechar 0
-AnchorPoint: "top_akzent" 261.8 646 basechar 0
+AnchorPoint: "below" 246.7 -107 basechar 0
+AnchorPoint: "cedilla" 139 9 basechar 0
+AnchorPoint: "above" 261.8 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9166,10 +9166,10 @@ Encoding: 108 108 234
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_anhang" 296.5 10 basechar 0
+AnchorPoint: "cedilla" 296.5 10 basechar 0
 AnchorPoint: "top_rechts" 400.5 733 basechar 0
-AnchorPoint: "mittelpunkt" 296.5 215 basechar 0
-AnchorPoint: "top_akzent" 276.5 885 basechar 0
+AnchorPoint: "middle" 296.5 215 basechar 0
+AnchorPoint: "above" 276.5 885 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9199,10 +9199,10 @@ Encoding: 109 109 235
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 328 215 basechar 0
-AnchorPoint: "unten_anhang" 93 -1 basechar 0
-AnchorPoint: "top_akzent" 392 645 basechar 0
-AnchorPoint: "unten_punkt" 408 -110 basechar 0
+AnchorPoint: "middle" 328 215 basechar 0
+AnchorPoint: "cedilla" 93 -1 basechar 0
+AnchorPoint: "above" 392 645 basechar 0
+AnchorPoint: "below" 408 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9252,10 +9252,10 @@ Encoding: 110 110 236
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 303 215 basechar 0
-AnchorPoint: "unten_anhang" 148 9 basechar 0
-AnchorPoint: "unten_punkt" 304 -110 basechar 0
-AnchorPoint: "top_akzent" 289 646 basechar 0
+AnchorPoint: "middle" 303 215 basechar 0
+AnchorPoint: "cedilla" 148 9 basechar 0
+AnchorPoint: "below" 304 -110 basechar 0
+AnchorPoint: "above" 289 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9299,12 +9299,12 @@ Encoding: 111 111 237
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 310.6 645 basechar 0
-AnchorPoint: "unten_punkt" 315.8 -110 basechar 0
+AnchorPoint: "above" 310.6 645 basechar 0
+AnchorPoint: "below" 315.8 -110 basechar 0
 AnchorPoint: "ogonek" 450 44 basechar 0
-AnchorPoint: "unten_anhang" 313.8 -3 basechar 0
+AnchorPoint: "cedilla" 313.8 -3 basechar 0
 AnchorPoint: "komb_OR" 479.1 396 basechar 0
-AnchorPoint: "mittelpunkt" 308.6 215 basechar 0
+AnchorPoint: "middle" 308.6 215 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9330,10 +9330,10 @@ Encoding: 112 112 238
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 271 215 basechar 0
+AnchorPoint: "middle" 271 215 basechar 0
 AnchorPoint: "top_rechts" 454 580 basechar 0
-AnchorPoint: "unten_punkt" 204 -319 basechar 0
-AnchorPoint: "top_akzent" 296 646 basechar 0
+AnchorPoint: "below" 204 -319 basechar 0
+AnchorPoint: "above" 296 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9374,10 +9374,10 @@ Encoding: 113 113 239
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 223.1 215 basechar 0
+AnchorPoint: "middle" 223.1 215 basechar 0
 AnchorPoint: "top_rechts" 469 732 basechar 0
-AnchorPoint: "unten_punkt" 193.4 -110 basechar 0
-AnchorPoint: "top_akzent" 226.2 645 basechar 0
+AnchorPoint: "below" 193.4 -110 basechar 0
+AnchorPoint: "above" 226.2 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9416,11 +9416,11 @@ Encoding: 114 114 240
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 241.2 185 basechar 0
+AnchorPoint: "middle" 241.2 185 basechar 0
 AnchorPoint: "top_rechts" 424.2 580 basechar 0
-AnchorPoint: "unten_anhang" 247.2 7 basechar 0
-AnchorPoint: "top_akzent" 266.2 646 basechar 0
-AnchorPoint: "unten_punkt" 248.2 -110 basechar 0
+AnchorPoint: "cedilla" 247.2 7 basechar 0
+AnchorPoint: "above" 266.2 646 basechar 0
+AnchorPoint: "below" 248.2 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9458,13 +9458,13 @@ Encoding: 115 115 241
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 308.6 215 basechar 0
+AnchorPoint: "middle" 308.6 215 basechar 0
 AnchorPoint: "komb_OR" 479.1 386 basechar 0
 AnchorPoint: "top_rechts" 452 580 basechar 0
 AnchorPoint: "ogonek" 376 13 basechar 0
-AnchorPoint: "top_akzent" 292 645 basechar 0
-AnchorPoint: "unten_anhang" 285 1 basechar 0
-AnchorPoint: "unten_punkt" 287 -110 basechar 0
+AnchorPoint: "above" 292 645 basechar 0
+AnchorPoint: "cedilla" 285 1 basechar 0
+AnchorPoint: "below" 287 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9497,11 +9497,11 @@ Encoding: 116 116 242
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 240 215 basechar 0
+AnchorPoint: "middle" 240 215 basechar 0
 AnchorPoint: "top_rechts" 392 580 basechar 0
-AnchorPoint: "unten_anhang" 318 -3 basechar 0
+AnchorPoint: "cedilla" 318 -3 basechar 0
 AnchorPoint: "ogonek" 410 15 basechar 0
-AnchorPoint: "unten_punkt" 276 -110 basechar 0
+AnchorPoint: "below" 276 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9539,11 +9539,11 @@ Encoding: 117 117 243
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 311.5 215 basechar 0
-AnchorPoint: "unten_anhang" 272.5 0 basechar 0
+AnchorPoint: "middle" 311.5 215 basechar 0
+AnchorPoint: "cedilla" 272.5 0 basechar 0
 AnchorPoint: "ogonek" 472.5 7 basechar 0
-AnchorPoint: "unten_punkt" 298.5 -110 basechar 0
-AnchorPoint: "top_akzent" 314.5 645 basechar 0
+AnchorPoint: "below" 298.5 -110 basechar 0
+AnchorPoint: "above" 314.5 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9587,10 +9587,10 @@ Encoding: 118 118 244
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 316 -110 basechar 0
-AnchorPoint: "top_akzent" 324 646 basechar 0
+AnchorPoint: "below" 316 -110 basechar 0
+AnchorPoint: "above" 324 646 basechar 0
 AnchorPoint: "top_rechts" 528 580 basechar 0
-AnchorPoint: "mittelpunkt" 352 267 basechar 0
+AnchorPoint: "middle" 352 267 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9625,8 +9625,8 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "top_rechts" 719 580 basechar 0
-AnchorPoint: "unten_punkt" 356.6 -111 basechar 0
-AnchorPoint: "top_akzent" 321.8 646 basechar 0
+AnchorPoint: "below" 356.6 -111 basechar 0
+AnchorPoint: "above" 321.8 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9668,11 +9668,11 @@ Encoding: 120 120 246
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 230.8 215 basechar 0
+AnchorPoint: "middle" 230.8 215 basechar 0
 AnchorPoint: "top_rechts" 481.4 580 basechar 0
-AnchorPoint: "unten_punkt" 243.1 -110 basechar 0
-AnchorPoint: "unten_anhang" 74.4 8 basechar 0
-AnchorPoint: "top_akzent" 215.4 646 basechar 0
+AnchorPoint: "below" 243.1 -110 basechar 0
+AnchorPoint: "cedilla" 74.4 8 basechar 0
+AnchorPoint: "above" 215.4 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9722,8 +9722,8 @@ Encoding: 121 121 247
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 407.8 -107 basechar 0
-AnchorPoint: "top_akzent" 216.9 644 basechar 0
+AnchorPoint: "below" 407.8 -107 basechar 0
+AnchorPoint: "above" 216.9 644 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9762,11 +9762,11 @@ Encoding: 122 122 248
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 207 215 basechar 0
+AnchorPoint: "middle" 207 215 basechar 0
 AnchorPoint: "top_rechts" 399 580 basechar 0
-AnchorPoint: "unten_punkt" 271.6 -111 basechar 0
-AnchorPoint: "unten_anhang" 267.1 4 basechar 0
-AnchorPoint: "top_akzent" 216.8 646 basechar 0
+AnchorPoint: "below" 271.6 -111 basechar 0
+AnchorPoint: "cedilla" 267.1 4 basechar 0
+AnchorPoint: "above" 216.8 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -10043,9 +10043,9 @@ Encoding: 165 165 258
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 331 850 basechar 0
-AnchorPoint: "unten_punkt" 331 -110 basechar 0
-AnchorPoint: "unten_anhang" 329 1 basechar 0
+AnchorPoint: "above" 331 850 basechar 0
+AnchorPoint: "below" 331 -110 basechar 0
+AnchorPoint: "cedilla" 329 1 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11001,7 +11001,7 @@ Encoding: 194 194 287
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 362 894 basechar 0
+AnchorPoint: "above" 362 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11047,7 +11047,7 @@ Encoding: 195 195 288
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 364 894 basechar 0
+AnchorPoint: "above" 364 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11096,7 +11096,7 @@ Encoding: 196 196 289
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 362 894 basechar 0
+AnchorPoint: "above" 362 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11145,7 +11145,7 @@ Encoding: 197 197 290
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 364 894 basechar 0
+AnchorPoint: "above" 364 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11193,9 +11193,9 @@ Encoding: 198 198 291
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 433 805 basechar 0
-AnchorPoint: "unten_punkt" 429 -107 basechar 0
-AnchorPoint: "unten_anhang" 429 4 basechar 0
+AnchorPoint: "above" 433 805 basechar 0
+AnchorPoint: "below" 429 -107 basechar 0
+AnchorPoint: "cedilla" 429 4 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11255,7 +11255,7 @@ Encoding: 199 199 292
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 371 850 basechar 0
+AnchorPoint: "above" 371 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11291,8 +11291,8 @@ Encoding: 200 200 293
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 279 -107 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
+AnchorPoint: "below" 279 -107 basechar 0
+AnchorPoint: "cedilla" 279 4 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11344,8 +11344,8 @@ Encoding: 201 201 294
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 279 -107 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
+AnchorPoint: "below" 279 -107 basechar 0
+AnchorPoint: "cedilla" 279 4 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11397,9 +11397,9 @@ Encoding: 202 202 295
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 296 894 basechar 0
-AnchorPoint: "unten_punkt" 279 -107 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
+AnchorPoint: "above" 296 894 basechar 0
+AnchorPoint: "below" 279 -107 basechar 0
+AnchorPoint: "cedilla" 279 4 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11452,8 +11452,8 @@ Encoding: 203 203 296
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 279 -107 basechar 0
-AnchorPoint: "unten_anhang" 279 4 basechar 0
+AnchorPoint: "below" 279 -107 basechar 0
+AnchorPoint: "cedilla" 279 4 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11574,7 +11574,7 @@ Encoding: 206 206 299
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 314 894 basechar 0
+AnchorPoint: "above" 314 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11609,7 +11609,7 @@ Encoding: 207 207 300
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 311 894 basechar 0
+AnchorPoint: "above" 311 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11646,7 +11646,7 @@ Encoding: 208 208 301
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 341 850 basechar 0
+AnchorPoint: "above" 341 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11686,7 +11686,7 @@ Encoding: 209 209 302
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11737,7 +11737,7 @@ Encoding: 210 210 303
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 LayerCount: 2
 Fore
@@ -11769,7 +11769,7 @@ Encoding: 211 211 304
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 LayerCount: 2
 Fore
@@ -11801,7 +11801,7 @@ Encoding: 212 212 305
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 314 894 basechar 0
+AnchorPoint: "above" 314 894 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 LayerCount: 2
 Fore
@@ -11834,7 +11834,7 @@ Encoding: 213 213 306
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 AnchorPoint: "komb_OR" 570 606 basechar 0
 LayerCount: 2
 Fore
@@ -11870,7 +11870,7 @@ Encoding: 214 214 307
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11929,7 +11929,7 @@ Encoding: 216 216 309
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 351 850 basechar 0
+AnchorPoint: "above" 351 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11966,7 +11966,7 @@ Encoding: 217 217 310
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12007,7 +12007,7 @@ Encoding: 218 218 311
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12048,7 +12048,7 @@ Encoding: 219 219 312
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12090,7 +12090,7 @@ Encoding: 220 220 313
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12135,7 +12135,7 @@ Encoding: 221 221 314
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 344 894 basechar 0
+AnchorPoint: "above" 344 894 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12182,7 +12182,7 @@ Encoding: 222 222 315
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 281 850 basechar 0
+AnchorPoint: "above" 281 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12261,7 +12261,7 @@ Encoding: 224 224 317
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 295 834 basechar 0
+AnchorPoint: "above" 295 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12311,7 +12311,7 @@ Encoding: 225 225 318
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12361,7 +12361,7 @@ Encoding: 226 226 319
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 214 834 basechar 0
+AnchorPoint: "above" 214 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12410,7 +12410,7 @@ Encoding: 227 227 320
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12462,7 +12462,7 @@ Encoding: 228 228 321
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12513,7 +12513,7 @@ Encoding: 229 229 322
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12564,9 +12564,9 @@ Encoding: 230 230 323
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 323 -108 basechar 0
+AnchorPoint: "below" 323 -108 basechar 0
 AnchorPoint: "ogonek" 569.8 34.5 basechar 0
-AnchorPoint: "top_akzent" 328 645 basechar 0
+AnchorPoint: "above" 328 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12612,7 +12612,7 @@ Encoding: 231 231 324
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12650,7 +12650,7 @@ Encoding: 232 232 325
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12688,7 +12688,7 @@ Encoding: 233 233 326
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12726,7 +12726,7 @@ Encoding: 234 234 327
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12763,7 +12763,7 @@ Encoding: 235 235 328
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 255 834 basechar 0
+AnchorPoint: "above" 255 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12802,7 +12802,7 @@ Encoding: 236 236 329
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 305 834 basechar 0
+AnchorPoint: "above" 305 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12841,8 +12841,8 @@ Encoding: 237 237 330
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 333 215 basechar 0
-AnchorPoint: "top_akzent" 336 834 basechar 0
+AnchorPoint: "middle" 333 215 basechar 0
+AnchorPoint: "above" 336 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12881,7 +12881,7 @@ Encoding: 238 238 331
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 312 834 basechar 0
+AnchorPoint: "above" 312 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12919,7 +12919,7 @@ Encoding: 239 239 332
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 334 795 basechar 0
+AnchorPoint: "above" 334 795 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12993,7 +12993,7 @@ Encoding: 241 241 334
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 405 834 basechar 0
+AnchorPoint: "above" 405 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13082,7 +13082,7 @@ Encoding: 252 252 336
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 295 834 basechar 0
+AnchorPoint: "above" 295 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13134,7 +13134,7 @@ Encoding: 253 253 337
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 335 834 basechar 0
+AnchorPoint: "above" 335 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13181,7 +13181,7 @@ Encoding: 254 254 338
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 308 646 basechar 0
+AnchorPoint: "above" 308 646 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13223,7 +13223,7 @@ Encoding: 255 255 339
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 365 834 basechar 0
+AnchorPoint: "above" 365 834 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13315,10 +13315,10 @@ Encoding: 257 257 341
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 266 -108 basechar 0
-AnchorPoint: "unten_anhang" 237 -3 basechar 0
+AnchorPoint: "below" 266 -108 basechar 0
+AnchorPoint: "cedilla" 237 -3 basechar 0
 AnchorPoint: "ogonek" 480 16 basechar 0
-AnchorPoint: "top_akzent" 309 715 basechar 0
+AnchorPoint: "above" 309 715 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13457,7 +13457,7 @@ Encoding: 260 260 344
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 365 850 basechar 0
+AnchorPoint: "above" 365 850 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13503,9 +13503,9 @@ Encoding: 261 261 345
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 209 645 basechar 0
-AnchorPoint: "unten_punkt" 146 -108 basechar 0
-AnchorPoint: "unten_anhang" 167 -3 basechar 0
+AnchorPoint: "above" 209 645 basechar 0
+AnchorPoint: "below" 146 -108 basechar 0
+AnchorPoint: "cedilla" 167 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13648,9 +13648,9 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "ogonek" 431 42 basechar 0
-AnchorPoint: "unten_anhang" 312 -2 basechar 0
-AnchorPoint: "unten_punkt" 306 -110 basechar 0
-AnchorPoint: "top_akzent" 321 795 basechar 0
+AnchorPoint: "cedilla" 312 -2 basechar 0
+AnchorPoint: "below" 306 -110 basechar 0
+AnchorPoint: "above" 321 795 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13712,9 +13712,9 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "ogonek" 431 42 basechar 0
-AnchorPoint: "unten_anhang" 312 -2 basechar 0
-AnchorPoint: "unten_punkt" 306 -110 basechar 0
-AnchorPoint: "top_akzent" 297 795 basechar 0
+AnchorPoint: "cedilla" 312 -2 basechar 0
+AnchorPoint: "below" 306 -110 basechar 0
+AnchorPoint: "above" 297 795 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13775,9 +13775,9 @@ Encoding: 269 269 353
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 287 795 basechar 0
-AnchorPoint: "unten_punkt" 296 -110 basechar 0
-AnchorPoint: "unten_anhang" 302 -2 basechar 0
+AnchorPoint: "above" 287 795 basechar 0
+AnchorPoint: "below" 296 -110 basechar 0
+AnchorPoint: "cedilla" 302 -2 basechar 0
 AnchorPoint: "ogonek" 421 42 basechar 0
 LayerCount: 2
 Fore
@@ -14029,9 +14029,9 @@ Width: 640
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "ogonek" 461 42 basechar 0
-AnchorPoint: "unten_anhang" 342 -2 basechar 0
-AnchorPoint: "unten_punkt" 336 -110 basechar 0
-AnchorPoint: "top_akzent" 327 698 basechar 0
+AnchorPoint: "cedilla" 342 -2 basechar 0
+AnchorPoint: "below" 336 -110 basechar 0
+AnchorPoint: "above" 327 698 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14426,9 +14426,9 @@ Encoding: 312 312 368
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_anhang" 160 9 basechar 0
-AnchorPoint: "top_akzent" 280 644 basechar 0
-AnchorPoint: "unten_punkt" 172 -108 basechar 0
+AnchorPoint: "cedilla" 160 9 basechar 0
+AnchorPoint: "above" 280 644 basechar 0
+AnchorPoint: "below" 172 -108 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15162,9 +15162,9 @@ Encoding: 330 330 386
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 346 804 basechar 0
-AnchorPoint: "unten_punkt" 313 -109 basechar 0
-AnchorPoint: "unten_anhang" 124 -3 basechar 0
+AnchorPoint: "above" 346 804 basechar 0
+AnchorPoint: "below" 313 -109 basechar 0
+AnchorPoint: "cedilla" 124 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15211,10 +15211,10 @@ Encoding: 331 331 387
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "mittelpunkt" 303 215 basechar 0
-AnchorPoint: "top_akzent" 303 646 basechar 0
-AnchorPoint: "unten_punkt" 328 -111 basechar 0
-AnchorPoint: "unten_anhang" 148 9 basechar 0
+AnchorPoint: "middle" 303 215 basechar 0
+AnchorPoint: "above" 303 646 basechar 0
+AnchorPoint: "below" 328 -111 basechar 0
+AnchorPoint: "cedilla" 148 9 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15461,7 +15461,7 @@ Encoding: 338 338 394
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 486 698 basechar 0
+AnchorPoint: "above" 486 698 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16099,9 +16099,9 @@ Encoding: 353 353 409
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_anhang" 189 -2 basechar 0
-AnchorPoint: "unten_punkt" 183 -110 basechar 0
-AnchorPoint: "top_akzent" 194 795 basechar 0
+AnchorPoint: "cedilla" 189 -2 basechar 0
+AnchorPoint: "below" 183 -110 basechar 0
+AnchorPoint: "above" 194 795 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16510,10 +16510,10 @@ Encoding: 362 362 418
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 346 1000 basechar 0
-AnchorPoint: "unten_punkt" 328 -110 basechar 0
-AnchorPoint: "unten_anhang" 328 4 basechar 0
-AnchorPoint: "mittelpunkt" 336 321 basechar 0
+AnchorPoint: "above" 346 1000 basechar 0
+AnchorPoint: "below" 328 -110 basechar 0
+AnchorPoint: "cedilla" 328 4 basechar 0
+AnchorPoint: "middle" 336 321 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16554,9 +16554,9 @@ Encoding: 363 363 419
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 318 771 basechar 0
-AnchorPoint: "unten_punkt" 309 -110 basechar 0
-AnchorPoint: "unten_anhang" 283 0 basechar 0
+AnchorPoint: "above" 318 771 basechar 0
+AnchorPoint: "below" 309 -110 basechar 0
+AnchorPoint: "cedilla" 283 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16879,10 +16879,10 @@ Encoding: 370 370 426
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 346 850 basechar 0
-AnchorPoint: "unten_punkt" 188 -110 basechar 0
-AnchorPoint: "unten_anhang" 328 4 basechar 0
-AnchorPoint: "mittelpunkt" 336 321 basechar 0
+AnchorPoint: "above" 346 850 basechar 0
+AnchorPoint: "below" 188 -110 basechar 0
+AnchorPoint: "cedilla" 328 4 basechar 0
+AnchorPoint: "middle" 336 321 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17484,7 +17484,7 @@ Encoding: 768 768 440
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -323 704 mark 0
+AnchorPoint: "above" -323 704 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17505,7 +17505,7 @@ Encoding: 769 769 441
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -331 733 mark 0
+AnchorPoint: "above" -331 733 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17526,7 +17526,7 @@ Encoding: 770 770 442
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -319 708 mark 0
+AnchorPoint: "above" -319 708 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17546,7 +17546,7 @@ Encoding: 771 771 443
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -139 718 mark 0
+AnchorPoint: "above" -139 718 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17569,7 +17569,7 @@ Encoding: 775 775 444
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -320 741 mark 0
+AnchorPoint: "above" -320 741 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17586,7 +17586,7 @@ Encoding: 776 776 445
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -310 716 mark 0
+AnchorPoint: "above" -310 716 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17608,7 +17608,7 @@ Encoding: 777 777 446
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -160 816 mark 0
+AnchorPoint: "above" -160 816 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17634,7 +17634,7 @@ Encoding: 780 780 447
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -321 727 mark 0
+AnchorPoint: "above" -321 727 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17654,7 +17654,7 @@ Encoding: 783 783 448
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -140 809 mark 0
+AnchorPoint: "above" -140 809 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17706,7 +17706,7 @@ Encoding: 803 803 450
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -216 -113 mark 0
+AnchorPoint: "below" -216 -113 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17723,7 +17723,7 @@ Encoding: 806 806 451
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -255 -82 mark 0
+AnchorPoint: "below" -255 -82 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17743,7 +17743,7 @@ Encoding: 807 807 452
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_anhang" -341 -3 mark 0
+AnchorPoint: "cedilla" -341 -3 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -23737,7 +23737,7 @@ Encoding: 8319 8319 625
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 266.8 805 basechar 0
+AnchorPoint: "above" 266.8 805 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -25350,8 +25350,8 @@ Encoding: 8505 8505 664
 Width: 298
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "unten_punkt" 136 -107 basechar 0
-AnchorPoint: "unten_anhang" 137 12 basechar 0
+AnchorPoint: "below" 136 -107 basechar 0
+AnchorPoint: "cedilla" 137 12 basechar 0
 AnchorPoint: "ogonek" 209 10 basechar 0
 LayerCount: 2
 Fore
@@ -26783,7 +26783,7 @@ Encoding: 65536 -1 706
 Width: 640
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_akzent" 354 645 basechar 0
+AnchorPoint: "above" 354 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27228,7 +27228,7 @@ Encoding: 772 772 720
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -318 696 mark 0
+AnchorPoint: "above" -318 696 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27265,7 +27265,7 @@ Encoding: 774 774 722
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -320 732 mark 0
+AnchorPoint: "above" -320 732 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27284,7 +27284,7 @@ Encoding: 778 778 723
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -184 689 mark 0
+AnchorPoint: "above" -184 689 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27306,7 +27306,7 @@ Encoding: 779 779 724
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -219 765 mark 0
+AnchorPoint: "above" -219 765 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27336,7 +27336,7 @@ Encoding: 781 781 725
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -155 739 mark 0
+AnchorPoint: "above" -155 739 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27357,7 +27357,7 @@ Encoding: 782 782 726
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -245 770 mark 0
+AnchorPoint: "above" -245 770 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27379,7 +27379,7 @@ Encoding: 784 784 727
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -408 726 mark 0
+AnchorPoint: "above" -408 726 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27403,7 +27403,7 @@ Encoding: 785 785 728
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -205 696 mark 0
+AnchorPoint: "above" -205 696 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27422,7 +27422,7 @@ Encoding: 786 786 729
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -110 656 mark 0
+AnchorPoint: "above" -110 656 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27443,7 +27443,7 @@ Encoding: 787 787 730
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -96 656 mark 0
+AnchorPoint: "above" -96 656 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27464,7 +27464,7 @@ Encoding: 788 788 731
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -76 656 mark 0
+AnchorPoint: "above" -76 656 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27506,7 +27506,7 @@ Encoding: 790 790 733
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -219 -133 mark 0
+AnchorPoint: "below" -219 -133 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27527,7 +27527,7 @@ Encoding: 791 791 734
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -210 -132 mark 0
+AnchorPoint: "below" -210 -132 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27548,7 +27548,7 @@ Encoding: 792 792 735
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -224 -148 mark 0
+AnchorPoint: "below" -224 -148 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27572,7 +27572,7 @@ Encoding: 793 793 736
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -285 -147 mark 0
+AnchorPoint: "below" -285 -147 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27618,7 +27618,7 @@ Encoding: 796 796 738
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -216 -146 mark 0
+AnchorPoint: "below" -216 -146 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27641,7 +27641,7 @@ Encoding: 797 797 739
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -249 -143 mark 0
+AnchorPoint: "below" -249 -143 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27665,7 +27665,7 @@ Encoding: 798 798 740
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -247 -106 mark 0
+AnchorPoint: "below" -247 -106 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27689,7 +27689,7 @@ Encoding: 799 799 741
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -249 -145 mark 0
+AnchorPoint: "below" -249 -145 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27718,7 +27718,7 @@ Encoding: 800 800 742
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -253 -148 mark 0
+AnchorPoint: "below" -253 -148 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27783,7 +27783,7 @@ Encoding: 804 804 745
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -218 -116 mark 0
+AnchorPoint: "below" -218 -116 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27805,7 +27805,7 @@ Encoding: 805 805 746
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -218 -116 mark 0
+AnchorPoint: "below" -218 -116 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27848,7 +27848,7 @@ Encoding: 809 809 748
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -257 -122 mark 0
+AnchorPoint: "below" -257 -122 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27867,7 +27867,7 @@ Encoding: 810 810 749
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -253 -113 mark 0
+AnchorPoint: "below" -253 -113 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27892,7 +27892,7 @@ Encoding: 811 811 750
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -251 -108 mark 0
+AnchorPoint: "below" -251 -108 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27917,7 +27917,7 @@ Encoding: 814 814 751
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -251 -118 mark 0
+AnchorPoint: "below" -251 -118 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27936,7 +27936,7 @@ Encoding: 815 815 752
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -250 -116 mark 0
+AnchorPoint: "below" -250 -116 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27955,7 +27955,7 @@ Encoding: 835 835 753
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -96 605 mark 0
+AnchorPoint: "above" -96 605 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28406,7 +28406,7 @@ Encoding: 816 816 768
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -213 -70 mark 0
+AnchorPoint: "below" -213 -70 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28429,7 +28429,7 @@ Encoding: 817 817 769
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -244 -110 mark 0
+AnchorPoint: "below" -244 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28448,7 +28448,7 @@ Encoding: 824 824 770
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "mittelpunkt" -379 297 mark 0
+AnchorPoint: "middle" -379 297 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28465,7 +28465,7 @@ Encoding: 834 834 771
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -229 617 mark 0
+AnchorPoint: "above" -229 617 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -29224,7 +29224,7 @@ Encoding: 812 812 796
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -204 -116 mark 0
+AnchorPoint: "below" -204 -116 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -29244,7 +29244,7 @@ Encoding: 813 813 797
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -195 -133 mark 0
+AnchorPoint: "below" -195 -133 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32312,7 +32312,7 @@ Encoding: 65595 -1 885
 Width: 0
 GlyphClass: 4
 Flags: M
-AnchorPoint: "top_akzent" -175 691 mark 0
+AnchorPoint: "above" -175 691 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32331,7 +32331,7 @@ Encoding: 65596 -1 886
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -210 693 mark 0
+AnchorPoint: "above" -210 693 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32350,7 +32350,7 @@ Encoding: 65597 -1 887
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -133 684 mark 0
+AnchorPoint: "above" -133 684 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32370,7 +32370,7 @@ Encoding: 65598 -1 888
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -180 639 mark 0
+AnchorPoint: "above" -180 639 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32390,7 +32390,7 @@ Encoding: 65599 -1 889
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -161 658 mark 0
+AnchorPoint: "above" -161 658 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32409,7 +32409,7 @@ Encoding: 65600 -1 890
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -226 747 mark 0
+AnchorPoint: "above" -226 747 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32439,7 +32439,7 @@ Encoding: 65601 -1 891
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -220 745 mark 0
+AnchorPoint: "above" -220 745 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32469,7 +32469,7 @@ Encoding: 65602 -1 892
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -160 658 mark 0
+AnchorPoint: "above" -160 658 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32488,7 +32488,7 @@ Encoding: 65603 -1 893
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -191 805 mark 0
+AnchorPoint: "above" -191 805 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32535,7 +32535,7 @@ Encoding: 65605 -1 895
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -298 807 mark 0
+AnchorPoint: "above" -298 807 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32582,7 +32582,7 @@ Encoding: 818 818 897
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -244 -110 mark 0
+AnchorPoint: "below" -244 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32601,7 +32601,7 @@ Encoding: 819 819 898
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -244 -110 mark 0
+AnchorPoint: "below" -244 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32627,7 +32627,7 @@ Encoding: 820 820 899
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "mittelpunkt" -200 215 mark 0
+AnchorPoint: "middle" -200 215 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32650,7 +32650,7 @@ Encoding: 821 821 900
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "mittelpunkt" -200 215 mark 0
+AnchorPoint: "middle" -200 215 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32669,7 +32669,7 @@ Encoding: 822 822 901
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "mittelpunkt" -240 215 mark 0
+AnchorPoint: "middle" -240 215 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32688,7 +32688,7 @@ Encoding: 823 823 902
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "mittelpunkt" -243 215 mark 0
+AnchorPoint: "middle" -243 215 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32705,7 +32705,7 @@ Encoding: 825 825 903
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -216 -146 mark 0
+AnchorPoint: "below" -216 -146 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32728,7 +32728,7 @@ Encoding: 826 826 904
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -253 -113 mark 0
+AnchorPoint: "below" -253 -113 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32753,7 +32753,7 @@ Encoding: 827 827 905
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -246 -113 mark 0
+AnchorPoint: "below" -246 -113 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32775,7 +32775,7 @@ Encoding: 828 828 906
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -251 -108 mark 0
+AnchorPoint: "below" -251 -108 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32800,7 +32800,7 @@ Encoding: 829 829 907
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -265 605 mark 0
+AnchorPoint: "above" -265 605 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32825,7 +32825,7 @@ Encoding: 830 830 908
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -265 605 mark 0
+AnchorPoint: "above" -265 605 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32848,7 +32848,7 @@ Encoding: 831 831 909
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -235 611 mark 0
+AnchorPoint: "above" -235 611 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32874,7 +32874,7 @@ Encoding: 832 832 910
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -142 683 mark 0
+AnchorPoint: "above" -142 683 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32895,7 +32895,7 @@ Encoding: 833 833 911
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -191 682 mark 0
+AnchorPoint: "above" -191 682 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32937,7 +32937,7 @@ Encoding: 837 837 913
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -182 -110 mark 0
+AnchorPoint: "below" -182 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32959,7 +32959,7 @@ Encoding: 838 838 914
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -251 621 mark 0
+AnchorPoint: "above" -251 621 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -32984,7 +32984,7 @@ Encoding: 839 839 915
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -244 -110 mark 0
+AnchorPoint: "below" -244 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33010,7 +33010,7 @@ Encoding: 840 840 916
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -197 -110 mark 0
+AnchorPoint: "below" -197 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33036,7 +33036,7 @@ Encoding: 841 841 917
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -192 -110 mark 0
+AnchorPoint: "below" -192 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33058,7 +33058,7 @@ Encoding: 842 842 918
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -215 645 mark 0
+AnchorPoint: "above" -215 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33089,7 +33089,7 @@ Encoding: 843 843 919
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -205 617 mark 0
+AnchorPoint: "above" -205 617 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33122,7 +33122,7 @@ Encoding: 844 844 920
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -235 645 mark 0
+AnchorPoint: "above" -235 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33154,7 +33154,7 @@ Encoding: 845 845 921
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -222 -110 mark 0
+AnchorPoint: "below" -222 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33183,7 +33183,7 @@ Encoding: 846 846 922
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -227 -110 mark 0
+AnchorPoint: "below" -227 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33206,7 +33206,7 @@ Encoding: 848 848 923
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -201 645 mark 0
+AnchorPoint: "above" -201 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33226,7 +33226,7 @@ Encoding: 849 849 924
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -171 645 mark 0
+AnchorPoint: "above" -171 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33249,7 +33249,7 @@ Encoding: 850 850 925
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -90 615 mark 0
+AnchorPoint: "above" -90 615 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33273,7 +33273,7 @@ Encoding: 851 851 926
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -260 -110 mark 0
+AnchorPoint: "below" -260 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33298,7 +33298,7 @@ Encoding: 852 852 927
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -172 -110 mark 0
+AnchorPoint: "below" -172 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33318,7 +33318,7 @@ Encoding: 853 853 928
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -196 -110 mark 0
+AnchorPoint: "below" -196 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33338,7 +33338,7 @@ Encoding: 854 854 929
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -316 -110 mark 0
+AnchorPoint: "below" -316 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33366,7 +33366,7 @@ Encoding: 855 855 930
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -171 645 mark 0
+AnchorPoint: "above" -171 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33389,7 +33389,7 @@ Encoding: 857 857 931
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -125 -110 mark 0
+AnchorPoint: "below" -125 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33421,7 +33421,7 @@ Encoding: 858 858 932
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -169 -110 mark 0
+AnchorPoint: "below" -169 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33452,7 +33452,7 @@ Encoding: 859 859 933
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -164 645 mark 0
+AnchorPoint: "above" -164 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33577,7 +33577,7 @@ Encoding: 866 866 939
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "unten_punkt" -232 -110 mark 0
+AnchorPoint: "below" -232 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33600,7 +33600,7 @@ Encoding: 867 867 940
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -171 645 mark 0
+AnchorPoint: "above" -171 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33636,7 +33636,7 @@ Encoding: 868 868 941
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -244 645 mark 0
+AnchorPoint: "above" -244 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33662,7 +33662,7 @@ Encoding: 869 869 942
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -225 645 mark 0
+AnchorPoint: "above" -225 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33692,7 +33692,7 @@ Encoding: 870 870 943
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -161 645 mark 0
+AnchorPoint: "above" -161 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33714,7 +33714,7 @@ Encoding: 871 871 944
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -153 645 mark 0
+AnchorPoint: "above" -153 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33757,7 +33757,7 @@ Encoding: 872 872 945
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -160 645 mark 0
+AnchorPoint: "above" -160 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33782,7 +33782,7 @@ Encoding: 873 873 946
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -191 645 mark 0
+AnchorPoint: "above" -191 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33818,7 +33818,7 @@ Encoding: 874 874 947
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -221 645 mark 0
+AnchorPoint: "above" -221 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33867,7 +33867,7 @@ Encoding: 875 875 948
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -194 645 mark 0
+AnchorPoint: "above" -194 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33919,7 +33919,7 @@ Encoding: 876 876 949
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -201 645 mark 0
+AnchorPoint: "above" -201 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33953,7 +33953,7 @@ Encoding: 877 877 950
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -197 645 mark 0
+AnchorPoint: "above" -197 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -33986,7 +33986,7 @@ Encoding: 878 878 951
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -235 645 mark 0
+AnchorPoint: "above" -235 645 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -34028,7 +34028,7 @@ Encoding: 879 879 952
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" -228 644 mark 0
+AnchorPoint: "above" -228 644 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -34137,7 +34137,7 @@ Encoding: 65608 -1 955
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_akzent" 146 686 mark 0
+AnchorPoint: "above" 146 686 mark 0
 LayerCount: 2
 Fore
 SplineSet
