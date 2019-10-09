@@ -46,7 +46,7 @@ OS2Vendor: 'ALIF'
 Lookup: 258 0 0 "'kern' Smallcap kerning" { "'kern' Small Caps" [150,15,4] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Greek kerning" { "'kern' Greek Kerning" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'grek' <'dflt' > ) ]
 Lookup: 257 0 0 "'cpsp' Versalabstaende" { "'cpsp' Versalabstaende 1"  } ['cpsp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Top Punkt"  "'mark' Komb OR"  "'mark' Top rechts"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark positioning" { "'mark' Top Punkt"  "'mark' Komb OR"  "'mark' Right"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Kerning" { "'kern' Latin kerning" [150,0,4] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -287,7 +287,7 @@ Grid
  193 550 l 1
  -463 550 l 1025
 EndSplineSet
-AnchorClass2: "top_punkt" "'mark' Top Punkt" "top_rechts" "'mark' Top rechts" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR"
+AnchorClass2: "top_punkt" "'mark' Top Punkt" "right" "'mark' Right" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR"
 BeginChars: 1114407 1888
 
 StartChar: exclam
@@ -5850,7 +5850,7 @@ AnchorPoint: "below" 196 -110 basechar 0
 AnchorPoint: "cedilla" 194 1 basechar 0
 AnchorPoint: "ogonek" 290 13 basechar 0
 AnchorPoint: "above" 206 645 basechar 0
-AnchorPoint: "top_rechts" 366 580 basechar 0
+AnchorPoint: "right" 366 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5962,7 +5962,7 @@ GlyphClass: 2
 Flags: MW
 AnchorPoint: "below" 246 -110 basechar 0
 AnchorPoint: "above" 261 646 basechar 0
-AnchorPoint: "top_rechts" 465 580 basechar 0
+AnchorPoint: "right" 465 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5994,7 +5994,7 @@ GlyphClass: 2
 Flags: MW
 AnchorPoint: "below" 372 -110 basechar 0
 AnchorPoint: "above" 365 646 basechar 0
-AnchorPoint: "top_rechts" 739 580 basechar 0
+AnchorPoint: "right" 739 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28707,7 +28707,7 @@ Encoding: 794 794 996
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_rechts" 136 580 mark 0
+AnchorPoint: "right" 136 580 mark 0
 LayerCount: 2
 Fore
 SplineSet
