@@ -44,7 +44,7 @@ OS2XHeight: 409
 OS2FamilyClass: 261
 OS2Vendor: 'ALIF'
 Lookup: 257 0 0 "'cpsp' Versalabstaende" { "'cpsp' Versalabstaende 1"  } ['cpsp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Markenpositionierung" { "'mark' Top rechts"  "'mark' Komb OR"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark positioning" { "'mark' Right"  "'mark' Komb OR"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark" { "'mkmk' Mark to Mark-1"  } ['mkmk' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Kerning" { "'kern' Kerning 1" [150,0,4] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > 'math' <'dflt' > ) ]
 MarkAttachClasses: 2
@@ -243,7 +243,7 @@ Grid
  193 550 l 1
  -113 550 l 1025
 EndSplineSet
-AnchorClass2: "SekAccPos" "'mkmk' Mark to Mark-1" "top_rechts" "'mark' Top rechts" "komb_OR" "'mark' Komb OR" "above" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
+AnchorClass2: "SekAccPos" "'mkmk' Mark to Mark-1" "right" "'mark' Right" "komb_OR" "'mark' Komb OR" "above" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
 BeginChars: 65732 2274
 
 StartChar: exclam
@@ -958,7 +958,7 @@ Width: 584
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 145.5 185 basechar 0
-AnchorPoint: "top_rechts" 508.5 732 basechar 0
+AnchorPoint: "right" 508.5 732 basechar 0
 AnchorPoint: "below" 267.5 -110 basechar 0
 AnchorPoint: "cedilla" 249.5 0 basechar 0
 AnchorPoint: "above" 266.5 850 basechar 0
@@ -1004,7 +1004,7 @@ Width: 650
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 348 315 basechar 0
-AnchorPoint: "top_rechts" 611 732 basechar 0
+AnchorPoint: "right" 611 732 basechar 0
 AnchorPoint: "below" 365 -110 basechar 0
 AnchorPoint: "cedilla" 358 -7 basechar 0
 AnchorPoint: "above" 342 850 basechar 0
@@ -1033,7 +1033,7 @@ Width: 705
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 350 315 basechar 0
-AnchorPoint: "top_rechts" 623 732 basechar 0
+AnchorPoint: "right" 623 732 basechar 0
 AnchorPoint: "below" 283 -110 basechar 0
 AnchorPoint: "cedilla" 283 1 basechar 0
 AnchorPoint: "above" 310 850 basechar 0
@@ -1069,7 +1069,7 @@ Encoding: 69 69 28
 Width: 567
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 292 732 basechar 0
+AnchorPoint: "right" 292 732 basechar 0
 AnchorPoint: "cedilla" 53 4 basechar 0
 AnchorPoint: "below" 57 -110 basechar 0
 AnchorPoint: "above" 282 850 basechar 0
@@ -1119,7 +1119,7 @@ Encoding: 70 70 29
 Width: 497
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 292 732 basechar 0
+AnchorPoint: "right" 292 732 basechar 0
 AnchorPoint: "cedilla" 53 4 basechar 0
 AnchorPoint: "below" 52 -110 basechar 0
 AnchorPoint: "above" 46 850 basechar 0
@@ -1166,7 +1166,7 @@ Width: 710
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 159.6 335 basechar 0
-AnchorPoint: "top_rechts" 482.6 732 basechar 0
+AnchorPoint: "right" 482.6 732 basechar 0
 AnchorPoint: "cedilla" 218.6 2 basechar 0
 AnchorPoint: "below" 218.6 -110 basechar 0
 AnchorPoint: "above" 380 850 basechar 0
@@ -11212,7 +11212,7 @@ Encoding: 75 75 259
 Width: 646
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 480 732 basechar 0
+AnchorPoint: "right" 480 732 basechar 0
 AnchorPoint: "cedilla" -21 -1 basechar 0
 AnchorPoint: "below" 173 -110 basechar 0
 AnchorPoint: "above" 167 850 basechar 0
@@ -11267,7 +11267,7 @@ Width: 512
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 50.6 315 basechar 0
-AnchorPoint: "top_rechts" 233.6 732 basechar 0
+AnchorPoint: "right" 233.6 732 basechar 0
 AnchorPoint: "cedilla" 24.6 1 basechar 0
 AnchorPoint: "below" 24.6 -110 basechar 0
 AnchorPoint: "above" -86.4 850 basechar 0
@@ -11427,7 +11427,7 @@ Width: 529
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 47 464 basechar 0
-AnchorPoint: "top_rechts" 270 732 basechar 0
+AnchorPoint: "right" 270 732 basechar 0
 AnchorPoint: "cedilla" -89 -3 basechar 0
 AnchorPoint: "below" 1 -110 basechar 0
 AnchorPoint: "above" 38 850 basechar 0
@@ -11468,7 +11468,7 @@ Width: 695
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 336 324 basechar 0
-AnchorPoint: "top_rechts" 619 732 basechar 0
+AnchorPoint: "right" 619 732 basechar 0
 AnchorPoint: "komb_OR" 620 606 basechar 0
 AnchorPoint: "above" 348 850 basechar 0
 LayerCount: 2
@@ -11507,7 +11507,7 @@ Width: 625
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 39 468 basechar 0
-AnchorPoint: "top_rechts" 280 732 basechar 0
+AnchorPoint: "right" 280 732 basechar 0
 AnchorPoint: "cedilla" -91 -1 basechar 0
 AnchorPoint: "below" 19 -110 basechar 0
 AnchorPoint: "above" 30 850 basechar 0
@@ -11555,7 +11555,7 @@ Width: 485
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 236.1 345 basechar 0
-AnchorPoint: "top_rechts" 480.8 732 basechar 0
+AnchorPoint: "right" 480.8 732 basechar 0
 AnchorPoint: "cedilla" 223.5 2 basechar 0
 AnchorPoint: "below" 234 -110 basechar 0
 AnchorPoint: "above" 231.9 850 basechar 0
@@ -11590,7 +11590,7 @@ Width: 597
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 307 285 basechar 0
-AnchorPoint: "top_rechts" 619 732 basechar 0
+AnchorPoint: "right" 619 732 basechar 0
 AnchorPoint: "cedilla" 308 10 basechar 0
 AnchorPoint: "below" 300 -110 basechar 0
 AnchorPoint: "above" 307 850 basechar 0
@@ -11673,7 +11673,7 @@ Width: 674
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 349.3 474 basechar 0
-AnchorPoint: "top_rechts" 694.3 732 basechar 0
+AnchorPoint: "right" 694.3 732 basechar 0
 AnchorPoint: "cedilla" 333.3 3 basechar 0
 AnchorPoint: "below" 333.3 -110 basechar 0
 AnchorPoint: "above" 351.3 850 basechar 0
@@ -11710,7 +11710,7 @@ Encoding: 87 87 271
 Width: 981
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 972.4 732 basechar 0
+AnchorPoint: "right" 972.4 732 basechar 0
 AnchorPoint: "cedilla" 305.4 1 basechar 0
 AnchorPoint: "below" 472.4 -110 basechar 0
 AnchorPoint: "above" 466.4 851 basechar 0
@@ -11767,7 +11767,7 @@ Width: 677
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 164.8 325 basechar 0
-AnchorPoint: "top_rechts" 527.8 732 basechar 0
+AnchorPoint: "right" 527.8 732 basechar 0
 AnchorPoint: "cedilla" -59.2 0 basechar 0
 AnchorPoint: "below" 145.8 -110 basechar 0
 AnchorPoint: "above" 170.8 850 basechar 0
@@ -11868,7 +11868,7 @@ Width: 598
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 464.4 321 basechar 0
-AnchorPoint: "top_rechts" 608.4 732 basechar 0
+AnchorPoint: "right" 608.4 732 basechar 0
 AnchorPoint: "cedilla" 276.4 4 basechar 0
 AnchorPoint: "below" 276.4 -110 basechar 0
 AnchorPoint: "above" 309.4 850 basechar 0
@@ -12046,7 +12046,7 @@ Width: 471
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 225 205 basechar 0
-AnchorPoint: "top_rechts" 400 553 basechar 0
+AnchorPoint: "right" 400 553 basechar 0
 AnchorPoint: "below" 223 -105 basechar 0
 LayerCount: 2
 Fore
@@ -12114,7 +12114,7 @@ GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 225 205 basechar 0
 AnchorPoint: "komb_OR" 477 444 basechar 0
-AnchorPoint: "top_rechts" 467 553 basechar 0
+AnchorPoint: "right" 467 553 basechar 0
 AnchorPoint: "above" 208 615 basechar 0
 AnchorPoint: "ogonek" 297 19 basechar 0
 AnchorPoint: "below" 211 -105 basechar 0
@@ -12193,7 +12193,7 @@ Width: 307
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 127 205 basechar 0
-AnchorPoint: "top_rechts" 388 715 basechar 0
+AnchorPoint: "right" 388 715 basechar 0
 AnchorPoint: "below" 123 -105 basechar 0
 LayerCount: 2
 Fore
@@ -12237,7 +12237,7 @@ Width: 483
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 216 272 basechar 0
-AnchorPoint: "top_rechts" 469 553 basechar 0
+AnchorPoint: "right" 469 553 basechar 0
 AnchorPoint: "below" 218 -304 basechar 0
 AnchorPoint: "above" 220 615 basechar 0
 LayerCount: 2
@@ -12289,7 +12289,7 @@ Width: 511
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 252 205 basechar 0
-AnchorPoint: "top_rechts" 409 553 basechar 0
+AnchorPoint: "right" 409 553 basechar 0
 AnchorPoint: "ogonek" 403 11 basechar 0
 AnchorPoint: "above" 285 615 basechar 0
 AnchorPoint: "below" 247 -105 basechar 0
@@ -12402,7 +12402,7 @@ Width: 490
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 120 205 basechar 0
-AnchorPoint: "top_rechts" 511 664 basechar 0
+AnchorPoint: "right" 511 664 basechar 0
 AnchorPoint: "cedilla" 103 -55 basechar 0
 AnchorPoint: "above" 292 747 basechar 0
 AnchorPoint: "below" 277 -204 basechar 0
@@ -12537,7 +12537,7 @@ Encoding: 110 110 293
 Width: 525
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 372 553 basechar 0
+AnchorPoint: "right" 372 553 basechar 0
 AnchorPoint: "middle" 266 205 basechar 0
 AnchorPoint: "cedilla" 122 9 basechar 0
 AnchorPoint: "below" 253 -105 basechar 0
@@ -12584,7 +12584,7 @@ Encoding: 111 111 294
 Width: 482
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 377 553 basechar 0
+AnchorPoint: "right" 377 553 basechar 0
 AnchorPoint: "middle" 235 205 basechar 0
 AnchorPoint: "komb_OR" 401 378 basechar 0
 AnchorPoint: "cedilla" 231 -3 basechar 0
@@ -12615,7 +12615,7 @@ Width: 492
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 230 205 basechar 0
-AnchorPoint: "top_rechts" 409 553 basechar 0
+AnchorPoint: "right" 409 553 basechar 0
 AnchorPoint: "below" 171 -304 basechar 0
 AnchorPoint: "above" 258 616 basechar 0
 LayerCount: 2
@@ -12659,7 +12659,7 @@ Width: 480
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 225 205 basechar 0
-AnchorPoint: "top_rechts" 447 698 basechar 0
+AnchorPoint: "right" 447 698 basechar 0
 AnchorPoint: "below" 332 -304 basechar 0
 AnchorPoint: "above" 227 615 basechar 0
 LayerCount: 2
@@ -12699,7 +12699,7 @@ Width: 357
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 130 176 basechar 0
-AnchorPoint: "top_rechts" 333 553 basechar 0
+AnchorPoint: "right" 333 553 basechar 0
 AnchorPoint: "cedilla" 128 7 basechar 0
 AnchorPoint: "above" 182 616 basechar 0
 AnchorPoint: "below" 129 -105 basechar 0
@@ -12768,7 +12768,7 @@ Width: 300
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 119 205 basechar 0
-AnchorPoint: "top_rechts" 266 553 basechar 0
+AnchorPoint: "right" 266 553 basechar 0
 AnchorPoint: "cedilla" 152 -3 basechar 0
 AnchorPoint: "ogonek" 221 14 basechar 0
 AnchorPoint: "below" 150 -105 basechar 0
@@ -12807,7 +12807,7 @@ Encoding: 117 117 300
 Width: 507
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 377 553 basechar 0
+AnchorPoint: "right" 377 553 basechar 0
 AnchorPoint: "middle" 240 205 basechar 0
 AnchorPoint: "cedilla" 193 0 basechar 0
 AnchorPoint: "ogonek" 279 7 basechar 0
@@ -12853,7 +12853,7 @@ Width: 475
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 235 255 basechar 0
-AnchorPoint: "top_rechts" 439 553 basechar 0
+AnchorPoint: "right" 439 553 basechar 0
 AnchorPoint: "above" 244 616 basechar 0
 AnchorPoint: "below" 230 -105 basechar 0
 LayerCount: 2
@@ -12887,7 +12887,7 @@ Encoding: 119 119 302
 Width: 713
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 685 553 basechar 0
+AnchorPoint: "right" 685 553 basechar 0
 AnchorPoint: "above" 329 616 basechar 0
 AnchorPoint: "below" 336 -105 basechar 0
 LayerCount: 2
@@ -13020,7 +13020,7 @@ Width: 410
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 194 205 basechar 0
-AnchorPoint: "top_rechts" 377 553 basechar 0
+AnchorPoint: "right" 377 553 basechar 0
 AnchorPoint: "above" 207 616 basechar 0
 AnchorPoint: "cedilla" 195 4 basechar 0
 AnchorPoint: "below" 194 -105 basechar 0
@@ -53637,7 +53637,7 @@ Encoding: 794 794 1319
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_rechts" 18 580 mark 0
+AnchorPoint: "right" 18 580 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62317,7 +62317,7 @@ Flags: W
 AnchorPoint: "above" 30 850 basechar 0
 AnchorPoint: "below" 19 -110 basechar 0
 AnchorPoint: "cedilla" -91 -1 basechar 0
-AnchorPoint: "top_rechts" 280 732 basechar 0
+AnchorPoint: "right" 280 732 basechar 0
 AnchorPoint: "middle" 39 468 basechar 0
 LayerCount: 2
 Fore
@@ -62469,7 +62469,7 @@ Encoding: 614 614 1514
 Width: 511
 GlyphClass: 2
 Flags: W
-AnchorPoint: "top_rechts" 385 715 basechar 0
+AnchorPoint: "right" 385 715 basechar 0
 AnchorPoint: "middle" 252 205 basechar 0
 AnchorPoint: "ogonek" 403 11 basechar 0
 AnchorPoint: "below" 247 -105 basechar 0
@@ -73453,7 +73453,7 @@ GlyphClass: 2
 Flags: MW
 AnchorPoint: "above" 119 796 basechar 0
 AnchorPoint: "middle" 130 205 basechar 0
-AnchorPoint: "top_rechts" 239 698 basechar 0
+AnchorPoint: "right" 239 698 basechar 0
 AnchorPoint: "cedilla" 125 10 basechar 0
 AnchorPoint: "below" 129 -105 basechar 0
 LayerCount: 2
@@ -73483,7 +73483,7 @@ Encoding: 115 115 1790
 Width: 374
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "top_rechts" 349 553 basechar 0
+AnchorPoint: "right" 349 553 basechar 0
 AnchorPoint: "ogonek" 276 12 basechar 0
 AnchorPoint: "above" 196 615 basechar 0
 AnchorPoint: "cedilla" 185 1 basechar 0
@@ -73520,7 +73520,7 @@ Width: 485
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 237 215 basechar 0
-AnchorPoint: "top_rechts" 469 580 basechar 0
+AnchorPoint: "right" 469 580 basechar 0
 AnchorPoint: "cedilla" 94 8 basechar 0
 AnchorPoint: "above" 256 646 basechar 0
 AnchorPoint: "below" 224 -110 basechar 0
@@ -80069,7 +80069,7 @@ Width: 729
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "middle" 356 485 basechar 0
-AnchorPoint: "top_rechts" 730 732 basechar 0
+AnchorPoint: "right" 730 732 basechar 0
 AnchorPoint: "cedilla" 149 0 basechar 0
 AnchorPoint: "below" 360 -110 basechar 0
 AnchorPoint: "above" 362 850 basechar 0
@@ -89503,7 +89503,7 @@ Encoding: 65694 -1 2235
 Width: 646
 GlyphClass: 2
 Flags: W
-AnchorPoint: "top_rechts" 480 732 basechar 0
+AnchorPoint: "right" 480 732 basechar 0
 AnchorPoint: "cedilla" -21 -1 basechar 0
 AnchorPoint: "below" 173 -110 basechar 0
 AnchorPoint: "above" 167 850 basechar 0
@@ -89553,7 +89553,7 @@ Width: 625
 GlyphClass: 2
 Flags: W
 AnchorPoint: "middle" 39 468 basechar 0
-AnchorPoint: "top_rechts" 280 732 basechar 0
+AnchorPoint: "right" 280 732 basechar 0
 AnchorPoint: "cedilla" -91 -1 basechar 0
 AnchorPoint: "below" 19 -110 basechar 0
 AnchorPoint: "above" 30 850 basechar 0
@@ -89743,7 +89743,7 @@ Width: 521
 GlyphClass: 2
 Flags: W
 AnchorPoint: "middle" 252 205 basechar 0
-AnchorPoint: "top_rechts" 409 553 basechar 0
+AnchorPoint: "right" 409 553 basechar 0
 AnchorPoint: "above" 285 615 basechar 0
 AnchorPoint: "below" 247 -105 basechar 0
 LayerCount: 2
@@ -89782,7 +89782,7 @@ Width: 514
 GlyphClass: 2
 Flags: W
 AnchorPoint: "below" 223 -111 basechar 0
-AnchorPoint: "top_rechts" 377 553 basechar 0
+AnchorPoint: "right" 377 553 basechar 0
 AnchorPoint: "middle" 240 205 basechar 0
 AnchorPoint: "cedilla" 193 0 basechar 0
 AnchorPoint: "ogonek" 279 7 basechar 0
@@ -89832,7 +89832,7 @@ Width: 321
 GlyphClass: 2
 Flags: W
 AnchorPoint: "middle" 127 205 basechar 0
-AnchorPoint: "top_rechts" 360 715 basechar 0
+AnchorPoint: "right" 360 715 basechar 0
 AnchorPoint: "below" 123 -105 basechar 0
 LayerCount: 2
 Fore
