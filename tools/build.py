@@ -104,6 +104,9 @@ class Font:
                     widths[width] = []
                 widths[width].append(glyph.glyphname)
 
+        if len(widths) == 1:
+            return
+
         for name in bases:
             self._draw_over_under_line(name, widths)
 
