@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: LibertinusSerif-Regular
 FullName: Libertinus Serif Regular
 FamilyName: Libertinus Serif
@@ -21,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
+ModificationTime: 1579099491
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -303,7 +304,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "aboveMark" "'mkmk' Mark to Mark-1" "right" "'mark' Right" "komb_OR" "'mark' Komb OR" "above" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
-BeginChars: 1114450 2672
+BeginChars: 1114450 2676
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -74601,6 +74602,56 @@ SplineSet
  282 193 l 2
  292 193 296 184 296 176 c 0
  296 166 282 143 269 143 c 2
+EndSplineSet
+EndChar
+
+StartChar: uniA71C
+Encoding: 42780 42780 2672
+Width: 161
+Flags: HWO
+LayerCount: 2
+Fore
+Refer: 1170 8595 S 0.441624 0 0 0.371358 -26.7563 438.884 2
+EndChar
+
+StartChar: uniA71B
+Encoding: 42779 42779 2673
+Width: 161
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2672 42780 S 1 0 0 -1 0 1093 2
+EndChar
+
+StartChar: uniA78C
+Encoding: 42892 42892 2674
+Width: 190
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+76 357.299804688 m 1
+ 76 357.299804688 53 585 53 594 c 0
+ 53 616 74 644 104 644 c 0
+ 130 644 139 627 139 611 c 0
+ 139 595 103 361.299804688 103 361.299804688 c 1
+ 76 357.299804688 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniA78B
+Encoding: 42891 42891 2675
+Width: 190
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+79 426 m 1
+ 79 426 51 639 51 648 c 0
+ 51 670 72 698 102 698 c 0
+ 128 698 137 681 137 665 c 0
+ 137 649 106 430 106 430 c 1
+ 79 426 l 1
 EndSplineSet
 EndChar
 EndChars

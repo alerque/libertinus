@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: LibertinusSerif-SemiboldItalic
 FullName: Libertinus Serif Semibold Italic
 FamilyName: Libertinus Serif Semibold
@@ -21,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1162161130
+ModificationTime: 1579099373
 PfmFamily: 17
 TTFWeight: 600
 TTFWidth: 5
@@ -209,7 +210,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR" "right" "'mark' Right"
-BeginChars: 1114414 2360
+BeginChars: 1114414 2365
 
 StartChar: space
 Encoding: 32 32 0
@@ -72692,6 +72693,69 @@ SplineSet
  104 323 l 1
  405.666992188 323 l 1
 EndSplineSet
+EndChar
+
+StartChar: uniA71B
+Encoding: 42779 42779 2360
+Width: 161
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2363 42780 N -1 0 -0 -1 392.173 1091.3 2
+EndChar
+
+StartChar: uniA78B
+Encoding: 42891 42891 2361
+Width: 232
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+197 421 m 1
+ 182 425 l 1
+ 182 425 198.779296875 638 198.779296875 644 c 1
+ 203.779296875 667 232.779296875 698 275.779296875 698 c 0
+ 306.779296875 698 314.779296875 687 314.779296875 674 c 0
+ 314.779296875 670 313.779296875 665 312.779296875 661 c 0
+ 309.779296875 646 232 427 232 427 c 1
+ 197 421 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniA78C
+Encoding: 42892 42892 2362
+Width: 232
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+186.830078125 368 m 1
+ 171.830078125 372 l 1
+ 171.830078125 372 188 585 188 591 c 1
+ 193 614 222 645 265 645 c 0
+ 296 645 304 634 304 621 c 0
+ 304 617 302.80860754 612.0430377 302 608 c 0
+ 299 593 221.830078125 374 221.830078125 374 c 1
+ 186.830078125 368 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniA71C
+Encoding: 42780 42780 2363
+Width: 161
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1604 8595 N 0.441624 0 0 0.371358 71.127 438.884 2
+EndChar
+
+StartChar: uniA71D
+Encoding: 42781 42781 2364
+Width: 161
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1 33 N 0.570116 0 0 0.576705 85.4205 373.106 2
 EndChar
 EndChars
 EndSplineFont

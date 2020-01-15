@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: LibertinusSerif-BoldItalic
 FullName: Libertinus Serif Bold Italic
 FamilyName: Libertinus Serif
@@ -21,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1155510122
+ModificationTime: 1579098638
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -288,7 +289,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "right" "'mark' Right" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR"
-BeginChars: 1114407 1889
+BeginChars: 1114407 1894
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -56299,6 +56300,67 @@ SplineSet
  112.099609375 266 l 1
  124.299804688 323 l 1
  374 323 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniA71D
+Encoding: 42781 42781 1889
+Width: 161
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 33 N 0.580479 0 0 0.569945 84.908 355.699 2
+EndChar
+
+StartChar: uniA71C
+Encoding: 42780 42780 1890
+Width: 161
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 822 8595 N 0.441624 0 0 0.371358 71.127 438.884 2
+EndChar
+
+StartChar: uniA71B
+Encoding: 42779 42779 1891
+Width: 161
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1890 42780 N -1 0 -0 -1 393.324 1093 2
+EndChar
+
+StartChar: uniA78B
+Encoding: 42891 42891 1892
+Width: 215
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+126.6 411 m 1
+ 113.4 415 l 1
+ 113.4 415 130.453125 638 131.75390625 644 c 4
+ 136.653320312 667 163.953125 698 204.353515625 698 c 4
+ 243.853515625 698 242.553710938 679 238.75390625 661 c 4
+ 235.553710938 646 152.3 417 152.3 417 c 1
+ 126.6 411 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniA78C
+Encoding: 42892 42892 1893
+Width: 215
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+115.969726562 357.900390625 m 1
+ 102.76953125 361.900390625 l 1
+ 102.76953125 361.900390625 119.420787612 584.99553369 120.7 591 c 0
+ 125.6 614 152.9 645 193.3 645 c 0
+ 232.8 645 231.538267477 625.9918788 227.7 608 c 0
+ 224.5 593 141.669921875 363.900390625 141.669921875 363.900390625 c 1
+ 115.969726562 357.900390625 l 1
 EndSplineSet
 EndChar
 EndChars
