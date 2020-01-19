@@ -40,25 +40,6 @@ To build the fonts:
 
     make
 
-Contributing
-------------
-The source files are under the `sources` subdirectory. The `.sfd` files are
-FontForge source font format and should be edited with FontForge. The `.fea`
-files are Adobe feature files and should be edited by a plain text editor.
-
-After modifying the SFD files, they should be normalized with:
-
-    make normalize
-
-(Make sure to save a copy of the SFD files before running this tool. The
-simplest way is to commit the SFD files, normalize, check the diffs and verify
-they are OK, then `git commit --amend` the changes).
-
-We keep the generated fonts under version control, so the last step is to run
-`make` and commit the modified sources and the generated fonts.
-
-Generating the fonts for each commit is preferred, but not absolutely required.
-
 [1]: https://fontforge.github.io
 [2]: https://github.com/fonttools/fonttools
 [3]: https://github.com/ned14/pcpp
