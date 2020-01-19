@@ -18,4 +18,4 @@ We keep the generated fonts under version control, so the last step is to run
 
 Fonts must be generated for each commit that changes the source files.
 The build tools are smart enuogh to not change teh binary fonts if the sources
-were not changed
+were not changed.
