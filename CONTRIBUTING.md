@@ -16,6 +16,6 @@ they are OK, then `git commit --amend` the changes).
 We keep the generated fonts under version control, so the last step is to run
 `make` and commit the modified sources and the generated fonts.
 
-Fonts must be generated for each commit that changes the source files.
-The build tools are smart enuogh to not change teh binary fonts if the sources
-were not changed.
+Fonts must be generated for each commit that changes the source files. The
+build tools are smart enough to not change the binary fonts if the sources were
+not changed.
