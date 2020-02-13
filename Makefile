@@ -62,7 +62,7 @@ check: $(LNT) $(CHK) $(DUP)
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
 $(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
-	echo "      BUILD  $(*F)"
+	$(info       BUILD  $(*F))
 	mkdir -p $(BUILDDIR)
 	$(PY) $(BUILD) \
 		--input=$< \
@@ -72,16 +72,16 @@ $(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 		$(if $(call nofea,$@),,--feature-file=$(GSUB))
 
 $(BUILDDIR)/%.otl.otf: $(BUILDDIR)/%.ff.otf
-	echo "        OTL  $(*F)"
+	$(info         OTL  $(*F))
 	fonttools feaLib $(BUILDDIR)/$(*F).fea $< -o $@
 
 $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
-	echo "       HINT  $(*F)"
+	$(info        HINT  $(*F))
 	rm -rf $@.log
 	psautohint $< -o $@ --log $@.log
 
 $(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
-	echo "      PRUNE  $(*F)"
+	$(info       PRUNE  $(*F))
 	fonttools subset \
 		--unicodes='*' \
 		--layout-features='*' \
@@ -97,19 +97,19 @@ $(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
 	cp $< $@
 
 $(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE)
-	echo "  NORMALIZE  $(*F)"
+	$(info   NORMALIZE  $(*F))
 	mkdir -p $(BUILDDIR)
 	$(PY) $(NORMALIZE) $< $@
 	if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
 $(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE)
-	echo "  NORMALIZE  $(*F)"
+	$(info   NORMALIZE  $(*F))
 	mkdir -p $(BUILDDIR)
 	$(PY) $(NORMALIZE) $< $@
 	diff -u $< $@ || (rm -rf $@ && false)
 
 $(BUILDDIR)/%.dup: $(SOURCEDIR)/%.sfd $(FINDDUPS)
-	echo "      CHECK  $(*F)"
+	$(info       CHECK  $(*F))
 	mkdir -p $(BUILDDIR)
 	$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
 
@@ -120,12 +120,12 @@ $(BUILDDIR)/%.dup: $(SOURCEDIR)/%.sfd $(FINDDUPS)
 #  7: More points in a glyph than PostScript allows
 # 23: Overlapping hints in a glyph
 $(BUILDDIR)/LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
-	echo "       LINT  LibertinusKeyboard-Regular"
+	$(info        LINT  $(<F))
 	mkdir -p $(BUILDDIR)
 	fontlint -i2,5,7,23 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(BUILDDIR)/LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
-	echo "       LINT  LibertinusSerifInitials-Regular"
+	$(info        LINT  $(<F))
 	mkdir -p $(BUILDDIR)
 	fontlint -i2,5,7,23,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
@@ -135,19 +135,19 @@ $(BUILDDIR)/LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular
 # 34: Bad 'CFF ' table
 # 98: Self-intersecting glyph when FontForge is able to correct this
 $(BUILDDIR)/%.lnt: %.otf
-	echo "       LINT  $(*F)"
+	$(info        LINT  $(*F))
 	mkdir -p $(BUILDDIR)
 	fontlint -i2,5,34,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
 $(DOCSDIR)/preview.svg: $(DOCSDIR)/preview.tex $(OTF)
-	echo "        SVG  $@"
+	$(info         SVG  $@)
 	xelatex --interaction=batchmode \
 		-output-directory=$(dir $@) \
 		$< 1>/dev/null || (cat $(basename $<).log && false)
 	mutool draw -q -r 200 -o $@ $(basename $@).pdf
 
 dist: check $(OTF) $(PDF) $(SVG)
-	echo "       DIST  $(DIST).zip"
+	$(info         DIST  $(DIST).zip)
 	rm -rf $(DIST) $(DIST).zip
 	mkdir -p $(DIST)/$(DOCSDIR)
 	cp $(OTF) $(DIST)
