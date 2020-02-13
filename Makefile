@@ -14,32 +14,36 @@ BUILD = $(TOOLS)/build.py
 NORMALIZE = $(TOOLS)/sfdnormalize.py
 CHECKERRS = $(TOOLS)/check-errors.py
 
-NULL=
+# Default to explicitly enumerating fonts to build;
+# use `make ALLFONTS=true ...` to build all *.sfd files in the source tree or
+# use `make FONTS="Face-Style" ...` to make targets for only particular font(s).
+ALLFONTS ?= false
 
-FONTS=Sans-Regular \
-       Sans-Bold \
-       Sans-Italic \
-       Serif-Regular \
-       Serif-Semibold \
-       Serif-Bold \
-       Serif-Italic \
-       Serif-SemiboldItalic \
-       Serif-BoldItalic \
-       SerifDisplay-Regular \
-       Math-Regular \
-       SerifInitials-Regular \
-       Mono-Regular \
-       Keyboard-Regular \
-       $(NULL)
+# Canonical list of fonts face / and style combinations to build;
+# note that order here will be used for some documentation
+SERIF_STYLES := Regular Semibold Bold Italic SemiboldItalic BoldItalic
+SANS_STYLES  := Regular Bold Italic
+REGULAR_ONLY := Math Mono Keyboard SerifDisplay SerifInitials
 
-SFD=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.sfd)
-NRM=$(FONTS:%=$(BUILDDIR)/$(NAME)%.nrm)
-CHK=$(FONTS:%=$(BUILDDIR)/$(NAME)%.chk)
-DUP=$(FONTS:%=$(BUILDDIR)/$(NAME)%.dup)
-LNT=$(FONTS:%=$(BUILDDIR)/$(NAME)%.lnt)
-OTF=$(FONTS:%=$(NAME)%.otf)
-SVG=$(DOC)/preview.svg
-PDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf $(DOC)/Math-Sample.pdf
+ifeq ($(ALLFONTS),true)
+	FONTS := $(notdir $(basename $(wildcard $(SOURCEDIR)/*.sfd)))
+else
+	FONTS ?= $(foreach STYLE,$(SERIF_STYLES),$(NAME)Serif-$(STYLE)) \
+			 $(foreach STYLE,$(SANS_STYLES),$(NAME)Sans-$(STYLE)) \
+			 $(foreach FACE,$(REGULAR_ONLY),$(NAME)$(FACE)-Regular)
+endif
+
+# Generate lists of various intermediate forms
+SFD = $(addsuffix .sfd,$(addprefix $(SOURCEDIR)/,$(FONTS)))
+NRM = $(addsuffix .nrm,$(addprefix $(BUILDDIR)/,$(FONTS)))
+CHK = $(addsuffix .chk,$(addprefix $(BUILDDIR)/,$(FONTS)))
+DUP = $(addsuffix .dup,$(addprefix $(BUILDDIR)/,$(FONTS)))
+LNT = $(addsuffix .lnt,$(addprefix $(BUILDDIR)/,$(FONTS)))
+
+# Generate list of final output forms
+OTF = $(addsuffix .otf,$(FONTS))
+SVG = $(DOC)/preview.svg
+PDF = $(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf $(DOC)/Math-Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
 
