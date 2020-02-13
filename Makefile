@@ -2,6 +2,7 @@ NAME = Libertinus
 VERSION = 6.11
 
 MAKEFLAGS := -s
+SHELL = bash
 
 DIST = $(NAME)-$(VERSION)
 
@@ -50,6 +51,7 @@ PDF = $(DOCSDIR)/Opentype-Features.pdf $(DOCSDIR)/Sample.pdf $(DOCSDIR)/Math-Sam
 export SOURCE_DATE_EPOCH ?= 0
 
 .SECONDARY:
+.ONESHELL:
 
 all: otf $(SVG)
 
