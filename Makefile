@@ -150,6 +150,23 @@ $(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.svg
 	$(info         PDF  $@)
 	mutool draw -q -r 200 -o $< $@
 
+define unicode_coverage_table =
+	$(shell echo ttx -t cmap -o - $1.otf)
+	$(shell echo pyfontaine --wiki $1.otf)
+endef
+
+$(DOCSDIR)/Unicode-Coverage.md: $(OTF)
+	$(info     MARKDOWN  $@)
+	export PS4=; exec > $@ # Redirect all STDOUT to the target file
+	cat <<- EOF
+		# $(NAME) Unicode Coverage
+		$(foreach FONT,$(FONTS),
+		## $(subst $(NAME),$(NAME) ,$(subst -, ,$(FONT)))
+	
+		$(call unicode_coverage_table,$(FONT))
+		)
+	EOF
+
 .PHONY: dist
 dist: check dist-clean $(OTF) $(PDF) $(SVG)
 	$(info         DIST  $(DIST).zip)
