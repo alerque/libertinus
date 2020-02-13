@@ -64,13 +64,12 @@ nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 $(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 	echo "      BUILD  $(*F)"
 	mkdir -p $(BUILDDIR)
-	$(PY) $(BUILD)                                                        \
-		--input=$<                                                     \
-		--output=$@                                                    \
-		--version=$(VERSION)                                           \
-		--output-feature-file=$(BUILDDIR)/$(*F).fea                    \
-		$(if $(call nofea,$@),,--feature-file=$(GSUB))                 \
-		;
+	$(PY) $(BUILD) \
+		--input=$< \
+		--output=$@ \
+		--version=$(VERSION) \
+		--output-feature-file=$(BUILDDIR)/$(*F).fea \
+		$(if $(call nofea,$@),,--feature-file=$(GSUB))
 
 $(BUILDDIR)/%.otl.otf: $(BUILDDIR)/%.ff.otf
 	echo "        OTL  $(*F)"
@@ -83,17 +82,16 @@ $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
 
 $(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
 	echo "      PRUNE  $(*F)"
-	fonttools subset                                                      \
-		--unicodes='*'                                                 \
-		--layout-features='*'                                          \
-		--name-IDs='*'                                                 \
-		--notdef-outline                                               \
-		--recalc-average-width                                         \
-		--recalc-bounds                                                \
-		--drop-tables=FFTM                                             \
-		--output-file=$@                                               \
-		$<                                                             \
-		;
+	fonttools subset \
+		--unicodes='*' \
+		--layout-features='*' \
+		--name-IDs='*' \
+		--notdef-outline \
+		--recalc-average-width \
+		--recalc-bounds \
+		--drop-tables=FFTM \
+		--output-file=$@ \
+		$<
 
 %.otf: $(BUILDDIR)/%.subset.otf
 	cp $< $@
@@ -143,7 +141,9 @@ $(BUILDDIR)/%.lnt: %.otf
 
 $(DOC)/preview.svg: $(DOC)/preview.tex $(OTF)
 	echo "        SVG  $@"
-	xelatex --interaction=batchmode -output-directory=$(dir $@) $< 1>/dev/null || (cat $(basename $<).log && false)
+	xelatex --interaction=batchmode \
+		-output-directory=$(dir $@) \
+		$< 1>/dev/null || (cat $(basename $<).log && false)
 	mutool draw -q -r 200 -o $@ $(basename $@).pdf
 
 dist: check $(OTF) $(PDF) $(SVG)
