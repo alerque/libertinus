@@ -8,13 +8,13 @@ DIST = $(NAME)-$(VERSION)
 SOURCEDIR = sources
 BUILDDIR = build
 GSUB = $(SOURCEDIR)/features/gsub.fea
-DOC = documentation
-TOOLS = tools
+DOCSDIR = documentation
+TOOLSDIR = tools
 
 PY ?= python
-BUILD = $(TOOLS)/build.py
-NORMALIZE = $(TOOLS)/sfdnormalize.py
-CHECKERRS = $(TOOLS)/check-errors.py
+BUILD = $(TOOLSDIR)/build.py
+NORMALIZE = $(TOOLSDIR)/sfdnormalize.py
+CHECKERRS = $(TOOLSDIR)/check-errors.py
 
 # Default to explicitly enumerating fonts to build;
 # use `make ALLFONTS=true ...` to build all *.sfd files in the source tree or
@@ -44,8 +44,8 @@ LNT = $(addsuffix .lnt,$(addprefix $(BUILDDIR)/,$(FONTS)))
 
 # Generate list of final output forms
 OTF = $(addsuffix .otf,$(FONTS))
-SVG = $(DOC)/preview.svg
-PDF = $(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf $(DOC)/Math-Sample.pdf
+SVG = $(DOCSDIR)/preview.svg
+PDF = $(DOCSDIR)/Opentype-Features.pdf $(DOCSDIR)/Sample.pdf $(DOCSDIR)/Math-Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
 
@@ -139,7 +139,7 @@ $(BUILDDIR)/%.lnt: %.otf
 	mkdir -p $(BUILDDIR)
 	fontlint -i2,5,34,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
 
-$(DOC)/preview.svg: $(DOC)/preview.tex $(OTF)
+$(DOCSDIR)/preview.svg: $(DOCSDIR)/preview.tex $(OTF)
 	echo "        SVG  $@"
 	xelatex --interaction=batchmode \
 		-output-directory=$(dir $@) \
@@ -149,9 +149,9 @@ $(DOC)/preview.svg: $(DOC)/preview.tex $(OTF)
 dist: check $(OTF) $(PDF) $(SVG)
 	echo "       DIST  $(DIST).zip"
 	rm -rf $(DIST) $(DIST).zip
-	mkdir -p $(DIST)/$(DOC)
+	mkdir -p $(DIST)/$(DOCSDIR)
 	cp $(OTF) $(DIST)
-	cp $(PDF) $(SVG) $(DIST)/$(DOC)
+	cp $(PDF) $(SVG) $(DIST)/$(DOCSDIR)
 	cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
 	cp README.md $(DIST)/README.txt
 	zip -rq $(DIST).zip $(DIST)
