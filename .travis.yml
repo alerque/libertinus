@@ -13,6 +13,7 @@ addons:
       - python-fontforge
 
 install:
+  - sed -i -e '/fontaine/d' requirements.txt
   - pip install -r requirements.txt
 
 script:
