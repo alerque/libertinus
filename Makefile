@@ -1,18 +1,18 @@
-NAME=Libertinus
-VERSION=6.11
+NAME = Libertinus
+VERSION = 6.11
 
-DIST=$(NAME)-$(VERSION)
+DIST = $(NAME)-$(VERSION)
 
-SOURCEDIR=sources
-BUILDDIR=build
-GSUB=$(SOURCEDIR)/features/gsub.fea
-DOC=documentation
-TOOLS=tools
+SOURCEDIR = sources
+BUILDDIR = build
+GSUB = $(SOURCEDIR)/features/gsub.fea
+DOC = documentation
+TOOLS = tools
 
-PY?=python
-BUILD=$(TOOLS)/build.py
-NORMALIZE=$(TOOLS)/sfdnormalize.py
-CHECKERRS=$(TOOLS)/check-errors.py
+PY ?= python
+BUILD = $(TOOLS)/build.py
+NORMALIZE = $(TOOLS)/sfdnormalize.py
+CHECKERRS = $(TOOLS)/check-errors.py
 
 NULL=
 
