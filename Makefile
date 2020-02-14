@@ -53,13 +53,12 @@ export SOURCE_DATE_EPOCH ?= 0
 .SECONDARY:
 .ONESHELL:
 
+.PHONY: all otf doc normalize check
 all: otf $(SVG)
-
 otf: $(OTF)
 doc: $(PDF)
 normalize: $(NRM)
 check: $(LNT) $(CHK) $(DUP)
-
 
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
@@ -151,6 +150,7 @@ $(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.svg
 	$(info         PDF  $@)
 	mutool draw -q -r 200 -o $< $@
 
+.PHONY: dist
 dist: check $(OTF) $(PDF) $(SVG)
 	$(info         DIST  $(DIST).zip)
 	rm -rf $(DIST) $(DIST).zip
@@ -161,6 +161,7 @@ dist: check $(OTF) $(PDF) $(SVG)
 	cp README.md $(DIST)/README.txt
 	zip -rq $(DIST).zip $(DIST)
 
+.PHONY: clean
 clean:
 	rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(DUP) $(FEA) $(NRM) $(LNT) \
 		$(PDF) $(OTF)
