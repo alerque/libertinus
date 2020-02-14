@@ -146,7 +146,10 @@ $(DOCSDIR)/preview.svg: $(DOCSDIR)/preview.tex $(OTF)
 	xelatex --interaction=batchmode \
 		-output-directory=$(dir $@) \
 		$< 1>/dev/null || (cat $(basename $<).log && false)
-	mutool draw -q -r 200 -o $@ $(basename $@).pdf
+
+$(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.svg
+	$(info         PDF  $@)
+	mutool draw -q -r 200 -o $< $@
 
 dist: check $(OTF) $(PDF) $(SVG)
 	$(info         DIST  $(DIST).zip)
