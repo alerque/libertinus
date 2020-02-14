@@ -151,17 +151,18 @@ $(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.svg
 	mutool draw -q -r 200 -o $< $@
 
 .PHONY: dist
-dist: check $(OTF) $(PDF) $(SVG)
+dist: check dist-clean $(OTF) $(PDF) $(SVG)
 	$(info         DIST  $(DIST).zip)
-	rm -rf $(DIST) $(DIST).zip
-	mkdir -p $(DIST)/$(DOCSDIR)
-	cp $(OTF) $(DIST)
-	cp $(PDF) $(SVG) $(DIST)/$(DOCSDIR)
-	cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
-	cp README.md $(DIST)/README.txt
+	install -Dm644 $(OTF) -t $(DIST)
+	install -Dm644 {OFL,FONTLOG,AUTHORS}.txt -t $(DIST)
+	install -Dm644 README.md -t $(DIST)
+	install -Dm644 $(PDF) $(SVG) -t $(DIST)/$(DOCSDIR)
 	zip -rq $(DIST).zip $(DIST)
 
+.PHONY: dist-clean
+dist-clean:
+	rm -rf $(DIST) $(DIST).zip
+
 .PHONY: clean
-clean:
-	rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(DUP) $(FEA) $(NRM) $(LNT) \
-		$(PDF) $(OTF)
+clean: dist-clean
+	rm -rf $(CHK) $(MIS) $(DUP) $(FEA) $(NRM) $(LNT) $(PDF) $(OTF)
