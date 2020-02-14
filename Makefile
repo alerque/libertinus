@@ -42,6 +42,7 @@ NRM = $(addsuffix .nrm,$(addprefix $(BUILDDIR)/,$(FONTS)))
 CHK = $(addsuffix .chk,$(addprefix $(BUILDDIR)/,$(FONTS)))
 DUP = $(addsuffix .dup,$(addprefix $(BUILDDIR)/,$(FONTS)))
 LNT = $(addsuffix .lnt,$(addprefix $(BUILDDIR)/,$(FONTS)))
+COVERAGE = $(addsuffix -coverage.json,$(addprefix $(BUILDDIR)/,$(FONTS)))
 
 # Generate list of final output forms
 OTF = $(addsuffix .otf,$(FONTS))
@@ -150,12 +151,13 @@ $(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.svg
 	$(info         PDF  $@)
 	mutool draw -q -r 200 -o $< $@
 
+# $(shell echo ttx -t cmap -o - $1.otf)
+# $(shell echo pyfontaine --wiki $1.otf)
 define unicode_coverage_table =
-	$(shell echo ttx -t cmap -o - $1.otf)
-	$(shell echo pyfontaine --wiki $1.otf)
+	$(shell jq -M -e -s -r '.[0:5]' $(BUILDDIR)/$1-coverage.json)
 endef
 
-$(DOCSDIR)/Unicode-Coverage.md: $(OTF)
+$(DOCSDIR)/Unicode-Coverage.md: $(COVERAGE)
 	$(info     MARKDOWN  $@)
 	export PS4=; exec > $@ # Redirect all STDOUT to the target file
 	cat <<- EOF
@@ -166,6 +168,19 @@ $(DOCSDIR)/Unicode-Coverage.md: $(OTF)
 		$(call unicode_coverage_table,$(FONT))
 		)
 	EOF
+
+# select(.commonName | test("Google|Subset|\\+") | not )  |
+# select(.percentCoverage >= 10) |
+$(BUILDDIR)/%-coverage.json: %.otf
+	pyfontaine --json $< |
+	jq -M -e -r \
+		'.fonts[0].font.orthographies[].orthography |
+			(select(.commonName | test("Unicode Block"))) |
+			{
+				"orthography": .commonName,
+				"percent": .percentCoverage
+			}' \
+		> $@
 
 .PHONY: dist
 dist: check dist-clean $(OTF) $(PDF) $(SVG)
