@@ -146,8 +146,9 @@ dist: check $(OTF) $(PDF) $(SVG)
 	@mkdir -p $(DIST)/$(DOC)
 	@cp $(OTF) $(DIST)
 	@cp $(PDF) $(SVG) $(DIST)/$(DOC)
-	@cp OFL.txt FONTLOG.txt AUTHORS.txt $(DIST)
+	@cp OFL.txt FONTLOG.txt AUTHORS.txt CONTRIBUTORS.txt $(DIST)
 	@cp README.md $(DIST)/README.txt
+	@cp CONTRIBUTING.md $(DIST)/CONTRIBUTING.txt
 	@zip -rq $(DIST).zip $(DIST)
 
 clean:
