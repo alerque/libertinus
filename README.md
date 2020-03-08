@@ -5,9 +5,6 @@ Libertinus fonts
 
 ![Sample of Libertinus fonts](documentation/preview.svg)
 
-***This project is in maintenance mode. Only bug reports will be considered, or
-feature requests accompanied by pull requests.***
-
 Libertinus fonts is a fork of the Linux Libertine and Linux Biolinum fonts that
 started as an OpenType math companion of the Libertine font family. It has grown
 to a full fork to address some of the bugs in the fonts. Thanks to Frédéric
