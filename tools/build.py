@@ -12,14 +12,13 @@ from ufoLib2 import Font
 
 class LFont:
     def __init__(self, filename, features, version):
-        self._font = Font()
+        self._font = font = Font()
         self._version = version
 
-        parser = SFDParser(filename, self._font, ignore_uvs=False,
-            ufo_anchors=False, ufo_kerning=False, minimal=True)
+        parser = SFDParser(filename, font, ignore_uvs=False, ufo_anchors=False,
+            ufo_kerning=False, minimal=True)
         parser.parse()
 
-        self._features = StringIO()
         if features:
             preprocessor = Preprocessor()
             for d in ("italic", "sans", "display", "math"):
@@ -27,14 +26,10 @@ class LFont:
                     preprocessor.define(d.upper())
             with open(features) as f:
                 preprocessor.parse(f)
-            preprocessor.write(self._features)
-
-    def _merge_features(self):
-        font = self._font
-        features = self._features
-
-        features.write(font.features.text)
-        font.features.text = features.getvalue()
+            feafile = StringIO()
+            preprocessor.write(feafile)
+            feafile.write(font.features.text)
+            font.features.text = feafile.getvalue()
 
     def _update_metadata(self):
         version = self._version
@@ -106,7 +101,7 @@ class LFont:
                                                       " ".join(replacements)))
         fea.append("} mark;")
 
-        self._features.write("\n".join(fea))
+        self._font.features.text += "\n".join(fea)
 
     def _post_process(self, otf):
         font = self._font
@@ -261,7 +256,6 @@ class LFont:
     def generate(self, output):
         self._update_metadata()
         self._make_over_under_line()
-        self._merge_features()
         otf = compileOTF(self._font, optimizeCFF=0, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
         self._post_process(otf)
