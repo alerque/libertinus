@@ -21,6 +21,7 @@
 #   Refer   - changed S (selected) to N (not selected)
 #   Fore, Back, SplineSet, Grid
 #           - all points have 0x4 masked out from flags (selected)
+#           - TrueType curve points dropped
 #   ModificationTime - discarded
 #   Validated - discarded
 #   Empty glyph positions dropped
@@ -45,7 +46,7 @@ BITMAPFONT_RE = re.compile(r"^(BitmapFont:\s+\d+\s+)(\d+)(\s+\d+\s+\d+\s+\d+)")
 BDFCHAR_RE = re.compile(r"^BDFChar:\s*(\d+)(\s+.*)$")
 EMPTY_FLAGS_RE = re.compile(r"^Flags:\s*$")
 DROP_FLAGS_RE = re.compile(r"^(Flags:.*?)[HO](.*)$")
-SELECTED_POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)$")
+POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)(,-?\d+,-?\d+)?$")
 SELECTED_REF_RE = re.compile(r"(-?\d+\s+)S(\s+-?\d+)")
 OTFFEATNAME_RE = re.compile(r"OtfFeatName:\s*'(....)'\s*(\d+)\s*(.*)$")
 HINTS_RE =  re.compile(r"^[HVD]Stem2?: ")
@@ -65,7 +66,7 @@ class RegexpProcessor:
     def match(self):
         return self.m
 
-def clear_selected(m):
+def normalize_point(m):
     pt = int(m.group(2)) & ~0x4;
     return m.group(1) + str(pt) + m.group(3)
 
@@ -119,7 +120,7 @@ def process_sfd_file(sfdname, outname):
 
         elif (in_spline_set):
             # Deselect selected points
-            fl = SELECTED_POINT_RE.sub(clear_selected, fl)
+            fl = POINT_RE.sub(normalize_point, fl)
 
         if fl.startswith("BeginChars:"):
             in_chars = True;
