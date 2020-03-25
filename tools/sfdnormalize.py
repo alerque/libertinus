@@ -22,6 +22,7 @@
 #   Fore, Back, SplineSet, Grid
 #           - all points have 0x4 masked out from flags (selected)
 #           - TrueType curve points dropped
+#           - hint masks dropped
 #   ModificationTime - discarded
 #   Validated - discarded
 #   Empty glyph positions dropped
@@ -46,7 +47,7 @@ BITMAPFONT_RE = re.compile(r"^(BitmapFont:\s+\d+\s+)(\d+)(\s+\d+\s+\d+\s+\d+)")
 BDFCHAR_RE = re.compile(r"^BDFChar:\s*(\d+)(\s+.*)$")
 EMPTY_FLAGS_RE = re.compile(r"^Flags:\s*$")
 DROP_FLAGS_RE = re.compile(r"^(Flags:.*?)[HO](.*)$")
-POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)(,-?\d+,-?\d+)?$")
+POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)(,-?\d+,-?\d+)?(x.*.)?$")
 SELECTED_REF_RE = re.compile(r"(-?\d+\s+)S(\s+-?\d+)")
 OTFFEATNAME_RE = re.compile(r"OtfFeatName:\s*'(....)'\s*(\d+)\s*(.*)$")
 HINTS_RE =  re.compile(r"^[HVD]Stem2?: ")
