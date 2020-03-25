@@ -62,23 +62,10 @@ $(BUILDDIR)/%.otl.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 		$(if $(call nofea,$@),,--feature-file=$(GSUB))                 \
 		;
 
-$(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.subset.otf
+$(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
 	@echo "       HINT  $(*F)"
 	@rm -rf $@.log
 	@psautohint $< -o $@ --log $@.log
-
-$(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.otl.otf
-	@echo "      PRUNE  $(*F)"
-	@fonttools subset                                                      \
-		--unicodes='*'                                                 \
-		--layout-features='*'                                          \
-		--name-IDs='*'                                                 \
-		--notdef-outline                                               \
-		--recalc-average-width                                         \
-		--recalc-bounds                                                \
-		--output-file=$@                                               \
-		$<                                                             \
-		;
 
 %.otf: $(BUILDDIR)/%.hint.otf
 	@cp $< $@

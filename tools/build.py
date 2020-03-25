@@ -1,6 +1,7 @@
 import argparse
 import datetime
 
+from fontTools import subset
 from io import StringIO
 from pcpp.preprocessor import Preprocessor
 from sfdLib.parser import SFDParser
@@ -166,6 +167,7 @@ class LFont:
                             hcomp[glyph.name] = math["GlyphCompositionHorizontal"]
 
             table.MathGlyphInfo = otTables.MathGlyphInfo()
+            table.MathGlyphInfo.populateDefaults()
 
             coverage = otl.buildCoverage(italic.keys(), glyphMap)
             table.MathGlyphInfo.MathItalicsCorrectionInfo = otTables.MathItalicsCorrectionInfo()
@@ -188,6 +190,7 @@ class LFont:
             for name in coverage.glyphs:
                 variants = vvars[name]
                 construction = otTables.MathGlyphConstruction()
+                construction.populateDefaults()
                 construction.VariantCount = len(variants)
                 construction.MathGlyphVariantRecord = []
                 for variant in variants:
@@ -218,6 +221,7 @@ class LFont:
             for name in coverage.glyphs:
                 variants = hvars[name]
                 construction = otTables.MathGlyphConstruction()
+                construction.populateDefaults()
                 construction.VariantCount = len(variants)
                 construction.MathGlyphVariantRecord = []
                 for variant in variants:
@@ -246,6 +250,14 @@ class LFont:
             otf["MATH"] = newTable("MATH")
             otf["MATH"].table = table
 
+    def _prune(self, otf):
+        options = subset.Options()
+        options.set(layout_features='*', name_IDs='*', notdef_outline=True,
+            recalc_average_width=True, recalc_bounds=True)
+        subsetter = subset.Subsetter(options=options)
+        subsetter.populate(unicodes=otf['cmap'].getBestCmap().keys())
+        subsetter.subset(otf)
+
     def generate(self, output):
         self._update_metadata()
         self._make_over_under_line()
@@ -253,6 +265,7 @@ class LFont:
         otf = compileOTF(self._font, optimizeCFF=0, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
         self._post_process(otf)
+        self._prune(otf)
         otf.save(output)
 
 
