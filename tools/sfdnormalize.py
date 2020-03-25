@@ -20,7 +20,7 @@
 #   Flags   - discarded O (open), H (changed since last hinting - often irrelevant)
 #   Refer   - changed S (selected) to N (not selected)
 #   Fore, Back, SplineSet, Grid
-#           - all points have 4 masked out from flags (selected)
+#           - all points have 0x4 masked out from flags (selected)
 #   ModificationTime - discarded
 #   Validated - discarded
 #   Empty glyph positions dropped
@@ -66,7 +66,7 @@ class RegexpProcessor:
         return self.m
 
 def clear_selected(m):
-    pt = int(m.group(2)) & ~4;
+    pt = int(m.group(2)) & ~0x4;
     return m.group(1) + str(pt) + m.group(3)
 
 def process_sfd_file(sfdname, outname):
