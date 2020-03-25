@@ -9,7 +9,7 @@ GSUB=$(SOURCEDIR)/features/gsub.fea
 DOC=documentation
 TOOLS=tools
 
-PY?=python
+PY?=python3
 BUILD=$(TOOLS)/build.py
 NORMALIZE=$(TOOLS)/sfdnormalize.py
 
