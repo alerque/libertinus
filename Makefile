@@ -67,7 +67,12 @@ $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
 	@rm -rf $@.log
 	@psautohint $< -o $@ --log $@.log
 
-%.otf: $(BUILDDIR)/%.hint.otf
+$(BUILDDIR)/%.subr.otf: $(BUILDDIR)/%.hint.otf
+	@echo "       SUBR  $(*F)"
+	@tx -cff +S +b $< $(@D)/$(*F).cff 2>/dev/null
+	@sfntedit -a CFF=$(@D)/$(*F).cff $< $@
+
+%.otf: $(BUILDDIR)/%.subr.otf
 	@cp $< $@
 
 $(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE)
