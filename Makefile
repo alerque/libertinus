@@ -62,12 +62,12 @@ $(BUILDDIR)/%.otl.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 		$(if $(call nofea,$@),,--feature-file=$(GSUB))                 \
 		;
 
-$(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
+$(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.subset.otf
 	@echo "       HINT  $(*F)"
 	@rm -rf $@.log
 	@psautohint $< -o $@ --log $@.log
 
-$(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
+$(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.otl.otf
 	@echo "      PRUNE  $(*F)"
 	@fonttools subset                                                      \
 		--unicodes='*'                                                 \
@@ -80,7 +80,7 @@ $(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
 		$<                                                             \
 		;
 
-%.otf: $(BUILDDIR)/%.subset.otf
+%.otf: $(BUILDDIR)/%.hint.otf
 	@cp $< $@
 
 $(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE)
