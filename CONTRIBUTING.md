@@ -9,6 +9,9 @@ Python dependencies is to use a [virtual environment][venv]:
     . libertinus-env/bin/activate
     pip install -r requirements.txt
 
+(There are also [optional dependencies](#optional-dependencies) which are not
+required for the basic contribution flow.)
+
 The source files are under the `sources` subdirectory. The `.sfd` files are
 FontForge source font format and should be edited with [FontForge][fontforge].
 The `.fea` files are [OpenType feature files][fea] and should be edited by a
@@ -34,3 +37,30 @@ not changed.
 [venv]: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 [fontforge]: https://fontforge.org
 [fea]: https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html
+
+## Optional dependencies
+
+The build process, besides generating the `.otf` font files, also updates the
+SVG and PDF preview documents. For that, additional tools are needed: `xelatex`
+from [xetex][], and `mutool` from [mupdf][]. The `make` command will emit errors
+if these are not present, but as long as the font generation stages finish
+correctly, these errors can be ignored. However, if one wishes to also perform
+the update to the preview files, these tools must also be installed.
+
+On most Linux distros, the `xelatex` binary is provided by the `texlive-xetex`
+package. The `mutool` binary is provided by either `mupdf-tools` or `mupdf`
+packages. For example, in Ubuntu:
+
+    sudo apt install texlive-xetex mupdf-tools
+
+On macOS, [Homebrew][] can be used to install both of these. The simplest way to
+obtain the `xelatex` binary is to install the [basictex][] cask, and then link
+the binary within it from a location accessible in the `PATH`:
+
+    brew cask install basictex brew install mupdf-tools
+    ln -s /usr/local/texlive/2019basic/bin/x86_64-darwin/xelatex /usr/local/bin/xelatex
+
+[xetex]: http://xetex.sourceforge.net
+[mupdf]: https://mupdf.com
+[homebrew]: https://brew.sh
+[basictex]: https://formulae.brew.sh/cask/basictex
