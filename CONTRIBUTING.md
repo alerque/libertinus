@@ -2,8 +2,8 @@ Contributing
 ------------
 
 To build the fonts, you need GNU Make, and Python 3.6+, and a few Python
-packages. To install Python packages. The cleanest way to install the Python
-dependencies is to use a virtual environment:
+packages. The cleanest way to install the Python dependencies is to use a
+virtual environment:
 
     python3 -m venv env
     . env/bin/activate
