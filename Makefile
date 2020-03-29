@@ -69,7 +69,7 @@ $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
 
 $(BUILDDIR)/%.subr.otf: $(BUILDDIR)/%.hint.otf
 	@echo "       SUBR  $(*F)"
-	@tx -cff +S +b $< $(@D)/$(*F).cff 2>/dev/null
+	@tx -cff +S +b $< $(@D)/$(*F).cff
 	@sfntedit -a CFF=$(@D)/$(*F).cff $< $@
 
 %.otf: $(BUILDDIR)/%.subr.otf
