@@ -27,16 +27,8 @@ A zip file containing the font files can be downloaded from the
 “[Releases](https://github.com/alif-type/libertinus/releases)” page
 of the project on GitHub.
 
-Building
---------
-To build the fonts, you need GNU Make, and Python 3.6+, and a few Python
-packages. To install Python packages:
-
-    pip install -r requirements.txt
-
-To build the fonts:
-
-    make
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) file, for instructions on how to build
+the fonts and contribute any changes.
 
 [1]: https://fontforge.github.io
 [2]: https://github.com/fonttools/fonttools
