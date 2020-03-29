@@ -69,7 +69,7 @@ $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
 
 $(BUILDDIR)/%.subr.otf: $(BUILDDIR)/%.hint.otf
 	@echo "       SUBR  $(*F)"
-	@tx -cff +S +b $< $(@D)/$(*F).cff
+	@tx -cff +S +b $< $(@D)/$(*F).cff 2>/dev/null
 	@sfntedit -a CFF=$(@D)/$(*F).cff $< $@
 
 %.otf: $(BUILDDIR)/%.subr.otf
@@ -87,10 +87,10 @@ $(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE)
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@ || (rm -rf $@ && false)
 
-$(DOC)/preview.svg: $(DOC)/preview.tex $(OTF)
-	@echo "        SVG  $@"
-	@xelatex --interaction=batchmode -output-directory=$(dir $@) $< 1>/dev/null || (cat $(basename $<).log && false)
-	@mutool draw -q -r 200 -o $@ $(basename $@).pdf
+$(DOC)/%.svg: $(DOC)/%.tex $(OTF)
+	@echo "        SVG  $(*F)"
+	@xelatex --interaction=batchmode -output-directory=$(BUILDDIR) $< 1>/dev/null || (cat $(BUILDDIR)/$(*F).log && false)
+	@mutool draw -q -r 200 -o $@ $(BUILDDIR)/$(*F).pdf
 
 dist: check $(OTF) $(PDF) $(SVG)
 	@echo "       DIST  $(DIST).zip"
