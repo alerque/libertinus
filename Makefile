@@ -35,7 +35,7 @@ SFD=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.sfd)
 NRM=$(FONTS:%=$(BUILDDIR)/$(NAME)%.nrm)
 CHK=$(FONTS:%=$(BUILDDIR)/$(NAME)%.chk)
 OTF=$(FONTS:%=$(NAME)%.otf)
-SVG=$(DOC)/preview.svg
+SVG=preview.svg
 PDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf $(DOC)/Math-Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
@@ -87,7 +87,7 @@ $(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE)
 	@$(PY) $(NORMALIZE) $< $@
 	@diff -u $< $@ || (rm -rf $@ && false)
 
-$(DOC)/%.svg: $(DOC)/%.tex $(OTF)
+%.svg: $(DOC)/%.tex $(OTF)
 	@echo "        SVG  $(*F)"
 	@xelatex --interaction=batchmode -output-directory=$(BUILDDIR) $< 1>/dev/null || (cat $(BUILDDIR)/$(*F).log && false)
 	@mutool draw -q -r 200 -o $@ $(BUILDDIR)/$(*F).pdf

@@ -3,7 +3,7 @@
 Libertinus fonts
 ================
 
-![Sample of Libertinus fonts](documentation/preview.svg)
+![Sample of Libertinus fonts](preview.svg)
 
 The Libertinus fonts project is a fork of the [Linux Libertine][1] and Linux
 Biolinum fonts.  It started as an OpenType math companion of the Libertine font
