@@ -100,6 +100,11 @@ lookup smcp_smallcap {
   sub s by s.sc;
   sub x by x.sc;
   sub f.short by f.sc;
+  sub amacron by a.sc uni0304;
+  sub emacron by e.sc uni0304;
+  sub imacron by i.sc uni0304;
+  sub omacron by o.sc uni0304;
+  sub umacron by u.sc uni0304;
 } smcp_smallcap;
 
 lookup smcp_smallcap_idot {
@@ -215,6 +220,11 @@ lookup c2sc_smallcap_fromcaps {
   sub Odieresis by odieresis.sc;
   sub Udieresis by udieresis.sc;
   sub uni1E9E by germandbls.sc;
+  sub Amacron by a.sc uni0304;
+  sub Emacron by e.sc uni0304;
+  sub Imacron by i.sc uni0304;
+  sub Omacron by o.sc uni0304;
+  sub Umacron by u.sc uni0304;
   sub H by h.sc;
 } c2sc_smallcap_fromcaps;
 
