@@ -32,12 +32,6 @@ Fonts must be generated for each commit that changes the source files. The
 build tools are smart enough to not change the binary fonts if the sources were
 not changed.
 
-[make]: https://www.gnu.org/software/make/
-[python]: https://www.python.org
-[venv]: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
-[fontforge]: https://fontforge.org
-[fea]: https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html
-
 ## Optional dependencies
 
 The build process, besides generating the `.otf` font files, also updates the
@@ -60,6 +54,12 @@ the binary within it from a location accessible in the `PATH`:
     brew cask install basictex brew install mupdf-tools
     ln -s /usr/local/texlive/2019basic/bin/x86_64-darwin/xelatex /usr/local/bin/xelatex
 
+
+[make]: https://www.gnu.org/software/make/
+[python]: https://www.python.org
+[venv]: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+[fontforge]: https://fontforge.org
+[fea]: https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html
 [xetex]: http://xetex.sourceforge.net
 [mupdf]: https://mupdf.com
 [homebrew]: https://brew.sh
