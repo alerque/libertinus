@@ -56,7 +56,7 @@ ChangeLog
 - Various cleanups to Libertinus Mono font, removing erroneous glyphs and
   unsuitable features.
 - Improve the metrics of math italic v, w, and y.
-- Work around a bug in old versions of FreeType when rendering Linertinus Sans
+- Work around a bug in old versions of FreeType when rendering Libertinus Sans
   Italic m.
 - Fix alignment of multiplication sign in Libertinus Serif and Mono Regular
   fonts.
@@ -71,7 +71,7 @@ ChangeLog
   FontForge's own OpenType layout support.
 - Various internal cleanups.
 - Drop "case", "frac", "tnum" and "pnum" features from the Libertinus Mono
-  font, they either were broken or not appropriate for a monospace font. 
+  font, they either were broken or not appropriate for a monospace font.
 
 27 May 2019 (Khaled Hosny) <Libertinus> Version 6.9
 - Many mathematical operator in Libertinus Math were scaled up and redesigned
@@ -232,7 +232,7 @@ ChangeLog
 First release of the forked Libertine fonts, changes since the fork include:
 - New Libertine Math font.
 - Dropped the use of Unicode PUA for alternate glyphs in favour of making them
-  encoded. 
+  encoded.
 - Dropped the TrueType versions of the fonts.
 - Dropped the Romanian-specific cedilla/comma substitution, it is no longer
   recommended to do this at font feature level.
