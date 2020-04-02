@@ -32,18 +32,18 @@ Fonts must be generated for each commit that changes the source files. The
 build tools are smart enough to not change the binary fonts if the sources were
 not changed.
 
-## Optional dependencies
+### Optional dependencies
 
 The build process, besides generating the `.otf` font files, also updates the
 SVG and PDF preview documents. For that, additional tools are needed: `xelatex`
 from [xetex][], and `mutool` from [mupdf][]. The `make` command will emit errors
 if these are not present, but as long as the font generation stages finish
-correctly, these errors can be ignored. However, if one wishes to also perform
-the update to the preview files, these tools must also be installed.
+correctly, these errors can be ignored. However, if you do wish to update the
+preview files, these tools must also be installed.
 
 On most Linux distros, the `xelatex` binary is provided by the `texlive-xetex`
-package. The `mutool` binary is provided by either `mupdf-tools` or `mupdf`
-packages. For example, in Ubuntu:
+package, and the `mutool` binary by the `mupdf-tools` (or alternatively `mupdf`)
+package. In Ubuntu, for example, these packages can be installed with:
 
     sudo apt install texlive-xetex mupdf-tools
 
@@ -51,7 +51,7 @@ On macOS, [Homebrew][] can be used to install both of these. The simplest way to
 obtain the `xelatex` binary is to install the [basictex][] cask, and then link
 the binary within it from a location accessible in the `PATH`:
 
-    brew cask install basictex brew install mupdf-tools
+    brew install mupdf-tools && brew cask install basictex
     ln -s /usr/local/texlive/2019basic/bin/x86_64-darwin/xelatex /usr/local/bin/xelatex
 
 
