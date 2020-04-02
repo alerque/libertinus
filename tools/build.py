@@ -12,7 +12,7 @@ from sfdLib.utils import GLYPHCLASS_KEY, MATH_KEY
 
 class Font:
     def __init__(self, filename, features, version):
-        self._font = font = ufoLib2.Font()
+        self._font = font = ufoLib2.Font(validate=False)
         self._version = version
 
         parser = SFDParser(filename, font, ignore_uvs=False, ufo_anchors=False,
