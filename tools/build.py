@@ -1,18 +1,18 @@
 import argparse
 import datetime
+import ufo2ft
+import ufoLib2
 
 from fontTools import subset
 from io import StringIO
 from pcpp.preprocessor import Preprocessor
 from sfdLib.parser import SFDParser
 from sfdLib.utils import GLYPHCLASS_KEY, MATH_KEY
-from ufo2ft import compileOTF
-from ufoLib2 import Font
 
 
-class LFont:
+class Font:
     def __init__(self, filename, features, version):
-        self._font = font = Font()
+        self._font = font = ufoLib2.Font()
         self._version = version
 
         parser = SFDParser(filename, font, ignore_uvs=False, ufo_anchors=False,
@@ -256,7 +256,7 @@ class LFont:
     def generate(self, output):
         self._update_metadata()
         self._make_over_under_line()
-        otf = compileOTF(self._font, optimizeCFF=0, removeOverlaps=True,
+        otf = ufo2ft.compileOTF(self._font, optimizeCFF=0, removeOverlaps=True,
             overlapsBackend="pathops", featureWriters=[])
         self._post_process(otf)
         self._prune(otf)
@@ -271,7 +271,7 @@ def main():
     parser.add_argument("-f", "--feature-file", required=False)
 
     args = parser.parse_args()
-    font = LFont(args.input, args.feature_file, args.version)
+    font = Font(args.input, args.feature_file, args.version)
     font.generate(args.output)
 
 
