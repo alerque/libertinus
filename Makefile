@@ -60,9 +60,11 @@ check: $(CHK)
 
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
-$(BUILDDIR)/%.otl.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
+$(BUILDDIR):
+	mkdir -p $@
+
+$(BUILDDIR)/%.otl.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD) | $(BUILDDIR)
 	$(info       BUILD  $(*F))
-	mkdir -p $(BUILDDIR)
 	$(PY) $(BUILD) \
 		--input=$< \
 		--output=$@ \
@@ -82,19 +84,17 @@ $(BUILDDIR)/%.subr.otf: $(BUILDDIR)/%.hint.otf
 %.otf: $(BUILDDIR)/%.subr.otf
 	cp $< $@
 
-$(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE)
+$(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE) | $(BUILDDIR)
 	$(info   NORMALIZE  $(*F))
-	mkdir -p $(BUILDDIR)
 	$(PY) $(NORMALIZE) $< $@
 	if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
-$(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE)
+$(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE) | $(BUILDDIR)
 	$(info   NORMALIZE  $(*F))
-	mkdir -p $(BUILDDIR)
 	$(PY) $(NORMALIZE) $< $@
 	diff -u $< $@ || (rm -rf $@ && false)
 
-preview.svg: $(DOCSDIR)/preview.tex $(OTF)
+preview.svg: $(DOCSDIR)/preview.tex $(OTF) | $(BUILDDIR)
 	$(info         SVG  $@)
 	xelatex --interaction=batchmode \
 		-output-directory=$(BUILDDIR) \
