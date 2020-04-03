@@ -1,21 +1,10 @@
-dist: xenial
+dist: bionic
 language: python
-python: 2.7
-virtualenv:
-  system_site_packages: true
-
-addons:
-  apt:
-    sources:
-      - sourceline: 'ppa:fontforge/fontforge'
-    packages:
-      - fontforge
-      - python-fontforge
 
 install:
   - sed -i -e '/fontaine/d' requirements.txt
   - pip install -r requirements.txt
 
 script:
-  - make -j4 otf
-  - make -j4 check
+  - make otf
+  - make check

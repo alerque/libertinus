@@ -12,10 +12,9 @@ GSUB = $(SOURCEDIR)/features/gsub.fea
 DOCSDIR = documentation
 TOOLSDIR = tools
 
-PY ?= python
+PY ?= python3
 BUILD = $(TOOLSDIR)/build.py
 NORMALIZE = $(TOOLSDIR)/sfdnormalize.py
-CHECKERRS = $(TOOLSDIR)/check-errors.py
 
 # Default to explicitly enumerating fonts to build;
 # use `make ALLFONTS=true ...` to build all *.sfd files in the source tree or
@@ -40,13 +39,11 @@ endif
 SFD = $(addsuffix .sfd,$(addprefix $(SOURCEDIR)/,$(FONTS)))
 NRM = $(addsuffix .nrm,$(addprefix $(BUILDDIR)/,$(FONTS)))
 CHK = $(addsuffix .chk,$(addprefix $(BUILDDIR)/,$(FONTS)))
-DUP = $(addsuffix .dup,$(addprefix $(BUILDDIR)/,$(FONTS)))
-LNT = $(addsuffix .lnt,$(addprefix $(BUILDDIR)/,$(FONTS)))
 COVERAGE = $(addsuffix -coverage.json,$(addprefix $(BUILDDIR)/,$(FONTS)))
 
 # Generate list of final output forms
 OTF = $(addsuffix .otf,$(FONTS))
-SVG = $(DOCSDIR)/preview.svg
+SVG = preview.svg
 PDF = $(DOCSDIR)/Opentype-Features.pdf $(DOCSDIR)/Sample.pdf $(DOCSDIR)/Math-Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
@@ -59,43 +56,30 @@ all: otf $(SVG)
 otf: $(OTF)
 doc: $(PDF)
 normalize: $(NRM)
-check: $(LNT) $(CHK) $(DUP)
+check: $(CHK)
 
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
-$(BUILDDIR)/%.ff.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
+$(BUILDDIR)/%.otl.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
 	$(info       BUILD  $(*F))
 	mkdir -p $(BUILDDIR)
 	$(PY) $(BUILD) \
 		--input=$< \
 		--output=$@ \
 		--version=$(VERSION) \
-		--output-feature-file=$(BUILDDIR)/$(*F).fea \
 		$(if $(call nofea,$@),,--feature-file=$(GSUB))
-
-$(BUILDDIR)/%.otl.otf: $(BUILDDIR)/%.ff.otf
-	$(info         OTL  $(*F))
-	fonttools feaLib $(BUILDDIR)/$(*F).fea $< -o $@
 
 $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
 	$(info        HINT  $(*F))
 	rm -rf $@.log
 	psautohint $< -o $@ --log $@.log
 
-$(BUILDDIR)/%.subset.otf: $(BUILDDIR)/%.hint.otf
-	$(info       PRUNE  $(*F))
-	fonttools subset \
-		--unicodes='*' \
-		--layout-features='*' \
-		--name-IDs='*' \
-		--notdef-outline \
-		--recalc-average-width \
-		--recalc-bounds \
-		--drop-tables=FFTM \
-		--output-file=$@ \
-		$<
+$(BUILDDIR)/%.subr.otf: $(BUILDDIR)/%.hint.otf
+	$(info        SUBR  $(*F))
+	tx -cff +S +b $< $(@D)/$(*F).cff 2> /dev/null
+	sfntedit -a CFF=$(@D)/$(*F).cff $< $@
 
-%.otf: $(BUILDDIR)/%.subset.otf
+%.otf: $(BUILDDIR)/%.subr.otf
 	cp $< $@
 
 $(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE)
@@ -110,44 +94,13 @@ $(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE)
 	$(PY) $(NORMALIZE) $< $@
 	diff -u $< $@ || (rm -rf $@ && false)
 
-$(BUILDDIR)/%.dup: $(SOURCEDIR)/%.sfd $(FINDDUPS)
-	$(info       CHECK  $(*F))
-	mkdir -p $(BUILDDIR)
-	$(PY) $(CHECKERRS) $< $@ || (rm -rf $@ && false)
-
-
-# Currently ignored errors:
-#  2: Self-intersecting glyph
-#  5: Missing points at extrema
-#  7: More points in a glyph than PostScript allows
-# 23: Overlapping hints in a glyph
-$(BUILDDIR)/LibertinusKeyboard-Regular.lnt: LibertinusKeyboard-Regular.otf
-	$(info        LINT  $(<F))
-	mkdir -p $(BUILDDIR)
-	fontlint -i2,5,7,23 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
-
-$(BUILDDIR)/LibertinusSerifInitials-Regular.lnt: LibertinusSerifInitials-Regular.otf
-	$(info        LINT  $(<F))
-	mkdir -p $(BUILDDIR)
-	fontlint -i2,5,7,23,34 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
-
-# Currently ignored errors:
-#  2: Self-intersecting glyph
-#  5: Missing points at extrema
-# 34: Bad 'CFF ' table
-# 98: Self-intersecting glyph when FontForge is able to correct this
-$(BUILDDIR)/%.lnt: %.otf
-	$(info        LINT  $(*F))
-	mkdir -p $(BUILDDIR)
-	fontlint -i2,5,34,98 $< 2>/dev/null 1>$@ || (cat $@ && rm -rf $@ && false)
-
-$(DOCSDIR)/preview.svg: $(DOCSDIR)/preview.tex $(OTF)
+preview.svg: $(DOCSDIR)/preview.tex $(OTF)
 	$(info         SVG  $@)
 	xelatex --interaction=batchmode \
-		-output-directory=$(dir $@) \
-		$< 1>/dev/null || (cat $(basename $<).log && false)
+		-output-directory=$(BUILDDIR) \
+		$< 1> /dev/null || (cat $(BUILDDIR)/$(*F).log && false)
 
-$(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.svg
+$(DOCSDIR)/preview.pdf: preview.svg
 	$(info         PDF  $@)
 	mutool draw -q -r 200 -o $< $@
 
@@ -186,8 +139,8 @@ $(BUILDDIR)/%-coverage.json: %.otf
 dist: check dist-clean $(OTF) $(PDF) $(SVG)
 	$(info         DIST  $(DIST).zip)
 	install -Dm644 $(OTF) -t $(DIST)
-	install -Dm644 {OFL,FONTLOG,AUTHORS}.txt -t $(DIST)
-	install -Dm644 README.md -t $(DIST)
+	install -Dm644 {OFL,FONTLOG,AUTHORS,CONTRIBUTORS}.txt -t $(DIST)
+	install -Dm644 {README,CONTRIBUTING}.md -t $(DIST)
 	install -Dm644 $(PDF) $(SVG) -t $(DIST)/$(DOCSDIR)
 	zip -rq $(DIST).zip $(DIST)
 
@@ -197,4 +150,4 @@ dist-clean:
 
 .PHONY: clean
 clean: dist-clean
-	rm -rf $(CHK) $(MIS) $(DUP) $(FEA) $(NRM) $(LNT) $(PDF) $(OTF)
+	rm -rf $(CHK) $(MIS) $(FEA) $(NRM) $(PDF) $(OTF)
