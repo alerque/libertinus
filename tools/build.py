@@ -1,22 +1,24 @@
-# encoding: utf-8
 import argparse
 import datetime
-import os
+import ufo2ft
+import ufoLib2
 
-import fontforge
-
-from fontTools.misc.py23 import StringIO
+from fontTools import subset
+from io import StringIO
 from pcpp.preprocessor import Preprocessor
-
-from tempfile import NamedTemporaryFile
+from sfdLib.parser import SFDParser
+from sfdLib.utils import GLYPHCLASS_KEY, MATH_KEY
 
 
 class Font:
     def __init__(self, filename, features, version):
-        self._font = fontforge.open(filename)
+        self._font = font = ufoLib2.Font(validate=False)
         self._version = version
 
-        self._features = StringIO()
+        parser = SFDParser(filename, font, ignore_uvs=False, ufo_anchors=False,
+            ufo_kerning=False, minimal=True)
+        parser.parse()
+
         if features:
             preprocessor = Preprocessor()
             for d in ("italic", "sans", "display", "math"):
@@ -24,61 +26,35 @@ class Font:
                     preprocessor.define(d.upper())
             with open(features) as f:
                 preprocessor.parse(f)
-            preprocessor.write(self._features)
-
-    def _save_features(self, filename):
-        font = self._font
-        features = self._features
-
-        with NamedTemporaryFile(suffix=".fea", mode="rt") as temp:
-            font.generateFeatureFile(temp.name)
-            lines = temp.readlines()
-            for line in lines:
-                if not line.startswith("languagesystem"):
-                    features.write(line)
-
-        for lookup in font.gpos_lookups + font.gsub_lookups:
-            font.removeLookup(lookup)
-
-        with open(filename, "wt") as f:
-            f.write(features.getvalue())
-
-    def _cleanup_glyphs(self):
-        font = self._font
-        for glyph in font.glyphs():
-            glyph.unlinkRef()
-            if glyph.unlinkRmOvrlpSave:
-                glyph.removeOverlap()
-            glyph.correctDirection()
+            feafile = StringIO()
+            preprocessor.write(feafile)
+            feafile.write(font.features.text)
+            font.features.text = feafile.getvalue()
 
     def _update_metadata(self):
         version = self._version
         font = self._font
+        info = font.info
 
         year = datetime.date.today().year
-        font.copyright = (u"Copyright © 2012-%s " % year +
+        info.copyright = (u"Copyright © 2012-%s " % year +
                           u"The Libertinus Project Authors.")
-        font.version = version
-
-        # Override the default which includes the build date
-        font.appendSFNTName("English (US)", "UniqueID", "%s;%s;%s" %
-                            (version, font.os2_vendor, font.fontname))
-        font.appendSFNTName("English (US)", "Vendor URL",
-                            "https://github.com/alif-type/libertinus")
+        major, minor = version.split(".")
+        info.versionMajor, info.versionMinor = int(major), int(minor) * 10
+        info.openTypeNameManufacturerURL = "https://github.com/alif-type/libertinus"
 
     def _draw_over_under_line(self, name, widths):
         font = self._font
-        bbox = font[name].boundingBox()
+        bbox = font[name].getBounds(font)
         pos = bbox[1]
         height = bbox[-1] - bbox[1]
 
         for width in sorted(widths):
-            glyph = font.createChar(-1, "%s.%d" % (name, width))
+            glyph = font.newGlyph(f"{name}.{width}")
             glyph.width = 0
-            glyph.glyphclass = "mark"
+            glyph.lib[GLYPHCLASS_KEY] = "mark"
 
-            pen = glyph.glyphPen()
-
+            pen = glyph.getPen()
             pen.moveTo((-25 - width, pos))
             pen.lineTo((-25 - width, pos + height))
             pen.lineTo((25, pos + height))
@@ -96,13 +72,14 @@ class Font:
         # Collect glyphs grouped by their widths rounded by minwidth, we will
         # use them to decide the widths of over/underline glyphs we will draw
         widths = {}
-        for glyph in font.glyphs():
-            if glyph.glyphclass != 'mark' and glyph.width > 0:
+        for glyph in font:
+            glyphclass = glyph.lib.get(GLYPHCLASS_KEY)
+            if glyphclass != 'mark' and glyph.width > 0:
                 width = round(glyph.width / minwidth) * minwidth
                 width = max(width, minwidth)
                 if width not in widths:
                     widths[width] = []
-                widths[width].append(glyph.glyphname)
+                widths[width].append(glyph.name)
 
         if len(widths) == 1:
             return
@@ -110,10 +87,9 @@ class Font:
         for name in bases:
             self._draw_over_under_line(name, widths)
 
-        dirname = os.path.dirname(font.path)
         fea = []
         fea.append("feature mark {")
-        fea.append("  @OverSet = [%s];" % " ".join(bases))
+        fea.append(f"  @OverSet = [{' '.join(bases)}];")
         fea.append("  lookupflag UseMarkFilteringSet @OverSet;")
         for width in sorted(widths):
             # For each width group we create an over/underline glyph with the
@@ -125,14 +101,166 @@ class Font:
                                                       " ".join(replacements)))
         fea.append("} mark;")
 
-        self._features.write("\n".join(fea))
+        self._font.features.text += "\n".join(fea)
 
-    def generate(self, output, output_features):
+    def _post_process(self, otf):
+        font = self._font
+        gdef = otf["GDEF"].table
+        classdef = gdef.GlyphClassDef.classDefs
+        for glyph in font:
+            if glyph.lib.get(GLYPHCLASS_KEY) == "mark":
+                classdef[glyph.name] = 3
+
+        constants = font.lib.get(MATH_KEY)
+        if constants:
+            from fontTools.ttLib import newTable
+            from fontTools.ttLib.tables import otTables
+            from fontTools.otlLib import builder as otl
+
+            glyphMap = {n: i for i, n in enumerate(font.glyphOrder)}
+            table = otTables.MATH()
+            table.Version = 0x00010000
+            table.MathConstants = otTables.MathConstants()
+            for c in constants:
+                if c == "MinConnectorOverlap":
+                    continue
+                v = constants[c]
+                if c not in ("ScriptPercentScaleDown",
+                        "ScriptScriptPercentScaleDown",
+                        "DelimitedSubFormulaMinHeight",
+                        "DisplayOperatorMinHeight",
+                        "RadicalDegreeBottomRaisePercent"):
+                    vr = otTables.MathValueRecord()
+                    vr.Value = v
+                    v = vr
+                setattr(table.MathConstants, c, v)
+            extended = set()
+            italic = {}
+            accent = {}
+            vvars = {}
+            hvars = {}
+            vcomp = {}
+            hcomp = {}
+            for glyph in font:
+                math = glyph.lib.get(MATH_KEY)
+                if math:
+                    if "IsExtendedShape" in math:
+                        extended.add(glyph.name)
+                    if "ItalicCorrection" in math:
+                        italic[glyph.name] = otTables.MathValueRecord()
+                        italic[glyph.name].Value = math["ItalicCorrection"]
+                    if "TopAccentHorizontal" in math:
+                        accent[glyph.name] = otTables.MathValueRecord()
+                        accent[glyph.name].Value = math["TopAccentHorizontal"]
+                    if "GlyphVariantsVertical" in math:
+                        vvars[glyph.name] = math["GlyphVariantsVertical"]
+                        if "GlyphCompositionVertical" in math:
+                            vcomp[glyph.name] = math["GlyphCompositionVertical"]
+                    if "GlyphVariantsHorizontal" in math:
+                        hvars[glyph.name] = math["GlyphVariantsHorizontal"]
+                        if "GlyphCompositionHorizontal" in math:
+                            hcomp[glyph.name] = math["GlyphCompositionHorizontal"]
+
+            table.MathGlyphInfo = otTables.MathGlyphInfo()
+            table.MathGlyphInfo.populateDefaults()
+
+            coverage = otl.buildCoverage(italic.keys(), glyphMap)
+            table.MathGlyphInfo.MathItalicsCorrectionInfo = otTables.MathItalicsCorrectionInfo()
+            table.MathGlyphInfo.MathItalicsCorrectionInfo.Coverage = coverage
+            table.MathGlyphInfo.MathItalicsCorrectionInfo.ItalicsCorrection = [italic[n] for n in coverage.glyphs]
+
+            coverage = otl.buildCoverage(accent.keys(), glyphMap)
+            table.MathGlyphInfo.MathTopAccentAttachment = otTables.MathTopAccentAttachment()
+            table.MathGlyphInfo.MathTopAccentAttachment.TopAccentCoverage = coverage
+            table.MathGlyphInfo.MathTopAccentAttachment.TopAccentAttachment = [accent[n] for n in coverage.glyphs]
+
+            table.MathGlyphInfo.ExtendedShapeCoverage = otl.buildCoverage(extended, glyphMap)
+
+            table.MathVariants = otTables.MathVariants()
+            table.MathVariants.MinConnectorOverlap = constants["MinConnectorOverlap"]
+
+            coverage = otl.buildCoverage(vvars.keys(), glyphMap)
+            table.MathVariants.VertGlyphCoverage = coverage
+            table.MathVariants.VertGlyphConstruction = []
+            for name in coverage.glyphs:
+                variants = vvars[name]
+                construction = otTables.MathGlyphConstruction()
+                construction.populateDefaults()
+                construction.VariantCount = len(variants)
+                construction.MathGlyphVariantRecord = []
+                for variant in variants:
+                    bbox = font[variant].getBounds(font)
+                    record = otTables.MathGlyphVariantRecord()
+                    record.VariantGlyph = variant
+                    record.AdvanceMeasurement = int(bbox[-1] - bbox[1] + 1)
+                    construction.MathGlyphVariantRecord.append(record)
+                if name in vcomp:
+                    construction.GlyphAssembly = otTables.GlyphAssembly()
+                    construction.GlyphAssembly.ItalicsCorrection = otTables.MathValueRecord()
+                    construction.GlyphAssembly.ItalicsCorrection.Value = 0
+                    construction.GlyphAssembly.PartRecords = []
+                    for comp in vcomp[name]:
+                        record = otTables.GlyphPartRecord()
+                        record.glyph = comp[0]
+                        f, s, e, a = [int(v) for v in comp[1].split(",")]
+                        record.StartConnectorLength = s
+                        record.EndConnectorLength = e
+                        record.FullAdvance = a
+                        record.PartFlags = f
+                        construction.GlyphAssembly.PartRecords.append(record)
+                table.MathVariants.VertGlyphConstruction.append(construction)
+
+            coverage = otl.buildCoverage(hvars.keys(), glyphMap)
+            table.MathVariants.HorizGlyphCoverage = coverage
+            table.MathVariants.HorizGlyphConstruction = []
+            for name in coverage.glyphs:
+                variants = hvars[name]
+                construction = otTables.MathGlyphConstruction()
+                construction.populateDefaults()
+                construction.VariantCount = len(variants)
+                construction.MathGlyphVariantRecord = []
+                for variant in variants:
+                    bbox = font[variant].getBounds(font)
+                    record = otTables.MathGlyphVariantRecord()
+                    record.VariantGlyph = variant
+                    record.AdvanceMeasurement = int(bbox[-2] - bbox[0] + 1)
+                    construction.MathGlyphVariantRecord.append(record)
+                if name in hcomp:
+                    construction.GlyphAssembly = otTables.GlyphAssembly()
+                    construction.GlyphAssembly.ItalicsCorrection = otTables.MathValueRecord()
+                    construction.GlyphAssembly.ItalicsCorrection.Value = 0
+                    construction.GlyphAssembly.PartRecords = []
+                    for comp in hcomp[name]:
+                        record = otTables.GlyphPartRecord()
+                        record.glyph = comp[0]
+                        f, s, e, a = [int(v) for v in comp[1].split(",")]
+                        record.StartConnectorLength = s
+                        record.EndConnectorLength = e
+                        record.FullAdvance = a
+                        record.PartFlags = f
+                        construction.GlyphAssembly.PartRecords.append(record)
+                table.MathVariants.HorizGlyphConstruction.append(construction)
+
+
+            otf["MATH"] = newTable("MATH")
+            otf["MATH"].table = table
+
+    def _prune(self, otf):
+        options = subset.Options()
+        options.set(layout_features='*', name_IDs='*', notdef_outline=True,
+            recalc_average_width=True, recalc_bounds=True)
+        subsetter = subset.Subsetter(options=options)
+        subsetter.populate(unicodes=otf['cmap'].getBestCmap().keys())
+        subsetter.subset(otf)
+
+    def generate(self, output):
         self._update_metadata()
-        self._cleanup_glyphs()
         self._make_over_under_line()
-        self._save_features(output_features)
-        self._font.generate(output, flags=("opentype"))
+        otf = ufo2ft.compileOTF(self._font, optimizeCFF=0, removeOverlaps=True,
+            overlapsBackend="pathops", featureWriters=[])
+        self._post_process(otf)
+        self._prune(otf)
+        otf.save(output)
 
 
 def main():
@@ -141,11 +269,10 @@ def main():
     parser.add_argument("-o", "--output", required=True)
     parser.add_argument("-v", "--version", required=True)
     parser.add_argument("-f", "--feature-file", required=False)
-    parser.add_argument("-F", "--output-feature-file", required=True)
 
     args = parser.parse_args()
     font = Font(args.input, args.feature_file, args.version)
-    font.generate(args.output, args.output_feature_file)
+    font.generate(args.output)
 
 
 if __name__ == "__main__":
