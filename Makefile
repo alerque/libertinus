@@ -1,7 +1,7 @@
 NAME = Libertinus
 VERSION = 6.11
 
-MAKEFLAGS := -s
+MAKEFLAGS := -s -j$(shell nproc) -Otarget
 SHELL = bash
 
 DIST = $(NAME)-$(VERSION)
