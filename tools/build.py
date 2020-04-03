@@ -256,8 +256,8 @@ class Font:
     def generate(self, output):
         self._update_metadata()
         self._make_over_under_line()
-        otf = ufo2ft.compileOTF(self._font, optimizeCFF=0, removeOverlaps=True,
-            overlapsBackend="pathops", featureWriters=[])
+        otf = ufo2ft.compileOTF(self._font, inplace=True, optimizeCFF=0,
+            removeOverlaps=True, overlapsBackend="pathops", featureWriters=[])
         self._post_process(otf)
         self._prune(otf)
         otf.save(output)
