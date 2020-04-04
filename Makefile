@@ -151,3 +151,6 @@ dist-clean:
 .PHONY: clean
 clean: dist-clean
 	rm -rf $(CHK) $(MIS) $(FEA) $(NRM) $(PDF) $(OTF)
+
+.PHONY: force
+force: ;
