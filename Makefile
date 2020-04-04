@@ -104,36 +104,51 @@ $(DOCSDIR)/preview.pdf: preview.svg
 	$(info         PDF  $@)
 	mutool draw -q -r 200 -o $< $@
 
-# $(shell echo ttx -t cmap -o - $1.otf)
-# $(shell echo pyfontaine --wiki $1.otf)
-define unicode_coverage_table =
-	$(shell jq -M -e -s -r '.[0:5]' $(BUILDDIR)/$1-coverage.json)
-endef
-
 $(DOCSDIR)/Unicode-Coverage.md: $(COVERAGE)
 	$(info     MARKDOWN  $@)
+	EIGHTS="█████████████"
+	EIGHTHS="▏▎▍▌▋▊▉█"
+	eightbar() {
+		echo -n $${EIGHTS:1:$$(($$1/8))}$${EIGHTHS:$$(($$1%8)):1}
+	}
+	ascols() {
+		printf "| %50s | %-13s |" $$1 $$2
+	}
+	covtable() {
+		local IFS=:
+		echo $$(ascols "Unicode Block" "Coverage")
+		echo "|---------------------------------------------------:|:--------------|"
+		< $(BUILDDIR)/$$1-coverage.json \
+		jq -M -e -r '. | to_entries | .[] | .key+":"+(.value | tostring)' |
+		while read group eightieth; do
+			echo $$(ascols "$${group}" "$$(eightbar $${eightieth})")
+		done
+	}
+	IFS=:
 	export PS4=; exec > $@ # Redirect all STDOUT to the target file
 	cat <<- EOF
 		# $(NAME) Unicode Coverage
 		$(foreach FONT,$(FONTS),
 		## $(subst $(NAME),$(NAME) ,$(subst -, ,$(FONT)))
-	
-		$(call unicode_coverage_table,$(FONT))
+		
+		$$(covtable $(FONT))
 		)
 	EOF
 
-# select(.commonName | test("Google|Subset|\\+") | not )  |
-# select(.percentCoverage >= 10) |
+define unicode_coverage_table =
+	$(shell jq -M -e -s -r '.[0:5]' $(BUILDDIR)/$1-coverage.json)
+endef
+
 $(BUILDDIR)/%-coverage.json: %.otf
 	pyfontaine --json $< |
-	jq -M -e -r \
-		'.fonts[0].font.orthographies[].orthography |
-			(select(.commonName | test("Unicode Block"))) |
-			{
-				"orthography": .commonName,
-				"percent": .percentCoverage
-			}' \
-		> $@
+		jq -M -e -r \
+			'[ .fonts[0].font.orthographies[].orthography
+					| select(.SetTotal > 0)
+					| select(.commonName | test("Google|Subset|\\+|\\(") | not)
+					| select(.percentCoverage > 4)
+					| { (.commonName): (.percentCoverage / 100 * 80 | floor) }
+				] | add
+			' > $@
 
 .PHONY: dist
 dist: check dist-clean $(OTF) $(PDF) $(SVG)
