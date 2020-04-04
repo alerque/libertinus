@@ -135,6 +135,31 @@ $(DOCSDIR)/Unicode-Coverage.md: $(COVERAGE)
 		)
 	EOF
 
+$(BUILDDIR)/preamble.tex:
+	export PS4=; exec > $@
+	echo -E '\setlength\LTleft{0pt}'
+	echo -E '\setlength\LTright{0pt}'
+	echo -E '\setlength\parindent{0pt}'
+	echo -E '\newfontfamily{\symbolfont}{Symbola}'
+	echo -E '\usepackage{ucharclasses}'
+	echo -E '\setTransitionsFor{BlockElements}{\symbolfont}{\rmfamily}'
+	echo -E '\RedeclareSectionCommand[beforeskip=0pt,afterskip=5pt,afterindent=false]{chapter}'
+	echo -E '\RedeclareSectionCommand[beforeskip=5pt,afterskip=5pt,afterindent=false]{section}'
+
+$(DOCSDIR)/%.pdf: $(DOCSDIR)/%.md $(BUILDDIR)/preamble.tex
+	$(info          PDF  $@)
+	pandoc \
+		-t latex --pdf-engine=xelatex \
+		-V "documentclass:scrreprt" \
+		-V "pagestyle:headings" \
+		-V "geometry:hmargin=2cm" \
+		-V "geometry:vmargin=3cm" \
+		-V "mainfont:Libertinus Serif" \
+		-V "sansfont:Libertinus Sans" \
+		-V "monofont:Libertinus Mono" \
+		--include-in-header $(BUILDDIR)/preamble.tex \
+		$< -o $@
+
 define unicode_coverage_table =
 	$(shell jq -M -e -s -r '.[0:5]' $(BUILDDIR)/$1-coverage.json)
 endef
