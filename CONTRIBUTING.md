@@ -36,24 +36,40 @@ not changed.
 
 The build process, besides generating the `.otf` font files, also updates the
 SVG and PDF preview documents. For that, additional tools are needed: `xelatex`
-from [xetex][], and `mutool` from [mupdf][]. The `make` command will emit errors
-if these are not present, but as long as the font generation stages finish
-correctly, these errors can be ignored. However, if you do wish to update the
-preview files, these tools must also be installed.
+from [xetex][], and `mutool` from [mupdf][] (version 1.15.0 or above). The
+`make` command will emit errors if these are not present, but as long as the
+font generation stages finish correctly, these errors can be ignored. However,
+if you do wish to update the preview files, these tools must also be installed.
 
-On most Linux distros, the `xelatex` binary is provided by the `texlive-xetex`
-package, and the `mutool` binary by the `mupdf-tools` (or alternatively `mupdf`)
-package. In Ubuntu, for example, these packages can be installed with:
+#### Linux
+
+On most Linux distros, the `xelatex` binary is provided by the
+[`texlive-xetex` package][repology-xetex], and the `mutool` binary by
+[`mupdf-tools` or `mupdf`][repology-mupdf].
+In Ubuntu, for example, these packages can be installed with:
 
     sudo apt install texlive-xetex mupdf-tools
+    
+**Note:** the command example above installs an unsupported version of
+`mupdf-tools` in Ubuntu versions older than 19.10 (Eoan Ermine), which is the
+first one that [included][ubuntu-mupdf] the 1.15.0 release of `mupdf-tools`.
+If your distro has an older version, you may consider using the [Linuxbrew][]
+package manager instead to install `mupdf-tools`:
 
-On macOS, [Homebrew][] can be used to install both of these. The simplest way to
-obtain the `xelatex` binary is to install the [basictex][] cask, and then link
-the binary within it from a location accessible in the `PATH`:
+    brew install mupdf-tools
 
-    brew install mupdf-tools && brew cask install basictex
-    ln -s /usr/local/texlive/2019basic/bin/x86_64-darwin/xelatex /usr/local/bin/xelatex
+#### macOS
 
+On macOS, [Homebrew][] can be used to install `mupdf-tools`:
+
+    brew install mupdf-tools
+
+On the other hand, `xelatex` is not provided as a stand-alone formula. The
+simplest way to obtain it is to install the [basictex][] cask, and then link
+the `xelatex` binary within it from a location accessible in the `PATH`:
+
+    brew cask install basictex
+    ln -s /usr/local/texlive/*/bin/x86_64-darwin/xelatex /usr/local/bin/xelatex
 
 [make]: https://www.gnu.org/software/make/
 [python]: https://www.python.org
@@ -62,5 +78,9 @@ the binary within it from a location accessible in the `PATH`:
 [fea]: https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html
 [xetex]: http://xetex.sourceforge.net
 [mupdf]: https://mupdf.com
+[repology-xetex]: https://repology.org/project/texlive:xetex/versions
+[repology-mupdf]: https://repology.org/project/mupdf/versions
+[ubuntu-mupdf]: https://packages.ubuntu.com/eoan/mupdf-tools
+[linuxbrew]: https://docs.brew.sh/Homebrew-on-Linux
 [homebrew]: https://brew.sh
 [basictex]: https://formulae.brew.sh/cask/basictex
