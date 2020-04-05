@@ -3,7 +3,7 @@
 # SFD normalizer (discards GUI information from SFD files)
 # (c) 2004, 2005 Stepan Roh (PUBLIC DOMAIN)
 # (c) 2009 Alexey Kryukov
-# (c) 2018 Khaled Hosny
+# (c) 2018-2020 Khaled Hosny
 # (c) 2018 Skef Iterum
 # (c) 2020 Waldir Pimenta
 #
@@ -18,6 +18,7 @@
 #   FitToEm - discarded
 #   Compacted - discarded
 #   GenTags - discarded
+#   Copyright - discarded
 #   Flags   - discarded O (open), H (changed since last hinting - often irrelevant)
 #   Refer   - changed S (selected) to N (not selected)
 #   Fore, Back, SplineSet, Grid
@@ -41,7 +42,7 @@ import sys, re
 fealines_tok = '__X_FEALINES_X__'
 
 FONT_RE = re.compile(r"^SplineFontDB:\s(\d+\.?\d*)")
-DROP_RE = re.compile(r"^(WinInfo|DisplaySize|AntiAlias|FitToEm|Compacted|GenTags|ModificationTime|DupEnc)")
+DROP_RE = re.compile(r"^(WinInfo|DisplaySize|AntiAlias|FitToEm|Compacted|GenTags|ModificationTime|DupEnc|Copyright)")
 SPLINESET_RE = re.compile(r"^(Fore|Back|SplineSet|Grid)\s*$")
 STARTCHAR_RE = re.compile(r"^StartChar:\s*(\S+)\s*$")
 ENCODING_RE = re.compile(r"^Encoding:\s*(\d+)\s+(\-?\d+)\s*(\d*)\s*$")
