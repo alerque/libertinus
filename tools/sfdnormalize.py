@@ -3,11 +3,12 @@
 # SFD normalizer (discards GUI information from SFD files)
 # (c) 2004, 2005 Stepan Roh (PUBLIC DOMAIN)
 # (c) 2009 Alexey Kryukov
-# (c) 2018 Khaled Hosny
+# (c) 2018-2020 Khaled Hosny
 # (c) 2018 Skef Iterum
+# (c) 2020 Waldir Pimenta
 #
 # usage: ./sfdnormalize.py sfd_file(s)
-#  will rewrites files in place
+#  will rewrite files in place
 
 # changes done:
 #   SplineFontDB - fix version number on 3.0
@@ -17,6 +18,7 @@
 #   FitToEm - discarded
 #   Compacted - discarded
 #   GenTags - discarded
+#   Copyright - discarded
 #   Flags   - discarded O (open), H (changed since last hinting - often irrelevant)
 #   Refer   - changed S (selected) to N (not selected)
 #   Fore, Back, SplineSet, Grid
@@ -27,6 +29,7 @@
 #   Validated - discarded
 #   Empty glyph positions dropped
 #   Hinting dropped
+#   End-of-line whitespace dropped
 
 # !!! Always review changes done by this utility !!!
 
@@ -39,7 +42,7 @@ import sys, re
 fealines_tok = '__X_FEALINES_X__'
 
 FONT_RE = re.compile(r"^SplineFontDB:\s(\d+\.?\d*)")
-DROP_RE = re.compile(r"^(WinInfo|DisplaySize|AntiAlias|FitToEm|Compacted|GenTags|ModificationTime|DupEnc)")
+DROP_RE = re.compile(r"^(WinInfo|DisplaySize|AntiAlias|FitToEm|Compacted|GenTags|ModificationTime|DupEnc|Copyright)")
 SPLINESET_RE = re.compile(r"^(Fore|Back|SplineSet|Grid)\s*$")
 STARTCHAR_RE = re.compile(r"^StartChar:\s*(\S+)\s*$")
 ENCODING_RE = re.compile(r"^Encoding:\s*(\d+)\s+(\-?\d+)\s*(\d*)\s*$")
@@ -50,7 +53,7 @@ DROP_FLAGS_RE = re.compile(r"^(Flags:.*?)[HO](.*)$")
 POINT_RE = re.compile(r"(\s+[mcl]+?\s)(\d+)(\s*)(,-?\d+,-?\d+)?(x.*.)?$")
 SELECTED_REF_RE = re.compile(r"(-?\d+\s+)S(\s+-?\d+)")
 OTFFEATNAME_RE = re.compile(r"OtfFeatName:\s*'(....)'\s*(\d+)\s*(.*)$")
-HINTS_RE =  re.compile(r"^[HVD]Stem2?: ")
+HINTS_RE = re.compile(r"^[HVD]Stem2?: ")
 FEASUBPOS_RE = re.compile(r"^(Position|PairPos|LCarets|Ligature|Substitution|MultipleSubs|AlternateSubs)2?:")
 
 fealine_order = {'Position': 1, 'PairPos': 2, 'LCarets': 3, 'Ligature': 4,
@@ -112,6 +115,8 @@ def process_sfd_file(sfdname, outname):
             if proc.test(EMPTY_FLAGS_RE, fl):
                 fl = fp.readline()
                 continue
+
+        fl = fl.replace(' \n', '\n')
 
         if proc.test(SPLINESET_RE, fl):
             in_spline_set = True;
@@ -205,7 +210,7 @@ def process_sfd_file(sfdname, outname):
         elif proc.test(BDFCHAR_RE, fl):
             cur_gid = int(proc.match().group(1))
             bdf_char = { 'gid' : cur_gid, 'lines' : [] }
-            bdf_char['lines'].append("BDFChar: " + str(cur_gid) +  proc.match().group(2) + "\n")
+            bdf_char['lines'].append("BDFChar: " + str(cur_gid) + proc.match().group(2) + "\n")
             bdf[cur_gid] = bdf_char
 
         elif proc.test(OTFFEATNAME_RE, fl):
