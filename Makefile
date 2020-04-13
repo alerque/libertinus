@@ -106,10 +106,10 @@ preview.pdf: preview.svg
 .PHONY: dist
 dist: check dist-clean $(OTF) $(PDF) $(SVG)
 	$(info         DIST  $(DIST).zip)
-	install -Dm644 $(OTF) -t $(DIST)
-	install -Dm644 {OFL,FONTLOG,AUTHORS,CONTRIBUTORS}.txt -t $(DIST)
-	install -Dm644 {README,CONTRIBUTING}.md -t $(DIST)
-	install -Dm644 $(PDF) $(SVG) -t $(DIST)/$(DOCSDIR)
+	install -Dm644 -t $(DIST) $(OTF)
+	install -Dm644 -t $(DIST) {OFL,FONTLOG,AUTHORS,CONTRIBUTORS}.txt
+	install -Dm644 -t $(DIST) {README,CONTRIBUTING}.md
+	install -Dm644 -t $(DIST)/$(DOCSDIR) $(PDF) $(SVG)
 	zip -rq $(DIST).zip $(DIST)
 
 .PHONY: dist-clean
