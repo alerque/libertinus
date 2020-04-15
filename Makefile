@@ -1,107 +1,124 @@
-NAME=Libertinus
-VERSION=6.11
+NAME = Libertinus
+VERSION = 6.11
 
-DIST=$(NAME)-$(VERSION)
+# Tip: this build can run multiple jobs in parrallel to greatly reduce build
+# time. You can `export MAKEFLAGS="-j$(shell nproc)" or invoke make with an
+# argument manually setting the number of jobs to run: `make -j6`
+MAKEFLAGS += -s -Otarget
+SHELL = bash
 
-SOURCEDIR=sources
-BUILDDIR=build
-GSUB=$(SOURCEDIR)/features/gsub.fea
-DOC=documentation
-TOOLS=tools
+DIST = $(NAME)-$(VERSION)
 
-PY?=python3
-BUILD=$(TOOLS)/build.py
-NORMALIZE=$(TOOLS)/sfdnormalize.py
+SOURCEDIR = sources
+BUILDDIR = build
+GSUB = $(SOURCEDIR)/features/gsub.fea
+DOCSDIR = documentation
+TOOLSDIR = tools
 
-NULL=
+PY ?= python3
+BUILD = $(TOOLSDIR)/build.py
+NORMALIZE = $(TOOLSDIR)/sfdnormalize.py
 
-FONTS=Sans-Regular \
-       Sans-Bold \
-       Sans-Italic \
-       Serif-Regular \
-       Serif-Semibold \
-       Serif-Bold \
-       Serif-Italic \
-       Serif-SemiboldItalic \
-       Serif-BoldItalic \
-       SerifDisplay-Regular \
-       Math-Regular \
-       SerifInitials-Regular \
-       Mono-Regular \
-       Keyboard-Regular \
-       $(NULL)
+# Default to explicitly enumerating fonts to build;
+# use `make ALLFONTS=true ...` to build all *.sfd files in the source tree or
+# use `make FONTS="Face-Style" ...` to make targets for only particular font(s).
+ALLFONTS ?= false
 
-SFD=$(FONTS:%=$(SOURCEDIR)/$(NAME)%.sfd)
-NRM=$(FONTS:%=$(BUILDDIR)/$(NAME)%.nrm)
-CHK=$(FONTS:%=$(BUILDDIR)/$(NAME)%.chk)
-OTF=$(FONTS:%=$(NAME)%.otf)
-SVG=preview.svg
-PDF=$(DOC)/Opentype-Features.pdf $(DOC)/Sample.pdf $(DOC)/Math-Sample.pdf
+# Canonical list of fonts face / and style combinations to build;
+# note that order here will be used for some documentation
+SERIF_STYLES := Regular Semibold Bold Italic SemiboldItalic BoldItalic
+SANS_STYLES  := Regular Bold Italic
+REGULAR_ONLY := Math Mono Keyboard SerifDisplay SerifInitials
+
+ifeq ($(ALLFONTS),true)
+	FONTS := $(notdir $(basename $(wildcard $(SOURCEDIR)/*.sfd)))
+else
+	FONTS ?= $(foreach STYLE,$(SERIF_STYLES),$(NAME)Serif-$(STYLE)) \
+			 $(foreach STYLE,$(SANS_STYLES),$(NAME)Sans-$(STYLE)) \
+			 $(foreach FACE,$(REGULAR_ONLY),$(NAME)$(FACE)-Regular)
+endif
+
+# Generate lists of various intermediate forms
+SFD = $(addsuffix .sfd,$(addprefix $(SOURCEDIR)/,$(FONTS)))
+NRM = $(addsuffix .nrm,$(addprefix $(BUILDDIR)/,$(FONTS)))
+CHK = $(addsuffix .chk,$(addprefix $(BUILDDIR)/,$(FONTS)))
+
+# Generate list of final output forms
+OTF = $(addsuffix .otf,$(FONTS))
+SVG = preview.svg
+PDF = $(DOCSDIR)/Opentype-Features.pdf $(DOCSDIR)/Sample.pdf $(DOCSDIR)/Math-Sample.pdf
 
 export SOURCE_DATE_EPOCH ?= 0
 
 .SECONDARY:
+.ONESHELL:
 
+.PHONY: all otf doc normalize check
 all: otf $(SVG)
-
 otf: $(OTF)
 doc: $(PDF)
 normalize: $(NRM)
 check: $(CHK)
 
-
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
-$(BUILDDIR)/%.otl.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD)
-	@echo "      BUILD  $(*F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(BUILD)                                                        \
-		--input=$<                                                     \
-		--output=$@                                                    \
-		--version=$(VERSION)                                           \
-		$(if $(call nofea,$@),,--feature-file=$(GSUB))                 \
-		;
+$(BUILDDIR):
+	mkdir -p $@
+
+$(BUILDDIR)/%.otl.otf: $(SOURCEDIR)/%.sfd $(GSUB) $(BUILD) | $(BUILDDIR)
+	$(info       BUILD  $(*F))
+	$(PY) $(BUILD) \
+		--input=$< \
+		--output=$@ \
+		--version=$(VERSION) \
+		$(if $(call nofea,$@),,--feature-file=$(GSUB))
 
 $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
-	@echo "       HINT  $(*F)"
-	@rm -rf $@.log
-	@psautohint $< -o $@ --log $@.log
+	$(info        HINT  $(*F))
+	rm -rf $@.log
+	psautohint $< -o $@ --log $@.log
 
 $(BUILDDIR)/%.subr.otf: $(BUILDDIR)/%.hint.otf
-	@echo "       SUBR  $(*F)"
-	@tx -cff +S +b $< $(@D)/$(*F).cff 2>/dev/null
-	@sfntedit -a CFF=$(@D)/$(*F).cff $< $@
+	$(info        SUBR  $(*F))
+	tx -cff +S +b $< $(@D)/$(*F).cff 2> /dev/null
+	sfntedit -a CFF=$(@D)/$(*F).cff $< $@
 
 %.otf: $(BUILDDIR)/%.subr.otf
-	@cp $< $@
+	cp $< $@
 
-$(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE)
-	@echo "  NORMALIZE  $(*F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(NORMALIZE) $< $@
-	@if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
+$(BUILDDIR)/%.nrm: $(SOURCEDIR)/%.sfd $(NORMALIZE) | $(BUILDDIR)
+	$(info   NORMALIZE  $(*F))
+	$(PY) $(NORMALIZE) $< $@
+	if [ "`diff -u $< $@`" ]; then cp $@ $<; touch $@; fi
 
-$(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE)
-	@echo "  NORMALIZE  $(*F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(NORMALIZE) $< $@
-	@diff -u $< $@ || (rm -rf $@ && false)
+$(BUILDDIR)/%.chk: $(SOURCEDIR)/%.sfd $(NORMALIZE) | $(BUILDDIR)
+	$(info   NORMALIZE  $(*F))
+	$(PY) $(NORMALIZE) $< $@
+	diff -u $< $@ || (rm -rf $@ && false)
 
-%.svg: $(DOC)/%.tex $(OTF)
-	@echo "        SVG  $(*F)"
-	@xelatex --interaction=batchmode -output-directory=$(BUILDDIR) $< 1>/dev/null || (cat $(BUILDDIR)/$(*F).log && false)
-	@mutool draw -q -r 200 -o $@ $(BUILDDIR)/$(*F).pdf
+preview.svg: $(DOCSDIR)/preview.tex $(OTF) | $(BUILDDIR)
+	$(info         SVG  $@)
+	xelatex --interaction=batchmode \
+		-output-directory=$(BUILDDIR) \
+		$< 1> /dev/null || (cat $(BUILDDIR)/$(*F).log && false)
 
-dist: check $(OTF) $(PDF) $(SVG)
-	@echo "       DIST  $(DIST).zip"
-	@rm -rf $(DIST) $(DIST).zip
-	@mkdir -p $(DIST)/$(DOC)
-	@cp $(OTF) $(DIST)
-	@cp $(PDF) $(SVG) $(DIST)/$(DOC)
-	@cp OFL.txt FONTLOG.txt AUTHORS.txt CONTRIBUTORS.txt $(DIST)
-	@cp README.md $(DIST)/README.txt
-	@cp CONTRIBUTING.md $(DIST)/CONTRIBUTING.txt
-	@zip -rq $(DIST).zip $(DIST)
+preview.pdf: preview.svg
+	$(info         PDF  $@)
+	mutool draw -q -r 200 -o $< $@
 
-clean:
-	@rm -rf $(DIST) $(DIST).zip $(CHK) $(MIS) $(FEA) $(NRM) $(PDF) $(OTF)
+.PHONY: dist
+dist: check dist-clean $(OTF) $(PDF) $(SVG)
+	$(info         DIST  $(DIST).zip)
+	install -Dm644 -t $(DIST) $(OTF)
+	install -Dm644 -t $(DIST) {OFL,FONTLOG,AUTHORS,CONTRIBUTORS}.txt
+	install -Dm644 -t $(DIST) {README,CONTRIBUTING}.md
+	install -Dm644 -t $(DIST)/$(DOCSDIR) $(PDF) $(SVG)
+	zip -rq $(DIST).zip $(DIST)
+
+.PHONY: dist-clean
+dist-clean:
+	rm -rf $(DIST) $(DIST).zip
+
+.PHONY: clean
+clean: dist-clean
+	rm -rf $(CHK) $(MIS) $(FEA) $(NRM) $(PDF) $(OTF)
