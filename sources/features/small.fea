@@ -1,19 +1,7 @@
-lookup superiors {
-#include "superiors.fea"
-} superiors;
-
-lookup inferiors {
-#include "inferiors.fea"
-} inferiors;
-
 feature sups {
-  lookup superiors;
+#include "superiors.fea"
 } sups;
 
 feature subs {
-  lookup inferiors;
+#include "inferiors.fea"
 } subs;
-
-feature sinf {
-  lookup inferiors;
-} sinf;
