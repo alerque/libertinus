@@ -80,8 +80,7 @@ $(BUILDDIR)/%.hint.otf: $(BUILDDIR)/%.otl.otf
 
 $(BUILDDIR)/%.subr.otf: $(BUILDDIR)/%.hint.otf
 	$(info        SUBR  $(*F))
-	tx -cff +S +b $< $(@D)/$(*F).cff 2> /dev/null
-	sfntedit -a CFF=$(@D)/$(*F).cff $< $@
+	$(PY) -m cffsubr -o $@ $<
 
 %.otf: $(BUILDDIR)/%.subr.otf
 	cp $< $@
