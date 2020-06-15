@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/alif-type/libertinus.svg?branch=master)](https://travis-ci.com/alif-type/libertinus)
+[![Build Status](https://travis-ci.com/alif-type/libertinus.svg?branch=main)](https://travis-ci.com/alif-type/libertinus)
 
 Libertinus fonts
 ================
