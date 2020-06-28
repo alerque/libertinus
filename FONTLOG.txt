@@ -45,6 +45,19 @@ https://github.com/alif-type/libertinus
 ChangeLog
 ---------
 
+28 June 2020 (Khaled Hosny) <Libertinus> Version 6.12
+- Increase right side bearing of math italic R’s (#304).
+- Add glyph variants for floor and ceiling, to make their sizing consistent
+  with other delimiters.
+- Remove kerning and other glyph positioning features, combining marks and
+  other non-keycap glyphs from Libertinus Keyboard font.
+- Fix size and shape of U+2639, U+263A and U+263B (frowning & smiling faces).
+- Add “smcp”/“c2sc” variants for letters with macron (#303).
+- Make U+2223-2226 the same hight as bar (#324).
+- Drop “sinf” feature, it just duplicates “subs” feature.
+- Improve sizing and spacing of math over accents.
+- Building the fonts no longer use FontForge.
+
 8 March 2020 (Khaled Hosny) <Libertinus> Version 6.11
 - Added turned capital F (U+2132) to Libertinus Serif Regular.
 - Fix advance width for Serbian alternate U+0431 in Libertinus Serif Semibold.
