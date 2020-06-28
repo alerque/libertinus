@@ -1,7 +1,7 @@
 NAME = Libertinus
 VERSION = 6.12
 
-# Tip: this build can run multiple jobs in parrallel to greatly reduce build
+# Tip: this build can run multiple jobs in parallel to greatly reduce build
 # time. You can `export MAKEFLAGS="-j$(shell nproc)" or invoke make with an
 # argument manually setting the number of jobs to run: `make -j6`
 MAKEFLAGS += -s -Otarget
