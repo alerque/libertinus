@@ -21,11 +21,17 @@ See the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for instructions on how to bui
 
 ## History
 
-The Libertinus fonts project is a fork of the [Linux Libertine][1] and Linux Biolinum fonts.
-It started as an OpenType math companion of the Libertine font family, and has grown to a full fork to address some of the bugs in the fonts.
-Thanks to Frédéric Wang for coming up with the name Libertinus.
+The Libertinus fonts project began as a fork of the [Linux Libertine][1] and Linux Biolinum fonts.
+The original impetus was to add an OpenType math companion to the Libertine font family.
+Over time it grew into to a full-fledged fork addressing many of the bugs in the Libertine fonts.
 
 Libertinus was forked from the [5.3.0 (2012-07-02) release][2] of Linux Libertine fonts.
+Thanks to Frédéric Wang for coming up with the name Libertinus.
+
+Thanks Khaled Hosny who was the primary contributor and maintainer from 2012–2020.
+If you like this font consider sponsoring him.
+
+In 2020, Khaled passed the role of maintainer on to Caleb Maclennan.
 
 ## License
 
