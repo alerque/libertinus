@@ -1,6 +1,6 @@
 # Libertinus Font Family
 
-[![Build Status](https://travis-ci.com/alif-type/libertinus.svg?branch=main)](https://travis-ci.com/alif-type/libertinus)
+[![Build Status](https://travis-ci.com/alerque/libertinus.svg?branch=main)](https://travis-ci.com/alerque/libertinus)
 
 ![Sample of Libertinus Font Family](preview.svg)
 

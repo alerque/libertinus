@@ -41,7 +41,7 @@ class Font:
                           u"The Libertinus Project Authors.")
         major, minor = version.split(".")
         info.versionMajor, info.versionMinor = int(major), int(minor) * 10
-        info.openTypeNameManufacturerURL = "https://github.com/alif-type/libertinus"
+        info.openTypeNameManufacturerURL = "https://github.com/alerque/libertinus"
 
     def _draw_over_under_line(self, name, widths):
         font = self._font
