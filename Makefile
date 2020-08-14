@@ -14,7 +14,6 @@ DOCSDIR = documentation
 TOOLSDIR = tools
 
 BUILD = $(TOOLSDIR)/build.py
-NORMALIZE = $(TOOLSDIR)/sfdnormalize.py
 
 SERIF_STYLES := Regular Semibold Bold Italic SemiboldItalic BoldItalic
 SANS_STYLES  := Regular Bold Italic
