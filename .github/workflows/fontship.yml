@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-artifact@v2-preview
         with:
           name: ${{ steps.fontship.outputs.DISTDIR }}
-          path: ${{ steps.fontship.outputs.DISTDIR }}/**
+          path: ${{ steps.fontship.outputs.DISTDIR }}.zip
 
   publish:
     name: Publish
