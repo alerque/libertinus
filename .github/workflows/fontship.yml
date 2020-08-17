@@ -23,19 +23,12 @@ jobs:
         with:
           name: ${{ steps.fontship.outputs.DISTDIR }}
           path: ${{ steps.fontship.outputs.DISTDIR }}.zip
-
-  publish:
-    name: Publish
-    runs-on: ubuntu-20.04
-    needs:
-      - fontship
-    if: startsWith(github.ref, 'refs/tags/v')
-    steps:
       - name: Release
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            ${{ needs.fontship.outputs.DISTDIR }}.zip
-            ${{ needs.fontship.outputs.DISTDIR }}.tar.xz
+            ${{ steps.fontship.outputs.DISTDIR }}.zip
+            ${{ steps.fontship.outputs.DISTDIR }}.tar.xz
         env:
           GITHUB_TOKEN: ${{ github.token }}
