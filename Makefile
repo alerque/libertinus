@@ -52,6 +52,6 @@ preview.svg: $(DOCSDIR)/preview.pdf
 
 install-dist: install-dist-$(PROJECT)
 
-install-dist-$(PROJECT): preview.svg
+install-dist-$(PROJECT): | preview.svg
 	install -Dm644 -t "$(DISTDIR)/" preview.svg AUTHORS.txt CONTRIBUTING.md CONTRIBUTORS.txt FONTLOG.txt
 	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf
