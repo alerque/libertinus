@@ -26,6 +26,8 @@ INSTANCES = $(foreach STYLE,$(SERIF_STYLES),$(PROJECT)Serif-$(STYLE)) \
 			$(foreach STYLE,$(SANS_STYLES),$(PROJECT)Sans-$(STYLE)) \
 			$(foreach FACE,$(REGULAR_ONLY),$(PROJECT)$(FACE)-Regular)
 
+default: all
+
 nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
 define otf_instance_template =
