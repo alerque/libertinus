@@ -49,3 +49,9 @@ $(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.tex $(STATICOTFS) | $(BUILDDIR)
 preview.svg: $(DOCSDIR)/preview.pdf
 	set -x
 	mutool draw -q -r 200 -F svg $< 1 > $@
+
+install-dist: install-dist-$(PROJECT)
+
+install-dist-$(PROJECT): preview.svg
+	install -Dm644 -t "$(DISTDIR)/" preview.svg AUTHORS.txt CONTRIBUTING.md CONTRIBUTORS.txt FONTLOG.txt
+	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf
