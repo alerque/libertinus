@@ -41,3 +41,11 @@ $$(BUILDDIR)/$1-%-instance.otf: $$(BUILDDIR)/$1-%-static.otf
 	$$(PYTHON) -m cffsubr -o $$@ $$<
 
 endef
+
+$(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.tex $(STATICOTFS) | $(BUILDDIR)
+	xelatex --interaction=batchmode -output-directory=$(BUILDDIR) $<
+	cp $(BUILDDIR)/$(@F) $@
+
+preview.svg: $(DOCSDIR)/preview.pdf
+	set -x
+	mutool draw -q -r 200 -F svg $< 1 > $@
