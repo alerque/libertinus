@@ -1,16 +1,20 @@
-on: [push]
+name: Fontship
+
+on: [push, pull_request]
 
 jobs:
+
   fontship:
-    runs-on: ubuntu-latest
     name: Fontship
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
       - name: Fetch tags
-        run: git fetch --prune --tags
+        run: |
+          git fetch --prune --tags ||:
       - name: Fontship make
         id: fontship
         uses: theleagueof/fontship@latest
@@ -21,17 +25,17 @@ jobs:
           path: ${{ steps.fontship.outputs.DISTDIR }}/**
 
   publish:
+    name: Publish
+    runs-on: ubuntu-20.04
     needs:
       - fontship
-    if: contains(github.ref, 'refs/tags/')
-    runs-on: ubuntu-latest
-    name: Publish
+    if: startsWith(github.ref, 'refs/tags/v')
     steps:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
             ${{ needs.fontship.outputs.DISTDIR }}.zip
-            ${{ needs.fontship.outputs.DISTDIR }}.tar.bz2
+            ${{ needs.fontship.outputs.DISTDIR }}.tar.xz
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
