@@ -15,6 +15,9 @@ The Libertinus family consists of:
 
 Downloads containing all the font files and documentation can be found on the [Releases][3] page of the project on GitHub.
 
+*Note*: This repository's default branch has been filtered after the v6.12 release to remove all of the binary OTF and other generated files from the commit history.
+If you are cloning this repository just for the sources and don't wish to download ~300MB worth of every font version released, please add `--single-branch` to your Git clone command.
+
 ## Contributing
 
 Community contributions are welcome.
