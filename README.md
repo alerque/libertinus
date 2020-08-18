@@ -1,6 +1,6 @@
 # Libertinus Font Family
 
-[![Build Status](https://travis-ci.com/alerque/libertinus.svg?branch=main)](https://travis-ci.com/alerque/libertinus)
+[![Fontship Build Status](https://img.shields.io/github/workflow/status/alerque/libertinus/Fontship?label=Fontship&logo=Github)](https://github.com/alerque/libertinus/actions?workflow=Fontship)
 
 ![Sample of Libertinus Font Family](preview.svg)
 
