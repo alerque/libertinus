@@ -11,9 +11,8 @@ from sfdLib.utils import GLYPHCLASS_KEY, MATH_KEY
 
 
 class Font:
-    def __init__(self, filename, features, version):
+    def __init__(self, filename, features):
         self._font = font = ufoLib2.Font(validate=False)
-        self._version = version
 
         parser = SFDParser(filename, font, ignore_uvs=False, ufo_anchors=False,
             ufo_kerning=False, minimal=True)
@@ -32,15 +31,12 @@ class Font:
             font.features.text = feafile.getvalue()
 
     def _update_metadata(self):
-        version = self._version
         font = self._font
         info = font.info
 
         year = datetime.date.today().year
         info.copyright = (u"Copyright © 2012-%s " % year +
                           u"The Libertinus Project Authors.")
-        major, minor = version.split(".")
-        info.versionMajor, info.versionMinor = int(major), int(minor) * 10
         info.openTypeNameManufacturerURL = "https://github.com/alerque/libertinus"
 
     def _draw_over_under_line(self, name, widths):
@@ -267,11 +263,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input", required=True)
     parser.add_argument("-o", "--output", required=True)
-    parser.add_argument("-v", "--version", required=True)
     parser.add_argument("-f", "--feature-file", required=False)
 
     args = parser.parse_args()
-    font = Font(args.input, args.feature_file, args.version)
+    font = Font(args.input, args.feature_file)
     font.generate(args.output)
 
 

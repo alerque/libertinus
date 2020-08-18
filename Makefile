@@ -36,7 +36,6 @@ $$(BUILDDIR)/$1-%-static.otf: sources/$1-%.sfd $(GSUB) $(BUILD) | $$(BUILDDIR)
 	$$(PYTHON) $(BUILD) \
 		--input=$$< \
 		--output=$$@ \
-		--version=$$(FontVersion) \
 		$$(if $$(call nofea,$$@),,--feature-file=$(GSUB))
 
 $$(BUILDDIR)/$1-%-instance.otf: $$(BUILDDIR)/$1-%-static.otf
