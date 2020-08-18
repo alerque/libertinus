@@ -13,7 +13,7 @@ The Libertinus family consists of:
 
 ## Download
 
-Downloads containing all the font files and documentation can be downloaded from the [Releases][3] page of the project on GitHub.
+Downloads containing all the font files and documentation can be found on the [Releases][3] page of the project on GitHub.
 
 ## Contributing
 
@@ -27,12 +27,12 @@ Libertinus was forked from the [5.3.0 (2012-07-02) release][2] of Linux Libertin
 The original impetus was to add an OpenType math companion to the Libertine font family.
 Over time it grew into to a full-fledged fork addressing many of the bugs in the Libertine fonts.
 
-Thanks to Frédéric Wang for coming up with the name Libertinus.
+Hat-tip to [Frédéric Wang][fred-wang] for coming up with the name "Libertinus".
 
-Thanks to Khaled Hosny who was the primary contributor and maintainer from 2012–2020.
-If you like this font consider sponsoring him!
+Thanks to [Khaled Hosny][khaledhosny] who was the primary contributor and maintainer from 2012–2020.
+If you like this font please thank and even consider sponsoring him!
 
-In 2020, Khaled passed the role of maintainer on to Caleb Maclennan.
+In 2020, Khaled passed the role of maintainer on to [Caleb Maclennan][alerque].
 
 ## License
 
@@ -42,3 +42,6 @@ See the file [OFL.txt](OFL.txt) for details.
 [1]: https://en.wikipedia.org/wiki/Linux_Libertine
 [2]: https://sourceforge.net/projects/linuxlibertine/files/linuxlibertine/
 [3]: https://github.com/alerque/libertinus/releases
+[khaledhosny]: https://github.com/khaledhosny
+[alerque]: https://github.com/alerque
+[fred-wang]: https://github.com/fred-wang
