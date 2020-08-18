@@ -1,43 +1,11 @@
 # Libertinus Font Family
 
-[![Fontship Build Status](https://img.shields.io/github/workflow/status/alerque/libertinus/Fontship?label=Fontship&logo=Github)](https://github.com/alerque/libertinus/actions?workflow=Fontship)
+----
 
-![Sample of Libertinus Font Family](preview.svg)
+## NOTICE!
 
-The family consists of:
+This is a legacy branch that contains all the original commits as originally released by [Alif Type](https://alif-type.github.io/). All of the v6.x tags seen on the [Releases](https://github.com/alerque/libertinus/releases) page are also 100% original.
 
-* Libertinus Serif: forked from *Linux Libertine*.
-* Libertinus Sans: forked from *Linux Biolinum*.
-* Libertinus Mono: forked from *Linux Libertine Mono*.
-* Libertinus Math: an OpenType math font for use in OpenType math-capable applications (like LuaTeX, XeTeX, or MS Word 2007+).
+Please see the [new default branch](https://github.com/alerque/libertinus) for current project status. Note the new branch has been filtered to remove all of the binary OTF, WOFF, and WOFF2 files found in the orginal history, bringing the size of a Git clone down from ~300Mb to ~30Mb. If you do clone the repository and want only the new branch, consider using `git clone --single-branch`.
 
-## Download
-
-A zip file containing the font files can be downloaded from the “[Releases][3]” page of the project on GitHub.
-
-## Contributing
-
-See the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for instructions on how to build the fonts and contribute any changes.
-
-## History
-
-The Libertinus fonts project began as a fork of the [Linux Libertine][1] and Linux Biolinum fonts.
-The original impetus was to add an OpenType math companion to the Libertine font family.
-Over time it grew into to a full-fledged fork addressing many of the bugs in the Libertine fonts.
-
-Libertinus was forked from the [5.3.0 (2012-07-02) release][2] of Linux Libertine fonts.
-Thanks to Frédéric Wang for coming up with the name Libertinus.
-
-Thanks Khaled Hosny who was the primary contributor and maintainer from 2012–2020.
-If you like this font consider sponsoring him.
-
-In 2020, Khaled passed the role of maintainer on to Caleb Maclennan.
-
-## License
-
-All fonts in the Libertinus family are available under the terms of the Open Font License, version 1.1.
-See the included [OFL.txt](OFL.txt) for details.
-
-[1]: https://en.wikipedia.org/wiki/Linux_Libertine
-[2]: https://sourceforge.net/projects/linuxlibertine/files/linuxlibertine/
-[3]: https://github.com/alerque/libertinus/releases
+For the exact state of the repository when it was passed off, browse the state at commit [85d8ed1](https://github.com/alerque/libertinus/tree/85d8ed1d36d45b2e5ef7201f9d5e7740c1eddb7c).
