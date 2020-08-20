@@ -15,10 +15,13 @@ The Libertinus family consists of:
 
 Downloads containing all the ready to use font files and documentation can be found on the [Releases][3] page of the project on GitHub.
 
+To preview changes in between tagged releases, the fonts resulting from each change can be downloaded as artifacts attached to each commit under the [Fontship workflow in the Actions tab](https://github.com/alerque/libertinus/actions?query=workflow%3AFontship).
+
 ## Building
 
 Font files for this project are generated using [Fontship][fontship].
-To build your own copy from scratch or modify the sources and generate your own fonts, simply clone this repository, then run:
+Several methods are available for installation including a simple one-liner with no installation [using Docker][fontship-docker-setup].
+Once equipped with Fontship, to build your own copy of this font project from scratch or to modify the sources and generate your own fonts, simply clone this repository, then run:
 
 ```console
 $ fontship make
@@ -58,3 +61,4 @@ See the file [OFL.txt](OFL.txt) for details.
 [alerque]: https://github.com/alerque
 [fred-wang]: https://github.com/fred-wang
 [fontship]: https://github.com/theleagueof/fontship
+[fontship-docker-setup]: https://github.com/theleagueof/fontship#docker-setup
