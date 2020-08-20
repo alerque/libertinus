@@ -13,10 +13,19 @@ The Libertinus family consists of:
 
 ## Download
 
-Downloads containing all the font files and documentation can be found on the [Releases][3] page of the project on GitHub.
+Downloads containing all the ready to use font files and documentation can be found on the [Releases][3] page of the project on GitHub.
 
-*Note*: This repository's default branch has been filtered after the v6.12 release to remove all of the binary OTF and other generated files from the commit history.
-If you are cloning this repository just for the sources and don't wish to download ~300MB worth of every font version released, please add `--single-branch` to your Git clone command.
+## Building
+
+Font files for this project are generated using [Fontship][fontship].
+To build your own copy from scratch or modify the sources and generate your own fonts, simply clone this repository, then run:
+
+```console
+$ fontship make
+```
+
+*Note*: This repository’s default branch was filtered after the v6.12 release to remove all of the binary OTF and other generated files from the commit history.
+If you are cloning this repository just for the sources and don’t wish to download ~300MB worth of every font change ever built, please add `--single-branch` to your Git clone command.
 
 ## Contributing
 
@@ -30,7 +39,7 @@ Libertinus was forked from the [5.3.0 (2012-07-02) release][2] of Linux Libertin
 The original impetus was to add an OpenType math companion to the Libertine font family.
 Over time it grew into to a full-fledged fork addressing many of the bugs in the Libertine fonts.
 
-Hat-tip to [Frédéric Wang][fred-wang] for coming up with the name "Libertinus".
+Hat-tip to [Frédéric Wang][fred-wang] for coming up with the name “Libertinus”.
 
 Thanks to [Khaled Hosny][khaledhosny] who was the primary contributor and maintainer from 2012–2020.
 If you like this font please thank and even consider sponsoring him!
@@ -48,3 +57,4 @@ See the file [OFL.txt](OFL.txt) for details.
 [khaledhosny]: https://github.com/khaledhosny
 [alerque]: https://github.com/alerque
 [fred-wang]: https://github.com/fred-wang
+[fontship]: https://github.com/theleagueof/fontship
