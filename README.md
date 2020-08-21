@@ -1,6 +1,8 @@
 # Libertinus Font Family
 
-[![Fontship Build Status](https://img.shields.io/github/workflow/status/alerque/libertinus/Fontship?label=Fontship&logo=Github)](https://github.com/alerque/libertinus/actions?workflow=Fontship)
+[![Fontship Build Status](https://img.shields.io/github/workflow/status/alerque/libertinus/Fontship?label=Fontship&logo=Github)](https://github.com/alerque/libertinus/actions?workflow=Fontship)<br />
+[![Latest Release](https://img.shields.io/github/v/release/alerque/libertinus?label=Release&logo=Github)](https://github.com/alerque/libertinus/releases/latest)<br />
+[![All Releases](https://img.shields.io/github/downloads/alerque/libertinus/total)](https://github.com/alerque/libertinus/releases)
 
 ![Sample of Libertinus Font Family](preview.svg)
 
