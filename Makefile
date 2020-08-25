@@ -32,7 +32,7 @@ nofea=$(strip $(foreach f,Initials Keyboard Mono,$(findstring $f,$1)))
 
 define otf_instance_template =
 
-$$(BUILDDIR)/$1-%-instance.otf: sources/$1-%.sfd $(GSUB) $(BUILD) | $$(BUILDDIR)
+$$(BUILDDIR)/$1-%-instance.otf: $$(BUILDDIR)/$1-%-normalized.sfd $(GSUB) $(BUILD)
 	$$(PYTHON) $(BUILD) \
 		--input=$$< \
 		--output=$$@ \
