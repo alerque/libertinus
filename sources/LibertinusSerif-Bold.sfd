@@ -298,7 +298,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR" "right" "'mark' Right"
-BeginChars: 1114410 2443
+BeginChars: 1114410 2445
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -61540,6 +61540,53 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 1617 649 N 0.617822 0 0 0.60853 -19.4036 365.302 2
+EndChar
+
+StartChar: u1D106
+Encoding: 119046 119046 2443
+Width: 567
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+281 -233 m 1
+ 221 -233 l 1
+ 221 698 l 1
+ 281 698 l 1
+ 281 -233 l 1
+120 -233 m 1
+ 60 -233 l 1
+ 60 698 l 1
+ 120 698 l 1
+ 180 698 l 1
+ 180 -233 l 1
+ 120 -233 l 1
+EndSplineSet
+Refer: 18 58 N 1 0 0 1 301 0 2
+Colour: 110000
+EndChar
+
+StartChar: u1D107
+Encoding: 119047 119047 2444
+Width: 607
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+286 -233 m 1
+ 286 698 l 1
+ 346 698 l 1
+ 346 -233 l 1
+ 286 -233 l 1
+447 -233 m 1
+ 387 -233 l 1
+ 387 698 l 1
+ 447 698 l 1
+ 507 698 l 1
+ 507 -233 l 1
+ 447 -233 l 1
+EndSplineSet
+Refer: 18 58 N -1 0 0 1 266 0 2
 EndChar
 EndChars
 EndSplineFont
