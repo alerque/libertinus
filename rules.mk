@@ -1,6 +1,5 @@
 STATICTTF =
 STATICWOFF =
-STATICWOFF2 =
 
 GSUB = sources/features/gsub.fea
 DOCSDIR = documentation
