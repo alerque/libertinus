@@ -234,7 +234,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "acute"""  "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "below" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0"
-BeginChars: 1114386 2359
+BeginChars: 1114386 2360
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -739,8 +739,8 @@ GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 256 46 N 1 0 0 1 8 0 2
-Refer: 256 46 N 1 0 0 1 8 312 2
+Refer: 256 46 N 1 0 0 1 8 11 2
+Refer: 256 46 N 1 0 0 1 8 310 2
 EndChar
 
 StartChar: less
@@ -5288,11 +5288,11 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-66 45 m 0
- 66 76 91 101 122 101 c 0
- 153 101 178 76 178 45 c 0
- 178 15 153 -10 122 -10 c 0
- 91 -10 66 15 66 45 c 0
+61.984375 48.9638671875 m 0
+ 61.984375 82.1875 88.77734375 108.98046875 122 108.98046875 c 0
+ 155.22265625 108.98046875 182.015625 82.1875 182.015625 48.9638671875 c 0
+ 182.015625 16.8125 155.22265625 -9.98046875 122 -9.98046875 c 0
+ 88.77734375 -9.98046875 61.984375 16.8125 61.984375 48.9638671875 c 0
 EndSplineSet
 EndChar
 
@@ -61047,6 +61047,16 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 445 331 N 0.611288 0 0 0.611288 16.0948 365.037 2
+EndChar
+
+StartChar: uniA789
+Encoding: 42889 42889 2359
+Width: 183
+Flags: W
+LayerCount: 2
+Fore
+Refer: 256 46 N 0.9 0 0 0.9 -18.6799 265.45 2
+Refer: 256 46 N 0.9 0 0 0.9 -18.6799 66.65 2
 EndChar
 EndChars
 EndSplineFont
