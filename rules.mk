@@ -41,3 +41,15 @@ install-dist: install-dist-$(PROJECT)
 install-dist-$(PROJECT): | preview.svg
 	install -Dm644 -t "$(DISTDIR)/" preview.svg AUTHORS.txt CONTRIBUTING.md CONTRIBUTORS.txt FONTLOG.txt
 	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf
+
+CTAN_NAME = libertinus-fonts
+
+.PHONY: dist-ctan
+dist-ctan: install-dist
+	mktemp ctan-XXXXXX.zip | read TMP
+	bsdtar \
+		-s ',$(DISTDIR),$(CTAN_NAME),' \
+		-s ',static/OTF,otf,' \
+		-acf $${TMP} $(DISTDIR)
+	bsdtar -acf $(CTAN_NAME)-$(GitVersion).tar.gz --exclude 'static' @$${TMP}
+	rm $${TMP}
