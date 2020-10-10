@@ -17,7 +17,7 @@ The Libertinus family consists of:
 
 Downloads containing all the ready to use font files and documentation can be found on the [Releases][3] page of the project on GitHub.
 
-To preview changes in between tagged releases, the fonts resulting from each change can be downloaded as artifacts attached to each commit under the [Fontship workflow in the Actions tab](https://github.com/alerque/libertinus/actions?query=workflow%3AFontship).
+To test drive changes on development font builds between tagged releases, the fonts resulting from each change can be downloaded and from the artifacts attached to each commit under the [Fontship workflow in the GitHub Actions tab](https://github.com/alerque/libertinus/actions?query=workflow%3AFontship+branch%3Amaster).
 
 ## Building
 
