@@ -47,7 +47,7 @@ Lookup: 258 0 0 "'kern' Horizontales Kerning in Latin lookup 1" { "'kern' Horizo
 Lookup: 260 0 0 "'mark' Mark positioning" { "'mark' Right"  "'mark' Top Punkt"  "'mark' Komb OR"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 "" "" "" "" "" "" "" "" "Caleb Maclennan" "Philipp H. Poll, Khaled Hosny" "" "https://github.com/alerque/libertinus" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1" "https://scripts.sil.org/OFL"
+LangName: 1033 "" "" "Italic" "" "" "" "" "" "Caleb Maclennan" "Philipp H. Poll, Khaled Hosny" "" "https://github.com/alerque/libertinus" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1" "https://scripts.sil.org/OFL" "" "Libertinus Serif" "Semibold Italic"
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL For New Fonts
@@ -1874,7 +1874,7 @@ Flags: MW
 AnchorPoint: "below" 240 -110 basechar 0
 AnchorPoint: "cedilla" 150 -3 basechar 0
 AnchorPoint: "middle" 286 464 basechar 0
-AnchorPoint: "above" 277 850 basechar 0
+AnchorPoint: "above" 316 850 basechar 0
 AnchorPoint: "right" 509 732 basechar 0
 LayerCount: 2
 Fore
@@ -2965,7 +2965,7 @@ Encoding: 109 109 77
 Width: 851
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "below" 408 -110 basechar 0
+AnchorPoint: "below" 400 -110 basechar 0
 AnchorPoint: "cedilla" 137 9 basechar 0
 AnchorPoint: "middle" 278 215 basechar 0
 AnchorPoint: "above" 392 645 basechar 0
@@ -22066,13 +22066,13 @@ AnchorPoint: "below" -216 -113 mark 0
 LayerCount: 2
 Fore
 SplineSet
--286 -113 m 0
- -279 -80 -248 -53 -214 -53 c 0
- -186 -53 -166 -73 -166 -101 c 0
- -166 -104 -166 -108 -167 -113 c 0
- -174 -146 -206 -173 -239 -173 c 0
- -268 -173 -288 -152 -288 -125 c 0
- -288 -121 -287 -117 -286 -113 c 0
+-286 -123 m 0
+ -279 -90 -248 -63 -214 -63 c 0
+ -186 -63 -166 -83 -166 -111 c 0
+ -166 -114 -166 -118 -167 -123 c 0
+ -174 -156 -206 -183 -239 -183 c 0
+ -268 -183 -288 -162 -288 -135 c 0
+ -288 -131 -287 -127 -286 -123 c 0
 EndSplineSet
 EndChar
 
@@ -31083,52 +31083,13 @@ EndChar
 
 StartChar: uni1E43
 Encoding: 7747 7747 1029
-Width: 784
+Width: 851
 GlyphClass: 3
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-437.3 322.1 m 0
- 442.2 351.6 440.1 374 414 374 c 0
- 392 374 350 335 301 262 c 0
- 268.7 213.9 248.8 145.9 231.9 72 c 0
- 224 37.5 227.2 -10 158 -10 c 0
- 106 -10 101.1 0.5 101.1 17.2 c 0
- 101.1 27 109 52 113.8 72 c 2
- 170 321 l 2
- 175.4 345.1 176 357.9 176 367 c 0
- 176 377 173 386 161 387 c 2
- 121 390 l 1
- 115 399 113.3 415 120 423 c 1
- 167 429 251 436 283 436 c 0
- 296.2 436 303.5 428.6 303.5 414.9 c 0
- 303.5 397.8 291.9 358.7 281.3 320.2 c 2
- 276 301 l 1
- 277 300 l 1
- 369 408 413 439 512 439 c 0
- 564.8 439 565.9 374.9 554.2 311.9 c 1
- 639.4 410.3 683.7 439 779 439 c 0
- 840 439 832 353.5 815 283 c 2
- 779 134 l 2
- 775.3 118.8 769.6 97.4 769.6 82.7 c 0
- 769.6 72.8 772.3 66 780 66 c 0
- 790 66 818.5 80.5 843 100 c 1
- 857 100 866.5 88 869 74 c 1
- 802.5 19 753.5 -10 691 -10 c 0
- 657 -10 646.1 13.3 646.1 46.2 c 0
- 646.1 69.3 651.5 97.1 658 125 c 2
- 693 275 l 2
- 704.4 324 720 374 681 374 c 0
- 659 374 617 335 568 262 c 0
- 535.7 213.9 515.8 145.9 498.9 72 c 0
- 491 37.5 494.2 -10 425 -10 c 0
- 373 -10 368.1 0.5 368.1 17.2 c 0
- 368.1 27 376 52 380.8 72 c 2
- 437 321 l 2
- 437.1 321.4 437.2 321.8 437.3 322.1 c 0
-EndSplineSet
-Refer: 645 729 N 1 0 0 1 73 -761 2
+Refer: 692 803 N 1 0 0 1 616 3 2
+Refer: 77 109 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni1E44
@@ -31524,12 +31485,12 @@ EndChar
 
 StartChar: uni1E56
 Encoding: 7766 7766 1048
-Width: 546
+Width: 522
 GlyphClass: 3
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 645 729 N 1 0 0 1 168 110 2
+Refer: 645 729 N 1 0 0 1 143 110 2
 Refer: 48 80 N 1 0 0 1 12 0 2
 EndChar
 
@@ -32403,7 +32364,7 @@ GlyphClass: 3
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 645 729 N 1 0 0 1 190 108 2
+Refer: 645 729 N 1 0 0 1 153 108 2
 Refer: 57 89 N 1 0 0 1 12 0 2
 EndChar
 
