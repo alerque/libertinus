@@ -17,6 +17,8 @@ feature locl {
   script cyrl;
     language SRB exclude_dflt;
       lookup locl_cyrillic;
+    language MKD exclude_dflt;
+      lookup locl_cyrillic;
 
   script latn;
     language FIN exclude_dflt;
