@@ -1,6 +1,12 @@
 .fontship
-Libertinus-*/
-Libertinus-*.zip
-Libertinus-*.xz
 *.otf
-tags
+*.ttf
+*.woff
+*.woff2
+Libertinus-*
+!*/Libertinus-*
+.DS_Store
+sources/*(Autosaved).glyphs
+sources/*_backups
+sources/*.glyphs
+sources/*.ufo
