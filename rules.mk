@@ -51,5 +51,5 @@ dist-ctan: install-dist
 		-s ',$(DISTDIR),$(CTAN_NAME),' \
 		-s ',static/OTF,otf,' \
 		-acf $${TMP} $(DISTDIR)
-	bsdtar -acf $(CTAN_NAME)-$(GitVersion).tar.gz --exclude 'static' @$${TMP}
+	bsdtar -acf $(CTAN_NAME)-$(FontVersion).tar.gz --exclude 'static' @$${TMP}
 	rm $${TMP}
