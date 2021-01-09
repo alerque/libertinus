@@ -306,7 +306,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "right" "'mark' Right" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR"
-BeginChars: 1114403 2395
+BeginChars: 1114403 2396
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -70822,16 +70822,6 @@ EndSplineSet
 Refer: 97 1096 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: uni0453.ital
-Encoding: 1114402 -1 2380
-Width: 268
-Flags: MW
-LayerCount: 2
-Fore
-Refer: 672 769 N 1 0 0 1 367.366 94 2
-Refer: 2307 -1 N 1 0 0 1 0 0 3
-EndChar
-
 StartChar: uniE01C
 Encoding: 1114350 -1 2310
 Width: 255
@@ -72938,24 +72928,14 @@ LayerCount: 2
 Colour: 110000
 EndChar
 
-StartChar: uniA78A
-Encoding: 42890 42890 2380
-Width: 333
-Flags: W
+StartChar: uni0453.ital
+Encoding: 1114402 -1 2380
+Width: 268
+Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-326 193 m 1
- 317 144 l 1
- 71 144 l 1
- 80 193 l 1
- 326 193 l 1
-348 318 m 1
- 339 269 l 1
- 93 269 l 1
- 102 318 l 1
- 348 318 l 1
-EndSplineSet
+Refer: 672 769 N 1 0 0 1 367.366 94 2
+Refer: 2307 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniA71D
@@ -73126,6 +73106,26 @@ SplineSet
  484 652 l 1
 EndSplineSet
 Refer: 18 58 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uniA78A
+Encoding: 42890 42890 2395
+Width: 333
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+326 193 m 1
+ 317 144 l 1
+ 71 144 l 1
+ 80 193 l 1
+ 326 193 l 1
+348 318 m 1
+ 339 269 l 1
+ 93 269 l 1
+ 102 318 l 1
+ 348 318 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

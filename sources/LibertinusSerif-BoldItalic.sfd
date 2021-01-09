@@ -287,7 +287,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "right" "'mark' Right" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR"
-BeginChars: 1114408 1900
+BeginChars: 1114408 1901
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -54894,17 +54894,6 @@ EndSplineSet
 Refer: 359 305 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: uni0453.ital
-Encoding: 1114407 -1 1888
-Width: 342
-VWidth: 0
-Flags: W
-LayerCount: 2
-Fore
-Refer: 454 769 N 1 0 0 1 500.966 143 2
-Refer: 1840 -1 N 1 0 0 1 0 0 3
-EndChar
-
 StartChar: uni03D0
 Encoding: 976 976 1841
 Width: 559
@@ -56095,24 +56084,15 @@ LayerCount: 2
 Colour: 110000
 EndChar
 
-StartChar: uniA78A
-Encoding: 42890 42890 1888
-Width: 358
+StartChar: uni0453.ital
+Encoding: 1114407 -1 1888
+Width: 342
+VWidth: 0
 Flags: W
 LayerCount: 2
 Fore
-SplineSet
-347.399414062 198 m 1
- 335.5 142 l 1
- 85.7998046875 142 l 1
- 97.7001953125 198 l 1
- 347.399414062 198 l 1
-374 323 m 1
- 361.899414062 266 l 1
- 112.099609375 266 l 1
- 124.299804688 323 l 1
- 374 323 l 1
-EndSplineSet
+Refer: 454 769 N 1 0 0 1 500.966 143 2
+Refer: 1840 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniA71D
@@ -56245,6 +56225,26 @@ LayerCount: 2
 Fore
 Refer: 457 775 N 1 0 0 1 540.07 188 2
 Refer: 205 79 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uniA78A
+Encoding: 42890 42890 1900
+Width: 358
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+347.399414062 198 m 1
+ 335.5 142 l 1
+ 85.7998046875 142 l 1
+ 97.7001953125 198 l 1
+ 347.399414062 198 l 1
+374 323 m 1
+ 361.899414062 266 l 1
+ 112.099609375 266 l 1
+ 124.299804688 323 l 1
+ 374 323 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

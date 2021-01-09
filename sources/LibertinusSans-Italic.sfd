@@ -279,7 +279,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "acute" "'mark' Mark Positioning lookup 5" "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "below" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0"
-BeginChars: 1114390 2458
+BeginChars: 1114390 2459
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -73328,19 +73328,6 @@ EndSplineSet
 Refer: 636 618 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: uni0453.ital
-Encoding: 1114389 -1 2453
-Width: 268
-GlyphClass: 2
-Flags: W
-AnchorPoint: "above" 261 645 basechar 0
-AnchorPoint: "below" 110 -114 basechar 0
-LayerCount: 2
-Fore
-Refer: 670 769 N 1 0 0 1 375.466 94 2
-Refer: 2449 -1 N 1 0 0 1 0 0 3
-EndChar
-
 StartChar: q.sc.u
 Encoding: 1114386 -1 2450
 Width: 570
@@ -73439,15 +73426,17 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: uni0249
-Encoding: 585 585 2453
-Width: 310
+StartChar: uni0453.ital
+Encoding: 1114389 -1 2453
+Width: 268
 GlyphClass: 2
 Flags: W
+AnchorPoint: "above" 261 645 basechar 0
+AnchorPoint: "below" 110 -114 basechar 0
 LayerCount: 2
 Fore
-Refer: 664 729 N 1 0 0 1 -5 0 2
-Refer: 2451 -1 N 1 0 0 1 0 0 2
+Refer: 670 769 N 1 0 0 1 375.466 94 2
+Refer: 2449 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni200D
@@ -73501,6 +73490,17 @@ SplineSet
 EndSplineSet
 Refer: 308 124 N 1 0 0 1 140.471 0 2
 Refer: 18 58 N 1 0 0 1 -9.52887 0 2
+EndChar
+
+StartChar: uni0249
+Encoding: 585 585 2458
+Width: 310
+GlyphClass: 2
+Flags: W
+LayerCount: 2
+Fore
+Refer: 664 729 N 1 0 0 1 -5 0 2
+Refer: 2451 -1 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont
