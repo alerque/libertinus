@@ -41,7 +41,7 @@ The respective CSS property is `font-variant-ligatures` with the value `common-l
 Discretionary and Historical Ligatures: `+dlig`, `+hlig`
 --------------------------------------------------------
 
-The only historical ligatures supported are Latin lowercase _ st_ and _ct_ in all faces.
+The only historical ligatures supported are Latin lowercase _st_ and _ct_ in all faces.
 
 In all faces, Latin lowercase letter sequences _tt_ and _tz_,
 in serif faces (i.e. non-sans-serif), also _Th_, _ck_ and _ch_, 
