@@ -32,9 +32,11 @@ $(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.tex $(STATICOTFS) | $(BUILDDIR)
 	xelatex --interaction=batchmode -output-directory=$(BUILDDIR) $<
 	cp $(BUILDDIR)/$(@F) $@
 
+_scour_args = --quiet --set-precision=4 --remove-metadata --enable-id-stripping --strip-xml-prolog --strip-xml-space --no-line-breaks --no-renderer-workaround
+
 preview.svg: $(DOCSDIR)/preview.pdf
-	set -x
-	mutool draw -q -r 200 -F svg $< 1 > $@
+	mutool draw -r 200 -F svg $< 1 |
+		sed -e '/^<g /a <rect width="100%" height="100%" fill="white" />' > $@
 
 install-dist: install-dist-$(PROJECT)
 
