@@ -250,7 +250,13 @@ feature smcp {
     language AZE exclude_dflt;
       lookup smcp_smallcap;
       lookup smcp_smallcap_idot;
+    language KAZ exclude_dflt;
+      lookup smcp_smallcap;
+      lookup smcp_smallcap_idot;
     language CRT exclude_dflt;
+      lookup smcp_smallcap;
+      lookup smcp_smallcap_idot;
+    language TAT exclude_dflt;
       lookup smcp_smallcap;
       lookup smcp_smallcap_idot;
     language TRK exclude_dflt;
