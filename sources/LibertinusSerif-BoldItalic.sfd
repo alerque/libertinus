@@ -287,7 +287,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "right" "'mark' Right" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR"
-BeginChars: 1114408 1901
+BeginChars: 1114408 1902
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -2694,8 +2694,8 @@ GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 1010 814 N 1 0 0 1 580.4 31 2
-Refer: 198 72 N 1 0 0 1 0 0 2
+Refer: 1010 814 N 1 0 0 1 632 0 2
+Refer: 198 72 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni1E2B
@@ -2705,8 +2705,8 @@ GlyphClass: 2
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 1010 814 N 1 0 0 1 575.4 21 2
-Refer: 229 104 N 1 0 0 1 0 0 2
+Refer: 1010 814 N 1 0 0 1 565 -1 2
+Refer: 229 104 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni1E2C
@@ -4317,6 +4317,7 @@ Encoding: 72 72 198
 Width: 735
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "below" 357 -110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -5432,7 +5433,7 @@ Width: 620
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "cedilla" 134 9 basechar 0
-AnchorPoint: "below" 235 -111 basechar 0
+AnchorPoint: "below" 290 -111 basechar 0
 AnchorPoint: "ogonek" 427 10 basechar 0
 AnchorPoint: "above" 415 645 basechar 0
 LayerCount: 2
@@ -28893,17 +28894,17 @@ Encoding: 814 814 1010
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "below" -275 -118 mark 0
+AnchorPoint: "below" -275 -110 mark 0
 LayerCount: 2
 Fore
 SplineSet
--376.9 -83 m 1
- -376.7 -136 -341.2 -173 -287.2 -173 c 0
- -235.2 -173 -182.7 -141 -160.9 -83 c 1
- -136.3 -95 l 1
- -165.8 -181 -239.8 -230 -298.8 -230 c 0
- -368.8 -230 -409.6 -180 -406.3 -95 c 1
- -376.9 -83 l 1
+-376.900390625 -53 m 1
+ -376.700195312 -106 -341.200195312 -143 -287.200195312 -143 c 0
+ -235.200195312 -143 -182.700195312 -111 -160.900390625 -53 c 1
+ -136.299804688 -65 l 1
+ -165.799804688 -151 -239.799804688 -200 -298.799804688 -200 c 0
+ -368.799804688 -200 -409.599609375 -150 -406.299804688 -65 c 1
+ -376.900390625 -53 l 1
 EndSplineSet
 EndChar
 
@@ -36626,7 +36627,7 @@ Width: 684
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "above" 348 645 basechar 0
-AnchorPoint: "below" 353 -110 basechar 0
+AnchorPoint: "below" 327 -110 basechar 0
 AnchorPoint: "cedilla" 521 -3 basechar 0
 LayerCount: 2
 Fore
@@ -49403,14 +49404,21 @@ Fore
 SplineSet
 365 434 m 0
  293 434 249 384 218 234 c 0
- 210 193 205 159 205 131 c 0
- 205 63 231 30 290 30 c 0
+ 209.8 193.4 205.3 158.9 205.3 130.6 c 0
+ 205.3 62.8 230.7 30 290 30 c 0
  368 30 413 94 439 221 c 0
- 449 269 454 307 454 338 c 0
- 454 404 429 434 365 434 c 0
-367 1 m 1
- 335 -15 300 -37 282 -57 c 1
- 343 -56 410 -77 446 -94 c 1
+ 448.6 268.5 454.1 307.4 454.1 338.3 c 0
+ 454.1 404.3 429 434 365 434 c 0
+286.18 -9.91 m 1
+ 283.46 -9.97 280.73 -10 278 -10 c 0
+ 165 -10 74.6 42.9 74.6 163.2 c 0
+ 74.6 181.3 76.7 200.8 81 222 c 0
+ 113 381 241 474 375 474 c 0
+ 498.9 474 582.8 416.3 582.8 297.6 c 0
+ 582.8 278.3 580.6 257.5 576 235 c 0
+ 550.32 107.4 470.16 30.04 368.96 1.99 c 1
+ 336.47 -14.01 299.99 -37.01 282 -57 c 1
+ 343 -56 410 -77 446 -94 c 0
  473 -104 548 -126 605 -135 c 0
  672 -146 762 -147 862 -91 c 1
  881 -115 l 1
@@ -49420,14 +49428,7 @@ SplineSet
  214 -99 176 -124 154 -152 c 1
  148 -145 132 -119 123 -115 c 1
  150 -86 187 -64 216 -59 c 1
- 238 -40 263 -23 286 -10 c 1
- 283 -10 281 -10 278 -10 c 0
- 165 -10 75 43 75 163 c 0
- 75 181 77 201 81 222 c 0
- 113 381 241 474 375 474 c 0
- 499 474 583 417 583 298 c 0
- 583 279 581 257 576 235 c 0
- 550 107 469 29 367 1 c 1
+ 237.99 -40 263.18 -22.91 286.18 -9.91 c 1
 EndSplineSet
 Colour: ff0000
 EndChar
@@ -56245,6 +56246,16 @@ SplineSet
  124.299804688 323 l 1
  374 323 l 1
 EndSplineSet
+EndChar
+
+StartChar: uni029C
+Encoding: 668 668 1901
+Width: 684
+Flags: W
+AnchorPoint: "below" 327 -110 basechar 0
+LayerCount: 2
+Fore
+Refer: 1230 -1 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont

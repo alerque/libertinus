@@ -46,6 +46,16 @@ ChangeLog
 ---------
 
 unreleased (GIT) <Libertinus> Version HEAD
+- Add 29 more specialty arrow glyphs to Math family
+- Rebuild with new sfdLib release to fix Spiro curve issues in uni2639
+- Correct Q.u side bearings to match Q in Sans & Serif families
+- Add missing U+029C to Serif Bold Italic
+- Add missing ‘below’ mark to h/H/h.sc across Serif family
+- Consistently align ‘below’ mark on h/H/h.sc across Serif family
+- Re-align mark positioning on U+032E breve below across Serif family
+- Add smallcaps and caps-2-smallcaps feature for h/H + breve below
+- Re-align ‘below’ mark on U+029C to match smallcaps across all families
+- Apply proper features (smallcaps i, f_i ligatures) in Kazakh and Tartar
 
 9 January 2021 (Caleb Maclennan) <Libertinus> Version 7.031
 - Correct distribution release filenames
