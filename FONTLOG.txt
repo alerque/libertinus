@@ -56,6 +56,12 @@ unreleased (GIT) <Libertinus> Version HEAD
 - Add smallcaps and caps-2-smallcaps feature for h/H + breve below
 - Re-align ‘below’ mark on U+029C to match smallcaps across all families
 - Apply proper features (smallcaps i, f_i ligatures) in Kazakh and Tartar
+- Configure aboveMark as mark-to-mark lookup in Italics and add marks for:
+  gracecomb, acutecomb, uni0302, tildecomb, uni030c, uni0304
+- Add above marks for otilde, open o and open e in Italics
+- Add above marks for otilde, vtilde and Vtilde in Regular
+- Correct placement of aboveMarks in Regular for:
+  uni0300, uni0301, uni0302, uni0303, uni0304, uni0306, uni0308, uni030c
 
 9 January 2021 (Caleb Maclennan) <Libertinus> Version 7.031
 - Correct distribution release filenames
