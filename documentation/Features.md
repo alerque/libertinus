@@ -1,6 +1,8 @@
 # Standard OpenType Features
 
-Libertinus supports several OpenType features, some are enabled by default (`-`) others have to be opted in (`+`), most can be accessed by high-level CSS properties and values:
+Libertinus supports several OpenType features.
+Some are enabled by default (`-`) others have to be opted in (`+`).
+Most can be accessed by high-level CSS properties and values:
 
 -   Small Caps: features `font-variant` and `font-variant-caps` with values `small-caps` (`+smcp`) and `all-small-caps` (`+c2sc`)
 -   Ligatures and Contextual Alternates: `-liga`, `+hlig`, `+dlig`; `-calt`
@@ -33,14 +35,14 @@ The respective CSS property is `font-variant-ligatures` with the value `common-l
 The only historical ligatures supported are Latin lowercase *st* and *ct* in all faces.
 
 In all faces, Latin lowercase letter sequences *tt* and *tz*, in serif faces (i.e. non-sans-serif), also *Th*, *ck* and *ch*, form discretionary ligatures.
-
 These can all be manually forced by using ZWJ (U+200D) between letters and just the default feature `liga`, too.
 
 The respective CSS property is `font-variant-ligatures` with the values `discretionary-ligatures` and `historical-ligatures`.
 
 ## Contextual alternates: `-calt`
 
-In all faces, the Latin capital and small-capital letter *Q* gains a long tail if followed by either lowercase or small-capital letter *u* or *v*, and the Latin lowercase letter *f*, even when part of the ligature *ff*, has a shortened head if followed by closing parentheses, top quotation mark, lowercase letter with ascending left leg, lowercase letter with diacritic mark above or uppercase letter not starting with a leg or them on the left.
+In all faces, the Latin capital and small-capital letter *Q* gains a long tail if followed by either lowercase or small-capital letter *u* or *v*.
+The Latin lowercase letter *f*, even when part of the ligature *ff*, has a shortened head if followed by closing parentheses, top quotation mark, lowercase letter with ascending left leg, lowercase letter with diacritic mark above or uppercase letter not starting with a leg or them on the left.
 
 The related feature `clig` is not used.
 
