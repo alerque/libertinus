@@ -42,7 +42,7 @@ install-dist: install-dist-$(PROJECT)
 
 install-dist-$(PROJECT): | preview.svg
 	install -Dm644 -t "$(DISTDIR)/" preview.svg AUTHORS.txt CONTRIBUTING.md CONTRIBUTORS.txt FONTLOG.txt
-	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf
+	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf $(DOCSDIR)/*.md
 
 CTAN_NAME = libertinus-fonts
 
