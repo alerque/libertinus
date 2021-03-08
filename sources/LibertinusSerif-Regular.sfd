@@ -302,7 +302,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "aboveMark" "'mkmk' Mark to Mark-1" "right" "'mark' Right" "komb_OR" "'mark' Komb OR" "above" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
-BeginChars: 1114450 2682
+BeginChars: 1114453 2685
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -74633,6 +74633,40 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 2680 119046 N -1 0 0 1 516 0 2
+EndChar
+
+StartChar: IJacute
+Encoding: 1114450 -1 2682
+Width: 598
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2405 -1 N 1 0 0 1 675 126 2
+Refer: 2405 -1 N 1 0 0 1 367 126 2
+Refer: 420 306 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: ijacute
+Encoding: 1114451 -1 2683
+Width: 542
+Flags: W
+LayerCount: 2
+Fore
+Refer: 670 769 N 1 0 0 1 596 -37 2
+Refer: 670 769 N 1 0 0 1 315 -37 2
+Refer: 1721 567 N 1 0 0 1 270 0 2
+Refer: 419 305 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: ijacute.sc
+Encoding: 1114452 -1 2684
+Width: 586
+Flags: W
+LayerCount: 2
+Fore
+Refer: 670 769 N 1 0 0 1 613 -45 2
+Refer: 670 769 N 1 0 0 1 325 -45 2
+Refer: 1927 -1 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont
