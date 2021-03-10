@@ -14,8 +14,8 @@ lookup locl_sami {
 } locl_sami;
 
 lookup locl_ij {
-  sub I J by IJ;
-  sub i j by ij;
+  sub I J by I_J;
+  sub i j by i_j;
   sub Iacute J by IJacute;
   sub IJ acutecomb by IJacute;
   sub iacute j by ijacute;
