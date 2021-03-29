@@ -234,7 +234,7 @@ Grid
  -538 430 l 25
  766 430 l 25
 EndSplineSet
-AnchorClass2: "aboveMark" "'mkmk' Mark to Mark-1" "acute"""  "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "below" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0"
+AnchorClass2: "acute""" "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0" "aboveMark" "'mkmk' Mark to Mark-1" "below"
 BeginChars: 1114386 2360
 
 StartChar: exclam
@@ -13394,6 +13394,7 @@ Encoding: 596 596 630
 Width: 435
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 199 510 basechar 0
 AnchorPoint: "below" 184 -114 basechar 0
 LayerCount: 2
 Fore
@@ -13460,6 +13461,7 @@ Encoding: 603 603 633
 Width: 426
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 229 515 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14502,6 +14504,8 @@ Encoding: 713 713 659
 Width: 425
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "aboveMark" 216 467 mark 0
+AnchorPoint: "aboveMark" 216 588 basemark 0
 LayerCount: 2
 Fore
 Refer: 1418 772 N 1 0 0 1 416 0 2
@@ -14686,7 +14690,7 @@ Encoding: 771 771 672
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_punkt" -133 621 mark 0
+AnchorPoint: "above" -133 563 mark 0
 LayerCount: 2
 Fore
 SplineSet
