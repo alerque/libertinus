@@ -234,7 +234,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "acute"""  "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "below" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0"
-BeginChars: 1114386 2360
+BeginChars: 1114386 2361
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -61026,6 +61026,37 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 2358 119046 N 1 0 0 1 -40 0 2
+EndChar
+
+StartChar: uni0247
+Encoding: 583 583 2360
+Width: 461
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+20 -21 m 1
+ -10 5 l 1
+ 366 461 l 1
+ 397 438 l 1
+ 20 -21 l 1
+154 285 m 1
+ 314 285 l 1
+ 316 287 316 290 316 296 c 0
+ 316 376 275 402 248 402 c 0
+ 227 402 168 387 154 285 c 1
+397 109 m 1
+ 422 88 l 1
+ 385 13 315 -10 246 -10 c 0
+ 94 -10 34 88 34 198 c 0
+ 34 351 144 444 249 444 c 0
+ 396 444 431 351 431 266 c 0
+ 431 252 416 245 392 245 c 2
+ 149 245 l 1
+ 149 240 149 226 149 219 c 0
+ 149 121 207 46 285 46 c 0
+ 323 46 360 64 397 109 c 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
