@@ -44,6 +44,7 @@ OS2FamilyClass: 261
 OS2Vendor: 'QUE '
 Lookup: 257 0 0 "'cpsp' Versalabstaende" { "'cpsp' Versalabstaende 1"  } ['cpsp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark positioning" { "'mark' Mark Positioning in Hebrew lookup 0"  "'mark' Mark Positioning lookup 1"  "'mark' Mark Positioning lookup 2"  "'mark' Mark Positioning lookup 3"  "'mark' Mark Positioning lookup 4"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Mark to Mark" { "'mkmk' Mark to Mark-1"  } ['mkmk' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Kerning" { "'kern' Kerning 1" [150,0,0] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -233,7 +234,7 @@ Grid
  -538 430 l 25
  766 430 l 25
 EndSplineSet
-AnchorClass2: "acute"""  "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "below" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0"
+AnchorClass2: "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "aboveMark" "'mkmk' Mark to Mark-1" "below" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0"
 BeginChars: 1114386 2360
 
 StartChar: exclam
@@ -1210,6 +1211,7 @@ Encoding: 245 245 35
 Width: 519
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 251.5 805 basechar 0
 LayerCount: 2
 Fore
 Refer: 295 111 N 1 0 0 1 0 0 2
@@ -1567,6 +1569,7 @@ Encoding: 297 297 61
 Width: 286
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 136 805 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -8875,6 +8878,7 @@ Encoding: 227 227 378
 Width: 476
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 231 805 basechar 0
 LayerCount: 2
 Fore
 Refer: 281 97 N 1 0 0 1 0 0 2
@@ -10435,6 +10439,7 @@ Encoding: 361 361 475
 Width: 550
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 271.5 805 basechar 0
 LayerCount: 2
 Fore
 Refer: 301 117 N 1 0 0 1 0 0 2
@@ -13393,6 +13398,7 @@ Encoding: 596 596 630
 Width: 435
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 199 645 basechar 0
 AnchorPoint: "below" 184 -114 basechar 0
 LayerCount: 2
 Fore
@@ -13459,6 +13465,7 @@ Encoding: 603 603 633
 Width: 426
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 229 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14501,6 +14508,8 @@ Encoding: 713 713 659
 Width: 425
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "aboveMark" 216 467 mark 0
+AnchorPoint: "aboveMark" 216 588 basemark 0
 LayerCount: 2
 Fore
 Refer: 1418 772 N 1 0 0 1 416 0 2
@@ -14623,6 +14632,7 @@ Encoding: 768 768 669
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "aboveMark" -127 524 mark 0
 AnchorPoint: "above" -127 713 mark 0
 LayerCount: 2
 Fore
@@ -14644,7 +14654,8 @@ Encoding: 769 769 670
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "above" -180 711 mark 0
+AnchorPoint: "aboveMark" -180 518 mark 0
+AnchorPoint: "above" -180 713 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14665,6 +14676,8 @@ Encoding: 770 770 671
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "aboveMark" -127 721 basemark 0
+AnchorPoint: "aboveMark" -128 526 mark 0
 AnchorPoint: "above" -127 700 mark 0
 LayerCount: 2
 Fore
@@ -14685,7 +14698,9 @@ Encoding: 771 771 672
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "top_punkt" -133 621 mark 0
+AnchorPoint: "aboveMark" -133 679 basemark 0
+AnchorPoint: "aboveMark" -133 563 mark 0
+AnchorPoint: "above" -133 679 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14773,6 +14788,8 @@ Encoding: 780 780 676
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "aboveMark" -193 697 basemark 0
+AnchorPoint: "aboveMark" -192 508 mark 0
 AnchorPoint: "above" -193 676 mark 0
 LayerCount: 2
 Fore
@@ -18145,6 +18162,7 @@ Encoding: 7804 7804 812
 Width: 636
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 351 880 basechar 0
 LayerCount: 2
 Fore
 Refer: 672 771 N 1 0 0 1 470 126 2
@@ -18155,7 +18173,8 @@ StartChar: uni1E7D
 Encoding: 7805 7805 813
 Width: 527
 GlyphClass: 2
-Flags: MW
+Flags: W
+AnchorPoint: "above" 284.5 805 basechar 0
 LayerCount: 2
 Fore
 Refer: 302 118 N 1 0 0 1 0 0 2
@@ -18903,6 +18922,7 @@ Encoding: 7869 7869 872
 Width: 461
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "above" 248 805 basechar 0
 LayerCount: 2
 Fore
 Refer: 285 101 N 1 0 0 1 0 0 2
@@ -33251,7 +33271,9 @@ Encoding: 772 772 1418
 Width: 0
 GlyphClass: 4
 Flags: MW
-AnchorPoint: "above" -205 614 mark 0
+AnchorPoint: "aboveMark" -205 574 basemark 0
+AnchorPoint: "aboveMark" -205 467 mark 0
+AnchorPoint: "above" -205 625 mark 0
 LayerCount: 2
 Fore
 SplineSet
