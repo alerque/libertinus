@@ -14,7 +14,7 @@ A remote CI runner will also automatically run `fontship` for all PRs on this re
 You can even download and review the fonts it builds after each push.
 Hovever this is cumbersome for actual font development and we recomend checking your work with local feedback.
 
-Note that FontForge adds unnessesary clutter to its source files on each save that **must** be removed before committing.
+Note that FontForge adds unnecessary clutter to its source files on each save that **must** be removed before committing.
 After modifying the `.sfd` files, and before committing the changes, you can automatically clean them up with:
 
     fontship make normalize

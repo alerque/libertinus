@@ -6,15 +6,14 @@ import ufoLib2
 from fontTools import subset
 from io import StringIO
 from pcpp.preprocessor import Preprocessor
-from sfdLib.parser import SFDParser
-from sfdLib.utils import GLYPHCLASS_KEY, MATH_KEY
+from sfdLib.parser import SFDParser, CATEGORIES_KEY, MATH_KEY
 
 
 class Font:
     def __init__(self, filename, features):
         self._font = font = ufoLib2.Font(validate=False)
 
-        parser = SFDParser(filename, font, ignore_uvs=False, ufo_anchors=False,
+        parser = SFDParser(filename, font, ufo_anchors=False,
             ufo_kerning=False, minimal=True)
         parser.parse()
 
@@ -48,7 +47,7 @@ class Font:
         for width in sorted(widths):
             glyph = font.newGlyph(f"{name}.{width}")
             glyph.width = 0
-            glyph.lib[GLYPHCLASS_KEY] = "mark"
+            glyph.lib[CATEGORIES_KEY] = "mark"
 
             pen = glyph.getPen()
             pen.moveTo((-25 - width, pos))
@@ -69,7 +68,7 @@ class Font:
         # use them to decide the widths of over/underline glyphs we will draw
         widths = {}
         for glyph in font:
-            glyphclass = glyph.lib.get(GLYPHCLASS_KEY)
+            glyphclass = glyph.lib.get(CATEGORIES_KEY)
             if glyphclass != 'mark' and glyph.width > 0:
                 width = round(glyph.width / minwidth) * minwidth
                 width = max(width, minwidth)
@@ -104,7 +103,7 @@ class Font:
         gdef = otf["GDEF"].table
         classdef = gdef.GlyphClassDef.classDefs
         for glyph in font:
-            if glyph.lib.get(GLYPHCLASS_KEY) == "mark":
+            if glyph.lib.get(CATEGORIES_KEY) == "mark":
                 classdef[glyph.name] = 3
 
         constants = font.lib.get(MATH_KEY)
