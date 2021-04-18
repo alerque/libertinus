@@ -13,6 +13,15 @@ lookup locl_sami {
   sub Eng by Eng.UCStyle;
 } locl_sami;
 
+lookup locl_ij {
+  sub I J by I_J;
+  sub i j by i_j;
+  sub Iacute J by IJacute;
+  sub IJ acutecomb by IJacute;
+  sub iacute j by ijacute;
+  sub ij acutecomb by ijacute;
+} locl_ij;
+
 feature locl {
   script cyrl;
     language SRB exclude_dflt;
@@ -39,4 +48,7 @@ feature locl {
       lookup locl_sami;
     language TRK exclude_dflt;
       lookup locl_sami;
+
+    language NLD exclude_dflt;
+      lookup locl_ij;
 } locl;

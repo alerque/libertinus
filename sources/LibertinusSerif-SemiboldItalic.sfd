@@ -208,7 +208,7 @@ Grid
  766 430 l 25
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR" "right" "'mark' Right"
-BeginChars: 1114415 2374
+BeginChars: 1114420 2379
 
 StartChar: space
 Encoding: 32 32 0
@@ -72056,25 +72056,6 @@ Encoding: 1114400 -1 2345
 Width: 0
 GlyphClass: 4
 Flags: W
-AnchorPoint: "above" -49 691 mark 0
-LayerCount: 2
-Fore
-SplineSet
--96 691 m 1
- 12 607 l 2
- 21 600 24 594 24 588 c 0
- 24 583 21 571 7 571 c 0
- -2 571 -14 574 -34 583 c 2
- -179 646 l 1
- -96 691 l 1
-EndSplineSet
-EndChar
-
-StartChar: grave.cap
-Encoding: 1114401 -1 2346
-Width: 0
-GlyphClass: 4
-Flags: W
 AnchorPoint: "above" -99 693 mark 0
 LayerCount: 2
 Fore
@@ -72087,6 +72068,25 @@ SplineSet
  -191 583 -191 585 -191 586 c 0
  -190 593 -185 605 -176 611 c 2
  -39 697 l 1
+EndSplineSet
+EndChar
+
+StartChar: grave.cap
+Encoding: 1114401 -1 2346
+Width: 0
+GlyphClass: 4
+Flags: W
+AnchorPoint: "above" -49 691 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-96 691 m 1
+ 12 607 l 2
+ 21 600 24 594 24 588 c 0
+ 24 583 21 571 7 571 c 0
+ -2 571 -14 574 -34 583 c 2
+ -179 646 l 1
+ -96 691 l 1
 EndSplineSet
 EndChar
 
@@ -72679,6 +72679,75 @@ SplineSet
  104 323 l 1
  405.666992188 323 l 1
 EndSplineSet
+EndChar
+
+StartChar: IJacute
+Encoding: 1114415 -1 2374
+Width: 665
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+694 823 m 1
+ 752 767 l 1
+ 658 731.366210938 l 0
+ 599 709 l 2
+ 576 700 563 697 554 697 c 0
+ 546 697 542 701 542 709 c 2
+ 542 709 542 711 542 712 c 0
+ 543 719 548 731 557 737 c 2
+ 694 823 l 1
+361 823 m 1
+ 419 767 l 1
+ 266 709 l 2
+ 243 700 230 697 221 697 c 0
+ 213 697 209 701 209 709 c 2
+ 209 709 209 711 209 712 c 0
+ 210 719 215 731 224 737 c 2
+ 361 823 l 1
+EndSplineSet
+Refer: 241 306 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: ijacute
+Encoding: 1114416 -1 2375
+Width: 562
+Flags: W
+LayerCount: 2
+Fore
+Refer: 658 769 N 1 0 0 1 605 -43 2
+Refer: 658 769 N 1 0 0 1 329 -43 2
+Refer: 502 567 N 1 0 0 1 249 0 2
+Refer: 240 305 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: ijacute.sc
+Encoding: 1114417 -1 2376
+Width: 719
+Flags: W
+LayerCount: 2
+Fore
+Refer: 658 769 N 1 0 0 1 670 -45 2
+Refer: 658 769 N 1 0 0 1 325 -45 2
+Refer: 1817 -1 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: I_J
+Encoding: 1114418 -1 2377
+Width: 665
+Flags: W
+LayerCount: 2
+Fore
+Refer: 241 306 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: i_j
+Encoding: 1114419 -1 2378
+Width: 562
+Flags: W
+LayerCount: 2
+Fore
+Refer: 242 307 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont
