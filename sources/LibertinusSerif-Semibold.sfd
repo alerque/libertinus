@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: LibertinusSerif-Semibold
 FullName: Libertinus Serif Semibold
 FamilyName: Libertinus Serif Semibold
@@ -20,6 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
+ModificationTime: 1618835725
 PfmFamily: 17
 TTFWeight: 600
 TTFWidth: 5
@@ -95,6 +96,10 @@ GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL For New Fonts
+DisplaySize: -128
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 627 19 8
 BeginPrivate: 6
 BlueValues 47 [-12 1 433 447 460 474 563 580 645 662 690 698]
 OtherBlues 11 [-238 -212]
@@ -14339,7 +14344,8 @@ StartChar: uni0292
 Encoding: 658 658 652
 Width: 450
 GlyphClass: 2
-Flags: MW
+Flags: MWO
+AnchorPoint: "above" 233.5 645 basechar 0
 AnchorPoint: "below" 193 -319 basechar 0
 LayerCount: 2
 Fore
