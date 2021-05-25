@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: LibertinusSans-Bold
 FullName: Libertinus Sans Bold
 FamilyName: Libertinus Sans
@@ -124,7 +124,7 @@ KernClass2: 21 21 "'kern' Latin kerning"
  135 hyphen asciitilde guillemotleft guillemotright uni2010 uni2011 figuredash endash emdash uni2015 guilsinglleft guilsinglright hyphen.cap
  31 parenleft bracketleft braceleft
  91 U Ugrave Uacute Ucircumflex Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek Udieresis.alt
- 140 H I N Igrave Iacute Icircumflex Idieresis Ntilde Hcircumflex Hbar Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute uni0145 Ncaron Eng
+ 152 H I N Igrave Iacute Icircumflex Idieresis Ntilde Hcircumflex Hbar Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute uni0145 Ncaron Eng IJacute I_J
  3 F P
  99 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright uni201F
  24 T uni0162 Tcaron uni021A
@@ -278,7 +278,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "acute" "'mark' Mark Positioning lookup 5" "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "below" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0"
-BeginChars: 1114485 2586
+BeginChars: 1114490 2591
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -64277,6 +64277,58 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 2584 119046 N -1 0 0 1 643 0 2
+EndChar
+
+StartChar: IJacute
+Encoding: 1114485 -1 2586
+Width: 721
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2174 -1 N 1 0 0 1 760 0 2
+Refer: 2174 -1 N 1 0 0 1 380 0 2
+Refer: 412 306 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: ijacute
+Encoding: 1114486 -1 2587
+Width: 634
+Flags: W
+LayerCount: 2
+Fore
+Refer: 652 769 N 1 0 0 1 654 0 2
+Refer: 652 769 N 1 0 0 1 322 0 2
+Refer: 1619 567 N 1 0 0 1 294 0 2
+Refer: 411 305 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: ijacute.sc
+Encoding: 1114487 -1 2588
+Width: 597
+Flags: W
+LayerCount: 2
+Fore
+Refer: 652 769 N 1 0 0 1 624 0 2
+Refer: 652 769 N 1 0 0 1 324 0 2
+Refer: 1801 -1 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: I_J
+Encoding: 1114488 -1 2589
+Width: 721
+Flags: W
+LayerCount: 2
+Fore
+Refer: 412 306 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: i_j
+Encoding: 1114489 -1 2590
+Width: 634
+Flags: W
+LayerCount: 2
+Fore
+Refer: 413 307 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont

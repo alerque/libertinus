@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: LibertinusSerif-BoldItalic
 FullName: Libertinus Serif Bold Italic
 FamilyName: Libertinus Serif
@@ -106,7 +106,7 @@ KernClass2: 21 21 "'kern' Latin kerning"
  135 hyphen asciitilde guillemotleft guillemotright uni2010 uni2011 figuredash endash emdash uni2015 guilsinglleft guilsinglright hyphen.cap
  31 parenleft bracketleft braceleft
  91 U Ugrave Uacute Ucircumflex Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek Udieresis.alt
- 140 H I N Igrave Iacute Icircumflex Idieresis Ntilde Hcircumflex Hbar Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute uni0145 Ncaron Eng
+ 152 H I N Igrave Iacute Icircumflex Idieresis Ntilde Hcircumflex Hbar Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Nacute uni0145 Ncaron Eng IJacute I_J
  3 F P
  99 quotedbl quotesingle asterisk quoteleft quoteright quotereversed quotedblleft quotedblright uni201F
  16 T uni0162 Tcaron
@@ -287,7 +287,7 @@ Grid
  -463 550 l 1025
 EndSplineSet
 AnchorClass2: "top_punkt" "'mark' Top Punkt" "right" "'mark' Right" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR"
-BeginChars: 1114408 1902
+BeginChars: 1114413 1907
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -56256,6 +56256,88 @@ AnchorPoint: "below" 327 -110 basechar 0
 LayerCount: 2
 Fore
 Refer: 1230 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: IJacute
+Encoding: 1114408 -1 1902
+Width: 711
+Flags: W
+LayerCount: 2
+Fore
+Refer: 579 7912 N 1 0 0 1 312 -127 2
+Refer: 579 7912 N 1 0 0 1 -54 -127 2
+Refer: 360 306 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: ijacute
+Encoding: 1114409 -1 1903
+Width: 623
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+192 321 m 2
+ 198.6 349 198 352.9 198 362 c 0
+ 198 372 192 381.1 180 382 c 2
+ 140 385 l 1
+ 134 394 135.3 415 142 423 c 1
+ 189 429 282 436 314 436 c 0
+ 327.2 436 334.5 428.6 334.5 414.9 c 0
+ 334.5 397.8 323.4 359.3 314.3 320.2 c 2
+ 276.6 158 l 2
+ 267 116.7 271.3 76 307.6 76 c 0
+ 342.9 76 378.2 121.2 439 200.3 c 1
+ 464 321 l 2
+ 469.9 349.4 470 352.9 470 362 c 0
+ 470 372 464 381.1 452 382 c 2
+ 412 385 l 1
+ 406 394 407.3 415 414 423 c 1
+ 461 429 554 436 586 436 c 0
+ 599.2 436 606.5 428.6 606.5 414.9 c 0
+ 606.5 397.8 594.2 360.3 586.3 320.2 c 2
+ 569.5 235 l 1
+ 518 -8.10001 477 -206.8 308.2 -206.8 c 0
+ 248.8 -206.8 197.5 -190.6 197.5 -144.2 c 0
+ 197.5 -113.6 218.9 -99.2 236.7 -99.2 c 0
+ 303.3 -99.2 289.8 -171.6 326.5 -171.6 c 0
+ 350.8 -171.6 367 -142 389 -56 c 0
+ 403 -1.2 410 48.2 421.7 112.5 c 1
+ 335.6 14.4 282.7 -6 232.6 -6 c 0
+ 193.6 -6 143.6 16 143.6 76 c 0
+ 143.6 94 143.4 115.1 151.6 150 c 2
+ 192 321 l 2
+EndSplineSet
+Refer: 454 769 N 1 0 0 1 718 0 2
+Refer: 454 769 N 1 0 0 1 446 0 2
+EndChar
+
+StartChar: ijacute.sc
+Encoding: 1114410 -1 1904
+Width: 698
+Flags: W
+LayerCount: 2
+Fore
+Refer: 454 769 N 1 0 0 1 820 0 2
+Refer: 454 769 N 1 0 0 1 484 0 2
+Refer: 1282 -1 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: I_J
+Encoding: 1114411 -1 1905
+Width: 711
+Flags: W
+LayerCount: 2
+Fore
+Refer: 360 306 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: i_j
+Encoding: 1114412 -1 1906
+Width: 623
+Flags: W
+LayerCount: 2
+Fore
+Refer: 361 307 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont
