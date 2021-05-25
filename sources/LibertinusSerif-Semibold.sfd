@@ -1,4 +1,4 @@
-SplineFontDB: 3.2
+SplineFontDB: 3.0
 FontName: LibertinusSerif-Semibold
 FullName: Libertinus Serif Semibold
 FamilyName: Libertinus Serif Semibold
@@ -20,7 +20,6 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
-ModificationTime: 1618835725
 PfmFamily: 17
 TTFWeight: 600
 TTFWidth: 5
@@ -96,10 +95,6 @@ GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -128
-AntiAlias: 1
-FitToEm: 0
-WinInfo: 627 19 8
 BeginPrivate: 6
 BlueValues 47 [-12 1 433 447 460 474 563 580 645 662 690 698]
 OtherBlues 11 [-238 -212]
@@ -4570,15 +4565,15 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-350.2 752.7 m 1
- 352.5 753.6 358.7 754.4 362.5 754.4 c 0
- 385.6 754.4 400.2 742.1 406.4 733.3 c 1
- 414.1 713.1 l 1
- 321.7 618 l 2
- 310.9 607.4 300.2 604 292.5 604 c 0
- 286.3 604 280.1 611 280.1 616.3 c 0
- 280.1 621.6 281.7 629.5 286.3 637.4 c 2
- 350.2 752.7 l 1
+335 806 m 1
+ 338 807 346 808 351 808 c 0
+ 381 808 400 794 408 784 c 1
+ 418 761 l 1
+ 298 653 l 2
+ 284 641 270 637 260 637 c 0
+ 252 637 244 645 244 651 c 0
+ 244 657 246 666 252 675 c 2
+ 335 806 l 1
 EndSplineSet
 Refer: 295 111 N 1 0 0 1 0 0 2
 Refer: 672 771 N 1 0 0 1 388 -70 2
@@ -5162,15 +5157,15 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-320.2 781.7 m 1
- 322.5 782.6 328.7 783.4 332.5 783.4 c 0
- 355.6 783.4 370.2 771.1 376.4 762.3 c 1
- 384.1 742.1 l 1
- 291.7 647 l 2
- 280.9 636.4 270.2 633 262.5 633 c 0
- 256.3 633 250.1 640 250.1 645.3 c 0
- 250.1 650.6 251.7 658.5 256.3 666.4 c 2
- 320.2 781.7 l 1
+335 806 m 1
+ 338 807 346 808 351 808 c 0
+ 381 808 400 794 408 784 c 1
+ 418 761 l 1
+ 298 653 l 2
+ 284 641 270 637 260 637 c 0
+ 252 637 244 645 244 651 c 0
+ 244 657 246 666 252 675 c 2
+ 335 806 l 1
 EndSplineSet
 Refer: 475 361 N 1 0 0 1 0 0 2
 EndChar
@@ -14344,7 +14339,7 @@ StartChar: uni0292
 Encoding: 658 658 652
 Width: 450
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "above" 233.5 645 basechar 0
 AnchorPoint: "below" 193 -319 basechar 0
 LayerCount: 2
@@ -18168,7 +18163,7 @@ Encoding: 7804 7804 812
 Width: 636
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "above" 351 880 basechar 0
+AnchorPoint: "above" 351 1000 basechar 0
 LayerCount: 2
 Fore
 Refer: 672 771 N 1 0 0 1 470 126 2
