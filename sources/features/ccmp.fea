@@ -25,3 +25,88 @@ feature ccmp {
   sub @dotted' @accents by @dotless;
   sub @capitals @accents' lookup ccmp_cap_accents;
 } ccmp;
+
+#Hebrew
+
+#ifndef SANS
+#ifndef MATH
+#ifndef DISPLAY
+
+lookup ccmpvavholem {
+  lookupflag RightToLeft;
+    sub [\sheva \hatafsegol \hatafpatah \hatafqamats \hiriq \tsere \segol \patah \qubuts 
+	\holam ] [\vav ]' [\holam ]  by \uniE801;
+} ccmpvavholem;
+
+lookup ccmpspecialglyphs {
+  lookupflag RightToLeft;
+    sub \alef \patah  by \alefpatah;
+    sub \alef \qamats  by \alefqamats;
+    sub \vav \holam  by \vavholam;
+    sub \bet \rafe  by \betrafe;
+    sub \kaf \rafe  by \kafrafe;
+    sub \pe \rafe  by \perafe;
+    sub \finalkaf \sheva by \uniE802;
+    sub \finalkaf \qamats by \uniE803;
+} ccmpspecialglyphs;
+
+lookup ccmpDagesh {
+  lookupflag RightToLeft;
+    sub \alef \dagesh  by \alefmapiq;
+    sub \bet \dagesh  by \betdagesh;
+    sub \gimel \dagesh  by \gimeldagesh;
+    sub \dalet \dagesh  by \daletdagesh;
+    sub \he \dagesh  by \hedagesh;
+    sub \vav \dagesh  by \vavdagesh;
+    sub \zayin \dagesh  by \zayindagesh;
+    sub \tet \dagesh  by \tetdagesh;
+    sub \yod \dagesh  by \yoddagesh;
+    sub \finalkaf \dagesh  by \finalkafdagesh;
+    sub \kaf \dagesh  by \kafdagesh;
+    sub \lamed \dagesh  by \lameddagesh;
+    sub \mem \dagesh  by \memdagesh;
+    sub \nun \dagesh  by \nundagesh;
+    sub \samekh \dagesh  by \samekhdagesh;
+    sub \finalpe \dagesh  by \finalpedagesh;
+    sub \pe \dagesh  by \pedagesh;
+    sub \tsadi \dagesh  by \tsadidagesh;
+    sub \qof \dagesh  by \qofdagesh;
+    sub \resh \dagesh  by \reshdagesh;
+    sub \shin \dagesh  by \shindagesh;
+    sub \tav \dagesh  by \tavdagesh;
+} ccmpDagesh;
+
+lookup ccmpSinShin {
+  lookupflag RightToLeft;
+    sub \shin \shindot  by \shinshindot;
+    sub \shin \sindot  by \shinsindot;
+    sub \shindagesh \shindot  by \shindageshshindot;
+    sub \shinshindot \dagesh  by \shindageshshindot;
+    sub \shin \shindot \dagesh  by \shindageshshindot;
+    sub \shin \dagesh \shindot  by \shindageshshindot;
+    sub \shindagesh \sindot  by \shindageshsindot;
+    sub \shinsindot \dagesh  by \shindageshsindot;
+    sub \shin \sindot \dagesh  by \shindageshsindot;
+    sub \shin \dagesh \sindot  by \shindageshsindot;
+} ccmpSinShin;
+
+lookup ccmpHiriqForJerusalem {
+  lookupflag RightToLeft;
+    sub \patah \hiriq by \hiriqpatah;
+    sub \qamats \hiriq by \hiriqqamats;
+} ccmpHiriqForJerusalem;
+
+feature ccmp {
+
+ script hebr;
+     language dflt ;
+      lookup ccmpvavholem;
+      lookup ccmpspecialglyphs;
+      lookup ccmpDagesh;
+      lookup ccmpSinShin;
+      lookup ccmpHiriqForJerusalem;
+} ccmp;
+
+#endif
+#endif
+#endif
