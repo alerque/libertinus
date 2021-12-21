@@ -49,7 +49,7 @@ Lookup: 257 0 0 "'cpsp' Versalabstaende" { "'cpsp' Versalabstaende 1"  } ['cpsp'
 Lookup: 260 0 0 "'mark' Mark positioning" { "'mark' Right"  "'mark' Komb OR"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark" { "'mkmk' Mark to Mark-1"  } ['mkmk' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Kerning" { "'kern' Latin kerning" [150,0,4] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
-Lookup: 260 1 0 "'mark' Hebrew Mark positioning" { "'mark' Hebrew Holem"  "'mark' Hebrew Dagesh"  "'mark' Hebrew vocals below"  } ['mark' ('hebr' <'dflt' > ) ]
+Lookup: 260 1 0 "'mark' Hebrew Mark positioning" { "'mark' Hebrew Holem"  "'mark' Hebrew vocals below"  } ['mark' ('hebr' <'dflt' > ) ]
 MarkAttachClasses: 2
 "dotted" 3 i j
 DEI: 91125
@@ -302,7 +302,7 @@ Grid
  193 550 l 1
  -113 550 l 1025
 EndSplineSet
-AnchorClass2: "qubuts" "'mark' Hebrew vocals below" "dagesh" "'mark' Hebrew Dagesh" "holem" "'mark' Hebrew Holem" "hb-wide" "'mark' Hebrew vocals below" "hb-middle" "'mark' Hebrew vocals below" "hb-small" "'mark' Hebrew vocals below" "aboveMark" "'mkmk' Mark to Mark-1" "right" "'mark' Right" "komb_OR" "'mark' Komb OR" "above" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
+AnchorClass2: "ganuv" "'mark' Hebrew vocals below" "qubuts" "'mark' Hebrew vocals below" "dagesh"""  "holem" "'mark' Hebrew Holem" "hb-wide" "'mark' Hebrew vocals below" "hb-middle" "'mark' Hebrew vocals below" "hb-small" "'mark' Hebrew vocals below" "aboveMark" "'mkmk' Mark to Mark-1" "right" "'mark' Right" "komb_OR" "'mark' Komb OR" "above" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
 BeginChars: 65884 2725
 
 StartChar: exclam
@@ -53387,7 +53387,7 @@ Flags: MW
 AnchorPoint: "qubuts" -24 0 basechar 0
 AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "hb-small" 190 0 basechar 0
-AnchorPoint: "hb-middle" 136 -0 basechar 0
+AnchorPoint: "hb-middle" 170 -0 basechar 0
 AnchorPoint: "dagesh" 77 248 basechar 0
 AnchorPoint: "hb-wide" 130 0 basechar 0
 LayerCount: 2
@@ -53441,6 +53441,7 @@ Encoding: 1495 1495 2091
 Width: 479
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "ganuv" 250 0 basechar 0
 AnchorPoint: "qubuts" 45 0 basechar 0
 AnchorPoint: "hb-small" 226 0 basechar 0
 AnchorPoint: "hb-middle" 224 0 basechar 0
@@ -54040,10 +54041,10 @@ GlyphClass: 2
 Flags: MW
 AnchorPoint: "qubuts" 64 0 basechar 0
 AnchorPoint: "hb-small" 395 -1 basechar 0
-AnchorPoint: "hb-middle" 333 -1 basechar 0
+AnchorPoint: "hb-middle" 375 -1 basechar 0
 AnchorPoint: "dagesh" 193 238 basechar 0
 AnchorPoint: "holem" 0 0 basechar 0
-AnchorPoint: "hb-wide" 281 0 basechar 0
+AnchorPoint: "hb-wide" 312 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -74906,7 +74907,7 @@ Width: 285
 AnchorPoint: "qubuts" -24 0 basechar 0
 AnchorPoint: "hb-wide" 130 0 basechar 0
 AnchorPoint: "dagesh" 77 248 basechar 0
-AnchorPoint: "hb-middle" 136 -0 basechar 0
+AnchorPoint: "hb-middle" 170 -0 basechar 0
 AnchorPoint: "hb-small" 190 0 basechar 0
 AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
@@ -75108,10 +75109,10 @@ StartChar: reshdagesh
 Encoding: 64328 64328 2711
 Width: 489
 AnchorPoint: "qubuts" 64 0 basechar 0
-AnchorPoint: "hb-wide" 281 0 basechar 0
+AnchorPoint: "hb-wide" 312 0 basechar 0
 AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "dagesh" 193 238 basechar 0
-AnchorPoint: "hb-middle" 333 -1 basechar 0
+AnchorPoint: "hb-middle" 375 -1 basechar 0
 AnchorPoint: "hb-small" 395 -1 basechar 0
 LayerCount: 2
 Fore
@@ -75248,30 +75249,8 @@ Refer: 2074 1465 N 1 0 0 1 -10 0 2
 LCarets2: 1 0
 EndChar
 
-StartChar: hiriqqamats
-Encoding: 65882 -1 2721
-Width: 0
-Flags: W
-AnchorPoint: "hb-middle" 167 0 mark 0
-LayerCount: 2
-Fore
-Refer: 2069 1460 N 1 0 0 1 -255 0 2
-Refer: 2073 1464 N 1 0 0 1 0 0 2
-EndChar
-
-StartChar: hiriqpatah
-Encoding: 65883 -1 2722
-Width: 0
-Flags: W
-AnchorPoint: "hb-middle" 164 0 mark 0
-LayerCount: 2
-Fore
-Refer: 2069 1460 N 1 0 0 1 -255 0 2
-Refer: 2072 1463 N 1 0 0 1 0 0 2
-EndChar
-
 StartChar: uniE802
-Encoding: 59394 59394 2723
+Encoding: 59394 59394 2721
 Width: 475
 Flags: W
 LayerCount: 2
@@ -75281,13 +75260,33 @@ Refer: 2094 1498 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniE803
-Encoding: 59395 59395 2724
+Encoding: 59395 59395 2722
 Width: 475
 Flags: W
 LayerCount: 2
 Fore
 Refer: 2073 1464 N 1 0 0 1 42 339 2
 Refer: 2094 1498 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: patah.ganuv
+Encoding: 65882 -1 2723
+Width: 0
+Flags: W
+AnchorPoint: "ganuv" 0 0 mark 0
+LayerCount: 2
+Fore
+Refer: 2072 1463 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: hiriqmem
+Encoding: 65883 -1 2724
+Width: 527
+Flags: W
+LayerCount: 2
+Fore
+Refer: 2069 1460 N 1 0 0 1 283 0 2
+Refer: 2097 1501 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont

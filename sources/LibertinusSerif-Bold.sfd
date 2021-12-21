@@ -48,6 +48,7 @@ Lookup: 258 0 0 "'kern' Greek kerning" { "'kern' Greek Kerning" [150,0,6] } ['ke
 Lookup: 257 0 0 "'cpsp' Versalabstaende" { "'cpsp' Versalabstaende 1"  } ['cpsp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Kerning" { "'kern' Latin kerning" [150,0,4] } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark positioning" { "'mark' Right"  "'mark' Komb OR"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
+Lookup: 260 1 0 "'mark' Hebrew Mark positioning" { "'mark' Hebrew Mark positioning subtable"  } ['mark' ('hebr' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 KernClass2: 12 8 "'kern' Small Caps"
@@ -297,7 +298,7 @@ Grid
  193 550 l 1
  -113 550 l 1025
 EndSplineSet
-AnchorClass2: "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR" "right" "'mark' Right"
+AnchorClass2: "holem" "'mark' Hebrew Mark positioning subtable" "dagesh" "'mark' Hebrew Mark positioning subtable" "qubuts" "'mark' Hebrew Mark positioning subtable" "hbsmall" "'mark' Hebrew Mark positioning subtable" "hbwide" "'mark' Hebrew Mark positioning subtable" "hbmiddle" "'mark' Hebrew Mark positioning subtable" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle" "above" "'mark' Above" "komb_OR" "'mark' Komb OR" "right" "'mark' Right"
 BeginChars: 65844 2489
 
 StartChar: exclam
@@ -47615,6 +47616,7 @@ Encoding: 1456 1456 1959
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbsmall" 149 0 mark 0
 AnchorPoint: "below" 149 0 mark 0
 LayerCount: 2
 Fore
@@ -47627,6 +47629,7 @@ Encoding: 1457 1457 1960
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbwide" 226 3 mark 0
 AnchorPoint: "below" 226 3 mark 0
 LayerCount: 2
 Fore
@@ -47641,6 +47644,7 @@ Encoding: 1458 1458 1961
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbwide" 174 0 mark 0
 AnchorPoint: "below" 174 0 mark 0
 LayerCount: 2
 Fore
@@ -47659,6 +47663,7 @@ Encoding: 1459 1459 1962
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbwide" 187 0 mark 0
 AnchorPoint: "below" 187 0 mark 0
 LayerCount: 2
 Fore
@@ -47671,6 +47676,7 @@ Encoding: 1460 1460 1963
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbsmall" 161 0 mark 0
 AnchorPoint: "below" 200 0 mark 0
 LayerCount: 2
 Fore
@@ -47688,6 +47694,7 @@ Encoding: 1461 1461 1964
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbmiddle" 164 0 mark 0
 AnchorPoint: "below" 222 0 mark 0
 LayerCount: 2
 Fore
@@ -47700,6 +47707,7 @@ Encoding: 1462 1462 1965
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbmiddle" 166 0 mark 0
 AnchorPoint: "below" 221 1 mark 0
 LayerCount: 2
 Fore
@@ -47713,6 +47721,7 @@ Encoding: 1463 1463 1966
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbmiddle" 164 0 mark 0
 AnchorPoint: "below" 218 1 mark 0
 LayerCount: 2
 Fore
@@ -47730,6 +47739,7 @@ Encoding: 1464 1464 1967
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "hbmiddle" 167 0 mark 0
 AnchorPoint: "below" 167 1 mark 0
 LayerCount: 2
 Fore
@@ -47754,6 +47764,7 @@ Encoding: 1465 1465 1968
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "holem" 0 0 mark 0
 AnchorPoint: "above" 170 575 mark 0
 LayerCount: 2
 Fore
@@ -47765,6 +47776,7 @@ Encoding: 1467 1467 1969
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "qubuts" 0 0 mark 0
 AnchorPoint: "below" 181 0 mark 0
 LayerCount: 2
 Fore
@@ -47778,6 +47790,7 @@ Encoding: 1468 1468 1970
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "dagesh" 165 251 mark 0
 AnchorPoint: "middle" 165 251 mark 0
 LayerCount: 2
 Fore
@@ -47898,6 +47911,12 @@ Encoding: 1488 1488 1978
 Width: 481
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbmiddle" 240 0 basechar 0
+AnchorPoint: "hbwide" 240 0 basechar 0
+AnchorPoint: "hbsmall" 246 0 basechar 0
+AnchorPoint: "qubuts" 66 0 basechar 0
+AnchorPoint: "dagesh" 273 52 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 240 0 basechar 0
 AnchorPoint: "middle" 273 52 basechar 0
 AnchorPoint: "above" 226 573 basechar 0
@@ -47948,6 +47967,12 @@ Encoding: 1489 1489 1979
 Width: 468
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 238 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 225 0 basechar 0
+AnchorPoint: "qubuts" 32 0 basechar 0
+AnchorPoint: "dagesh" 173 264 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 238 1 basechar 0
 AnchorPoint: "middle" 173 264 basechar 0
 AnchorPoint: "above" 226 573 basechar 0
@@ -47977,6 +48002,12 @@ Encoding: 1490 1490 1980
 Width: 335
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 183 0 basechar 0
+AnchorPoint: "hbmiddle" 167 0 basechar 0
+AnchorPoint: "hbsmall" 174 0 basechar 0
+AnchorPoint: "qubuts" -6 0 basechar 0
+AnchorPoint: "dagesh" 73 254 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 173 -2 basechar 0
 AnchorPoint: "middle" 89 274 basechar 0
 AnchorPoint: "above" 174 573 basechar 0
@@ -48012,6 +48043,12 @@ Encoding: 1491 1491 1981
 Width: 438
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 219 0 basechar 0
+AnchorPoint: "hbmiddle" 235 0 basechar 0
+AnchorPoint: "hbsmall" 300 0 basechar 0
+AnchorPoint: "qubuts" 18 0 basechar 0
+AnchorPoint: "dagesh" 120 253 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 211 0 basechar 0
 AnchorPoint: "middle" 120 239 basechar 0
 AnchorPoint: "above" 226 573 basechar 0
@@ -48043,6 +48080,12 @@ Encoding: 1492 1492 1982
 Width: 478
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 232 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 238 0 basechar 0
+AnchorPoint: "qubuts" 45 0 basechar 0
+AnchorPoint: "dagesh" 241 250 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 228 0 basechar 0
 AnchorPoint: "middle" 241 238 basechar 0
 AnchorPoint: "above" 236 573 basechar 0
@@ -48087,6 +48130,12 @@ Encoding: 1493 1493 1983
 Width: 285
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 130 0 basechar 0
+AnchorPoint: "hbmiddle" 136 0 basechar 0
+AnchorPoint: "hbsmall" 190 0 basechar 0
+AnchorPoint: "qubuts" -24 0 basechar 0
+AnchorPoint: "dagesh" 77 248 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 130 0 basechar 0
 AnchorPoint: "middle" 73 238 basechar 0
 LayerCount: 2
@@ -48109,6 +48158,12 @@ Encoding: 1494 1494 1984
 Width: 289
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 146 0 basechar 0
+AnchorPoint: "hbmiddle" 136 0 basechar 0
+AnchorPoint: "hbsmall" 133 0 basechar 0
+AnchorPoint: "qubuts" -33 0 basechar 0
+AnchorPoint: "dagesh" 34 249 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 146 -3 basechar 0
 AnchorPoint: "middle" 34 238 basechar 0
 LayerCount: 2
@@ -48138,6 +48193,12 @@ Encoding: 1495 1495 1985
 Width: 479
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 232 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 238 0 basechar 0
+AnchorPoint: "qubuts" 45 0 basechar 0
+AnchorPoint: "dagesh" 233 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 224 -2 basechar 0
 AnchorPoint: "middle" 233 238 basechar 0
 AnchorPoint: "above" 243 573 basechar 0
@@ -48179,6 +48240,12 @@ Encoding: 1496 1496 1986
 Width: 486
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 245 0 basechar 0
+AnchorPoint: "hbmiddle" 240 0 basechar 0
+AnchorPoint: "hbsmall" 240 0 basechar 0
+AnchorPoint: "qubuts" 55 0 basechar 0
+AnchorPoint: "dagesh" 263 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 240 0 basechar 0
 AnchorPoint: "middle" 263 238 basechar 0
 AnchorPoint: "above" 242 573 basechar 0
@@ -48215,6 +48282,12 @@ Encoding: 1497 1497 1987
 Width: 270
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 139 0 basechar 0
+AnchorPoint: "hbmiddle" 137 -4 basechar 0
+AnchorPoint: "hbsmall" 142 -4 basechar 0
+AnchorPoint: "qubuts" -38 0 basechar 0
+AnchorPoint: "dagesh" 94 326 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 139 0 basechar 0
 AnchorPoint: "middle" 94 326 basechar 0
 LayerCount: 2
@@ -48237,6 +48310,11 @@ Encoding: 1498 1498 1988
 Width: 475
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 163 0 basechar 0
+AnchorPoint: "hbmiddle" 200 240 basechar 0
+AnchorPoint: "hbsmall" 220 247 basechar 0
+AnchorPoint: "dagesh" 163 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 163 1 basechar 0
 AnchorPoint: "middle" 163 238 basechar 0
 AnchorPoint: "above" 229 573 basechar 0
@@ -48263,6 +48341,12 @@ Encoding: 1499 1499 1989
 Width: 463
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 209 0 basechar 0
+AnchorPoint: "hbmiddle" 203 0 basechar 0
+AnchorPoint: "hbsmall" 209 0 basechar 0
+AnchorPoint: "qubuts" 16 0 basechar 0
+AnchorPoint: "dagesh" 153 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 213 0 basechar 0
 AnchorPoint: "middle" 153 238 basechar 0
 AnchorPoint: "above" 226 573 basechar 0
@@ -48290,6 +48374,12 @@ Encoding: 1500 1500 1990
 Width: 476
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 213 0 basechar 0
+AnchorPoint: "hbmiddle" 223 3 basechar 0
+AnchorPoint: "hbsmall" 232 3 basechar 0
+AnchorPoint: "qubuts" 12 0 basechar 0
+AnchorPoint: "dagesh" 173 274 basechar 0
+AnchorPoint: "holem" -90 0 basechar 0
 AnchorPoint: "below" 230 0 basechar 0
 AnchorPoint: "middle" 173 274 basechar 0
 AnchorPoint: "above" 226 573 basechar 0
@@ -48361,6 +48451,12 @@ Encoding: 1502 1502 1992
 Width: 520
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 245 0 basechar 0
+AnchorPoint: "hbmiddle" 240 0 basechar 0
+AnchorPoint: "hbsmall" 240 0 basechar 0
+AnchorPoint: "qubuts" 55 0 basechar 0
+AnchorPoint: "dagesh" 276 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 240 0 basechar 0
 AnchorPoint: "middle" 276 238 basechar 0
 AnchorPoint: "above" 265 573 basechar 0
@@ -48401,6 +48497,7 @@ Encoding: 1503 1503 1993
 Width: 282
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "dagesh" 68 238 basechar 0
 AnchorPoint: "below" 68 -2 basechar 0
 AnchorPoint: "middle" 68 238 basechar 0
 LayerCount: 2
@@ -48430,6 +48527,12 @@ Encoding: 1504 1504 1994
 Width: 317
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 167 0 basechar 0
+AnchorPoint: "hbmiddle" 154 0 basechar 0
+AnchorPoint: "hbsmall" 167 0 basechar 0
+AnchorPoint: "qubuts" -45 0 basechar 0
+AnchorPoint: "dagesh" 105 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 167 0 basechar 0
 AnchorPoint: "middle" 105 238 basechar 0
 LayerCount: 2
@@ -48461,6 +48564,12 @@ Encoding: 1505 1505 1995
 Width: 510
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 232 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 238 0 basechar 0
+AnchorPoint: "qubuts" 45 0 basechar 0
+AnchorPoint: "dagesh" 251 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 253 0 basechar 0
 AnchorPoint: "middle" 251 238 basechar 0
 AnchorPoint: "above" 260 573 basechar 0
@@ -48490,6 +48599,12 @@ Encoding: 1506 1506 1996
 Width: 499
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 229 0 basechar 0
+AnchorPoint: "hbmiddle" 221 0 basechar 0
+AnchorPoint: "hbsmall" 249 0 basechar 0
+AnchorPoint: "qubuts" 15 0 basechar 0
+AnchorPoint: "dagesh" 287 352 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 240 -110 basechar 0
 AnchorPoint: "middle" 287 352 basechar 0
 AnchorPoint: "above" 240 573 basechar 0
@@ -48534,6 +48649,7 @@ Encoding: 1507 1507 1997
 Width: 476
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "dagesh" 268 154 basechar 0
 AnchorPoint: "below" 268 0 basechar 0
 AnchorPoint: "middle" 268 154 basechar 0
 AnchorPoint: "above" 242 573 basechar 0
@@ -48572,6 +48688,12 @@ Encoding: 1508 1508 1998
 Width: 474
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 203 0 basechar 0
+AnchorPoint: "hbmiddle" 195 0 basechar 0
+AnchorPoint: "hbsmall" 203 0 basechar 0
+AnchorPoint: "qubuts" 5 0 basechar 0
+AnchorPoint: "dagesh" 278 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 203 0 basechar 0
 AnchorPoint: "middle" 278 238 basechar 0
 AnchorPoint: "above" 207 573 basechar 0
@@ -48647,6 +48769,12 @@ Encoding: 1510 1510 2000
 Width: 480
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 236 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 240 0 basechar 0
+AnchorPoint: "qubuts" 30 0 basechar 0
+AnchorPoint: "dagesh" 55 201 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 240 0 basechar 0
 AnchorPoint: "middle" 55 201 basechar 0
 AnchorPoint: "above" 226 573 basechar 0
@@ -48692,6 +48820,12 @@ Encoding: 1511 1511 2001
 Width: 497
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 304 -18 basechar 0
+AnchorPoint: "hbmiddle" 240 0 basechar 0
+AnchorPoint: "hbsmall" 240 0 basechar 0
+AnchorPoint: "qubuts" 91 0 basechar 0
+AnchorPoint: "dagesh" 224 262 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 240 0 basechar 0
 AnchorPoint: "middle" 224 262 basechar 0
 AnchorPoint: "above" 244 573 basechar 0
@@ -48729,6 +48863,12 @@ Encoding: 1512 1512 2002
 Width: 489
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 333 -1 basechar 0
+AnchorPoint: "hbsmall" 395 -1 basechar 0
+AnchorPoint: "qubuts" 64 0 basechar 0
+AnchorPoint: "dagesh" 193 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 212 0 basechar 0
 AnchorPoint: "middle" 193 238 basechar 0
 AnchorPoint: "above" 226 573 basechar 0
@@ -48755,6 +48895,12 @@ Encoding: 1513 1513 2003
 Width: 612
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 266 0 basechar 0
+AnchorPoint: "hbsmall" 266 0 basechar 0
+AnchorPoint: "qubuts" 70 0 basechar 0
+AnchorPoint: "dagesh" 390 301 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 266 0 basechar 0
 AnchorPoint: "middle" 390 301 basechar 0
 AnchorPoint: "above" 278 573 basechar 0
@@ -48809,6 +48955,12 @@ Encoding: 1514 1514 2004
 Width: 515
 GlyphClass: 2
 Flags: MW
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 333 -1 basechar 0
+AnchorPoint: "hbsmall" 395 -1 basechar 0
+AnchorPoint: "qubuts" 64 0 basechar 0
+AnchorPoint: "dagesh" 279 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "below" 240 0 basechar 0
 AnchorPoint: "middle" 279 238 basechar 0
 AnchorPoint: "above" 262 573 basechar 0
@@ -48951,6 +49103,7 @@ Encoding: 1466 1466 2010
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "holem" 0 0 mark 0
 LayerCount: 2
 Fore
 Refer: 1963 1460 N 1 0 0 1 -91 742 2
@@ -61645,19 +61798,32 @@ EndChar
 StartChar: shinshindot
 Encoding: 64298 64298 2452
 Width: 612
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 266 0 basechar 0
+AnchorPoint: "hbsmall" 266 0 basechar 0
+AnchorPoint: "qubuts" 70 0 basechar 0
+AnchorPoint: "dagesh" 390 301 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2003 1513 N 1 0 0 1 0 0 2
-Refer: 1975 1473 N 1 0 0 1 0 0 2
+Refer: 1975 1473 N 1 0 0 1 200 0 2
 EndChar
 
 StartChar: shinsindot
 Encoding: 64299 64299 2453
 Width: 612
+Flags: W
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 266 0 basechar 0
+AnchorPoint: "hbsmall" 266 0 basechar 0
+AnchorPoint: "qubuts" 70 0 basechar 0
+AnchorPoint: "dagesh" 390 301 basechar 0
+AnchorPoint: "holem" -60 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2003 1513 N 1 0 0 1 0 0 2
-Refer: 1976 1474 N 1 0 0 1 0 0 2
+Refer: 1976 1474 N 1 0 0 1 142 0 2
 EndChar
 
 StartChar: alefpatah
@@ -61666,7 +61832,7 @@ Width: 481
 LayerCount: 2
 Fore
 Refer: 1978 1488 N 1 0 0 1 0 0 2
-Refer: 1966 1463 N 1 0 0 1 0 0 2
+Refer: 1966 1463 N 1 0 0 1 96 0 2
 EndChar
 
 StartChar: alefqamats
@@ -61675,205 +61841,331 @@ Width: 481
 LayerCount: 2
 Fore
 Refer: 1978 1488 N 1 0 0 1 0 0 2
-Refer: 1967 1464 N 1 0 0 1 0 0 2
+Refer: 1967 1464 N 1 0 0 1 92 0 2
 EndChar
 
 StartChar: alefmapiq
 Encoding: 64304 64304 2456
 Width: 481
+AnchorPoint: "hbmiddle" 240 0 basechar 0
+AnchorPoint: "hbwide" 240 0 basechar 0
+AnchorPoint: "hbsmall" 246 0 basechar 0
+AnchorPoint: "qubuts" 66 0 basechar 0
+AnchorPoint: "dagesh" 273 52 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1978 1488 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 108 -210 2
 EndChar
 
 StartChar: betdagesh
 Encoding: 64305 64305 2457
 Width: 468
+AnchorPoint: "hbwide" 238 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 225 0 basechar 0
+AnchorPoint: "qubuts" 32 0 basechar 0
+AnchorPoint: "dagesh" 173 264 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1979 1489 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 42 0 2
 EndChar
 
 StartChar: gimeldagesh
 Encoding: 64306 64306 2458
 Width: 335
+AnchorPoint: "hbwide" 183 0 basechar 0
+AnchorPoint: "hbmiddle" 167 0 basechar 0
+AnchorPoint: "hbsmall" 174 0 basechar 0
+AnchorPoint: "qubuts" -6 0 basechar 0
+AnchorPoint: "dagesh" 73 254 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1980 1490 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 -74 0 2
 EndChar
 
 StartChar: daletdagesh
 Encoding: 64307 64307 2459
 Width: 438
+AnchorPoint: "hbwide" 219 0 basechar 0
+AnchorPoint: "hbmiddle" 235 0 basechar 0
+AnchorPoint: "hbsmall" 300 0 basechar 0
+AnchorPoint: "qubuts" 18 0 basechar 0
+AnchorPoint: "dagesh" 120 253 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1981 1491 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 -4 -0 2
 EndChar
 
 StartChar: hedagesh
 Encoding: 64308 64308 2460
 Width: 478
+AnchorPoint: "hbwide" 232 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 238 0 basechar 0
+AnchorPoint: "qubuts" 45 0 basechar 0
+AnchorPoint: "dagesh" 241 250 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1982 1492 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 72 2 2
 EndChar
 
 StartChar: vavdagesh
 Encoding: 64309 64309 2461
 Width: 285
+AnchorPoint: "hbwide" 130 0 basechar 0
+AnchorPoint: "hbmiddle" 136 0 basechar 0
+AnchorPoint: "hbsmall" 190 0 basechar 0
+AnchorPoint: "qubuts" -24 0 basechar 0
+AnchorPoint: "dagesh" 77 248 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1983 1493 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 -92 0 2
 EndChar
 
 StartChar: zayindagesh
 Encoding: 64310 64310 2462
 Width: 289
+AnchorPoint: "hbsmall" 133 0 basechar 0
+AnchorPoint: "hbmiddle" 136 0 basechar 0
+AnchorPoint: "hbwide" 146 0 basechar 0
+AnchorPoint: "qubuts" -32 0 basechar 0
+AnchorPoint: "dagesh" 34 249 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1984 1494 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 -146 2 2
 EndChar
 
 StartChar: tetdagesh
 Encoding: 64312 64312 2463
 Width: 486
+AnchorPoint: "hbwide" 245 0 basechar 0
+AnchorPoint: "hbmiddle" 240 0 basechar 0
+AnchorPoint: "hbsmall" 240 0 basechar 0
+AnchorPoint: "qubuts" 55 0 basechar 0
+AnchorPoint: "dagesh" 263 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1986 1496 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 94 -12 2
 EndChar
 
 StartChar: yoddagesh
 Encoding: 64313 64313 2464
 Width: 270
+AnchorPoint: "hbwide" 139 0 basechar 0
+AnchorPoint: "hbmiddle" 137 -4 basechar 0
+AnchorPoint: "hbsmall" 142 -4 basechar 0
+AnchorPoint: "qubuts" -38 0 basechar 0
+AnchorPoint: "dagesh" 94 326 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1987 1497 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 -74 74 2
 EndChar
 
 StartChar: finalkafdagesh
 Encoding: 64314 64314 2465
 Width: 475
+AnchorPoint: "hbwide" 163 0 basechar 0
+AnchorPoint: "hbmiddle" 200 240 basechar 0
+AnchorPoint: "hbsmall" 220 247 basechar 0
+AnchorPoint: "dagesh" 163 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1988 1498 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 52 -8 2
 EndChar
 
 StartChar: kafdagesh
 Encoding: 64315 64315 2466
 Width: 463
+AnchorPoint: "hbwide" 209 0 basechar 0
+AnchorPoint: "hbmiddle" 203 0 basechar 0
+AnchorPoint: "hbsmall" 209 0 basechar 0
+AnchorPoint: "qubuts" 16 0 basechar 0
+AnchorPoint: "dagesh" 153 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1989 1499 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 28 0 2
 EndChar
 
 StartChar: lameddagesh
 Encoding: 64316 64316 2467
 Width: 476
+AnchorPoint: "hbwide" 213 0 basechar 0
+AnchorPoint: "hbmiddle" 223 3 basechar 0
+AnchorPoint: "hbsmall" 232 3 basechar 0
+AnchorPoint: "qubuts" 12 0 basechar 0
+AnchorPoint: "dagesh" 173 274 basechar 0
+AnchorPoint: "holem" -90 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1990 1500 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 8 26 2
 EndChar
 
 StartChar: memdagesh
 Encoding: 64318 64318 2468
 Width: 520
+AnchorPoint: "hbwide" 245 0 basechar 0
+AnchorPoint: "hbmiddle" 240 0 basechar 0
+AnchorPoint: "hbsmall" 240 0 basechar 0
+AnchorPoint: "qubuts" 55 0 basechar 0
+AnchorPoint: "dagesh" 276 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1992 1502 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 103 3 2
 EndChar
 
 StartChar: nundagesh
 Encoding: 64320 64320 2469
 Width: 317
+AnchorPoint: "hbwide" 167 0 basechar 0
+AnchorPoint: "hbmiddle" 154 0 basechar 0
+AnchorPoint: "hbsmall" 167 0 basechar 0
+AnchorPoint: "qubuts" -45 0 basechar 0
+AnchorPoint: "dagesh" 105 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1994 1504 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 -66 0 2
 EndChar
 
 StartChar: samekhdagesh
 Encoding: 64321 64321 2470
 Width: 510
+AnchorPoint: "hbwide" 232 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 238 0 basechar 0
+AnchorPoint: "qubuts" 45 0 basechar 0
+AnchorPoint: "dagesh" 251 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1995 1505 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 84 0 2
 EndChar
 
 StartChar: finalpedagesh
 Encoding: 64323 64323 2471
 Width: 476
+AnchorPoint: "dagesh" 268 154 basechar 0
 LayerCount: 2
 Fore
 Refer: 1997 1507 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 96 -96 2
 EndChar
 
 StartChar: pedagesh
 Encoding: 64324 64324 2472
 Width: 474
+AnchorPoint: "hbwide" 203 0 basechar 0
+AnchorPoint: "hbmiddle" 195 0 basechar 0
+AnchorPoint: "hbsmall" 203 0 basechar 0
+AnchorPoint: "qubuts" 5 0 basechar 0
+AnchorPoint: "dagesh" 278 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1998 1508 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 112 -10 2
 EndChar
 
 StartChar: tsadidagesh
 Encoding: 64326 64326 2473
 Width: 480
+AnchorPoint: "hbwide" 236 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 240 0 basechar 0
+AnchorPoint: "qubuts" 30 0 basechar 0
+AnchorPoint: "dagesh" 55 201 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2000 1510 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 -111 -46 2
 EndChar
 
 StartChar: qofdagesh
 Encoding: 64327 64327 2474
 Width: 497
+AnchorPoint: "hbwide" 304 -18 basechar 0
+AnchorPoint: "hbmiddle" 240 0 basechar 0
+AnchorPoint: "hbsmall" 240 0 basechar 0
+AnchorPoint: "qubuts" 91 0 basechar 0
+AnchorPoint: "dagesh" 224 262 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2001 1511 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 60 14 2
 EndChar
 
 StartChar: reshdagesh
 Encoding: 64328 64328 2475
 Width: 489
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 333 -1 basechar 0
+AnchorPoint: "hbsmall" 395 -1 basechar 0
+AnchorPoint: "qubuts" 64 0 basechar 0
+AnchorPoint: "dagesh" 193 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2002 1512 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 22 -8 2
 EndChar
 
 StartChar: shindagesh
 Encoding: 64329 64329 2476
 Width: 612
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 266 0 basechar 0
+AnchorPoint: "hbsmall" 266 0 basechar 0
+AnchorPoint: "qubuts" 70 0 basechar 0
+AnchorPoint: "dagesh" 390 301 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2003 1513 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 222 48 2
 EndChar
 
 StartChar: tavdagesh
 Encoding: 64330 64330 2477
 Width: 515
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 333 -1 basechar 0
+AnchorPoint: "hbsmall" 395 -1 basechar 0
+AnchorPoint: "qubuts" 64 0 basechar 0
+AnchorPoint: "dagesh" 279 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2004 1514 N 1 0 0 1 0 0 2
-Refer: 1970 1468 N 1 0 0 1 0 0 2
+Refer: 1970 1468 N 1 0 0 1 113 -12 2
 EndChar
 
 StartChar: vavholam
@@ -61882,52 +62174,82 @@ Width: 285
 LayerCount: 2
 Fore
 Refer: 1983 1493 N 1 0 0 1 0 0 2
-Refer: 1968 1465 N 1 0 0 1 0 0 2
+Refer: 1968 1465 N 1 0 0 1 74 0 2
 EndChar
 
 StartChar: betrafe
 Encoding: 64332 64332 2479
 Width: 468
+AnchorPoint: "hbwide" 238 0 basechar 0
+AnchorPoint: "hbmiddle" 234 0 basechar 0
+AnchorPoint: "hbsmall" 225 0 basechar 0
+AnchorPoint: "qubuts" 32 0 basechar 0
+AnchorPoint: "dagesh" 173 264 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1979 1489 N 1 0 0 1 0 0 2
-Refer: 1973 1471 N 1 0 0 1 0 0 2
+Refer: 1973 1471 N 1 0 0 1 78 0 2
 EndChar
 
 StartChar: kafrafe
 Encoding: 64333 64333 2480
 Width: 463
+AnchorPoint: "hbwide" 209 0 basechar 0
+AnchorPoint: "hbmiddle" 203 0 basechar 0
+AnchorPoint: "hbsmall" 209 0 basechar 0
+AnchorPoint: "qubuts" 0 0 basechar 0
+AnchorPoint: "dagesh" 153 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1989 1499 N 1 0 0 1 0 0 2
-Refer: 1973 1471 N 1 0 0 1 0 0 2
+Refer: 1973 1471 N 1 0 0 1 56 0 2
 EndChar
 
 StartChar: perafe
 Encoding: 64334 64334 2481
 Width: 474
+AnchorPoint: "hbwide" 209 0 basechar 0
+AnchorPoint: "hbmiddle" 203 0 basechar 0
+AnchorPoint: "hbsmall" 209 0 basechar 0
+AnchorPoint: "qubuts" 0 0 basechar 0
+AnchorPoint: "dagesh" 278 238 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1998 1508 N 1 0 0 1 0 0 2
-Refer: 1973 1471 N 1 0 0 1 0 0 2
+Refer: 1973 1471 N 1 0 0 1 66 0 2
 EndChar
 
 StartChar: shindageshshindot
 Encoding: 64300 64300 2482
 Width: 612
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 266 0 basechar 0
+AnchorPoint: "hbsmall" 266 0 basechar 0
+AnchorPoint: "qubuts" 70 0 basechar 0
+AnchorPoint: "dagesh" 390 301 basechar 0
+AnchorPoint: "holem" 0 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2476 64329 N 1 0 0 1 0 0 2
-Refer: 1975 1473 N 1 0 0 1 0 0 2
+Refer: 1975 1473 N 1 0 0 1 200 0 2
 EndChar
 
 StartChar: shindageshsindot
 Encoding: 64301 64301 2483
 Width: 612
+AnchorPoint: "hbwide" 281 0 basechar 0
+AnchorPoint: "hbmiddle" 266 0 basechar 0
+AnchorPoint: "hbsmall" 266 0 basechar 0
+AnchorPoint: "qubuts" 70 0 basechar 0
+AnchorPoint: "dagesh" 390 301 basechar 0
+AnchorPoint: "holem" -60 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 2476 64329 N 1 0 0 1 0 0 2
-Refer: 1976 1474 N 1 0 0 1 0 0 2
+Refer: 1976 1474 N 1 0 0 1 142 0 2
 EndChar
 
 StartChar: uniE801
@@ -61940,24 +62262,23 @@ Refer: 1983 1493 N 1 0 0 1 0 0 2
 Refer: 1968 1465 N 1 0 0 1 -10 0 2
 EndChar
 
-StartChar: hiriqqamats
+StartChar: patah.ganuv
 Encoding: 65842 -1 2485
 Width: 0
 Flags: W
 LayerCount: 2
 Fore
-Refer: 1963 1460 N 1 0 0 1 -255 0 2
-Refer: 1967 1464 N 1 0 0 1 0 0 2
+Refer: 1966 1463 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: hiriqpatah
+StartChar: hiriqmem
 Encoding: 65843 -1 2486
-Width: 0
+Width: 527
 Flags: W
 LayerCount: 2
 Fore
-Refer: 1963 1460 N 1 0 0 1 -255 0 2
-Refer: 1966 1463 N 1 0 0 1 0 0 2
+Refer: 1963 1460 N 1 0 0 1 283 0 2
+Refer: 1991 1501 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniE802
