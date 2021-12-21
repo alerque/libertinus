@@ -32,11 +32,13 @@ feature ccmp {
 #ifndef MATH
 #ifndef DISPLAY
 
-lookup ccmpvavholem {
+@vowels = [\sheva \hatafsegol \hatafpatah \hatafqamats \hiriq \tsere \segol \patah \qamats \qubuts 
+	\holam];
+
+feature ccmp { # vavholem
   lookupflag RightToLeft;
-    sub [\sheva \hatafsegol \hatafpatah \hatafqamats \hiriq \tsere \segol \patah \qubuts 
-	\holam ] [\vav ]' [\holam ]  by \uniE801;
-} ccmpvavholem;
+    sub @vowels [\vav ]' [\holam ]  by \uniE801;
+} ccmp;
 
 lookup ccmpspecialglyphs {
   lookupflag RightToLeft;
@@ -90,21 +92,59 @@ lookup ccmpSinShin {
     sub \shin \dagesh \sindot  by \shindageshsindot;
 } ccmpSinShin;
 
-lookup ccmpHiriqForJerusalem {
+lookup PatahToPatahGanuv {
   lookupflag RightToLeft;
-    sub \patah \hiriq by \hiriqpatah;
-    sub \qamats \hiriq by \hiriqqamats;
-} ccmpHiriqForJerusalem;
+    sub \patah by \patah.ganuv ;
+} PatahToPatahGanuv;
+
+lookup ccmpPatahGanuvStage1 {
+  lookupflag RightToLeft;
+    sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
+    sub [\dagesh \rafe  ] [\tsere \segol \hiriq \holam \qubuts ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
+    sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\meteg ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
+    sub [\dagesh \rafe  ] [\tsere \segol \hiriq \holam \qubuts ] [\meteg ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
+} ccmpPatahGanuvStage1;
+
+lookup PatahGanuvBackToPatah {
+  lookupflag RightToLeft;
+    sub \patah.ganuv by \patah ;
+} PatahGanuvBackToPatah;
+
+lookup ccmpPatahGanuvStage2 {
+  lookupflag RightToLeft;
+    sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\dalet  \qof \resh  \alef 
+	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
+	\lamed \finalmem \mem \nun \samekh 
+	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam ] ;
+    sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\meteg ] [\dalet  \qof \resh  \alef 
+	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
+	\lamed \finalmem \mem \nun \samekh 
+	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam 
+	] ;
+    sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\meteg ] [\meteg ] [\dalet  \qof \resh  \alef 
+	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
+	\lamed \finalmem \mem \nun \samekh 
+	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam 
+	] ;
+} ccmpPatahGanuvStage2;
+
+feature ccmp { # hiriqmem for jerusalaim
+  lookupflag RightToLeft;
+    sub [\patah \qamats] [\hiriq]' [\finalmem ]'  by \hiriqmem;
+} ccmp;
 
 feature ccmp {
 
  script hebr;
      language dflt ;
-      lookup ccmpvavholem;
       lookup ccmpspecialglyphs;
       lookup ccmpDagesh;
       lookup ccmpSinShin;
-      lookup ccmpHiriqForJerusalem;
+      lookup ccmpPatahGanuvStage1;
+      lookup ccmpPatahGanuvStage2;
 } ccmp;
 
 #endif
