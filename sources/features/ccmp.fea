@@ -114,9 +114,9 @@ lookup PatahToPatahGanuv {
 # Replace the patah with the furtive patah
 feature ccmp {
   lookupflag RightToLeft;
-    sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
-    sub [\dagesh \rafe  ] [\tsere \segol \hiriq \holam \qubuts ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
-    sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\meteg ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
+    sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\he  \het \ayin  ] [\patah ]' lookup PatahToPatahGanuv;
+    sub [\dagesh \rafe ] [\tsere \segol \hiriq \holam \qubuts ] [\he  \het \ayin  ] [\patah ]' lookup PatahToPatahGanuv;
+    sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\meteg ] [\he  \het \ayin ] [\patah ]'lookup PatahToPatahGanuv  ;
     sub [\dagesh \rafe  ] [\tsere \segol \hiriq \holam \qubuts ] [\meteg ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
 } ccmp;
 
@@ -128,23 +128,18 @@ lookup PatahGanuvBackToPatah {
 # Revert furtive patah in case where it is not right
 feature ccmp {
   lookupflag RightToLeft;
-    sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\dalet  \qof \resh  \alef 
-	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
-	\lamed \finalmem \mem \nun \samekh 
-	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
-	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam ] ;
+    sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\dalet  \qof \resh  \alef \bet \gimel \he  \vav \zayin \het \tet \yod \kaf \lamed \finalmem \mem \nun \samekh \ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam ];
     sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\meteg ] [\dalet  \qof \resh  \alef 
 	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
 	\lamed \finalmem \mem \nun \samekh 
 	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
-	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam 
-	] ;
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam ];
     sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\meteg ] [\meteg ] [\dalet  \qof \resh  \alef 
 	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
 	\lamed \finalmem \mem \nun \samekh 
 	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
-	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam 
-	] ;
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam	];
 } ccmp;
 
 # hiriqmem for jerusalaim
