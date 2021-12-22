@@ -1,8 +1,9 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: LibertinusSerif-Regular
 FullName: Libertinus Serif Regular
 FamilyName: Libertinus Serif
 Weight: Regular
+Copyright: 
 UComments: "2003-08-29: Created.+AAoA-2004-07-25: v(1.0) release candidate+AAoA-2005-12-28: v(1.1.0) stable+AAoA-2006-01-01: v(2.0.0) stable+AAoA-2006-09-05: v(2.2.0) stable+AAoA-2006-12-04: v(2.3.0) stable+AAoA-2007-03-11: v(2.4.0) stable+AAoA-2007-12-00: v(2.7.0) stable+AAoA-2008-06-00: v(2.8.14) stable+AAoA"
 Version: 5.3.0
 ItalicAngle: 0
@@ -20,6 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
+ModificationTime: 1640108261
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -157,7 +159,11 @@ GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
+DisplaySize: -72
+AntiAlias: 1
+FitToEm: 0
 ExtremaBound: 50
+WinInfo: 9500 25 11
 BeginPrivate: 9
 BlueValues 47 [-12 0 429 442 460 472 600 610 645 658 688 698]
 OtherBlues 11 [-238 -227]
@@ -303,7 +309,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "ganuv" "'mark' Hebrew vocals below" "qubuts" "'mark' Hebrew vocals below" "dagesh"""  "holem" "'mark' Hebrew Holem" "hb-wide" "'mark' Hebrew vocals below" "hb-middle" "'mark' Hebrew vocals below" "hb-small" "'mark' Hebrew vocals below" "aboveMark" "'mkmk' Mark to Mark-1" "right" "'mark' Right" "komb_OR" "'mark' Komb OR" "above" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
-BeginChars: 65884 2725
+BeginChars: 65888 2730
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -53796,9 +53802,10 @@ EndChar
 
 StartChar: ayin
 Encoding: 1506 1506 2102
+AltUni2: 00fb20.ffffffff.0
 Width: 499
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "qubuts" 15 0 basechar 0
 AnchorPoint: "hb-small" 249 0 basechar 0
 AnchorPoint: "hb-middle" 221 0 basechar 0
@@ -75287,6 +75294,130 @@ LayerCount: 2
 Fore
 Refer: 2069 1460 N 1 0 0 1 283 0 2
 Refer: 2097 1501 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: gimelrafe
+Encoding: 65884 -1 2725
+Width: 335
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2079 1471 S 1 0 0 1 -22 0 2
+Refer: 2086 1490 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: daletrafe
+Encoding: 65885 -1 2726
+Width: 438
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2079 1471 S 1 0 0 1 54 0 2
+Refer: 2087 1491 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: herafe
+Encoding: 65886 -1 2727
+Width: 478
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2079 1471 S 1 0 0 1 60 0 2
+Refer: 2088 1492 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: tavrafe
+Encoding: 65887 -1 2728
+Width: 515
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2079 1471 S 1 0 0 1 102 0 2
+Refer: 2110 1514 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni25CC
+Encoding: 9676 9676 2729
+Width: 601
+VWidth: 990
+Flags: MW
+LayerCount: 2
+Back
+SplineSet
+282 -15 m 0
+ 153 -15 49 90 49 219 c 0
+ 49 348 153 452 282 452 c 0
+ 411 452 516 348 516 219 c 0
+ 516 90 411 -15 282 -15 c 0
+282 426 m 0
+ 167 426 75 333 75 219 c 0
+ 75 104 167 11 282 11 c 0
+ 396 11 490 104 490 219 c 0
+ 490 334 397 426 282 426 c 0
+EndSplineSet
+Fore
+SplineSet
+50 218 m 0
+ 50 239 59 248 80 248 c 0
+ 101 248 111 239 111 218 c 0
+ 111 197 101 187 80 187 c 0
+ 59 187 50 197 50 218 c 0
+453 218 m 0
+ 453 239 462 248 483 248 c 0
+ 504 248 515 239 515 218 c 0
+ 515 197 504 187 483 187 c 0
+ 462 187 453 197 453 218 c 0
+252 420 m 0
+ 252 441 261 450 282 450 c 0
+ 303 450 313 441 313 420 c 0
+ 313 399 303 389 282 389 c 0
+ 261 389 252 399 252 420 c 0
+252 16 m 0
+ 252 37 261 47 282 47 c 0
+ 303 47 313 37 313 16 c 0
+ 313 -5 303 -15 282 -15 c 0
+ 261 -15 252 -5 252 16 c 0
+427 319 m 0
+ 427 340 437 350 458 350 c 0
+ 479 350 489 340 489 319 c 0
+ 489 298 479 288 458 288 c 0
+ 437 288 427 298 427 319 c 0
+427 117 m 0
+ 427 138 437 147 458 147 c 0
+ 479 147 489 138 489 117 c 0
+ 489 96 479 86 458 86 c 0
+ 437 86 427 96 427 117 c 0
+75 319 m 0
+ 75 340 84 350 105 350 c 0
+ 126 350 138 340 138 319 c 0
+ 138 298 126 288 105 288 c 0
+ 84 288 75 298 75 319 c 0
+75 117 m 0
+ 75 138 84 147 105 147 c 0
+ 126 147 138 138 138 117 c 0
+ 138 96 126 86 105 86 c 0
+ 84 86 75 96 75 117 c 0
+151 394 m 0
+ 151 415 159 425 180 425 c 0
+ 201 425 212 415 212 394 c 0
+ 212 373 201 363 180 363 c 0
+ 159 363 151 373 151 394 c 0
+352 394 m 0
+ 352 415 362 425 383 425 c 0
+ 404 425 414 415 414 394 c 0
+ 414 373 404 363 383 363 c 0
+ 362 363 352 373 352 394 c 0
+151 41 m 0
+ 151 62 159 72 180 72 c 0
+ 201 72 212 62 212 41 c 0
+ 212 20 201 11 180 11 c 0
+ 159 11 151 20 151 41 c 0
+352 41 m 0
+ 352 62 362 72 383 72 c 0
+ 404 72 414 62 414 41 c 0
+ 414 20 404 11 383 11 c 0
+ 362 11 352 20 352 41 c 0
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
