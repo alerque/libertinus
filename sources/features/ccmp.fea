@@ -26,7 +26,7 @@ feature ccmp {
   sub @capitals @accents' lookup ccmp_cap_accents;
 } ccmp;
 
-#Hebrew
+# Hebrew
 
 #ifndef SANS
 #ifndef MATH
@@ -35,24 +35,36 @@ feature ccmp {
 @vowels = [\sheva \hatafsegol \hatafpatah \hatafqamats \hiriq \tsere \segol \patah \qamats \qubuts 
 	\holam];
 
+# By default the vavholam is used as vowel. This rule takes of situations where the vav is a consonant
 feature ccmp { # vavholem
   lookupflag RightToLeft;
     sub @vowels [\vav ]' [\holam ]  by \uniE801;
 } ccmp;
 
-lookup ccmpspecialglyphs {
+# Several subsitutions
+feature ccmp {
   lookupflag RightToLeft;
     sub \alef \patah  by \alefpatah;
     sub \alef \qamats  by \alefqamats;
     sub \vav \holam  by \vavholam;
+    sub \finalkaf \sheva by \uniE802;
+    sub \finalkaf \qamats by \uniE803;
+} ccmp;
+
+# Rafe
+feature ccmp {
+  lookupflag RightToLeft;
     sub \bet \rafe  by \betrafe;
     sub \kaf \rafe  by \kafrafe;
     sub \pe \rafe  by \perafe;
-    sub \finalkaf \sheva by \uniE802;
-    sub \finalkaf \qamats by \uniE803;
-} ccmpspecialglyphs;
+    sub \gimel \rafe by \gimelrafe;
+    sub \dalet \rafe by \daletrafe;
+    sub \he \rafe by \herafe;
+    sub \tav \rafe by \tavrafe;
+} ccmp;
 
-lookup ccmpDagesh {
+# Replace glyphs with dagesh by the dagesh variants
+feature ccmp {
   lookupflag RightToLeft;
     sub \alef \dagesh  by \alefmapiq;
     sub \bet \dagesh  by \betdagesh;
@@ -76,9 +88,10 @@ lookup ccmpDagesh {
     sub \resh \dagesh  by \reshdagesh;
     sub \shin \dagesh  by \shindagesh;
     sub \tav \dagesh  by \tavdagesh;
-} ccmpDagesh;
+} ccmp;
 
-lookup ccmpSinShin {
+# Take care of all shin variants
+feature ccmp {
   lookupflag RightToLeft;
     sub \shin \shindot  by \shinshindot;
     sub \shin \sindot  by \shinsindot;
@@ -90,27 +103,30 @@ lookup ccmpSinShin {
     sub \shinsindot \dagesh  by \shindageshsindot;
     sub \shin \sindot \dagesh  by \shindageshsindot;
     sub \shin \dagesh \sindot  by \shindageshsindot;
-} ccmpSinShin;
+} ccmp;
 
+# The rules to take care of the furtive patah
 lookup PatahToPatahGanuv {
   lookupflag RightToLeft;
     sub \patah by \patah.ganuv ;
 } PatahToPatahGanuv;
 
-lookup ccmpPatahGanuvStage1 {
+# Replace the patah with the furtive patah
+feature ccmp {
   lookupflag RightToLeft;
     sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
     sub [\dagesh \rafe  ] [\tsere \segol \hiriq \holam \qubuts ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
     sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\meteg ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
     sub [\dagesh \rafe  ] [\tsere \segol \hiriq \holam \qubuts ] [\meteg ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
-} ccmpPatahGanuvStage1;
+} ccmp;
 
 lookup PatahGanuvBackToPatah {
   lookupflag RightToLeft;
     sub \patah.ganuv by \patah ;
 } PatahGanuvBackToPatah;
 
-lookup ccmpPatahGanuvStage2 {
+# Revert furtive patah in case where it is not right
+feature ccmp {
   lookupflag RightToLeft;
     sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\dalet  \qof \resh  \alef 
 	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
@@ -129,22 +145,12 @@ lookup ccmpPatahGanuvStage2 {
 	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
 	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam 
 	] ;
-} ccmpPatahGanuvStage2;
-
-feature ccmp { # hiriqmem for jerusalaim
-  lookupflag RightToLeft;
-    sub [\patah \qamats] [\hiriq]' [\finalmem ]'  by \hiriqmem;
 } ccmp;
 
+# hiriqmem for jerusalaim
 feature ccmp {
-
- script hebr;
-     language dflt ;
-      lookup ccmpspecialglyphs;
-      lookup ccmpDagesh;
-      lookup ccmpSinShin;
-      lookup ccmpPatahGanuvStage1;
-      lookup ccmpPatahGanuvStage2;
+  lookupflag RightToLeft;
+    sub [\patah \qamats] [\hiriq]' [\finalmem ]'  by \hiriqmem;
 } ccmp;
 
 #endif
