@@ -148,6 +148,14 @@ feature ccmp {
     sub [\patah \qamats] [\hiriq]' [\finalmem ]'  by \hiriqmem;
 } ccmp;
 
+# Workaround for dealing with silent alef after holam
+# More elegant would be using GPOS
+feature ccmp {
+  lookupflag RightToLeft;
+    ignore substitute \holam' \alef' @vowels;
+    sub \holam' \alef' by \holamalef;
+} ccmp;
+
 #endif
 #endif
 #endif
