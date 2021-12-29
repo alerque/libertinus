@@ -1,9 +1,8 @@
-SplineFontDB: 3.2
+SplineFontDB: 3.0
 FontName: LibertinusSerif-Regular
 FullName: Libertinus Serif Regular
 FamilyName: Libertinus Serif
 Weight: Regular
-Copyright: 
 UComments: "2003-08-29: Created.+AAoA-2004-07-25: v(1.0) release candidate+AAoA-2005-12-28: v(1.1.0) stable+AAoA-2006-01-01: v(2.0.0) stable+AAoA-2006-09-05: v(2.2.0) stable+AAoA-2006-12-04: v(2.3.0) stable+AAoA-2007-03-11: v(2.4.0) stable+AAoA-2007-12-00: v(2.7.0) stable+AAoA-2008-06-00: v(2.8.14) stable+AAoA"
 Version: 5.3.0
 ItalicAngle: 0
@@ -21,7 +20,6 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
-ModificationTime: 1640785071
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -159,11 +157,7 @@ GaspTable: 3 8 2 17 1 65535 3 0
 Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -72
-AntiAlias: 1
-FitToEm: 0
 ExtremaBound: 50
-WinInfo: 2475 25 10
 BeginPrivate: 9
 BlueValues 47 [-12 0 429 442 460 472 600 610 645 658 688 698]
 OtherBlues 11 [-238 -227]
@@ -52911,7 +52905,7 @@ StartChar: sheva
 Encoding: 1149 1456 2065
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbsmall" 149 0 mark 0
 LayerCount: 2
 Fore
@@ -52924,7 +52918,7 @@ StartChar: hatafsegol
 Encoding: 1150 1457 2066
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbwide" 226 3 mark 0
 LayerCount: 2
 Fore
@@ -52939,7 +52933,7 @@ StartChar: hatafpatah
 Encoding: 1151 1458 2067
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbwide" 174 0 mark 0
 LayerCount: 2
 Fore
@@ -52958,7 +52952,7 @@ StartChar: hatafqamats
 Encoding: 1152 1459 2068
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbwide" 187 0 mark 0
 LayerCount: 2
 Fore
@@ -52971,7 +52965,7 @@ StartChar: hiriq
 Encoding: 1153 1460 2069
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbsmall" 162 -0 mark 0
 LayerCount: 2
 Fore
@@ -52988,7 +52982,7 @@ StartChar: tsere
 Encoding: 1154 1461 2070
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbmiddle" 165 -3 mark 0
 LayerCount: 2
 Fore
@@ -53001,7 +52995,7 @@ StartChar: segol
 Encoding: 1155 1462 2071
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbmiddle" 166 0 mark 0
 LayerCount: 2
 Fore
@@ -53057,7 +53051,7 @@ StartChar: holam
 Encoding: 1158 1465 2074
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "holem" 0 0 mark 0
 LayerCount: 2
 Fore
@@ -53069,7 +53063,7 @@ StartChar: qubuts
 Encoding: 1160 1467 2075
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "qubuts" 0 0 mark 0
 LayerCount: 2
 Fore
@@ -53083,7 +53077,7 @@ StartChar: dagesh
 Encoding: 1161 1468 2076
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "dagesh" 165 251 mark 0
 LayerCount: 2
 Fore
@@ -53128,7 +53122,7 @@ StartChar: rafe
 Encoding: 1164 1471 2079
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 2072 1463 N 1 0 0 1 -1 730 2
@@ -53154,7 +53148,7 @@ StartChar: shindot
 Encoding: 1166 1473 2081
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 2069 1460 N 1 0 0 1 186 740 2
@@ -53165,7 +53159,7 @@ StartChar: sindot
 Encoding: 1167 1474 2082
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 2069 1460 N 1 0 0 1 -181 740 2
@@ -53197,7 +53191,7 @@ StartChar: alef
 Encoding: 1170 1488 2084
 Width: 481
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbmiddle" 240 0 basechar 0
 AnchorPoint: "hbwide" 240 0 basechar 0
 AnchorPoint: "hbsmall" 246 0 basechar 0
@@ -53244,7 +53238,7 @@ StartChar: bet
 Encoding: 1171 1489 2085
 Width: 468
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbwide" 238 0 basechar 0
 AnchorPoint: "hbmiddle" 234 0 basechar 0
 AnchorPoint: "hbsmall" 225 0 basechar 0
@@ -53509,7 +53503,7 @@ StartChar: yod
 Encoding: 1179 1497 2093
 Width: 270
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbwide" 139 0 basechar 0
 AnchorPoint: "hbmiddle" 137 -4 basechar 0
 AnchorPoint: "hbsmall" 142 -4 basechar 0
@@ -53695,7 +53689,7 @@ StartChar: finalnun
 Encoding: 1185 1503 2099
 Width: 282
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "hbmiddle" 27 0 basechar 0
 LayerCount: 2
 Fore
@@ -53783,7 +53777,7 @@ Encoding: 1188 1506 2102
 AltUni2: 00fb20.ffffffff.0
 Width: 499
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "ganuv" 168 0 basechar 0
 AnchorPoint: "hbwide" 229 0 basechar 0
 AnchorPoint: "hbmiddle" 221 0 basechar 0
@@ -53831,7 +53825,7 @@ StartChar: finalpe
 Encoding: 1189 1507 2103
 Width: 476
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 SplineSet
@@ -54129,7 +54123,7 @@ StartChar: uni05F0
 Encoding: 1197 1520 2111
 Width: 557
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 2089 1493 N 1 0 0 1 -4 0 2
@@ -54141,7 +54135,7 @@ StartChar: uni05F1
 Encoding: 1198 1521 2112
 Width: 545
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 2093 1497 N 1 0 0 1 0 0 2
@@ -54153,7 +54147,7 @@ StartChar: uni05F2
 Encoding: 1199 1522 2113
 Width: 533
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 2093 1497 N 1 0 0 1 0 0 2
@@ -54195,7 +54189,7 @@ StartChar: holamhaser
 Encoding: 1159 1466 2116
 Width: 0
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 AnchorPoint: "holem" 0 0 mark 0
 LayerCount: 2
 Fore
@@ -54232,7 +54226,7 @@ StartChar: aleph
 Encoding: 1875 8501 2118
 Width: 481
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 2084 1488 N 1 0 0 1 0 0 2
@@ -58356,7 +58350,7 @@ StartChar: uni2136
 Encoding: 1876 8502 2239
 Width: 468
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 2085 1489 N 1 0 0 1 0 0 2
@@ -74780,7 +74774,6 @@ EndChar
 StartChar: alefpatah
 Encoding: 2350 64302 2690
 Width: 481
-Flags: H
 LayerCount: 2
 Fore
 Refer: 2084 1488 N 1 0 0 1 0 0 2
@@ -74790,7 +74783,6 @@ EndChar
 StartChar: alefqamats
 Encoding: 2351 64303 2691
 Width: 481
-Flags: H
 LayerCount: 2
 Fore
 Refer: 2084 1488 N 1 0 0 1 0 0 2
@@ -74926,7 +74918,6 @@ EndChar
 StartChar: finalkafdagesh
 Encoding: 2361 64314 2701
 Width: 475
-Flags: H
 LayerCount: 2
 Fore
 Refer: 2094 1498 N 1 0 0 1 0 0 2
@@ -75006,7 +74997,6 @@ EndChar
 StartChar: finalpedagesh
 Encoding: 2367 64323 2707
 Width: 476
-Flags: H
 LayerCount: 2
 Fore
 Refer: 2103 1507 N 1 0 0 1 0 0 2
@@ -75100,7 +75090,6 @@ EndChar
 StartChar: vavholam
 Encoding: 2374 64331 2714
 Width: 285
-Flags: H
 LayerCount: 2
 Fore
 Refer: 2089 1493 N 1 0 0 1 0 0 2
@@ -75184,7 +75173,7 @@ EndChar
 StartChar: uniE801
 Encoding: 2341 59393 2720
 Width: 285
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 2089 1493 N 1 0 0 1 0 0 2
@@ -75195,7 +75184,7 @@ EndChar
 StartChar: uniE802
 Encoding: 2342 59394 2721
 Width: 475
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 2065 1456 N 1 0 0 1 76 326 2
@@ -75225,7 +75214,7 @@ EndChar
 StartChar: hiriqmem
 Encoding: 2726 -1 2724
 Width: 527
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 2069 1460 N 1 0 0 1 283 0 2
@@ -75296,7 +75285,7 @@ StartChar: circledotted
 Encoding: 2211 9676 2729
 Width: 524
 VWidth: 1010
-Flags: HMW
+Flags: MW
 AnchorPoint: "dagesh" 260 220 basechar 0
 AnchorPoint: "holem" 0 0 basechar 0
 AnchorPoint: "qubuts" 70 0 basechar 0
@@ -75394,10 +75383,10 @@ EndChar
 StartChar: holamalef
 Encoding: 2731 -1 2730
 Width: 481
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 2074 1465 S 1 0 0 1 324 0 2
+Refer: 2074 1465 N 1 0 0 1 324 0 2
 Refer: 2084 1488 N 1 0 0 1 0 0 2
 EndChar
 EndChars
