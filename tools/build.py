@@ -11,7 +11,7 @@ from sfdLib.parser import SFDParser, CATEGORIES_KEY, MATH_KEY
 
 class Font:
     def __init__(self, filename, features):
-        self._font = font = ufoLib2.Font(validate=False)
+        self._font = font = ufoLib2.Font()
 
         parser = SFDParser(filename, font, ufo_anchors=False,
             ufo_kerning=False, minimal=True)
