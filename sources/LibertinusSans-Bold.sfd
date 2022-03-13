@@ -20,6 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
+ModificationTime: 1647194002
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -278,7 +279,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "acute" "'mark' Mark Positioning lookup 5" "above" "'mark' Mark Positioning lookup 4" "top_punkt" "'mark' Mark Positioning lookup 4" "below" "'mark' Mark Positioning lookup 3" "cedilla" "'mark' Mark Positioning lookup 2" "ogonek" "'mark' Mark Positioning lookup 1" "middle" "'mark' Mark Positioning in Hebrew lookup 0"
-BeginChars: 1114490 2591
+BeginChars: 1114490 2592
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -64329,6 +64330,25 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 413 307 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uniFB29
+Encoding: 64297 64297 2591
+Width: 520
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+60 202 m 5
+ 60 262 l 1
+ 230 262 l 1
+ 230 433 l 1
+ 290 433 l 1
+ 290 262 l 1
+ 460 262 l 1
+ 460 202 l 5
+ 60 202 l 5
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

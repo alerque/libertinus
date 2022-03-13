@@ -20,6 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
+ModificationTime: 1647193906
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -275,7 +276,7 @@ Grid
  -113 550 l 1025
 EndSplineSet
 AnchorClass2: "komb_OR" "'mark' komb OR" "above" "'mark' Above" "top_punkt" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
-BeginChars: 1114407 2437
+BeginChars: 1114407 2438
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -59215,6 +59216,25 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 418 307 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: uniFB29
+Encoding: 64297 64297 2437
+Width: 527
+Flags: HWO
+LayerCount: 2
+Fore
+SplineSet
+66 208 m 5
+ 66 257 l 1
+ 238 257 l 1
+ 238 431 l 1
+ 289 431 l 1
+ 289 257 l 1
+ 461 257 l 1
+ 461 208 l 5
+ 66 208 l 5
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
