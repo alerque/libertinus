@@ -24,6 +24,16 @@ jobs:
         with:
           name: ${{ steps.fontship.outputs.DISTDIR }}
           path: ${{ steps.fontship.outputs.DISTDIR }}.zip
+      - name: FontProof
+        id: fontproof
+        uses: docker://siletypesetter/fontproof:latest
+        with:
+          args: proofs/waterfalls.sil
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: waterfalls
+          path: proofs/waterfalls.pdf
       - name: Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v1
