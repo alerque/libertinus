@@ -84,3 +84,7 @@ See the license file [OFL.txt](OFL.txt) for details.
 [fred-wang]: https://github.com/fred-wang
 [fontship]: https://github.com/theleagueof/fontship
 [fontship-docker-setup]: https://github.com/theleagueof/fontship#docker-setup
+
+Examples
+--------
+See [images](/images/) and [Gallery](/images/Gallery.md).
