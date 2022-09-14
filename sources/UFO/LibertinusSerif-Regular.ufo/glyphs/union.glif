@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="union" format="2">
+	<unicode hex="222A"/>
+	<advance width="489"/>
+	<outline>
+		<contour>
+			<point x="371" y="429" type="line"/>
+			<point x="371" y="217" type="line" smooth="yes"/>
+			<point x="371" y="115"/>
+			<point x="349" y="33"/>
+			<point x="237" y="33" type="curve" smooth="yes"/>
+			<point x="138" y="33"/>
+			<point x="118" y="115"/>
+			<point x="118" y="217" type="curve" smooth="yes"/>
+			<point x="118" y="429" type="line"/>
+			<point x="67" y="429" type="line"/>
+			<point x="67" y="217" type="line" smooth="yes"/>
+			<point x="67" y="89"/>
+			<point x="98" y="-10"/>
+			<point x="239" y="-10" type="curve" smooth="yes"/>
+			<point x="388" y="-10"/>
+			<point x="422" y="92"/>
+			<point x="422" y="217" type="curve" smooth="yes"/>
+			<point x="422" y="429" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem -10 43</string>
+							<string>hstem 429 -20</string>
+							<string>vstem 67 51</string>
+							<string>vstem 371 51</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>2309003ef4c561b2393b9dc7814b0d8290505c929ee8e69cb97cb352b47e36a3f4a6f96d23a8019f103a9bc1e5f39cd89abc87520b215a676993f63a94bd2ed6</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

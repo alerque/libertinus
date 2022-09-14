@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Idotaccent" format="2">
+	<unicode hex="0130"/>
+	<advance width="297"/>
+	<outline>
+		<contour>
+			<point x="191" y="122" type="curve" smooth="yes"/>
+			<point x="191" y="523" type="line" smooth="yes"/>
+			<point x="191" y="606"/>
+			<point x="208" y="611"/>
+			<point x="278" y="614" type="curve"/>
+			<point x="284" y="620"/>
+			<point x="284" y="641"/>
+			<point x="278" y="647" type="curve"/>
+			<point x="234" y="646"/>
+			<point x="187" y="645"/>
+			<point x="148" y="645" type="curve" smooth="yes"/>
+			<point x="115" y="645"/>
+			<point x="66" y="646"/>
+			<point x="19" y="647" type="curve"/>
+			<point x="13" y="641"/>
+			<point x="13" y="620"/>
+			<point x="19" y="614" type="curve"/>
+			<point x="89" y="611"/>
+			<point x="106" y="606"/>
+			<point x="106" y="523" type="curve" smooth="yes"/>
+			<point x="106" y="122" type="line" smooth="yes"/>
+			<point x="106" y="39"/>
+			<point x="89" y="34"/>
+			<point x="19" y="31" type="curve"/>
+			<point x="13" y="25"/>
+			<point x="13" y="4"/>
+			<point x="19" y="-2" type="curve"/>
+			<point x="64" y="-1"/>
+			<point x="113" y="0"/>
+			<point x="149" y="0" type="curve" smooth="yes"/>
+			<point x="185" y="0"/>
+			<point x="233" y="-1"/>
+			<point x="278" y="-2" type="curve"/>
+			<point x="284" y="4"/>
+			<point x="284" y="25"/>
+			<point x="278" y="31" type="curve"/>
+			<point x="208" y="34"/>
+			<point x="191" y="39"/>
+		</contour>
+		<contour>
+			<point x="97" y="753" type="curve" smooth="yes"/>
+			<point name=".hr01" x="97" y="725"/>
+			<point x="121" y="701"/>
+			<point x="149" y="701" type="curve" smooth="yes"/>
+			<point x="177" y="701"/>
+			<point x="201" y="725"/>
+			<point x="201" y="753" type="curve" smooth="yes"/>
+			<point x="201" y="781"/>
+			<point x="177" y="805"/>
+			<point x="149" y="805" type="curve" smooth="yes"/>
+			<point x="121" y="805"/>
+			<point x="97" y="781"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>vstem 106 85</string>
+							<string>hstem 647 -20</string>
+							<string>hstem 19 -21</string>
+							<string>hstem 701 104</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>vstem 97 104</string>
+							<string>hstem 701 104</string>
+							<string>hstem 19 -21</string>
+							<string>hstem 647 -20</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>844df88b1e71be9f970d7ee8c85276db4f97167e52f0212bd4eb44381bc89f72d5ffdca33041fa7bd5c5305c01f220371adaa3e2bd1ca8d36011e9e39528b54d</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

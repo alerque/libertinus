@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lcaron.sc" format="2">
+	<advance width="431"/>
+	<outline>
+		<contour>
+			<point x="228" y="34" type="curve"/>
+			<point x="228" y="34" type="line"/>
+			<point x="205" y="34"/>
+			<point x="191" y="50"/>
+			<point x="191" y="69" type="curve" smooth="yes"/>
+			<point x="191" y="84"/>
+			<point x="191" y="99"/>
+			<point x="191" y="114" type="curve" smooth="yes"/>
+			<point x="191" y="338" type="line" smooth="yes"/>
+			<point x="191" y="421"/>
+			<point x="202" y="424"/>
+			<point x="263" y="429" type="curve"/>
+			<point x="269" y="435"/>
+			<point x="269" y="456"/>
+			<point x="263" y="462" type="curve"/>
+			<point x="226" y="461"/>
+			<point x="185" y="460"/>
+			<point x="151" y="460" type="curve" smooth="yes"/>
+			<point x="120" y="460"/>
+			<point x="77" y="461"/>
+			<point x="40" y="462" type="curve"/>
+			<point x="34" y="456"/>
+			<point x="34" y="435"/>
+			<point x="40" y="429" type="curve"/>
+			<point x="101" y="425"/>
+			<point x="112" y="421"/>
+			<point x="112" y="338" type="curve" smooth="yes"/>
+			<point x="112" y="122" type="line" smooth="yes"/>
+			<point x="112" y="39"/>
+			<point x="110" y="34"/>
+			<point x="40" y="31" type="curve"/>
+			<point x="34" y="25"/>
+			<point x="34" y="4"/>
+			<point x="40" y="-2" type="curve"/>
+			<point x="83" y="-1"/>
+			<point x="139" y="0"/>
+			<point x="152" y="0" type="curve" smooth="yes"/>
+			<point name=".hr01" x="155" y="0" type="line"/>
+			<point x="289" y="0" type="line" smooth="yes"/>
+			<point x="319" y="0"/>
+			<point x="349" y="0"/>
+			<point x="379" y="0" type="curve"/>
+			<point x="379" y="0"/>
+			<point x="402" y="96"/>
+			<point x="409" y="138" type="curve"/>
+			<point x="400" y="143"/>
+			<point x="392" y="145"/>
+			<point x="381" y="142" type="curve"/>
+			<point x="365" y="83"/>
+			<point x="336" y="34"/>
+			<point x="273" y="34" type="curve" smooth="yes"/>
+			<point x="258" y="34"/>
+			<point x="243" y="34"/>
+		</contour>
+		<contour>
+			<point x="339" y="550" type="curve" smooth="yes"/>
+			<point x="309" y="550"/>
+			<point x="295" y="532"/>
+			<point x="295" y="516" type="curve" smooth="yes"/>
+			<point x="295" y="500"/>
+			<point x="300" y="478"/>
+			<point x="341" y="478" type="curve" smooth="yes"/>
+			<point x="349" y="478"/>
+			<point x="355" y="470"/>
+			<point x="355" y="457" type="curve" smooth="yes"/>
+			<point x="355" y="434"/>
+			<point x="334" y="397"/>
+			<point x="292" y="388" type="curve"/>
+			<point x="297" y="371" type="line"/>
+			<point name=".hr02" x="367" y="379"/>
+			<point x="399" y="441"/>
+			<point x="399" y="477" type="curve" smooth="yes"/>
+			<point x="399" y="513"/>
+			<point x="377" y="550"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 34</string>
+							<string>vstem 112 79</string>
+							<string>hstem 371 91</string>
+							<string>hstem 478 72</string>
+							<string>vstem 355 44</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 34</string>
+							<string>vstem 155 36</string>
+							<string>hstem 478 72</string>
+							<string>vstem 355 44</string>
+							<string>hstem 388 74</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr02</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 371 91</string>
+							<string>vstem 355 44</string>
+							<string>hstem 478 72</string>
+							<string>hstem 0 34</string>
+							<string>vstem 112 79</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>431dbb92c1b2622fef91b7b8bf9197b6575e64fed9d277689e4d5ae6de6d7d8b32fd053f4ff51534bbd35bfecc995db86ddb112939f8fe3ee03a193be4a13bed</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

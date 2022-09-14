@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bracketright.sc" format="2">
+	<advance width="356"/>
+	<outline>
+		<contour>
+			<point x="248" y="712" type="line"/>
+			<point x="36" y="712" type="line"/>
+			<point x="30" y="707"/>
+			<point x="30" y="692"/>
+			<point x="36" y="687" type="curve"/>
+			<point x="174" y="677"/>
+			<point x="181" y="664"/>
+			<point x="181" y="590" type="curve" smooth="yes"/>
+			<point x="181" y="64" type="line" smooth="yes"/>
+			<point x="181" y="-11"/>
+			<point x="173" y="-24"/>
+			<point x="36" y="-32" type="curve"/>
+			<point x="30" y="-37"/>
+			<point x="30" y="-53"/>
+			<point x="36" y="-58" type="curve"/>
+			<point x="248" y="-58" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem -58 26</string>
+							<string>hstem 687 25</string>
+							<string>vstem 181 67</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w356m248,712l36,712c30,707 30,692 36,687c174,677 181,664 181,590l181,64c181,-11 173,-24 36,-32c30,-37 30,-53 36,-58l248,-58</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="intersection" format="2">
+	<unicode hex="2229"/>
+	<advance width="489"/>
+	<outline>
+		<contour>
+			<point x="118" y="0" type="line"/>
+			<point x="118" y="212" type="line" smooth="yes"/>
+			<point x="118" y="314"/>
+			<point x="141" y="396"/>
+			<point x="252" y="396" type="curve" smooth="yes"/>
+			<point x="351" y="396"/>
+			<point x="371" y="314"/>
+			<point x="371" y="212" type="curve" smooth="yes"/>
+			<point x="371" y="0" type="line"/>
+			<point x="422" y="0" type="line"/>
+			<point x="422" y="212" type="line" smooth="yes"/>
+			<point x="422" y="340"/>
+			<point x="392" y="439"/>
+			<point x="250" y="439" type="curve" smooth="yes"/>
+			<point x="101" y="439"/>
+			<point x="67" y="338"/>
+			<point x="67" y="212" type="curve" smooth="yes"/>
+			<point x="67" y="0" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 21 -21</string>
+							<string>hstem 396 43</string>
+							<string>vstem 67 51</string>
+							<string>vstem 371 51</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>cac5e81c2048c38efce421c51b32ebef1139339fc6019625a53bd4176198bc140cb6ec3b5733a2212f9794ae0336cfa52f0785df55f2669e1ac9655d95a1bb03</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

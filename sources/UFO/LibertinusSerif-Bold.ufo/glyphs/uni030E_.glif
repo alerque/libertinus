@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni030E" format="2">
+	<unicode hex="030E"/>
+	<outline>
+		<contour>
+			<point x="-147" y="539" type="line"/>
+			<point x="-147" y="719" type="line"/>
+			<point x="-202" y="719" type="line"/>
+			<point x="-202" y="539" type="line"/>
+		</contour>
+		<contour>
+			<point name=".hr01" x="-262" y="540" type="line"/>
+			<point x="-262" y="719" type="line"/>
+			<point x="-317" y="719" type="line"/>
+			<point x="-317" y="540" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="_m.uni0302" x="-245" y="719"/>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 539 180</string>
+							<string>vstem -202 55</string>
+							<string>vstem -317 55</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 540 179</string>
+							<string>vstem -317 55</string>
+							<string>vstem -202 55</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w0m-147,539l-147,719l-202,719l-202,539m-262,540l-262,719l-317,719l-317,540</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
