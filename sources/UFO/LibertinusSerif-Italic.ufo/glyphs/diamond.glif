@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="diamond" format="2">
+	<unicode hex="2666"/>
+	<advance width="645"/>
+	<outline>
+		<contour>
+			<point x="326" y="620" type="curve"/>
+			<point x="234" y="500"/>
+			<point x="137" y="395"/>
+			<point x="34" y="302" type="curve"/>
+			<point x="143" y="200"/>
+			<point x="241" y="94"/>
+			<point x="326" y="-17" type="curve"/>
+			<point x="415" y="97"/>
+			<point x="510" y="203"/>
+			<point x="611" y="302" type="curve"/>
+			<point x="497" y="400"/>
+			<point x="408" y="509"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem -17 637</string>
+							<string>vstem 34 577</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w645m326,620c234,500 137,395 34,302c143,200 241,94 326,-17c415,97 510,203 611,302c497,400 408,509 326,620</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

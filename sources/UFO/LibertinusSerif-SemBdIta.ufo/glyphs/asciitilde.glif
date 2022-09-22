@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="asciitilde" format="2">
+	<unicode hex="007E"/>
+	<advance width="449"/>
+	<outline>
+		<contour>
+			<point x="63" y="209" type="curve"/>
+			<point x="66.3333" y="205.667"/>
+			<point x="75" y="203.667"/>
+			<point x="81.6667" y="206" type="curve"/>
+			<point x="112.667" y="250"/>
+			<point name=".hr01" x="162" y="268"/>
+			<point x="197" y="268" type="curve" smooth="yes"/>
+			<point x="249" y="268"/>
+			<point name=".hr02" x="282" y="203"/>
+			<point x="335" y="203" type="curve" smooth="yes"/>
+			<point x="359" y="203"/>
+			<point x="426" y="226"/>
+			<point x="476" y="333" type="curve"/>
+			<point x="470.333" y="337.333"/>
+			<point x="461.667" y="340"/>
+			<point x="453.333" y="339" type="curve"/>
+			<point x="422.333" y="289"/>
+			<point x="377" y="282"/>
+			<point x="349" y="282" type="curve" smooth="yes"/>
+			<point x="304" y="282"/>
+			<point name=".hr03" x="259" y="347"/>
+			<point x="213" y="347" type="curve" smooth="yes"/>
+			<point x="153" y="347"/>
+			<point x="87" y="274"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>vstem 63 413</string>
+							<string>hstem 203 79</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 268 79</string>
+							<string>vstem 63 413</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr02</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 203 79</string>
+							<string>vstem 63 413</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr03</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 268 79</string>
+							<string>vstem 63 413</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>16d9ec58a8c41374623446cac620c351b67c52aac541e1971acfd93654fee52cdd20906046199764bf995c65e10bafc7e6ab5ccaa37726bb573dfc867ced9524</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

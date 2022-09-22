@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="filledbox" format="2">
+	<unicode hex="25A0"/>
+	<advance width="576"/>
+	<outline>
+		<contour>
+			<point x="73" y="430" type="line"/>
+			<point x="73" y="0" type="line"/>
+			<point x="503" y="0" type="line"/>
+			<point x="503" y="430" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 21 -21</string>
+							<string>hstem 430 -20</string>
+							<string>vstem 73 430</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w576m73,430l73,0l503,0l503,430</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

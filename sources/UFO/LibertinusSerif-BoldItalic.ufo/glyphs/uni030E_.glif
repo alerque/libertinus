@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni030E" format="2">
+	<unicode hex="030E"/>
+	<outline>
+		<contour>
+			<point x="-160" y="539" type="line"/>
+			<point x="-134" y="719" type="line"/>
+			<point x="-189" y="719" type="line"/>
+			<point x="-215" y="539" type="line"/>
+		</contour>
+		<contour>
+			<point name=".hr01" x="-274" y="540" type="line"/>
+			<point x="-249" y="719" type="line"/>
+			<point x="-304" y="719" type="line"/>
+			<point x="-329" y="540" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 539 180</string>
+							<string>vstem -329 195</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 540 179</string>
+							<string>vstem -329 195</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w0m-160,539l-134,719l-189,719l-215,539m-274,540l-249,719l-304,719l-329,540</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

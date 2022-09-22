@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="integralbt" format="2">
+	<unicode hex="2321"/>
+	<advance width="379"/>
+	<outline>
+		<contour>
+			<point x="370" y="698" type="line"/>
+			<point x="290" y="698" type="line"/>
+			<point x="239" y="419" type="line" smooth="yes"/>
+			<point x="216" y="290"/>
+			<point x="190" y="257"/>
+			<point x="167" y="257" type="curve" smooth="yes"/>
+			<point x="148" y="257"/>
+			<point name=".hr01" x="139" y="292"/>
+			<point x="110" y="292" type="curve" smooth="yes"/>
+			<point x="88" y="292"/>
+			<point x="63" y="274"/>
+			<point x="59" y="250" type="curve"/>
+			<point x="53" y="223"/>
+			<point x="73" y="203"/>
+			<point x="109" y="203" type="curve" smooth="yes"/>
+			<point x="218" y="203"/>
+			<point x="301" y="309"/>
+			<point x="355" y="613" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 698 -20</string>
+							<string>hstem 203 54</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 203 89</string>
+							<string>hstem 698 -20</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>cb67063fb299ed8861dec6c433f567fef49c71293975c1abbdca96bf98a0c8c2552a533adc1d4c80f4646c327ccb4e73bca3e4d220685a519a8eb72f384c9f60</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="endash" format="2">
+	<unicode hex="2013"/>
+	<advance width="534"/>
+	<outline>
+		<contour>
+			<point x="526" y="229" type="line" smooth="yes"/>
+			<point x="539" y="229"/>
+			<point x="552" y="263"/>
+			<point x="552" y="275" type="curve" smooth="yes"/>
+			<point x="552" y="284"/>
+			<point x="549" y="295"/>
+			<point x="538" y="295" type="curve" smooth="yes"/>
+			<point x="109" y="295" type="line" smooth="yes"/>
+			<point x="97" y="295"/>
+			<point x="84" y="269"/>
+			<point x="84" y="253" type="curve" smooth="yes"/>
+			<point x="84" y="244"/>
+			<point x="90" y="229"/>
+			<point x="99" y="229" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 229 66</string>
+							<string>vstem 99 439</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w534m526,229c539,229 552,263 552,275c552,284 549,295 538,295l109,295c97,295 84,269 84,253c84,244 90,229 99,229</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
