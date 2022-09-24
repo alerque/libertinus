@@ -3,99 +3,18 @@
 	<unicode hex="00D2"/>
 	<advance width="678"/>
 	<outline>
-		<contour>
-			<point x="336.333" y="-10" type="curve" smooth="yes"/>
-			<point x="522.667" y="-10"/>
-			<point x="669.333" y="128"/>
-			<point x="708.333" y="322.333" type="curve" smooth="yes"/>
-			<point x="714" y="349.667"/>
-			<point x="716.333" y="377"/>
-			<point x="716.333" y="403.333" type="curve" smooth="yes"/>
-			<point x="716.333" y="559.333"/>
-			<point x="610.333" y="658"/>
-			<point x="462" y="658" type="curve" smooth="yes"/>
-			<point x="368.667" y="658"/>
-			<point x="280.667" y="614.333"/>
-			<point x="213.667" y="544" type="curve" smooth="yes"/>
-			<point x="157.667" y="485.333"/>
-			<point x="114.667" y="406.667"/>
-			<point x="96" y="317.667" type="curve" smooth="yes"/>
-			<point x="90.6667" y="290"/>
-			<point x="87.3333" y="263"/>
-			<point x="87.3333" y="236.333" type="curve" smooth="yes"/>
-			<point x="87.3333" y="82.6667"/>
-			<point x="193.333" y="-10"/>
-		</contour>
-		<contour>
-			<point x="442.667" y="621.333" type="curve" smooth="yes"/>
-			<point x="541.667" y="621.333"/>
-			<point x="608.667" y="551.333"/>
-			<point x="608.667" y="414.333" type="curve" smooth="yes"/>
-			<point x="608.667" y="380.667"/>
-			<point x="605.333" y="345"/>
-			<point x="598.333" y="307.667" type="curve" smooth="yes"/>
-			<point x="565.333" y="137.333"/>
-			<point x="468" y="26.6667"/>
-			<point x="362.667" y="26.6667" type="curve" smooth="yes"/>
-			<point x="269.667" y="26.6667"/>
-			<point x="196.333" y="102.667"/>
-			<point x="196.333" y="238" type="curve" smooth="yes"/>
-			<point x="196.333" y="267"/>
-			<point x="199.667" y="297.333"/>
-			<point x="206" y="329" type="curve" smooth="yes"/>
-			<point x="222" y="411.333"/>
-			<point x="251" y="477.333"/>
-			<point x="282.667" y="521.667" type="curve" smooth="yes"/>
-			<point x="331.667" y="590.667"/>
-			<point x="391" y="621.333"/>
-		</contour>
-		<contour>
-			<point x="410.667" y="820.667" type="curve"/>
-			<point x="382.667" y="806.667"/>
-			<point x="353.333" y="789.333"/>
-			<point x="328.667" y="772.333" type="curve"/>
-			<point x="334.333" y="765.667" type="line"/>
-			<point x="468.333" y="707" type="line" smooth="yes"/>
-			<point x="481.333" y="701"/>
-			<point x="492.667" y="698"/>
-			<point x="502.333" y="697.333" type="curve"/>
-			<point x="504.333" y="696.667"/>
-			<point x="506.667" y="696.667"/>
-			<point x="508.667" y="697" type="curve"/>
-			<point x="521" y="698"/>
-			<point x="526" y="708.333"/>
-			<point x="526.333" y="714.333" type="curve" smooth="yes"/>
-			<point x="526.667" y="718.667"/>
-			<point x="525.667" y="723.333"/>
-			<point x="520.667" y="728.667" type="curve"/>
-			<point x="519" y="730.333"/>
-			<point x="517.333" y="732"/>
-			<point x="515.333" y="733.667" type="curve" smooth="yes"/>
-			<point x="485.333" y="759.333"/>
-			<point x="444.667" y="793.333"/>
-		</contour>
+		<component base="O"/>
+		<component base="grave.cap" xOffset="505.667"/>
 	</outline>
+	<anchor name="b.uni0328" x="399.333" y="23.3333"/>
 	<lib>
 		<dict>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>hstem -10 36.67</string>
-							<string>hstem 621.33 36.67</string>
-							<string>vstem 87.33 109.</string>
-							<string>vstem 608.67 107.67</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>1c5d2d40fd5d4d2b8f6ecf613aa574356280633518c7f0b95560d510e8eb669a7dae9f4ab8a10063f66bf67d247da178bc69e28cb9efc62a75e59a1d02a22e19</string>
-			</dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>O+grave.cap</string>
+			<key>public.markColor</key>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

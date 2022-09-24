@@ -3,114 +3,19 @@
 	<unicode hex="00F5"/>
 	<advance width="447"/>
 	<outline>
-		<contour>
-			<point x="218" y="-10" type="curve" smooth="yes"/>
-			<point x="250" y="-10"/>
-			<point x="281" y="-6"/>
-			<point x="310" y="9" type="curve"/>
-			<point x="317" y="12"/>
-			<point x="323" y="16"/>
-			<point x="330" y="20" type="curve"/>
-			<point x="407" y="69"/>
-			<point x="465" y="168"/>
-			<point x="465" y="277" type="curve" smooth="yes"/>
-			<point x="465" y="349"/>
-			<point x="447" y="439"/>
-			<point x="324" y="439" type="curve" smooth="yes"/>
-			<point x="275" y="439"/>
-			<point x="233" y="425"/>
-			<point x="199" y="403" type="curve" smooth="yes"/>
-			<point x="117" y="350"/>
-			<point x="78" y="247"/>
-			<point x="78" y="162" type="curve" smooth="yes"/>
-			<point x="78" y="109"/>
-			<point x="91" y="-10"/>
-		</contour>
-		<contour>
-			<point x="161" y="170" type="curve" smooth="yes"/>
-			<point x="161" y="260"/>
-			<point x="200" y="406"/>
-			<point x="306" y="406" type="curve" smooth="yes"/>
-			<point x="336" y="406"/>
-			<point x="352" y="390"/>
-			<point x="367" y="362" type="curve"/>
-			<point x="379" y="337"/>
-			<point x="382" y="300"/>
-			<point x="382" y="270" type="curve" smooth="yes"/>
-			<point x="382" y="230"/>
-			<point x="376" y="144"/>
-			<point x="339" y="88" type="curve" smooth="yes"/>
-			<point x="311" y="45"/>
-			<point x="271" y="27"/>
-			<point x="233" y="27" type="curve" smooth="yes"/>
-			<point x="204" y="27"/>
-			<point x="161" y="65"/>
-		</contour>
-		<contour>
-			<point x="371" y="570" type="curve" smooth="yes"/>
-			<point x="352" y="570"/>
-			<point x="337" y="580"/>
-			<point x="323" y="592" type="curve"/>
-			<point x="321" y="593"/>
-			<point x="320" y="595"/>
-			<point x="318" y="596" type="curve"/>
-			<point x="302" y="609"/>
-			<point x="284" y="620"/>
-			<point x="257" y="620" type="curve" smooth="yes"/>
-			<point x="214" y="620"/>
-			<point x="185" y="590"/>
-			<point x="159" y="531" type="curve"/>
-			<point x="167" y="529"/>
-			<point x="174" y="528"/>
-			<point x="182" y="526" type="curve"/>
-			<point x="199" y="559"/>
-			<point x="215" y="574"/>
-			<point x="241" y="574" type="curve" smooth="yes"/>
-			<point x="258" y="574"/>
-			<point x="274" y="563"/>
-			<point x="290" y="552" type="curve"/>
-			<point x="292" y="550"/>
-			<point x="294" y="549"/>
-			<point x="296" y="547" type="curve"/>
-			<point x="312" y="535"/>
-			<point x="329" y="526"/>
-			<point x="349" y="526" type="curve" smooth="yes"/>
-			<point x="393" y="526"/>
-			<point x="426" y="553"/>
-			<point x="450" y="607" type="curve"/>
-			<point x="451" y="610"/>
-			<point x="453" y="613"/>
-			<point x="454" y="616" type="curve"/>
-			<point x="446" y="618"/>
-			<point x="439" y="620"/>
-			<point x="431" y="622" type="curve"/>
-			<point x="409" y="580"/>
-			<point x="393" y="570"/>
-		</contour>
+		<component base="o"/>
+		<component base="tildecomb" xOffset="361" yOffset="-53"/>
 	</outline>
+	<anchor name="t.uni0302" x="344" y="636"/>
+	<anchor name="b.uni0328" x="289" y="27"/>
 	<lib>
 		<dict>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>hstem -10 37</string>
-							<string>hstem 406 33</string>
-							<string>hstem 526 44</string>
-							<string>hstem 574 46</string>
-							<string>vstem 78 83</string>
-							<string>vstem 382 83</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>1c1d2f397151a4a45fb07b5fd1fb58707b56511bc3214d1fba979fc6daff4d917a3055ba748b5d44ad5e78ec60e57d1e3b4342267a7b7eadd1c8f15a19d51435</string>
-			</dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>o+tildecomb</string>
+			<key>public.markColor</key>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

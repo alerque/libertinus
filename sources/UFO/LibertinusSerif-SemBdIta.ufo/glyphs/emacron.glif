@@ -4,42 +4,16 @@
 	<advance width="406"/>
 	<outline>
 		<component base="e"/>
-		<contour>
-			<point x="446" y="538.333" type="line" smooth="yes"/>
-			<point x="459" y="538.333"/>
-			<point x="473" y="556.333"/>
-			<point x="476" y="568.333" type="curve"/>
-			<point x="477" y="574.333"/>
-			<point x="474" y="582.333"/>
-			<point x="464" y="582.333" type="curve" smooth="yes"/>
-			<point x="219" y="582.333" type="line" smooth="yes"/>
-			<point x="208" y="582.333"/>
-			<point x="194" y="565.333"/>
-			<point x="192" y="553.333" type="curve"/>
-			<point x="190" y="546.333"/>
-			<point x="193" y="538.333"/>
-			<point x="202" y="538.333" type="curve" smooth="yes"/>
-		</contour>
+		<component base="uni0304" xOffset="503.333"/>
 	</outline>
-	<anchor name="t.uni0302" x="343" y="610"/>
 	<lib>
 		<dict>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>hstem 538.33 44</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>4e617049e2373d4fa78d06ce57a148c63715ca14946345af6e38b5d7720c37f134875362b476a8f31e405959fd60db5308a706907a0367882d11a16d06c1320c</string>
-			</dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>e+uni0304</string>
+			<key>public.markColor</key>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

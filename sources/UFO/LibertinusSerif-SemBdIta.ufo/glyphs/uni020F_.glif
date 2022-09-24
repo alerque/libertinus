@@ -1,98 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni020F" format="2">
 	<unicode hex="020F"/>
-	<advance width="447"/>
+	<advance width="468"/>
 	<outline>
-		<contour>
-			<point x="78" y="162" type="curve" smooth="yes"/>
-			<point x="78" y="109"/>
-			<point x="91" y="-10"/>
-			<point x="218" y="-10" type="curve" smooth="yes"/>
-			<point x="250" y="-10"/>
-			<point x="281" y="-6"/>
-			<point x="310" y="9" type="curve" smooth="yes"/>
-			<point x="397" y="53"/>
-			<point x="465" y="159"/>
-			<point x="465" y="277" type="curve" smooth="yes"/>
-			<point x="465" y="349"/>
-			<point x="447" y="439"/>
-			<point x="324" y="439" type="curve" smooth="yes"/>
-			<point x="157" y="439"/>
-			<point x="78" y="282"/>
-		</contour>
-		<contour>
-			<point x="161" y="170" type="curve" smooth="yes"/>
-			<point x="161" y="260"/>
-			<point x="200" y="406"/>
-			<point x="306" y="406" type="curve" smooth="yes"/>
-			<point x="336" y="406"/>
-			<point x="352" y="390"/>
-			<point x="367" y="362" type="curve"/>
-			<point x="379" y="337"/>
-			<point x="382" y="300"/>
-			<point x="382" y="270" type="curve" smooth="yes"/>
-			<point x="382" y="230"/>
-			<point x="376" y="144"/>
-			<point x="339" y="88" type="curve" smooth="yes"/>
-			<point x="311" y="45"/>
-			<point x="271" y="27"/>
-			<point x="233" y="27" type="curve" smooth="yes"/>
-			<point x="204" y="27"/>
-			<point x="161" y="65"/>
-		</contour>
-		<contour>
-			<point x="438" y="498" type="curve"/>
-			<point x="468" y="510" type="line"/>
-			<point name=".hr01" x="471" y="595"/>
-			<point x="430" y="645"/>
-			<point x="360" y="645" type="curve" smooth="yes"/>
-			<point x="301" y="645"/>
-			<point x="227" y="596"/>
-			<point x="198" y="510" type="curve"/>
-			<point x="222" y="498" type="line"/>
-			<point x="244" y="556"/>
-			<point x="297" y="588"/>
-			<point x="349" y="588" type="curve" smooth="yes"/>
-			<point x="403" y="588"/>
-			<point x="438" y="551"/>
-		</contour>
+		<component base="o"/>
+		<component base="uni0311" xOffset="426.667"/>
 	</outline>
+	<anchor name="b.uni0328" x="296.333" y="31.6667"/>
 	<lib>
 		<dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>o+uni0311</string>
 			<key>public.markColor</key>
-			<string>1,0.6,0.6,1</string>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>vstem 78 83</string>
-							<string>hstem -10 37</string>
-							<string>vstem 382 83</string>
-							<string>hstem 406 33</string>
-							<string>hstem 588 57</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>.hr01</string>
-						<key>stems</key>
-						<array>
-							<string>vstem 438 30</string>
-							<string>hstem 588 57</string>
-							<string>hstem -10 37</string>
-							<string>hstem 406 33</string>
-							<string>vstem 78 83</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>8a75b64202917b1e7451bc09bf403510655a7e50f0cebd95e6390e29584bd3eb1f2caa4094c254bb6667ec8a5223a931ae97a4b54714bed70e78f05dd60aa2c3</string>
-			</dict>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

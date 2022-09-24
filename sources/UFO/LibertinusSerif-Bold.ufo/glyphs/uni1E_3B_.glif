@@ -3,82 +3,19 @@
 	<unicode hex="1E3B"/>
 	<advance width="325"/>
 	<outline>
-		<contour>
-			<point x="100" y="127" type="line" smooth="yes"/>
-			<point x="100" y="44"/>
-			<point x="84" y="35"/>
-			<point x="23" y="32" type="curve"/>
-			<point x="17" y="26"/>
-			<point x="17" y="4"/>
-			<point x="23" y="-2" type="curve"/>
-			<point x="65" y="-1"/>
-			<point x="110" y="0"/>
-			<point x="165" y="0" type="curve" smooth="yes"/>
-			<point x="220" y="0"/>
-			<point x="264" y="-1"/>
-			<point x="307" y="-2" type="curve"/>
-			<point x="313" y="4"/>
-			<point x="313" y="26"/>
-			<point x="307" y="32" type="curve"/>
-			<point x="246" y="35"/>
-			<point x="230" y="44"/>
-			<point x="230" y="127" type="curve" smooth="yes"/>
-			<point x="230" y="583" type="line" smooth="yes"/>
-			<point x="230" y="648"/>
-			<point x="233" y="685"/>
-			<point x="233" y="685" type="curve"/>
-			<point x="233" y="694"/>
-			<point x="226" y="698"/>
-			<point x="217" y="698" type="curve"/>
-			<point x="180" y="686"/>
-			<point x="100" y="675"/>
-			<point x="29" y="672" type="curve"/>
-			<point x="26" y="660"/>
-			<point x="27" y="649"/>
-			<point x="32" y="640" type="curve"/>
-			<point x="95" y="635"/>
-			<point x="100" y="634"/>
-			<point x="100" y="565" type="curve" smooth="yes"/>
-		</contour>
-		<contour>
-			<point x="277" y="-134" type="line" smooth="yes"/>
-			<point x="291" y="-134"/>
-			<point x="302" y="-113"/>
-			<point x="302" y="-100" type="curve" smooth="yes"/>
-			<point x="302" y="-92"/>
-			<point x="298" y="-84"/>
-			<point x="288" y="-84" type="curve" smooth="yes"/>
-			<point x="62" y="-84" type="line" smooth="yes"/>
-			<point x="49" y="-84"/>
-			<point x="38" y="-104"/>
-			<point x="38" y="-117" type="curve" smooth="yes"/>
-			<point x="38" y="-125"/>
-			<point x="42" y="-134"/>
-			<point x="51" y="-134" type="curve" smooth="yes"/>
-		</contour>
+		<component base="l"/>
+		<component base="uni0331" xOffset="379"/>
 	</outline>
+	<anchor name="m.uni0302" x="125" y="885"/>
+	<anchor name="m.uni031A_3" x="249" y="733"/>
 	<lib>
 		<dict>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>hstem -134 50</string>
-							<string>hstem 19 -21</string>
-							<string>hstem 685 13</string>
-							<string>hstem 698 -20</string>
-							<string>vstem 100 130</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>1a074190f9b273bbfe7dce649310287e590581bddc544a08e3bcf16e90a2d9c3fabcc9326b239b5ae1223c8fa21e19b7ccab78a3d608bd167898d351c2674af2</string>
-			</dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>l+uni0331</string>
+			<key>public.markColor</key>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

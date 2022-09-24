@@ -3,117 +3,19 @@
 	<unicode hex="00D5"/>
 	<advance width="668"/>
 	<outline>
-		<contour>
-			<point x="331" y="-10" type="curve" smooth="yes"/>
-			<point x="515" y="-10"/>
-			<point x="660" y="129"/>
-			<point x="699" y="329" type="curve" smooth="yes"/>
-			<point x="704" y="355"/>
-			<point x="706" y="380"/>
-			<point x="706" y="403" type="curve" smooth="yes"/>
-			<point x="706" y="559"/>
-			<point x="601" y="658"/>
-			<point x="455" y="658" type="curve" smooth="yes"/>
-			<point x="363" y="658"/>
-			<point x="277" y="614"/>
-			<point x="211" y="543" type="curve" smooth="yes"/>
-			<point x="154" y="482"/>
-			<point x="113" y="400"/>
-			<point x="95" y="310" type="curve" smooth="yes"/>
-			<point x="90" y="283"/>
-			<point x="87" y="258"/>
-			<point x="87" y="234" type="curve" smooth="yes"/>
-			<point x="87" y="82"/>
-			<point x="188" y="-10"/>
-		</contour>
-		<contour>
-			<point x="436" y="624" type="curve" smooth="yes"/>
-			<point x="544" y="624"/>
-			<point x="617" y="552"/>
-			<point x="617" y="410" type="curve" smooth="yes"/>
-			<point x="617" y="380"/>
-			<point x="614" y="347"/>
-			<point x="607" y="310" type="curve" smooth="yes"/>
-			<point x="572" y="131"/>
-			<point x="467" y="24"/>
-			<point x="357" y="24" type="curve" smooth="yes"/>
-			<point x="260" y="24"/>
-			<point x="178" y="103"/>
-			<point x="178" y="244" type="curve" smooth="yes"/>
-			<point x="178" y="270"/>
-			<point x="181" y="297"/>
-			<point x="187" y="327" type="curve" smooth="yes"/>
-			<point x="204" y="415"/>
-			<point x="235" y="481"/>
-			<point x="271" y="528" type="curve" smooth="yes"/>
-			<point x="323" y="594"/>
-			<point x="385" y="624"/>
-		</contour>
-		<contour>
-			<point x="532" y="741" type="curve" smooth="yes"/>
-			<point x="513" y="741"/>
-			<point x="498" y="751"/>
-			<point x="484" y="763" type="curve"/>
-			<point x="482" y="764"/>
-			<point x="481" y="766"/>
-			<point x="479" y="767" type="curve"/>
-			<point x="463" y="780"/>
-			<point x="445" y="791"/>
-			<point x="418" y="791" type="curve" smooth="yes"/>
-			<point x="375" y="791"/>
-			<point x="346" y="761"/>
-			<point x="320" y="702" type="curve"/>
-			<point x="328" y="700"/>
-			<point x="335" y="699"/>
-			<point x="343" y="697" type="curve"/>
-			<point x="360" y="730"/>
-			<point x="376" y="745"/>
-			<point x="402" y="745" type="curve" smooth="yes"/>
-			<point x="419" y="745"/>
-			<point x="435" y="734"/>
-			<point x="451" y="723" type="curve"/>
-			<point x="453" y="721"/>
-			<point x="455" y="720"/>
-			<point x="457" y="718" type="curve"/>
-			<point x="473" y="706"/>
-			<point x="490" y="697"/>
-			<point x="510" y="697" type="curve" smooth="yes"/>
-			<point x="554" y="697"/>
-			<point x="587" y="724"/>
-			<point x="611" y="778" type="curve"/>
-			<point x="612" y="781"/>
-			<point x="614" y="784"/>
-			<point x="615" y="787" type="curve"/>
-			<point x="607" y="789"/>
-			<point x="600" y="791"/>
-			<point x="592" y="793" type="curve"/>
-			<point x="570" y="751"/>
-			<point x="554" y="741"/>
-		</contour>
+		<component base="O"/>
+		<component base="tildecomb" xOffset="518" yOffset="187"/>
 	</outline>
+	<anchor name="t.uni0302" x="501" y="876"/>
+	<anchor name="b.uni0328" x="399" y="20"/>
 	<lib>
 		<dict>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>hstem -10 34</string>
-							<string>hstem 624 34</string>
-							<string>hstem 697 44</string>
-							<string>hstem 745 46</string>
-							<string>vstem 87 91</string>
-							<string>vstem 617 89</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>201ec352bc651cf3c914b85ac94c79e73f3dd44679d70b8f84aac0f9664dec01949619b8e095d7db9380c17bab00754a5c920ecd73228c7af4a1fc5924d0e329</string>
-			</dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>O+tildecomb</string>
+			<key>public.markColor</key>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

@@ -3,132 +3,18 @@
 	<unicode hex="1E39"/>
 	<advance width="325"/>
 	<outline>
-		<contour>
-			<point x="100" y="127" type="line" smooth="yes"/>
-			<point x="100" y="44"/>
-			<point x="84" y="35"/>
-			<point x="23" y="32" type="curve"/>
-			<point x="17" y="26"/>
-			<point x="17" y="4"/>
-			<point x="23" y="-2" type="curve"/>
-			<point x="65" y="-1"/>
-			<point x="110" y="0"/>
-			<point x="165" y="0" type="curve" smooth="yes"/>
-			<point x="220" y="0"/>
-			<point x="264" y="-1"/>
-			<point x="307" y="-2" type="curve"/>
-			<point x="313" y="4"/>
-			<point x="313" y="26"/>
-			<point x="307" y="32" type="curve"/>
-			<point x="246" y="35"/>
-			<point x="230" y="44"/>
-			<point x="230" y="127" type="curve" smooth="yes"/>
-			<point x="230" y="583" type="line" smooth="yes"/>
-			<point x="230" y="648"/>
-			<point name=".hr01" x="233" y="685"/>
-			<point x="233" y="685" type="curve"/>
-			<point x="233" y="694"/>
-			<point x="226" y="698"/>
-			<point x="217" y="698" type="curve"/>
-			<point x="180" y="686"/>
-			<point name=".hr02" x="100" y="675"/>
-			<point x="29" y="672" type="curve"/>
-			<point x="26" y="660"/>
-			<point x="27" y="649"/>
-			<point x="32" y="640" type="curve"/>
-			<point x="95" y="635"/>
-			<point x="100" y="634"/>
-			<point x="100" y="565" type="curve" smooth="yes"/>
-		</contour>
-		<contour>
-			<point x="288" y="763" type="line" smooth="yes"/>
-			<point x="302" y="763"/>
-			<point x="314" y="783"/>
-			<point x="314" y="796" type="curve" smooth="yes"/>
-			<point x="314" y="804"/>
-			<point x="310" y="813"/>
-			<point x="300" y="813" type="curve" smooth="yes"/>
-			<point x="24" y="813" type="line" smooth="yes"/>
-			<point x="11" y="813"/>
-			<point x="-1" y="793"/>
-			<point x="-1" y="781" type="curve" smooth="yes"/>
-			<point x="-1" y="772"/>
-			<point x="3" y="763"/>
-			<point x="14" y="763" type="curve" smooth="yes"/>
-		</contour>
-		<contour>
-			<point name=".hr03" x="98" y="-129" type="curve" smooth="yes"/>
-			<point x="98" y="-162"/>
-			<point x="122" y="-195"/>
-			<point x="162" y="-195" type="curve" smooth="yes"/>
-			<point x="207" y="-195"/>
-			<point x="233" y="-159"/>
-			<point x="233" y="-133" type="curve" smooth="yes"/>
-			<point x="233" y="-103"/>
-			<point x="210" y="-67"/>
-			<point x="168" y="-67" type="curve" smooth="yes"/>
-			<point x="121" y="-67"/>
-			<point x="98" y="-99"/>
-		</contour>
+		<component base="uni1E37"/>
+		<component base="uni0304" xOffset="362.5"/>
 	</outline>
+	<anchor name="m.uni031A_3" x="249" y="733"/>
 	<lib>
 		<dict>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>vstem 100 130</string>
-							<string>hstem 19 -21</string>
-							<string>hstem 685 13</string>
-							<string>hstem -195 128</string>
-							<string>hstem 763 50</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>.hr01</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 685 13</string>
-							<string>vstem 98 135</string>
-							<string>hstem -195 128</string>
-							<string>hstem 19 -21</string>
-							<string>hstem 763 50</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>.hr02</string>
-						<key>stems</key>
-						<array>
-							<string>vstem 100 130</string>
-							<string>hstem 763 50</string>
-							<string>hstem -195 128</string>
-							<string>hstem 19 -21</string>
-							<string>hstem 685 13</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>.hr03</string>
-						<key>stems</key>
-						<array>
-							<string>vstem 98 135</string>
-							<string>hstem -195 128</string>
-							<string>hstem 19 -21</string>
-							<string>hstem 685 13</string>
-							<string>hstem 763 50</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>f1eac33d726af66fb8f4cc3110d49e801d386ead68fee8a8cf7c42cf6fd8901604b65f653f27ea207ebdeb487b5f464327fda45036596ece0e31975cc7b8e8e8</string>
-			</dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>uni1E37+uni0304</string>
+			<key>public.markColor</key>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

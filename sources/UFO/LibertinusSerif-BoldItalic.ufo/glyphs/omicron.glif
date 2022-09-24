@@ -3,71 +3,18 @@
 	<unicode hex="03BF"/>
 	<advance width="479"/>
 	<outline>
-		<contour>
-			<point x="67" y="162" type="curve" smooth="yes"/>
-			<point x="67" y="98"/>
-			<point x="93" y="-10"/>
-			<point x="220" y="-10" type="curve" smooth="yes"/>
-			<point x="253" y="-10"/>
-			<point x="291" y="-4"/>
-			<point x="321" y="6" type="curve"/>
-			<point x="328" y="8"/>
-			<point x="335" y="11"/>
-			<point x="341" y="14" type="curve" smooth="yes"/>
-			<point x="428" y="58"/>
-			<point x="500" y="146"/>
-			<point x="500" y="281" type="curve" smooth="yes"/>
-			<point x="500" y="353"/>
-			<point x="463" y="439"/>
-			<point x="340" y="439" type="curve" smooth="yes"/>
-			<point x="294" y="439"/>
-			<point x="252" y="425"/>
-			<point x="217" y="405" type="curve" smooth="yes"/>
-			<point x="123" y="353"/>
-			<point x="67" y="249"/>
-		</contour>
-		<contour>
-			<point x="196" y="170" type="curve" smooth="yes"/>
-			<point x="196" y="270"/>
-			<point x="214" y="397"/>
-			<point x="315" y="397" type="curve" smooth="yes"/>
-			<point x="338" y="397"/>
-			<point x="351" y="382"/>
-			<point x="359" y="361" type="curve" smooth="yes"/>
-			<point x="370" y="333"/>
-			<point x="371" y="293"/>
-			<point x="371" y="260" type="curve" smooth="yes"/>
-			<point x="371" y="212"/>
-			<point x="367" y="142"/>
-			<point x="343" y="93" type="curve" smooth="yes"/>
-			<point x="326" y="57"/>
-			<point x="298" y="32"/>
-			<point x="255" y="32" type="curve" smooth="yes"/>
-			<point x="226" y="32"/>
-			<point x="196" y="58"/>
-		</contour>
+		<component base="o"/>
 	</outline>
+	<anchor name="t.uni0302" x="334" y="500"/>
+	<anchor name="b.uni0328" x="300" y="34"/>
 	<lib>
 		<dict>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>hstem -10 42</string>
-							<string>hstem 397 42</string>
-							<string>vstem 67 129</string>
-							<string>vstem 371 129</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>16083bffce97dc4e77d49325996c92aa163a1093210fea1dad4ba7548bf6828e38fc969ecb6aa5b8fe780fb08907af50564d87db1d12659e3536b00e1fec2479</string>
-			</dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>o</string>
+			<key>public.markColor</key>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

@@ -3,101 +3,18 @@
 	<unicode hex="012D"/>
 	<advance width="342"/>
 	<outline>
-		<contour>
-			<point x="293" y="320" type="line" smooth="yes"/>
-			<point x="302" y="360"/>
-			<point x="314" y="398"/>
-			<point x="314" y="415" type="curve" smooth="yes"/>
-			<point x="314" y="429"/>
-			<point x="306" y="436"/>
-			<point x="293" y="436" type="curve" smooth="yes"/>
-			<point x="261" y="436"/>
-			<point x="168" y="429"/>
-			<point x="121" y="423" type="curve"/>
-			<point x="114" y="415"/>
-			<point x="113" y="394"/>
-			<point x="119" y="385" type="curve"/>
-			<point x="159" y="382" type="line" smooth="yes"/>
-			<point x="171" y="381"/>
-			<point x="177" y="372"/>
-			<point x="177" y="362" type="curve" smooth="yes"/>
-			<point x="177" y="353"/>
-			<point x="177" y="347"/>
-			<point x="171" y="321" type="curve" smooth="yes"/>
-			<point x="127" y="115" type="line" smooth="yes"/>
-			<point x="120" y="83"/>
-			<point x="114" y="41"/>
-			<point x="120" y="23" type="curve"/>
-			<point x="128" y="3"/>
-			<point x="139" y="-10"/>
-			<point x="169" y="-10" type="curve" smooth="yes"/>
-			<point x="239" y="-10"/>
-			<point x="308" y="23"/>
-			<point x="354" y="82" type="curve"/>
-			<point x="351" y="91"/>
-			<point x="339" y="110"/>
-			<point x="325" y="110" type="curve"/>
-			<point x="299" y="80"/>
-			<point x="265" y="63"/>
-			<point x="255" y="63" type="curve" smooth="yes"/>
-			<point x="247" y="63"/>
-			<point x="244" y="72"/>
-			<point x="244" y="84" type="curve"/>
-			<point x="245" y="96"/>
-			<point x="248" y="111"/>
-			<point x="251" y="124" type="curve" smooth="yes"/>
-		</contour>
-		<contour>
-			<point name=".hr01" x="195" y="667" type="curve"/>
-			<point x="160" y="657" type="line"/>
-			<point x="156" y="576"/>
-			<point x="200" y="514"/>
-			<point x="281" y="514" type="curve" smooth="yes"/>
-			<point x="332" y="514"/>
-			<point x="416" y="552"/>
-			<point x="440" y="657" type="curve"/>
-			<point x="410" y="667" type="line"/>
-			<point x="398" y="603"/>
-			<point x="339" y="588"/>
-			<point x="292" y="588" type="curve" smooth="yes"/>
-			<point x="229" y="588"/>
-			<point x="189" y="613"/>
-		</contour>
+		<component base="dotlessi"/>
+		<component base="breve" xOffset="15"/>
 	</outline>
+	<anchor name="t.uni0302" x="267" y="500"/>
 	<lib>
 		<dict>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>vstem 177 137</string>
-							<string>hstem 436 -20</string>
-							<string>hstem -10 73</string>
-							<string>hstem 667 -20</string>
-							<string>hstem 514 74</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>.hr01</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 667 -20</string>
-							<string>vstem 160 35</string>
-							<string>hstem 514 74</string>
-							<string>hstem -10 73</string>
-							<string>hstem 436 -20</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>083ef08b59801c341afb5d3b07c1a7835672406d3953202991943bdcd06a237783653c89578a442358690193390b4a463bd5f9470017d3b59de3e679d5aad597</string>
-			</dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>dotlessi+breve</string>
+			<key>public.markColor</key>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>

@@ -3,123 +3,17 @@
 	<unicode hex="0213"/>
 	<advance width="357"/>
 	<outline>
-		<contour>
-			<point x="221" y="285" type="line"/>
-			<point x="229" y="320" type="line" smooth="yes"/>
-			<point x="238" y="359"/>
-			<point x="247" y="394"/>
-			<point x="247" y="411" type="curve" smooth="yes"/>
-			<point x="247" y="426"/>
-			<point x="238" y="436"/>
-			<point x="225" y="436" type="curve" smooth="yes"/>
-			<point x="193" y="436"/>
-			<point x="152" y="429"/>
-			<point x="105" y="423" type="curve"/>
-			<point x="98" y="415"/>
-			<point x="100" y="404"/>
-			<point x="106" y="395" type="curve"/>
-			<point x="146" y="392" type="line" smooth="yes"/>
-			<point x="158" y="391"/>
-			<point x="164" y="382"/>
-			<point x="164" y="372" type="curve" smooth="yes"/>
-			<point x="164" y="363"/>
-			<point x="164" y="349"/>
-			<point x="157" y="321" type="curve"/>
-			<point x="102" y="72" type="line" smooth="yes"/>
-			<point x="97" y="51"/>
-			<point x="89" y="33"/>
-			<point x="89" y="17" type="curve" smooth="yes"/>
-			<point x="89" y="1"/>
-			<point x="98" y="-10"/>
-			<point x="127" y="-10" type="curve" smooth="yes"/>
-			<point x="162" y="-10"/>
-			<point x="163" y="33"/>
-			<point x="173" y="72" type="curve" smooth="yes"/>
-			<point x="202" y="189" type="line"/>
-			<point x="250" y="276"/>
-			<point name=".hr01" x="306" y="369"/>
-			<point x="329" y="369" type="curve" smooth="yes"/>
-			<point x="339" y="369"/>
-			<point x="344" y="364"/>
-			<point x="350" y="357" type="curve" smooth="yes"/>
-			<point x="357" y="349"/>
-			<point name=".hr02" x="370" y="336"/>
-			<point x="384" y="336" type="curve" smooth="yes"/>
-			<point x="411" y="336"/>
-			<point x="429" y="365"/>
-			<point x="429" y="392" type="curve" smooth="yes"/>
-			<point x="429" y="413"/>
-			<point x="414" y="439"/>
-			<point x="377" y="439" type="curve" smooth="yes"/>
-			<point x="327" y="439"/>
-			<point x="269" y="377"/>
-			<point x="225" y="284" type="curve"/>
-		</contour>
-		<contour>
-			<point x="410" y="498" type="curve"/>
-			<point x="440" y="510" type="line"/>
-			<point x="443" y="595"/>
-			<point x="402" y="645"/>
-			<point x="332" y="645" type="curve" smooth="yes"/>
-			<point x="273" y="645"/>
-			<point x="199" y="596"/>
-			<point x="170" y="510" type="curve"/>
-			<point x="194" y="498" type="line"/>
-			<point x="216" y="556"/>
-			<point x="269" y="588"/>
-			<point x="321" y="588" type="curve" smooth="yes"/>
-			<point x="375" y="588"/>
-			<point x="410" y="551"/>
-		</contour>
+		<component base="r"/>
+		<component base="uni0311" xOffset="404"/>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.fontlab.autolayer</key>
+			<true/>
+			<key>com.fontlab.recipe</key>
+			<string>r+uni0311</string>
 			<key>public.markColor</key>
-			<string>1,0.6,0.6,1</string>
-			<key>public.postscript.hints</key>
-			<dict>
-				<key>formatVersion</key>
-				<string>1</string>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>stems</key>
-						<array>
-							<string>vstem 164 83</string>
-							<string>hstem 436 -20</string>
-							<string>hstem 11 -21</string>
-							<string>hstem 588 57</string>
-							<string>vstem 410 30</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>.hr01</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 369 70</string>
-							<string>hstem 11 -21</string>
-							<string>hstem 588 57</string>
-							<string>vstem 164 83</string>
-							<string>vstem 410 30</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>.hr02</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 336 103</string>
-							<string>vstem 410 30</string>
-							<string>hstem 588 57</string>
-							<string>hstem 11 -21</string>
-							<string>vstem 164 83</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>56786c813be1dbb8adfd3a32660b1719f5002f8a723c4a658db4b3f06e6e8d049273babf8971c64e261638c0380a69f7fa5f4f9b0566b2b28182b5b21728e6a3</string>
-			</dict>
+			<string>0.6,0.997,1,1</string>
 		</dict>
 	</lib>
 </glyph>
