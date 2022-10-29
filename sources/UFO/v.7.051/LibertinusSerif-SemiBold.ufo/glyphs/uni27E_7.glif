@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni27E7" format="2">
+	<unicode hex="27E7"/>
+	<advance width="444"/>
+	<outline>
+		<contour>
+			<point x="7" y="689" type="line"/>
+			<point x="7" y="642.667" type="line"/>
+			<point name=".hr01" x="154" y="642.667" type="line"/>
+			<point x="154" y="-152.667" type="line"/>
+			<point name=".hr02" x="7" y="-152.667" type="line"/>
+			<point x="7" y="-200" type="line"/>
+			<point x="347.333" y="-200" type="line"/>
+			<point x="347.333" y="689" type="line"/>
+		</contour>
+		<contour>
+			<point x="222" y="-152.667" type="line"/>
+			<point x="222" y="642.667" type="line"/>
+			<point x="279" y="642.667" type="line"/>
+			<point x="279" y="-152.667" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 642.67 46.33</string>
+							<string>vstem 7 215</string>
+							<string>hstem -200 47.33</string>
+							<string>vstem 279 68.33</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 642.67 46.33</string>
+							<string>vstem 154 68</string>
+							<string>hstem -200 47.33</string>
+							<string>vstem 279 68.33</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr02</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -200 47.33</string>
+							<string>vstem 7 215</string>
+							<string>vstem 279 68.33</string>
+							<string>hstem 642.67 46.33</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>335f66be35bb4e4b0dcf003f43d90fb39b2c05a63de055be7a4512618c9055013638669ecbeea8c608d14c2205ad6ae12eea5e16bb32adba0d4a983c9b03bcac</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

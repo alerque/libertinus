@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni2327" format="2">
+	<unicode hex="2327"/>
+	<advance width="716"/>
+	<outline>
+		<contour>
+			<point name=".hr02" x="644" y="0" type="line"/>
+			<point x="644" y="430" type="line"/>
+			<point name=".hr01" x="73" y="430" type="line"/>
+			<point x="73" y="0" type="line"/>
+		</contour>
+		<contour>
+			<point x="330" y="214" type="line"/>
+			<point x="189" y="46" type="line"/>
+			<point x="127" y="46" type="line"/>
+			<point x="127" y="383" type="line"/>
+			<point x="189" y="383" type="line"/>
+		</contour>
+		<contour>
+			<point name=".hr03" x="388" y="214" type="line"/>
+			<point x="529" y="383" type="line"/>
+			<point x="590" y="383" type="line"/>
+			<point x="590" y="46" type="line"/>
+			<point x="528" y="46" type="line"/>
+		</contour>
+		<contour>
+			<point x="359" y="248" type="line"/>
+			<point x="246" y="383" type="line"/>
+			<point x="473" y="383" type="line"/>
+		</contour>
+		<contour>
+			<point x="359" y="180" type="line"/>
+			<point x="471" y="46" type="line"/>
+			<point x="247" y="46" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>vstem 127 517</string>
+							<string>hstem 46 384</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 46 384</string>
+							<string>vstem 73 315</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr02</string>
+						<key>stems</key>
+						<array>
+							<string>vstem 127 517</string>
+							<string>hstem 46 384</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr03</string>
+						<key>stems</key>
+						<array>
+							<string>vstem 73 315</string>
+							<string>hstem 46 384</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>1b6c690efc2d9bc16f696dee1716e89eb571f3e472b2cb37dc4d06383427d106b789f42154ecf9cfc43ba52c16e6cba8495199550c11f50390a6b095b0f658a2</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="theta" format="2">
+	<unicode hex="03B8"/>
+	<advance width="569"/>
+	<outline>
+		<contour>
+			<point x="39" y="334" type="curve" smooth="yes"/>
+			<point x="39" y="86"/>
+			<point x="167" y="-10"/>
+			<point x="282" y="-10" type="curve" smooth="yes"/>
+			<point x="389" y="-10"/>
+			<point x="530" y="76"/>
+			<point x="530" y="334" type="curve" smooth="yes"/>
+			<point x="530" y="594"/>
+			<point x="396" y="681"/>
+			<point x="287" y="681" type="curve" smooth="yes"/>
+			<point x="160" y="681"/>
+			<point x="39" y="565"/>
+		</contour>
+		<contour>
+			<point x="390" y="311" type="line"/>
+			<point x="389" y="170"/>
+			<point x="349" y="32"/>
+			<point x="286" y="32" type="curve" smooth="yes"/>
+			<point x="223" y="32"/>
+			<point x="180" y="171"/>
+			<point x="179" y="311" type="curve"/>
+		</contour>
+		<contour>
+			<point x="281" y="639" type="curve" smooth="yes"/>
+			<point x="342" y="639"/>
+			<point x="389" y="512"/>
+			<point x="390" y="361" type="curve"/>
+			<point x="179" y="361" type="line"/>
+			<point x="180" y="486"/>
+			<point x="214" y="639"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem -10 42</string>
+							<string>hstem 311 50</string>
+							<string>hstem 639 42</string>
+							<string>vstem 39 140</string>
+							<string>vstem 390 140</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>bbd203025d9ef51d6854361e64851ec2e025320464b574f4c225ddc0006d16df82dffae864e6bf8f0c894a7853b3d4a8fae7c4d5696f238f7b45732ede748fa1</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

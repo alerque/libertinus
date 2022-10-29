@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="endash" format="2">
+	<unicode hex="2013"/>
+	<advance width="548"/>
+	<outline>
+		<contour>
+			<point x="470" y="238" type="line" smooth="yes"/>
+			<point x="483" y="238"/>
+			<point x="496" y="258"/>
+			<point x="496" y="270" type="curve" smooth="yes"/>
+			<point x="496" y="279"/>
+			<point x="493" y="287"/>
+			<point x="482" y="287" type="curve" smooth="yes"/>
+			<point x="78" y="287" type="line" smooth="yes"/>
+			<point x="66" y="287"/>
+			<point x="52" y="267"/>
+			<point x="52" y="255" type="curve" smooth="yes"/>
+			<point x="52" y="247"/>
+			<point x="55" y="238"/>
+			<point x="66" y="238" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 238 49</string>
+							<string>vstem 52 444</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w548m470,238c483,238 496,258 496,270c496,279 493,287 482,287l78,287c66,287 52,267 52,255c52,247 55,238 66,238</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

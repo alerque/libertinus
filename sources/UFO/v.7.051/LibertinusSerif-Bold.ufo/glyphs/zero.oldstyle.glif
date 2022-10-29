@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="zero.oldstyle" format="2">
+	<advance width="544"/>
+	<outline>
+		<contour>
+			<point x="270" y="-10" type="curve" smooth="yes"/>
+			<point x="369" y="-10"/>
+			<point x="509" y="47"/>
+			<point x="509" y="221" type="curve" smooth="yes"/>
+			<point x="509" y="393"/>
+			<point name=".hr01" x="376" y="444"/>
+			<point x="275" y="444" type="curve" smooth="yes"/>
+			<point x="146" y="444"/>
+			<point x="35" y="361"/>
+			<point x="35" y="215" type="curve" smooth="yes"/>
+			<point x="35" y="95"/>
+			<point name=".hr02" x="124" y="-10"/>
+		</contour>
+		<contour>
+			<point x="275" y="402" type="curve" smooth="yes"/>
+			<point x="314" y="402"/>
+			<point x="367" y="365"/>
+			<point x="367" y="236" type="curve" smooth="yes"/>
+			<point x="367" y="61"/>
+			<point x="311" y="32"/>
+			<point name=".hr03" x="271" y="32" type="curve" smooth="yes"/>
+			<point x="187" y="32"/>
+			<point x="178" y="145"/>
+			<point x="178" y="207" type="curve" smooth="yes"/>
+			<point x="178" y="384"/>
+			<point x="235" y="402"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem -10 412</string>
+							<string>vstem 178 331</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 32 412</string>
+							<string>vstem 35 332</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr02</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -10 412</string>
+							<string>vstem 35 332</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr03</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 32 412</string>
+							<string>vstem 178 331</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>lsb</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -10 412</string>
+							<string>vstem 178 331</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>05d765dcfabb744671020fa5f09e3cd8b759e2d3573b8d11068cbc6358d11e158d88dcc58e0ba6f3e46b18626d414cd3dd51c5c9a424b4010a57a9f7fbab58ac</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

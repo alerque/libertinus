@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="endash" format="2">
+	<unicode hex="2013"/>
+	<advance width="534"/>
+	<outline>
+		<contour>
+			<point x="542" y="238" type="line"/>
+			<point x="544" y="249"/>
+			<point x="546" y="260"/>
+			<point x="548" y="271" type="curve" smooth="yes"/>
+			<point x="549" y="276"/>
+			<point x="550" y="282"/>
+			<point x="551" y="287" type="curve"/>
+			<point x="95" y="287" type="line"/>
+			<point x="93" y="276"/>
+			<point x="91" y="265"/>
+			<point x="89" y="254" type="curve" smooth="yes"/>
+			<point x="88" y="249"/>
+			<point x="87" y="243"/>
+			<point x="86" y="238" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 238 49</string>
+							<string>vstem 86 465</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w534m542,238c544,249 546,260 548,271c549,276 550,282 551,287l95,287c93,276 91,265 89,254c88,249 87,243 86,238</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

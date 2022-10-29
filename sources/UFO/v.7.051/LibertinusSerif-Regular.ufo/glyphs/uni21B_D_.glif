@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni21BD" format="2">
+	<unicode hex="21BD"/>
+	<advance width="1087"/>
+	<outline>
+		<contour>
+			<point x="61" y="291" type="line"/>
+			<point x="61" y="255" type="line"/>
+			<point name=".hr01" x="94" y="239"/>
+			<point x="128" y="218"/>
+			<point x="159" y="192" type="curve"/>
+			<point x="191" y="167"/>
+			<point x="229" y="130"/>
+			<point name=".hr02" x="273" y="81" type="curve"/>
+			<point x="313" y="81" type="line"/>
+			<point x="280" y="149"/>
+			<point x="247" y="202"/>
+			<point name=".hr03" x="212" y="239" type="curve"/>
+			<point x="1029" y="239" type="line"/>
+			<point x="1029" y="291" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 255 36</string>
+							<string>vstem 61 968</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 239 52</string>
+							<string>vstem 61 968</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr02</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 81 210</string>
+							<string>vstem 61 968</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr03</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 255 36</string>
+							<string>vstem 61 968</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w1087m61,291l61,255c94,239 128,218 159,192c191,167 229,130 273,81l313,81c280,149 247,202 212,239l1029,239l1029,291</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

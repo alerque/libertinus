@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lozenge" format="2">
+	<unicode hex="25CA"/>
+	<advance width="667"/>
+	<outline>
+		<contour>
+			<point x="66" y="208" type="line"/>
+			<point x="325" y="-137" type="line"/>
+			<point x="583" y="208" type="line"/>
+			<point x="325" y="554" type="line"/>
+		</contour>
+		<contour>
+			<point x="125" y="208" type="line"/>
+			<point x="325" y="474" type="line"/>
+			<point x="524" y="208" type="line"/>
+			<point x="325" y="-57" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem -137 691</string>
+							<string>vstem 66 517</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w667m66,208l325,-137l583,208l325,554m125,208l325,474l524,208l325,-57</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

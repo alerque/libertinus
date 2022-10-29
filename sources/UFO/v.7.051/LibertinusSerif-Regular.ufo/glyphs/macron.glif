@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="macron" format="2">
+	<unicode hex="00AF"/>
+	<advance width="397"/>
+	<outline>
+		<contour>
+			<point x="315" y="530" type="line" smooth="yes"/>
+			<point x="328" y="530"/>
+			<point x="339" y="548"/>
+			<point x="339" y="560" type="curve" smooth="yes"/>
+			<point x="339" y="566"/>
+			<point x="335" y="574"/>
+			<point x="325" y="574" type="curve" smooth="yes"/>
+			<point x="81" y="574" type="line" smooth="yes"/>
+			<point x="69" y="574"/>
+			<point x="59" y="557"/>
+			<point x="59" y="545" type="curve" smooth="yes"/>
+			<point x="59" y="538"/>
+			<point x="62" y="530"/>
+			<point x="71" y="530" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>vstem 59 280</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w397m315,530c328,530 339,548 339,560c339,566 335,574 325,574l81,574c69,574 59,557 59,545c59,538 62,530 71,530</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

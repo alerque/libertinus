@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="house" format="2">
+	<unicode hex="2302"/>
+	<advance width="865"/>
+	<outline>
+		<contour>
+			<point x="157" y="430" type="line"/>
+			<point x="73" y="0" type="line"/>
+			<point x="792" y="0" type="line"/>
+			<point x="876" y="430" type="line"/>
+			<point x="565" y="646" type="line"/>
+		</contour>
+		<contour>
+			<point x="196" y="407" type="line"/>
+			<point x="555" y="592" type="line"/>
+			<point x="828" y="407" type="line"/>
+			<point x="755" y="34" type="line"/>
+			<point x="124" y="34" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 34</string>
+							<string>hstem 430 -20</string>
+							<string>hstem 646 -20</string>
+							<string>vstem 73 803</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w865m157,430l73,0l792,0l876,430l565,646m196,407l555,592l828,407l755,34l124,34</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

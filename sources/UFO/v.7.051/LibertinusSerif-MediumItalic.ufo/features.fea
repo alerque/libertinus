@@ -1,0 +1,2192 @@
+#> classes
+#/> otclasses
+@calt = [parenright question T V W Y bracketright b h i j k l bar braceright brokenbar ordfeminine paragraph Yacute agrave atilde adieresis egrave edieresis igrave iacute icircumflex idieresis ograve otilde odieresis ugrave udieresis thorn ydieresis amacron abreve emacron ebreve ecaron hcircumflex hbar itilde imacron ibreve iogonek ij jcircumflex lacute lcaron ldot lslash omacron umacron ubreve uni0249 uni1E03 uni1E05 uni1E07 uni1E23 uni1E25 uni1E27 uni1E29 uni1E2B uni1E2D uni1E2F uni1E31 uni1E33 uni1E35 uni1E37 uni1E39 uni1E3B uni1E3D uni1EC9 uni1ECB quoteleft quoteright quotedblleft quotedblright uni2047 uni2048 uni2C61 uni013C uni00B2 uni00B3 uni00B9 h.alt];
+@case = [parenleft parenright hyphen zero one two three four five six seven eight nine bracketleft bracketright braceleft braceright exclamdown guillemotleft guillemotright questiondown guilsinglleft guilsinglright];
+@case2 = [parenleft.sc parenright.sc hyphen.cap zero.cap one.cap two.cap three.cap four.cap five.cap six.cap seven.cap eight.cap nine.cap bracketleft.sc bracketright.sc braceleft.sc braceright.sc exclamdown.sc guillemotleft.sc guillemotright.sc questiondown.sc guilsinglleft.sc guilsinglright.sc];
+@ccmp = [gravecomb acutecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358];
+@ccmp2 = [A B C D E F G H I J K L M N O P Q R S U X Z uni0404 uni0405 uni0406 uni0408 uni0409 uni040A uni040B uni040F uni0410 uni0411 uni0412 uni0413 uni0414 uni0415 uni0416 uni0417 uni0418 uni041A uni041B uni041C uni041D uni041E uni041F uni0420 uni0421 uni0422 uni0423 uni0424 uni0425 uni0426 uni0427 uni0428 uni0429 uni042A uni042B uni042C uni042D uni042E uni042F Acircumflex AE Ccedilla Ocircumflex Thorn Alpha Beta Gamma uni0394 Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi uni03A9];
+@cpsp = [A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircumflex Atilde Adieresis Aring Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn Amacron Abreve Aogonek Cacute Ccircumflex Cdotaccent Ccaron Dcaron Dcroat Emacron Ebreve Edotaccent Eogonek Ecaron Gcircumflex Gbreve Gdotaccent Hcircumflex Hbar Itilde Imacron Ibreve Iogonek Idotaccent IJ Jcircumflex Lcaron Ldot Lslash Nacute Ncaron Omacron Obreve Ohungarumlaut Racute Rcaron Sacute Scircumflex Scedilla Scaron Tcaron Tbar Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek Wcircumflex Ycircumflex Ydieresis Zacute Zcaron uni0136 uni013B uni0145 uni0156 uni0122 uni0162 Adieresis.alt Odieresis.alt];
+@frac = [slash zero one two three four five six seven eight nine];
+@frac2 = [slash zero one two three four five six seven eight nine onequarter onehalf threequarters fraction uni2080 uni2081 uni2082 uni2083 uni2084 uni2085 uni2086 uni2087 uni2088 uni2089 onethird twothirds uni2155 uni2156 uni2157 uni2158 uni2159 uni215A oneeighth threeeighths fiveeighths seveneighths uni215F];
+@frac3 = [slash zero one two three four five six seven eight nine onequarter onehalf threequarters fraction uni2070 uni2074 uni2075 uni2076 uni2077 uni2078 uni2079 onethird twothirds uni2155 uni2156 uni2157 uni2158 uni2159 uni215A oneeighth threeeighths fiveeighths seveneighths uni215F uni00B2 uni00B3 uni00B9];
+@frac_lnum_onum = [zero one two three four five six seven eight nine];
+@frac_subs = [parenleft parenright plus hyphen zero one two three four five six seven eight nine equal a b c d e f g h i j k l m n o p q r s t u v w x y z minus zero.slash];
+@frac_subs2 = [uni208D uni208E uni208A uni208B uni2080 uni2081 uni2082 uni2083 uni2084 uni2085 uni2086 uni2087 uni2088 uni2089 uni208C uni2090 b.inferior c.inferior d.inferior uni2091 f.inferior g.inferior h.inferior i.inferior j.inferior k.inferior l.inferior m.inferior n.inferior uni2092 p.inferior q.inferior r.inferior s.inferior t.inferior u.inferior v.inferior w.inferior uni2093 y.inferior z.inferior uni208B uni2080];
+@frac_sups = [parenleft parenright plus hyphen slash zero one two three four five six seven eight nine equal a b c d e f g h i j k l m n o p q r s t u v w x y z uni01DD uni0250 uni0254 uni0263 uni0266 uni026F uni0279 uni027B uni0281 uni0295 minus zero.slash];
+@frac_sups2 = [uni207D uni207E uni207A uni207B fraction uni2070 uni00B9 uni00B2 uni00B3 uni2074 uni2075 uni2076 uni2077 uni2078 uni2079 uni207C uni1D43 uni1D47 uni1D9C uni1D48 uni1D49 uni1DA0 uni1D4D uni02B0 uni2071 uni02B2 uni1D4F uni02E1 uni1D50 uni207F uni1D52 uni1D56 q.superior uni02B3 uni02E2 uni1D57 uni1D58 uni1D5B uni02B7 uni02E3 uni02B8 uni1DBB uni1D4A uni1D44 uni1D53 uni02E0 uni02B1 uni1D5A uni02B4 uni02B5 uni02B6 uni02E4 uni207B uni2070];
+@lnum_onum = [zero.taboldstyle one.taboldstyle two.taboldstyle three.taboldstyle four.taboldstyle five.taboldstyle six.taboldstyle seven.taboldstyle eight.taboldstyle nine.taboldstyle];
+@mark = [uni0305 uni0332];
+@mark10 = [plus equal L a d k p q cent sterling yen guillemotleft logicalnot plusminus cedilla guillemotright uni0422 uni042D uni0430 uni043B uni043D uni0440 uni0445 uni0447 uni044A uni044F multiply agrave aacute acircumflex atilde adieresis aring eth divide thorn amacron abreve aogonek dcroat kgreenlandic Lacute Lcaron Ldot Lslash eng uni0263 uni0266 Gamma etatonos gamma eta kappa pi uni03D0 uni03F0 uni1E01 uni1E0B uni1E0D uni1E0F uni1E11 uni1E13 uni1E31 uni1E33 uni1E35 uni1E36 uni1E38 uni1E3A uni1E3C uni1E55 uni1E57 uni1EA1 uni1EA3 uni1EA5 uni1EA7 uni1EA9 uni1EAB uni1EAD uni1EAF uni1EB1 uni1EB3 uni1EB5 uni1EB7 uni1EE9 uni1EEB uni1EED uni1EEF uni1EF1 uni1F20 uni1F21 uni1F22 uni1F23 uni1F24 uni1F25 uni1F26 uni1F27 uni1F3A uni1F3C uni1F3D uni1F3F uni1F74 uni1F75 uni1F90 uni1F91 uni1F92 uni1F93 uni1F94 uni1F95 uni1F96 uni1F97 uni1FC2 uni1FC3 uni1FC4 uni1FC6 uni1FC7 uni1FE4 uni1FE5 uni1FE8 uni1FE9 endash uni203B uni210E uni210F Ifraktur minus uni2213 uni2214 uni2216 radical uni221B uni221C orthogonal uni2236 similar uni2241 congruent approxequal uni2249 uni2259 notequal equivalence uni2262 lessequal greaterequal uni226E uni226F uni2270 uni2271 circleplus uni2296 circlemultiply uni2298 revlogicalnot triagup uni25B3 triagdn uni25BD uni25C9 circle uni25D0 uni25D1 uni25D2 uni25D3 uni25D4 uni25D5 uni263F female uni2641 musicalnote uni2C60 uni2C62 uni2C64 uni2C6A b.sc g.sc o.sc p.sc q.sc r.sc t.sc v.sc x.sc y.sc uni013B uni0137 uni2215 H18533 uni23D3 guillemotleft.sc guillemotright.sc Yen.fitted zero.slash.fitted zero.fitted ograve.sc oacute.sc ocircumflex.sc otilde.sc odieresis.sc oslash.sc yacute.sc thorn.sc ydieresis.sc gbreve.sc ohungarumlaut.sc racute.sc rcaron.sc uni0163.sc tbar.sc tcaron.sc h.alt uni021B.sc zero.cap one.cap two.cap three.cap four.cap five.cap six.cap seven.cap eight.cap nine.cap q.sc.u zero.slash.cap two.cap.fitted three.cap.fitted four.cap.fitted five.cap.fitted six.cap.fitted eight.cap.fitted nine.cap.fitted uni0434.ital];
+@mark11 = [B E P T Y Z h n mu paragraph uni0401 uni0412 uni0415 uni0421 uni0423 uni042C uni043F uni0446 Egrave Eacute Ecircumflex Edieresis Yacute Thorn germandbls ntilde dcaron Emacron Ebreve Edotaccent Eogonek Ecaron hcircumflex hbar ij nacute ncaron Tcaron Tbar Ycircumflex Ydieresis Zacute Zdotaccent Zcaron uni0228 Beta Epsilon Zeta Xi Rho Tau Upsilon Upsilondieresis alphatonos alpha uni03BC phi uni1E02 uni1E04 uni1E06 uni1E14 uni1E16 uni1E18 uni1E1A uni1E1C uni1E23 uni1E25 uni1E27 uni1E29 uni1E2B uni1E45 uni1E47 uni1E49 uni1E4B uni1E54 uni1E56 uni1E6A uni1E6C uni1E6E uni1E70 uni1E8E uni1E90 uni1E92 uni1E94 uni1E96 uni1EB8 uni1EBA uni1EBC uni1EBE uni1EC0 uni1EC2 uni1EC4 uni1EC6 Ygrave uni1EF4 uni1EF6 uni1EF8 uni1F00 uni1F01 uni1F02 uni1F03 uni1F04 uni1F05 uni1F06 uni1F07 uni1F70 uni1F71 uni1F80 uni1F81 uni1F82 uni1F83 uni1F84 uni1F85 uni1F86 uni1F87 uni1FB0 uni1FB1 uni1FB2 uni1FB3 uni1FB4 uni1FB6 uni1FB7 uni1FEC dagger daggerdbl uni2042 uni2048 uni2049 uni204B uni210C uni2119 uni2164 uni2169 uni216D uni2183 summation filledbox uni2605 uni2627 uni2645 uni2C6B uni2C77 uni021A uni20BF a.sc d.sc e.sc u.sc uni0146 uni0162 longs_t H22073 u1D106 u1D107 Euro.fitted agrave.sc aacute.sc acircumflex.sc atilde.sc adieresis.sc aring.sc egrave.sc eacute.sc ecircumflex.sc edieresis.sc eth.sc ugrave.sc uacute.sc ucircumflex.sc udieresis.sc abreve.sc aogonek.sc dcaron.sc eogonek.sc ecaron.sc eng.sc uring.sc uhungarumlaut.sc dcroat.sc germandbls.sc a.scalt germandbls.alt y.alt zero.slash.cap.fitted zero.cap.fitted];
+@mark12 = [percent V u copyright registered uni0404 uni040C uni0411 uni041A uni041E uni0438 uni0439 ugrave uacute ucircumflex udieresis napostrophe utilde umacron ubreve uring uhungarumlaut uogonek Epsilontonos Lambda Sigma psi theta1 phi1 uni1E73 uni1E75 uni1E77 uni1E79 uni1E7B uni1E7C uni1E7E uni1E9A uni1EE5 uni1EE7 uni1F19 uni1FEB uni2102 uni211D uni216E uni2172 uni2175 uni2178 emptyset gradient uni2210 uni22EF uni25C6 uni25C7 lozenge uni262F male uni2643 uni2650 uni2653 diamond uni26A4 uni2C69 uniA720 uniA721 k.sc n.sc u1F12F ntilde.sc nacute.sc ncaron.sc t_z longs_longs Eng.UCStyle.sc uni043F.ital];
+@mark13 = [A C D G K N O Q R U X onequarter onehalf threequarters uni0410 uni041B uni041F uni0424 uni0425 uni0427 uni042A uni042F uni043C Agrave Aacute Acircumflex Atilde Adieresis Aring Ccedilla Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis Oslash Ugrave Uacute Ucircumflex Udieresis ae Amacron Abreve Aogonek Cacute Ccircumflex Cdotaccent Ccaron Dcaron Dcroat Gcircumflex Gbreve Gdotaccent IJ Nacute Ncaron Omacron Obreve Ohungarumlaut oe Racute Rcaron Utilde Umacron Ubreve Uring Uhungarumlaut Uogonek uni01E3 aeacute uni0226 uni022E uni029C Alphatonos Omicrontonos Upsilontonos Alpha uni0394 Theta Kappa Nu Omicron Chi uni03A9 omega omegatonos uni04D5 uni1E00 uni1E08 uni1E0A uni1E0C uni1E0E uni1E10 uni1E12 uni1E20 uni1E30 uni1E32 uni1E34 uni1E44 uni1E46 uni1E48 uni1E4A uni1E4C uni1E4E uni1E50 uni1E52 uni1E58 uni1E5A uni1E5C uni1E5E uni1E72 uni1E74 uni1E76 uni1E78 uni1E7A uni1E8A uni1E8C uni1EA0 uni1EA2 uni1EA4 uni1EA6 uni1EA8 uni1EAA uni1EAC uni1EAE uni1EB0 uni1EB2 uni1EB4 uni1EB6 uni1ECC uni1ECE uni1ED0 uni1ED2 uni1ED4 uni1ED6 uni1ED8 uni1EDA uni1EDC uni1EDE uni1EE0 uni1EE2 uni1EE4 uni1EE6 uni1EE8 uni1EEA uni1EEC uni1EEE uni1EF0 uni1F08 uni1F09 uni1F0B uni1F0C uni1F0D uni1F0E uni1F0F uni1F18 uni1F59 uni1F60 uni1F61 uni1F62 uni1F63 uni1F64 uni1F65 uni1F66 uni1F67 uni1F7C uni1F7D uni1FA0 uni1FA1 uni1FA2 uni1FA3 uni1FA4 uni1FA5 uni1FA6 uni1FA7 uni1FB8 uni1FB9 uni1FBA uni1FBB uni1FC8 uni1FC9 uni1FEA uni1FF2 uni1FF3 uni1FF4 uni1FF6 uni1FF7 uni1FF9 uni1FFB uni2100 uni2101 uni211A Rfraktur uni2124 uni2127 onethird twothirds uni2155 uni2156 uni2157 uni2158 uni2159 uni215A oneeighth threeeighths fiveeighths seveneighths uni2162 uni2173 uni217A product logicaland logicalor uni2303 uni2639 smileface invsmileface sun uni264A uni264C uni264F spade heart musicalnotedbl uni266C uni2C67 f_f f_i f_l Delta f_j f_t h.sc m.sc Omega uni0136 uni0145 uni0156 uni0122 Adieresis.alt Odieresis.alt Q.u ij.sc longs_s R.alt longs_i longs_l longs_j K.alt];
+@mark14 = [ampersand H w uni0414 uni041D uni0426 uni044E Hcircumflex Hbar Eng wcircumflex Omegatonos Eta Pi Phi uni1E22 uni1E24 uni1E26 uni1E28 uni1E2A wgrave wacute wdieresis uni1E87 uni1E89 uni1E98 uni1F0A uni1F48 uni1F49 uni1F68 uni1FF8 uni1FFA emdash ellipsis uni2105 uni2106 uni210D uni2115 uni2120 uni2181 uni264D uni264E uni1E9E w.sc Udieresis.alt ampersand.alt t_t f_f.short Eng.UCStyle];
+@mark15 = [uni040F uni0444 uni044B uni026F Etatonos Psi uni1F1B uni1F1C uni1F1D uni1F28 uni1F29 uni1F5F uni1F69 uni1FCA uni1FCB uni2047 uni20A8 uni2103 uni2109 trademark uni2163 uni2165 uni216A uni216F uni217F infinity uni226A uni226B uni2646 uni2649 uni2651 club c_t s_t ae.sc oe.sc aeacute.sc uni01E3.sc];
+@mark16 = [M uni040B uni0418 uni0419 uni041C uni0436 uni0442 uni0448 uni0449 Mu uni1E3E uni1E40 uni1E42 uni1F1A uni1F4D uni1F5B uni1F5D uni1F6C uni1F6D uni1F6E uni1F89 uni2168 uni217B uni2196 uni2197 uni2198 uni2199 uni21D6 uni21D7 uni21D8 uni21D9 house uni264B uni2652 uni26A2 germandbls.scalt germandbls.ss03 uni0442.ital];
+@mark17 = [m uni0409 uni0416 OE uni1E3F uni1E41 uni1E43 uni1F2E uni1F4A uni1F4B uni1F4C uni1F6A uni1F6B uni1F6F uni1F88 uni1F8B uni1F8C uni1F8D uni1F8E uni1F8F uni1FBC uni1FCC uni1FFC uni2015 perthousand peseta uni2176 uni261E uni2648 uni26A3 f_k];
+@mark18 = [AE uni01E2 AEacute uni04D4 uni1F2A uni1F2B uni1F2C uni1F2D uni1F2F uni1F8A uni1FA8 uni1FA9 uni2116 f_h c_k longs_h uni1E9E.alt];
+@mark19 = [at W uni040A uni042B uni042E Wcircumflex Wgrave Wacute Wdieresis uni1E86 uni1E88 uni1F98 uni1F99 uni2001 uni2003 uni2166 uni261B f_f_i f_f_l f_f_j c_h longs_longs_i longs_longs_j longs_longs_l];
+@mark2 = [uni02BB uni02BD uni02C8 uni02E1 uni1FFE uni2006 uni2008 uni202F uni204F uniA71B uniA71C uniA71D uni2097 l.inferior];
+@mark20 = [uni0428 uni0429 uni1FAC uni1FAE uni1FAF uni20AF uni216B uni21CD uni21CF arrowdblleft arrowdblright uniFFFD W.alt];
+@mark21 = [uni1FAA uni1FAB uni1FAD uni2177 arrowboth uni21AE uni21BC uni21BD uni21C0 uni21C1 uni21CB uni21CC uni2619 uni2767 T_h];
+@mark22 = [uni1F9A uni1F9B uni1F9C uni1F9D uni1F9E uni1F9F uni2031 uni2180 uni2182 arrowleft arrowright uni219A uni219B];
+@mark3 = [quotesingle bar brokenbar uni02B2 uni02B9 uni02BC uni02CC uni02D0 uni02D1 uni02D2 uni02D3 uni02EF uni02F0 uni02F4 uni02F9 uni02FA uni02FB uni02FC uni0374 uni0375 tonos uni1D57 uni1FBD uni1FBF uni1FFD uni2223 uniA78B uniA78C uni209C uni207D uni207E uni208D uni208E exclamdown.sc j.inferior t.inferior];
+@mark4 = [space exclam comma period colon semicolon uni00A0 exclamdown degree uni02B3 uni02B4 uni02B5 uni02BE uni02BF uni02CA uni02CB uni02CE uni02CF uni02D4 uni02D5 uni02D6 uni02D7 uni02E2 uni02E4 uni02F2 uni02F3 uni02F8 anoteleia uni1DA0 uni1DA4 uni1DBB uni1FEF uni2005 quoteleft quoteright quotesinglbase quotereversed onedotenleader uni2027 minute uni2035 uni2170 uni217C uni2224 dotmath uniA789 uni209B uni2219 braceleft.sc c.inferior f.inferior r.inferior s.inferior z.inferior];
+@mark5 = [parenleft parenright slash backslash l braceleft braceright periodcentered lacute lslash uni0249 uni02B0 uni02B1 uni02B6 uni02C0 uni02C1 breve dotaccent tilde uni02DE uni02E0 uni02E3 uni02EC uni02F1 uni02F5 uni02F6 uni02F7 uni02FE iotadieresistonos iotatonos iota iotadieresis uni1D47 uni1D48 uni1D49 uni1D4A uni1D4D uni1D4F uni1D52 uni1D53 uni1D56 uni1D5B uni1D9C uni1E37 uni1E39 uni1E3B uni1E3D uni1F30 uni1F31 uni1F32 uni1F33 uni1F34 uni1F35 uni1F36 uni1F37 uni1F76 uni1F77 uni1FCF uni1FD0 uni1FD1 uni1FD2 uni1FD3 uni1FD6 uni1FD7 uni1FD8 uni1FD9 uni2016 second uni2071 uni2113 uni2139 uni2160 uni2C61 uni2090 uni2091 uni2092 uni2093 uni2094 uni2095 uni2096 uni209A uni013C parenleft.sc parenright.sc bracketleft.sc bracketright.sc q.superior b.inferior d.inferior g.inferior h.inferior i.inferior k.inferior p.inferior q.inferior u.inferior v.inferior];
+@mark6 = [hyphen I i j t ordfeminine acute ordmasculine uni0406 uni0407 uni0433 uni0453 uni0456 uni0457 uni0458 Igrave Iacute Icircumflex Idieresis igrave iacute icircumflex idieresis Itilde itilde Imacron imacron Ibreve ibreve Iogonek iogonek Idotaccent dotlessi jcircumflex lcaron tbar longs uni0268 uni02B8 uni02BA circumflex caron ring ogonek hungarumlaut uni02DF uni02EA uni02EB uni02FD Iota Iotadieresis uni1D43 uni1D44 uni1E2C uni1E2D uni1E2E uni1E2F uni1E6B uni1E6D uni1E6F uni1E71 uni1E97 uni1E9B uni1E9C uni1E9D uni1EC8 uni1EC9 uni1ECA uni1ECB uni1F39 uni1FBE uni1FC1 uni1FCD uni1FCE uni1FDD uni1FDE uni1FDF uni1FEE uni2004 uni2010 uni2011 uni201F bullet uni2036 guilsinglleft guilsinglright uni2070 uni2074 uni2075 uni2076 uni2077 uni2078 uni2079 uni207A uni207B uni207C uni2080 uni2081 uni2082 uni2083 uni2084 uni2085 uni2086 uni2087 uni2088 uni2089 uni208A uni208B uni208C uni2137 uni215F asteriskmath uni2218 uni2225 uni2226 angleleft angleright uni25D6 uni25D7 uni2669 uni27E8 uni27E9 uni2C66 uniA78A uni021B uni00AD uni2099 i.sc j.sc uni0163 uni0237 uni00B2 uni00B3 uni00B9 guilsinglleft.sc guilsinglright.sc igrave.sc iacute.sc icircumflex.sc idieresis.sc hyphen.sc hyphen.cap y.inferior J.alt idotaccent.sc uni0249.dotless uni0268.dotless uni0433.ital uni0453.ital];
+@mark7 = [quotedbl bracketleft bracketright grave e f s dieresis macron uni0437 uni044D uni0455 egrave eacute ecircumflex edieresis emacron ebreve edotaccent eogonek ecaron ldot sacute scircumflex scedilla scaron tcaron uni01DD uni0229 uni0279 uni027B uni0295 uni02CD uni02EE dieresistonos Iotatonos epsilontonos epsilon tau uni1D58 uni1E15 uni1E17 uni1E19 uni1E1B uni1E1D uni1E1F uni1E61 uni1E63 uni1E65 uni1E67 uni1E69 uni1EB9 uni1EBB uni1EBD uni1EBF uni1EC1 uni1EC3 uni1EC5 uni1EC7 uni1F10 uni1F11 uni1F12 uni1F13 uni1F14 uni1F15 uni1F38 uni1F72 uni1F73 uni1FC0 uni1FDA uni1FDB uni1FED quotedblleft quotedblright quotedblbase uni2023 twodotenleader exclamdbl uni203E uni217D uni2184 existential uni2204 uni220A uni220D integral integraltp integralbt uni2698 uni27E6 uni27E7 uni2C6C uni2C76 s.sc sigma1 uni0219 uni02C9 sacute.sc scedilla.sc scaron.sc uni0219.sc];
+@mark8 = [asterisk question c r z asciitilde currency section questiondown uni0432 uni0435 uni0441 uni0451 ccedilla cacute ccircumflex cdotaccent ccaron racute rcaron zacute zdotaccent zcaron uni0254 uni0281 uni02B7 uni02FF zeta xi uni1D50 uni1D5A uni1E09 uni1E59 uni1E5B uni1E5D uni1E5F uni1E91 uni1E93 uni1E95 uni1E9F figuredash uni203D uni204A uni20A2 franc lira uni20B1 uni2136 uni2138 uni2171 arrowup arrowdown arrowupdn arrowupdnbse arrowdblup arrowdbldown uni21D5 uni2201 partialdiff uni2695 uni2C65 uni2C75 z.sc one.oldstyle seven.oldstyle uni0157 questiondown.sc one.fitted seven.fitted zacute.sc zdotaccent.sc zcaron.sc m.inferior w.inferior f.short];
+@mark9 = [numbersign dollar zero one two three four five six seven eight nine less greater F J S asciicircum underscore b g o v x y uni0403 uni0405 uni0408 uni0413 uni0417 uni0420 uni0431 uni0434 uni043A uni043E uni0443 uni044C uni045C uni045E ograve oacute ocircumflex otilde odieresis oslash yacute ydieresis gcircumflex gbreve gdotaccent Jcircumflex omacron obreve ohungarumlaut Sacute Scircumflex Scedilla Scaron ycircumflex uni0250 uni02C2 uni02C3 uni02C4 uni02C5 uni02ED upsilondieresistonos beta delta theta lambda nu omicron rho sigma upsilon chi upsilondieresis omicrontonos upsilontonos uni1E03 uni1E05 uni1E07 uni1E1E uni1E21 uni1E4D uni1E4F uni1E51 uni1E53 uni1E60 uni1E62 uni1E64 uni1E66 uni1E68 uni1E7D uni1E7F uni1E8B uni1E8D uni1E8F uni1E99 uni1ECD uni1ECF uni1ED1 uni1ED3 uni1ED5 uni1ED7 uni1ED9 uni1EDB uni1EDD uni1EDF uni1EE1 uni1EE3 ygrave uni1EF5 uni1EF7 uni1EF9 uni1F3B uni1F3E uni1F40 uni1F41 uni1F42 uni1F43 uni1F44 uni1F45 uni1F50 uni1F51 uni1F52 uni1F53 uni1F54 uni1F55 uni1F56 uni1F57 uni1F78 uni1F79 uni1F7A uni1F7B uni1FE0 uni1FE1 uni1FE2 uni1FE3 uni1FE6 uni1FE7 uni2000 uni2002 uni2007 underscoredbl uni2034 uni2037 dong Euro estimated aleph uni2161 uni216C uni2174 uni2179 uni217E universal element notelement suchthat uni220C intersection union propersubset propersuperset notsubset uni2285 uni25B6 uni25B7 uni25C0 uni25C1 uni263D uni263E uni2644 uni2647 uni2C63 uni2C68 uni2C74 .notdef uni2098 c.sc f.sc l.sc zero.slash zero.oldstyle two.oldstyle three.oldstyle four.oldstyle five.oldstyle six.oldstyle nine.oldstyle uni0123 uni0218 uni207F two.fitted three.fitted four.fitted five.fitted six.fitted eight.fitted nine.fitted ccedilla.sc cacute.sc ccaron.sc lacute.sc lslash.sc lcaron.sc zero.taboldstyle one.taboldstyle two.taboldstyle three.taboldstyle four.taboldstyle five.taboldstyle six.taboldstyle seven.taboldstyle eight.taboldstyle nine.taboldstyle n.inferior uni0431.ital one.cap.fitted seven.cap.fitted];
+@pnum = [zero one two three four five six seven eight nine yen Euro zero.taboldstyle one.taboldstyle two.taboldstyle three.taboldstyle four.taboldstyle five.taboldstyle six.taboldstyle seven.taboldstyle nine.taboldstyle zero.cap one.cap two.cap three.cap four.cap five.cap six.cap seven.cap eight.cap nine.cap];
+@pnum2 = [zero.fitted one.fitted two.fitted three.fitted four.fitted five.fitted six.fitted seven.fitted eight.fitted nine.fitted Yen.fitted Euro.fitted zero.oldstyle one.oldstyle two.oldstyle three.oldstyle four.oldstyle five.oldstyle six.oldstyle seven.oldstyle nine.oldstyle zero.cap.fitted one.cap.fitted two.cap.fitted three.cap.fitted four.cap.fitted five.cap.fitted six.cap.fitted seven.cap.fitted eight.cap.fitted nine.cap.fitted];
+@salt = [J K Q R W h y Eng uni1E9E a.sc q.sc germandbls.sc eng.sc];
+@salt2 = [J.alt K.alt Q.u R.alt W.alt h.alt y.alt Eng.UCStyle uni1E9E.alt a.scalt q.sc.u germandbls.scalt Eng.UCStyle.sc];
+@tnum = [zero.oldstyle one.oldstyle three.oldstyle four.oldstyle five.oldstyle six.oldstyle seven.oldstyle zero.fitted one.fitted two.fitted three.fitted four.fitted five.fitted six.fitted seven.fitted eight.fitted nine.fitted Euro.fitted Yen.fitted nine.oldstyle two.oldstyle zero.cap.fitted one.cap.fitted two.cap.fitted three.cap.fitted four.cap.fitted five.cap.fitted six.cap.fitted seven.cap.fitted eight.cap.fitted nine.cap.fitted];
+@tnum2 = [zero.taboldstyle one.taboldstyle three.taboldstyle four.taboldstyle five.taboldstyle six.taboldstyle seven.taboldstyle zero one two three four five six seven eight nine Euro yen nine.taboldstyle two.taboldstyle zero.cap one.cap two.cap three.cap four.cap five.cap six.cap seven.cap eight.cap nine.cap];
+@locl = [uni0414 uni0416 uni0418 uni0419 uni041A uni041B uni0424 uni0432 uni0434 uni0436 uni0437 uni043A uni043B uni0444 uni044E uni040D];
+@locl2 = [uni0414.loclBGR uni0416.loclBGR uni0418.loclBGR uni0419.loclBGR uni041A.loclBGR uni041B.loclBGR uni0424.loclBGR uni0432.loclBGR uni0434.loclBGR uni0436.loclBGR uni0437.loclBGR uni043A.loclBGR uni043B.loclBGR uni0444.loclBGR uni044E.loclBGR uni040D.loclBGR];
+#/< otclasses
+#< classes
+
+###
+# OpenType Layout feature definitions
+# Format: Adobe FDK for OpenType (AFDKO) version 2.5
+# Generated on: 2022-9-3 10:25
+# Generated by: FontLab 8.0.0
+# Font PostScript name: LibertinusSerif-BoldItalic
+# Font copyright: Copyright © 2012-2021 The Libertinus Project Authors.
+#
+# Totals:
+# Languagesystems: 20
+# GSUB lookups: 63
+# GSUB features: 26 (c2sc, calt, case, ccmp, dlig, frac, hlig, liga, lnum, locl, mark, onum, pnum, salt, smcp, ss01, ss02, ss03, ss04, ss05, ss06, ss07, subs, sups, tnum, zero)
+# GPOS lookups: 5
+# GPOS features: 3 (cpsp, kern, mark)
+
+#
+# Languagesystem definitions
+#
+
+languagesystem DFLT dflt; # Default default
+languagesystem latn dflt; # Latin default
+languagesystem latn AZE ; # Latin Azerbaijani
+languagesystem latn CRT ; # Latin Crimean Tatar
+languagesystem latn FIN ; # Latin Finnish
+languagesystem latn ISM ; # Latin Inari Sami
+languagesystem latn KAZ ; # Latin Kazakh
+languagesystem latn LSM ; # Latin Lule Sami
+languagesystem latn NOR ; # Latin Norwegian
+languagesystem latn NSM ; # Latin Sami Northern
+languagesystem latn SKS ; # Latin Skolt Sami
+languagesystem latn SSM ; # Latin Sami Southern
+languagesystem latn SVE ; # Latin Swedish
+languagesystem latn TAT ; # Latin Tatar
+languagesystem latn TRK ; # Latin Turkish
+languagesystem cyrl dflt; # Cyrillic default
+languagesystem cyrl MKD ; # Cyrillic Macedonian
+languagesystem cyrl SRB ; # Cyrillic Serbian
+languagesystem cyrl BGR ; # Cyrillic Bulgarian
+languagesystem grek dflt; # Greek default
+languagesystem hebr dflt; # Hebrew default
+
+#
+# Lookup definitions
+#
+
+lookup frac_2 {
+# GSUB lookup 3, type 11 (Single)
+  sub @frac_subs by @frac_subs2;
+} frac_2;
+
+lookup frac_3 {
+# GSUB lookup 4, type 11 (Single)
+  sub @frac_sups by @frac_sups2;
+} frac_3;
+
+lookup ccmp_2 {
+# GSUB lookup 23, type 11 (Single)
+  sub [gravecomb acutecomb uni0302 uni0306] by [grave.cap acute.cap circumflex.cap breve.cap];
+} ccmp_2;
+
+lookup ccmp_3 {
+# GSUB lookup 25, type 11 (Single)
+  sub [i j uni0249 uni0268] by [dotlessi uni0237 uni0249.dotless uni0268.dotless];
+} ccmp_3;
+
+lookup calt_2 {
+# GSUB lookup 36, type 11 (Single)
+  sub [Q f f_f q.sc] by [Q.u f.short f_f.short q.sc.u];
+} calt_2;
+
+
+#
+# Feature definitions
+#
+
+feature locl {
+# GSUB feature: Localized Forms
+# Lookups: 3
+
+  script latn; # Latin
+    language SVE ; # Swedish
+    lookup locl_latn_1 {
+    # GSUB lookup 2, type 11 (Single)
+      sub Eng by Eng.UCStyle;
+    } locl_latn_1;
+
+
+    language AZE ; # Azerbaijani
+    lookup locl_latn_2 {
+    # GSUB lookup 34, type 12 (Multiple)
+      sub f_i by f i;
+      sub f_f_i by f_f i;
+      sub longs_i by longs i;
+      sub longs_longs_i by longs_longs i;
+    } locl_latn_2;
+
+    language TRK ; # Turkish
+    lookup locl_latn_1;
+    lookup locl_latn_2;
+
+    language ISM ; # Inari Sami
+    lookup locl_latn_1;
+
+    language LSM ; # Lule Sami
+    lookup locl_latn_1;
+
+    language NSM ; # Sami Northern
+    lookup locl_latn_1;
+
+    language SSM ; # Sami Southern
+    lookup locl_latn_1;
+
+    language FIN ; # Finnish
+    lookup locl_latn_1;
+
+    language NOR ; # Norwegian
+    lookup locl_latn_1;
+
+    language SKS ; # Skolt Sami
+    lookup locl_latn_1;
+
+    language TAT ; # Tatar
+    lookup locl_latn_2;
+
+    language CRT ; # Crimean Tatar
+    lookup locl_latn_2;
+
+    language KAZ ; # Kazakh
+    lookup locl_latn_2;
+
+  script cyrl; # Cyrillic
+    language SRB ; # Serbian
+    lookup locl_cyrlSRB_cyrlMKD {
+    # GSUB lookup 1, type 11 (Single)
+      sub [uni0431 uni0433 uni0434 uni043F] by [uni0431.ital uni0433.ital uni0434.ital uni043F.ital];
+      sub [uni0442 uni0453] by [uni0442.ital uni0453.ital];
+    } locl_cyrlSRB_cyrlMKD;
+
+    language MKD ; # Macedonian
+    lookup locl_cyrlSRB_cyrlMKD;
+
+    language BGR ; # Bulgarian
+    lookup locl_cyrlBGR {
+    # GSUB lookup 1, type 11 (Single)
+      sub @locl by @locl2;
+    } locl_cyrlBGR;
+
+
+} locl;
+
+
+
+
+
+
+
+
+
+
+feature frac {
+# GSUB feature: Fractions
+# Lookups: 1
+
+  sub @frac2 @frac_lnum_onum' lookup frac_2;
+  sub @frac' lookup frac_3 @frac3;
+
+} frac;
+
+
+
+
+
+
+
+
+
+
+feature sups {
+# GSUB feature: Superscript
+# Lookups: 1
+
+  sub @frac_sups by @frac_sups2;
+
+} sups;
+
+
+
+
+
+
+
+
+
+
+feature subs {
+# GSUB feature: Subscript
+# Lookups: 1
+
+  sub @frac_subs by @frac_subs2;
+
+} subs;
+
+
+
+
+
+
+
+
+
+
+feature case {
+# GSUB feature: Case-Sensitive Forms
+# Lookups: 1
+
+  sub @case by @case2;
+
+} case;
+
+
+
+
+
+
+
+
+
+
+feature smcp {
+# GSUB feature: Small Capitals
+# Lookups: 3
+
+  sub i by i.sc;
+
+  lookup smcp_2 {
+  # GSUB lookup 10, type 12 (Multiple)
+    sub amacron by a.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+    sub hyphen by hyphen.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub a by a.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub b by b.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub c by c.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub d by d.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub e by e.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub f by f.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub g by g.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub h by h.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub j by j.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub k by k.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub l by l.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub m by m.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub n by n.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub o by o.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub p by p.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub q by q.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub r by r.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub s by s.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub t by t.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub u by u.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub v by v.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub w by w.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub x by x.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub y by y.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub z by z.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub germandbls by germandbls.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub agrave by agrave.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub aacute by aacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub acircumflex by acircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub atilde by atilde.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub adieresis by adieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub aring by aring.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ae by ae.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ccedilla by ccedilla.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub egrave by egrave.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub eacute by eacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ecircumflex by ecircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub edieresis by edieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub igrave by igrave.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub iacute by iacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub icircumflex by icircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub idieresis by idieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub eth by eth.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ntilde by ntilde.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ograve by ograve.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub oacute by oacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ocircumflex by ocircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub otilde by otilde.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub odieresis by odieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub oslash by oslash.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ugrave by ugrave.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub uacute by uacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ucircumflex by ucircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub udieresis by udieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub yacute by yacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub thorn by thorn.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ydieresis by ydieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub abreve by abreve.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub aogonek by aogonek.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub cacute by cacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ccaron by ccaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub dcaron by dcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub dcroat by dcroat.sc;
+    sub emacron by e.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+    sub eogonek by eogonek.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ecaron by ecaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub gbreve by gbreve.sc;
+    sub imacron by i.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+    sub dotlessi by i.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ij by ij.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub kgreenlandic by k.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub lacute by lacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub lcaron by lcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub lslash by lslash.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub nacute by nacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub ncaron by ncaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub eng by eng.sc;
+    sub omacron by o.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+    sub ohungarumlaut by ohungarumlaut.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub oe by oe.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub racute by racute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub rcaron by rcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub sacute by sacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub scedilla by scedilla.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub scaron by scaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub uni0163 by uni0163.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub tcaron by tcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub tbar by tbar.sc;
+    sub umacron by u.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+    sub uring by uring.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub uhungarumlaut by uhungarumlaut.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub zacute by zacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub zdotaccent by zdotaccent.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub zcaron by zcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub longs by s.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub uni01E3 by uni01E3.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub aeacute by aeacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub uni0219 by uni0219.sc;
+### Problems in rule: The only glyph in multiple sequence
+    sub uni021B by uni021B.sc;
+    sub uni1E2B by h.sc uni032E;
+### Problems in rule: The only glyph in multiple sequence
+    sub f.short by f.sc;
+  } smcp_2;
+
+
+  script latn; # Latin
+    language AZE  exclude_dflt; # Azerbaijani
+    lookup smcp_2;
+
+    lookup smcp_latn {
+    # GSUB lookup 11, type 11 (Single)
+      sub i by idotaccent.sc;
+    } smcp_latn;
+
+
+    language TRK  exclude_dflt; # Turkish
+    lookup smcp_2;
+    lookup smcp_latn;
+
+    language TAT  exclude_dflt; # Tatar
+    lookup smcp_2;
+    lookup smcp_latn;
+
+    language CRT  exclude_dflt; # Crimean Tatar
+    lookup smcp_2;
+    lookup smcp_latn;
+
+    language KAZ  exclude_dflt; # Kazakh
+    lookup smcp_2;
+    lookup smcp_latn;
+
+
+  script cyrl; # Cyrillic
+
+  script grek; # Greek
+
+} smcp;
+
+
+
+
+
+
+
+
+
+
+feature c2sc {
+# GSUB feature: Small Capitals From Capitals
+# Lookups: 1
+
+  sub Amacron by a.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+  sub parenleft by parenleft.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub parenright by parenright.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub hyphen by hyphen.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub A by a.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub B by b.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub C by c.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub D by d.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub E by e.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub F by f.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub G by g.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub H by h.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub I by i.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub J by j.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub K by k.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub L by l.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub M by m.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub N by n.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub O by o.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub P by p.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Q by q.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub R by r.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub S by s.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub T by t.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub U by u.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub V by v.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub W by w.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub X by x.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Y by y.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Z by z.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub bracketleft by bracketleft.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub bracketright by bracketright.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub braceleft by braceleft.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub braceright by braceright.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub exclamdown by exclamdown.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub guillemotleft by guillemotleft.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub guillemotright by guillemotright.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub questiondown by questiondown.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Agrave by agrave.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Aacute by aacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Acircumflex by acircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Atilde by atilde.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Adieresis by adieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Aring by aring.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub AE by ae.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ccedilla by ccedilla.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Egrave by egrave.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Eacute by eacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ecircumflex by ecircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Edieresis by edieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Igrave by igrave.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Iacute by iacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Icircumflex by icircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Idieresis by idieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Eth by eth.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ntilde by ntilde.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ograve by ograve.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Oacute by oacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ocircumflex by ocircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Otilde by otilde.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Odieresis by odieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Oslash by oslash.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ugrave by ugrave.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Uacute by uacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ucircumflex by ucircumflex.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Udieresis by udieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Yacute by yacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Thorn by thorn.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Abreve by abreve.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Aogonek by aogonek.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Cacute by cacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ccaron by ccaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Dcaron by dcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Dcroat by dcroat.sc;
+  sub Emacron by e.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+  sub Eogonek by eogonek.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ecaron by ecaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Gbreve by gbreve.sc;
+  sub Imacron by i.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+  sub Idotaccent by idotaccent.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub IJ by ij.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Lacute by lacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Lcaron by lcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Lslash by lslash.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Nacute by nacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ncaron by ncaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Eng by eng.sc;
+  sub Omacron by o.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ohungarumlaut by ohungarumlaut.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Racute by racute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Rcaron by rcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Sacute by sacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Scedilla by scedilla.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Scaron by scaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub uni0162 by uni0163.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Tcaron by tcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Tbar by tbar.sc;
+  sub Umacron by u.sc uni0304;
+### Problems in rule: The only glyph in multiple sequence
+  sub Uring by uring.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Uhungarumlaut by uhungarumlaut.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Ydieresis by ydieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Zacute by zacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Zdotaccent by zdotaccent.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Zcaron by zcaron.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub uni01E2 by uni01E3.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub AEacute by aeacute.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub uni0218 by uni0219.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub uni021A by uni021B.sc;
+  sub uni1E2A by h.sc uni032E;
+### Problems in rule: The only glyph in multiple sequence
+  sub uni1E9E by germandbls.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub guilsinglleft by guilsinglleft.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub guilsinglright by guilsinglright.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Adieresis.alt by adieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Odieresis.alt by odieresis.sc;
+### Problems in rule: The only glyph in multiple sequence
+  sub Udieresis.alt by udieresis.sc;
+
+} c2sc;
+
+
+
+
+
+
+
+
+
+
+feature hlig {
+# GSUB feature: Historical Ligatures
+# Lookups: 1
+
+  sub c t by c_t;
+  sub s t by s_t;
+
+} hlig;
+
+
+
+
+
+
+
+
+
+
+feature dlig {
+# GSUB feature: Discretionary Ligatures
+# Lookups: 1
+
+  sub T h by T_h;
+  sub c h by c_h;
+  sub c k by c_k;
+  sub t t by t_t;
+  sub t z by t_z;
+
+} dlig;
+
+
+
+
+
+
+
+
+
+
+feature onum {
+# GSUB feature: Oldstyle Figures
+# Lookups: 1
+
+  sub @frac_lnum_onum by @lnum_onum;
+
+} onum;
+
+
+
+
+
+
+
+
+
+
+feature lnum {
+# GSUB feature: Lining Figures
+# Lookups: 1
+
+  sub @lnum_onum by @frac_lnum_onum;
+
+} lnum;
+
+
+
+
+
+
+
+
+
+
+feature pnum {
+# GSUB feature: Proportional Figures
+# Lookups: 1
+
+  sub @pnum by @pnum2;
+
+} pnum;
+
+
+
+
+
+
+
+
+
+
+feature tnum {
+# GSUB feature: Tabular Figures
+# Lookups: 1
+
+  sub @tnum by @tnum2;
+
+} tnum;
+
+
+
+
+
+
+
+
+
+
+feature zero {
+# GSUB feature: Slashed Zero
+# Lookups: 1
+
+  sub [zero zero.fitted zero.cap zero.cap.fitted] by [zero.slash zero.slash.fitted zero.slash.cap zero.slash.cap.fitted];
+
+} zero;
+
+
+
+
+
+
+
+
+
+
+feature salt {
+# GSUB feature: Stylistic Alternates
+# Lookups: 3
+
+  sub @salt by @salt2;
+  sub germandbls from [germandbls.ss03 germandbls.alt];
+  sub [ampersand beta theta kappa] by [ampersand.alt uni03D0 theta1 uni03F0];
+  sub [phi uni0431] by [phi1 uni0431.ital];
+
+} salt;
+
+
+
+
+
+
+
+
+
+
+feature ccmp {
+# GSUB feature: Glyph Composition / Decomposition
+# Lookups: 1
+
+  sub [i j uni0249 uni0268]' lookup ccmp_3 @ccmp;
+  sub @ccmp2 @ccmp' lookup ccmp_2;
+
+} ccmp;
+
+
+
+
+
+
+
+
+
+
+feature ss01 {
+# GSUB feature: Stylistic Set 1
+# Lookups: 1
+
+  featureNames {
+    name "Low diaeresis on 'A', 'E', 'O'";
+  };
+
+  sub [Adieresis Odieresis Udieresis] by [Adieresis.alt Odieresis.alt Udieresis.alt];
+
+} ss01;
+
+
+
+
+
+
+
+
+
+
+feature ss02 {
+# GSUB feature: Stylistic Set 2
+# Lookups: 1
+
+  featureNames {
+    name "Swashy 'J' 'K' 'R'";
+  };
+
+  sub [J K R] by [J.alt K.alt R.alt];
+
+} ss02;
+
+
+
+
+
+
+
+
+
+
+feature ss03 {
+# GSUB feature: Stylistic Set 3
+# Lookups: 1
+
+  featureNames {
+    name "'double s' to two 's'";
+  };
+
+  sub [germandbls uni1E9E germandbls.sc] by [germandbls.ss03 uni1E9E.alt germandbls.scalt];
+
+} ss03;
+
+
+
+
+
+
+
+
+
+
+feature ss04 {
+# GSUB feature: Stylistic Set 4
+# Lookups: 1
+
+  featureNames {
+    name "Upper case 'double s' to two 'S'";
+  };
+
+  sub [uni1E9E germandbls.sc] by [uni1E9E.alt germandbls.scalt];
+
+} ss04;
+
+
+
+
+
+
+
+
+
+
+feature ss05 {
+# GSUB feature: Stylistic Set 5
+# Lookups: 1
+
+  featureNames {
+    name "Crossed 'W'";
+  };
+
+  sub W by W.alt;
+
+} ss05;
+
+
+
+
+
+
+
+
+
+
+feature ss06 {
+# GSUB feature: Stylistic Set 6
+# Lookups: 1
+
+  featureNames {
+    name "Swash '&'";
+  };
+
+  sub ampersand by ampersand.alt;
+
+} ss06;
+
+
+
+
+
+
+
+
+
+
+feature ss07 {
+# GSUB feature: Stylistic Set 7
+# Lookups: 1
+
+  featureNames {
+    name "Swap 'Eng' forms";
+  };
+
+  sub [Eng eng.sc Eng.UCStyle.sc Eng.UCStyle] by [Eng.UCStyle Eng.UCStyle.sc eng.sc Eng];
+
+} ss07;
+
+
+
+
+
+
+
+
+
+
+feature liga {
+# GSUB feature: Standard Ligatures
+# Lookups: 1
+
+  sub T uni200D h by T_h;
+  sub c uni200D h by c_h;
+  sub c uni200D k by c_k;
+  sub f f h by f_f_h;
+  sub f f i by f_f_i;
+  sub f f j by f_f_j;
+  sub f f k by f_f_k;
+  sub f f l by f_f_l;
+  sub f f by f_f;
+  sub f f.short by f_f.short;
+  sub f h by f_h;
+  sub f i by f_i;
+  sub f j by f_j;
+  sub f k by f_k;
+  sub f l by f_l;
+  sub f t by f_t;
+  sub t uni200D t by t_t;
+  sub t uni200D z by t_z;
+  sub longs longs i by longs_longs_i;
+  sub longs longs j by longs_longs_j;
+  sub longs longs l by longs_longs_l;
+  sub longs h by longs_h;
+  sub longs i by longs_i;
+  sub longs j by longs_j;
+  sub longs l by longs_l;
+  sub longs longs by longs_longs;
+  sub longs s by longs_s;
+  sub longs t by longs_t;
+
+} liga;
+
+
+
+
+
+
+
+
+
+
+feature calt {
+# GSUB feature: Contextual Alternates
+# Lookups: 1
+
+  sub [f f_f]' lookup calt_2 @calt;
+  sub Q' lookup calt_2 [u v u.sc v.sc];
+  sub q.sc' lookup calt_2 [u.sc v.sc];
+
+  script cyrl; # Cyrillic
+    language UKR ; # Ukrainian
+	sub uni0407' uni0407 by uni0407.calt;
+	sub uni0407.calt uni0407' by uni0407.calt;
+	sub uni0457' uni0457 by uni0457.calt;
+	sub uni0457.calt uni0457' by uni0457.calt;
+
+} calt;
+
+
+
+
+
+
+
+
+
+
+feature cpsp {
+# GPOS feature: Capital Spacing
+# Lookups: 1
+
+  pos @cpsp <2 0 5 0>;
+  pos [AE Eng OE Udieresis.alt] <2 0 5 1>;
+
+} cpsp;
+
+
+
+
+
+
+
+
+
+
+feature mark {
+#> feature
+# GPOS feature : Mark Positioning
+    markClass gravecomb <anchor -3 683> @m.uni0302;
+    markClass gravecomb <anchor -24 500> @t.uni0302;
+    markClass acutecomb <anchor -52 682> @m.uni0302;
+    markClass acutecomb <anchor -25 500> @t.uni0302;
+    markClass uni0302 <anchor 3 697> @m.uni0302;
+    markClass uni0302 <anchor -35 500> @t.uni0302;
+    markClass tildecomb <anchor -17 697> @m.uni0302;
+    markClass tildecomb <anchor -28 553> @t.uni0302;
+    markClass uni0304 <anchor -78 645> @m.uni0302;
+    markClass uni0304 <anchor -103 500> @t.uni0302;
+    markClass uni0306 <anchor -64 500> @t.uni0302;
+    markClass uni0308 <anchor -100 500> @t.uni0302;
+    markClass hookabovecomb <anchor -79 500> @t.uni0302;
+    markClass uni030A <anchor -75 500> @t.uni0302;
+    markClass uni030B <anchor -74 714> @m.uni0302;
+    markClass uni030C <anchor -67 676> @m.uni0302;
+    markClass uni030C <anchor -98 500> @t.uni0302;
+    markClass uni030D <anchor -15 688> @m.uni0302;
+    markClass uni030E <anchor -99 719> @m.uni0302;
+    markClass uni030F <anchor 14 758> @m.uni0302;
+    markClass uni0310 <anchor -114 675> @m.uni0302;
+    markClass uni0311 <anchor -95 500> @t.uni0302;
+    markClass uni0312 <anchor 13 605> @m.uni0302;
+    markClass uni0313 <anchor 27 605> @m.uni0302;
+    markClass uni0314 <anchor 47 605> @m.uni0302;
+    markClass uni0315 <anchor -35 396> @t.uni0315_1;
+    markClass uni0316 <anchor -246 -133> @m.uni0316_2;
+    markClass uni0317 <anchor -237 -132> @m.uni0316_2;
+    markClass uni0318 <anchor -254 -148> @m.uni0316_2;
+    markClass uni0319 <anchor -315 -147> @m.uni0316_2;
+    markClass uni031A <anchor 136 580> @t.uni031A_3;
+    markClass uni031B <anchor -58 356> @t.uni0315_1;
+    markClass uni031C <anchor -246 -146> @m.uni0316_2;
+    markClass uni031D <anchor -278 -143> @m.uni0316_2;
+    markClass uni031E <anchor -269 -106> @m.uni0316_2;
+    markClass uni031F <anchor -278 -145> @m.uni0316_2;
+    markClass uni0320 <anchor -283 -148> @m.uni0316_2;
+    markClass uni0321 <anchor -56 -1> @b.uni0321_4;
+    markClass uni0322 <anchor -30 0> @b.uni0321_4;
+    markClass dotbelowcomb <anchor -239 -113> @m.uni0316_2;
+    markClass uni0324 <anchor -242 -116> @m.uni0316_2;
+    markClass uni0325 <anchor -242 -116> @m.uni0316_2;
+    markClass uni0326 <anchor -272 -82> @m.uni0316_2;
+    markClass uni0327 <anchor -183 -3> @b.uni0327_5;
+    markClass uni0328 <anchor -159 23> @b.uni0321_4;
+    markClass uni0328 <anchor -194 31> @b.uni0328;
+    markClass uni0329 <anchor -282 -122> @m.uni0316_2;
+    markClass uni032A <anchor -276 -113> @m.uni0316_2;
+    markClass uni032B <anchor -273 -108> @m.uni0316_2;
+    markClass uni032C <anchor -228 -116> @m.uni0316_2;
+    markClass uni032D <anchor -222 -133> @m.uni0316_2;
+    markClass uni032E <anchor -275 -110> @m.uni0316_2;
+    markClass uni032F <anchor -274 -116> @m.uni0316_2;
+    markClass uni0330 <anchor -227 -70> @m.uni0316_2;
+    markClass uni0331 <anchor -266 -110> @m.uni0316_2;
+    markClass uni0332 <anchor -266 -110> @m.uni0316_2;
+    markClass uni0333 <anchor -266 -110> @m.uni0316_2;
+    markClass uni0334 <anchor -156 215> @m.uni0334_6;
+    markClass uni0335 <anchor -156 215> @m.uni0334_6;
+    markClass uni0336 <anchor -196 215> @m.uni0334_6;
+    markClass uni0337 <anchor -199 215> @m.uni0334_6;
+    markClass uni0338 <anchor -319 297> @m.uni0334_6;
+    markClass uni0339 <anchor -246 -146> @m.uni0316_2;
+    markClass uni033A <anchor -276 -113> @m.uni0316_2;
+    markClass uni033B <anchor -269 -113> @m.uni0316_2;
+    markClass uni033C <anchor -273 -108> @m.uni0316_2;
+    markClass uni033D <anchor -142 605> @m.uni0302;
+    markClass uni033E <anchor -142 605> @m.uni0302;
+    markClass uni033F <anchor -111 611> @m.uni0302;
+    markClass uni0340 <anchor -3 683> @m.uni0302;
+    markClass uni0341 <anchor -52 682> @m.uni0302;
+    markClass uni0342 <anchor -103 617> @m.uni0302;
+    markClass uni0343 <anchor 27 605> @m.uni0302;
+    markClass uni0345 <anchor -204 -110> @m.uni0316_2;
+    markClass uni0346 <anchor -125 621> @m.uni0302;
+    markClass uni0347 <anchor -266 -110> @m.uni0316_2;
+    markClass uni0348 <anchor -219 -110> @m.uni0316_2;
+    markClass uni0349 <anchor -214 -110> @m.uni0316_2;
+    markClass uni034A <anchor -84 645> @m.uni0302;
+    markClass uni034B <anchor -74 645> @m.uni0302;
+    markClass uni034C <anchor -104 645> @m.uni0302;
+    markClass uni034D <anchor -244 -110> @m.uni0316_2;
+    markClass uni034E <anchor -249 -110> @m.uni0316_2;
+    markClass uni0350 <anchor -70 645> @m.uni0302;
+    markClass uni0351 <anchor -40 645> @m.uni0302;
+    markClass uni0352 <anchor -120 645> @m.uni0302;
+    markClass uni0353 <anchor -282 -110> @m.uni0316_2;
+    markClass uni0354 <anchor -194 -110> @m.uni0316_2;
+    markClass uni0355 <anchor -218 -110> @m.uni0316_2;
+    markClass uni0356 <anchor -338 -110> @m.uni0316_2;
+    markClass uni0357 <anchor -40 645> @m.uni0302;
+    markClass uni0358 <anchor 54 588> @t.uni0315_1;
+    markClass uni0359 <anchor -147 -110> @m.uni0316_2;
+    markClass uni035A <anchor -191 -110> @m.uni0316_2;
+    markClass uni035B <anchor -33 645> @m.uni0302;
+    markClass uni0362 <anchor -254 -110> @m.uni0316_2;
+    markClass uni0363 <anchor -40 645> @m.uni0302;
+    markClass uni0364 <anchor -113 645> @m.uni0302;
+    markClass uni0365 <anchor -94 645> @m.uni0302;
+    markClass uni0366 <anchor -30 645> @m.uni0302;
+    markClass uni0367 <anchor -22 645> @m.uni0302;
+    markClass uni0368 <anchor -29 645> @m.uni0302;
+    markClass uni0369 <anchor -60 645> @m.uni0302;
+    markClass uni036A <anchor -90 645> @m.uni0302;
+    markClass uni036B <anchor -63 645> @m.uni0302;
+    markClass uni036C <anchor -70 645> @m.uni0302;
+    markClass uni036D <anchor -66 645> @m.uni0302;
+    markClass uni036E <anchor -104 645> @m.uni0302;
+    markClass uni036F <anchor -97 644> @m.uni0302;
+    markClass dieresistonos <anchor 306 500> @t.uni0302;
+    markClass grave.cap <anchor 4 740> @t.uni0302;
+    markClass acute.cap <anchor 14 740> @t.uni0302;
+    markClass circumflex.cap <anchor 40 740> @t.uni0302;
+    markClass uni03020301 <anchor -210 500> @t.uni0302;
+    markClass uni03020300 <anchor -210 500> @t.uni0302;
+    markClass uni03020309 <anchor -210 500> @t.uni0302;
+    markClass uni03020303 <anchor -210 500> @t.uni0302;
+    markClass uni03060300 <anchor -47 500> @t.uni0302;
+    markClass uni03060301 <anchor -47 500> @t.uni0302;
+    markClass uni03060309 <anchor -87 500> @t.uni0302;
+    markClass uni03060303 <anchor -87 500> @t.uni0302;
+
+  lookup markLTR1 {
+      pos base A
+          <anchor 117 5> mark @b.uni0327_5
+          <anchor 308 -108> mark @m.uni0316_2
+          <anchor 477 740> mark @t.uni0302;
+      pos base B
+          <anchor 250 0> mark @b.uni0327_5
+          <anchor 238 -108> mark @m.uni0316_2;
+      pos base C
+          <anchor 356 -7> mark @b.uni0327_5
+          <anchor 333 -110> mark @m.uni0316_2;
+      pos base D
+          <anchor 279 4> mark @b.uni0327_5
+          <anchor 279 -107> mark @m.uni0316_2;
+      pos base E
+          <anchor 279 4> mark @b.uni0327_5
+          <anchor 269 -107> mark @m.uni0316_2
+          <anchor 385 740> mark @t.uni0302;
+      pos base F
+          <anchor 145 -1> mark @b.uni0327_5
+          <anchor 131 -111> mark @m.uni0316_2;
+      pos base G
+          <anchor 365 2> mark @b.uni0327_5
+          <anchor 345 -110> mark @m.uni0316_2
+          <anchor 479 740> mark @t.uni0302;
+      pos base H
+          <anchor 150 0> mark @b.uni0327_5
+          <anchor 320 -107> mark @m.uni0316_2;
+      pos base I
+          <anchor 145 1> mark @b.uni0327_5
+          <anchor 127 -109> mark @m.uni0316_2
+          <anchor 296 740> mark @t.uni0302;
+      pos base J
+          <anchor 109 -319> mark @m.uni0316_2;
+      pos base L
+          <anchor 260 1> mark @b.uni0327_5
+          <anchor 252 -110> mark @m.uni0316_2;
+      pos base M
+          <anchor 109 2> mark @b.uni0327_5
+          <anchor 363 -110> mark @m.uni0316_2;
+      pos base N
+          <anchor 127 -4> mark @b.uni0327_5
+          <anchor 328 -109> mark @m.uni0316_2;
+      pos base O
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2
+          <anchor 490 740> mark @t.uni0302;
+      pos base P
+          <anchor 150 -3> mark @b.uni0327_5
+          <anchor 140 -110> mark @m.uni0316_2
+          <anchor 351 740> mark @t.uni0302;
+      pos base R
+          <anchor 148 -1> mark @b.uni0327_5
+          <anchor 248 -111> mark @m.uni0316_2;
+      pos base S
+          <anchor 224 2> mark @b.uni0327_5
+          <anchor 204 -111> mark @m.uni0316_2
+          <anchor 372 740> mark @t.uni0302;
+      pos base T
+          <anchor 298 10> mark @b.uni0327_5
+          <anchor 277 -109> mark @m.uni0316_2;
+      pos base U
+          <anchor 328 4> mark @b.uni0327_5
+          <anchor 308 -109> mark @m.uni0316_2
+          <anchor 465 740> mark @t.uni0302;
+      pos base V
+          <anchor 303 3> mark @b.uni0327_5
+          <anchor 263 -110> mark @m.uni0316_2;
+      pos base W
+          <anchor 290 0> mark @b.uni0327_5
+          <anchor 439 -107> mark @m.uni0316_2;
+      pos base X
+          <anchor 102 0> mark @b.uni0327_5
+          <anchor 287 -107> mark @m.uni0316_2;
+      pos base Y
+          <anchor 293 1> mark @b.uni0327_5
+          <anchor 270 -109> mark @m.uni0316_2
+          <anchor 418 740> mark @t.uni0302;
+      pos base Z
+          <anchor 287 4> mark @b.uni0327_5
+          <anchor 267 -107> mark @m.uni0316_2;
+      pos base a
+          <anchor 166 -3> mark @b.uni0327_5
+          <anchor 174 -108> mark @m.uni0316_2
+          <anchor 382 500> mark @t.uni0302;
+      pos base b
+          <anchor 214 -108> mark @m.uni0316_2;
+      pos base c
+          <anchor 212 -2> mark @b.uni0327_5
+          <anchor 163 -113> mark @m.uni0316_2;
+      pos base d
+          <anchor 221 -107> mark @m.uni0316_2;
+      pos base e
+          <anchor 158 -108> mark @m.uni0316_2
+          <anchor 329 500> mark @t.uni0302;
+      pos base f
+          <anchor 222 -111> mark @m.uni0316_2;
+      pos base g
+          <anchor 197 -319> mark @m.uni0316_2
+          <anchor 322 500> mark @t.uni0302;
+      pos base h
+          <anchor 128 9> mark @b.uni0327_5
+          <anchor 229 -111> mark @m.uni0316_2;
+      pos base i
+          <anchor 137 12> mark @b.uni0327_5
+          <anchor 136 -107> mark @m.uni0316_2;
+      pos base j
+          <anchor 0 -319> mark @m.uni0316_2;
+      pos base k
+          <anchor 125 9> mark @b.uni0327_5
+          <anchor 223 -107> mark @m.uni0316_2
+          <anchor 422 700> mark @t.uni0302;
+      pos base m
+          <anchor 157 9> mark @b.uni0327_5
+          <anchor 382 -105> mark @m.uni0316_2;
+      pos base n
+          <anchor 128 9> mark @b.uni0327_5
+          <anchor 235 -111> mark @m.uni0316_2;
+      pos base o
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2
+          <anchor 333 500> mark @t.uni0302;
+      pos base p
+          <anchor 248 -110> mark @m.uni0316_2;
+      pos base q
+          <anchor 169 -110> mark @m.uni0316_2;
+      pos base r
+          <anchor 134 7> mark @b.uni0327_5
+          <anchor 113 -110> mark @m.uni0316_2;
+      pos base s
+          <anchor 185 -1> mark @b.uni0327_5
+          <anchor 169 -111> mark @m.uni0316_2
+          <anchor 273 500> mark @t.uni0302;
+      pos base t
+          <anchor 149 -3> mark @b.uni0327_5
+          <anchor 133 -107> mark @m.uni0316_2;
+      pos base u
+          <anchor 213 0> mark @b.uni0327_5
+          <anchor 226 -111> mark @m.uni0316_2
+          <anchor 386 500> mark @t.uni0302;
+      pos base w
+          <anchor 355 -110> mark @m.uni0316_2;
+      pos base x
+          <anchor 84 8> mark @b.uni0327_5
+          <anchor 224 -110> mark @m.uni0316_2;
+      pos base y
+          <anchor 368 -107> mark @m.uni0316_2
+          <anchor 386 500> mark @t.uni0302;
+      pos base z
+          <anchor 208 4> mark @b.uni0327_5
+          <anchor 187 -111> mark @m.uni0316_2;
+      pos base Aring
+          <anchor 117 5> mark @b.uni0327_5
+          <anchor 308 -108> mark @m.uni0316_2;
+      pos base AE
+          <anchor 549 4> mark @b.uni0327_5
+          <anchor 549 -107> mark @m.uni0316_2;
+      pos base Ograve
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base Oacute
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base Ocircumflex
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base Otilde
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base Odieresis
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base Oslash
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base ae
+          <anchor 327 -109> mark @m.uni0316_2;
+      pos base ocircumflex
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base otilde
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base odieresis
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base oslash
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base Emacron
+          <anchor 414 820> mark @t.uni0302;
+      pos base emacron
+          <anchor 343 610> mark @t.uni0302;
+      pos base dotlessi
+          <anchor 139 -108> mark @m.uni0316_2
+          <anchor 245 500> mark @t.uni0302;
+      pos base kgreenlandic
+          <anchor 134 9> mark @b.uni0327_5
+          <anchor 226 -108> mark @m.uni0316_2;
+      pos base Eng
+          <anchor 124 -3> mark @b.uni0327_5
+          <anchor 364 -109> mark @m.uni0316_2;
+      pos base eng
+          <anchor 128 9> mark @b.uni0327_5
+          <anchor 265 -111> mark @m.uni0316_2;
+      pos base Omacron
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base omacron
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base Obreve
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base obreve
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base Ohungarumlaut
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base ohungarumlaut
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base uni022E
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base uni0237
+          <anchor 231 500> mark @t.uni0302;
+      pos base uni0250
+          <anchor 229 -114> mark @m.uni0316_2;
+      pos base uni0254
+          <anchor 172 -114> mark @m.uni0316_2;
+      pos base uni0266
+          <anchor 240 -114> mark @m.uni0316_2;
+      pos base uni0268
+          <anchor 134 -114> mark @m.uni0316_2;
+      pos base uni026F
+          <anchor 410 -114> mark @m.uni0316_2;
+      pos base uni0279
+          <anchor 190 -114> mark @m.uni0316_2;
+      pos base uni0295
+          <anchor 224 10> mark @b.uni0327_5
+          <anchor 230 -107> mark @m.uni0316_2;
+      pos base uni029C
+          <anchor 273 -110> mark @m.uni0316_2;
+      pos base Gamma
+          <anchor 143 10> mark @b.uni0327_5;
+      pos base beta
+          <anchor 275 -114> mark @m.uni0316_2;
+      pos base kappa
+          <anchor 134 9> mark @b.uni0327_5
+          <anchor 226 -108> mark @m.uni0316_2;
+      pos base upsilon
+          <anchor 354 500> mark @t.uni0302;
+      pos base uni040B
+          <anchor 436 -111> mark @m.uni0316_2;
+      pos base uni0418
+          <anchor 495 740> mark @t.uni0302;
+      pos base uni0433
+          <anchor 142 10> mark @b.uni0327_5;
+      pos base uni0438
+          <anchor 378 500> mark @t.uni0302;
+      pos base uni043B
+          <anchor 357 1> mark @b.uni0327_5;
+      pos base uni2139
+          <anchor 137 12> mark @b.uni0327_5
+          <anchor 136 -107> mark @m.uni0316_2;
+      pos base uni2184
+          <anchor 186 -113> mark @m.uni0316_2;
+      pos base uni2C68
+          <anchor 259 -111> mark @m.uni0316_2;
+      pos base uni2C69
+          <anchor 148 0> mark @b.uni0327_5
+          <anchor 342 -109> mark @m.uni0316_2;
+      pos base uni2C6A
+          <anchor 125 10> mark @b.uni0327_5
+          <anchor 263 -107> mark @m.uni0316_2;
+      pos base uni2C6B
+          <anchor 287 4> mark @b.uni0327_5
+          <anchor 287 -107> mark @m.uni0316_2;
+      pos base uni2C6C
+          <anchor 205 4> mark @b.uni0327_5
+          <anchor 204 -111> mark @m.uni0316_2;
+      pos base uni2C74
+          <anchor 229 -113> mark @m.uni0316_2;
+      pos base h.sc
+          <anchor 273 -110> mark @m.uni0316_2;
+      pos base x.sc
+          <anchor 108 9> mark @b.uni0327_5
+          <anchor 247 -118> mark @m.uni0316_2;
+      pos base f.short
+          <anchor 222 -111> mark @m.uni0316_2;
+      pos base q.sc.u
+          <anchor 222 -220> mark @m.uni0316_2;
+      pos base Eng.UCStyle
+          <anchor 124 -3> mark @b.uni0327_5
+          <anchor 364 -109> mark @m.uni0316_2;
+      pos base y.alt
+          <anchor 210 -18> mark @b.uni0327_5
+          <anchor 239 -111> mark @m.uni0316_2;
+      pos base uni0268.dotless
+          <anchor 134 -114> mark @m.uni0316_2;
+      pos base uni0180
+          <anchor 214 -108> mark @m.uni0316_2;
+      pos base uni0181
+          <anchor 310 0> mark @b.uni0327_5
+          <anchor 328 -108> mark @m.uni0316_2;
+      pos base uni0183
+          <anchor 230 -109> mark @m.uni0316_2;
+      pos base uni0184
+          <anchor 250 0> mark @b.uni0327_5
+          <anchor 268 -108> mark @m.uni0316_2;
+      pos base uni0185
+          <anchor 238 -108> mark @m.uni0316_2;
+      pos base uni018A
+          <anchor 369 4> mark @b.uni0327_5
+          <anchor 369 -107> mark @m.uni0316_2;
+      pos base uni018C
+          <anchor 212 -107> mark @m.uni0316_2;
+      pos base uni0195
+          <anchor 259 -111> mark @m.uni0316_2;
+      pos base uni0199
+          <anchor 125 10> mark @b.uni0327_5
+          <anchor 263 -107> mark @m.uni0316_2;
+      pos base uni019C
+          <anchor 773 16> mark @b.uni0327_5
+          <anchor 450 -108> mark @m.uni0316_2;
+      pos base uni019E
+          <anchor 128 10> mark @b.uni0327_5
+          <anchor 265 -111> mark @m.uni0316_2;
+      pos base Ohorn
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2
+          <anchor 490 740> mark @t.uni0302;
+      pos base ohorn
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2
+          <anchor 333 500> mark @t.uni0302;
+      pos base uni01A2
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 350 -113> mark @m.uni0316_2;
+      pos base uni01A3
+          <anchor 583 -171> mark @b.uni0327_5;
+      pos base uni01AD
+          <anchor 165 -5> mark @b.uni0327_5
+          <anchor 163 -107> mark @m.uni0316_2;
+      pos base Uhorn
+          <anchor 328 4> mark @b.uni0327_5
+          <anchor 465 740> mark @t.uni0302;
+      pos base uhorn
+          <anchor 386 500> mark @t.uni0302;
+      pos base uni01C4
+          <anchor 279 4> mark @b.uni0327_5
+          <anchor 279 -107> mark @m.uni0316_2;
+      pos base Oslashacute
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base oslashacute
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base uni020C
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base uni020D
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base uni022A
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base uni022B
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base uni022C
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base uni022D
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base uni022F
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base uni0230
+          <anchor 350 0> mark @b.uni0327_5
+          <anchor 310 -113> mark @m.uni0316_2;
+      pos base uni0231
+          <anchor 230 -3> mark @b.uni0327_5
+          <anchor 186 -107> mark @m.uni0316_2;
+      pos base uni0235
+          <anchor 128 9> mark @b.uni0327_5
+          <anchor 262 -111> mark @m.uni0316_2;
+      pos base uni0236
+          <anchor 165 -2> mark @b.uni0327_5
+          <anchor 163 -109> mark @m.uni0316_2;
+      pos base uni0238
+          <anchor 348 -109> mark @m.uni0316_2;
+      pos base uni0251
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni0252
+          <anchor 243 -114> mark @m.uni0316_2;
+      pos base uni0253
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni0255
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni0256
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni0257
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni0258
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni0259
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni025A
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni025B
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni025C
+          <anchor 184 -114> mark @m.uni0316_2;
+      pos base uni025D
+          <anchor 212 -114> mark @m.uni0316_2;
+      pos base uni025E
+          <anchor 256 -114> mark @m.uni0316_2;
+      pos base uni0262
+          <anchor 248 -114> mark @m.uni0316_2;
+      pos base uni0264
+          <anchor 177 -114> mark @m.uni0316_2;
+      pos base uni0265
+          <anchor 219 -129> mark @m.uni0316_2;
+      pos base uni0269
+          <anchor 153 -114> mark @m.uni0316_2;
+      pos base uni026A
+          <anchor 139 -114> mark @m.uni0316_2;
+      pos base uni026B
+          <anchor 146 -114> mark @m.uni0316_2;
+      pos base uni026C
+          <anchor 218 -120> mark @m.uni0316_2;
+      pos base uni0270
+          <anchor 294 -114> mark @m.uni0316_2;
+      pos base uni0271
+          <anchor 128 9> mark @b.uni0327_5
+          <anchor 383 -105> mark @m.uni0316_2;
+      pos base uni0272
+          <anchor 265 -111> mark @m.uni0316_2;
+      pos base uni0273
+          <anchor 262 -112> mark @m.uni0316_2;
+      pos base uni0274
+          <anchor 247 -114> mark @m.uni0316_2;
+      pos base uni0277
+          <anchor 341 -114> mark @m.uni0316_2;
+      pos base uni027A
+          <anchor 203 -114> mark @m.uni0316_2;
+      pos base uni027C
+          <anchor 127 -305> mark @m.uni0316_2;
+      pos base uni028A
+          <anchor 258 -114> mark @m.uni0316_2;
+      pos base uni028B
+          <anchor 257 -3> mark @b.uni0327_5
+          <anchor 251 -114> mark @m.uni0316_2;
+      pos base uni028F
+          <anchor 238 10> mark @b.uni0327_5
+          <anchor 239 -107> mark @m.uni0316_2;
+      pos base uni0292
+          <anchor 130 -319> mark @m.uni0316_2
+          <anchor 301 500> mark @t.uni0302;
+      pos base uni0294
+          <anchor 208 10> mark @b.uni0327_5
+          <anchor 202 -107> mark @m.uni0316_2;
+      pos base uni029E
+          <anchor 128 4> mark @b.uni0327_5
+          <anchor 183 -107> mark @m.uni0316_2;
+      pos base uni02AE
+          <anchor 318 542> mark @m.uni0316_2;
+      pos base uni02AF
+          <anchor 318 542> mark @m.uni0316_2;
+      pos base uni045A
+          <anchor 138 12> mark @b.uni0327_5;
+      pos base uni0473
+          <anchor 227 -3> mark @b.uni0327_5
+          <anchor 234 -107> mark @m.uni0316_2;
+      pos base uni0475
+          <anchor 246 -113> mark @m.uni0316_2;
+      pos base uni0491
+          <anchor 140 10> mark @b.uni0327_5;
+      pos base uni04BB
+          <anchor 138 11> mark @b.uni0327_5;
+      pos base uni0418.loclBGR
+          <anchor 495 740> mark @t.uni0302;
+      pos base uni041A.loclBGR
+          <anchor 148 -1> mark @b.uni0327_5
+          <anchor 292 -110> mark @m.uni0316_2
+          <anchor 455 740> mark @t.uni0302;
+      pos base uni043A.loclBGR
+          <anchor 125 9> mark @b.uni0327_5
+          <anchor 223 -107> mark @m.uni0316_2
+          <anchor 422 700> mark @t.uni0302;
+      pos base uni043B.loclBGR
+          <anchor 357 1> mark @b.uni0327_5;
+  } markLTR1;
+
+  lookup markLTR2 {
+      pos base B
+          <anchor 447 850> mark @m.uni0302;
+      pos base C
+          <anchor 500 850> mark @m.uni0302;
+      pos base D
+          <anchor 396 850> mark @m.uni0302;
+      pos base F
+          <anchor 406 850> mark @m.uni0302;
+      pos base G
+          <anchor 513 850> mark @m.uni0302;
+      pos base H
+          <anchor 481 850> mark @m.uni0302;
+      pos base J
+          <anchor 392 850> mark @m.uni0302;
+      pos base L
+          <anchor 389 850> mark @m.uni0302;
+      pos base M
+          <anchor 557 850> mark @m.uni0302;
+      pos base N
+          <anchor 476 850> mark @m.uni0302;
+      pos base Q
+          <anchor 498 850> mark @m.uni0302;
+      pos base R
+          <anchor 419 850> mark @m.uni0302;
+      pos base T
+          <anchor 457 850> mark @m.uni0302;
+      pos base V
+          <anchor 481 850> mark @m.uni0302;
+      pos base W
+          <anchor 610 850> mark @m.uni0302;
+      pos base X
+          <anchor 482 850> mark @m.uni0302;
+      pos base Z
+          <anchor 450 850> mark @m.uni0302;
+      pos base c
+          <anchor 343 645> mark @m.uni0302;
+      pos base d
+          <anchor 218 645> mark @m.uni0302;
+      pos base g
+          <anchor 360 645> mark @m.uni0302;
+      pos base h
+          <anchor 409 645> mark @m.uni0302;
+      pos base m
+          <anchor 522 645> mark @m.uni0302;
+      pos base n
+          <anchor 394 646> mark @m.uni0302;
+      pos base p
+          <anchor 411 646> mark @m.uni0302;
+      pos base q
+          <anchor 369 645> mark @m.uni0302;
+      pos base r
+          <anchor 312 646> mark @m.uni0302;
+      pos base w
+          <anchor 348 646> mark @m.uni0302;
+      pos base x
+          <anchor 366 646> mark @m.uni0302;
+      pos base y
+          <anchor 367 644> mark @m.uni0302;
+      pos base z
+          <anchor 360 646> mark @m.uni0302;
+      pos base AE
+          <anchor 615 850> mark @m.uni0302;
+      pos base Eacute
+          <anchor 286 662> mark @m.uni0302;
+      pos base atilde
+          <anchor 372 785> mark @m.uni0302;
+      pos base aring
+          <anchor 396 864> mark @m.uni0302;
+      pos base ae
+          <anchor 480 645> mark @m.uni0302;
+      pos base otilde
+          <anchor 350 785> mark @m.uni0302;
+      pos base thorn
+          <anchor 278 646> mark @m.uni0302;
+      pos base amacron
+          <anchor 371 755> mark @m.uni0302;
+      pos base itilde
+          <anchor 284 784> mark @m.uni0302;
+      pos base kgreenlandic
+          <anchor 373 644> mark @m.uni0302;
+      pos base Eng
+          <anchor 346 804> mark @m.uni0302;
+      pos base eng
+          <anchor 264 646> mark @m.uni0302;
+      pos base omacron
+          <anchor 350 785> mark @m.uni0302;
+      pos base OE
+          <anchor 575 850> mark @m.uni0302;
+      pos base oe
+          <anchor 480 645> mark @m.uni0302;
+      pos base utilde
+          <anchor 427 785> mark @m.uni0302;
+      pos base uni01DD
+          <anchor 214 645> mark @m.uni0302;
+      pos base uni0254
+          <anchor 322 654> mark @m.uni0302;
+      pos base uni0266
+          <anchor 299 565> mark @m.uni0302;
+      pos base uni026F
+          <anchor 407 645> mark @m.uni0302;
+      pos base kappa
+          <anchor 373 644> mark @m.uni0302;
+      pos base upsilon
+          <anchor 259 645> mark @m.uni0302;
+      pos base uni040B
+          <anchor 300 802> mark @m.uni0302;
+      pos base uni1E72
+          <anchor 346 850> mark @m.uni0302;
+      pos base uni1E73
+          <anchor 255 646> mark @m.uni0302;
+      pos base uni1E7C
+          <anchor 505 955> mark @m.uni0302;
+      pos base uni1E7D
+          <anchor 386 785> mark @m.uni0302;
+      pos base uni2184
+          <anchor 180 645> mark @m.uni0302;
+      pos base uni2C68
+          <anchor 299 645> mark @m.uni0302;
+      pos base uni2C69
+          <anchor 336 798> mark @m.uni0302;
+      pos base uni2C6A
+          <anchor 275 646> mark @m.uni0302;
+      pos base uni2C6B
+          <anchor 320 803> mark @m.uni0302;
+      pos base uni2C6C
+          <anchor 218 646> mark @m.uni0302;
+      pos base uni2C74
+          <anchor 252 646> mark @m.uni0302;
+      pos base x.sc
+          <anchor 282 693> mark @m.uni0302;
+      pos base ae.sc
+          <anchor 480 645> mark @m.uni0302;
+      pos base oe.sc
+          <anchor 485 645> mark @m.uni0302;
+      pos base J.alt
+          <anchor 347 850> mark @m.uni0302;
+      pos base q.sc.u
+          <anchor 411 685> mark @m.uni0302;
+      pos base Eng.UCStyle
+          <anchor 346 804> mark @m.uni0302;
+      pos base y.alt
+          <anchor 255 646> mark @m.uni0302;
+      pos base uni0268.dotless
+          <anchor 267 645> mark @m.uni0302;
+      pos base uni0249.dotless
+          <anchor 254 645> mark @m.uni0302;
+      pos base uni0181
+          <anchor 327 805> mark @m.uni0302;
+      pos base uni0184
+          <anchor 267 805> mark @m.uni0302;
+      pos base uni018A
+          <anchor 306 805> mark @m.uni0302;
+      pos base uni018C
+          <anchor 209 650> mark @m.uni0302;
+      pos base uni0194
+          <anchor 331 805> mark @m.uni0302;
+      pos base uni0195
+          <anchor 299 645> mark @m.uni0302;
+      pos base uni019C
+          <anchor 431 801> mark @m.uni0302;
+      pos base uni019E
+          <anchor 264 646> mark @m.uni0302;
+      pos base uni01A2
+          <anchor 355 804> mark @m.uni0302;
+      pos base uni01A3
+          <anchor 336 646> mark @m.uni0302;
+      pos base uni01B4
+          <anchor 270 644> mark @m.uni0302;
+      pos base uni01C4
+          <anchor 396 850> mark @m.uni0302;
+      pos base uni0235
+          <anchor 261 646> mark @m.uni0302;
+      pos base uni0239
+          <anchor 377 646> mark @m.uni0302;
+      pos base uni0256
+          <anchor 218 645> mark @m.uni0302;
+      pos base uni0257
+          <anchor 218 645> mark @m.uni0302;
+      pos base uni0258
+          <anchor 204 645> mark @m.uni0302;
+      pos base uni025B
+          <anchor 322 654> mark @m.uni0302;
+      pos base uni0262
+          <anchor 265 645> mark @m.uni0302;
+      pos base uni0265
+          <anchor 258 645> mark @m.uni0302;
+      pos base uni0269
+          <anchor 123 645> mark @m.uni0302;
+      pos base uni026A
+          <anchor 128 645> mark @m.uni0302;
+      pos base uni0271
+          <anchor 383 645> mark @m.uni0302;
+      pos base uni0272
+          <anchor 264 646> mark @m.uni0302;
+      pos base uni0273
+          <anchor 263 645> mark @m.uni0302;
+      pos base uni027C
+          <anchor 222 703> mark @m.uni0302;
+      pos base uni028B
+          <anchor 259 645> mark @m.uni0302;
+      pos base uni029E
+          <anchor 255 646> mark @m.uni0302;
+      pos base uni02A0
+          <anchor 238 645> mark @m.uni0302;
+      pos base uni02AE
+          <anchor 278 -214> mark @m.uni0302;
+      pos base uni02AF
+          <anchor 278 -214> mark @m.uni0302;
+      pos base uni0473
+          <anchor 224 645> mark @m.uni0302;
+      pos base uni0475
+          <anchor 268 646> mark @m.uni0302;
+      pos base uni041A.loclBGR
+          <anchor 466 850> mark @m.uni0302;
+  } markLTR2;
+
+  lookup markLTR3 {
+      pos base O
+          <anchor 399 20> mark @b.uni0328;
+      pos base o
+          <anchor 289 27> mark @b.uni0328;
+  } markLTR3;
+
+  lookup markLTR4 {
+      pos base O
+          <anchor 730 606> mark @t.uni0315_1;
+      pos base Q
+          <anchor 720 606> mark @t.uni0315_1;
+      pos base o
+          <anchor 491 396> mark @t.uni0315_1;
+      pos base Ograve
+          <anchor 620 606> mark @t.uni0315_1;
+      pos base Oacute
+          <anchor 620 606> mark @t.uni0315_1;
+      pos base Ocircumflex
+          <anchor 620 606> mark @t.uni0315_1;
+      pos base Otilde
+          <anchor 620 606> mark @t.uni0315_1;
+      pos base ocircumflex
+          <anchor 420 396> mark @t.uni0315_1;
+      pos base otilde
+          <anchor 420 396> mark @t.uni0315_1;
+      pos base Omacron
+          <anchor 620 606> mark @t.uni0315_1;
+      pos base omacron
+          <anchor 420 396> mark @t.uni0315_1;
+  } markLTR4;
+
+  lookup markLTR5 {
+      pos base a
+          <anchor 413 16> mark @b.uni0321_4;
+      pos base c
+          <anchor 340 42> mark @b.uni0321_4;
+      pos base d
+          <anchor 312 20> mark @b.uni0321_4;
+      pos base e
+          <anchor 344 41> mark @b.uni0321_4;
+      pos base h
+          <anchor 421 10> mark @b.uni0321_4;
+      pos base i
+          <anchor 209 10> mark @b.uni0321_4;
+      pos base o
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base s
+          <anchor 276 13> mark @b.uni0321_4;
+      pos base t
+          <anchor 211 15> mark @b.uni0321_4;
+      pos base u
+          <anchor 438 7> mark @b.uni0321_4;
+      pos base ae
+          <anchor 604 30> mark @b.uni0321_4;
+      pos base ocircumflex
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base otilde
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base odieresis
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base oslash
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base omacron
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base obreve
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base ohungarumlaut
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base oe
+          <anchor 361 41> mark @b.uni0321_4;
+      pos base uni0266
+          <anchor 410 8> mark @b.uni0321_4;
+      pos base uni040B
+          <anchor 631 8> mark @b.uni0321_4;
+      pos base uni2139
+          <anchor 209 10> mark @b.uni0321_4;
+      pos base y.alt
+          <anchor 284 -11> mark @b.uni0321_4;
+      pos base ohorn
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base uni01AD
+          <anchor 237 13> mark @b.uni0321_4;
+      pos base oslashacute
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base uni020D
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base uni022B
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base uni022D
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base uni022F
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base uni0231
+          <anchor 371 44> mark @b.uni0321_4;
+      pos base uni0236
+          <anchor 237 15> mark @b.uni0321_4;
+      pos base uni0238
+          <anchor 595 13> mark @b.uni0321_4;
+      pos base uni0251
+          <anchor 463 16> mark @b.uni0321_4;
+      pos base uni0256
+          <anchor 312 20> mark @b.uni0321_4;
+      pos base uni0257
+          <anchor 312 20> mark @b.uni0321_4;
+      pos base uni0259
+          <anchor 323 41> mark @b.uni0321_4;
+      pos base uni04BA
+          <anchor 519 9> mark @b.uni0321_4;
+  } markLTR5;
+
+  lookup markLTR6 {
+      pos base f
+          <anchor 410 750> mark @t.uni031A_3;
+      pos base w
+          <anchor 722 580> mark @t.uni031A_3;
+  } markLTR6;
+
+  lookup markLTR7 {
+      pos base J.alt
+          <anchor 247 315> mark @m.uni0334_6;
+  } markLTR7;
+
+  lookup markLTR1;
+  lookup markLTR2;
+  lookup markLTR3;
+  lookup markLTR4;
+  lookup markLTR5;
+  lookup markLTR6;
+  lookup markLTR7;
+#< feature
+} mark;
+feature mkmk {
+#> feature
+# GPOS feature : Mark to Mark Positioning
+    markClass acute <anchor 250 500> @top;
+#    markClass gravecomb <anchor -24 500> @t.uni0302;
+    markClass gravecomb <anchor -18 500> @top;
+#    markClass acutecomb <anchor -25 500> @t.uni0302;
+    markClass acutecomb <anchor -61 500> @top;
+#    markClass uni0302 <anchor -35 500> @t.uni0302;
+#    markClass tildecomb <anchor -28 553> @t.uni0302;
+#    markClass uni0304 <anchor -103 500> @t.uni0302;
+    markClass uni0304 <anchor -97 500> @top;
+#    markClass uni0306 <anchor -64 500> @t.uni0302;
+#    markClass uni0308 <anchor -100 500> @t.uni0302;
+#    markClass hookabovecomb <anchor -79 500> @t.uni0302;
+#    markClass uni030A <anchor -75 500> @t.uni0302;
+#    markClass uni030C <anchor -98 500> @t.uni0302;
+    markClass uni030C <anchor -97 500> @top;
+#    markClass uni0311 <anchor -95 500> @t.uni0302;
+#    markClass dieresistonos <anchor 306 500> @t.uni0302;
+#    markClass grave.cap <anchor 4 740> @t.uni0302;
+    markClass grave.cap <anchor 15 740> @top;
+#    markClass acute.cap <anchor 14 740> @t.uni0302;
+    markClass acute.cap <anchor 1 740> @top;
+#    markClass circumflex.cap <anchor 40 740> @t.uni0302;
+#    markClass uni03020301 <anchor -210 500> @t.uni0302;
+#    markClass uni03020300 <anchor -210 500> @t.uni0302;
+#    markClass uni03020309 <anchor -210 500> @t.uni0302;
+#    markClass uni03020303 <anchor -210 500> @t.uni0302;
+#    markClass uni03060300 <anchor -47 500> @t.uni0302;
+#    markClass uni03060301 <anchor -47 500> @t.uni0302;
+#    markClass uni03060309 <anchor -87 500> @t.uni0302;
+#    markClass uni03060303 <anchor -87 500> @t.uni0302;
+
+  lookup mkmkLTR1 {
+      pos mark uni0302
+          <anchor 3 718> mark @t.uni0302;
+      pos mark tildecomb
+          <anchor -17 689> mark @t.uni0302;
+      pos mark uni0304
+          <anchor -78 603> mark @t.uni0302;
+  } mkmkLTR1;
+
+  lookup mkmkLTR2 {
+      pos mark uni0308
+          <anchor -78 610> mark @top;
+  } mkmkLTR2;
+
+  lookup mkmkLTR1;
+  lookup mkmkLTR2;
+#< feature
+} mkmk;

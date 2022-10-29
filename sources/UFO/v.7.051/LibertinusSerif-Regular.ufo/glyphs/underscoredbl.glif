@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="underscoredbl" format="2">
+	<unicode hex="2017"/>
+	<advance width="486"/>
+	<outline>
+		<contour>
+			<point x="482" y="-110" type="line"/>
+			<point x="5" y="-110" type="line"/>
+			<point x="5" y="-154" type="line"/>
+			<point x="482" y="-154" type="line"/>
+		</contour>
+		<contour>
+			<point x="482" y="-4" type="line"/>
+			<point x="5" y="-4" type="line"/>
+			<point x="5" y="-48" type="line"/>
+			<point x="482" y="-48" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem -154 44</string>
+							<string>hstem -48 44</string>
+							<string>vstem 5 477</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w486m482,-110l5,-110l5,-154l482,-154m482,-4l5,-4l5,-48l482,-48</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

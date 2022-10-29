@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="integraltp" format="2">
+	<unicode hex="2320"/>
+	<advance width="379"/>
+	<outline>
+		<contour>
+			<point x="104" y="0" type="line"/>
+			<point x="184" y="0" type="line"/>
+			<point x="226" y="235" type="line" smooth="yes"/>
+			<point x="250" y="374"/>
+			<point x="274" y="405"/>
+			<point x="296" y="405" type="curve" smooth="yes"/>
+			<point x="319" y="405"/>
+			<point name=".hr01" x="315" y="373"/>
+			<point x="348" y="373" type="curve" smooth="yes"/>
+			<point x="371" y="373"/>
+			<point x="395" y="390"/>
+			<point x="399" y="412" type="curve" smooth="yes"/>
+			<point x="403" y="437"/>
+			<point x="383" y="455"/>
+			<point x="355" y="455" type="curve" smooth="yes"/>
+			<point x="249" y="455"/>
+			<point x="167" y="349"/>
+			<point x="124" y="112" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 21 -21</string>
+							<string>vstem 104 295</string>
+							<string>hstem 405 50</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 373 82</string>
+							<string>vstem 104 295</string>
+							<string>hstem 21 -21</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>90d1ca2a4cde130ecd846357ce59454bb8e9bd20e3f631da4f5dd84750aaa37bc80c347ae475fd1b37336dda3f53a3f69303eeb5241c7385460f80c35fe4aca1</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

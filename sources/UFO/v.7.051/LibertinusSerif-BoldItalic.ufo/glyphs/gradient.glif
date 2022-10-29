@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gradient" format="2">
+	<unicode hex="2207"/>
+	<advance width="661"/>
+	<outline>
+		<contour>
+			<point x="157" y="-2" type="curve"/>
+			<point x="261" y="-2" type="line"/>
+			<point x="382" y="207"/>
+			<point x="504" y="419"/>
+			<point x="625" y="628" type="curve"/>
+			<point x="627" y="632"/>
+			<point x="633" y="640"/>
+			<point x="634" y="641" type="curve"/>
+			<point x="635" y="650"/>
+			<point x="619" y="652"/>
+			<point x="593" y="652" type="curve" smooth="yes"/>
+			<point x="67" y="652" type="line" smooth="yes"/>
+			<point x="44" y="652"/>
+			<point x="23" y="650"/>
+			<point x="23" y="642" type="curve"/>
+			<point x="23" y="641"/>
+			<point x="24" y="636"/>
+			<point x="26" y="628" type="curve"/>
+			<point x="26" y="628"/>
+			<point x="131" y="121"/>
+		</contour>
+		<contour>
+			<point x="207" y="150" type="line"/>
+			<point x="170" y="320"/>
+			<point x="145" y="442"/>
+			<point x="108" y="611" type="curve"/>
+			<point name=".hr01" x="475" y="611" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.postscript.hints</key>
+			<dict>
+				<key>formatVersion</key>
+				<string>1</string>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>stems</key>
+						<array>
+							<string>hstem 628 24</string>
+							<string>vstem 23 611</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>.hr01</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 611 41</string>
+							<string>vstem 23 611</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>21b694bb5180e2de6a0e484ed56b8fa525ab077410b5daf3b42cb10565dfe9cc211acc5a86125ae7a1f2a7ccfd21d49191dceb68bfabd6c77e57c011582bd3ea</string>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
