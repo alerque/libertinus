@@ -42,7 +42,6 @@ OS2CapHeight: 613
 OS2XHeight: 495
 OS2FamilyClass: 261
 OS2Vendor: 'QUE '
-Lookup: 6 0 0 "'ccmp' Contextual Chaining Substitution" { "'ccmp' Contextual Chaining Substitution 1"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localised Forms for Sami" { "'locl' Localised Forms for Sami-1"  } ['locl' ('latn' <'FIN ' 'ISM ' 'LSM ' 'NOR ' 'NSM ' 'SKS ' 'SSM ' 'SVE ' > ) ]
 Lookup: 1 0 0 "Substitution dotless forms" { "Substitution dotless forms 1"  } []
 Lookup: 1 0 0 "'zero' gestrichene Null" { "'zero' gestrichene Null 1"  } ['zero' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
@@ -51,24 +50,6 @@ Lookup: 1 0 0 "'ss07' Swap Eng styles" { "'ss07' Swap Eng styles-1"  } ['ss07' (
 Lookup: 260 0 0 "'mark' Mark positioning" { "'mark' Komb OR"  "'mark' Right"  "'mark' Above"  "'mark' Middle"  "'mark' Ogonek"  "'mark' Cedilla"  "'mark' Below"  "'mark' Top Punkt2"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AZE ' 'CRT ' 'TRK ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-ChainSub2: class "'ccmp' Contextual Chaining Substitution 1" 5 1 5 1
-  Class: 3 i j
-  Class: 299 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 uni0359 uni035A uni035B uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363
-  Class: 1 f
-  Class: 360 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve ij omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright
-  FClass: 3 i j
-  FClass: 299 gravecomb acutecomb uni0302 tildecomb uni0304 uni0305 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030D uni030E uni030F uni0310 uni0311 uni0312 uni0313 uni0314 uni0315 uni031A uni0351 uni0357 uni0358 uni0359 uni035A uni035B uni035D uni035E uni035F uni0360 uni0361 uni0362 uni0363
-  FClass: 1 f
-  FClass: 360 parenright question T V W Y bracketright bar braceright brokenbar ordfeminine uni00B2 uni00B3 paragraph uni00B9 Yacute agrave atilde adieresis egrave edieresis igrave idieresis ograve otilde odieresis ugrave udieresis ydieresis amacron abreve emacron ebreve ecaron itilde imacron ibreve ij omacron umacron ubreve quoteleft quoteright quotedblleft quotedblright
- 1 0 1
-  ClsList: 1
-  BClsList:
-  FClsList: 2
- 1
-  SeqLookup: 0 "Substitution dotless forms"
-  ClassNames: "0" "1" "2" "3" "4"
-  BClassNames: "0"
-  FClassNames: "0" "1" "2" "3" "4"
 EndFPST
 ShortTable: cvt  2
   68
