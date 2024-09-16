@@ -18,7 +18,7 @@ jobs:
           git fetch --prune --tags ||:
       - name: Fontship make
         id: fontship
-        uses: docker://theleagueof/fontship:v0.8.2
+        uses: docker://theleagueof/fontship:latest
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
