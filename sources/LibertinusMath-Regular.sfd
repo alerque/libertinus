@@ -20,7 +20,6 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1156455862
-ModificationTime: 1673107570
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -618,7 +617,7 @@ Grid
   Named: "Top Accent"
 EndSplineSet
 AnchorClass2: "aboveMark" "'mkmk' Mark to Mark-1" "right" "'mark' Right" "komb_OR" "'mark' Komb OR" "above" "'mark' Above" "below" "'mark' Below" "cedilla" "'mark' Cedilla" "ogonek" "'mark' Ogonek" "middle" "'mark' Middle"
-BeginChars: 1114839 4376
+BeginChars: 1114839 4378
 
 StartChar: exclam
 Encoding: 33 33 0
@@ -161289,13 +161288,69 @@ Fore
 Refer: 4364 8694 N -1 0 0 1 912 0 2
 EndChar
 
+StartChar: uni29B9
+Encoding: 10681 10681 4375
+Width: 730
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+340 460 m 1
+ 391 460 l 1
+ 391 165 l 1
+ 520 165 l 1
+ 520 120 l 1
+ 211 120 l 1
+ 211 165 l 1
+ 340 165 l 1
+ 340 460 l 1
+50 260 m 0
+ 50 434 191 575 365 575 c 0
+ 539 575 680 434 680 260 c 0
+ 680 86 539 -55 365 -55 c 0
+ 191 -55 50 86 50 260 c 0
+100 260 m 0
+ 100 114 219 -5 365 -5 c 0
+ 511 -5 630 114 630 260 c 0
+ 630 406 511 525 365 525 c 0
+ 219 525 100 406 100 260 c 0
+EndSplineSet
+EndChar
+
+StartChar: uni29BA
+Encoding: 10682 10682 4376
+Width: 730
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+101.17 235 m 1
+ 113.83 100.66 227.43 -5 365 -5 c 0
+ 502.57 -5 616.17 100.66 628.83 235 c 1
+ 101.17 235 l 1
+50 260 m 0
+ 50 434 191 575 365 575 c 0
+ 539 575 680 434 680 260 c 0
+ 680 86 539 -55 365 -55 c 0
+ 191 -55 50 86 50 260 c 0
+101.17 285 m 1
+ 340 285 l 1
+ 340 523.83 l 1
+ 213.89 511.95 113.05 411.11 101.17 285 c 1
+390 523.83 m 1
+ 390 285 l 1
+ 628.83 285 l 1
+ 616.95 411.11 516.11 511.95 390 523.83 c 1
+EndSplineSet
+EndChar
+
 StartChar: uni2B33
 Encoding: 11059 11059 4375
 Width: 1411
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
-Refer: 4015 10239 S -1 0 0 1 1411 0 2
+Refer: 4015 10239 N -1 0 0 1 1411 0 2
 EndChar
 EndChars
 EndSplineFont
