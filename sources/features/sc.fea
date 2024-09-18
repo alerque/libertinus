@@ -106,6 +106,8 @@ lookup smcp_smallcap {
   sub omacron by o.sc uni0304;
   sub umacron by u.sc uni0304;
   sub uni1E2B by h.sc uni032E;
+  sub ijacute by ijacute.sc;
+  sub i_j by ij.sc;
 } smcp_smallcap;
 
 lookup smcp_smallcap_idot {
@@ -228,6 +230,8 @@ lookup c2sc_smallcap_fromcaps {
   sub Umacron by u.sc uni0304;
   sub H by h.sc;
   sub uni1E2A by h.sc uni032E;
+  sub IJacute by ijacute.sc;
+  sub I_J by ij.sc;
 } c2sc_smallcap_fromcaps;
 
 feature smcp {
@@ -238,6 +242,8 @@ feature smcp {
   script cyrl;
     lookup smcp_smallcap_i;
     lookup smcp_smallcap;
+    language SRB;
+    language MKD;
 
   script grek;
     lookup smcp_smallcap_i;
@@ -262,6 +268,15 @@ feature smcp {
     language TRK exclude_dflt;
       lookup smcp_smallcap;
       lookup smcp_smallcap_idot;
+    language FIN;
+    language ISM;
+    language LSM;
+    language NLD;
+    language NOR;
+    language NSM;
+    language SKS;
+    language SSM;
+    language SVE;
 } smcp;
 
 feature c2sc {
