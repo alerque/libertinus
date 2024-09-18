@@ -28,9 +28,13 @@ $$(BUILDDIR)/$1-%-instance.otf: $$(BUILDDIR)/$1-%-normalized.sfd $(GSUB) $(BUILD
 
 endef
 
-$(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.tex $(STATICOTFS) | $(BUILDDIR)
-	xelatex --interaction=batchmode -output-directory=$(BUILDDIR) $<
-	cp $(BUILDDIR)/$(@F) $@
+define POSTFONTSHIPEVAL =
+
+$$(DOCSDIR)/preview.pdf: $$(DOCSDIR)/preview.tex $$(STATICOTFS) | $$(BUILDDIR)
+	xelatex --interaction=batchmode -output-directory=$$(BUILDDIR) $$<
+	cp $(BUILDDIR)/$$(@F) $$@
+
+endef
 
 _scour_args = --quiet --set-precision=4 --remove-metadata --enable-id-stripping --strip-xml-prolog --strip-xml-space --no-line-breaks --no-renderer-workaround
 
