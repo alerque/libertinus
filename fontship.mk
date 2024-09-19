@@ -30,7 +30,7 @@ endef
 
 define POSTFONTSHIPEVAL =
 
-$$(DOCSDIR)/preview.pdf: $$(DOCSDIR)/preview.tex $$(STATICOTFS) | $$(BUILDDIR)
+$$(DOCSDIR)/preview.pdf: $$(DOCSDIR)/preview.tex | $$(STATICOTFS) $$(BUILDDIR)
 	xelatex --interaction=batchmode -output-directory=$$(BUILDDIR) $$<
 	cp $(BUILDDIR)/$$(@F) $$@
 
