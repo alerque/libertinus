@@ -246,7 +246,7 @@ class Font:
             recalc_average_width=True, recalc_bounds=True)
         subsetter = subset.Subsetter(options=options)
         subsetter.populate(unicodes=otf['cmap'].getBestCmap().keys())
-        subsetter.subset(otf)
+        # subsetter.subset(otf)
 
     def generate(self, output):
         self._update_metadata()
