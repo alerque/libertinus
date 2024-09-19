@@ -46455,7 +46455,7 @@ Encoding: 108 108 1938
 Width: 325
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "above" 125 885 basechar 0
+AnchorPoint: "above" 156 885 basechar 0
 AnchorPoint: "below" 135 -110 basechar 0
 AnchorPoint: "cedilla" 131 10 basechar 0
 AnchorPoint: "middle" 136 215 basechar 0
@@ -61678,9 +61678,20 @@ EndChar
 StartChar: uniFB29
 Encoding: 64297 64297 2451
 Width: 537
+Flags: W
 LayerCount: 2
 Fore
-Refer: 8 43 N 1 0 0 1 0 0 3
+SplineSet
+61 195 m 1
+ 61 269 l 1
+ 232 269 l 1
+ 232 433 l 1
+ 306 433 l 1
+ 306 269 l 1
+ 477 269 l 1
+ 477 195 l 1
+ 61 195 l 1
+EndSplineSet
 EndChar
 
 StartChar: shinshindot

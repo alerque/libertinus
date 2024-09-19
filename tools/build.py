@@ -11,7 +11,7 @@ from sfdLib.parser import SFDParser, CATEGORIES_KEY, MATH_KEY
 
 class Font:
     def __init__(self, filename, features):
-        self._font = font = ufoLib2.Font(validate=False)
+        self._font = font = ufoLib2.Font()
 
         parser = SFDParser(filename, font, ufo_anchors=False,
             ufo_kerning=False, minimal=True)
@@ -246,7 +246,7 @@ class Font:
             recalc_average_width=True, recalc_bounds=True)
         subsetter = subset.Subsetter(options=options)
         subsetter.populate(unicodes=otf['cmap'].getBestCmap().keys())
-        subsetter.subset(otf)
+        # subsetter.subset(otf)
 
     def generate(self, output):
         self._update_metadata()
