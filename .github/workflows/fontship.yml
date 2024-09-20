@@ -33,6 +33,6 @@ jobs:
         with:
           files: |
             ${{ steps.fontship.outputs.DISTDIR }}.zip
-            ${{ steps.fontship.outputs.DISTDIR }}.tar.xz
+            ${{ steps.fontship.outputs.DISTDIR }}.tar.zst
         env:
           GITHUB_TOKEN: ${{ github.token }}
