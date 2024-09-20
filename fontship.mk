@@ -39,8 +39,9 @@ endef
 _scour_args = --quiet --set-precision=4 --remove-metadata --enable-id-stripping --strip-xml-prolog --strip-xml-space --no-line-breaks --no-renderer-workaround
 
 preview.svg: $(DOCSDIR)/preview.pdf
-	mutool draw -r 200 -F svg $< 1 |
-		sed -e '/^<g /a <rect width="100%" height="100%" fill="white" />' > $@
+	mutool draw -r 266.66 -F svg $< 1 |
+		rsvg-convert -f svg --background-color=white --page-width=1522 --page-height=1102 |
+		svgo --pretty --multipass -p 4 - -o $@
 
 install-dist: install-dist-$(PROJECT)
 
