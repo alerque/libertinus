@@ -1,4 +1,3 @@
-STATICTTF =
 STATICWOFF =
 
 GSUB = sources/features/gsub.fea
