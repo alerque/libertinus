@@ -6,11 +6,11 @@ jobs:
 
   fontship:
     name: Fontship
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Fetch tags
@@ -18,9 +18,11 @@ jobs:
           git fetch --prune --tags ||:
       - name: Fontship make
         id: fontship
-        uses: docker://theleagueof/fontship:latest
+        uses: theleagueof/fontship@v0
+        with:
+          args: make dist
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.fontship.outputs.DISTDIR }}
           path: ${{ steps.fontship.outputs.DISTDIR }}.zip
@@ -40,6 +42,6 @@ jobs:
         with:
           files: |
             ${{ steps.fontship.outputs.DISTDIR }}.zip
-            ${{ steps.fontship.outputs.DISTDIR }}.tar.xz
+            ${{ steps.fontship.outputs.DISTDIR }}.tar.zst
         env:
           GITHUB_TOKEN: ${{ github.token }}

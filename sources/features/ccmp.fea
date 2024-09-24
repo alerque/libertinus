@@ -25,3 +25,137 @@ feature ccmp {
   sub @dotted' @accents by @dotless;
   sub @capitals @accents' lookup ccmp_cap_accents;
 } ccmp;
+
+# Hebrew
+
+#ifndef SANS
+#ifndef MATH
+#ifndef DISPLAY
+
+@vowels = [\sheva \hatafsegol \hatafpatah \hatafqamats \hiriq \tsere \segol \patah \qamats \qubuts 
+	\holam];
+
+# By default the vavholam is used as vowel. This rule takes of situations where the vav is a consonant
+feature ccmp { # vavholem
+  lookupflag RightToLeft;
+    sub @vowels [\vav ]' [\holam ]  by \uniE801;
+} ccmp;
+
+# Several subsitutions
+feature ccmp {
+  lookupflag RightToLeft;
+    sub \alef \patah  by \alefpatah;
+    sub \alef \qamats  by \alefqamats;
+    sub \vav \holam  by \vavholam;
+    sub \finalkaf \sheva by \uniE802;
+    sub \finalkaf \qamats by \uniE803;
+} ccmp;
+
+# Rafe
+feature ccmp {
+  lookupflag RightToLeft;
+    sub \bet \rafe  by \betrafe;
+    sub \kaf \rafe  by \kafrafe;
+    sub \pe \rafe  by \perafe;
+    sub \gimel \rafe by \gimelrafe;
+    sub \dalet \rafe by \daletrafe;
+    sub \he \rafe by \herafe;
+    sub \tav \rafe by \tavrafe;
+} ccmp;
+
+# Replace glyphs with dagesh by the dagesh variants
+feature ccmp {
+  lookupflag RightToLeft;
+    sub \alef \dagesh  by \alefmapiq;
+    sub \bet \dagesh  by \betdagesh;
+    sub \gimel \dagesh  by \gimeldagesh;
+    sub \dalet \dagesh  by \daletdagesh;
+    sub \he \dagesh  by \hedagesh;
+    sub \vav \dagesh  by \vavdagesh;
+    sub \zayin \dagesh  by \zayindagesh;
+    sub \tet \dagesh  by \tetdagesh;
+    sub \yod \dagesh  by \yoddagesh;
+    sub \finalkaf \dagesh  by \finalkafdagesh;
+    sub \kaf \dagesh  by \kafdagesh;
+    sub \lamed \dagesh  by \lameddagesh;
+    sub \mem \dagesh  by \memdagesh;
+    sub \nun \dagesh  by \nundagesh;
+    sub \samekh \dagesh  by \samekhdagesh;
+    sub \finalpe \dagesh  by \finalpedagesh;
+    sub \pe \dagesh  by \pedagesh;
+    sub \tsadi \dagesh  by \tsadidagesh;
+    sub \qof \dagesh  by \qofdagesh;
+    sub \resh \dagesh  by \reshdagesh;
+    sub \shin \dagesh  by \shindagesh;
+    sub \tav \dagesh  by \tavdagesh;
+} ccmp;
+
+# Take care of all shin variants
+feature ccmp {
+  lookupflag RightToLeft;
+    sub \shin \shindot  by \shinshindot;
+    sub \shin \sindot  by \shinsindot;
+    sub \shindagesh \shindot  by \shindageshshindot;
+    sub \shinshindot \dagesh  by \shindageshshindot;
+    sub \shin \shindot \dagesh  by \shindageshshindot;
+    sub \shin \dagesh \shindot  by \shindageshshindot;
+    sub \shindagesh \sindot  by \shindageshsindot;
+    sub \shinsindot \dagesh  by \shindageshsindot;
+    sub \shin \sindot \dagesh  by \shindageshsindot;
+    sub \shin \dagesh \sindot  by \shindageshsindot;
+} ccmp;
+
+# The rules to take care of the furtive patah
+lookup PatahToPatahGanuv {
+  lookupflag RightToLeft;
+    sub \patah by \patah.ganuv ;
+} PatahToPatahGanuv;
+
+# Replace the patah with the furtive patah
+feature ccmp {
+  lookupflag RightToLeft;
+    sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\he  \het \ayin  ] [\patah ]' lookup PatahToPatahGanuv;
+    sub [\dagesh \rafe ] [\tsere \segol \hiriq \holam \qubuts ] [\he  \het \ayin  ] [\patah ]' lookup PatahToPatahGanuv;
+    sub [\tsere \segol \hiriq \yod \holam \vavholam \qubuts \vavdagesh ] [\meteg ] [\he  \het \ayin ] [\patah ]'lookup PatahToPatahGanuv  ;
+    sub [\dagesh \rafe  ] [\tsere \segol \hiriq \holam \qubuts ] [\meteg ] [\he  \het \ayin  ] [\patah ]'lookup PatahToPatahGanuv  ;
+} ccmp;
+
+lookup PatahGanuvBackToPatah {
+  lookupflag RightToLeft;
+    sub \patah.ganuv by \patah ;
+} PatahGanuvBackToPatah;
+
+# Revert furtive patah in case where it is not right
+feature ccmp {
+  lookupflag RightToLeft;
+    sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\dalet  \qof \resh  \alef \bet \gimel \he  \vav \zayin \het \tet \yod \kaf \lamed \finalmem \mem \nun \samekh \ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam ];
+    sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\meteg ] [\dalet  \qof \resh  \alef 
+	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
+	\lamed \finalmem \mem \nun \samekh 
+	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam ];
+    sub [\patah.ganuv ]'lookup PatahGanuvBackToPatah  [\meteg ] [\meteg ] [\dalet  \qof \resh  \alef 
+	 \bet \gimel \he  \vav \zayin \het \tet \yod \kaf 
+	\lamed \finalmem \mem \nun \samekh 
+	\ayin \pe \finaltsadi \tsadi \shin \tav \shinshindot 
+	\shinsindot \vavdagesh \zayindagesh \yoddagesh \nundagesh \vavholam	];
+} ccmp;
+
+# hiriqmem for jerusalaim
+feature ccmp {
+  lookupflag RightToLeft;
+    sub [\patah \qamats] [\hiriq]' [\finalmem ]'  by \hiriqmem;
+} ccmp;
+
+# Workaround for dealing with silent alef after holam
+# More elegant would be using GPOS
+feature ccmp {
+  lookupflag RightToLeft;
+    ignore substitute \holam' \alef' @vowels;
+    sub \holam' \alef' by \holamalef;
+} ccmp;
+
+#endif
+#endif
+#endif

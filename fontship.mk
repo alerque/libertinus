@@ -28,19 +28,26 @@ $$(BUILDDIR)/$1-%-instance.otf: $$(BUILDDIR)/$1-%-normalized.sfd $(GSUB) $(BUILD
 
 endef
 
-$(DOCSDIR)/preview.pdf: $(DOCSDIR)/preview.tex $(STATICOTFS) | $(BUILDDIR)
-	xelatex --interaction=batchmode -output-directory=$(BUILDDIR) $<
-	cp $(BUILDDIR)/$(@F) $@
+define POSTFONTSHIPEVAL =
+
+$$(DOCSDIR)/preview.pdf: $$(DOCSDIR)/preview.tex | $$(STATICOTFS) $$(BUILDDIR)
+	xelatex --interaction=batchmode -output-directory=$$(BUILDDIR) $$<
+	cp $(BUILDDIR)/$$(@F) $$@
+
+endef
+
+_scour_args = --quiet --set-precision=4 --remove-metadata --enable-id-stripping --strip-xml-prolog --strip-xml-space --no-line-breaks --no-renderer-workaround
 
 preview.svg: $(DOCSDIR)/preview.pdf
-	set -x
-	mutool draw -q -r 200 -F svg $< 1 > $@
+	mutool draw -r 266.66 -F svg $< 1 |
+		rsvg-convert -f svg --background-color=white --page-width=1522 --page-height=1102 |
+		svgo --pretty --multipass -p 4 - -o $@
 
 install-dist: install-dist-$(PROJECT)
 
 install-dist-$(PROJECT): | preview.svg
 	install -Dm644 -t "$(DISTDIR)/" preview.svg AUTHORS.txt CONTRIBUTING.md CONTRIBUTORS.txt FONTLOG.txt
-	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf
+	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf $(DOCSDIR)/*.md $(DOCSDIR)/*.css
 
 CTAN_NAME = libertinus-fonts
 
@@ -51,5 +58,5 @@ dist-ctan: install-dist
 		-s ',$(DISTDIR),$(CTAN_NAME),' \
 		-s ',static/OTF,otf,' \
 		-acf $${TMP} $(DISTDIR)
-	bsdtar -acf $(CTAN_NAME)-$(GitVersion).tar.gz --exclude 'static' @$${TMP}
+	bsdtar -acf $(CTAN_NAME)-$(FontVersion).tar.gz --exclude 'static' @$${TMP}
 	rm $${TMP}

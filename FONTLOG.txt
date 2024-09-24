@@ -46,6 +46,46 @@ ChangeLog
 ---------
 
 unreleased (GIT) <Libertinus> Version HEAD
+- Correct some errors in composite glyphs in Hebrew Italic
+
+21 September 2024 (Caleb Maclennan) <Libertinus> Version 7.050
+- Redo Hebrew vowel marks
+- Add (for Hebrew) uniE801-3, uniFB29, shin variants, letters with dagesh,
+  letters with rafe, patah, ganuv, hireqmem and holamalef
+- Add circledotted with anchors for Hebrew vowels
+- Correct spacing for uni01DD
+- Add missing above marks to lowercase L in Serif family
+- Add above marks and aboveMark base marks to Serif Semibold
+- Add lowercase e and r with stroke to Serif family
+- Overhaul math font glyphs for style consistency
+- Add U+FB29 (Hebrew alternative plus sign) to all families
+- Add U+29B9 and U+29BA glyphs to Libertinus Math
+- Add U+2B33, long leftwards squiggle arrow to Math family
+- Add Dutch-specific i_j and I_J digraphs
+
+26 February 2021 (Caleb Maclennan) <Libertinus> Version 7.040
+- Add 29 more specialty arrow glyphs to Math family
+- Rebuild with new sfdLib release to fix Spiro curve issues in uni2639
+- Correct Q.u side bearings to match Q in Sans & Serif families
+- Add missing U+029C to Serif Bold Italic
+- Add missing ‘below’ mark to h/H/h.sc across Serif family
+- Consistently align ‘below’ mark on h/H/h.sc across Serif family
+- Re-align mark positioning on U+032E breve below across Serif family
+- Add smallcaps and caps-2-smallcaps feature for h/H + breve below
+- Re-align ‘below’ mark on U+029C to match smallcaps across all families
+- Apply proper features (smallcaps i, f_i ligatures) in Kazakh and Tartar
+- Configure aboveMark as mark-to-mark lookup in Italics and add marks for:
+  gracecomb, acutecomb, uni0302, tildecomb, uni030c, uni0304
+- Add above marks for otilde, open o and open e in Italics
+- Add above marks for otilde, vtilde and Vtilde in Regular
+- Correct placement of aboveMarks in Regular for:
+  uni0300, uni0301, uni0302, uni0303, uni0304, uni0306, uni0308, uni030c
+- Add documentation of available OpenType features and sample CSS rules
+
+9 January 2021 (Caleb Maclennan) <Libertinus> Version 7.031
+- Correct distribution release filenames
+
+9 January 2021 (Caleb Maclennan) <Libertinus> Version 7.030
 - Overhaul dot placement on all Latin capitals with dot-above
 - Align dot-below on ṃ U+1E43 below middle stroke of m
 - Remove bogus glyphs encoded as subscripts from Display and Serif Semibold
@@ -53,6 +93,8 @@ unreleased (GIT) <Libertinus> Version HEAD
 - Zero out kerns between super/subscript glyphs
 - Add glyph for U+0453 to Cyrillic Italic styles
 - Enable support for Macedonian localized Italics
+- Expand range of available angle bracket sizes in Math family
+- Add alternative slanted integrals to Math family (as feature +ss08)
 
 14 October 2020 (Caleb Maclennan) <Libertinus> Version 7.020
 - Fix name tables broken in 7.010 that associate styles in the Serif family
