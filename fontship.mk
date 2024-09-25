@@ -34,6 +34,12 @@ $$(DOCSDIR)/preview.pdf: $$(DOCSDIR)/preview.tex | $$(STATICOTFS) $$(BUILDDIR)
 	xelatex --interaction=batchmode -output-directory=$$(BUILDDIR) $$<
 	cp $(BUILDDIR)/$$(@F) $$@
 
+$$(DOCSDIR)/sample.pdf: $$(DOCSDIR)/sample.sil $$(STATICOTFS)
+	sile -o $$@ -d versions $$<
+
+$$(DOCSDIR)/waterfalls.pdf: $$(DOCSDIR)/waterfalls.sil $$(STATICOTFS)
+	fontproof -o $$@ $$< -- -d versions
+
 endef
 
 _scour_args = --quiet --set-precision=4 --remove-metadata --enable-id-stripping --strip-xml-prolog --strip-xml-space --no-line-breaks --no-renderer-workaround
@@ -45,7 +51,7 @@ preview.svg: $(DOCSDIR)/preview.pdf
 
 install-dist: install-dist-$(PROJECT)
 
-install-dist-$(PROJECT): | preview.svg
+install-dist-$(PROJECT): $(DOCSDIR)/sample.pdf $(DOCSDIR)/waterfalls.pdf | preview.svg
 	install -Dm644 -t "$(DISTDIR)/" preview.svg AUTHORS.txt CONTRIBUTING.md CONTRIBUTORS.txt FONTLOG.txt
 	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf $(DOCSDIR)/*.md $(DOCSDIR)/*.css
 
