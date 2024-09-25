@@ -18,6 +18,9 @@ jobs:
           git fetch --prune --tags ||:
       - name: Fontship make
         uses: theleagueof/fontship@v0
+        # Work around fontship v0.10.0 an below trying to force install-dist on first pass
+        with:
+          args: make debug all
       - name: FontProof
         id: fontproof
         uses: sile-typesetter/fontproof@v2
