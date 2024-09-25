@@ -17,6 +17,18 @@ jobs:
         run: |
           git fetch --prune --tags ||:
       - name: Fontship make
+        uses: theleagueof/fontship@v0
+      - name: FontProof
+        id: fontproof
+        uses: sile-typesetter/fontproof@v2
+        with:
+          args: documentation/waterfalls.sil -o documentation/waterfalls.pdf
+      - name: SILE
+        id: sile
+        uses: sile-typesetter/sile@v0
+        with:
+          args: documentation/sample.sil
+      - name: Fontship package
         id: fontship
         uses: theleagueof/fontship@v0
         with:
@@ -26,16 +38,6 @@ jobs:
         with:
           name: ${{ steps.fontship.outputs.DISTDIR }}
           path: ${{ steps.fontship.outputs.DISTDIR }}.zip
-      - name: FontProof
-        id: fontproof
-        uses: docker://siletypesetter/fontproof:latest
-        with:
-          args: proofs/waterfalls.sil
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: waterfalls
-          path: proofs/waterfalls.pdf
       - name: Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v1
