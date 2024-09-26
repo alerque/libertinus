@@ -1,0 +1,326 @@
+\begin{document}
+\use[module=packages.frametricks]
+\use[module=packages.color]
+\use[module=packages.rebox]
+\use[module=packages.footnotes]
+\begin{lua}
+
+SILE.settings:set("document.lskip", SILE.types.node.glue(0))
+SILE.settings:set("document.rskip", SILE.types.node.hfillglue(0))
+SILE.settings:set("document.parskip", 9)
+SILE.settings:set("typesetter.parfillskip", SILE.types.node.glue())
+SILE.settings:set("document.spaceskip", SILE.types.length("1spc", 0, 0))
+
+SILE.registerCommand("font-v", function (_, _)
+   local face = SILE.font.cache(SILE.font.loadDefaults({}), SILE.shaper.getFace)
+   local ot = require("core.opentype-parser")
+   local font = ot.parseFont(face)
+   local name = font.names[4]["en-US"][1]
+   local size = SILE.settings:get("font.size")
+   local version = font.names[5]["en-US"][1]:gsub(";.*", "")
+   SILE.typesetter:leaveHmode()
+   SILE.call("skip", { height = "1bs" })
+   SILE.call("noindent")
+   SILE.call("color", { color = "#7f7f7f" }, { ("%s %spt, %s"):format(name, size, version) })
+   SILE.call("par")
+end)
+
+SILE.registerCommand("sample", function (options, content)
+   SILE.call("noindent")
+   SILE.call("font", { filename = "LibertinusSans-Regular.otf", size = "9pt" }, function ()
+      local tag = SILE.typesetter:makeHbox(function()
+         SILE.call("color", { color = "#7f7f7f" }, { options.language })
+      end)
+      local width = tag.width
+      SILE.call("kern", { width = -(width + SILE.types.measurement("1spc"):absolute()) })
+      SILE.call("rebox", { width = 0, height = 0 }, function ()
+         SILE.call("color", { color = "#7f7f7f" }, { options.language })
+      end)
+      SILE.call("par")
+      SILE.call("skip", { height = "-1bs" })
+      SILE.call("skip", { height = "-9pt" })
+   end)
+   SILE.call("font", { language = options.language }, content)
+   SILE.call("par")
+end)
+
+-- SILE's column merge in broken as of this time, this over-simplified work
+-- around works for *this* use case...
+SILE.registerCommand("mergecolumns", function (_, _)
+   SILE.call("balancecolumns")
+   SILE.typesetter:buildPage()
+   local prev = SILE.typesetter.frame
+   local joined_id = prev.id .. "_joined"
+   local joined = SILE.newFrame({ id = joined_id })
+   joined:constrain("top", "bottom(content_)")
+   joined:constrain("left", "left(content)")
+   joined:constrain("right", "right(content)")
+   joined:constrain("bottom", "top(footnotes)")
+   prev.next = joined_id
+   SILE.typesetter:initNextFrame()
+end)
+
+\end{lua}
+\font[filename=LibertinusSerif-Regular.otf,size=12pt]
+
+\begin{center}
+\begin[color=#345D00]{color}
+\font[features=+smcp,size=26pt]{Libertinus Serif}
+
+Comparison with Times New Roman\footnote{Since the actual Times New Roman font is released under a non-free license, this document uses TeX Gyre Termes which is designed as a drop in replacement but also has extended language support not found in the original font.} and Multilingual Sample Texts
+\end{color}
+\end{center}
+
+\breakframevertical
+
+\begin[command=comparison]{define}%
+\font[features=+lnum]{0123456789} — \font[features=+onum]{0123456789}
+
+\begin[language=en]{sample}
+A quick brown fox jumps over the lazy dog.
+\end{sample}
+
+\begin[language=ru]{sample}
+Съешь ещё этих мягких французских булок, давыпей чаю!
+\end{sample}
+
+\begin[language=de]{sample}
+Bsp.-Text: Am 30.4.1987 saß ich im „Café Hamburg“ und schlürfte Kaffee für 2,65 €.
+
+Ihr naht euch wieder, schwankende Gestalten, Die früh sich einst dem trüben Blick gezeigt.
+Versuch ich wohl, euch diesmal festzuhalten?
+Fühl ich mein Herz noch jenem Wahn geneigt?
+
+Ihr drängt euch zu!
+Nun gut, so mögt ihr walten, Wie ihr aus Dunst und Nebel um mich steigt; Mein Busen fühlt sich jugendlich erschüttert Vom Zauberhauch, der euren Zug umwittert.
+
+Kerning-Text: „Tram“ war Tochters erstes Wort (jerade, als sie darauf zulief).
+Die Straßenbahn bremste, denn hier hatte sie eine Haltestelle.
+Welch Glück, dass ihre erste Lautäußerung nicht „LKW“ oder „VW-Golf“gewesen war.
+Ich hing in Gedanken meinem Forschungsprojekt nach (Na⁺ im Ton, SO₄²⁻ im Schluff).
+„PAPA!“ „Hm…?“ Tramführer: „Passen se jefälligst uff ihra TOCHTA uff!“ „… sie hat ‚Papa‘gesagt!“
+\end{sample}
+\end{define}
+
+\makecolumns
+
+\begin[filename=LibertinusSerif-Regular.otf]{font}
+\font-v \comparison
+\end{font}
+\framebreak
+
+\begin[family=TeX Gyre Termes]{font}
+\font-v \comparison
+\end{font}
+
+\mergecolumns
+
+\begin[command=poem]{define}%
+\begin[language=fr]{sample}%
+\noindent
+Le dessein en est pris: je pars, cher Théramène,\break
+Et quitte le séjour de l’aimable Trézène.\break
+Dans le doute mortel dont je suis agité,\break
+Je commence à rougir de mon oisiveté.\break
+Depuis plus de six mois éloigné de mon père,\break
+J’ignore le destin d’une tête si chère;\break
+J’ignore jusqu’aux lieux qui le peuvent cacher.\par
+\end{sample}
+\end{define}
+
+\makecolumns
+
+\hbox
+
+\begin[filename=LibertinusSerif-Italic.otf]{font}
+\font-v
+
+\poem
+\end{font}
+
+\framebreak
+
+\hbox
+
+\begin[family=TeX Gyre Termes,style=Italic]{font}
+\font-v
+
+\poem
+\end{font}
+
+\pagebreak
+
+\makecolumns
+
+\lua{SILE.typesetter:chuck()}
+
+\font-v
+
+\begin[language=bg]{sample}
+ПРЕДМЕТ И ЗАДАЧИ НА ФОНЕТИКАТА\break
+Думата фонетика произлиза от гръцката думарнопе, която означава „звук“, „глас“, „тон“.
+\end{sample}
+
+\begin[language=cs]{sample}
+„Tak nám zabili Ferdinanda,“ řekla posluhovačka panu Švejkovi, který opustiv před léty vojenskou službu, když byl definitivně prohlášen vojenskou lékařskou komisí za blba, živil se prodejem psů, ošklivých nečistokrevných oblud, kterým padělal rodokmeny.
+\end{sample}
+
+\begin[language=cy]{sample}
+Gan fod Argraffiad Rhydychen o'r Mabinogion yn rhoi'r testun yn union fel y digwydd yn y llawysgrifau, ac felly yn cyfarfod â gofyn yr ysgolhaig, bernais mai gwell mewn llawlyfr fel hwn oedd golygu peth arno er mwyn helpu'r ieuainc a'r dibrofiad yn yr hen orgraff.
+\end{sample}
+
+\begin[language=da]{sample}
+Begyndelsen var Ordet, og Ordet var hos Gud, og Ordet var Gud.
+Dette var i Begyndelsen hos Gud.
+\end{sample}
+
+\begin[language=el]{sample}
+Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα, ἆρ’ οἶσθ’ ὅ τι Ζεὺς τῶν ἀπ’ Οἰδίπου κακῶνὁποῖον οὐχὶ νῷν ἔτι ζώσαιν τελεῖ;
+\end{sample}
+
+\begin[language=en]{sample}
+But till all graces be in one woman, one womã ſhal not com in my grace: rich ſhe ſhall be thats certain, wiſe, or ile none, vertuous, or ile neuer cheapen her.
+\end{sample}
+
+\begin[language=es]{sample}
+En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.
+\end{sample}
+
+\begin[language=fi]{sample}
+Alussa oli Sana, ja Sana oli Jumalan luona, Sana oli Jumala.
+Ja hän oli alussa Jumalan luona.
+\end{sample}
+
+\begin[language=ga]{sample}
+Bhí an Briathar(I) ann i dtús báire agus bhí an Briathar in éineacht le Dia, agus ba Dhia an Briathar.
+\end{sample}
+
+\begin[language=he]{sample}
+\begin{raggedleft}
+\begin[direction=rtl]{font}
+דג סקרן שט בים מאוכזב ולפתע מצא לו חברה איך?\break
+הקליהט
+\end{font}
+\end{raggedleft}
+\end{sample}
+
+\framebreak
+
+\font-v
+
+\begin[language=hi]{sample}
+Bhí sé ann i dtús báire in éineacht le Dia.
+Asieran Itza ba-zan, ta Itza Yainkoagan zan, ta Itza Yainko zan.
+Asieran Bera Yainkoagan zan.
+\end{sample}
+
+\begin[language=is]{sample}
+Hwæt, we Gar-Dena in geardagum þeodcyninga þrym gefrunon, hu ða æþelingas ellen fremedon.
+Oft Scyld Scefing sceaþena þreatum, monegum mægþum meodosetla ofteah; egsode Eorle.
+Syððan ærest wearð feasceaft funden, (he þæs frofre gebad) weox under wolcnum, weorðmyndum þah, oðþæt him æghwyle þara ymbsittendra ofer hronrade hyan scolde, gomban gyldan: þæt wæs god cyning!
+\end{sample}
+
+\begin[language=it]{sample}
+Nel mezzo del cammin di nostra vita mi ritrovai per una selva obscura, ché la diritta via era smarrita.
+Ahi quanto a dir qual era è cosa dura esta selva selvaggia e aspra e forte che nel pensier rinova la paura!
+\end{sample}
+
+\begin[language=la]{sample}
+Gallia est omnis dīvīsa in partēs trēs, quārum ūnum incolunt Belgae, aliam Aquītānī, tertiam, quī ipsōrum linguā Celtae, nostrā Gallī appellantur.
+Hī omnēs linguā, īnstitūtīs, lēgibus inter sē differunt.
+Gallōs ab Aquītānīs Garumna flūmen, ā Belgīs Matrona et Sēquana dīvidit.
+āēīōūȳ
+\end{sample}
+
+\begin[language=lt]{sample}
+Kiekviena šventė yra surišta su praeitimi.
+Nešvenčiamas gimtadienis, kai, kūdikis gimsta.
+Ir po keliolikos metų gimtinės arba vardinės nėra tiek reikšmingos, kaip sulaukus 50 ar 75 metų.
+Juo tolimesnis įvykis, tuo šventė darosi svarbesnė ir iškilmingesnė.
+\end{sample}
+
+\begin[language=mk]{sample}
+Македонскиот јазик во балканската јазичнасредина и наспрема соседните словенскијаеици.
+1. Македонскиот јазик се говори во СРМакедонија, и надвор од нејзините граници, во оние делови на Македонија што побалканските војни влегоа во составот на Грцијаи Бугарија.
+\end{sample}
+
+\begin[language=nb]{sample}
+I opphavet var Ordet, og Ordet var hjå Gud, og Ordet var Gud.
+Han var i opphavet hjå Gud.
+\end{sample}
+\break
+
+\pagebreak
+
+\makecolumns
+
+\font-v
+
+\begin[language=nl]{sample}
+In den beginne was het Woord en het Woord was bij God en het Woord was God.
+Dit was in den beginne bij God.
+\end{sample}
+
+\begin[language=no]{sample}
+I begynnelsen var Ordet, Ordet var hos Gud, og Ordet var Gud.
+Han var i begynnelsen hos Gud.
+Alt er blitt til ved ham; uten ham er ikke noe blitt til av alt som er til.
+\end{sample}
+
+
+\begin[language=pl]{sample}
+Język prasłowiański miał w zakresie deklinacji (fleksji imiennej) następujące kategorie gramatyczne: liczby, rodzaju i przypadku.
+Poza tym istniały w nim (w zakresie fleksji rzeczownika) różne «odmiany», czyli typy deklinacyjne.
+Im dawniej w czasie, tym owe różnice deklinacyjne miały mniejszy związek z semantyką rzeczownika.
+\end{sample}
+
+\begin[language=pt]{sample}
+No Principio era a Palavra, e a Palavra estava junto de Deus, e a Palavra era Deus.
+\end{sample}
+
+\begin[language=sv]{sample}
+Om någon människa skulle komma resande till den lilla, lilla staden och så kanske ett tu tre råka förirra sig lite för långt bort åt ena utkanten, då skulle den människan få se Villa Villekulla.
+Inte för att huset var så mycket att titta på just, en rätt fallfärdig gammal villa och en rätt vanskött gammal trädgård runt omkring, men främlingen skulle kanske i alla fall stanna och undra vem som bodde där.
+\end{sample}
+
+\framebreak
+
+\font-v
+
+\begin[language=ru]{sample}
+Вначале было Слово, и Слово было у Бога, иСлово было Бог.
+Оно было в начале у Бога.
+\end{sample}
+
+\begin[language=sl]{sample}
+Razvoj glasoslovja je diametralno drugačen od razvoja morfologije.
+V govoru si besede slede. V vsaki sintagmi dobi beseda svojo vrednost, če je zvezana z besedo, ki je pred njo, in z besedo, ki ji sledi.
+\end{sample}
+
+\begin[language=is]{sample}
+Í upphafi var Orðið, og Orðið var hjá Guði, og Orðið var Guð.
+Hann var í upphafi hjá Guði.
+\end{sample}
+
+
+\begin[language=sv]{sample}
+I begynnelsen var Ordet, och Ordet var hos Gud, och Ordet var Gud.
+Han var i begynnelsen hos Gud.
+\end{sample}
+
+\begin[language=sw]{sample}
+Hapo mwanzo kulikuwako Neno, naye Neno alikuwako kwa Mungo, naye Neno alikuwa Mungu, Huyo mwanzo alikuwako kwa Mungu.
+Vyote vilvanyika kwa huyo; wala pasipo yeye hakikufanyika cho chote kilichofanyiki.
+\end{sample}
+
+\begin[language=vi]{sample}
+Hương người đức hạnh bay xa, Hương Xuân ngát tỏa từ hoa an bình.
+\end{sample}
+
+\begin[language=und]{sample}
+CO₄³⁻
+
+☯☼☽☿♀♁♂♃♄♅♆♇♈♉♊♋♌♍♎♏♐♑♒♓⚕⚘☛
+\end{sample}
+
+\end{document}

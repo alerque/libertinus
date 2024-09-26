@@ -27,11 +27,20 @@ $$(BUILDDIR)/$1-%-instance.otf: $$(BUILDDIR)/$1-%-normalized.sfd $(GSUB) $(BUILD
 
 endef
 
+depend_font = fc-match "$1" family | $(GREP) -qx "$1"
+
 define POSTFONTSHIPEVAL =
 
 $$(DOCSDIR)/preview.pdf: $$(DOCSDIR)/preview.tex | $$(STATICOTFS) $$(BUILDDIR)
 	xelatex --interaction=batchmode -output-directory=$$(BUILDDIR) $$<
 	cp $(BUILDDIR)/$$(@F) $$@
+
+$$(DOCSDIR)/sample.pdf: $$(DOCSDIR)/sample.sil $$(STATICOTFS)
+	$(call depend_font,TeX Gyre Termes)
+	sile -o $$@ -d versions $$<
+
+$$(DOCSDIR)/waterfalls.pdf: $$(DOCSDIR)/waterfalls.sil $$(STATICOTFS)
+	fontproof -o $$@ $$< -- -d versions
 
 endef
 
@@ -44,7 +53,7 @@ preview.svg: $(DOCSDIR)/preview.pdf
 
 install-dist: install-dist-$(PROJECT)
 
-install-dist-$(PROJECT): | preview.svg
+install-dist-$(PROJECT): $(DOCSDIR)/sample.pdf $(DOCSDIR)/waterfalls.pdf | preview.svg
 	install -Dm644 -t "$(DISTDIR)/" preview.svg AUTHORS.txt CONTRIBUTING.md CONTRIBUTORS.txt FONTLOG.txt
 	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf $(DOCSDIR)/*.md $(DOCSDIR)/*.css
 

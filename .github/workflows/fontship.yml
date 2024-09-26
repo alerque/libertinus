@@ -17,6 +17,21 @@ jobs:
         run: |
           git fetch --prune --tags ||:
       - name: Fontship make
+        uses: theleagueof/fontship@v0
+        # Work around fontship v0.10.0 an below trying to force install-dist on first pass
+        with:
+          args: make debug all
+      - name: FontProof
+        id: fontproof
+        uses: sile-typesetter/fontproof@v2
+        with:
+          args: documentation/waterfalls.sil -o documentation/waterfalls.pdf
+      - name: SILE
+        id: sile
+        uses: sile-typesetter/sile@v0
+        with:
+          args: --version; pacman --noconfirm -Sq tex-gyre-fonts; sile documentation/sample.sil
+      - name: Fontship package
         id: fontship
         uses: theleagueof/fontship@v0
         with:
