@@ -2,6 +2,7 @@
 \use[module=packages.frametricks]
 \use[module=packages.color]
 \use[module=packages.rebox]
+\use[module=packages.footnotes]
 \begin{lua}
 
 SILE.settings:set("document.lskip", SILE.types.node.glue(0))
@@ -66,7 +67,7 @@ end)
 \begin[color=#345D00]{color}
 \font[features=+smcp,size=26pt]{Libertinus Serif}
 
-Comparison with Liberation Serif and Multilingual Sample Texts
+Comparison with Times New Roman\footnote{Since the actual Times New Roman font is released under a non-free license, this document uses TeX Gyre Termes which is designed as a drop in replacement but also has extended language support not found in the original font.} and Multilingual Sample Texts
 \end{color}
 \end{center}
 
@@ -108,7 +109,7 @@ Ich hing in Gedanken meinem Forschungsprojekt nach (Na⁺ im Ton, SO₄²⁻ im 
 \end{font}
 \framebreak
 
-\begin[family=Liberation Serif]{font}
+\begin[family=TeX Gyre Termes]{font}
 \font-v \comparison
 \end{font}
 
@@ -131,7 +132,7 @@ J’ignore jusqu’aux lieux qui le peuvent cacher.\par
 
 \hbox
 
-\begin[filename=LibertinusSerif-Regular.otf]{font}
+\begin[filename=LibertinusSerif-Italic.otf]{font}
 \font-v
 
 \poem
@@ -141,7 +142,7 @@ J’ignore jusqu’aux lieux qui le peuvent cacher.\par
 
 \hbox
 
-\begin[filename=LibertinusSerif-Italic.otf]{font}
+\begin[family=TeX Gyre Termes,style=Italic]{font}
 \font-v
 
 \poem
