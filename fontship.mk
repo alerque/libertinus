@@ -30,18 +30,14 @@ endef
 
 depend_font = fc-match "$1" family | $(GREP) -qx "$1"
 
-.PHONY: tex-gyre-fonts
-tex-gyre-fonts:
-	$(CONTAINERIZED) && pacman --noconfirm --needed -Sq $@ ||:
-	$(call depend_font,TeX Gyre Termes)
-
 define POSTFONTSHIPEVAL =
 
 $$(DOCSDIR)/preview.pdf: $$(DOCSDIR)/preview.tex | $$(STATICOTFS) $$(BUILDDIR)
 	xelatex --interaction=batchmode -output-directory=$$(BUILDDIR) $$<
 	cp $(BUILDDIR)/$$(@F) $$@
 
-$$(DOCSDIR)/sample.pdf: $$(DOCSDIR)/sample.sil $$(STATICOTFS) tex-gyre-fonts
+$$(DOCSDIR)/sample.pdf: $$(DOCSDIR)/sample.sil $$(STATICOTFS)
+	$(call depend_font,TeX Gyre Termes)
 	sile -o $$@ -d versions $$<
 
 $$(DOCSDIR)/waterfalls.pdf: $$(DOCSDIR)/waterfalls.sil $$(STATICOTFS)

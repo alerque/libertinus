@@ -16,8 +16,6 @@ jobs:
       - name: Fetch tags
         run: |
           git fetch --prune --tags ||:
-      - name: Setup prerequisites
-        run: sudo apt-get -qq install fonts-texgyre
       - name: Fontship make
         uses: theleagueof/fontship@v0
         # Work around fontship v0.10.0 an below trying to force install-dist on first pass
@@ -30,11 +28,9 @@ jobs:
           args: documentation/waterfalls.sil -o documentation/waterfalls.pdf
       - name: SILE
         id: sile
-        run: |
-          docker run -t -v "/usr/share/texmf/fonts/opentype/public/tex-gyre/:/fonts" ghcr.io/sile-typesetter/sile:v0 -- documentation/sample.sil
-        # uses: sile-typesetter/sile@v0
-        # with:
-        #   args: documentation/sample.sil
+        uses: sile-typesetter/sile@v0
+        with:
+          args: --version; pacman --noconfirm -Sq tex-gyre-fonts; sile documentation/sample.sil
       - name: Fontship package
         id: fontship
         uses: theleagueof/fontship@v0
