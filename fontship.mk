@@ -1,5 +1,23 @@
 STATICWOFF =
 
+## Generate feature-preserving WOFF2 directly from OTFs
+# Release OTFs include optional GSUB features (e.g., smcp/c2sc). Building
+# WOFF2 from TTF or via subsetting can drop these. Compressing OTF → WOFF2
+# preserves features so web fonts keep true small caps.
+
+WOFF2DIR := $(DISTDIR)/static/WOFF2
+OTFDIR   := $(DISTDIR)/static/OTF
+
+# Fontship provides STATICOTFS for shipped OTFs. Derive matching WOFF2 paths.
+STATICWOFF2 := $(patsubst $(OTFDIR)/%.otf,$(WOFF2DIR)/%.woff2,$(STATICOTFS))
+
+$(WOFF2DIR):
+	@mkdir -p "$@"
+
+# Compress OTF to WOFF2 without subsetting to preserve GSUB/GPOS features.
+$(WOFF2DIR)/%.woff2: $(OTFDIR)/%.otf | $(WOFF2DIR)
+	woff2_compress "$<" -o "$@"
+
 GSUB = sources/features/gsub.fea
 DOCSDIR = documentation
 TOOLSDIR = tools
@@ -53,7 +71,7 @@ preview.svg: $(DOCSDIR)/preview.pdf
 
 install-dist: install-dist-$(PROJECT)
 
-install-dist-$(PROJECT): $(DOCSDIR)/sample.pdf $(DOCSDIR)/waterfalls.pdf | preview.svg
+install-dist-$(PROJECT): $(DOCSDIR)/sample.pdf $(DOCSDIR)/waterfalls.pdf $(STATICWOFF2) | preview.svg
 	install -Dm644 -t "$(DISTDIR)/" preview.svg AUTHORS.txt CONTRIBUTING.md CONTRIBUTORS.txt FONTLOG.txt
 	install -Dm644 -t "$(DISTDIR)/$(DOCSDIR)" $(DOCSDIR)/*.pdf $(DOCSDIR)/*.md $(DOCSDIR)/*.css
 
