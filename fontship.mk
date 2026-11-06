@@ -5,6 +5,7 @@ DOCSDIR = documentation
 TOOLSDIR = tools
 
 BUILD = $(TOOLSDIR)/build.py
+OTF2TTF = $(TOOLSDIR)/otf2ttf.py
 
 SERIF_STYLES := Regular Semibold Bold Italic SemiboldItalic BoldItalic
 SANS_STYLES  := Regular Bold Italic
@@ -24,6 +25,15 @@ $$(BUILDDIR)/$1-%-instance.otf: $$(BUILDDIR)/$1-%-normalized.sfd $(GSUB) $(BUILD
 		--input=$$< \
 		--output=$$@ \
 		$$(if $$(call nofea,$$@),,--feature-file=$(GSUB))
+
+endef
+
+# Build TTFs from the finished OTFs so they keep GSUB and MATH. Fontship's
+# default TTF route goes through UFO and never sees gsub.fea or the MATH table.
+define ttf_instance_template =
+
+$$(BUILDDIR)/$1-%-instance.ttf: $$(BUILDDIR)/$1-%-instance.otf $(OTF2TTF)
+	$$(PYTHON) $(OTF2TTF) $$< $$@
 
 endef
 
